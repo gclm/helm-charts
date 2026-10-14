@@ -1,0 +1,41 @@
+image:
+  repository: docker.io/library/redis
+  tag: "8-alpine"
+  pullPolicy: IfNotPresent
+
+auth:
+  # 留空则首次安装自动生成并写入 Secret；upgrade 用 lookup 复用，不轮换
+  password: ""
+
+# AOF 开（≤1s 数据安全）+ RDB 开（便于备份）。官方：运行中拷 RDB 安全；AOF 目录不要盲拷
+appendonly: true
+appendfsync: everysec
+save: "900 1"
+
+persistence:
+  storageClass: openebs-lvm
+  size: 8Gi
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: "1"
+    memory: 1Gi
+
+backup:
+  enabled: true
+  schedule: "50 3 * * *"
+  timeZone: "Asia/Shanghai"
+  retentionDays: 7
+  nfs:
+    server: 192.168.10.201
+    path: /hdd-pool/backup/db
+
+freshnessAlert:
+  enabled: true
+  schedule: "10 6 * * *"
+  maxAgeHours: 26
+
+mode: standalone

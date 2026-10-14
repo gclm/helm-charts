@@ -1,0 +1,51 @@
+name: release-charts
+
+on:
+  push:
+    branches: [main]
+    paths: ['charts/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.16.4
+
+      - name: Lint all charts
+        run: |
+          set -eu
+          for c in charts/*/; do
+            echo "== linting ${c}"
+            helm lint "${c}" --strict
+          done
+
+      - name: Package charts and build index
+        run: |
+          set -eu
+          mkdir -p dist
+          helm package charts/* -d dist/
+          # merge with existing published index to keep version history
+          if curl -sfL --retry 2 https://charts.xzim.top/index.yaml -o old-index.yaml; then
+            echo "merging with existing index"
+            helm repo index dist --url https://charts.xzim.top --merge old-index.yaml
+          else
+            echo "no existing index, creating fresh"
+            helm repo index dist --url https://charts.xzim.top
+          fi
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: true
+          commit_message: "chore: publish charts ${{ github.sha }}"

@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "mongodb.fullname" . }}
+  labels:
+    {{- include "mongodb.labels" . | nindent 4 }}
+spec:
+  serviceName: {{ include "mongodb.fullname" . }}
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "mongodb.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "mongodb.labels" . | nindent 8 }}
+    spec:
+      # mongo 镜像以 uid 999 运行，读不了 Secret 挂载的 root 属主文件
+      # → init 以 root 拷到 emptyDir 并 chown 999 / chmod 400（不动主容器 entrypoint，保留 INITDB）
+      initContainers:
+        - name: init-keyfile
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["/bin/sh", "-c"]
+          args:
+            - cp /etc/mongo-key/keyfile /keyfiles/keyfile && chmod 400 /keyfiles/keyfile && chown 999:999 /keyfiles/keyfile
+          volumeMounts:
+            - {name: mongo-key, mountPath: /etc/mongo-key, readOnly: true}
+            - {name: keyfiles, mountPath: /keyfiles}
+      containers:
+        - name: mongo
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args:
+            - --replSet
+            - {{ .Values.replicaSetName | quote }}
+            - --bind_ip_all
+            - --keyFile
+            - /keyfiles/keyfile
+          ports:
+            - {name: mongo, containerPort: 27017}
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: {{ .Values.auth.username | quote }}
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom: {secretKeyRef: {name: {{ include "mongodb.fullname" . }}, key: MONGO_ROOT_PASSWORD}}
+          volumeMounts:
+            - {name: data, mountPath: /data/db}
+            - {name: keyfiles, mountPath: /keyfiles, readOnly: true}
+          readinessProbe:
+            # ⚠️ 必须显式 timeoutSeconds：mongosh 冷启动 1-3s，默认 1s 必超时 → rollout 卡死
+            exec: {command: ["mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]}
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 10
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: data
+          persistentVolumeClaim: {claimName: {{ include "mongodb.fullname" . }}-data}
+        - name: mongo-key
+          secret: {secretName: {{ include "mongodb.fullname" . }}-keyfile}
+        - name: keyfiles
+          emptyDir: {}

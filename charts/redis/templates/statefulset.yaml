@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "redis.fullname" . }}
+  labels:
+    {{- include "redis.labels" . | nindent 4 }}
+spec:
+  serviceName: {{ include "redis.fullname" . }}
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "redis.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "redis.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: redis
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              exec redis-server \
+                --requirepass "$REDIS_PASSWORD" \
+                --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \
+                --appendfsync {{ .Values.appendfsync }} \
+                --dir /data \
+                --save "{{ .Values.save }}"
+          env:
+            - name: REDIS_PASSWORD
+              valueFrom: {secretKeyRef: {name: {{ include "redis.fullname" . }}, key: REDIS_PASSWORD}}
+          ports:
+            - {name: redis, containerPort: 6379}
+          volumeMounts:
+            - {name: data, mountPath: /data}
+          readinessProbe:
+            exec:
+              command: ["/bin/sh", "-c", 'redis-cli -a "$REDIS_PASSWORD" ping | grep -q PONG']
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: data
+          persistentVolumeClaim: {claimName: {{ include "redis.fullname" . }}-data}

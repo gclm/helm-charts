@@ -1,0 +1,40 @@
+image:
+  repository: docker.io/library/mysql
+  tag: "8.4"
+  pullPolicy: IfNotPresent
+
+auth:
+  # 留空则首次安装自动生成并写入 Secret；upgrade 用 lookup 复用，不轮换
+  password: ""
+
+persistence:
+  storageClass: openebs-lvm
+  size: 30Gi
+
+# binlog 保留 7 天，为将来 PITR 留能力（⚠️ mysql:8.4 镜像无 mysqlbinlog，PITR 需换镜像）
+binlogExpireSeconds: 604800
+serverId: 1
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 512Mi
+  limits:
+    cpu: "2"
+    memory: 3Gi
+
+backup:
+  enabled: true
+  schedule: "40 3 * * *"
+  timeZone: "Asia/Shanghai"
+  retentionDays: 7
+  nfs:
+    server: 192.168.10.201
+    path: /hdd-pool/backup/db
+
+freshnessAlert:
+  enabled: true
+  schedule: "10 6 * * *"
+  maxAgeHours: 26
+
+mode: standalone

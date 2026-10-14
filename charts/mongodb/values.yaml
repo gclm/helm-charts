@@ -1,0 +1,40 @@
+image:
+  repository: docker.io/library/mongo
+  tag: "8.0"
+  pullPolicy: IfNotPresent
+
+auth:
+  username: root
+  # 留空则首次安装自动生成并写入 Secret；upgrade 用 lookup 复用，不轮换
+  password: ""
+
+# 副本集名。⚠️ mongodump --oplog 必须副本集；auth + replSet 必须 keyFile（chart 已内置）
+replicaSetName: rs0
+
+persistence:
+  storageClass: openebs-lvm
+  size: 30Gi
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 512Mi
+  limits:
+    cpu: "2"
+    memory: 3Gi
+
+backup:
+  enabled: true
+  schedule: "20 4 * * *"
+  timeZone: "Asia/Shanghai"
+  retentionDays: 7
+  nfs:
+    server: 192.168.10.201
+    path: /hdd-pool/backup/db
+
+freshnessAlert:
+  enabled: true
+  schedule: "10 6 * * *"
+  maxAgeHours: 26
+
+mode: standalone

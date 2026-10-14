@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "mysql.fullname" . }}
+  labels:
+    {{- include "mysql.labels" . | nindent 4 }}
+spec:
+  serviceName: {{ include "mysql.fullname" . }}
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "mysql.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "mysql.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: mysql
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args:
+            - --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}
+            - --server-id={{ .Values.serverId }}
+          ports:
+            - {name: mysql, containerPort: 3306}
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom: {secretKeyRef: {name: {{ include "mysql.fullname" . }}, key: MYSQL_ROOT_PASSWORD}}
+          volumeMounts:
+            - {name: data, mountPath: /var/lib/mysql}
+          readinessProbe:
+            exec: {command: ["mysqladmin", "ping", "-h", "127.0.0.1"]}
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: data
+          persistentVolumeClaim: {claimName: {{ include "mysql.fullname" . }}-data}

@@ -1,0 +1,39 @@
+# Default values for postgresql (210 cluster).
+
+image:
+  repository: docker.io/library/postgres
+  tag: "17-alpine"
+  pullPolicy: IfNotPresent
+
+auth:
+  # 留空则首次安装自动生成 32 位随机密码并写入 Secret；upgrade 用 lookup 复用，不轮换
+  password: ""
+
+persistence:
+  storageClass: openebs-lvm
+  size: 30Gi
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: "2"
+    memory: 2Gi
+
+backup:
+  enabled: true
+  schedule: "30 3 * * *"          # Asia/Shanghai
+  timeZone: "Asia/Shanghai"
+  retentionDays: 7
+  nfs:
+    server: 192.168.10.201
+    path: /hdd-pool/backup/db
+
+freshnessAlert:
+  enabled: true
+  schedule: "10 6 * * *"          # 备份 03:30 完成，06:10 仍无新目录 → Job 失败
+  maxAgeHours: 26
+
+# 计划中（Phase 5）：mode: standalone | cluster
+mode: standalone
