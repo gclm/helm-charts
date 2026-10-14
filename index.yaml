@@ -3,10 +3,10 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-10-14T14:04:18.510307544Z"
+    created: "2026-10-14T14:19:29.094091751Z"
     description: MongoDB 8.0 single-node replica set (oplog-ready) with NFS backup
       CronJob and freshness alert
-    digest: 8a0ed6f7230bc62234465e7d6073323520f4921cc3e1e51bd9c56f95337989e6
+    digest: f1405d0e82e16d52a962e2759eddeb51dd6df2081f23e629fe2c6dfec16938d7
     maintainers:
     - name: gclm
     name: mongodb
@@ -30,9 +30,9 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.4"
-    created: "2026-10-14T14:04:18.510641439Z"
+    created: "2026-10-14T14:19:29.094412034Z"
     description: MySQL 8.4 standalone with NFS backup CronJob and freshness alert
-    digest: afaf7fc98f067eff112715fae6b72ae73d84581708b1b2f003ea9a799bbe91df
+    digest: b5805a1290e6ddb355c70d0a5c28555b8903e5ce5407fcadfc2a168eff77aaa2
     maintainers:
     - name: gclm
     name: mysql
@@ -55,9 +55,9 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: 17-alpine
-    created: "2026-10-14T14:04:18.510979492Z"
+    created: "2026-10-14T14:19:29.094744475Z"
     description: PostgreSQL 17 standalone with NFS backup CronJob and freshness alert
-    digest: c2e0d6b3b5b7c4d22b8bdc3941ec3b16f412ff9ffb66c3fe4938a5c23d8223cb
+    digest: bba3acb204e45c00244435c9a10f34fe68cd007cf21008dc26b20e3542285d67
     maintainers:
     - name: gclm
     name: postgresql
@@ -80,10 +80,10 @@ entries:
   redis:
   - apiVersion: v2
     appVersion: 8-alpine
-    created: "2026-10-14T14:04:18.51130988Z"
+    created: "2026-10-14T14:19:29.095053752Z"
     description: Redis 8 standalone (AOF+RDB) with NFS backup CronJob and freshness
       alert
-    digest: bb2b6f6170d5aca39123c81beeb08b96575486ed4fbc839f738a7ff0aedfe3f5
+    digest: 3e6f5b3b006abbe7b910f6a361c628bc3b4d672741bc86f1c0591f9ab32df1c0
     maintainers:
     - name: gclm
     name: redis
@@ -104,4 +104,4 @@ entries:
     urls:
     - https://charts.xzim.top/redis-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-14T14:04:18.509772042Z"
+generated: "2026-10-14T14:19:29.093596564Z"
