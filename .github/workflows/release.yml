@@ -34,7 +34,8 @@ jobs:
           mkdir -p dist
           helm package charts/* -d dist/
           # merge with existing published index to keep version history
-          if curl -sfL --retry 2 https://charts.xzim.top/index.yaml -o old-index.yaml; then
+          # (raw.githubusercontent.com 不依赖 CF Pages 绑定状态)
+          if curl -sfL --retry 2 https://raw.githubusercontent.com/gclm/helm-charts/gh-pages/index.yaml -o old-index.yaml; then
             echo "merging with existing index"
             helm repo index dist --url https://charts.xzim.top --merge old-index.yaml
           else

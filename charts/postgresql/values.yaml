@@ -10,7 +10,7 @@ auth:
   password: ""
 
 persistence:
-  storageClass: openebs-lvm
+  storageClass: ""   # "" = 集群默认 StorageClass
   size: 30Gi
 
 resources:
@@ -23,12 +23,22 @@ resources:
 
 backup:
   enabled: true
-  schedule: "30 3 * * *"          # Asia/Shanghai
+  schedule: "30 3 * * *"
   timeZone: "Asia/Shanghai"
   retentionDays: 7
+  # 备份落点，三档：
+  #   pvc —— 默认。备份写专用 PVC（<release>-backup），零外部依赖，任何集群开箱即用。
+  #          注意与 DB 同集群同存储池，防整机损毁能力弱，生产建议 nfs/s3 档。
+  #   nfs —— 备份写外部 NFS 共享（如独立备份机），需给 nfs.server/path。
+  #   s3  —— 规划中（restic/对象存储，异地容灾档），暂未实现。
+  destination: pvc
+  pvc:
+    storageClass: ""   # "" = 集群默认 StorageClass
+    size: 10Gi
   nfs:
-    server: 192.168.10.201
-    path: /hdd-pool/backup/db
+    server: ""         # destination=nfs 时必填，如 192.168.10.201
+    path: ""           # 如 /hdd-pool/backup/db（导出根，各库写各自子目录）
+
 
 freshnessAlert:
   enabled: true

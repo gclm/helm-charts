@@ -1,4 +1,7 @@
 {{- if and .Values.backup.enabled .Values.freshnessAlert.enabled }}
+{{- if and .Values.backup.enabled (eq .Values.backup.destination "nfs") (or (not .Values.backup.nfs.server) (not .Values.backup.nfs.path)) }}
+{{- fail "backup.destination=nfs requires backup.nfs.server and backup.nfs.path" }}
+{{- end }}
 apiVersion: batch/v1
 kind: CronJob
 metadata:
@@ -38,7 +41,11 @@ spec:
                 - {name: backup, mountPath: /backup}
           volumes:
             - name: backup
+              {{- if eq .Values.backup.destination "nfs" }}
               nfs:
                 server: {{ .Values.backup.nfs.server | quote }}
                 path: {{ .Values.backup.nfs.path | quote }}
+              {{- else }}
+              persistentVolumeClaim: {claimName: {{ include "redis.fullname" . }}-backup}
+              {{- end }}
 {{- end }}
