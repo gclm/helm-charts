@@ -1,0 +1,75 @@
+name: sync-appstore
+
+on:
+  schedule:
+    - cron: "0 20 * * 1"   # every Tuesday 04:00 CST
+  workflow_dispatch:
+    inputs:
+      upstream_ref:
+        description: "upstream ref (default: HEAD of main)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.16.4
+
+      - name: Clone upstream appstore (shallow, read-only)
+        run: |
+          git clone --depth 1 https://github.com/1Panel-dev/appstore /tmp/appstore
+          cd /tmp/appstore
+          REF="${{ github.event.inputs.upstream_ref }}"
+          if [ -n "$REF" ]; then git fetch --depth 1 origin "$REF" && git checkout FETCH_HEAD; fi
+          echo "UPSTREAM_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Install python deps
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Convert (idempotency gate: run twice, must be identical)
+        run: |
+          set -eu
+          python3 converter/convert.py --src /tmp/appstore --out generated --sha "$UPSTREAM_SHA"
+          python3 converter/convert.py --src /tmp/appstore --out /tmp/gen-check --sha "$UPSTREAM_SHA"
+          # keep governance files out of the diff
+          cp generated/README.md /tmp/gen-check/README.md 2>/dev/null || true
+          diff -r generated /tmp/gen-check
+          echo "idempotency gate passed"
+
+      - name: Lint all generated charts (0 failed or bail)
+        run: |
+          set -eu
+          fail=0
+          for d in generated/*/; do
+            [ -f "$d/Chart.yaml" ] || continue
+            helm lint "$d" >/dev/null || { fail=1; echo "LINT FAIL: $d"; }
+          done
+          [ "$fail" -eq 0 ] && echo "lint gate passed"
+
+      - name: Commit generated/ if changed
+        run: |
+          set -eu
+          git config user.name "appstore-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add generated/
+          if git diff --cached --quiet; then
+            echo "no changes vs last sync"
+          else
+            git commit -m "chore(sync): appstore @ ${UPSTREAM_SHA:0:12}"
+            git push
+          fi
+
+      - name: Conversion report summary
+        run: |
+          head -4 generated/CONVERSION-REPORT.md
+          echo "..."
+          echo "full report: generated/CONVERSION-REPORT.md (committed)"
