@@ -36,6 +36,8 @@ helm install pg gclm/postgresql -n db --create-namespace
   - `backup.destination: pvc`（**默认**）——备份写专用 PVC，零外部依赖，任何集群开箱即用
   - `backup.destination: nfs`——备份写外部 NFS（需 `backup.nfs.server/path`，适合有独立备份机的环境）
   - `s3`（规划中，restic/对象存储，异地容灾档）
+  - 注：若集群默认 SC 为 `WaitForFirstConsumer`（local-path/localpv 常见），备份 PVC 在首次备份时才绑定，
+    `helm install --wait` 可能因此超时报 `failed`——资源会正常工作，属预期；或安装时不加 `--wait`
 - 备份新鲜度告警：每库一个 `*-backup-fresh` CronJob，最新备份目录超过 `freshnessAlert.maxAgeHours`（默认 26h）则 Job 失败（Q22 教训：备份静默死亡不可接受）
 - 密码：`auth.password` 显式指定，或留空自动生成（`lookup` 复用，upgrade 不轮换）
 - chart 保持环境中立；某环境的定制（SC 名、NFS 地址等）用部署时 values override 注入
