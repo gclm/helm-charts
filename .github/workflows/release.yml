@@ -3,7 +3,7 @@ name: release-charts
 on:
   push:
     branches: [main]
-    paths: ['charts/**']
+    paths: ['charts/**', 'generated/**', 'overlay/**']
   workflow_dispatch:
 
 permissions:
@@ -20,10 +20,17 @@ jobs:
         with:
           version: v3.16.4
 
+      - name: Discover charts (charts/ + generated/)
+        run: |
+          CHARTS=$(find charts generated -mindepth 2 -maxdepth 2 -name Chart.yaml 2>/dev/null | xargs -n1 dirname | tr '\n' ' ')
+          if [ -z "$CHARTS" ]; then echo "no charts found, nothing to do"; exit 1; fi
+          echo "CHARTS=$CHARTS" >> "$GITHUB_ENV"
+          echo "discovered: $CHARTS"
+
       - name: Lint all charts
         run: |
           set -eu
-          for c in charts/*/; do
+          for c in $CHARTS; do
             echo "== linting ${c}"
             helm lint "${c}" --strict
           done
@@ -32,7 +39,7 @@ jobs:
         run: |
           set -eu
           mkdir -p dist
-          helm package charts/* -d dist/
+          helm package $CHARTS -d dist/
           # merge with existing published index to keep version history
           # (raw.githubusercontent.com 不依赖 CF Pages 绑定状态)
           if curl -sfL --retry 2 https://raw.githubusercontent.com/gclm/helm-charts/gh-pages/index.yaml -o old-index.yaml; then
