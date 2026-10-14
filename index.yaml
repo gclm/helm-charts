@@ -1,0 +1,57 @@
+apiVersion: v1
+entries:
+  mongodb:
+  - apiVersion: v2
+    appVersion: "8.0"
+    created: "2026-10-14T13:50:26.267490852Z"
+    description: MongoDB 8.0 single-node replica set (oplog-ready) with NFS backup
+      CronJob and freshness alert
+    digest: 7da82df36255401c9d9d0786624c15231cc80caa2bec238a272237c405a0b250
+    maintainers:
+    - name: gclm
+    name: mongodb
+    type: application
+    urls:
+    - https://charts.xzim.top/mongodb-0.1.0.tgz
+    version: 0.1.0
+  mysql:
+  - apiVersion: v2
+    appVersion: "8.4"
+    created: "2026-10-14T13:50:26.267829385Z"
+    description: MySQL 8.4 standalone with NFS backup CronJob and freshness alert
+    digest: 4ce88eb9e6549cf70274b1d596d5687e7ff749d661f2b82d06a9fe3a9da96522
+    maintainers:
+    - name: gclm
+    name: mysql
+    type: application
+    urls:
+    - https://charts.xzim.top/mysql-0.1.0.tgz
+    version: 0.1.0
+  postgresql:
+  - apiVersion: v2
+    appVersion: 17-alpine
+    created: "2026-10-14T13:50:26.268125099Z"
+    description: PostgreSQL 17 standalone with NFS backup CronJob and freshness alert
+    digest: 48d589fe48e5764cf4697c2eeb674b14c3f64c0be53bd3b2042986e6056fac9d
+    maintainers:
+    - name: gclm
+    name: postgresql
+    type: application
+    urls:
+    - https://charts.xzim.top/postgresql-0.1.0.tgz
+    version: 0.1.0
+  redis:
+  - apiVersion: v2
+    appVersion: 8-alpine
+    created: "2026-10-14T13:50:26.26843594Z"
+    description: Redis 8 standalone (AOF+RDB) with NFS backup CronJob and freshness
+      alert
+    digest: 2b92c7d3c12ebc5f8c4f26875f7cea00ad088c42c0755eb8db71ddd9c74fa285
+    maintainers:
+    - name: gclm
+    name: redis
+    type: application
+    urls:
+    - https://charts.xzim.top/redis-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-10-14T13:50:26.267025081Z"
