@@ -605,11 +605,12 @@ def main():
             if not values.get("services"):
                 report["failed"].append(f"{app_name}: no convertible service")
                 continue
-            write_chart(out_root, app_name, ver_norm, meta, values, args.sha, license_text)
+            chart_name = sanitize_name(app_name)
+            write_chart(out_root, chart_name, ver_norm, meta, values, args.sha, license_text)
             content_sha = hashlib.sha256(
-                (out_root / app_name / "values.yaml").read_bytes()).hexdigest()[:12]
-            report["success"].append(f"{app_name} ({ver_norm}) sha:{content_sha}")
-            manifest["apps"][app_name] = {"version": ver_norm, "sha": content_sha, "status": "success"}
+                (out_root / chart_name / "values.yaml").read_bytes()).hexdigest()[:12]
+            report["success"].append(f"{app_name} -> chart {chart_name} ({ver_norm}) sha:{content_sha}")
+            manifest["apps"][app_name] = {"chart": chart_name, "version": ver_norm, "sha": content_sha, "status": "success"}
         except Exception as e:  # noqa: BLE001 - converter must not die on one app
             report["failed"].append(f"{app_name}: {type(e).__name__}: {e}")
 
