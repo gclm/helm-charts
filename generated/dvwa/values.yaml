@@ -1,0 +1,36 @@
+configMaps: {}
+env:
+  DVWA_DEFAULT_LOCALE: zh
+  DVWA_RECAPTCHA_PRIVATE_KEY: ''
+  DVWA_RECAPTCHA_PUBLIC_KEY: ''
+  DVWA_SECURITY_LEVEL: low
+  PANEL_DB_NAME: dvwa
+  PANEL_DB_USER: dvwa
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  dvwa:
+    env:
+    - name: DB_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DEFAULT_SECURITY_LEVEL
+      valueFromEnv: DVWA_SECURITY_LEVEL
+    - name: RECAPTCHA_PUBLIC_KEY
+      valueFromEnv: DVWA_RECAPTCHA_PUBLIC_KEY
+    - name: RECAPTCHA_PRIVATE_KEY
+      valueFromEnv: DVWA_RECAPTCHA_PRIVATE_KEY
+    - name: DEFAULT_LOCALE
+      valueFromEnv: DVWA_DEFAULT_LOCALE
+    image:
+      digest: sha256:1af2cedda7617e4d22937e61c98bbf71d8b74b98e46f5e41dd6aa0a5183311b0
+      registry: ghcr.io
+      repository: digininja/dvwa
+      tag: null
+    port: 80
+    volumeMounts: []

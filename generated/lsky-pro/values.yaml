@@ -1,0 +1,21 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /var/www/html/
+    size: 10Gi
+secrets: {}
+services:
+  lskypro:
+    env:
+    - name: WEB_PORT
+      value: '8089'
+    image:
+      digest: sha256:64ad14908a41c818f023233253d2303bf091bf53884fd8e4faa32e48dc74f044
+      registry: ''
+      repository: halcyonazure/lsky-pro-docker
+      tag: null
+    port: 8089
+    volumeMounts:
+    - mountPath: /var/www/html/
+      name: vol-data

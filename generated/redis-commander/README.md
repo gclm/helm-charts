@@ -1,0 +1,13 @@
+# Redis-Commander
+
+Redis Web 管理工具
+
+- 上游: 1Panel-dev/appstore `apps/redis-commander` @ `ab927b211921`
+- 分类: unknown
+- 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
+
+## 安装
+
+```bash
+helm install redis-commander gclm/redis-commander
+```

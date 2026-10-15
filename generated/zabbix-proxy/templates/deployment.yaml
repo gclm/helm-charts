@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: {{ $name }}
-          image: "{{ if $svc.image.registry }}{{ $svc.image.registry }}/{{ end }}{{ $svc.image.repository }}:{{ $svc.image.tag }}"
+          image: "{{ if $svc.image.registry }}{{ $svc.image.registry }}/{{ end }}{{ $svc.image.repository }}{{ if $svc.image.digest }}@{{ $svc.image.digest }}{{ else }}:{{ $svc.image.tag }}{{ end }}"
           {{- with $svc.command }}
           command:
             {{- toYaml . | nindent 12 }}

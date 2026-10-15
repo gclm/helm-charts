@@ -294,6 +294,12 @@
       "status": "success",
       "version": "32.4.1"
     },
+    "dvwa": {
+      "chart": "dvwa",
+      "sha": "c413113ccd43",
+      "status": "success",
+      "version": "0.0.0-d20261015.g1af2c"
+    },
     "easyimage2": {
       "chart": "easyimage2",
       "sha": "b1fe77982e5e",
@@ -305,6 +311,12 @@
       "sha": "ceb2a576533c",
       "status": "success",
       "version": "6.3.1"
+    },
+    "excalidraw": {
+      "chart": "excalidraw",
+      "sha": "d4ba6ba2cd20",
+      "status": "success",
+      "version": "0.0.0-d20261015.gf7ee1"
     },
     "ezbookkeeping": {
       "chart": "ezbookkeeping",
@@ -444,6 +456,12 @@
       "status": "success",
       "version": "10.11.11"
     },
+    "jsonhero": {
+      "chart": "jsonhero",
+      "sha": "2e26d631596a",
+      "status": "success",
+      "version": "0.0.0-d20261015.g1e514"
+    },
     "jupyter-notebook": {
       "chart": "jupyter-notebook",
       "sha": "9103070115f0",
@@ -557,6 +575,12 @@
       "sha": "ea2b27f3a87b",
       "status": "success",
       "version": "1.45.0"
+    },
+    "lsky-pro": {
+      "chart": "lsky-pro",
+      "sha": "f07f86d44b32",
+      "status": "success",
+      "version": "0.0.0-d20261015.g64ad1"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -852,6 +876,12 @@
       "status": "success",
       "version": "4.3.6+management-alpine"
     },
+    "redis-commander": {
+      "chart": "redis-commander",
+      "sha": "1c92cb2ee09f",
+      "status": "success",
+      "version": "0.0.0-d20261015.g19cd0"
+    },
     "redpanda-console": {
       "chart": "redpanda-console",
       "sha": "45157a82eb5e",
@@ -959,6 +989,12 @@
       "sha": "f7531ebb492a",
       "status": "success",
       "version": "1.11.18"
+    },
+    "teable": {
+      "chart": "teable",
+      "sha": "7a6c615b3e9b",
+      "status": "success",
+      "version": "0.0.0-d20261015.ge3d76"
     },
     "teamspeak": {
       "chart": "teamspeak",

@@ -1,7 +1,7 @@
 # Conversion report
 
 - upstream: 1Panel-dev/appstore @ `ab927b211921121c70e718ef5a14259cff6cf829`
-- success: **189** · skipped: **74** · failed: **0**
+- success: **195** · skipped: **68** · failed: **0**
 
 ## Success
 
@@ -54,8 +54,10 @@
 - dosgame -> chart dosgame (3.9.6) sha:058f0cee2dd0
 - dotnet -> chart dotnet (10.0.0) sha:ee852a4cd829
 - drawio -> chart drawio (32.4.1) sha:9b44544bf70c
+- dvwa -> chart dvwa (0.0.0-d20261015.g1af2c) sha:c413113ccd43
 - easyimage2 -> chart easyimage2 (2.8.6) sha:b1fe77982e5e
 - emqx -> chart emqx (6.3.1) sha:ceb2a576533c
+- excalidraw -> chart excalidraw (0.0.0-d20261015.gf7ee1) sha:d4ba6ba2cd20
 - ezbookkeeping -> chart ezbookkeeping (2.0.1) sha:2405cebc7c33
 - filebrowser -> chart filebrowser (2.63.23) sha:ad6fd30a5d6a
 - filecodebox -> chart filecodebox (2.8.3) sha:8027cace9d7f
@@ -79,6 +81,7 @@
 - jaeger -> chart jaeger (1.76.0) sha:be7c9760de9d
 - java -> chart java (25.0.0) sha:cee3765a6c73
 - jellyfin -> chart jellyfin (10.11.11) sha:d29ee023e33f
+- jsonhero -> chart jsonhero (0.0.0-d20261015.g1e514) sha:2e26d631596a
 - jupyter-notebook -> chart jupyter-notebook (4.0.0) sha:9103070115f0
 - kafka -> chart kafka (4.0.0) sha:aca5fbcccf47
 - keycloak -> chart keycloak (26.8.1) sha:74cc131c32bb
@@ -98,6 +101,7 @@
 - localai -> chart localai (3.12.1+aio-cpu) sha:d44750123de9
 - logstash -> chart logstash (9.5.5) sha:5b805e0d40df
 - logto -> chart logto (1.45.0) sha:ea2b27f3a87b
+- lsky-pro -> chart lsky-pro (0.0.0-d20261015.g64ad1) sha:f07f86d44b32
 - maddy-mail -> chart maddy-mail (0.9.6) sha:3236bc32746e
 - mailserver -> chart mailserver (16.0.1) sha:ad1c41990a55
 - mattermost -> chart mattermost (11.11.1) sha:aec739411ab6
@@ -147,6 +151,7 @@
 - qiandao -> chart qiandao (20250803.0.0) sha:04cd130847cb
 - qinglong -> chart qinglong (2.23.0+debian) sha:12328eefc6ee
 - rabbitmq -> chart rabbitmq (4.3.6+management-alpine) sha:e46472bed39b
+- redis-commander -> chart redis-commander (0.0.0-d20261015.g19cd0) sha:1c92cb2ee09f
 - redpanda-console -> chart redpanda-console (3.12.0) sha:45157a82eb5e
 - rocketmq -> chart rocketmq (5.5.0) sha:491b9504c921
 - roundcube -> chart roundcube (1.7.4+apache) sha:ad6aba6a8dfe
@@ -165,6 +170,7 @@
 - sun-panel -> chart sun-panel (1.8.1) sha:a44b97431642
 - synapse -> chart synapse (1.162.0) sha:9d3bb938eaf7
 - tailchat -> chart tailchat (1.11.18) sha:f7531ebb492a
+- teable -> chart teable (0.0.0-d20261015.ge3d76) sha:7a6c615b3e9b
 - teamspeak -> chart teamspeak (3.13.8) sha:55050df0c54e
 - tinyrdm -> chart tinyrdm (1.2.7) sha:8248afa1d489
 - tomcat -> chart tomcat (10.1.43) sha:d5f4d3263161
@@ -203,11 +209,9 @@
 - clickhouse: Database category excluded (use handwritten charts/)
 - ddns-go: BLOCKED (ddns-go: network_mode host)
 - dockge: BLOCKED (dockge: docker socket mount)
-- dvwa: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - easytier: BLOCKED (easytier: privileged; easytier: network_mode host)
 - elasticsearch: Database category excluded (use handwritten charts/)
 - emlog: no semver version dir (latest/variant naming; pin via overlay when wanted)
-- excalidraw: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - forgejo: BLOCKED (forgejo: image not pinned to a tag (${IMAGE}))
 - forgejo-runner: BLOCKED (forgejo-runner: docker socket mount; dind: privileged)
 - frpc: BLOCKED (frpc: network_mode host; frpc: cap_add ['NET_ADMIN']; frpc: devices)
@@ -219,13 +223,11 @@
 - homepage: BLOCKED (homepage: docker socket mount)
 - influxdb: Database category excluded (use handwritten charts/)
 - jenkins: BLOCKED (jenkins: privileged; jenkins: docker socket mount)
-- jsonhero: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - jumpserver: BLOCKED (jumpserver: privileged)
 - keydb: Database category excluded (use handwritten charts/)
 - koodo-reader: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - kubepi: BLOCKED (kubepi: privileged)
 - llama-cpp: no semver version dir (latest/variant naming; pin via overlay when wanted)
-- lsky-pro: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - manticoresearch: Database category excluded (use handwritten charts/)
 - mariadb: Database category excluded (use handwritten charts/)
 - mcsmanager-daemon: BLOCKED (mcsm-daemon: docker socket mount)
@@ -247,7 +249,7 @@
 - openldap: Database category excluded (use handwritten charts/)
 - openlist: BLOCKED (openlist: image not pinned to a tag (${OPENLIST_IMAGE}))
 - openresty: BLOCKED (openresty: network_mode host)
-- openvpn: no semver version dir (latest/variant naming; pin via overlay when wanted)
+- openvpn: BLOCKED (openvpn: cap_add ['NET_ADMIN'])
 - php: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}); php: cap_add ['SYS_PTRACE'])
 - php5: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}))
 - php7: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}))
@@ -258,11 +260,9 @@
 - prometheus: Database category excluded (use handwritten charts/)
 - redis: Database category excluded (use handwritten charts/)
 - redis-cluster: Database category excluded (use handwritten charts/)
-- redis-commander: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - rsshub: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - starrocks: Database category excluded (use handwritten charts/)
 - tdengine: Database category excluded (use handwritten charts/)
-- teable: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - typesense: Database category excluded (use handwritten charts/)
 - valkey: Database category excluded (use handwritten charts/)
 - vexdb: Database category excluded (use handwritten charts/)

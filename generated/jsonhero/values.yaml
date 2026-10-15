@@ -1,0 +1,14 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  jsonhero:
+    env: []
+    image:
+      digest: sha256:1e514ed9fd9bd0efd42ff21c85c9aa2cca6c6f8ad7f76eac6ca39732b41dab21
+      registry: ''
+      repository: henryclw/jsonhero-web
+      tag: null
+    port: 8787
+    volumeMounts: []

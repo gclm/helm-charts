@@ -1,0 +1,29 @@
+configMaps: {}
+env:
+  PUBLIC_ORIGIN: http://<YOUR IP>:3000
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /app/.assets
+    size: 10Gi
+secrets: {}
+services:
+  teable:
+    env:
+    - name: PUBLIC_ORIGIN
+      valueFromEnv: PUBLIC_ORIGIN
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    - name: NEXT_ENV_IMAGES_ALL_REMOTE
+      value: 'true'
+    - name: BACKEND_CACHE_PROVIDER
+      value: redis
+    image:
+      digest: sha256:e3d761fb77ddce6266deb278a39937448968edf1473faa1695579d741ce36d90
+      registry: ghcr.io
+      repository: teableio/teable
+      tag: null
+    port: 3000
+    volumeMounts:
+    - mountPath: /app/.assets
+      name: vol-data
