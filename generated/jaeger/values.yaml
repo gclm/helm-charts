@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  jaeger:
+    env: []
+    image:
+      registry: ''
+      repository: jaegertracing/all-in-one
+      tag: 1.76.0
+    port: 16686
+    volumeMounts: []

@@ -1,0 +1,33 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-audiobooks:
+    mountPath: /audiobooks
+    size: 10Gi
+  vol-data-config:
+    mountPath: /config
+    size: 10Gi
+  vol-data-metadata:
+    mountPath: /metadata
+    size: 10Gi
+  vol-data-podcasts:
+    mountPath: /podcasts
+    size: 10Gi
+secrets: {}
+services:
+  audiobookshelf:
+    env: []
+    image:
+      registry: ''
+      repository: advplyr/audiobookshelf
+      tag: 2.37.1
+    port: 80
+    volumeMounts:
+    - mountPath: /audiobooks
+      name: vol-data-audiobooks
+    - mountPath: /podcasts
+      name: vol-data-podcasts
+    - mountPath: /config
+      name: vol-data-config
+    - mountPath: /metadata
+      name: vol-data-metadata

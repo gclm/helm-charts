@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /usr/share/logstash/data
+    size: 10Gi
+  vol-pipeline:
+    mountPath: /usr/share/logstash/pipeline
+    size: 10Gi
+secrets: {}
+services:
+  logstash:
+    env: []
+    image:
+      registry: ''
+      repository: logstash
+      tag: 9.5.5
+    port: 5044
+    volumeMounts:
+    - mountPath: /usr/share/logstash/pipeline
+      name: vol-pipeline
+    - mountPath: /usr/share/logstash/data
+      name: vol-data

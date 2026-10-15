@@ -1,0 +1,24 @@
+configMaps: {}
+env:
+  PGADMIN_DEFAULT_EMAIL: admin@1panel.cn
+  PGADMIN_DEFAULT_PASSWORD: hgraZPD3v00I5AwuzSpL
+persistence:
+  vol-data:
+    mountPath: /var/lib/pgadmin
+    size: 10Gi
+secrets: {}
+services:
+  pgadmin4:
+    env:
+    - name: PGADMIN_DEFAULT_EMAIL
+      valueFromEnv: PGADMIN_DEFAULT_EMAIL
+    - name: PGADMIN_DEFAULT_PASSWORD
+      valueFromEnv: PGADMIN_DEFAULT_PASSWORD
+    image:
+      registry: ''
+      repository: dpage/pgadmin4
+      tag: '9.18'
+    port: 80
+    volumeMounts:
+    - mountPath: /var/lib/pgadmin
+      name: vol-data

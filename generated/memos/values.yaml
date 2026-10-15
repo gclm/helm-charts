@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-memos:
+    mountPath: /var/opt/memos
+    size: 10Gi
+secrets: {}
+services:
+  memos:
+    env: []
+    image:
+      registry: ''
+      repository: neosmemo/memos
+      tag: 0.31.0
+    port: 5230
+    volumeMounts:
+    - mountPath: /var/opt/memos
+      name: vol-memos

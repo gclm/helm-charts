@@ -1,0 +1,30 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-backups:
+    mountPath: /app/backups
+    size: 10Gi
+  vol-data-config-db:
+    mountPath: /app/config.db
+    size: 10Gi
+  vol-data-pst-db:
+    mountPath: /app/pst.db
+    size: 10Gi
+secrets: {}
+services:
+  pst:
+    env:
+    - name: PST_PORT
+      value: '8080'
+    image:
+      registry: ''
+      repository: jokerwho/palworld-server-tool
+      tag: 0.12.2
+    port: 8080
+    volumeMounts:
+    - mountPath: /app/backups
+      name: vol-data-backups
+    - mountPath: /app/pst.db
+      name: vol-data-pst-db
+    - mountPath: /app/config.db
+      name: vol-data-config-db

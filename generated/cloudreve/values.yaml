@@ -1,0 +1,34 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: cloudreve
+  PANEL_DB_TYPE: postgres
+  PANEL_DB_USER: cloudreve
+  PANEL_REDIS_ROOT_PASSWORD: ''
+persistence:
+  vol-data:
+    mountPath: /cloudreve/data
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  cloudreve:
+    env:
+    - name: CR_CONF_Database.Type
+      valueFromEnv: PANEL_DB_TYPE
+    - name: CR_CONF_Database.Name
+      valueFromEnv: PANEL_DB_NAME
+    - name: CR_CONF_Database.User
+      valueFromEnv: PANEL_DB_USER
+    - name: CR_CONF_Database.Password
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: CR_CONF_Redis.Password
+      valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    image:
+      registry: ''
+      repository: cloudreve/cloudreve
+      tag: 4.19.1
+    port: 5212
+    volumeMounts:
+    - mountPath: /cloudreve/data
+      name: vol-data

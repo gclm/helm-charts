@@ -1,0 +1,56 @@
+configMaps: {}
+env:
+  FLARUM_EXTERNAL_URL: http://localhost:40020
+  PANEL_DB_NAME: flarum
+  PANEL_DB_PREFIX: flarum_
+  PANEL_DB_USER: flarum
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  flarum:
+    env:
+    - name: TZ
+      value: Asia/Shanghai
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: MEMORY_LIMIT
+      value: 256M
+    - name: UPLOAD_MAX_SIZE
+      value: 256M
+    - name: CLEAR_ENV
+      value: 'yes'
+    - name: OPCACHE_MEM_SIZE
+      value: 128M
+    - name: LISTEN_IPV6
+      value: 'true'
+    - name: REAL_IP_FROM
+      value: 0.0.0.0/32
+    - name: DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DB_PREFIX
+      valueFromEnv: PANEL_DB_PREFIX
+    - name: DB_NOPREFIX
+      value: 'false'
+    - name: DB_TIMEOUT
+      value: '60'
+    - name: FLARUM_BASE_URL
+      valueFromEnv: FLARUM_EXTERNAL_URL
+    image:
+      registry: ''
+      repository: crazymax/flarum
+      tag: 1.8.19
+    port: 8000
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

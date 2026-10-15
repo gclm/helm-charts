@@ -1,0 +1,86 @@
+configMaps: {}
+env:
+  PANEL_DB_HOST: ''
+  PANEL_DB_NAME: de
+  PANEL_DB_USER: de
+persistence:
+  vol-cache:
+    mountPath: /opt/dataease3.0/cache
+    size: 10Gi
+  vol-data-appearance:
+    mountPath: /opt/dataease3.0/data/appearance
+    size: 10Gi
+  vol-data-driver:
+    mountPath: /opt/dataease3.0/data/driver
+    size: 10Gi
+  vol-data-exportData:
+    mountPath: /opt/dataease3.0/data/exportData
+    size: 10Gi
+  vol-data-font:
+    mountPath: /opt/dataease3.0/data/font
+    size: 10Gi
+  vol-data-geo:
+    mountPath: /opt/dataease3.0/data/geo
+    size: 10Gi
+  vol-data-i18n:
+    mountPath: /opt/dataease3.0/data/i18n
+    size: 10Gi
+  vol-data-map:
+    mountPath: /opt/dataease3.0/data/map
+    size: 10Gi
+  vol-data-plugin:
+    mountPath: /opt/dataease3.0/data/plugin
+    size: 10Gi
+  vol-data-report:
+    mountPath: /opt/dataease3.0/data/report
+    size: 10Gi
+  vol-data-static-resource:
+    mountPath: /opt/dataease3.0/data/static-resource
+    size: 10Gi
+  vol-logs:
+    mountPath: /opt/dataease3.0/logs
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  dataease:
+    env:
+    - name: PANEL_DB_HOST
+      valueFromEnv: PANEL_DB_HOST
+    - name: PANEL_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: PANEL_DB_USER_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PANEL_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    image:
+      registry: registry.cn-qingdao.aliyuncs.com
+      repository: dataease/dataease
+      tag: v3.1.0
+    port: 8100
+    volumeMounts:
+    - mountPath: /opt/dataease3.0/logs
+      name: vol-logs
+    - mountPath: /opt/dataease3.0/data/static-resource
+      name: vol-data-static-resource
+    - mountPath: /opt/dataease3.0/cache
+      name: vol-cache
+    - mountPath: /opt/dataease3.0/data/geo
+      name: vol-data-geo
+    - mountPath: /opt/dataease3.0/data/map
+      name: vol-data-map
+    - mountPath: /opt/dataease3.0/data/appearance
+      name: vol-data-appearance
+    - mountPath: /opt/dataease3.0/data/exportData
+      name: vol-data-exportData
+    - mountPath: /opt/dataease3.0/data/plugin
+      name: vol-data-plugin
+    - mountPath: /opt/dataease3.0/data/font
+      name: vol-data-font
+    - mountPath: /opt/dataease3.0/data/driver
+      name: vol-data-driver
+    - mountPath: /opt/dataease3.0/data/i18n
+      name: vol-data-i18n
+    - mountPath: /opt/dataease3.0/data/report
+      name: vol-data-report

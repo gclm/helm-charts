@@ -1,0 +1,51 @@
+configMaps: {}
+env:
+  IMAP_SERVER: imap.sina.com
+  IMAP_SERVER_PORT: 143
+  PANEL_DB_NAME: de
+  PANEL_DB_TYPE: mysql
+  PANEL_DB_USER: de
+  SMTP_SERVER: smtp.sina.com
+  SMTP_SERVER_PORT: 587
+  UPLOAD_MAX_FILESIZE: 5M
+persistence:
+  vol-data:
+    mountPath: /var/www/html
+    size: 10Gi
+  vol-logs:
+    mountPath: /var/log/apache2
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  roundcube:
+    env:
+    - name: ROUNDCUBEMAIL_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: ROUNDCUBEMAIL_DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: ROUNDCUBEMAIL_DB_TYPE
+      valueFromEnv: PANEL_DB_TYPE
+    - name: ROUNDCUBEMAIL_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: ROUNDCUBEMAIL_DEFAULT_HOST
+      valueFromEnv: IMAP_SERVER
+    - name: ROUNDCUBEMAIL_DEFAULT_PORT
+      valueFromEnv: IMAP_SERVER_PORT
+    - name: ROUNDCUBEMAIL_SMTP_SERVER
+      valueFromEnv: SMTP_SERVER
+    - name: ROUNDCUBEMAIL_SMTP_PORT
+      valueFromEnv: SMTP_SERVER_PORT
+    - name: ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE
+      valueFromEnv: UPLOAD_MAX_FILESIZE
+    image:
+      registry: ''
+      repository: roundcube/roundcubemail
+      tag: 1.7.4-apache
+    port: 80
+    volumeMounts:
+    - mountPath: /var/log/apache2
+      name: vol-logs
+    - mountPath: /var/www/html
+      name: vol-data

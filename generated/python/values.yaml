@@ -1,0 +1,24 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-env:
+    mountPath: /.env
+    size: 10Gi
+  vol-run-sh:
+    mountPath: /run.sh
+    size: 10Gi
+secrets: {}
+services:
+  python:
+    command:
+    - bash /run.sh
+    env: []
+    image:
+      registry: ''
+      repository: python
+      tag: ${PYTHON_VERSION}
+    volumeMounts:
+    - mountPath: /run.sh
+      name: vol-run-sh
+    - mountPath: /.env
+      name: vol-env

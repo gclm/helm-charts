@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-showdocdata-html:
+    mountPath: /var/www/html
+    size: 10Gi
+secrets: {}
+services:
+  showdoc:
+    env: []
+    image:
+      registry: ''
+      repository: star7th/showdoc
+      tag: v3.9.4
+    port: 80
+    volumeMounts:
+    - mountPath: /var/www/html
+      name: vol-showdocdata-html

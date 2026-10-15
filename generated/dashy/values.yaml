@@ -1,0 +1,29 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-item-icons:
+    mountPath: /app/user-data/item-icons
+    size: 10Gi
+  vol-data-user-data-conf-yml:
+    mountPath: /app/user-data/conf.yml
+    size: 10Gi
+secrets: {}
+services:
+  dashy:
+    env:
+    - name: NODE_ENV
+      value: production
+    - name: UID
+      value: '1000'
+    - name: GID
+      value: '1000'
+    image:
+      registry: ''
+      repository: lissy93/dashy
+      tag: 4.8.2
+    port: 8080
+    volumeMounts:
+    - mountPath: /app/user-data/conf.yml
+      name: vol-data-user-data-conf-yml
+    - mountPath: /app/user-data/item-icons
+      name: vol-data-item-icons

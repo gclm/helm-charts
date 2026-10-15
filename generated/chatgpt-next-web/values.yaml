@@ -1,0 +1,29 @@
+configMaps: {}
+env:
+  API_BASE_URL: https://api.openai.com
+  API_KEY: sk-xxx
+  PROXY: ''
+  WHITE_WEBDAV_ENDPOINTS: ''
+persistence: {}
+secrets:
+  SECRET_KEY:
+    generate: true
+services:
+  chatgpt-next-web:
+    env:
+    - name: OPENAI_API_KEY
+      valueFromEnv: API_KEY
+    - name: CODE
+      valueFromSecret: SECRET_KEY
+    - name: PROXY_URL
+      valueFromEnv: PROXY
+    - name: BASE_URL
+      valueFromEnv: API_BASE_URL
+    - name: WHITE_WEBDAV_ENDPOINTS
+      valueFromEnv: WHITE_WEBDAV_ENDPOINTS
+    image:
+      registry: ''
+      repository: yidadaa/chatgpt-next-web
+      tag: v2.16.1
+    port: 3000
+    volumeMounts: []

@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /opt/stalwart
+    size: 10Gi
+secrets: {}
+services:
+  stalwart-mail:
+    env: []
+    image:
+      registry: ''
+      repository: stalwartlabs/stalwart
+      tag: v0.16.26-alpine
+    port: 443
+    volumeMounts:
+    - mountPath: /opt/stalwart
+      name: vol-data

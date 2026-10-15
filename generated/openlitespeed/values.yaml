@@ -1,0 +1,46 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data-acme:
+    mountPath: /root/.acme.sh/
+    size: 10Gi
+  vol-data-bin-container:
+    mountPath: /usr/local/bin
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /usr/local/lsws/logs/
+    size: 10Gi
+  vol-data-lsws-admin-conf:
+    mountPath: /usr/local/lsws/admin/conf
+    size: 10Gi
+  vol-data-lsws-conf:
+    mountPath: /usr/local/lsws/conf
+    size: 10Gi
+  vol-data-sites:
+    mountPath: /var/www/vhosts/
+    size: 10Gi
+secrets: {}
+services:
+  litespeed:
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: litespeedtech/openlitespeed
+      tag: 1.8.4-lsphp81
+    port: 80
+    volumeMounts:
+    - mountPath: /usr/local/lsws/conf
+      name: vol-data-lsws-conf
+    - mountPath: /usr/local/lsws/admin/conf
+      name: vol-data-lsws-admin-conf
+    - mountPath: /usr/local/bin
+      name: vol-data-bin-container
+    - mountPath: /var/www/vhosts/
+      name: vol-data-sites
+    - mountPath: /root/.acme.sh/
+      name: vol-data-acme
+    - mountPath: /usr/local/lsws/logs/
+      name: vol-data-logs

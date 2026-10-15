@@ -1,0 +1,26 @@
+configMaps: {}
+env:
+  OPENAI_API_KEY: password
+  OPENAI_MODEL_LIST: ''
+  OPENAI_PROXY_URL: https://api.openai.com/v1
+persistence: {}
+secrets:
+  ACCESS_CODE:
+    generate: true
+services:
+  lobe-chat:
+    env:
+    - name: OPENAI_API_KEY
+      valueFromEnv: OPENAI_API_KEY
+    - name: OPENAI_PROXY_URL
+      valueFromEnv: OPENAI_PROXY_URL
+    - name: ACCESS_CODE
+      valueFromSecret: ACCESS_CODE
+    - name: OPENAI_MODEL_LIST
+      valueFromEnv: OPENAI_MODEL_LIST
+    image:
+      registry: ''
+      repository: lobehub/lobe-chat
+      tag: 1.143.3
+    port: 3210
+    volumeMounts: []

@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  kkfileview:
+    env: []
+    image:
+      registry: ''
+      repository: keking/kkfileview
+      tag: 4.1.0
+    port: 8012
+    volumeMounts: []

@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  sentinel-dashboard:
+    env: []
+    image:
+      registry: ''
+      repository: bladex/sentinel-dashboard
+      tag: 1.8.10
+    port: 8858
+    volumeMounts: []

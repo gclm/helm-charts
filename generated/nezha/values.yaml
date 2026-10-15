@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /dashboard/data
+    size: 10Gi
+secrets: {}
+services:
+  dashboard:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: nezhahq/nezha
+      tag: v2.3.18
+    port: 8008
+    volumeMounts:
+    - mountPath: /dashboard/data
+      name: vol-data

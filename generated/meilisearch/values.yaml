@@ -1,0 +1,42 @@
+configMaps: {}
+env:
+  MEILI_NO_ANALYTICS: 'true'
+persistence:
+  vol-data:
+    mountPath: /meili_data
+    size: 10Gi
+  vol-dumps:
+    mountPath: /dumps
+    size: 10Gi
+  vol-snapshots:
+    mountPath: /snapshots
+    size: 10Gi
+secrets:
+  MEILI_MASTER_KEY:
+    generate: true
+services:
+  meilisearch:
+    command:
+    - "sh -c ' if [ \"${MEILI_NO_ANALYTICS}\" = \"true\" ]; then\n  /bin/meilisearch\n\
+      else\n  /bin/meilisearch --no-analytics\nfi'\n"
+    env:
+    - name: MEILI_UPGRADE_DB
+      value: 'True'
+    - name: MEILI_CONFIG_FILE_PATH
+      value: /config/config.toml
+    - name: MEILI_MASTER_KEY
+      valueFromSecret: MEILI_MASTER_KEY
+    - name: MEILI_NO_ANALYTICS
+      valueFromEnv: MEILI_NO_ANALYTICS
+    image:
+      registry: ''
+      repository: getmeili/meilisearch
+      tag: v1.55.0
+    port: 7700
+    volumeMounts:
+    - mountPath: /meili_data
+      name: vol-data
+    - mountPath: /dumps
+      name: vol-dumps
+    - mountPath: /snapshots
+      name: vol-snapshots

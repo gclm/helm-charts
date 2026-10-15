@@ -1,0 +1,49 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: typecho
+  PANEL_DB_USER: typecho
+  TYPECHO_EXTERNAL_URL: http://localhost:8080
+  TYPECHO_USER_MAIL: typecho@typecho.com
+  TYPECHO_USER_NAME: typecho
+  TYPECHO_USER_PASSWORD: typecho
+persistence:
+  vol-data:
+    mountPath: /app
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  typecho:
+    command:
+    - /bin/bash
+    - -c
+    - "set -e\n# Refresh core files while preserving config.inc.php, usr and .htaccess.\n\
+      for file in admin install var index.php install.php; do\n  rm -rf \"/app/$$file\"\
+      \n  cp -a \"/usr/src/typecho/$$file\" \"/app/$$file\"\n  chown -R www-data:www-data\
+      \ \"/app/$$file\"\ndone\nexec /bin/init_typecho apache\n"
+    env:
+    - name: TYPECHO_INSTALL
+      value: '1'
+    - name: TYPECHO_DB_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: TYPECHO_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: TYPECHO_DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: TYPECHO_USER_NAME
+      valueFromEnv: TYPECHO_USER_NAME
+    - name: TYPECHO_USER_PASSWORD
+      valueFromEnv: TYPECHO_USER_PASSWORD
+    - name: TYPECHO_USER_MAIL
+      valueFromEnv: TYPECHO_USER_MAIL
+    - name: TYPECHO_SITE_URL
+      valueFromEnv: TYPECHO_EXTERNAL_URL
+    image:
+      registry: ''
+      repository: joyqi/typecho
+      tag: 1.3.0-php8.2-apache
+    port: 80
+    volumeMounts:
+    - mountPath: /app
+      name: vol-data

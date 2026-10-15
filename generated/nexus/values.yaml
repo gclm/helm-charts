@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /nexus-data
+    size: 10Gi
+secrets: {}
+services:
+  nexus:
+    env:
+    - name: TZ
+      value: Asia/Shanghai
+    image:
+      registry: ''
+      repository: sonatype/nexus3
+      tag: 3.96.4
+    port: 8081
+    volumeMounts:
+    - mountPath: /nexus-data
+      name: vol-data

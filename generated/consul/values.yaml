@@ -1,0 +1,32 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-config:
+    mountPath: /consul/config
+    size: 10Gi
+  vol-data-data:
+    mountPath: /consul/data
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /consul/logs
+    size: 10Gi
+secrets: {}
+services:
+  consul:
+    command:
+    - consul agent -server -bootstrap-expect=1 -client=0.0.0.0 -ui -data-dir=/consul/data
+      -node=consul-node -datacenter=dc1 -log-level=warn -enable-script-checks=true
+      -config-dir=/consul/config
+    env: []
+    image:
+      registry: ''
+      repository: hashicorp/consul
+      tag: 2.0.4
+    port: 8500
+    volumeMounts:
+    - mountPath: /consul/config
+      name: vol-data-config
+    - mountPath: /consul/data
+      name: vol-data-data
+    - mountPath: /consul/logs
+      name: vol-data-logs

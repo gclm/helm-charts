@@ -1,0 +1,32 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 8181
+  PANEL_TORRENTING_PORT: 48181
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /downloads
+    size: 10Gi
+secrets: {}
+services:
+  qbittorrent:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: UMASK_SET
+      value: '022'
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    - name: WEBUI_PORT
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    - name: TORRENTING_PORT
+      valueFromEnv: PANEL_TORRENTING_PORT
+    image:
+      registry: ''
+      repository: linuxserver/qbittorrent
+      tag: 5.2.4
+    volumeMounts:
+    - mountPath: /downloads
+      name: vol-data

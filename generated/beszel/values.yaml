@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-data:
+    mountPath: /beszel_data
+    size: 10Gi
+  vol-data-socket:
+    mountPath: /beszel_socket
+    size: 10Gi
+secrets: {}
+services:
+  beszel:
+    env: []
+    image:
+      registry: ''
+      repository: henrygd/beszel
+      tag: 0.21.0
+    port: 8090
+    volumeMounts:
+    - mountPath: /beszel_data
+      name: vol-data-data
+    - mountPath: /beszel_socket
+      name: vol-data-socket

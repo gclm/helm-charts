@@ -1,0 +1,25 @@
+configMaps: {}
+env:
+  ADMIN_USERNAME: admin
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  ADMIN_PASSWORD:
+    generate: true
+services:
+  archivebox:
+    env:
+    - name: ADMIN_USERNAME
+      valueFromEnv: ADMIN_USERNAME
+    - name: ADMIN_PASSWORD
+      valueFromSecret: ADMIN_PASSWORD
+    image:
+      registry: ''
+      repository: archivebox/archivebox
+      tag: 0.9.73
+    port: 5797
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

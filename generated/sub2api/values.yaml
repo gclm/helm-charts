@@ -1,0 +1,75 @@
+configMaps: {}
+env:
+  ADMIN_EMAIL: admin@sub2api.local
+  JWT_SECRET: ''
+  PANEL_DB_NAME: sub2api
+  PANEL_DB_USER: sub2api
+  PANEL_REDIS_HOST: ''
+  PANEL_REDIS_ROOT_PASSWORD: ''
+  RUN_MODE: standard
+  SERVER_MODE: release
+  TOTP_ENCRYPTION_KEY: ''
+  TZ: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  sub2api:
+    env:
+    - name: AUTO_SETUP
+      value: 'true'
+    - name: SERVER_HOST
+      value: 0.0.0.0
+    - name: SERVER_PORT
+      value: '8080'
+    - name: SERVER_MODE
+      valueFromEnv: SERVER_MODE
+    - name: RUN_MODE
+      valueFromEnv: RUN_MODE
+    - name: DATABASE_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DATABASE_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DATABASE_DBNAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: DATABASE_SSLMODE
+      value: disable
+    - name: REDIS_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: REDIS_PORT
+      value: '6379'
+    - name: REDIS_PASSWORD
+      valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    - name: REDIS_DB
+      value: '0'
+    - name: ADMIN_EMAIL
+      valueFromEnv: ADMIN_EMAIL
+    - name: ADMIN_PASSWORD
+      value: ${ADMIN_PASSWORD:-}
+    - name: JWT_SECRET
+      valueFromEnv: JWT_SECRET
+    - name: JWT_EXPIRE_HOUR
+      value: '24'
+    - name: TOTP_ENCRYPTION_KEY
+      valueFromEnv: TOTP_ENCRYPTION_KEY
+    - name: TZ
+      valueFromEnv: TZ
+    - name: UPDATE_PROXY_URL
+      value: ${UPDATE_PROXY_URL:-}
+    image:
+      registry: ''
+      repository: weishaw/sub2api
+      tag: 0.2.16
+    port: 8080
+    probe:
+      exec: CMD wget -q -T 5 -O /dev/null http://localhost:8080/health
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

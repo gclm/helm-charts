@@ -1,0 +1,39 @@
+configMaps: {}
+env:
+  APP_KEY: your-secret-key
+  PANEL_DB_NAME: nocobase
+  PANEL_DB_TYPE: mysql
+  PANEL_DB_USER: nocobase
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /app/nocobase/storage
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  nocobase:
+    env:
+    - name: APP_KEY
+      valueFromEnv: APP_KEY
+    - name: DB_DIALECT
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DB_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DB_UNDERSCORED
+      value: 'true'
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: nocobase/nocobase
+      tag: 2.2.24
+    port: 80
+    volumeMounts:
+    - mountPath: /app/nocobase/storage
+      name: vol-data

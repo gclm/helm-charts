@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  drawio:
+    env: []
+    image:
+      registry: ''
+      repository: jgraph/drawio
+      tag: 32.4.1
+    port: 8080
+    volumeMounts: []

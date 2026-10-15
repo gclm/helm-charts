@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /home/node/trilium-data
+    size: 10Gi
+secrets: {}
+services:
+  trilium:
+    env:
+    - name: TRILIUM_DATA_DIR
+      value: /home/node/trilium-data
+    image:
+      registry: ''
+      repository: triliumnext/trilium
+      tag: v0.106.0
+    port: 8080
+    volumeMounts:
+    - mountPath: /home/node/trilium-data
+      name: vol-data

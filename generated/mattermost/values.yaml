@@ -1,0 +1,55 @@
+configMaps: {}
+env:
+  MM_BLEVESETTINGS_INDEXDIR: /mattermost/bleve-indexes
+  MM_SERVICESETTINGS_SITEURL: http://localhost:40271
+  MM_SQLSETTINGS_DRIVERNAME: postgres
+  TZ: Asia/Shanghai
+persistence:
+  vol-data-bleve:
+    mountPath: /mattermost/bleve-indexes
+    size: 10Gi
+  vol-data-client-plugins:
+    mountPath: /mattermost/client/plugins
+    size: 10Gi
+  vol-data-config:
+    mountPath: /mattermost/config
+    size: 10Gi
+  vol-data-data:
+    mountPath: /mattermost/data
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /mattermost/logs
+    size: 10Gi
+  vol-data-plugins:
+    mountPath: /mattermost/plugins
+    size: 10Gi
+secrets: {}
+services:
+  mattermost:
+    env:
+    - name: TZ
+      valueFromEnv: TZ
+    - name: MM_SQLSETTINGS_DRIVERNAME
+      valueFromEnv: MM_SQLSETTINGS_DRIVERNAME
+    - name: MM_BLEVESETTINGS_INDEXDIR
+      valueFromEnv: MM_BLEVESETTINGS_INDEXDIR
+    - name: MM_SERVICESETTINGS_SITEURL
+      valueFromEnv: MM_SERVICESETTINGS_SITEURL
+    image:
+      registry: ''
+      repository: mattermost/mattermost-team-edition
+      tag: 11.11.1
+    port: 8065
+    volumeMounts:
+    - mountPath: /mattermost/config
+      name: vol-data-config
+    - mountPath: /mattermost/data
+      name: vol-data-data
+    - mountPath: /mattermost/logs
+      name: vol-data-logs
+    - mountPath: /mattermost/plugins
+      name: vol-data-plugins
+    - mountPath: /mattermost/client/plugins
+      name: vol-data-client-plugins
+    - mountPath: /mattermost/bleve-indexes
+      name: vol-data-bleve

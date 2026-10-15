@@ -1,0 +1,72 @@
+configMaps:
+  conf:
+    data:
+      local.ini: '[couchdb]
+
+        single_node=true
+
+        max_document_size = 50000000
+
+
+        [chttpd]
+
+        require_valid_user = true
+
+        max_http_request_size = 4294967296
+
+
+        [chttpd_auth]
+
+        require_valid_user = true
+
+        authentication_redirect = /_utils/session.html
+
+
+        [httpd]
+
+        WWW-Authenticate = Basic realm="couchdb"
+
+        enable_cors = true
+
+
+        [cors]
+
+        origins = app://obsidian.md,capacitor://localhost,http://localhost
+
+        credentials = true
+
+        headers = accept, authorization, content-type, origin, referer
+
+        methods = GET, PUT, POST, HEAD, DELETE
+
+        max_age = 3600'
+    mounts:
+    - mountPath: /opt/couchdb/etc/local.ini
+      subPath: local.ini
+env:
+  OBSIDIAN_LIVESYNC_USER: admin
+persistence:
+  vol-data:
+    mountPath: /opt/couchdb/data
+    size: 10Gi
+secrets:
+  OBSIDIAN_LIVESYNC_USER_PASSWORD:
+    generate: true
+services:
+  couchdb:
+    env:
+    - name: COUCHDB_USER
+      valueFromEnv: OBSIDIAN_LIVESYNC_USER
+    - name: COUCHDB_PASSWORD
+      valueFromSecret: OBSIDIAN_LIVESYNC_USER_PASSWORD
+    image:
+      registry: ''
+      repository: couchdb
+      tag: 3.5.3
+    port: 5984
+    volumeMounts:
+    - mountPath: /opt/couchdb/data
+      name: vol-data
+    - mountPath: /opt/couchdb/etc/local.ini
+      name: conf
+      subPath: local.ini

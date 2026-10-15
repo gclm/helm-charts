@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /var/lib/registry
+    size: 10Gi
+secrets: {}
+services:
+  docker-registry:
+    env: []
+    image:
+      registry: ''
+      repository: registry
+      tag: 3.1.2
+    port: 5000
+    volumeMounts:
+    - mountPath: /var/lib/registry
+      name: vol-data

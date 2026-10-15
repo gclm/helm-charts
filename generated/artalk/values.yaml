@@ -1,0 +1,30 @@
+configMaps: {}
+env:
+  ATK_LOCALE: zh-CN
+  ATK_SITE_DEFAULT: My Blog Site
+  ATK_SITE_URL: https://example.myblog.com
+  TZ: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  artalk:
+    env:
+    - name: ATK_SITE_DEFAULT
+      valueFromEnv: ATK_SITE_DEFAULT
+    - name: ATK_SITE_URL
+      valueFromEnv: ATK_SITE_URL
+    - name: ATK_LOCALE
+      valueFromEnv: ATK_LOCALE
+    - name: TZ
+      valueFromEnv: TZ
+    image:
+      registry: ''
+      repository: artalk/artalk-go
+      tag: '2.10'
+    port: 23366
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

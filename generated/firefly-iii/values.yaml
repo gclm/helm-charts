@@ -1,0 +1,39 @@
+configMaps: {}
+env:
+  APP_KEY: ''
+  PANEL_APP_URL: ''
+  PANEL_DB_NAME: firefly
+  PANEL_DB_TYPE: mysql
+  PANEL_DB_USER: firefly
+persistence:
+  vol-firefly-iii-upload:
+    mountPath: /var/www/html/storage/upload
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  firefly-iii:
+    env:
+    - name: APP_KEY
+      valueFromEnv: APP_KEY
+    - name: DB_CONNECTION
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DB_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: DB_USERNAME
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: APP_URL
+      valueFromEnv: PANEL_APP_URL
+    - name: TRUSTED_PROXIES
+      value: '**'
+    image:
+      registry: ''
+      repository: fireflyiii/core
+      tag: version-6.4.2
+    port: 8080
+    volumeMounts:
+    - mountPath: /var/www/html/storage/upload
+      name: vol-firefly-iii-upload

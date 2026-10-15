@@ -1,0 +1,53 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: zabbix
+  PANEL_DB_ROOT_PASSWORD: ''
+  PANEL_DB_USER: zabbix
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  zabbix-java-gateway:
+    env: []
+    image:
+      registry: ''
+      repository: zabbix/zabbix-java-gateway
+      tag: alpine-latest
+    volumeMounts: []
+  zabbix-server-mysql:
+    env:
+    - name: MYSQL_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: MYSQL_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: MYSQL_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: MYSQL_ROOT_PASSWORD
+      valueFromEnv: PANEL_DB_ROOT_PASSWORD
+    - name: ZBX_JAVAGATEWAY
+      value: zabbix-java-gateway
+    image:
+      registry: ''
+      repository: zabbix/zabbix-server-mysql
+      tag: alpine-7.4.5
+    port: 10051
+    volumeMounts: []
+  zabbix-web-nginx-mysql:
+    env:
+    - name: ZBX_SERVER_HOST
+      value: zabbix-server-mysql
+    - name: MYSQL_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: MYSQL_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: MYSQL_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: MYSQL_ROOT_PASSWORD
+      valueFromEnv: PANEL_DB_ROOT_PASSWORD
+    image:
+      registry: ''
+      repository: zabbix/zabbix-web-nginx-mysql
+      tag: alpine-latest
+    port: 8080
+    volumeMounts: []

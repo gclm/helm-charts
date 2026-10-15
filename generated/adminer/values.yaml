@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  adminer:
+    env: []
+    image:
+      registry: ''
+      repository: adminer
+      tag: 6.1.2-standalone
+    port: 8080
+    volumeMounts: []

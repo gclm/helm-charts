@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /root/.ollama
+    size: 10Gi
+secrets: {}
+services:
+  ollama:
+    env: []
+    image:
+      registry: ''
+      repository: ollama/ollama
+      tag: 0.40.4
+    port: 11434
+    volumeMounts:
+    - mountPath: /root/.ollama
+      name: vol-data

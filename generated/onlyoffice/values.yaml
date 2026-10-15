@@ -1,0 +1,37 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-data:
+    mountPath: /var/www/onlyoffice/Data
+    size: 10Gi
+  vol-data-db:
+    mountPath: /var/lib/postgresql
+    size: 10Gi
+  vol-data-lib:
+    mountPath: /var/lib/onlyoffice
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /var/log/onlyoffice
+    size: 10Gi
+secrets:
+  JWT_SECRET:
+    generate: true
+services:
+  onlyoffice:
+    env:
+    - name: JWT_SECRET
+      valueFromSecret: JWT_SECRET
+    image:
+      registry: ''
+      repository: onlyoffice/documentserver
+      tag: 10.0.0.1
+    port: 80
+    volumeMounts:
+    - mountPath: /var/log/onlyoffice
+      name: vol-data-logs
+    - mountPath: /var/www/onlyoffice/Data
+      name: vol-data-data
+    - mountPath: /var/lib/onlyoffice
+      name: vol-data-lib
+    - mountPath: /var/lib/postgresql
+      name: vol-data-db

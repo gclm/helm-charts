@@ -1,0 +1,28 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-data:
+    mountPath: /ezbookkeeping/data
+    size: 10Gi
+  vol-data-log:
+    mountPath: /ezbookkeeping/log
+    size: 10Gi
+  vol-data-storage:
+    mountPath: /ezbookkeeping/storage
+    size: 10Gi
+secrets: {}
+services:
+  ezbookkeeping:
+    env: []
+    image:
+      registry: ''
+      repository: mayswind/ezbookkeeping
+      tag: 2.0.1
+    port: 8080
+    volumeMounts:
+    - mountPath: /ezbookkeeping/data
+      name: vol-data-data
+    - mountPath: /ezbookkeeping/storage
+      name: vol-data-storage
+    - mountPath: /ezbookkeeping/log
+      name: vol-data-log

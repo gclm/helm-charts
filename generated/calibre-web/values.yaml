@@ -1,0 +1,34 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data-books:
+    mountPath: /books
+    size: 10Gi
+  vol-data-config:
+    mountPath: /config
+    size: 10Gi
+secrets: {}
+services:
+  calibre-web:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    - name: DOCKER_MODS
+      value: linuxserver/mods:universal-calibre
+    - name: OAUTHLIB_RELAX_TOKEN_SCOPE
+      value: '1'
+    image:
+      registry: ''
+      repository: linuxserver/calibre-web
+      tag: 0.6.27
+    port: 8083
+    volumeMounts:
+    - mountPath: /config
+      name: vol-data-config
+    - mountPath: /books
+      name: vol-data-books

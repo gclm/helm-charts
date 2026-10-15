@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets: {}
+services:
+  uptime-kuma:
+    env: []
+    image:
+      registry: ''
+      repository: louislam/uptime-kuma
+      tag: 2.5.6
+    port: 3001
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

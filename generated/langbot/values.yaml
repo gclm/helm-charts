@@ -1,0 +1,46 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+  vol-data-plugins:
+    mountPath: /app/data/plugins
+    size: 10Gi
+  vol-plugins:
+    mountPath: /app/plugins
+    size: 10Gi
+secrets: {}
+services:
+  langbot:
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: rockchin/langbot
+      tag: v4.11.0
+    port: 5300
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data
+    - mountPath: /app/plugins
+      name: vol-plugins
+  langbot_plugin_runtime:
+    command:
+    - uv
+    - run
+    - -m
+    - langbot_plugin.cli.__init__
+    - rt
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: rockchin/langbot
+      tag: v4.11.0
+    volumeMounts:
+    - mountPath: /app/data/plugins
+      name: vol-data-plugins

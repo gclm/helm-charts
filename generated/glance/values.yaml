@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-glance-yml:
+    mountPath: /app/config/glance.yml
+    size: 10Gi
+secrets: {}
+services:
+  glance:
+    env: []
+    image:
+      registry: ''
+      repository: glanceapp/glance
+      tag: v0.8.6
+    port: 8080
+    volumeMounts:
+    - mountPath: /app/config/glance.yml
+      name: vol-data-glance-yml

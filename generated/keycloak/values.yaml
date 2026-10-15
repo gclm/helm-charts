@@ -1,0 +1,40 @@
+configMaps: {}
+env:
+  ADMIN_PASSWORD: Keycloak_admin_default
+  KC_HOSTNAME: ''
+  PANEL_DB_NAME: keycloak
+  PANEL_DB_TYPE: mariadb
+  PANEL_DB_USER: keycloak_user
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  keycloak:
+    command:
+    - start
+    env:
+    - name: KC_BOOTSTRAP_ADMIN_PASSWORD
+      valueFromEnv: ADMIN_PASSWORD
+    - name: KC_BOOTSTRAP_ADMIN_USERNAME
+      value: admin
+    - name: KC_DB
+      valueFromEnv: PANEL_DB_TYPE
+    - name: KC_DB_USERNAME
+      valueFromEnv: PANEL_DB_USER
+    - name: KC_DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: KC_DB_URL_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: KC_HOSTNAME
+      valueFromEnv: KC_HOSTNAME
+    - name: KC_HTTP_ENABLED
+      value: 'true'
+    - name: KC_PROXY_HEADERS
+      value: xforwarded
+    image:
+      registry: ''
+      repository: keycloak/keycloak
+      tag: 26.8.1
+    port: 8080
+    volumeMounts: []

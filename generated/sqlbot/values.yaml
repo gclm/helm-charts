@@ -1,0 +1,64 @@
+configMaps: {}
+env:
+  SERVER_IMAGE_HOST: http://<YOUR_SERVER_IP>:<MCP_PORT>/images/
+  SQLB_DEFAULT_PWD: SQLBot@123456
+persistence:
+  vol-data-postgresql:
+    mountPath: /var/lib/postgresql/data
+    size: 10Gi
+  vol-data-sqlbot-excel:
+    mountPath: /opt/sqlbot/data/excel
+    size: 10Gi
+  vol-data-sqlbot-file:
+    mountPath: /opt/sqlbot/data/file
+    size: 10Gi
+  vol-data-sqlbot-images:
+    mountPath: /opt/sqlbot/images
+    size: 10Gi
+  vol-data-sqlbot-logs:
+    mountPath: /opt/sqlbot/app/logs
+    size: 10Gi
+secrets: {}
+services:
+  sqlbot:
+    env:
+    - name: POSTGRES_SERVER
+      value: localhost
+    - name: POSTGRES_PORT
+      value: '5432'
+    - name: POSTGRES_DB
+      value: sqlbot
+    - name: POSTGRES_USER
+      value: root
+    - name: POSTGRES_PASSWORD
+      value: Password123@pg
+    - name: PROJECT_NAME
+      value: SQLBot
+    - name: DEFAULT_PWD
+      valueFromEnv: SQLB_DEFAULT_PWD
+    - name: SERVER_IMAGE_HOST
+      valueFromEnv: SERVER_IMAGE_HOST
+    - name: SECRET_KEY
+      value: y5txe1mRmS_JpOrUzFzHEu-kIQn3lf7ll0AOv9DQh0s
+    - name: BACKEND_CORS_ORIGINS
+      value: http://localhost,http://localhost:5173,https://localhost,https://localhost:5173
+    - name: LOG_LEVEL
+      value: INFO
+    - name: SQL_DEBUG
+      value: 'False'
+    image:
+      registry: ''
+      repository: dataease/sqlbot
+      tag: v1.10.2
+    port: 8000
+    volumeMounts:
+    - mountPath: /opt/sqlbot/data/excel
+      name: vol-data-sqlbot-excel
+    - mountPath: /opt/sqlbot/data/file
+      name: vol-data-sqlbot-file
+    - mountPath: /opt/sqlbot/images
+      name: vol-data-sqlbot-images
+    - mountPath: /opt/sqlbot/app/logs
+      name: vol-data-sqlbot-logs
+    - mountPath: /var/lib/postgresql/data
+      name: vol-data-postgresql

@@ -1,0 +1,10 @@
+apiVersion: v2
+name: stalwart-mail
+description: Stalwart Mail Server (converted from 1Panel appstore)
+type: application
+version: 0.16.26+alpine
+appVersion: 0.16.26+alpine
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: ab927b211921121c70e718ef5a14259cff6cf829

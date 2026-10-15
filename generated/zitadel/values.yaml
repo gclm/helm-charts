@@ -1,0 +1,44 @@
+configMaps: {}
+env:
+  ZITADEL_DOMAIN: ''
+  ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME: zitadel-admin
+persistence: {}
+secrets:
+  ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD:
+    generate: true
+services:
+  zitadel:
+    command:
+    - start-from-init --masterkeyFromEnv
+    env:
+    - name: ZITADEL_PORT
+      value: '8080'
+    - name: ZITADEL_EXTERNALDOMAIN
+      valueFromEnv: ZITADEL_DOMAIN
+    - name: ZITADEL_EXTERNALPORT
+      value: '443'
+    - name: ZITADEL_EXTERNALSECURE
+      value: 'true'
+    - name: ZITADEL_TLS_ENABLED
+      value: 'false'
+    - name: ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME
+      valueFromEnv: ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME
+    - name: ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD
+      valueFromSecret: ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD
+    - name: ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORDCHANGEREQUIRED
+      value: 'false'
+    - name: ZITADEL_DEFAULTINSTANCE_FEATURES_LOGINV2_REQUIRED
+      value: 'false'
+    - name: ZITADEL_LOGSTORE_ACCESS_STDOUT_ENABLED
+      value: 'true'
+    image:
+      registry: ghcr.io
+      repository: zitadel/zitadel
+      tag: v4.19.4
+    port: 8080
+    probe:
+      exec: CMD /app/zitadel ready
+      intervalSeconds: 10
+      retries: 12
+      timeoutSeconds: 30
+    volumeMounts: []

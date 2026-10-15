@@ -1,0 +1,94 @@
+configMaps: {}
+env:
+  DISCOURSE_EMAIL: ''
+  DISCOURSE_HOST: ''
+  DISCOURSE_PASSWORD: ''
+  DISCOURSE_USERNAME: admin
+  PANEL_DB_HOST: ''
+  PANEL_DB_NAME: discourse
+  PANEL_DB_USER: discourse
+  PANEL_REDIS_HOST: ''
+persistence:
+  vol-data-discourse:
+    mountPath: /bitnami/discourse
+    size: 10Gi
+  vol-data-sidekiq:
+    mountPath: /bitnami/discourse
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+  PANEL_REDIS_ROOT_PASSWORD:
+    generate: true
+services:
+  discourse:
+    env:
+    - name: DISCOURSE_HOST
+      valueFromEnv: DISCOURSE_HOST
+    - name: DISCOURSE_USERNAME
+      valueFromEnv: DISCOURSE_USERNAME
+    - name: DISCOURSE_PASSWORD
+      valueFromEnv: DISCOURSE_PASSWORD
+    - name: DISCOURSE_EMAIL
+      valueFromEnv: DISCOURSE_EMAIL
+    - name: DISCOURSE_DATABASE_HOST
+      valueFromEnv: PANEL_DB_HOST
+    - name: DISCOURSE_DATABASE_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DISCOURSE_DATABASE_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DISCOURSE_DATABASE_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: POSTGRESQL_CLIENT_POSTGRES_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: POSTGRESQL_CLIENT_POSTGRES_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: POSTGRESQL_CLIENT_CREATE_DATABASE_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: POSTGRESQL_CLIENT_CREATE_DATABASE_EXTENSIONS
+      value: hstore,pg_trgm
+    - name: DISCOURSE_REDIS_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: DISCOURSE_REDIS_PASSWORD
+      valueFromSecret: PANEL_REDIS_ROOT_PASSWORD
+    - name: DISCOURSE_SMTP_HOST
+      value: test
+    - name: DISCOURSE_SMTP_PORT_NUMBER
+      value: '0'
+    - name: DISCOURSE_SMTP_USER
+      value: test
+    - name: DISCOURSE_SMTP_PASSWORD
+      value: test
+    image:
+      registry: ''
+      repository: bitnamilegacy/discourse
+      tag: 3.5.0
+    port: 3000
+    volumeMounts:
+    - mountPath: /bitnami/discourse
+      name: vol-data-discourse
+  sidekiq:
+    command:
+    - /opt/bitnami/scripts/discourse-sidekiq/run.sh
+    env:
+    - name: DISCOURSE_HOST
+      valueFromEnv: DISCOURSE_HOST
+    - name: DISCOURSE_DATABASE_HOST
+      valueFromEnv: PANEL_DB_HOST
+    - name: DISCOURSE_DATABASE_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DISCOURSE_DATABASE_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DISCOURSE_DATABASE_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: DISCOURSE_REDIS_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: DISCOURSE_REDIS_PASSWORD
+      valueFromSecret: PANEL_REDIS_ROOT_PASSWORD
+    image:
+      registry: ''
+      repository: bitnamilegacy/discourse
+      tag: 3.5.0
+    volumeMounts:
+    - mountPath: /bitnami/discourse
+      name: vol-data-sidekiq

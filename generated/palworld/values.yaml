@@ -1,0 +1,73 @@
+configMaps: {}
+env:
+  ADMIN_PASSWORD: palworld
+  DISABLE_GENERATE_SETTINGS: 'false'
+  ENABLE_PLAYER_LOGGING: 'false'
+  MAX_PLAYERS: 32
+  MULTITHREAD_SWITCH: 'true'
+  PANEL_APP_PORT_QUERY: 27015
+  PUBLIC_IP: ''
+  PUBLIC_PORT: ''
+  PUBLIC_SWITCH: 'false'
+  RCON_SWITCH: 'true'
+  REST_SWITCH: 'true'
+  SERVER_DESCRIPTION: ''
+  SERVER_NAME: Default Palworld Server
+  SERVER_PASSWORD: palworld
+  UPDATE_SWITCH: 'true'
+persistence:
+  vol-data:
+    mountPath: /palworld/
+    size: 10Gi
+secrets: {}
+services:
+  palworld-server:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: DISABLE_GENERATE_SETTINGS
+      valueFromEnv: DISABLE_GENERATE_SETTINGS
+    - name: PORT
+      value: '8211'
+    - name: PLAYERS
+      valueFromEnv: MAX_PLAYERS
+    - name: MULTITHREADING
+      valueFromEnv: MULTITHREAD_SWITCH
+    - name: COMMUNITY
+      valueFromEnv: PUBLIC_SWITCH
+    - name: PUBLIC_IP
+      valueFromEnv: PUBLIC_IP
+    - name: PUBLIC_PORT
+      valueFromEnv: PUBLIC_PORT
+    - name: UPDATE_ON_BOOT
+      valueFromEnv: UPDATE_SWITCH
+    - name: ENABLE_PLAYER_LOGGING
+      valueFromEnv: ENABLE_PLAYER_LOGGING
+    - name: SERVER_NAME
+      valueFromEnv: SERVER_NAME
+    - name: SERVER_DESCRIPTION
+      valueFromEnv: SERVER_DESCRIPTION
+    - name: ADMIN_PASSWORD
+      valueFromEnv: ADMIN_PASSWORD
+    - name: SERVER_PASSWORD
+      valueFromEnv: SERVER_PASSWORD
+    - name: RCON_ENABLED
+      valueFromEnv: RCON_SWITCH
+    - name: RCON_PORT
+      value: '25575'
+    - name: REST_API_ENABLED
+      valueFromEnv: REST_SWITCH
+    - name: REST_API_PORT
+      value: '8212'
+    - name: QUERY_PORT
+      valueFromEnv: PANEL_APP_PORT_QUERY
+    image:
+      registry: ''
+      repository: thijsvanloef/palworld-server-docker
+      tag: v2.8.0
+    port: 8211
+    volumeMounts:
+    - mountPath: /palworld/
+      name: vol-data

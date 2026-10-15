@@ -1,0 +1,35 @@
+configMaps: {}
+env:
+  NEXTAUTH_URL: http://1.2.3.4:1111
+  NEXT_PUBLIC_BASE_URL: http://1.2.3.4:1111
+persistence:
+  vol-data:
+    mountPath: /app/.blinko
+    size: 10Gi
+secrets:
+  NEXTAUTH_SECRET:
+    generate: true
+services:
+  blinko:
+    env:
+    - name: NODE_ENV
+      value: production
+    - name: NEXTAUTH_URL
+      valueFromEnv: NEXTAUTH_URL
+    - name: NEXT_PUBLIC_BASE_URL
+      valueFromEnv: NEXT_PUBLIC_BASE_URL
+    - name: NEXTAUTH_SECRET
+      valueFromSecret: NEXTAUTH_SECRET
+    image:
+      registry: ''
+      repository: blinkospace/blinko
+      tag: 1.8.8
+    port: 1111
+    probe:
+      exec: CMD wget --spider -q http://localhost:1111/
+      intervalSeconds: 30
+      retries: 5
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /app/.blinko
+      name: vol-data

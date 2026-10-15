@@ -1,0 +1,32 @@
+configMaps: {}
+env:
+  ACCESS_AUTH_CODE: ''
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /siyuan/workspace
+    size: 10Gi
+secrets: {}
+services:
+  siyuan:
+    command:
+    - serve
+    - --workspace=/siyuan/workspace/
+    - --accessAuthCode=${ACCESS_AUTH_CODE}
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: ACCESS_AUTH_CODE
+      valueFromEnv: ACCESS_AUTH_CODE
+    image:
+      registry: ''
+      repository: b3log/siyuan
+      tag: v3.8.6
+    port: 6806
+    volumeMounts:
+    - mountPath: /siyuan/workspace
+      name: vol-data

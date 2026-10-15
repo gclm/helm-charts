@@ -1,0 +1,39 @@
+configMaps: {}
+env:
+  OCTOP_ADMIN_USERNAME: admin
+  OCTOP_LOG_LEVEL: info
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  OCTOP_DEFAULT_PASSWORD:
+    generate: true
+services:
+  octop:
+    env:
+    - name: HOME
+      value: /data
+    - name: OCTOP_BIND_HOST
+      value: 0.0.0.0
+    - name: OCTOP_PORT
+      value: '8088'
+    - name: OCTOP_LOG_LEVEL
+      valueFromEnv: OCTOP_LOG_LEVEL
+    - name: OCTOP_DEFAULT_PASSWORD
+      valueFromSecret: OCTOP_DEFAULT_PASSWORD
+    - name: OCTOP_ADMIN_USERNAME
+      valueFromEnv: OCTOP_ADMIN_USERNAME
+    image:
+      registry: ghcr.io
+      repository: tencentcloud/octop
+      tag: 1.0.1
+    port: 8088
+    probe:
+      exec: curl -f http://localhost:8088/api/health || exit 1
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

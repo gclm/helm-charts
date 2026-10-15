@@ -1,0 +1,38 @@
+configMaps: {}
+env:
+  TZ: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+  vol-logs:
+    mountPath: /app/logs
+    size: 10Gi
+secrets: {}
+services:
+  new-api:
+    command:
+    - --log-dir /app/logs
+    env:
+    - name: TZ
+      valueFromEnv: TZ
+    - name: ERROR_LOG_ENABLED
+      value: 'true'
+    - name: MEMORY_CACHE_ENABLED
+      value: 'true'
+    image:
+      registry: ''
+      repository: calciumion/new-api
+      tag: v0.13.2
+    port: 3000
+    probe:
+      exec: wget -q -O - http://localhost:3000/api/status | grep -o '"success":\s*true'
+        || exit 1
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data
+    - mountPath: /app/logs
+      name: vol-logs

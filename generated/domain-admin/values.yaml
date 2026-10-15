@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-database:
+    mountPath: /app/database
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /app/logs
+    size: 10Gi
+secrets: {}
+services:
+  domain-admin:
+    env: []
+    image:
+      registry: ''
+      repository: mouday/domain-admin
+      tag: v1.6.78
+    port: 8000
+    volumeMounts:
+    - mountPath: /app/database
+      name: vol-data-database
+    - mountPath: /app/logs
+      name: vol-data-logs

@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /ql/data
+    size: 10Gi
+secrets: {}
+services:
+  qinglong:
+    env: []
+    image:
+      registry: ''
+      repository: whyour/qinglong
+      tag: 2.23.0-debian
+    port: 5700
+    volumeMounts:
+    - mountPath: /ql/data
+      name: vol-data

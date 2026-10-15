@@ -1,0 +1,33 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-build:
+    mountPath: /usr/src/app/build
+    size: 10Gi
+  vol-data-config:
+    mountPath: /opt/config
+    size: 10Gi
+  vol-data-node_modules:
+    mountPath: /usr/src/app/node_modules
+    size: 10Gi
+  vol-data-uploads:
+    mountPath: /usr/src/app/public/uploads
+    size: 10Gi
+secrets: {}
+services:
+  nodebb:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: nodebb/nodebb
+      tag: 4.16.2
+    port: 4567
+    volumeMounts:
+    - mountPath: /usr/src/app/build
+      name: vol-data-build
+    - mountPath: /usr/src/app/node_modules
+      name: vol-data-node_modules
+    - mountPath: /usr/src/app/public/uploads
+      name: vol-data-uploads
+    - mountPath: /opt/config
+      name: vol-data-config

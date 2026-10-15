@@ -1,0 +1,34 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-conf:
+    mountPath: /home/node/.openclaw
+    size: 10Gi
+  vol-data-workspace:
+    mountPath: /home/node/.openclaw/workspace
+    size: 10Gi
+secrets: {}
+services:
+  openclaw:
+    env:
+    - name: HOME
+      value: /home/node
+    - name: TERM
+      value: xterm-256color
+    - name: OPENCLAW_DISABLE_BONJOUR
+      value: '1'
+    image:
+      registry: ''
+      repository: 1panel/openclaw
+      tag: 2026.9.9
+    port: 18789
+    probe:
+      exec: CMD node -e fetch('http://127.0.0.1:18789/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))
+      intervalSeconds: 3
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /home/node/.openclaw
+      name: vol-data-conf
+    - mountPath: /home/node/.openclaw/workspace
+      name: vol-data-workspace

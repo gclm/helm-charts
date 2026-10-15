@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  cyberchef:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: gchq/cyberchef
+      tag: 11.5.0
+    port: 8080
+    volumeMounts: []

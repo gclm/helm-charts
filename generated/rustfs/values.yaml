@@ -1,0 +1,28 @@
+configMaps: {}
+env:
+  RUSTFS_ACCESS_KEY: rustfsadmin
+  RUSTFS_CONSOLE_ENABLE: 'true'
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  RUSTFS_SECRET_KEY:
+    generate: true
+services:
+  rustfs:
+    env:
+    - name: RUSTFS_ACCESS_KEY
+      valueFromEnv: RUSTFS_ACCESS_KEY
+    - name: RUSTFS_SECRET_KEY
+      valueFromSecret: RUSTFS_SECRET_KEY
+    - name: RUSTFS_CONSOLE_ENABLE
+      valueFromEnv: RUSTFS_CONSOLE_ENABLE
+    image:
+      registry: ''
+      repository: rustfs/rustfs
+      tag: 1.0.1
+    port: 9000
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

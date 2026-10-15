@@ -1,0 +1,28 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-db:
+    mountPath: /root/.zfile-v4/db
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /root/.zfile-v4/logs
+    size: 10Gi
+  vol-data-mnt:
+    mountPath: /data/file
+    size: 10Gi
+secrets: {}
+services:
+  zfile:
+    env: []
+    image:
+      registry: ''
+      repository: zhaojun1998/zfile
+      tag: 5.1.0
+    port: 8080
+    volumeMounts:
+    - mountPath: /root/.zfile-v4/db
+      name: vol-data-db
+    - mountPath: /root/.zfile-v4/logs
+      name: vol-data-logs
+    - mountPath: /data/file
+      name: vol-data-mnt

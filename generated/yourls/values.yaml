@@ -1,0 +1,41 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: yourls
+  PANEL_DB_PREFIX: yourls_
+  PANEL_DB_USER: yourls
+  USERNAME: yourls
+  YOURLS_EXTERNAL_URL: http://localhost:40037
+persistence:
+  vol-data:
+    mountPath: /var/www/html
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+  PASSWORD:
+    generate: true
+services:
+  yourls:
+    env:
+    - name: YOURLS_SITE
+      valueFromEnv: YOURLS_EXTERNAL_URL
+    - name: YOURLS_USER
+      valueFromEnv: USERNAME
+    - name: YOURLS_PASS
+      valueFromSecret: PASSWORD
+    - name: YOURLS_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: YOURLS_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: YOURLS_DB_PASS
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: YOURLS_DB_PREFIX
+      valueFromEnv: PANEL_DB_PREFIX
+    image:
+      registry: ''
+      repository: yourls
+      tag: 1.10.6
+    port: 8080
+    volumeMounts:
+    - mountPath: /var/www/html
+      name: vol-data

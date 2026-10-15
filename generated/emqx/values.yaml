@@ -1,0 +1,47 @@
+configMaps: {}
+env:
+  EMQX_LOG_TO: both
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /opt/emqx/data
+    size: 10Gi
+  vol-log:
+    mountPath: /opt/emqx/log
+    size: 10Gi
+  vol-plugins:
+    mountPath: /opt/emqx/plugins
+    size: 10Gi
+secrets:
+  EMQX_Dashboard_Password:
+    generate: true
+services:
+  emqx:
+    env:
+    - name: EMQX_HOST
+      value: 1panel.dev
+    - name: EMQX_NODE__DATA_DIR
+      value: data
+    - name: EMQX_LOG__TO
+      valueFromEnv: EMQX_LOG_TO
+    - name: EMQX_DASHBOARD__DEFAULT_PASSWORD
+      valueFromSecret: EMQX_Dashboard_Password
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: emqx/emqx
+      tag: 6.3.1
+    port: 18083
+    probe:
+      exec: CMD /opt/emqx/bin/emqx_ctl status
+      intervalSeconds: 60
+      retries: 3
+      timeoutSeconds: 15
+    volumeMounts:
+    - mountPath: /opt/emqx/data
+      name: vol-data
+    - mountPath: /opt/emqx/log
+      name: vol-log
+    - mountPath: /opt/emqx/plugins
+      name: vol-plugins

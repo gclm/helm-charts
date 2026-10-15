@@ -1,0 +1,41 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  kafka:
+    env:
+    - name: ALLOW_PLAINTEXT_LISTENER
+      value: 'yes'
+    - name: KAFKA_CFG_LOG_RETENTION_MS
+      value: '60000'
+    - name: KAFKA_CFG_MAX_REQUEST_SIZE
+      value: '524288000'
+    - name: KAFKA_CFG_MESSAGE_MAX_BYTES
+      value: '524288000'
+    - name: KAFKA_CFG_REPLICA_FETCH_MAX_BYTES
+      value: '524288000'
+    - name: KAFKA_CFG_FETCH_MESSAGE_MAX_BYTES
+      value: '524288000'
+    - name: KAFKA_CFG_PARTITION_FETCH_BYTES
+      value: '524288000'
+    - name: KAFKA_CFG_NODE_ID
+      value: '0'
+    - name: KAFKA_CFG_PROCESS_ROLES
+      value: controller,broker
+    - name: KAFKA_CFG_LISTENERS
+      value: PLAINTEXT://:9092,CONTROLLER://:9093
+    - name: KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP
+      value: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+    - name: KAFKA_CFG_CONTROLLER_QUORUM_VOTERS
+      value: 0@127.0.0.1:9093
+    - name: KAFKA_CFG_CONTROLLER_LISTENER_NAMES
+      value: CONTROLLER
+    - name: KAFKA_HEAP_OPTS
+      value: -Xmx512m -Xms256m
+    image:
+      registry: ''
+      repository: bitnamilegacy/kafka
+      tag: 4.0.0
+    port: 9092
+    volumeMounts: []

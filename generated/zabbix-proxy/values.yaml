@@ -1,0 +1,33 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: zabbix_proxy
+  PANEL_DB_USER: zabbix
+  ZABBIX_PROXY_HOSTNAME: zabbix-proxy
+  ZABBIX_SERVER: ''
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  zabbix-proxy-mysql:
+    env:
+    - name: TZ
+      value: Asia/Shanghai
+    - name: ZBX_HOSTNAME
+      valueFromEnv: ZABBIX_PROXY_HOSTNAME
+    - name: ZBX_SERVER_HOST
+      valueFromEnv: ZABBIX_SERVER
+    - name: ZBX_PROXYMODE
+      value: '0'
+    - name: MYSQL_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: MYSQL_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: MYSQL_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    image:
+      registry: ''
+      repository: zabbix/zabbix-proxy-mysql
+      tag: alpine-7.4.5
+    port: 10051
+    volumeMounts: []

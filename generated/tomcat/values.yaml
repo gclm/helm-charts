@@ -1,0 +1,22 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /bitnami/tomcat
+    size: 10Gi
+secrets:
+  TOMCAT_PASSWORD:
+    generate: true
+services:
+  nexus:
+    env:
+    - name: TOMCAT_PASSWORD
+      valueFromSecret: TOMCAT_PASSWORD
+    image:
+      registry: ''
+      repository: bitnamilegacy/tomcat
+      tag: 10.1.43
+    port: 8080
+    volumeMounts:
+    - mountPath: /bitnami/tomcat
+      name: vol-data

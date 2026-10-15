@@ -1,0 +1,47 @@
+configMaps: {}
+env:
+  HALO_EXTERNAL_URL: http://localhost:8090
+  PANEL_DB_NAME: halo
+  PANEL_DB_TYPE: mysql
+  PANEL_DB_USER: halo
+persistence:
+  vol-data:
+    mountPath: /root/.halo2
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  halo:
+    command:
+    - --spring.r2dbc.url=r2dbc:pool:${PANEL_DB_TYPE}://${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}
+    - --spring.r2dbc.username=${PANEL_DB_USER}
+    - --spring.r2dbc.password=${PANEL_DB_USER_PASSWORD}
+    - --spring.sql.init.platform=${PANEL_DB_TYPE}
+    - --halo.external-url=${HALO_EXTERNAL_URL}
+    env:
+    - name: JVM_OPTS
+      value: ''
+    - name: PANEL_DB_TYPE
+      valueFromEnv: PANEL_DB_TYPE
+    - name: PANEL_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: PANEL_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: PANEL_DB_USER_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: HALO_EXTERNAL_URL
+      valueFromEnv: HALO_EXTERNAL_URL
+    image:
+      registry: ''
+      repository: halohub/halo-pro
+      tag: 2.26.1
+    port: 8090
+    probe:
+      exec: CMD curl -f http://localhost:8090/actuator/health/readiness
+      intervalSeconds: 30
+      retries: 5
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /root/.halo2
+      name: vol-data

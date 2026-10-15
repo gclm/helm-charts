@@ -1,0 +1,12 @@
+{{- range $name, $cm := .Values.configMaps }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}
+data:
+  {{- range $f, $content := $cm.data }}
+  {{ $f }}: |
+{{ $content | indent 4 }}
+  {{- end }}
+---
+{{- end }}

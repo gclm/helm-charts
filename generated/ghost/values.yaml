@@ -1,0 +1,33 @@
+configMaps: {}
+env:
+  GHOST_URL: https://blog.domain.com
+  PANEL_DB_NAME: ghost
+  PANEL_DB_USER: ghost
+persistence:
+  vol-data:
+    mountPath: /var/lib/ghost/content
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  ghost:
+    env:
+    - name: url
+      valueFromEnv: GHOST_URL
+    - name: database__client
+      value: mysql
+    - name: database__connection__user
+      valueFromEnv: PANEL_DB_USER
+    - name: database__connection__password
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: database__connection__database
+      valueFromEnv: PANEL_DB_NAME
+    image:
+      registry: ''
+      repository: ghost
+      tag: 6.70.0
+    port: 2368
+    volumeMounts:
+    - mountPath: /var/lib/ghost/content
+      name: vol-data

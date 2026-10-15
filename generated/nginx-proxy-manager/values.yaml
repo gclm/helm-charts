@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-data:
+    mountPath: /data
+    size: 10Gi
+  vol-data-ssl:
+    mountPath: /etc/letsencrypt
+    size: 10Gi
+secrets: {}
+services:
+  nginxpm:
+    env: []
+    image:
+      registry: ''
+      repository: jc21/nginx-proxy-manager
+      tag: 2.16.0
+    port: 80
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data-data
+    - mountPath: /etc/letsencrypt
+      name: vol-data-ssl

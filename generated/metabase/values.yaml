@@ -1,0 +1,45 @@
+configMaps: {}
+env:
+  PANEL_DB_HOST: ''
+  PANEL_DB_NAME: metabase
+  PANEL_DB_USER: metabase
+persistence:
+  vol-data-metabase:
+    mountPath: /metabase
+    size: 10Gi
+  vol-data-metabase-data:
+    mountPath: /metabase-data
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  metabase:
+    env:
+    - name: MB_DB_TYPE
+      value: mysql
+    - name: MB_DB_DBNAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: MB_DB_PORT
+      value: '3306'
+    - name: MB_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: MB_DB_PASS
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: MB_DB_HOST
+      valueFromEnv: PANEL_DB_HOST
+    image:
+      registry: ''
+      repository: metabase/metabase
+      tag: v0.64.2
+    port: 3000
+    probe:
+      exec: curl --fail -I http://localhost:3000/api/health || exit 1
+      intervalSeconds: 15
+      retries: 5
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /metabase
+      name: vol-data-metabase
+    - mountPath: /metabase-data
+      name: vol-data-metabase-data

@@ -1,0 +1,34 @@
+configMaps: {}
+env:
+  AI_GATEWAY_INITIAL_ADMIN_USERNAME: admin
+persistence:
+  vol-data:
+    mountPath: /opt/ai-gateway/data
+    size: 10Gi
+secrets:
+  AI_GATEWAY_INITIAL_ADMIN_PASSWORD:
+    generate: true
+services:
+  ai-gateway:
+    env:
+    - name: AI_GATEWAY_DATABASE_DRIVER
+      value: sqlite
+    - name: AI_GATEWAY_DATABASE_SQLITE_PATH
+      value: /opt/ai-gateway/data/db/ai-gateway.db
+    - name: AI_GATEWAY_INITIAL_ADMIN_USERNAME
+      valueFromEnv: AI_GATEWAY_INITIAL_ADMIN_USERNAME
+    - name: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
+      valueFromSecret: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
+    image:
+      registry: ''
+      repository: 1panel/ai-gateway
+      tag: v1.3.0
+    port: 8080
+    probe:
+      exec: wget -q -O - http://127.0.0.1:8080/health/ready >/dev/null || exit 1
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /opt/ai-gateway/data
+      name: vol-data

@@ -1,0 +1,24 @@
+configMaps: {}
+env:
+  HASH_SALT: umami
+  PANEL_DB_TYPE: postgresql
+persistence: {}
+secrets: {}
+services:
+  umami:
+    env:
+    - name: DATABASE_TYPE
+      valueFromEnv: PANEL_DB_TYPE
+    - name: APP_SECRET
+      valueFromEnv: HASH_SALT
+    image:
+      registry: ghcr.io
+      repository: umami-software/umami
+      tag: 3.4.0
+    port: 3000
+    probe:
+      exec: curl http://localhost:3000/api/heartbeat
+      intervalSeconds: 5
+      retries: 5
+      timeoutSeconds: 5
+    volumeMounts: []

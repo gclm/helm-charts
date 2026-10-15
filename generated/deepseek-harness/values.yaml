@@ -1,0 +1,49 @@
+configMaps: {}
+env:
+  DSH_AUTH_USERNAME: admin
+  HTTPS_ACCESS_HOST: ''
+persistence:
+  vol-data-caddy:
+    mountPath: /data/caddy
+    size: 10Gi
+  vol-data-dsh:
+    mountPath: /data/dsh
+    size: 10Gi
+  vol-data-workspace:
+    mountPath: /workspace
+    size: 10Gi
+secrets:
+  DSH_AUTH_PASSWORD:
+    generate: true
+services:
+  deepseek-harness:
+    env:
+    - name: HTTPS_ACCESS_HOST
+      valueFromEnv: HTTPS_ACCESS_HOST
+    - name: DSH_AUTH_USERNAME
+      valueFromEnv: DSH_AUTH_USERNAME
+    - name: DSH_AUTH_PASSWORD
+      valueFromSecret: DSH_AUTH_PASSWORD
+    - name: DSH_HOME
+      value: /data/dsh
+    - name: DSH_TELEMETRY_DISABLED
+      value: '1'
+    - name: NARB_DISABLE_NATIVE_CACHE
+      value: '1'
+    image:
+      registry: ''
+      repository: 1panel/deepseek-harness
+      tag: 0.2.0-rc.2
+    port: 8443
+    probe:
+      exec: CMD curl -fsS --max-time 5 http://127.0.0.1:3080/
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /data/dsh
+      name: vol-data-dsh
+    - mountPath: /workspace
+      name: vol-data-workspace
+    - mountPath: /data/caddy
+      name: vol-data-caddy

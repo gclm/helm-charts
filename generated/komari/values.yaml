@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets: {}
+services:
+  dashboard:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: komari-monitor/komari
+      tag: 1.5.1
+    port: 25774
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

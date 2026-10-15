@@ -1,0 +1,38 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-dms-config-:
+    mountPath: /tmp/docker-mailserver/
+    size: 10Gi
+  vol-data-dms-mail-data-:
+    mountPath: /var/mail/
+    size: 10Gi
+  vol-data-dms-mail-logs-:
+    mountPath: /var/log/mail/
+    size: 10Gi
+  vol-data-dms-mail-state-:
+    mountPath: /var/mail-state/
+    size: 10Gi
+secrets: {}
+services:
+  mailserver:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: docker-mailserver/docker-mailserver
+      tag: 16.0.1
+    port: 25
+    probe:
+      exec: ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1
+      intervalSeconds: 10
+      retries: 3
+      timeoutSeconds: 3
+    volumeMounts:
+    - mountPath: /var/mail/
+      name: vol-data-dms-mail-data-
+    - mountPath: /var/mail-state/
+      name: vol-data-dms-mail-state-
+    - mountPath: /var/log/mail/
+      name: vol-data-dms-mail-logs-
+    - mountPath: /tmp/docker-mailserver/
+      name: vol-data-dms-config-

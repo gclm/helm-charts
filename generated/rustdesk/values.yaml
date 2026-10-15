@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-hbbs:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  rustdesk-server:
+    env:
+    - name: ENCRYPTED_ONLY
+      value: '1'
+    image:
+      registry: ''
+      repository: rustdesk/rustdesk-server-s6
+      tag: 1.1.16
+    port: 21115
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data-hbbs

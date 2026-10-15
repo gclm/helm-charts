@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /home/node/.n8n
+    size: 10Gi
+secrets: {}
+services:
+  n8n:
+    env:
+    - name: N8N_SECURE_COOKIE
+      value: 'False'
+    image:
+      registry: ''
+      repository: n8nio/n8n
+      tag: 2.43.5
+    port: 5678
+    volumeMounts:
+    - mountPath: /home/node/.n8n
+      name: vol-data

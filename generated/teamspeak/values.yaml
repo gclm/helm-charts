@@ -1,0 +1,32 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: teamspeak
+  PANEL_DB_USER: teamspeak
+persistence:
+  vol-data:
+    mountPath: /var/ts3server
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  teamspeak:
+    env:
+    - name: TS3SERVER_DB_WAITUNTILREADY
+      value: '30'
+    - name: TS3SERVER_LICENSE
+      value: accept
+    - name: TS3SERVER_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: TS3SERVER_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: TS3SERVER_DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    image:
+      registry: ''
+      repository: teamspeak
+      tag: 3.13.8
+    port: 9987
+    volumeMounts:
+    - mountPath: /var/ts3server
+      name: vol-data

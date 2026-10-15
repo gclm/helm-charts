@@ -1,0 +1,37 @@
+configMaps: {}
+env:
+  DEFAULT_ADMIN_EMAIL: admin@planka.app
+  DEFAULT_ADMIN_NAME: Admin
+  DEFAULT_ADMIN_USERNAME: admin
+  PLANKA_EXTERNAL_URL: http://localhost:1337
+  PLANKA_SECRET_KEY: planka
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets:
+  DEFAULT_ADMIN_PASSWORD:
+    generate: true
+services:
+  planka:
+    env:
+    - name: BASE_URL
+      valueFromEnv: PLANKA_EXTERNAL_URL
+    - name: SECRET_KEY
+      valueFromEnv: PLANKA_SECRET_KEY
+    - name: DEFAULT_ADMIN_NAME
+      valueFromEnv: DEFAULT_ADMIN_NAME
+    - name: DEFAULT_ADMIN_USERNAME
+      valueFromEnv: DEFAULT_ADMIN_USERNAME
+    - name: DEFAULT_ADMIN_PASSWORD
+      valueFromSecret: DEFAULT_ADMIN_PASSWORD
+    - name: DEFAULT_ADMIN_EMAIL
+      valueFromEnv: DEFAULT_ADMIN_EMAIL
+    image:
+      registry: ghcr.io
+      repository: plankanban/planka
+      tag: 2.2.1
+    port: 1337
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

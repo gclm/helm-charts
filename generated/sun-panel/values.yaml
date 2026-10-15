@@ -1,0 +1,28 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-conf:
+    mountPath: /app/conf
+    size: 10Gi
+  vol-data-database:
+    mountPath: /app/database
+    size: 10Gi
+  vol-data-uploads:
+    mountPath: /app/uploads
+    size: 10Gi
+secrets: {}
+services:
+  sun-panel:
+    env: []
+    image:
+      registry: ''
+      repository: hslr/sun-panel
+      tag: 1.8.1
+    port: 3002
+    volumeMounts:
+    - mountPath: /app/conf
+      name: vol-data-conf
+    - mountPath: /app/uploads
+      name: vol-data-uploads
+    - mountPath: /app/database
+      name: vol-data-database

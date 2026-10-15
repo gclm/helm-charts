@@ -1,0 +1,29 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-data:
+    mountPath: /opt/alist/data
+    size: 10Gi
+  vol-data-mnt:
+    mountPath: /mnt/data
+    size: 10Gi
+secrets: {}
+services:
+  alist:
+    env:
+    - name: PUID
+      value: '0'
+    - name: PGID
+      value: '0'
+    - name: UMASK
+      value: '022'
+    image:
+      registry: ''
+      repository: xhofe/alist
+      tag: v3.65.0
+    port: 5244
+    volumeMounts:
+    - mountPath: /opt/alist/data
+      name: vol-data-data
+    - mountPath: /mnt/data
+      name: vol-data-mnt

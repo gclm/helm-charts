@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  node-red:
+    env:
+    - name: TZ
+      value: Asia/Shanghai
+    image:
+      registry: ''
+      repository: nodered/node-red
+      tag: 5.0.8
+    port: 1880
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

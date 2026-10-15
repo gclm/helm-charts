@@ -1,0 +1,70 @@
+configMaps: {}
+env:
+  LLM_DEFAULT_MODEL: ''
+  LLM_MINOR_MODEL: ''
+  LLM_PROVIDER: OpenAI
+  LLM_VISION_MODEL: ''
+  LLM_VISION_PROVIDER: ''
+  MAX_UPLOAD_SIZE_MB: 5
+  PROVIDER_API_KEY: ''
+  PROVIDER_BASE_URL: ''
+  SERPER_API_KEY: ''
+  VISION_PROVIDER_API_KEY: ''
+  VISION_PROVIDER_BASE_URL: ''
+  WEATHER_API_KEY: ''
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+  vol-logs:
+    mountPath: /app/logs
+    size: 10Gi
+  vol-storage:
+    mountPath: /app/storage
+    size: 10Gi
+secrets: {}
+services:
+  upage:
+    env:
+    - name: LLM_PROVIDER
+      valueFromEnv: LLM_PROVIDER
+    - name: PROVIDER_API_KEY
+      valueFromEnv: PROVIDER_API_KEY
+    - name: PROVIDER_BASE_URL
+      valueFromEnv: PROVIDER_BASE_URL
+    - name: LLM_DEFAULT_MODEL
+      valueFromEnv: LLM_DEFAULT_MODEL
+    - name: LLM_MINOR_MODEL
+      valueFromEnv: LLM_MINOR_MODEL
+    - name: LLM_VISION_PROVIDER
+      valueFromEnv: LLM_VISION_PROVIDER
+    - name: LLM_VISION_MODEL
+      valueFromEnv: LLM_VISION_MODEL
+    - name: VISION_PROVIDER_BASE_URL
+      valueFromEnv: VISION_PROVIDER_BASE_URL
+    - name: VISION_PROVIDER_API_KEY
+      valueFromEnv: VISION_PROVIDER_API_KEY
+    - name: SERPER_API_KEY
+      valueFromEnv: SERPER_API_KEY
+    - name: WEATHER_API_KEY
+      valueFromEnv: WEATHER_API_KEY
+    - name: MAX_UPLOAD_SIZE_MB
+      valueFromEnv: MAX_UPLOAD_SIZE_MB
+    - name: USAGE_LOG_FILE
+      value: 'true'
+    - name: OPERATING_ENV
+      value: production
+    - name: LOG_LEVEL
+      value: debug
+    image:
+      registry: ''
+      repository: halohub/upage
+      tag: 2.0.0
+    port: 3000
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data
+    - mountPath: /app/logs
+      name: vol-logs
+    - mountPath: /app/storage
+      name: vol-storage

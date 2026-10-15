@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-games_storage:
+    mountPath: /games_storage
+    size: 10Gi
+secrets: {}
+services:
+  dosgame:
+    env: []
+    image:
+      registry: ''
+      repository: firezmc/dosgame-web-docker
+      tag: v3.9.6
+    port: 8090
+    volumeMounts:
+    - mountPath: /games_storage
+      name: vol-data-games_storage

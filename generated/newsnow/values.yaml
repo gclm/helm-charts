@@ -1,0 +1,40 @@
+configMaps: {}
+env:
+  ENABLE_CACHE: 'true'
+  G_CLIENT_ID: ''
+  G_CLIENT_SECRET: ''
+  INIT_TABLE: 'true'
+persistence:
+  vol-data:
+    mountPath: /usr/app/.data
+    size: 10Gi
+secrets:
+  JWT_SECRET:
+    generate: true
+services:
+  newsnow:
+    env:
+    - name: HOST
+      value: 0.0.0.0
+    - name: PORT
+      value: '4444'
+    - name: NODE_ENV
+      value: production
+    - name: G_CLIENT_ID
+      valueFromEnv: G_CLIENT_ID
+    - name: G_CLIENT_SECRET
+      valueFromEnv: G_CLIENT_SECRET
+    - name: JWT_SECRET
+      valueFromSecret: JWT_SECRET
+    - name: INIT_TABLE
+      valueFromEnv: INIT_TABLE
+    - name: ENABLE_CACHE
+      valueFromEnv: ENABLE_CACHE
+    image:
+      registry: ghcr.io
+      repository: ourongxing/newsnow
+      tag: v0.0.41
+    port: 4444
+    volumeMounts:
+    - mountPath: /usr/app/.data
+      name: vol-data

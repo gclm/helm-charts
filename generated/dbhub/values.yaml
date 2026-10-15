@@ -1,0 +1,38 @@
+configMaps: {}
+env:
+  DBHUB_DB_ADDRESS: ''
+  DBHUB_DB_NAME: ''
+  DBHUB_DB_PORT: ''
+  DBHUB_DB_TYPE: mysql
+  DBHUB_DB_USER: ''
+  DBHUB_DB_USER_PASSWORD: ''
+persistence: {}
+secrets: {}
+services:
+  dbhub:
+    command:
+    - --transport
+    - http
+    - --port
+    - '8080'
+    - --dsn
+    - ${DBHUB_DB_TYPE}://${DBHUB_DB_USER}:${DBHUB_DB_USER_PASSWORD}@${DBHUB_DB_ADDRESS}:${DBHUB_DB_PORT}/${DBHUB_DB_NAME}
+    env:
+    - name: DBHUB_DB_TYPE
+      valueFromEnv: DBHUB_DB_TYPE
+    - name: DBHUB_DB_USER
+      valueFromEnv: DBHUB_DB_USER
+    - name: DBHUB_DB_USER_PASSWORD
+      valueFromEnv: DBHUB_DB_USER_PASSWORD
+    - name: DBHUB_DB_ADDRESS
+      valueFromEnv: DBHUB_DB_ADDRESS
+    - name: DBHUB_DB_PORT
+      valueFromEnv: DBHUB_DB_PORT
+    - name: DBHUB_DB_NAME
+      valueFromEnv: DBHUB_DB_NAME
+    image:
+      registry: ''
+      repository: bytebase/dbhub
+      tag: 1.5.0
+    port: 8080
+    volumeMounts: []

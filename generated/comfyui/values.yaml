@@ -1,0 +1,22 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  comfyui:
+    env:
+    - name: COMFYUI_LISTEN
+      value: 0.0.0.0
+    - name: COMFYUI_PORT
+      value: '8188'
+    image:
+      registry: ''
+      repository: 1panel/comfyui
+      tag: v0.33.1
+    port: 8188
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

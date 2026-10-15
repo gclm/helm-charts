@@ -1,0 +1,33 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data-cache-ntfy:
+    mountPath: /var/cache/ntfy
+    size: 10Gi
+  vol-data-ntfy:
+    mountPath: /etc/ntfy
+    size: 10Gi
+secrets: {}
+services:
+  ntfy:
+    command:
+    - serve
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: binwiederhier/ntfy
+      tag: v2.30.0
+    probe:
+      exec: wget -q --tries=1 http://localhost:${APP_PORT_INTERNAL}/v1/health -O -
+        | grep -Eo '"healthy"\s*:\s*true' || exit 1
+      intervalSeconds: 60
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /var/cache/ntfy
+      name: vol-data-cache-ntfy
+    - mountPath: /etc/ntfy
+      name: vol-data-ntfy

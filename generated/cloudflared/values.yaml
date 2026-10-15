@@ -1,0 +1,17 @@
+configMaps: {}
+env:
+  token: ''
+persistence: {}
+secrets: {}
+services:
+  cloudflared:
+    command:
+    - tunnel --no-autoupdate run --token ${token}
+    env:
+    - name: token
+      valueFromEnv: token
+    image:
+      registry: ''
+      repository: cloudflare/cloudflared
+      tag: 2026.10.0
+    volumeMounts: []

@@ -1,0 +1,98 @@
+configMaps: {}
+env:
+  ADMIN_USER: admin
+  PANEL_DB_NAME: photoprism
+  PANEL_DB_USER: photoprism
+  PHOTOPRISM_EXTERNAL_URL: http://localhost:2342/
+  SITE_AUTHOR: ''
+  SITE_CAPTION: AI-Powered Photos App
+  SITE_DESCRIPTION: ''
+persistence:
+  vol-data-Pictures:
+    mountPath: /photoprism/originals
+    size: 10Gi
+  vol-data-storage:
+    mountPath: /photoprism/storage
+    size: 10Gi
+secrets:
+  ADMIN_PASSWORD:
+    generate: true
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  photoprism:
+    env:
+    - name: PHOTOPRISM_ADMIN_USER
+      valueFromEnv: ADMIN_USER
+    - name: PHOTOPRISM_ADMIN_PASSWORD
+      valueFromSecret: ADMIN_PASSWORD
+    - name: PHOTOPRISM_AUTH_MODE
+      value: password
+    - name: PHOTOPRISM_SITE_URL
+      valueFromEnv: PHOTOPRISM_EXTERNAL_URL
+    - name: PHOTOPRISM_DISABLE_TLS
+      value: 'false'
+    - name: PHOTOPRISM_DEFAULT_TLS
+      value: 'true'
+    - name: PHOTOPRISM_ORIGINALS_LIMIT
+      value: '5000'
+    - name: PHOTOPRISM_HTTP_COMPRESSION
+      value: gzip
+    - name: PHOTOPRISM_LOG_LEVEL
+      value: info
+    - name: PHOTOPRISM_READONLY
+      value: 'false'
+    - name: PHOTOPRISM_EXPERIMENTAL
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_CHOWN
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_WEBDAV
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_SETTINGS
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_TENSORFLOW
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_FACES
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_CLASSIFICATION
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_VECTORS
+      value: 'false'
+    - name: PHOTOPRISM_DISABLE_RAW
+      value: 'false'
+    - name: PHOTOPRISM_RAW_PRESETS
+      value: 'false'
+    - name: PHOTOPRISM_JPEG_QUALITY
+      value: '85'
+    - name: PHOTOPRISM_DETECT_NSFW
+      value: 'false'
+    - name: PHOTOPRISM_UPLOAD_NSFW
+      value: 'true'
+    - name: PHOTOPRISM_DATABASE_DRIVER
+      value: mysql
+    - name: PHOTOPRISM_DATABASE_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: PHOTOPRISM_DATABASE_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: PHOTOPRISM_DATABASE_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PHOTOPRISM_SITE_CAPTION
+      valueFromEnv: SITE_CAPTION
+    - name: PHOTOPRISM_SITE_DESCRIPTION
+      valueFromEnv: SITE_DESCRIPTION
+    - name: PHOTOPRISM_SITE_AUTHOR
+      valueFromEnv: SITE_AUTHOR
+    - name: PHOTOPRISM_UID
+      value: ${UID:-1000}
+    - name: PHOTOPRISM_GID
+      value: ${GID:-1000}
+    image:
+      registry: ''
+      repository: photoprism/photoprism
+      tag: 251130-ce
+    port: 2342
+    volumeMounts:
+    - mountPath: /photoprism/originals
+      name: vol-data-Pictures
+    - mountPath: /photoprism/storage
+      name: vol-data-storage

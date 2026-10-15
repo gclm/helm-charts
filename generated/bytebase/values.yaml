@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /var/opt/bytebase
+    size: 10Gi
+secrets: {}
+services:
+  bytebase:
+    env: []
+    image:
+      registry: ''
+      repository: bytebase/bytebase
+      tag: 3.23.1
+    port: 8080
+    volumeMounts:
+    - mountPath: /var/opt/bytebase
+      name: vol-data

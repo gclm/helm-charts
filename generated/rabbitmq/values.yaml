@@ -1,0 +1,29 @@
+configMaps: {}
+env:
+  RABBITMQ_DEFAULT_PASS: rabbitmq
+  RABBITMQ_DEFAULT_USER: rabbitmq
+persistence:
+  vol-data-:
+    mountPath: /var/lib/rabbitmq/
+    size: 10Gi
+  vol-log-:
+    mountPath: /var/log/rabbitmq
+    size: 10Gi
+secrets: {}
+services:
+  rabbitmq:
+    env:
+    - name: RABBITMQ_DEFAULT_USER
+      valueFromEnv: RABBITMQ_DEFAULT_USER
+    - name: RABBITMQ_DEFAULT_PASS
+      valueFromEnv: RABBITMQ_DEFAULT_PASS
+    image:
+      registry: ''
+      repository: rabbitmq
+      tag: 4.3.6-management-alpine
+    port: 5672
+    volumeMounts:
+    - mountPath: /var/lib/rabbitmq/
+      name: vol-data-
+    - mountPath: /var/log/rabbitmq
+      name: vol-log-

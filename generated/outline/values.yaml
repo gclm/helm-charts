@@ -1,0 +1,94 @@
+configMaps: {}
+env:
+  GITHUB_OAUTH_CLIENT_ID: ''
+  GITHUB_OAUTH_SECRET: ''
+  PANEL_APP_URL: ''
+  PANEL_LANGUAGE: zh_CN
+  PANEL_SMTP_FROM_EMAIL: example@mail.com
+  PANEL_SMTP_HOST: smtp.mailgun.org
+  PANEL_SMTP_PASSWORD: ''
+  PANEL_SMTP_PORT: 465
+  PANEL_SMTP_USERNAME: example@mail.com
+persistence:
+  vol-data:
+    mountPath: /var/lib/outline/data
+    size: 10Gi
+  vol-env-docker-env:
+    mountPath: /opt/outline/.env
+    size: 10Gi
+secrets: {}
+services:
+  outline:
+    env:
+    - name: NODE_ENV
+      value: production
+    - name: SECRET_KEY
+      value: 23a8db156434376a46f95636eff5b4e1a44f511a396a2f0e92e5cb53d2841e94
+    - name: UTILS_SECRET
+      value: 1bb17f561e1a46527c8a7e8bc267d6175db353a16c59bcd2b41512b024da67de
+    - name: DEFAULT_LANGUAGE
+      valueFromEnv: PANEL_LANGUAGE
+    - name: URL
+      valueFromEnv: PANEL_APP_URL
+    - name: PORT
+      value: '3000'
+    - name: PGSSLMODE
+      value: disable
+    - name: FILE_STORAGE
+      value: local
+    - name: FILE_STORAGE_LOCAL_ROOT_DIR
+      value: /var/lib/outline/data
+    - name: FILE_STORAGE_UPLOAD_MAX_SIZE
+      value: '262144000'
+    - name: FILE_STORAGE_IMPORT_MAX_SIZE
+      value: '262144000'
+    - name: FILE_STORAGE_WORKSPACE_IMPORT_MAX_SIZE
+      value: '262144000'
+    - name: FORCE_HTTPS
+      value: 'false'
+    - name: RATE_LIMITER_ENABLED
+      value: 'false'
+    - name: SLACK_MESSAGE_ACTIONS
+      value: 'false'
+    - name: ENABLE_UPDATES
+      value: 'true'
+    - name: DEBUG
+      value: http
+    - name: LOG_LEVEL
+      value: info
+    - name: SMTP_HOST
+      valueFromEnv: PANEL_SMTP_HOST
+    - name: SMTP_PORT
+      valueFromEnv: PANEL_SMTP_PORT
+    - name: SMTP_USERNAME
+      valueFromEnv: PANEL_SMTP_USERNAME
+    - name: SMTP_PASSWORD
+      valueFromEnv: PANEL_SMTP_PASSWORD
+    - name: SMTP_FROM_EMAIL
+      valueFromEnv: PANEL_SMTP_FROM_EMAIL
+    - name: OIDC_AUTH_URI
+      value: https://github.com/login/oauth/authorize
+    - name: OIDC_TOKEN_URI
+      value: https://github.com/login/oauth/access_token
+    - name: OIDC_SCOPES
+      value: read:user user:email
+    - name: OIDC_USERINFO_URI
+      value: https://api.github.com/user
+    - name: OIDC_USERNAME_CLAIM
+      value: name
+    - name: OIDC_DISPLAY_NAME
+      value: GitHub
+    - name: OIDC_CLIENT_ID
+      valueFromEnv: GITHUB_OAUTH_CLIENT_ID
+    - name: OIDC_CLIENT_SECRET
+      valueFromEnv: GITHUB_OAUTH_SECRET
+    image:
+      registry: ''
+      repository: outlinewiki/outline
+      tag: 1.11.0
+    port: 3000
+    volumeMounts:
+    - mountPath: /var/lib/outline/data
+      name: vol-data
+    - mountPath: /opt/outline/.env
+      name: vol-env-docker-env

@@ -1,0 +1,30 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data-config:
+    mountPath: /config
+    size: 10Gi
+  vol-data-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  nextcloud:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: linuxserver/nextcloud
+      tag: 35.0.1
+    port: 443
+    volumeMounts:
+    - mountPath: /config
+      name: vol-data-config
+    - mountPath: /data
+      name: vol-data-data

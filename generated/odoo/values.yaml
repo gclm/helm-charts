@@ -1,0 +1,33 @@
+configMaps: {}
+env:
+  PANEL_DB_HOST: ''
+  PANEL_DB_USER: odoo
+persistence:
+  vol-data-addons:
+    mountPath: /mnt/extra-addons
+    size: 10Gi
+  vol-data-data:
+    mountPath: /var/lib/odoo
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  odoo:
+    env:
+    - name: HOST
+      valueFromEnv: PANEL_DB_HOST
+    - name: USER
+      valueFromEnv: PANEL_DB_USER
+    - name: PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    image:
+      registry: ''
+      repository: odoo
+      tag: '19.0'
+    port: 8069
+    volumeMounts:
+    - mountPath: /var/lib/odoo
+      name: vol-data-data
+    - mountPath: /mnt/extra-addons
+      name: vol-data-addons

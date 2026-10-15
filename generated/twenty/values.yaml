@@ -1,0 +1,51 @@
+configMaps: {}
+env:
+  TWENTY_APP_SECRET: ''
+  TWENTY_SERVER_URL: http://<YOUR IP>:3000
+persistence:
+  vol-data:
+    mountPath: /app/packages/twenty-server/.local-storage
+    size: 10Gi
+secrets: {}
+services:
+  server:
+    env:
+    - name: NODE_PORT
+      value: '3000'
+    - name: SERVER_URL
+      valueFromEnv: TWENTY_SERVER_URL
+    - name: STORAGE_TYPE
+      value: local
+    - name: APP_SECRET
+      valueFromEnv: TWENTY_APP_SECRET
+    image:
+      registry: ''
+      repository: twentycrm/twenty
+      tag: v2.46.0
+    port: 3000
+    probe:
+      exec: curl --fail http://localhost:3000/healthz
+      intervalSeconds: 5
+      retries: 20
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /app/packages/twenty-server/.local-storage
+      name: vol-data
+  worker:
+    command:
+    - yarn
+    - worker:prod
+    env:
+    - name: SERVER_URL
+      valueFromEnv: TWENTY_SERVER_URL
+    - name: STORAGE_TYPE
+      value: local
+    - name: APP_SECRET
+      valueFromEnv: TWENTY_APP_SECRET
+    image:
+      registry: ''
+      repository: twentycrm/twenty
+      tag: v2.46.0
+    volumeMounts:
+    - mountPath: /app/packages/twenty-server/.local-storage
+      name: vol-data

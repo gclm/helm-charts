@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  bitwarden:
+    env: []
+    image:
+      registry: ''
+      repository: vaultwarden/server
+      tag: 1.37.4-alpine
+    port: 80
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

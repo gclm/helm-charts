@@ -1,0 +1,30 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /usr/share/kibana/data
+    size: 10Gi
+secrets: {}
+services:
+  kibana:
+    env:
+    - name: SERVER_NAME
+      value: '"kibana"'
+    - name: SERVER_HOST
+      value: '"0.0.0.0"'
+    - name: SERVER_PORT
+      value: '5601'
+    - name: I18N_LOCALE
+      value: '"zh-CN"'
+    - name: SERVER_SHUTDOWNTIMEOUT
+      value: '"5s"'
+    - name: MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED
+      value: 'true'
+    image:
+      registry: ''
+      repository: kibana
+      tag: 9.5.5
+    port: 5601
+    volumeMounts:
+    - mountPath: /usr/share/kibana/data
+      name: vol-data

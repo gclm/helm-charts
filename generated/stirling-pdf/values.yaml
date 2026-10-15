@@ -1,0 +1,25 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-extraConfigs:
+    mountPath: /configs
+    size: 10Gi
+  vol-data-trainingData:
+    mountPath: /usr/share/tesseract-ocr/5/tessdata
+    size: 10Gi
+secrets: {}
+services:
+  stirling-pdf:
+    env:
+    - name: DOCKER_ENABLE_SECURITY
+      value: 'false'
+    image:
+      registry: ''
+      repository: frooodle/s-pdf
+      tag: 3.1.0
+    port: 8080
+    volumeMounts:
+    - mountPath: /usr/share/tesseract-ocr/5/tessdata
+      name: vol-data-trainingData
+    - mountPath: /configs
+      name: vol-data-extraConfigs

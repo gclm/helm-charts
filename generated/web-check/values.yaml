@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  web-check:
+    env: []
+    image:
+      registry: ''
+      repository: lissy93/web-check
+      tag: 2.3.4
+    port: 3000
+    volumeMounts: []

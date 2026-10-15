@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  zentao:
+    env:
+    - name: MYSQL_INTERNAL
+      value: 'true'
+    image:
+      registry: hub.zentao.net
+      repository: app/zentao
+      tag: '22.7'
+    port: 80
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

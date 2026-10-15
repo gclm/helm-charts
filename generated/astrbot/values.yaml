@@ -1,0 +1,21 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /AstrBot/data
+    size: 10Gi
+secrets: {}
+services:
+  astrbot:
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: soulter/astrbot
+      tag: v4.28.2
+    port: 6185
+    volumeMounts:
+    - mountPath: /AstrBot/data
+      name: vol-data

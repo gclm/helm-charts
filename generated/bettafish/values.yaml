@@ -1,0 +1,54 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: bettafish
+  PANEL_DB_TYPE: postgresql
+  PANEL_DB_USER: bettafish
+  PANEL_DB_USER_PASSWORD: bettafish
+persistence:
+  vol-data-final_reports:
+    mountPath: /app/final_reports
+    size: 10Gi
+  vol-data-insight_engine_streamlit_reports:
+    mountPath: /app/insight_engine_streamlit_reports
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /app/logs
+    size: 10Gi
+  vol-data-media_engine_streamlit_reports:
+    mountPath: /app/media_engine_streamlit_reports
+    size: 10Gi
+  vol-data-query_engine_streamlit_reports:
+    mountPath: /app/query_engine_streamlit_reports
+    size: 10Gi
+secrets: {}
+services:
+  bettafish:
+    env:
+    - name: DB_DIALECT
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromEnv: PANEL_DB_USER_PASSWORD
+    - name: DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: PYTHONUNBUFFERED
+      value: '1'
+    - name: STREAMLIT_SERVER_ENABLE_FILE_WATCHER
+      value: 'false'
+    image:
+      registry: ghcr.io
+      repository: 666ghj/bettafish
+      tag: v3.0.0
+    port: 5000
+    volumeMounts:
+    - mountPath: /app/logs
+      name: vol-data-logs
+    - mountPath: /app/final_reports
+      name: vol-data-final_reports
+    - mountPath: /app/insight_engine_streamlit_reports
+      name: vol-data-insight_engine_streamlit_reports
+    - mountPath: /app/media_engine_streamlit_reports
+      name: vol-data-media_engine_streamlit_reports
+    - mountPath: /app/query_engine_streamlit_reports
+      name: vol-data-query_engine_streamlit_reports

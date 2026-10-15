@@ -1,0 +1,56 @@
+configMaps: {}
+env:
+  PANEL_REDIS_HOST: ''
+  PANEL_REDIS_ROOT_PASSWORD: ''
+persistence:
+  vol-data-config:
+    mountPath: /root/.affine/config
+    size: 10Gi
+  vol-data-storage:
+    mountPath: /root/.affine/storage
+    size: 10Gi
+secrets: {}
+services:
+  affine:
+    env:
+    - name: REDIS_SERVER_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: REDIS_SERVER_PORT
+      value: '6379'
+    - name: REDIS_SERVER_PASSWORD
+      valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    - name: AFFINE_INDEXER_ENABLED
+      value: 'false'
+    image:
+      registry: ghcr.io
+      repository: toeverything/affine
+      tag: 0.27.4
+    port: 3010
+    volumeMounts:
+    - mountPath: /root/.affine/storage
+      name: vol-data-storage
+    - mountPath: /root/.affine/config
+      name: vol-data-config
+  affine_migration:
+    command:
+    - sh
+    - -c
+    - node ./scripts/self-host-predeploy.js
+    env:
+    - name: REDIS_SERVER_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: REDIS_SERVER_PORT
+      value: '6379'
+    - name: REDIS_SERVER_PASSWORD
+      valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    - name: AFFINE_INDEXER_ENABLED
+      value: 'false'
+    image:
+      registry: ghcr.io
+      repository: toeverything/affine
+      tag: 0.27.4
+    volumeMounts:
+    - mountPath: /root/.affine/storage
+      name: vol-data-storage
+    - mountPath: /root/.affine/config
+      name: vol-data-config

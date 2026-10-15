@@ -1,0 +1,41 @@
+configMaps: {}
+env:
+  APP_KEY: SomeRandomStringOf32CharsExactly
+  APP_NAME: 2FAuth
+  APP_URL: http://localhost:8000
+persistence:
+  vol-data:
+    mountPath: /2fauth
+    size: 10Gi
+secrets: {}
+services:
+  2fauth:
+    env:
+    - name: APP_NAME
+      valueFromEnv: APP_NAME
+    - name: APP_KEY
+      valueFromEnv: APP_KEY
+    - name: APP_URL
+      valueFromEnv: APP_URL
+    - name: IS_DEMO_APP
+      value: 'false'
+    - name: LOG_CHANNEL
+      value: daily
+    - name: LOG_LEVEL
+      value: notice
+    - name: DB_DATABASE
+      value: '"/srv/database/database.sqlite"'
+    - name: CACHE_DRIVER
+      value: file
+    - name: SESSION_DRIVER
+      value: file
+    - name: AUTHENTICATION_GUARD
+      value: web-guard
+    image:
+      registry: ''
+      repository: 2fauth/2fauth
+      tag: 8.0.2
+    port: 8000
+    volumeMounts:
+    - mountPath: /2fauth
+      name: vol-data

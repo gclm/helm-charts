@@ -1,0 +1,26 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: wiki
+  PANEL_DB_TYPE: mysql
+  PANEL_DB_USER: wikijs
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  wiki:
+    env:
+    - name: DB_TYPE
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASS
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    image:
+      registry: ''
+      repository: requarks/wiki
+      tag: 2.5.316
+    port: 3000
+    volumeMounts: []

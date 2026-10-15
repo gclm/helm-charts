@@ -1,0 +1,22 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets: {}
+services:
+  twikoo:
+    env:
+    - name: TWIKOO_THROTTLE
+      value: '1000'
+    - name: TWIKOO_PORT
+      value: '8080'
+    image:
+      registry: ''
+      repository: imaegoo/twikoo
+      tag: 2.0.13
+    port: 8080
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

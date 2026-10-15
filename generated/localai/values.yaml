@@ -1,0 +1,25 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /build/models
+    size: 10Gi
+secrets: {}
+services:
+  localai:
+    env:
+    - name: DEBUG
+      value: 'true'
+    image:
+      registry: ''
+      repository: localai/localai
+      tag: v3.12.1-aio-cpu
+    port: 8080
+    probe:
+      exec: CMD curl -f http://localhost:8080/readyz
+      intervalSeconds: 1
+      retries: 5
+      timeoutSeconds: 20
+    volumeMounts:
+    - mountPath: /build/models
+      name: vol-data

@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  yesplaymusic:
+    env: []
+    image:
+      registry: ''
+      repository: fogforest/yesplaymusic
+      tag: 0.4.9
+    port: 80
+    volumeMounts: []

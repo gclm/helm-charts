@@ -1,0 +1,37 @@
+configMaps: {}
+env:
+  QWENPAW_AUTH_USERNAME: admin
+persistence:
+  vol-backups:
+    mountPath: /app/working.backups
+    size: 10Gi
+  vol-data:
+    mountPath: /app/working
+    size: 10Gi
+  vol-secret:
+    mountPath: /app/working.secret
+    size: 10Gi
+secrets:
+  QWENPAW_AUTH_PASSWORD:
+    generate: true
+services:
+  copaw:
+    env:
+    - name: QWENPAW_AUTH_ENABLED
+      value: 'true'
+    - name: QWENPAW_AUTH_USERNAME
+      valueFromEnv: QWENPAW_AUTH_USERNAME
+    - name: QWENPAW_AUTH_PASSWORD
+      valueFromSecret: QWENPAW_AUTH_PASSWORD
+    image:
+      registry: ''
+      repository: agentscope/qwenpaw
+      tag: v2.2.1
+    port: 8088
+    volumeMounts:
+    - mountPath: /app/working
+      name: vol-data
+    - mountPath: /app/working.secret
+      name: vol-secret
+    - mountPath: /app/working.backups
+      name: vol-backups

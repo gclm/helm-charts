@@ -1,0 +1,56 @@
+configMaps: {}
+env:
+  JVM_MMS: 320m
+  JVM_MS: 128m
+  JVM_XMN: 1g
+  JVM_XMS: 2g
+  JVM_XMX: 2g
+  NACOS_AUTH_IDENTITY_KEY: serverIdentity
+  NACOS_AUTH_IDENTITY_VALUE: security
+  NACOS_AUTH_TOKEN: SecretKey012345678901234567890123456789012345678901234567890123456789
+  NACOS_SERVER_IP: ''
+persistence:
+  vol-data-data:
+    mountPath: /home/nacos/data
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /home/nacos/logs
+    size: 10Gi
+secrets: {}
+services:
+  nacos:
+    env:
+    - name: NACOS_AUTH_ENABLE
+      value: ${NACOS_AUTH_ENABLE:-FALSE}
+    - name: PREFER_HOST_MODE
+      value: hostname
+    - name: MODE
+      value: standalone
+    - name: JVM_XMS
+      valueFromEnv: JVM_XMS
+    - name: JVM_XMX
+      valueFromEnv: JVM_XMX
+    - name: JVM_XMN
+      valueFromEnv: JVM_XMN
+    - name: JVM_MS
+      valueFromEnv: JVM_MS
+    - name: JVM_MMS
+      valueFromEnv: JVM_MMS
+    - name: NACOS_AUTH_IDENTITY_KEY
+      valueFromEnv: NACOS_AUTH_IDENTITY_KEY
+    - name: NACOS_AUTH_IDENTITY_VALUE
+      valueFromEnv: NACOS_AUTH_IDENTITY_VALUE
+    - name: NACOS_AUTH_TOKEN
+      valueFromEnv: NACOS_AUTH_TOKEN
+    - name: NACOS_SERVER_IP
+      valueFromEnv: NACOS_SERVER_IP
+    image:
+      registry: ''
+      repository: nacos/nacos-server
+      tag: v3.2.4
+    port: 8080
+    volumeMounts:
+    - mountPath: /home/nacos/logs
+      name: vol-data-logs
+    - mountPath: /home/nacos/data
+      name: vol-data-data

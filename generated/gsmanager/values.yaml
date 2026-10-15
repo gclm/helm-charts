@@ -1,0 +1,41 @@
+configMaps: {}
+env:
+  TZ: Asia/Shanghai
+persistence:
+  vol-data-data:
+    mountPath: /root/.local
+    size: 10Gi
+  vol-data-file:
+    mountPath: /root/steam/games
+    size: 10Gi
+  vol-data-gsm3:
+    mountPath: /root/server/data
+    size: 10Gi
+secrets: {}
+services:
+  management_panel:
+    env:
+    - name: SERVER_PORT
+      value: '3001'
+    - name: TZ
+      valueFromEnv: TZ
+    image:
+      registry: ''
+      repository: xiaozhu674/gameservermanager
+      tag: 3.14.0
+    port: 3001
+    volumeMounts:
+    - mountPath: /home/.config
+      name: vol-data-data
+    - mountPath: /home/.local
+      name: vol-data-data
+    - mountPath: /home/steam/games
+      name: vol-data-file
+    - mountPath: /root/.config
+      name: vol-data-data
+    - mountPath: /root/.local
+      name: vol-data-data
+    - mountPath: /root/steam/games
+      name: vol-data-file
+    - mountPath: /root/server/data
+      name: vol-data-gsm3

@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-conf:
+    mountPath: /app/conf
+    size: 10Gi
+  vol-data-music:
+    mountPath: /app/music
+    size: 10Gi
+secrets: {}
+services:
+  xiaomusic:
+    env: []
+    image:
+      registry: ''
+      repository: hanxi/xiaomusic
+      tag: v0.6.1
+    port: 8090
+    volumeMounts:
+    - mountPath: /app/music
+      name: vol-data-music
+    - mountPath: /app/conf
+      name: vol-data-conf

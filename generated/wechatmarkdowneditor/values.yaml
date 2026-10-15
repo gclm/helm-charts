@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  md:
+    env: []
+    image:
+      registry: ''
+      repository: doocs/md
+      tag: 2.1.0
+    port: 80
+    volumeMounts: []

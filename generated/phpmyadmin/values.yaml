@@ -1,0 +1,15 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  phpmyadmin:
+    env:
+    - name: PMA_ARBITRARY
+      value: '1'
+    image:
+      registry: ''
+      repository: phpmyadmin
+      tag: 5.2.3
+    port: 80
+    volumeMounts: []

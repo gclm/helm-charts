@@ -1,0 +1,21 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /koishi
+    size: 10Gi
+secrets: {}
+services:
+  koishi:
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: koishijs/koishi
+      tag: v1.16.0
+    port: 5140
+    volumeMounts:
+    - mountPath: /koishi
+      name: vol-data

@@ -1,0 +1,41 @@
+configMaps: {}
+env:
+  FTP_EXTERNAL_IP: <your external ip here>
+  PANEL_APP_PORT_FTP: 2121
+  PANEL_APP_PORT_SFTP: 2022
+  PANEL_APP_PORT_WEBDAV: 10080
+  PASSIVE_PORT_RANGE_END: 50100
+  PASSIVE_PORT_RANGE_START: 50000
+persistence:
+  vol-data-config:
+    mountPath: /var/lib/sftpgo
+    size: 10Gi
+  vol-data-data:
+    mountPath: /srv/sftpgo
+    size: 10Gi
+secrets: {}
+services:
+  sftpgo:
+    env:
+    - name: SFTPGO_FTPD__BINDINGS__0__PORT
+      valueFromEnv: PANEL_APP_PORT_FTP
+    - name: SFTPGO_WEBDAVD__BINDINGS__0__PORT
+      valueFromEnv: PANEL_APP_PORT_WEBDAV
+    - name: SFTPGO_SFTPD__BINDINGS__0__PORT
+      valueFromEnv: PANEL_APP_PORT_SFTP
+    - name: SFTPGO_FTPD__BINDINGS__0__FORCE_PASSIVE_IP
+      valueFromEnv: FTP_EXTERNAL_IP
+    - name: SFTPGO_FTPD__PASSIVE_PORT_RANGE__START
+      valueFromEnv: PASSIVE_PORT_RANGE_START
+    - name: SFTPGO_FTPD__PASSIVE_PORT_RANGE__END
+      valueFromEnv: PASSIVE_PORT_RANGE_END
+    image:
+      registry: ''
+      repository: drakkan/sftpgo
+      tag: v2.7.6-alpine
+    port: 8080
+    volumeMounts:
+    - mountPath: /srv/sftpgo
+      name: vol-data-data
+    - mountPath: /var/lib/sftpgo
+      name: vol-data-config

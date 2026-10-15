@@ -1,0 +1,27 @@
+configMaps: {}
+env:
+  PANEL_HTTPS_PROXY: ''
+  PANEL_HTTP_PROXY: ''
+  PANEL_NO_PROXY: ''
+persistence:
+  vol-data:
+    mountPath: /app/pb_data
+    size: 10Gi
+secrets: {}
+services:
+  certimate:
+    env:
+    - name: http_proxy
+      valueFromEnv: PANEL_HTTP_PROXY
+    - name: https_proxy
+      valueFromEnv: PANEL_HTTPS_PROXY
+    - name: NO_PROXY
+      valueFromEnv: PANEL_NO_PROXY
+    image:
+      registry: ''
+      repository: certimate/certimate
+      tag: v0.4.35
+    port: 8090
+    volumeMounts:
+    - mountPath: /app/pb_data
+      name: vol-data

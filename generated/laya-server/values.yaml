@@ -1,0 +1,31 @@
+configMaps: {}
+env:
+  LAYA_ADMIN_USERNAME: admin
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  LAYA_ADMIN_PASSWORD:
+    generate: true
+services:
+  laya-server:
+    env:
+    - name: LAYA_ADMIN_USERNAME
+      valueFromEnv: LAYA_ADMIN_USERNAME
+    - name: LAYA_ADMIN_PASSWORD
+      valueFromSecret: LAYA_ADMIN_PASSWORD
+    image:
+      registry: ''
+      repository: 1panel/laya-server
+      tag: v0.1.2
+    port: 8080
+    probe:
+      exec: python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health/live',
+        timeout=3)" || exit 1
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

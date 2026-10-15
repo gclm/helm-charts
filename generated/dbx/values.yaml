@@ -1,0 +1,22 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets:
+  PANEL_DB_PASSWORD:
+    generate: true
+services:
+  dbx:
+    env:
+    - name: DBX_PASSWORD
+      valueFromSecret: PANEL_DB_PASSWORD
+    image:
+      registry: ''
+      repository: t8y2/dbx
+      tag: 0.6.43
+    port: 4224
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

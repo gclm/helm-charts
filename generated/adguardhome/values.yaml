@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-conf:
+    mountPath: /opt/adguardhome/conf
+    size: 10Gi
+  vol-data-work:
+    mountPath: /opt/adguardhome/work
+    size: 10Gi
+secrets: {}
+services:
+  adguardhome:
+    env: []
+    image:
+      registry: ''
+      repository: adguard/adguardhome
+      tag: v0.107.79
+    port: 53
+    volumeMounts:
+    - mountPath: /opt/adguardhome/work
+      name: vol-data-work
+    - mountPath: /opt/adguardhome/conf
+      name: vol-data-conf

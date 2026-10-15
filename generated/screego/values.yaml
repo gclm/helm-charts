@@ -1,0 +1,18 @@
+configMaps: {}
+env:
+  SCREEGO_EXTERNAL_IP: 127.0.0.1
+persistence: {}
+secrets: {}
+services:
+  screego:
+    env:
+    - name: SCREEGO_EXTERNAL_IP
+      valueFromEnv: SCREEGO_EXTERNAL_IP
+    - name: SCREEGO_TURN_PORT_RANGE
+      value: 50000:50200
+    image:
+      registry: ghcr.io
+      repository: screego/server
+      tag: 1.12.6
+    port: 5050
+    volumeMounts: []

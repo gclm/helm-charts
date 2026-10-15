@@ -1,0 +1,25 @@
+configMaps: {}
+env:
+  ADMIN_USERNAME: admin
+persistence:
+  vol-data:
+    mountPath: /app/tinyrdm
+    size: 10Gi
+secrets:
+  ADMIN_PASSWORD:
+    generate: true
+services:
+  dashboard:
+    env:
+    - name: ADMIN_USERNAME
+      valueFromEnv: ADMIN_USERNAME
+    - name: ADMIN_PASSWORD
+      valueFromSecret: ADMIN_PASSWORD
+    image:
+      registry: ghcr.io
+      repository: tiny-craft/tiny-rdm
+      tag: 1.2.7
+    port: 8086
+    volumeMounts:
+    - mountPath: /app/tinyrdm
+      name: vol-data

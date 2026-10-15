@@ -1,0 +1,10 @@
+apiVersion: v2
+name: copaw
+description: QwenPaw (converted from 1Panel appstore)
+type: application
+version: 2.2.1
+appVersion: 2.2.1
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: ab927b211921121c70e718ef5a14259cff6cf829

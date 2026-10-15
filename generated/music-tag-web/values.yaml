@@ -1,0 +1,20 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/media
+    size: 10Gi
+secrets: {}
+services:
+  music-tag-web:
+    command:
+    - /start
+    env: []
+    image:
+      registry: ''
+      repository: xhongc/music_tag_web
+      tag: 2.8.0
+    port: 8001
+    volumeMounts:
+    - mountPath: /app/media
+      name: vol-data

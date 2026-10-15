@@ -1,0 +1,22 @@
+configMaps: {}
+env:
+  CRON_SCHEDULE: '*/30 * * * *'
+  IMMEDIATE_RUN: 'false'
+  RUN_MODE: cron
+persistence: {}
+secrets: {}
+services:
+  trend-radar:
+    env:
+    - name: CRON_SCHEDULE
+      valueFromEnv: CRON_SCHEDULE
+    - name: RUN_MODE
+      valueFromEnv: RUN_MODE
+    - name: IMMEDIATE_RUN
+      valueFromEnv: IMMEDIATE_RUN
+    image:
+      registry: ''
+      repository: wantcat/trendradar
+      tag: 6.11.0
+    port: 8080
+    volumeMounts: []

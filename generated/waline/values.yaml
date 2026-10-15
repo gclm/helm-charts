@@ -1,0 +1,42 @@
+configMaps: {}
+env:
+  AUTHOR_EMAIL: ''
+  COMMENT_AUDIT: 'false'
+  SECURE_DOMAINS: ''
+  SITE_NAME: ''
+  SITE_URL: ''
+  TZ: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets:
+  JWT_TOKEN:
+    generate: true
+services:
+  waline:
+    env:
+    - name: SQLITE_PATH
+      value: /app/data
+    - name: TZ
+      valueFromEnv: TZ
+    - name: JWT_TOKEN
+      valueFromSecret: JWT_TOKEN
+    - name: COMMENT_AUDIT
+      valueFromEnv: COMMENT_AUDIT
+    - name: AUTHOR_EMAIL
+      valueFromEnv: AUTHOR_EMAIL
+    - name: SITE_NAME
+      valueFromEnv: SITE_NAME
+    - name: SITE_URL
+      valueFromEnv: SITE_URL
+    - name: SECURE_DOMAINS
+      valueFromEnv: SECURE_DOMAINS
+    image:
+      registry: ''
+      repository: lizheming/waline
+      tag: 1.43.4
+    port: 8360
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

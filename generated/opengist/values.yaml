@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /opengist
+    size: 10Gi
+secrets: {}
+services:
+  opengist:
+    env: []
+    image:
+      registry: ghcr.io
+      repository: thomiceli/opengist
+      tag: 1.15.2
+    port: 6157
+    volumeMounts:
+    - mountPath: /opengist
+      name: vol-data

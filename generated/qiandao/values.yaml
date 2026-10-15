@@ -1,0 +1,36 @@
+configMaps: {}
+env:
+  AES_PWD: AESPWD
+  COOKIE_PWD: CKPWD
+persistence:
+  vol-data:
+    mountPath: /usr/src/app/config
+    size: 10Gi
+secrets: {}
+services:
+  qiandao:
+    env:
+    - name: PORT
+      value: '80'
+    - name: AUTO_RELOAD
+      value: 'False'
+    - name: AES_KEY
+      valueFromEnv: AES_PWD
+    - name: COOKIE_SECRET
+      valueFromEnv: COOKIE_PWD
+    - name: DB_TYPE
+      value: sqlite3
+    - name: USER0ISADMIN
+      value: 'False'
+    - name: GZIP
+      value: 'True'
+    - name: ACCESS_LOG
+      value: 'True'
+    image:
+      registry: ''
+      repository: a76yyyy/qiandao:20250803
+      tag: null
+    port: 80
+    volumeMounts:
+    - mountPath: /usr/src/app/config
+      name: vol-data

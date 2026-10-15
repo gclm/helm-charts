@@ -1,0 +1,41 @@
+configMaps: {}
+env:
+  PANEL_DB_NAME: dwz
+  PANEL_DB_TYPE: postgresql
+  PANEL_DB_USER: dwz
+  PANEL_REDIS_HOST: ''
+  PANEL_REDIS_ROOT_PASSWORD: ''
+  TIME_ZONE: Asia/Shanghai
+persistence: {}
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  dwz-server:
+    env:
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    - name: DATABASE_DRIVER
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DATABASE_DBNAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: DATABASE_USERNAME
+      valueFromEnv: PANEL_DB_USER
+    - name: DATABASE_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: REDIS_HOST
+      valueFromEnv: PANEL_REDIS_HOST
+    - name: REDIS_PORT
+      value: '6379'
+    - name: REDIS_PASSWORD
+      valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    - name: REDIS_DB
+      value: '0'
+    - name: GIN_MODE
+      value: release
+    image:
+      registry: docker.cnb.cool
+      repository: mliev/dwz/dwz-server
+      tag: v2.24.1
+    port: 8080
+    volumeMounts: []

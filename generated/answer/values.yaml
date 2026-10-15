@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  answer:
+    env: []
+    image:
+      registry: ''
+      repository: apache/answer
+      tag: 2.0.3
+    port: 80
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

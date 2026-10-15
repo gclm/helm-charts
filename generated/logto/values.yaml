@@ -1,0 +1,21 @@
+configMaps: {}
+env:
+  LOGTO_ADMIN_ENDPOINT_URL: https://admin.domain.com
+  LOGTO_ENDPOINT_URL: https://logto.domain.com
+persistence: {}
+secrets: {}
+services:
+  logto:
+    env:
+    - name: TRUST_PROXY_HEADER
+      value: '1'
+    - name: ENDPOINT
+      valueFromEnv: LOGTO_ENDPOINT_URL
+    - name: ADMIN_ENDPOINT
+      valueFromEnv: LOGTO_ADMIN_ENDPOINT_URL
+    image:
+      registry: ''
+      repository: svhd/logto
+      tag: 1.45.0
+    port: 3002
+    volumeMounts: []

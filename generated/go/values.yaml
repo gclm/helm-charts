@@ -1,0 +1,29 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-env:
+    mountPath: /.env
+    size: 10Gi
+  vol-mod:
+    mountPath: /go/pkg/mod
+    size: 10Gi
+  vol-run-sh:
+    mountPath: /run.sh
+    size: 10Gi
+secrets: {}
+services:
+  golang:
+    command:
+    - bash /run.sh
+    env: []
+    image:
+      registry: ''
+      repository: golang
+      tag: ${GO_VERSION}
+    volumeMounts:
+    - mountPath: /run.sh
+      name: vol-run-sh
+    - mountPath: /.env
+      name: vol-env
+    - mountPath: /go/pkg/mod
+      name: vol-mod

@@ -1,0 +1,25 @@
+configMaps: {}
+env:
+  ADMIN_PASSWORD: test123
+  ADMIN_USERNAME: admin
+persistence: {}
+secrets: {}
+services:
+  miniflux:
+    env:
+    - name: RUN_MIGRATIONS
+      value: '1'
+    - name: CREATE_ADMIN
+      value: '1'
+    - name: ADMIN_USERNAME
+      valueFromEnv: ADMIN_USERNAME
+    - name: ADMIN_PASSWORD
+      valueFromEnv: ADMIN_PASSWORD
+    - name: DEBUG
+      value: '1'
+    image:
+      registry: ''
+      repository: miniflux/miniflux
+      tag: 2.3.3
+    port: 8080
+    volumeMounts: []

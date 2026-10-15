@@ -1,0 +1,22 @@
+configMaps: {}
+env:
+  ZABBIX_HOSTNAME: ''
+  ZABBIX_SERVER: ''
+  ZABBIX_SERVER_PORT: 10051
+persistence: {}
+secrets: {}
+services:
+  zabbix-agent:
+    env:
+    - name: ZBX_HOSTNAME
+      valueFromEnv: ZABBIX_HOSTNAME
+    - name: ZBX_SERVER_HOST
+      valueFromEnv: ZABBIX_SERVER
+    - name: ZBX_SERVER_PORT
+      valueFromEnv: ZABBIX_SERVER_PORT
+    image:
+      registry: ''
+      repository: zabbix/zabbix-agent
+      tag: alpine-7.4.5
+    port: 10050
+    volumeMounts: []

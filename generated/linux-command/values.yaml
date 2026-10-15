@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  linux-command:
+    env: []
+    image:
+      registry: ''
+      repository: wcjiang/linux-command
+      tag: 1.22.0
+    port: 3000
+    volumeMounts: []

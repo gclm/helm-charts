@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /opt/clawswarm
+    size: 10Gi
+secrets: {}
+services:
+  clawswarm:
+    env: []
+    image:
+      registry: ''
+      repository: 1panel/clawswarm
+      tag: v1.0.5
+    port: 18080
+    volumeMounts:
+    - mountPath: /opt/clawswarm
+      name: vol-data

@@ -1,0 +1,49 @@
+configMaps:
+  conf:
+    data:
+      uploads.ini: 'file_uploads = On
+
+        memory_limit = 256M
+
+        upload_max_filesize = 32M
+
+        post_max_size = 32M
+
+        max_execution_time = 360
+
+        '
+    mounts:
+    - mountPath: /usr/local/etc/php/conf.d/uploads.ini
+      subPath: uploads.ini
+env:
+  PANEL_DB_NAME: word
+  PANEL_DB_USER: word
+persistence:
+  vol-data:
+    mountPath: /var/www/html
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  wordpress:
+    env:
+    - name: WORDPRESS_DB_NAME
+      valueFromEnv: PANEL_DB_NAME
+    - name: WORDPRESS_DB_USER
+      valueFromEnv: PANEL_DB_USER
+    - name: WORDPRESS_DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: WORDPRESS_DEBUG
+      value: '0'
+    image:
+      registry: ''
+      repository: wordpress
+      tag: 7.1.3
+    port: 80
+    volumeMounts:
+    - mountPath: /var/www/html
+      name: vol-data
+    - mountPath: /usr/local/etc/php/conf.d/uploads.ini
+      name: conf
+      subPath: uploads.ini

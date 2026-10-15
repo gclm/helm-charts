@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /datastore
+    size: 10Gi
+secrets: {}
+services:
+  changedetection:
+    env: []
+    image:
+      registry: ''
+      repository: dgtlmoon/changedetection.io
+      tag: 0.60.9
+    port: 5000
+    volumeMounts:
+    - mountPath: /datastore
+      name: vol-data

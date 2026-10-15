@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+secrets: {}
+services:
+  kirara-agent:
+    env: []
+    image:
+      registry: ''
+      repository: lss233/kirara-agent-framework
+      tag: v3.2.0
+    port: 8080
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data

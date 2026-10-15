@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-config-json:
+    mountPath: /opt/focalboard/config.json
+    size: 10Gi
+  vol-data-data:
+    mountPath: /opt/focalboard/data
+    size: 10Gi
+secrets: {}
+services:
+  focalboard:
+    env: []
+    image:
+      registry: ''
+      repository: mattermost/focalboard
+      tag: 7.11.4
+    port: 8000
+    volumeMounts:
+    - mountPath: /opt/focalboard/config.json
+      name: vol-data-config-json
+    - mountPath: /opt/focalboard/data
+      name: vol-data-data

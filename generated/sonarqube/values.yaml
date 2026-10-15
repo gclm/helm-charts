@@ -1,0 +1,35 @@
+configMaps: {}
+env:
+  PANEL_DB_USER: sonarqube
+persistence:
+  vol-data-data:
+    mountPath: /opt/sonarqube/data
+    size: 10Gi
+  vol-data-extensions:
+    mountPath: /opt/sonarqube/extensions
+    size: 10Gi
+  vol-data-logs:
+    mountPath: /opt/sonarqube/logs
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  sonarqube:
+    env:
+    - name: SONAR_JDBC_USERNAME
+      valueFromEnv: PANEL_DB_USER
+    - name: SONAR_JDBC_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    image:
+      registry: ''
+      repository: sonarqube
+      tag: 26.10.0.133078-community
+    port: 9000
+    volumeMounts:
+    - mountPath: /opt/sonarqube/data
+      name: vol-data-data
+    - mountPath: /opt/sonarqube/extensions
+      name: vol-data-extensions
+    - mountPath: /opt/sonarqube/logs
+      name: vol-data-logs

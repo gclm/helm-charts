@@ -1,0 +1,30 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: '40087'
+persistence:
+  vol-data-config:
+    mountPath: /verdaccio/conf
+    size: 10Gi
+  vol-data-plugins:
+    mountPath: /verdaccio/plugins
+    size: 10Gi
+  vol-data-storage:
+    mountPath: /verdaccio/storage
+    size: 10Gi
+secrets: {}
+services:
+  verdaccio:
+    env:
+    - name: VERDACCIO_PORT
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: verdaccio/verdaccio
+      tag: 6.10.5
+    volumeMounts:
+    - mountPath: /verdaccio/storage
+      name: vol-data-storage
+    - mountPath: /verdaccio/conf
+      name: vol-data-config
+    - mountPath: /verdaccio/plugins
+      name: vol-data-plugins

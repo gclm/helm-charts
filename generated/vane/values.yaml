@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /home/vane/data
+    size: 10Gi
+secrets: {}
+services:
+  vane:
+    env: []
+    image:
+      registry: ''
+      repository: itzcrazykns1337/vane
+      tag: v1.12.2
+    port: 3000
+    volumeMounts:
+    - mountPath: /home/vane/data
+      name: vol-data

@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /opt/cloudbeaver/workspace
+    size: 10Gi
+secrets: {}
+services:
+  cloudbeaver:
+    env: []
+    image:
+      registry: ''
+      repository: dbeaver/cloudbeaver
+      tag: 26.2.2
+    port: 8978
+    volumeMounts:
+    - mountPath: /opt/cloudbeaver/workspace
+      name: vol-data

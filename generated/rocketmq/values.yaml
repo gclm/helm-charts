@@ -1,0 +1,93 @@
+configMaps: {}
+env:
+  DASHBOARD_USER: admin
+persistence:
+  vol-data-broker-conf-broker-conf:
+    mountPath: /opt/rocketmq-5.2.0/conf/broker.conf
+    size: 10Gi
+  vol-data-broker-logs:
+    mountPath: /home/rocketmq/logs
+    size: 10Gi
+  vol-data-broker-store:
+    mountPath: /home/rocketmq/store
+    size: 10Gi
+  vol-data-dashboard:
+    mountPath: /dashboard-data
+    size: 10Gi
+  vol-data-namesrv-logs:
+    mountPath: /home/rocketmq/logs
+    size: 10Gi
+  vol-data-proxy-conf-rmq-proxy-json:
+    mountPath: /opt/rocketmq-5.2.0/conf/rmq-proxy.json
+    size: 10Gi
+  vol-data-proxy-logs:
+    mountPath: /home/rocketmq/logs
+    size: 10Gi
+secrets:
+  DASHBOARD_PASSWORD:
+    generate: true
+services:
+  broker:
+    command:
+    - sh mqbroker -c /opt/rocketmq-5.2.0/conf/broker.conf
+    env:
+    - name: NAMESRV_ADDR
+      value: namesrv:9876
+    image:
+      registry: ''
+      repository: apache/rocketmq
+      tag: 5.5.0
+    port: 10909
+    volumeMounts:
+    - mountPath: /home/rocketmq/logs
+      name: vol-data-broker-logs
+    - mountPath: /home/rocketmq/store
+      name: vol-data-broker-store
+    - mountPath: /opt/rocketmq-5.2.0/conf/broker.conf
+      name: vol-data-broker-conf-broker-conf
+  dashboard:
+    env:
+    - name: DASHBOARD_USER
+      valueFromEnv: DASHBOARD_USER
+    - name: DASHBOARD_PASSWORD
+      valueFromSecret: DASHBOARD_PASSWORD
+    - name: SPRING_SECURITY_USER_NAME
+      valueFromEnv: DASHBOARD_USER
+    - name: SPRING_SECURITY_USER_PASSWORD
+      valueFromSecret: DASHBOARD_PASSWORD
+    image:
+      registry: ''
+      repository: apacherocketmq/rocketmq-dashboard
+      tag: 2.1.0
+    port: 8082
+    volumeMounts:
+    - mountPath: /dashboard-data
+      name: vol-data-dashboard
+  namesrv:
+    command:
+    - sh mqnamesrv
+    env: []
+    image:
+      registry: ''
+      repository: apache/rocketmq
+      tag: 5.5.0
+    port: 9876
+    volumeMounts:
+    - mountPath: /home/rocketmq/logs
+      name: vol-data-namesrv-logs
+  proxy:
+    command:
+    - sh mqproxy -pc /opt/rocketmq-5.2.0/conf/rmq-proxy.json
+    env:
+    - name: NAMESRV_ADDR
+      value: namesrv:9876
+    image:
+      registry: ''
+      repository: apache/rocketmq
+      tag: 5.5.0
+    port: 8080
+    volumeMounts:
+    - mountPath: /home/rocketmq/logs
+      name: vol-data-proxy-logs
+    - mountPath: /opt/rocketmq-5.2.0/conf/rmq-proxy.json
+      name: vol-data-proxy-conf-rmq-proxy-json

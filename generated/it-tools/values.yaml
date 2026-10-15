@@ -1,0 +1,13 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  it-tools:
+    env: []
+    image:
+      registry: ''
+      repository: corentinth/it-tools
+      tag: 2024.10.22-7ca5933
+    port: 80
+    volumeMounts: []

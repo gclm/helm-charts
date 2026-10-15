@@ -1,0 +1,21 @@
+configMaps: {}
+env:
+  BASICAUTH_PASSWORD: mongo-express
+  BASICAUTH_USERNAME: mongo-express
+persistence: {}
+secrets: {}
+services:
+  tailchat:
+    env:
+    - name: ME_CONFIG_BASICAUTH
+      value: 'True'
+    - name: ME_CONFIG_BASICAUTH_USERNAME
+      valueFromEnv: BASICAUTH_USERNAME
+    - name: ME_CONFIG_BASICAUTH_PASSWORD
+      valueFromEnv: BASICAUTH_PASSWORD
+    image:
+      registry: ''
+      repository: mongo-express
+      tag: 1.0.2-20
+    port: 8081
+    volumeMounts: []

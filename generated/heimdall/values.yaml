@@ -1,0 +1,25 @@
+configMaps: {}
+env:
+  TIME_ZONE: Asia/Shanghai
+persistence:
+  vol-data:
+    mountPath: /config
+    size: 10Gi
+secrets: {}
+services:
+  heimdall:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: TZ
+      valueFromEnv: TIME_ZONE
+    image:
+      registry: ''
+      repository: linuxserver/heimdall
+      tag: 2.8.3
+    port: 80
+    volumeMounts:
+    - mountPath: /config
+      name: vol-data

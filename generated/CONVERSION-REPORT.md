@@ -1,0 +1,277 @@
+# Conversion report
+
+- upstream: 1Panel-dev/appstore @ `ab927b211921121c70e718ef5a14259cff6cf829`
+- success: **186** · skipped: **77** · failed: **0**
+
+## Success
+
+- 2fauth (8.0.2) sha:2079f3107098
+- adguardhome (0.107.79) sha:967590223fee
+- adminer (6.1.2+standalone) sha:cd74d7f36bcb
+- affine (0.27.4) sha:650200804350
+- ai-gateway (1.3.0) sha:32d7bc0c415b
+- ai-portal (1.0.10) sha:750e3e15e6ce
+- alist (3.65.0) sha:a5978949420c
+- answer (2.0.3) sha:a318ae41f5a9
+- archivebox (0.9.73) sha:416cdd08d88a
+- artalk (2.10.0) sha:fc33923e9fd7
+- astrbot (4.28.2) sha:ecd988e7e1fe
+- audiobookshelf (2.37.1) sha:b08b0f066f5b
+- beszel (0.21.0) sha:2a6dabdf11c3
+- bettafish (3.0.0) sha:fed63681baf2
+- bililive-go (0.8.3) sha:9f6145014cb8
+- bitwarden (1.37.4+alpine) sha:c90d15c6727d
+- blinko (1.8.8) sha:f5d5f60097b0
+- browserless (2.57.0) sha:041c5fd27d38
+- bytebase (3.23.1) sha:d67ad9c81947
+- calibre-web (0.6.27) sha:d0cfebf9ba02
+- casdoor (4.20.0) sha:b7e799f716f6
+- certd (1.45.0) sha:1b00f3961a00
+- certimate (0.4.35) sha:f8c9ca968435
+- changedetectionio (0.60.9) sha:2e7c4c8514cd
+- chatgpt-next-web (2.16.1) sha:4686c0fbc058
+- clawswarm (1.0.5) sha:0e4af4498a8a
+- cloudbeaver (26.2.2) sha:7c113ba430da
+- cloudflared (2026.10.0) sha:4844ab7668c3
+- cloudreve (4.19.1) sha:6790e5716f28
+- code-server (4.141.0) sha:e0af290080d3
+- comfyui (0.33.1) sha:cf639b8035ee
+- consul (2.0.4) sha:d2f066a1235e
+- convertx (0.19.0) sha:0c3a5bd92752
+- copaw (2.2.1) sha:45740f647b6c
+- cordys-crm (1.9.3) sha:e934074b636c
+- cyberchef (11.5.0) sha:c51649f93819
+- dashy (4.8.2) sha:91c1e5783413
+- dataease (3.1.0) sha:ca4156d7f384
+- dbhub (1.5.0) sha:582826f7cd87
+- dbx (0.6.43) sha:73d494af3aa5
+- deepseek-harness (0.2.0+rc.2) sha:9b7adb149504
+- discourse (3.5.0) sha:bbabb79b46c7
+- discuz (3.4.0) sha:697b671bc5e9
+- docker-registry (3.1.2) sha:daadc16943c3
+- docmost (0.96.0) sha:c1c937a997f5
+- domain-admin (1.6.78) sha:532163ddff7d
+- dosgame (3.9.6) sha:4e8a5dfa35ff
+- dotnet (10.0.0) sha:ee852a4cd829
+- drawio (32.4.1) sha:9b44544bf70c
+- easyimage2 (2.8.6) sha:b1fe77982e5e
+- emqx (6.3.1) sha:ceb2a576533c
+- ezbookkeeping (2.0.1) sha:2405cebc7c33
+- filebrowser (2.63.23) sha:ad6fd30a5d6a
+- filecodebox (2.8.3) sha:8027cace9d7f
+- firefly-iii (6.4.2) sha:990848121613
+- flarum (1.8.19) sha:fa11df363c48
+- focalboard (7.11.4) sha:49168f482dfa
+- freshrss (1.30.1) sha:d01802f8cbaf
+- gatus (5.37.0) sha:f2b43aae8ed7
+- ghost (6.70.0) sha:c30caa327355
+- gitea (27.3.8) sha:f419c8df3188
+- glance (0.8.6) sha:3daa26e95687
+- go (1.26.0) sha:3a89d62da3a2
+- gotify (3.1.1) sha:37db89ee5dbc
+- grafana (13.2.4) sha:56090ff33227
+- gsmanager (3.14.0) sha:ac814dc4464d
+- halo (2.26.1) sha:f3a77dadad52
+- heimdall (2.8.3) sha:4ed99aeadfd0
+- hermes-agent (2026.9.24) sha:1dadda841983
+- it-tools (2024.10.22+7ca5933) sha:4912be4e64a4
+- jaeger (1.76.0) sha:be7c9760de9d
+- java (25.0.0) sha:cee3765a6c73
+- jellyfin (10.11.11) sha:d29ee023e33f
+- kafka (4.0.0) sha:aca5fbcccf47
+- keycloak (26.8.1) sha:74cc131c32bb
+- kibana (9.5.5) sha:e170cc1f21b2
+- kirara-agent (3.2.0) sha:c3c4d059e663
+- kkfileview (4.1.0) sha:a31f0ea8e08a
+- kodbox (1.4505.0) sha:c0611fc47ce1
+- koishi (1.16.0) sha:1b9e403e2d74
+- komari (1.5.1) sha:e29838c400ca
+- komga (1.29.1) sha:87e2d2165abe
+- langbot (4.11.0) sha:b974013b160d
+- langflow (1.12.6) sha:257fed791791
+- laya-server (0.1.2) sha:97982c339bee
+- linkding (1.47.0+plus) sha:54f4403ee94c
+- linux-command (1.22.0) sha:d9d83bf41643
+- lobe-chat (1.143.3) sha:4e9ec22100bc
+- localai (3.12.1+aio-cpu) sha:d44750123de9
+- logstash (9.5.5) sha:5b805e0d40df
+- logto (1.45.0) sha:ea2b27f3a87b
+- maddy-mail (0.9.6) sha:3236bc32746e
+- mailserver (16.0.1) sha:ad1c41990a55
+- mattermost (11.11.1) sha:aec739411ab6
+- maxkb (2.10.6+lts) sha:43796d9c72db
+- mblog (1.1.0) sha:693a9b282a4e
+- meilisearch (1.55.0) sha:71dcf71e75d8
+- memos (0.31.0) sha:8e93f15a7d9b
+- metabase (0.64.2) sha:200229a7f633
+- miniflux (2.3.3) sha:85bf436aca33
+- mkdocs-material (9.7.7) sha:99553714a126
+- mliev-dwz (2.24.1) sha:b6454f9081a1
+- mongo-express (1.0.2+20) sha:c5311cdb6df0
+- music-tag-web (2.8.0) sha:dab8c2898a42
+- n8n (2.43.5) sha:b73637311991
+- nacos (3.2.4) sha:acfe280b85c5
+- navidrome (0.64.2) sha:352b09846317
+- new-api (0.13.2) sha:33e0e67baf12
+- newsnow (0.0.41) sha:7cd325b58239
+- nextcloud (35.0.1) sha:13caa12ba079
+- nexus (3.96.4) sha:0d2a98c0a706
+- nezha (2.3.18) sha:dc3219b1c97b
+- nginx-proxy-manager (2.16.0) sha:ab5745323192
+- nocobase (2.2.24) sha:df22415ee5b6
+- node (25.9.0) sha:4b3b77e9184a
+- node-red (5.0.8) sha:415e7f1e9f98
+- nodebb (4.16.2) sha:4bfc4fb46473
+- ntfy (2.30.0) sha:fe60351ff571
+- obsidian_livesync (3.5.3) sha:28787374936e
+- octop (1.0.1) sha:49202c45ac31
+- odoo (19.0.0) sha:76a814e1acf9
+- ollama (0.40.4) sha:a97185ce372f
+- ollama-webui (0.12.0) sha:b6eacfb8e816
+- onlyoffice (10.0.0) sha:83a938b6989f
+- openclaw (2026.9.9) sha:520b127b55b6
+- opengist (1.15.2) sha:7f692ec84043
+- openlitespeed (1.8.4+lsphp81) sha:5457b7fcdd2e
+- outline (1.11.0) sha:7aba004be947
+- palworld (2.8.0) sha:a7457d64b2a4
+- palworld-server-tool (0.12.2) sha:d47e975cda9a
+- pgadmin4 (9.18.0) sha:ce6e09ec277f
+- photoprism (251130.0.0+ce) sha:e686c635e9e4
+- phpmyadmin (5.2.3) sha:c69a3d9b41a2
+- planka (2.2.1) sha:b55c6af81f5c
+- python (3.14.0) sha:4ed40c529cfa
+- qbittorrent (5.2.4) sha:3e1366771d66
+- qiandao (20250803.0.0) sha:04cd130847cb
+- qinglong (2.23.0+debian) sha:12328eefc6ee
+- rabbitmq (4.3.6+management-alpine) sha:e46472bed39b
+- redpanda-console (3.12.0) sha:45157a82eb5e
+- rocketmq (5.5.0) sha:491b9504c921
+- roundcube (1.7.4+apache) sha:ad6aba6a8dfe
+- rustdesk (1.1.16) sha:9512e772ee5e
+- rustfs (1.0.1) sha:9aff3ace6df5
+- screego (1.12.6) sha:e0145be923a2
+- sentinel-dashboard (1.8.10) sha:184cd0d17423
+- sftpgo (2.7.6+alpine) sha:7da1f18cafbe
+- showdoc (3.9.4) sha:1a6483974831
+- siyuan (3.8.6) sha:c5755612e0a7
+- sonarqube (26.10.0+community) sha:f62c0420f78d
+- sqlbot (1.10.2) sha:d19144359fc4
+- stalwart-mail (0.16.26+alpine) sha:33c25edad993
+- stirling-pdf (3.1.0) sha:c3606cabdc96
+- sub2api (0.2.16) sha:2004e8e08612
+- sun-panel (1.8.1) sha:a44b97431642
+- synapse (1.162.0) sha:9d3bb938eaf7
+- tailchat (1.11.18) sha:f7531ebb492a
+- teamspeak (3.13.8) sha:55050df0c54e
+- tinyrdm (1.2.7) sha:8248afa1d489
+- tomcat (10.1.43) sha:d5f4d3263161
+- trendradar (6.11.0) sha:45c161feddc1
+- trilium (0.106.0) sha:d11f9aae38b2
+- twenty (2.46.0) sha:b9fe4acbc44f
+- twikoo (2.0.13) sha:73a09aa2a1d9
+- typecho (1.3.0+php8.2-apache) sha:2685c2a1ce6c
+- umami (3.4.0) sha:ece9711aab94
+- upage (2.0.0) sha:ce3d284f9340
+- uptime-kuma (2.5.6) sha:4865d1a23825
+- vane (1.12.2) sha:cc7d2e8f4a9b
+- vector (0.59.0+debian) sha:2d82419076a3
+- verdaccio (6.10.5) sha:24df80973786
+- waline (1.43.4) sha:f84c719c21d9
+- wallos (5.8.3) sha:a8e4517d011c
+- web-check (2.3.4) sha:5d37926094da
+- wechatmarkdowneditor (2.1.0) sha:868cae446d32
+- wikijs (2.5.316) sha:17f914ebdbd4
+- wordpress (7.1.3) sha:d4d5ce21708b
+- xiaomusic (0.6.1) sha:b871b1fb1fe7
+- yesplaymusic (0.4.9) sha:cdb5fee7830d
+- yourls (1.10.6) sha:b2f45b39bf72
+- zabbix-agent (7.4.5) sha:2c8cd2d9c5ff
+- zabbix-proxy (7.4.5) sha:88e8b865a10b
+- zabbix-server (7.4.5) sha:2bf3f30984ae
+- zentao (22.7.0) sha:d3edf498d168
+- zfile (5.1.0) sha:3b2ed4a0c762
+- zitadel (4.19.4) sha:ec4cc93450e1
+
+## Skipped
+
+- act_runner: BLOCKED (act_runner: docker socket mount)
+- arcadia: BLOCKED (arcadia: cap_add ['SYS_PTRACE'])
+- caddy: BLOCKED (caddy: network_mode host; caddy: cap_add ['NET_ADMIN'])
+- clickhouse: Database category excluded (use handwritten charts/)
+- ddns-go: BLOCKED (ddns-go: network_mode host)
+- dockge: BLOCKED (dockge: docker socket mount)
+- dvwa: BLOCKED (dvwa: image not pinned to a tag (ghcr.io/digininja/dvwa:latest))
+- easytier: BLOCKED (easytier: privileged; easytier: network_mode host)
+- elasticsearch: Database category excluded (use handwritten charts/)
+- emlog: no semver version dir (variant naming, place via overlay)
+- excalidraw: BLOCKED (excalidraw: image not pinned to a tag (excalidraw/excalidraw:latest))
+- forgejo: BLOCKED (forgejo: image not pinned to a tag (${IMAGE}))
+- forgejo-runner: BLOCKED (forgejo-runner: docker socket mount; dind: privileged)
+- frpc: BLOCKED (frpc: network_mode host; frpc: cap_add ['NET_ADMIN']; frpc: devices)
+- frps: BLOCKED (frps: network_mode host)
+- gitlab: BLOCKED (gitlab: cap_add ['NET_ADMIN'])
+- greatsql: Database category excluded (use handwritten charts/)
+- harness: BLOCKED (harness: docker socket mount)
+- home-assistant: BLOCKED (homeassistant: network_mode host; homeassistant: cap_add ['NET_ADMIN', 'NET_RAW'])
+- homepage: BLOCKED (homepage: docker socket mount)
+- huginn: BLOCKED (huginn: image not pinned to a tag (ghcr.io/huginn/huginn:latest))
+- influxdb: Database category excluded (use handwritten charts/)
+- jenkins: BLOCKED (jenkins: privileged; jenkins: docker socket mount)
+- jsonhero: BLOCKED (jsonhero: image not pinned to a tag (henryclw/jsonhero-web:latest))
+- jumpserver: BLOCKED (jumpserver: privileged)
+- jupyter-notebook: BLOCKED (jupyter: image not pinned to a tag (jupyter/scipy-notebook:latest))
+- keydb: Database category excluded (use handwritten charts/)
+- koodo-reader: no semver version dir (variant naming, place via overlay)
+- kubepi: BLOCKED (kubepi: privileged)
+- llama-cpp: no semver version dir (variant naming, place via overlay)
+- lsky-pro: BLOCKED (lskypro: image not pinned to a tag (halcyonazure/lsky-pro-docker:latest))
+- manticoresearch: Database category excluded (use handwritten charts/)
+- mariadb: Database category excluded (use handwritten charts/)
+- mcsmanager-daemon: BLOCKED (mcsm-daemon: image not pinned to a tag (githubyumao/mcsmanager-daemon:latest); mcsm-daemon: docker socket mount)
+- mcsmanager-web: BLOCKED (mcsm-web: image not pinned to a tag (githubyumao/mcsmanager-web:latest))
+- memcached: Database category excluded (use handwritten charts/)
+- metersphere: BLOCKED (metersphere: privileged)
+- mongodb: Database category excluded (use handwritten charts/)
+- mssql: Database category excluded (use handwritten charts/)
+- mysql: Database category excluded (use handwritten charts/)
+- mysql-cluster: Database category excluded (use handwritten charts/)
+- neko: BLOCKED (neko: image not pinned to a tag (${IMAGE_NAME}))
+- neo4j: Database category excluded (use handwritten charts/)
+- netdata: BLOCKED (netdata: cap_add ['SYS_PTRACE', 'SYS_ADMIN'])
+- nocodb: Database category excluded (use handwritten charts/)
+- node-exporter: BLOCKED (node_exporter: pid host)
+- npc: BLOCKED (npc: network_mode host)
+- nps: BLOCKED (nps: network_mode host)
+- oceanbase: Database category excluded (use handwritten charts/)
+- onedev: BLOCKED (onedev: docker socket mount)
+- openldap: Database category excluded (use handwritten charts/)
+- openlist: BLOCKED (openlist: image not pinned to a tag (${OPENLIST_IMAGE}))
+- openresty: BLOCKED (openresty: network_mode host)
+- openvpn: BLOCKED (openvpn: image not pinned to a tag (openvpn/openvpn-as:latest); openvpn: cap_add ['NET_ADMIN'])
+- php: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}); php: cap_add ['SYS_PTRACE'])
+- php5: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}))
+- php7: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}))
+- php8: BLOCKED (php: image not pinned to a tag (${IMAGE_NAME}))
+- portainer-ce: BLOCKED (portainer-ce: docker socket mount)
+- postgresql: Database category excluded (use handwritten charts/)
+- postgresql-cluster: Database category excluded (use handwritten charts/)
+- prometheus: Database category excluded (use handwritten charts/)
+- redis: Database category excluded (use handwritten charts/)
+- redis-cluster: Database category excluded (use handwritten charts/)
+- redis-commander: BLOCKED (redis-commander-XnlR: image not pinned to a tag (rediscommander/redis-commander:latest))
+- rsshub: no semver version dir (variant naming, place via overlay)
+- starrocks: Database category excluded (use handwritten charts/)
+- tdengine: Database category excluded (use handwritten charts/)
+- teable: BLOCKED (teable: image not pinned to a tag (ghcr.io/teableio/teable:latest))
+- typesense: Database category excluded (use handwritten charts/)
+- valkey: Database category excluded (use handwritten charts/)
+- vexdb: Database category excluded (use handwritten charts/)
+- vllm: no semver version dir (variant naming, place via overlay)
+- watchtower: BLOCKED (watchtower: image not pinned to a tag (containrrr/watchtower); watchtower: docker socket mount)
+- windows: BLOCKED (windows: cap_add ['NET_ADMIN']; windows: devices)
+- woodpecker: BLOCKED (woodpecker-agent: docker socket mount)
+- zabbix-xinchuang-edition: BLOCKED (zabbix-agent: privileged; zabbix-agent: pid host)
+
+## Failed
+
+- (none)

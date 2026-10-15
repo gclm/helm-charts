@@ -1,0 +1,35 @@
+configMaps:
+  conf:
+    data:
+      vector.yaml: "api:\n  enabled: true\n  address: 0.0.0.0:8686\n\nsources:\n \
+        \ demo_logs:\n    type: demo_logs\n    interval: 1\n    format: json\n\nsinks:\n\
+        \  console:\n    inputs:\n      - demo_logs\n    target: stdout\n    type:\
+        \ console\n    encoding:\n      codec: json\n\n  # Example: send logs to Elasticsearch\
+        \ instead of stdout.\n  # Official reference:\n  # https://vector.dev/docs/reference/configuration/sinks/elasticsearch/\n\
+        \  # The field names below are taken from Vector's official Elasticsearch\
+        \ sink documentation.\n  # In a 1Panel deployment, if Elasticsearch is deployed\
+        \ on the same 1panel-network,\n  # you can start by trying the service name\
+        \ shown in the 1Panel Elasticsearch app package.\n  # Replace the endpoint,\
+        \ index, and credentials with your actual values.\n  #\n  # elasticsearch:\n\
+        \  #   type: elasticsearch\n  #   inputs:\n  #     - demo_logs\n  #   endpoints:\n\
+        \  #     - http://elasticsearch:9200\n  #   mode: bulk\n  #   bulk:\n  # \
+        \    index: vector-demo-%Y-%m-%d\n  #   auth:\n  #     strategy: basic\n \
+        \ #     user: elastic\n  #     password: your-password\n"
+    mounts:
+    - mountPath: /etc/vector/vector.yaml
+      subPath: vector.yaml
+env: {}
+persistence: {}
+secrets: {}
+services:
+  vector:
+    env: []
+    image:
+      registry: ''
+      repository: timberio/vector
+      tag: 0.59.0-debian
+    port: 8686
+    volumeMounts:
+    - mountPath: /etc/vector/vector.yaml
+      name: conf
+      subPath: vector.yaml

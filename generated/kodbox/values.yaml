@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-site:
+    mountPath: /var/www/html
+    size: 10Gi
+secrets: {}
+services:
+  kodbox:
+    env: []
+    image:
+      registry: ''
+      repository: kodcloud/kodbox
+      tag: v1.4505
+    port: 80
+    volumeMounts:
+    - mountPath: /var/www/html
+      name: vol-site

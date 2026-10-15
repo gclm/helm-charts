@@ -1,0 +1,18 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /opt/maxkb
+    size: 10Gi
+secrets: {}
+services:
+  maxkb:
+    env: []
+    image:
+      registry: ''
+      repository: 1panel/maxkb
+      tag: v2.10.6-lts
+    port: 8080
+    volumeMounts:
+    - mountPath: /opt/maxkb
+      name: vol-data

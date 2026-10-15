@@ -1,0 +1,17 @@
+{{ .Chart.Name }} {{ .Chart.AppVersion }} converted from 1Panel appstore
+(provenance: {{ .Chart.Annotations.source }}, upstream {{ .Chart.Annotations."upstream/sha" | trunc 8 }}).
+
+{{- if .Values.secrets }}
+
+Generated credentials (auto, stable across upgrades):
+{{- range $k, $v := .Values.secrets }}
+  kubectl get secret {{ printf "%s-%s" $.Release.Name $k | trunc 63 | trimSuffix "-" }} -o jsonpath='{.data.{{ $k }}}' | base64 -d
+{{- end }}
+{{- end }}
+{{- if .Values.env }}
+
+Install-time parameters (set with --set env.<KEY>=...):
+{{- range $k, $v := .Values.env }}
+  {{ $k }}{{ if $v }} = {{ $v }}{{ end }}
+{{- end }}
+{{- end }}

@@ -1,0 +1,34 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /config
+    size: 10Gi
+secrets:
+  SUDO_PASSWORD:
+    generate: true
+  WEB_PASSWORD:
+    generate: true
+services:
+  code:
+    env:
+    - name: PUID
+      value: '1000'
+    - name: PGID
+      value: '1000'
+    - name: TZ
+      value: Asia/Shanghai
+    - name: PASSWORD
+      valueFromSecret: WEB_PASSWORD
+    - name: SUDO_PASSWORD
+      valueFromSecret: SUDO_PASSWORD
+    - name: DEFAULT_WORKSPACE
+      value: /config/workspace
+    image:
+      registry: ''
+      repository: linuxserver/code-server
+      tag: 4.141.0
+    port: 8443
+    volumeMounts:
+    - mountPath: /config
+      name: vol-data

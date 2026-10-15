@@ -1,0 +1,24 @@
+configMaps: {}
+env:
+  ADMIN_PASSWORD: passwd_1Panel
+  ADMIN_USERNAME: admin
+persistence:
+  vol-data:
+    mountPath: /etc/linkding/data
+    size: 10Gi
+secrets: {}
+services:
+  linkding:
+    env:
+    - name: LD_SUPERUSER_NAME
+      valueFromEnv: ADMIN_USERNAME
+    - name: LD_SUPERUSER_PASSWORD
+      valueFromEnv: ADMIN_PASSWORD
+    image:
+      registry: ''
+      repository: sissbruecker/linkding
+      tag: 1.47.0-plus
+    port: 9090
+    volumeMounts:
+    - mountPath: /etc/linkding/data
+      name: vol-data

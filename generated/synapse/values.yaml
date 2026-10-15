@@ -1,0 +1,21 @@
+configMaps: {}
+env: {}
+persistence: {}
+secrets: {}
+services:
+  synapse:
+    command:
+    - run -m synapse.app.homeserver --config-path=/data/homeserver.yaml
+    env:
+    - name: TZ
+      value: Asia/Shanghai
+    - name: UID
+      value: '1000'
+    - name: GID
+      value: '1000'
+    image:
+      registry: ''
+      repository: matrixdotorg/synapse
+      tag: v1.162.0
+    port: 8008
+    volumeMounts: []
