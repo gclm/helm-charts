@@ -39,14 +39,11 @@ def load_yaml(path: Path):
 
 
 def normalize_ver(v: str):
-    """'v1.2' / '5.7' / '6.1.2-standalone' -> '1.2.0' / '5.7.0' / '6.1.2+standalone'.
-    'latest' dir maps to 0.0.0-latest so the untagged-image blocker catches it."""
+    """'v1.2' / '5.7' / '6.1.2-standalone' -> '1.2.0' / '5.7.0' / '6.1.2+standalone'; non-semver -> None (skipped)."""
     s = str(v).strip().lstrip("vV")
-    if s.lower() == "latest":
-        return "0.0.0-latest"
     m = re.fullmatch(r"(\d+(?:\.\d+)*)(?:-([A-Za-z0-9.-]+))?", s)
     if not m:
-        return None
+        return None  # 'latest' / variant dirs -> skipped, pinned via overlay when wanted
     parts = m.group(1).split(".")
     while len(parts) < 3:
         parts.append("0")
@@ -57,7 +54,7 @@ def normalize_ver(v: str):
 
 
 def ver_key(v: str):
-    base = v.split("+")[0].split("-")[0]
+    base = v.split("+")[0].split("-")[0]  # tolerate prerelease/build suffixes
     return tuple(int(x) for x in base.split("."))
 
 
@@ -76,7 +73,7 @@ def scan_apps(src: Path):
                     versions.append((nv, vd))
         if not versions:
             # variant-style dirs (nvidia-0.20.0-cu130 / master / ...) — needs human placement via overlay
-            yield app_dir.name, meta, None, None, "no semver version dir (variant naming, place via overlay)"
+            yield app_dir.name, meta, None, None, "no semver version dir (latest/variant naming; pin via overlay when wanted)"
             continue
         versions.sort(key=lambda t: ver_key(t[0]))
         nv, vd = versions[-1]

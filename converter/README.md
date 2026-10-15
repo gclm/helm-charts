@@ -21,7 +21,7 @@ python3 converter/convert.py --src /path/to/appstore --out generated --sha <upst
 
 - 阻塞即跳过 + 报告：docker socket / cap_add / devices / network_mode:host / privileged / pid:host / local build / **image 未钉 tag**
 - Database 类（tags 含 Database/数据库）与手写四库同名者排除——DB 可靠性走 `charts/` 手写
-- 非 semver 变体目录（`nvidia-0.20.0-cu130` 等）跳过 + 报告，人工经 overlay 归置
+- 非 semver 目录（`latest/`、变体 `nvidia-0.20.0-cu130` 等）跳过 + 报告——浮动版本不进生态；确需时在 `overlay/apps/<app>/` 人工钉 tag + version
 - CI 幂等门：同 SHA 两跑 diff 必须为空；lint 全量 0 failed 否则 job 失败
 
 ## v1 已知简化（后续经 overlay/模板升级消化）
