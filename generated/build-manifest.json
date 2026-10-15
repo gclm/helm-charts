@@ -414,6 +414,12 @@
       "status": "success",
       "version": "2026.9.24"
     },
+    "huginn": {
+      "chart": "huginn",
+      "sha": "7d1c30252f4c",
+      "status": "success",
+      "version": "2026.10.14"
+    },
     "it-tools": {
       "chart": "it-tools",
       "sha": "4912be4e64a4",
@@ -437,6 +443,12 @@
       "sha": "d29ee023e33f",
       "status": "success",
       "version": "10.11.11"
+    },
+    "jupyter-notebook": {
+      "chart": "jupyter-notebook",
+      "sha": "9103070115f0",
+      "status": "success",
+      "version": "4.0.0"
     },
     "kafka": {
       "chart": "kafka",
@@ -575,6 +587,12 @@
       "sha": "693a9b282a4e",
       "status": "success",
       "version": "1.1.0"
+    },
+    "mcsmanager-web": {
+      "chart": "mcsmanager-web",
+      "sha": "6cb0fc549499",
+      "status": "success",
+      "version": "10.21.2"
     },
     "meilisearch": {
       "chart": "meilisearch",

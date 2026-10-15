@@ -1,7 +1,7 @@
 # Conversion report
 
 - upstream: 1Panel-dev/appstore @ `ab927b211921121c70e718ef5a14259cff6cf829`
-- success: **186** · skipped: **77** · failed: **0**
+- success: **189** · skipped: **74** · failed: **0**
 
 ## Success
 
@@ -74,10 +74,12 @@
 - halo -> chart halo (2.26.1) sha:f3a77dadad52
 - heimdall -> chart heimdall (2.8.3) sha:4ed99aeadfd0
 - hermes-agent -> chart hermes-agent (2026.9.24) sha:1dadda841983
+- huginn -> chart huginn (2026.10.14) sha:7d1c30252f4c
 - it-tools -> chart it-tools (2024.10.22+7ca5933) sha:4912be4e64a4
 - jaeger -> chart jaeger (1.76.0) sha:be7c9760de9d
 - java -> chart java (25.0.0) sha:cee3765a6c73
 - jellyfin -> chart jellyfin (10.11.11) sha:d29ee023e33f
+- jupyter-notebook -> chart jupyter-notebook (4.0.0) sha:9103070115f0
 - kafka -> chart kafka (4.0.0) sha:aca5fbcccf47
 - keycloak -> chart keycloak (26.8.1) sha:74cc131c32bb
 - kibana -> chart kibana (9.5.5) sha:e170cc1f21b2
@@ -101,6 +103,7 @@
 - mattermost -> chart mattermost (11.11.1) sha:aec739411ab6
 - maxkb -> chart maxkb (2.10.6+lts) sha:43796d9c72db
 - mblog -> chart mblog (1.1.0) sha:693a9b282a4e
+- mcsmanager-web -> chart mcsmanager-web (10.21.2) sha:6cb0fc549499
 - meilisearch -> chart meilisearch (1.55.0) sha:71dcf71e75d8
 - memos -> chart memos (0.31.0) sha:8e93f15a7d9b
 - metabase -> chart metabase (0.64.2) sha:200229a7f633
@@ -214,12 +217,10 @@
 - harness: BLOCKED (harness: docker socket mount)
 - home-assistant: BLOCKED (homeassistant: network_mode host; homeassistant: cap_add ['NET_ADMIN', 'NET_RAW'])
 - homepage: BLOCKED (homepage: docker socket mount)
-- huginn: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - influxdb: Database category excluded (use handwritten charts/)
 - jenkins: BLOCKED (jenkins: privileged; jenkins: docker socket mount)
 - jsonhero: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - jumpserver: BLOCKED (jumpserver: privileged)
-- jupyter-notebook: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - keydb: Database category excluded (use handwritten charts/)
 - koodo-reader: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - kubepi: BLOCKED (kubepi: privileged)
@@ -227,8 +228,7 @@
 - lsky-pro: no semver version dir (latest/variant naming; pin via overlay when wanted)
 - manticoresearch: Database category excluded (use handwritten charts/)
 - mariadb: Database category excluded (use handwritten charts/)
-- mcsmanager-daemon: no semver version dir (latest/variant naming; pin via overlay when wanted)
-- mcsmanager-web: no semver version dir (latest/variant naming; pin via overlay when wanted)
+- mcsmanager-daemon: BLOCKED (mcsm-daemon: docker socket mount)
 - memcached: Database category excluded (use handwritten charts/)
 - metersphere: BLOCKED (metersphere: privileged)
 - mongodb: Database category excluded (use handwritten charts/)

@@ -1,0 +1,80 @@
+{{- range $name, $svc := .Values.services }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $name }}
+  labels: &labels
+    app.kubernetes.io/name: {{ $name }}
+    app.kubernetes.io/instance: {{ $.Release.Name }}
+spec:
+  replicas: 1
+  {{- if $.Values.persistence }}
+  strategy: {type: Recreate}
+  {{- end }}
+  selector:
+    matchLabels: *labels
+  template:
+    metadata:
+      labels: *labels
+    spec:
+      containers:
+        - name: {{ $name }}
+          image: "{{ if $svc.image.registry }}{{ $svc.image.registry }}/{{ end }}{{ $svc.image.repository }}:{{ $svc.image.tag }}"
+          {{- with $svc.command }}
+          command:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          {{- with $svc.env }}
+          env:
+            {{- range . }}
+            - name: {{ .name }}
+            {{- if hasKey . "valueFromSecret" }}
+              valueFrom: {secretKeyRef: {name: {{ printf "%s-%s" $.Release.Name .valueFromSecret | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}, key: {{ .valueFromSecret }}}}
+            {{- else if hasKey . "valueFromEnv" }}
+              value: {{ index $.Values.env .valueFromEnv | quote }}
+            {{- else }}
+              value: {{ .value | quote }}
+            {{- end }}
+            {{- end }}
+          {{- end }}
+          {{- if $svc.port }}
+          ports:
+            - {name: http, containerPort: {{ $svc.port }}}
+          {{- end }}
+          {{- with $svc.probe }}
+          readinessProbe:
+            exec: {command: ["/bin/sh", "-c", {{ .exec | quote }}]}
+            periodSeconds: {{ .intervalSeconds }}
+            timeoutSeconds: {{ .timeoutSeconds }}
+            failureThreshold: {{ .retries }}
+          livenessProbe:
+            exec: {command: ["/bin/sh", "-c", {{ .exec | quote }}]}
+            periodSeconds: {{ .intervalSeconds }}
+            timeoutSeconds: {{ .timeoutSeconds }}
+            failureThreshold: {{ .retries }}
+          {{- end }}
+          {{- with $svc.volumeMounts }}
+          volumeMounts:
+            {{- range . }}
+            - name: {{ .name }}
+              mountPath: {{ .mountPath }}
+              {{- if .subPath }}
+              subPath: {{ .subPath }}
+              {{- end }}
+            {{- end }}
+          {{- end }}
+          {{- with $svc.memoryLimit }}
+          resources:
+            limits: {memory: {{ . | quote }}}
+          {{- end }}
+      volumes:
+        {{- range $name, $p := $.Values.persistence }}
+        - name: {{ $name }}
+          persistentVolumeClaim: {claimName: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}}
+        {{- end }}
+        {{- range $name, $cm := $.Values.configMaps }}
+        - name: {{ $name }}
+          configMap: {name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}}
+        {{- end }}
+---
+{{- end }}

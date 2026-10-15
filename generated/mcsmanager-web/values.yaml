@@ -1,0 +1,23 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data-web-data:
+    mountPath: /opt/mcsmanager/web/data
+    size: 10Gi
+  vol-data-web-logs:
+    mountPath: /opt/mcsmanager/web/logs
+    size: 10Gi
+secrets: {}
+services:
+  mcsm-web:
+    env: []
+    image:
+      registry: ''
+      repository: githubyumao/mcsmanager-web
+      tag: v10.21.2
+    port: 23333
+    volumeMounts:
+    - mountPath: /opt/mcsmanager/web/data
+      name: vol-data-web-data
+    - mountPath: /opt/mcsmanager/web/logs
+      name: vol-data-web-logs

@@ -1,0 +1,30 @@
+configMaps: {}
+env: {}
+persistence:
+  vol-data:
+    mountPath: /home/jovyan/work
+    size: 10Gi
+secrets: {}
+services:
+  jupyter:
+    command:
+    - start-notebook.sh --NotebookApp.custom_display_url=http://localhost:8888
+    env:
+    - name: NB_UID
+      value: '1000'
+    - name: NB_GID
+      value: '100'
+    - name: CHOWN_HOME
+      value: 'yes'
+    - name: CHOWN_HOME_OPTS
+      value: '''-R'''
+    - name: JUPYTER_ENABLE_LAB
+      value: 'yes'
+    image:
+      registry: ''
+      repository: jupyter/scipy-notebook
+      tag: '4.0'
+    port: 8888
+    volumeMounts:
+    - mountPath: /home/jovyan/work
+      name: vol-data
