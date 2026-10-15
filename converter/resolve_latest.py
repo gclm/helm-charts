@@ -32,9 +32,36 @@ def http_json(url, token=None):
     headers = dict(UA)
     if token:
         headers["Authorization"] = f"Bearer {token}"
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+    last = None
+    for _ in range(3):  # registries occasionally drop connections
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)
+        except Exception as e:  # noqa: BLE001
+            last = e
+    raise last
+
+
+def http_head_digest(url, token=None):
+    """HEAD a manifest, return Docker-Content-Digest header."""
+    headers = dict(UA)
+    headers["Accept"] = ",".join([
+        "application/vnd.oci.image.index.v1+json",
+        "application/vnd.docker.distribution.manifest.list.v2+json",
+        "application/vnd.oci.image.manifest.v1+json",
+        "application/vnd.docker.distribution.manifest.v2+json"])
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    last = None
+    for _ in range(3):
+        try:
+            req = urllib.request.Request(url, headers=headers, method="HEAD")
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.headers.get("Docker-Content-Digest", "")
+        except Exception as e:  # noqa: BLE001
+            last = e
+    raise last
 
 
 def registry_of(image):
@@ -67,6 +94,20 @@ def newest_semver(tags):
     return best
 
 
+def latest_digest(image):
+    """Resolve :latest manifest digest (index-level is fine: containerd picks the platform)."""
+    if image.startswith("ghcr.io/"):
+        repo = image[len("ghcr.io/"):]
+        auth = f"https://ghcr.io/token?scope=repository:{repo}:pull"
+        manifest = f"https://ghcr.io/v2/{repo}/manifests/latest"
+    else:
+        repo = image if "/" in image else f"library/{image}"
+        auth = f"https://auth.docker.io/token?service=registry.docker.io&scope=repository:{repo}:pull"
+        manifest = f"https://registry-1.docker.io/v2/{repo}/manifests/latest"
+    token = http_json(auth).get("token", "")
+    return http_head_digest(manifest, token)
+
+
 def main_image(app_dir: Path):
     compose = app_dir / "latest" / "docker-compose.yml"
     if not compose.exists():
@@ -93,6 +134,10 @@ def main():
 
     apps_root = Path(args.src) / "apps"
     results, failures = {}, []
+    out_path = Path(args.out)
+    old = {}
+    if out_path.exists():
+        old = yaml.safe_load(out_path.read_text()) or {}
     for app_dir in sorted(apps_root.glob("*/latest")):
         app = app_dir.parent.name
         image = main_image(app_dir.parent)
@@ -108,20 +153,33 @@ def main():
         if tag:
             results[app] = tag
             print(f"  {app}: {image}:{tag}")
+            continue
+        try:
+            digest = latest_digest(image)
+        except Exception as e:  # noqa: BLE001
+            failures.append(f"{app}: digest lookup failed: {e}")
+            print(f"  {app}: DIGEST LOOKUP FAILED ({e})")
+            continue
+        if not digest:
+            print(f"  {app}: no semver tag and no digest on {image}, skip")
+            continue
+        old_entry = old.get(app)
+        if isinstance(old_entry, dict) and old_entry.get("digest") == digest:
+            results[app] = old_entry  # digest unchanged: keep entry verbatim (no churn)
+            print(f"  {app}: pinned {digest[:19]} (unchanged)")
         else:
-            print(f"  {app}: no semver tag on {image} (latest-only upstream)")
+            import datetime
+            results[app] = {"digest": digest, "date": datetime.date.today().strftime("%Y%m%d")}
+            print(f"  {app}: pinned {digest[:19]} (digest mode)")
 
     if args.dry_run:
         return
 
     out = Path(args.out)
-    old = {}
-    if out.exists():
-        old = yaml.safe_load(out.read_text()) or {}
     if old == results:
         print("auto-tags unchanged")
         return
-    out.parent.mkdir(parents=True, exist_ok=True)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(yaml.safe_dump(results, sort_keys=True, default_flow_style=False))
     print(f"wrote {out} ({len(results)} resolved, {len(failures)} lookup failures)")
     for f in failures:

@@ -75,8 +75,12 @@ def scan_apps(src: Path, tags=None):
             if not (vd.is_dir() and (vd / "docker-compose.yml").exists()):
                 continue
             if vd.name == "latest":
-                if app_dir.name in tags:
-                    nv = normalize_ver(str(tags[app_dir.name]))
+                entry = tags.get(app_dir.name)
+                if isinstance(entry, dict) and entry.get("digest"):
+                    nv = "0.0.0-d%s.g%s" % (entry.get("date", "19700101"), str(entry["digest"])[7:12])
+                    versions.append((nv, vd))
+                elif entry:
+                    nv = normalize_ver(str(entry))
                     if nv:
                         versions.append((nv, vd))
                 continue
@@ -95,7 +99,11 @@ def scan_apps(src: Path, tags=None):
 # ---------------------------------------------------------------- blockers
 
 def image_untagged(image: str):
-    if not image or ":" not in image:
+    if not image:
+        return True
+    if "@sha256:" in str(image):
+        return False  # digest-pinned: stronger than a tag
+    if ":" not in image:
         return True
     tag = image.rsplit(":", 1)[1]
     return tag in ("", "latest") or "/" in tag  # e.g. host:port/foo without tag
@@ -162,8 +170,12 @@ def parse_volume(vol):
 
 
 def split_image(image: str):
-    """'registry/repo:tag' -> (registry, repository, tag)."""
+    """'registry/repo:tag' or 'registry/repo@sha256:...' -> (registry, repository, tag, digest)."""
     img = image.strip()
+    digest = None
+    if "@sha256:" in img:
+        img, digest = img.split("@sha256:", 1)
+        digest = "sha256:" + digest
     tag = None
     if ":" in img and not img.rsplit(":", 1)[1].isdigit():
         img, tag = img.rsplit(":", 1)
@@ -171,7 +183,7 @@ def split_image(image: str):
         registry, repo = img.split("/", 1)
     else:
         registry, repo = "", img
-    return registry, repo, tag
+    return registry, repo, tag, digest
 
 
 def convert_env_value(raw, form_fields, env_out, secret_out):
@@ -240,7 +252,7 @@ def convert_app(app_name, ver_dir: Path, compose, ver_norm, form_fields, meta):
     for svc_name, svc in (compose.get("services") or {}).items():
         if not isinstance(svc, dict) or not svc.get("image"):
             continue
-        registry, repo, tag = split_image(svc["image"])
+        registry, repo, tag, digest = split_image(svc["image"])
         env_list = []
         env_keys = set()
         raw_env = svc.get("environment") or {}
@@ -307,7 +319,7 @@ def convert_app(app_name, ver_dir: Path, compose, ver_norm, form_fields, meta):
                 break
         hc = svc.get("healthcheck")
         svc_out = {
-            "image": {"registry": registry, "repository": repo, "tag": tag},
+            "image": {"registry": registry, "repository": repo, "tag": tag, **({"digest": digest} if digest else {})},
             "env": env_list,
             "volumeMounts": mounts + [
                 {"name": cm_key, "mountPath": m["mountPath"], "subPath": m["subPath"]}
@@ -359,7 +371,7 @@ spec:
     spec:
       containers:
         - name: {{ $name }}
-          image: "{{ if $svc.image.registry }}{{ $svc.image.registry }}/{{ end }}{{ $svc.image.repository }}:{{ $svc.image.tag }}"
+          image: "{{ if $svc.image.registry }}{{ $svc.image.registry }}/{{ end }}{{ $svc.image.repository }}{{ if $svc.image.digest }}@{{ $svc.image.digest }}{{ else }}:{{ $svc.image.tag }}{{ end }}"
           {{- with $svc.command }}
           command:
             {{- toYaml . | nindent 12 }}
@@ -604,9 +616,15 @@ def main():
             continue
         compose = load_yaml(ver_dir / "docker-compose.yml")
         if app_name in tags:  # pin resolved :latest image before blocker scan
+            entry = tags[app_name]
             for svc in (compose.get("services") or {}).values():
-                if isinstance(svc, dict) and str(svc.get("image", "")).endswith(":latest"):
-                    svc["image"] = str(svc["image"]).rsplit(":", 1)[0] + ":" + str(tags[app_name])
+                if not (isinstance(svc, dict) and str(svc.get("image", "")).endswith(":latest")):
+                    continue
+                base = str(svc["image"]).rsplit(":", 1)[0]
+                if isinstance(entry, dict) and entry.get("digest"):
+                    svc["image"] = base + "@" + str(entry["digest"])
+                else:
+                    svc["image"] = base + ":" + str(entry)
         blockers = detect_blockers(compose)
         if blockers:
             report["skipped"].append(f"{app_name}: BLOCKED ({'; '.join(blockers)})")
