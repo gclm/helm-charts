@@ -35,7 +35,7 @@ jobs:
       - name: Install python deps
         run: python3 -m pip install --quiet pyyaml
 
-      - name: Convert (idempotency gate: run twice, must be identical)
+      - name: "Convert (idempotency gate: run twice, must be identical)"
         run: |
           set -eu
           python3 converter/convert.py --src /tmp/appstore --out generated --sha "$UPSTREAM_SHA"
