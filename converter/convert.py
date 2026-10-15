@@ -132,6 +132,14 @@ def app_tags(meta):
     return tags
 
 
+def sanitize_name(s: str) -> str:
+    """k8s-safe name part: lower, _->-, prefix if not starting with a letter."""
+    out = str(s).lower().replace("_", "-")
+    if not re.match(r"[a-z]", out):
+        out = "app-" + out
+    return out[:40]
+
+
 def parse_volume(vol):
     if isinstance(vol, str):
         if ":" in vol:
@@ -271,15 +279,15 @@ def convert_app(app_name, ver_dir: Path, ver_norm, form_fields, meta):
                 if rel_key in conf_files:
                     cm_key = "conf"
                     if cm_key not in configmaps_out:
-                        configmaps_out[cm_key] = {"data": conf_files, "mounts": []}
-                    configmaps_out[cm_key]["mounts"].append(
+                        configmaps_out[sanitize_name(cm_key)] = {"data": conf_files, "mounts": []}
+                    configmaps_out[sanitize_name(cm_key)]["mounts"].append(
                         {"mountPath": dst, "subPath": rel_key})
                 continue
             if src.startswith("./") or src.startswith("/opt/1panel"):
                 rel = src.lstrip("./")
                 vol_key = "vol-" + (rel.replace("/", "-").replace(".", "-") or "data")
-                persistence_out[vol_key] = {"size": DEFAULT_SIZE, "mountPath": dst}
-                mounts.append({"name": vol_key, "mountPath": dst})
+                persistence_out[sanitize_name(vol_key)] = {"size": DEFAULT_SIZE, "mountPath": dst}
+                mounts.append({"name": sanitize_name(vol_key), "mountPath": dst})
 
         ports = svc.get("ports") or []
         port = None
@@ -308,7 +316,7 @@ def convert_app(app_name, ver_dir: Path, ver_norm, form_fields, meta):
             svc_out["probe"] = probe
         if svc.get("mem_limit"):
             svc_out["memoryLimit"] = str(svc["mem_limit"])
-        services_out[svc_name] = svc_out
+        services_out[sanitize_name(svc_name)] = svc_out
 
     values = {
         "services": services_out,
@@ -353,7 +361,7 @@ spec:
             {{- range . }}
             - name: {{ .name }}
             {{- if hasKey . "valueFromSecret" }}
-              valueFrom: {secretKeyRef: {name: {{ printf "%s-%s" $.Release.Name .valueFromSecret | trunc 63 | trimSuffix "-" }}, key: {{ .valueFromSecret }}}}
+              valueFrom: {secretKeyRef: {name: {{ printf "%s-%s" $.Release.Name .valueFromSecret | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}, key: {{ .valueFromSecret }}}}
             {{- else if hasKey . "valueFromEnv" }}
               value: {{ index $.Values.env .valueFromEnv | quote }}
             {{- else }}
@@ -394,11 +402,11 @@ spec:
       volumes:
         {{- range $name, $p := $.Values.persistence }}
         - name: {{ $name }}
-          persistentVolumeClaim: {claimName: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}}
+          persistentVolumeClaim: {claimName: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}}
         {{- end }}
         {{- range $name, $cm := $.Values.configMaps }}
         - name: {{ $name }}
-          configMap: {name: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}}
+          configMap: {name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}}
         {{- end }}
 ---
 {{- end }}
@@ -408,7 +416,7 @@ TEMPLATE_PVC = '''{{- range $name, $p := .Values.persistence }}
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}
+  name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}
 spec:
   accessModes: ["ReadWriteOnce"]
   resources:
@@ -442,7 +450,7 @@ TEMPLATE_SECRET = '''{{- range $name, $s := .Values.secrets }}
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}
+  name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}
 type: Opaque
 stringData:
   {{ $name }}: {{ randAlphaNum 32 | quote }}
@@ -453,7 +461,7 @@ TEMPLATE_CONFIGMAP = '''{{- range $name, $cm := .Values.configMaps }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ printf "%s-%s" $.Release.Name $name | trunc 63 | trimSuffix "-" }}
+  name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}
 data:
   {{- range $f, $content := $cm.data }}
   {{ $f }}: |
@@ -470,7 +478,7 @@ NOTES = '''{{ .Chart.Name }} {{ .Chart.AppVersion }} converted from 1Panel appst
 
 Generated credentials (auto, stable across upgrades):
 {{- range $k, $v := .Values.secrets }}
-  kubectl get secret {{ printf "%s-%s" $.Release.Name $k | trunc 63 | trimSuffix "-" }} -o jsonpath='{.data.{{ $k }}}' | base64 -d
+  kubectl get secret {{ printf "%s-%s" $.Release.Name $k | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }} -o jsonpath='{.data.{{ $k }}}' | base64 -d
 {{- end }}
 {{- end }}
 {{- if .Values.env }}
