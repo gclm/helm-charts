@@ -38,7 +38,7 @@ services:
     image:
       registry: ''
       repository: halohub/halo-pro
-      tag: 2.26.1
+      tag: 2.27.0
     port: 8090
     probe:
       exec: CMD curl -f http://localhost:8090/actuator/health/readiness

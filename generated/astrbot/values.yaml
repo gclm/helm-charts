@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: soulter/astrbot
-      tag: v4.28.2
+      tag: v4.29.0
     port: 6185
     volumeMounts:
     - mountPath: /AstrBot/data

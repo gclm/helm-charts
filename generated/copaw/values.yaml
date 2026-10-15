@@ -29,7 +29,7 @@ services:
     image:
       registry: ''
       repository: agentscope/qwenpaw
-      tag: v2.2.1
+      tag: v2.2.2
     port: 8088
     volumeMounts:
     - mountPath: /app/working

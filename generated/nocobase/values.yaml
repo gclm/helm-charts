@@ -35,7 +35,7 @@ services:
     image:
       registry: ''
       repository: nocobase/nocobase
-      tag: 2.2.24
+      tag: 2.2.25
     port: 80
     volumeMounts:
     - mountPath: /app/nocobase/storage

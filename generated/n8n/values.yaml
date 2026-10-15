@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: n8nio/n8n
-      tag: 2.43.5
+      tag: 2.44.2
     port: 5678
     volumeMounts:
     - mountPath: /home/node/.n8n

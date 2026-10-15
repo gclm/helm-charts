@@ -18,7 +18,7 @@ services:
     image:
       registry: ''
       repository: imaegoo/twikoo
-      tag: 2.0.13
+      tag: 2.0.14
     port: 8080
     volumeMounts:
     - mountPath: /app/data
