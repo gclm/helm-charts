@@ -313,6 +313,17 @@ def convert_app(app_name, ver_dir: Path, compose, ver_norm, form_fields, meta):
         port = None
         for p in ports:
             p_str = str(p)
+            # 1Panel runtime injects ALL formFields into the container env; apps
+            # read e.g. PANEL_APP_PORT_HTTP even when compose only uses it in
+            # the ports section — so must we
+            for m in re.finditer(r"\$\{([A-Za-z0-9_]+)\}", p_str):
+                var = m.group(1)
+                if var in form_fields and var not in env_keys:
+                    entry = convert_env_value("${" + var + "}", form_fields, env_out, secret_out)
+                    if entry:
+                        entry["name"] = var
+                        env_list.append(entry)
+                        env_keys.add(var)
             m = re.search(r":(\d+)", p_str) or re.fullmatch(r"(\d+)", p_str)
             if m:
                 port = int(m.group(1))
