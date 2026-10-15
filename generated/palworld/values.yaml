@@ -5,6 +5,7 @@ env:
   ENABLE_PLAYER_LOGGING: 'false'
   MAX_PLAYERS: 32
   MULTITHREAD_SWITCH: 'true'
+  PANEL_APP_PORT_HTTP: 8211
   PANEL_APP_PORT_QUERY: 27015
   PUBLIC_IP: ''
   PUBLIC_PORT: ''
@@ -63,6 +64,8 @@ services:
       value: '8212'
     - name: QUERY_PORT
       valueFromEnv: PANEL_APP_PORT_QUERY
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: thijsvanloef/palworld-server-docker

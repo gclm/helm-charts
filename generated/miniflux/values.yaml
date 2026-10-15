@@ -2,6 +2,7 @@ configMaps: {}
 env:
   ADMIN_PASSWORD: test123
   ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 8080
 persistence: {}
 secrets: {}
 services:
@@ -17,6 +18,8 @@ services:
       valueFromEnv: ADMIN_PASSWORD
     - name: DEBUG
       value: '1'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: miniflux/miniflux

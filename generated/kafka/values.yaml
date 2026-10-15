@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 9092
 persistence: {}
 secrets: {}
 services:
@@ -33,6 +34,8 @@ services:
       value: CONTROLLER
     - name: KAFKA_HEAP_OPTS
       value: -Xmx512m -Xms256m
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: bitnamilegacy/kafka

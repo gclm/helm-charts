@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   MEILI_NO_ANALYTICS: 'true'
+  PANEL_APP_PORT_HTTP: 7700
 persistence:
   vol-data:
     mountPath: /meili_data
@@ -28,6 +29,8 @@ services:
       valueFromSecret: MEILI_MASTER_KEY
     - name: MEILI_NO_ANALYTICS
       valueFromEnv: MEILI_NO_ANALYTICS
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: getmeili/meilisearch

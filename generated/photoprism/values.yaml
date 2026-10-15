@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   ADMIN_USER: admin
+  PANEL_APP_PORT_HTTP: 2342
   PANEL_DB_NAME: photoprism
   PANEL_DB_USER: photoprism
   PHOTOPRISM_EXTERNAL_URL: http://localhost:2342/
@@ -86,6 +87,8 @@ services:
       value: ${UID:-1000}
     - name: PHOTOPRISM_GID
       value: ${GID:-1000}
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: photoprism/photoprism

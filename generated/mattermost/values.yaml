@@ -3,6 +3,7 @@ env:
   MM_BLEVESETTINGS_INDEXDIR: /mattermost/bleve-indexes
   MM_SERVICESETTINGS_SITEURL: http://localhost:40271
   MM_SQLSETTINGS_DRIVERNAME: postgres
+  PANEL_APP_PORT_HTTP: 40271
   TZ: Asia/Shanghai
 persistence:
   vol-data-bleve:
@@ -35,6 +36,8 @@ services:
       valueFromEnv: MM_BLEVESETTINGS_INDEXDIR
     - name: MM_SERVICESETTINGS_SITEURL
       valueFromEnv: MM_SERVICESETTINGS_SITEURL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: mattermost/mattermost-team-edition

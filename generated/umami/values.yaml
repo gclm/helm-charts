@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   HASH_SALT: umami
+  PANEL_APP_PORT_HTTP: 3000
   PANEL_DB_TYPE: postgresql
 persistence: {}
 secrets: {}
@@ -11,6 +12,8 @@ services:
       valueFromEnv: PANEL_DB_TYPE
     - name: APP_SECRET
       valueFromEnv: HASH_SALT
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: umami-software/umami

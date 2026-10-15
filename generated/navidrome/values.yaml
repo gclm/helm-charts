@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40108
 persistence:
   vol-data-data:
     mountPath: /data
@@ -19,6 +20,8 @@ services:
       value: 24h
     - name: ND_BASEURL
       value: ''
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: deluan/navidrome

@@ -4,6 +4,7 @@ env:
   DISCOURSE_HOST: ''
   DISCOURSE_PASSWORD: ''
   DISCOURSE_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 3000
   PANEL_DB_HOST: ''
   PANEL_DB_NAME: discourse
   PANEL_DB_USER: discourse
@@ -59,6 +60,8 @@ services:
       value: test
     - name: DISCOURSE_SMTP_PASSWORD
       value: test
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: bitnamilegacy/discourse

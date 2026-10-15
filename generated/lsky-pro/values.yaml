@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40027
 persistence:
   vol-data:
     mountPath: /var/www/html/
@@ -10,6 +11,8 @@ services:
     env:
     - name: WEB_PORT
       value: '8089'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       digest: sha256:64ad14908a41c818f023233253d2303bf091bf53884fd8e4faa32e48dc74f044
       registry: ''

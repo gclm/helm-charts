@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   APP_KEY: ''
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_APP_URL: ''
   PANEL_DB_NAME: firefly
   PANEL_DB_TYPE: mysql
@@ -29,6 +30,8 @@ services:
       valueFromEnv: PANEL_APP_URL
     - name: TRUSTED_PROXIES
       value: '**'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: fireflyiii/core

@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 40109
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data-books:
@@ -22,6 +23,8 @@ services:
       value: linuxserver/mods:universal-calibre
     - name: OAUTHLIB_RELAX_TOKEN_SCOPE
       value: '1'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: linuxserver/calibre-web

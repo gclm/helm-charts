@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8088
   QWENPAW_AUTH_USERNAME: admin
 persistence:
   vol-backups:
@@ -23,6 +24,8 @@ services:
       valueFromEnv: QWENPAW_AUTH_USERNAME
     - name: QWENPAW_AUTH_PASSWORD
       valueFromSecret: QWENPAW_AUTH_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: agentscope/qwenpaw

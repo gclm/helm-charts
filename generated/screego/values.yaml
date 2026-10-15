@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 5050
   SCREEGO_EXTERNAL_IP: 127.0.0.1
 persistence: {}
 secrets: {}
@@ -10,6 +11,8 @@ services:
       valueFromEnv: SCREEGO_EXTERNAL_IP
     - name: SCREEGO_TURN_PORT_RANGE
       value: 50000:50200
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: screego/server

@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40076
 persistence:
   vol-data-database:
     mountPath: /app/database
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   domain-admin:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: mouday/domain-admin

@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   OLLAMA_BASE_URL: 示例：http://192.168.10.100:11434
+  PANEL_APP_PORT_HTTP: 3000
 persistence:
   vol-data:
     mountPath: /app/backend/data
@@ -15,6 +16,8 @@ services:
       valueFromEnv: OLLAMA_BASE_URL
     - name: WEBUI_SECRET_KEY
       valueFromSecret: WEBUI_SECRET_KEY
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: open-webui/open-webui

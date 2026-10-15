@@ -2,6 +2,7 @@ configMaps: {}
 env:
   ADMIN_PASSWORD: passwd_1Panel
   ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 9090
 persistence:
   vol-data:
     mountPath: /etc/linkding/data
@@ -14,6 +15,8 @@ services:
       valueFromEnv: ADMIN_USERNAME
     - name: LD_SUPERUSER_PASSWORD
       valueFromEnv: ADMIN_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: sissbruecker/linkding

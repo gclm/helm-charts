@@ -2,6 +2,7 @@ configMaps: {}
 env:
   API_BASE_URL: https://api.openai.com
   API_KEY: sk-xxx
+  PANEL_APP_PORT_HTTP: 40042
   PROXY: ''
   WHITE_WEBDAV_ENDPOINTS: ''
 persistence: {}
@@ -21,6 +22,8 @@ services:
       valueFromEnv: API_BASE_URL
     - name: WHITE_WEBDAV_ENDPOINTS
       valueFromEnv: WHITE_WEBDAV_ENDPOINTS
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: yidadaa/chatgpt-next-web

@@ -4,6 +4,7 @@ env:
   DVWA_RECAPTCHA_PRIVATE_KEY: ''
   DVWA_RECAPTCHA_PUBLIC_KEY: ''
   DVWA_SECURITY_LEVEL: low
+  PANEL_APP_PORT_HTTP: '4280'
   PANEL_DB_NAME: dvwa
   PANEL_DB_USER: dvwa
 persistence: {}
@@ -27,6 +28,8 @@ services:
       valueFromEnv: DVWA_RECAPTCHA_PRIVATE_KEY
     - name: DEFAULT_LOCALE
       valueFromEnv: DVWA_DEFAULT_LOCALE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       digest: sha256:1af2cedda7617e4d22937e61c98bbf71d8b74b98e46f5e41dd6aa0a5183311b0
       registry: ghcr.io

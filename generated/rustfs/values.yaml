@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_API: 9000
   RUSTFS_ACCESS_KEY: rustfsadmin
   RUSTFS_CONSOLE_ENABLE: 'true'
 persistence:
@@ -18,6 +19,8 @@ services:
       valueFromSecret: RUSTFS_SECRET_KEY
     - name: RUSTFS_CONSOLE_ENABLE
       valueFromEnv: RUSTFS_CONSOLE_ENABLE
+    - name: PANEL_APP_PORT_API
+      valueFromEnv: PANEL_APP_PORT_API
     image:
       registry: ''
       repository: rustfs/rustfs

@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 5601
 persistence:
   vol-data:
     mountPath: /usr/share/kibana/data
@@ -20,6 +21,8 @@ services:
       value: '"5s"'
     - name: MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED
       value: 'true'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: kibana

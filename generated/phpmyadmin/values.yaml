@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8089
 persistence: {}
 secrets: {}
 services:
@@ -7,6 +8,8 @@ services:
     env:
     - name: PMA_ARBITRARY
       value: '1'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: phpmyadmin

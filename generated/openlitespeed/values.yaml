@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP_80: 80
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data-acme:
@@ -26,6 +27,8 @@ services:
     env:
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTP_80
+      valueFromEnv: PANEL_APP_PORT_HTTP_80
     image:
       registry: ''
       repository: litespeedtech/openlitespeed

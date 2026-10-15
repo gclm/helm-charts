@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 6185
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data:
@@ -11,6 +12,8 @@ services:
     env:
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: soulter/astrbot

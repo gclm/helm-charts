@@ -26,6 +26,7 @@ env:
   GOTIFY_SERVER_STREAM_ALLOWEDORIGINS: ''
   GOTIFY_SERVER_STREAM_PINGPERIODSECONDS: 45
   GOTIFY_UPLOADEDIMAGESDIR: data/images
+  PANEL_APP_PORT_HTTP: '40266'
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data:
@@ -93,6 +94,8 @@ services:
       valueFromEnv: GOTIFY_PLUGINSDIR
     - name: GOTIFY_REGISTRATION
       valueFromEnv: GOTIFY_REGISTRATION
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: gotify/server

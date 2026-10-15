@@ -9,6 +9,7 @@ env:
   NACOS_AUTH_IDENTITY_VALUE: security
   NACOS_AUTH_TOKEN: SecretKey012345678901234567890123456789012345678901234567890123456789
   NACOS_SERVER_IP: ''
+  PANEL_APP_PORT_HTTP: 8080
 persistence:
   vol-data-data:
     mountPath: /home/nacos/data
@@ -44,6 +45,8 @@ services:
       valueFromEnv: NACOS_AUTH_TOKEN
     - name: NACOS_SERVER_IP
       valueFromEnv: NACOS_SERVER_IP
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: nacos/nacos-server

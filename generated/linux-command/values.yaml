@@ -1,10 +1,13 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40255
 persistence: {}
 secrets: {}
 services:
   linux-command:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: wcjiang/linux-command

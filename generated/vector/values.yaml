@@ -18,12 +18,15 @@ configMaps:
     mounts:
     - mountPath: /etc/vector/vector.yaml
       subPath: vector.yaml
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8686
 persistence: {}
 secrets: {}
 services:
   vector:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: timberio/vector

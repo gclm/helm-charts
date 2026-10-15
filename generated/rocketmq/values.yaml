@@ -1,6 +1,10 @@
 configMaps: {}
 env:
   DASHBOARD_USER: admin
+  PANEL_APP_PORT_FASTLISTEN: 10909
+  PANEL_APP_PORT_HTTP: 8088
+  PANEL_APP_PORT_NAMESERVER: 9876
+  PANEL_APP_PORT_REMOTINGLISTEN: 8080
 persistence:
   vol-data-broker-conf-broker-conf:
     mountPath: /opt/rocketmq-5.2.0/conf/broker.conf
@@ -33,6 +37,8 @@ services:
     env:
     - name: NAMESRV_ADDR
       value: namesrv:9876
+    - name: PANEL_APP_PORT_FASTLISTEN
+      valueFromEnv: PANEL_APP_PORT_FASTLISTEN
     image:
       registry: ''
       repository: apache/rocketmq
@@ -55,6 +61,8 @@ services:
       valueFromEnv: DASHBOARD_USER
     - name: SPRING_SECURITY_USER_PASSWORD
       valueFromSecret: DASHBOARD_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: apacherocketmq/rocketmq-dashboard
@@ -66,7 +74,9 @@ services:
   namesrv:
     command:
     - sh mqnamesrv
-    env: []
+    env:
+    - name: PANEL_APP_PORT_NAMESERVER
+      valueFromEnv: PANEL_APP_PORT_NAMESERVER
     image:
       registry: ''
       repository: apache/rocketmq
@@ -81,6 +91,8 @@ services:
     env:
     - name: NAMESRV_ADDR
       value: namesrv:9876
+    - name: PANEL_APP_PORT_REMOTINGLISTEN
+      valueFromEnv: PANEL_APP_PORT_REMOTINGLISTEN
     image:
       registry: ''
       repository: apache/rocketmq

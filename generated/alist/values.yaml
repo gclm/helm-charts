@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 5244
 persistence:
   vol-data-data:
     mountPath: /opt/alist/data
@@ -17,6 +18,8 @@ services:
       value: '0'
     - name: UMASK
       value: '022'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: xhofe/alist

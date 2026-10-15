@@ -2,6 +2,7 @@ configMaps: {}
 env:
   NEXTAUTH_URL: http://1.2.3.4:1111
   NEXT_PUBLIC_BASE_URL: http://1.2.3.4:1111
+  PANEL_APP_PORT_HTTP: '1111'
 persistence:
   vol-data:
     mountPath: /app/.blinko
@@ -20,6 +21,8 @@ services:
       valueFromEnv: NEXT_PUBLIC_BASE_URL
     - name: NEXTAUTH_SECRET
       valueFromSecret: NEXTAUTH_SECRET
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: blinkospace/blinko

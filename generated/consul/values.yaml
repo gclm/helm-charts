@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8500
 persistence:
   vol-data-config:
     mountPath: /consul/config
@@ -17,7 +18,9 @@ services:
     - consul agent -server -bootstrap-expect=1 -client=0.0.0.0 -ui -data-dir=/consul/data
       -node=consul-node -datacenter=dc1 -log-level=warn -enable-script-checks=true
       -config-dir=/consul/config
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: hashicorp/consul

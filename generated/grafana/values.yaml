@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 3000
 persistence:
   vol-data:
     mountPath: /var/lib/grafana
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   grafana:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: grafana/grafana

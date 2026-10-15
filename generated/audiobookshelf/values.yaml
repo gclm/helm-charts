@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40096
 persistence:
   vol-data-audiobooks:
     mountPath: /audiobooks
@@ -16,7 +17,9 @@ persistence:
 secrets: {}
 services:
   audiobookshelf:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: advplyr/audiobookshelf

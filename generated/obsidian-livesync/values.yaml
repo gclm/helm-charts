@@ -45,6 +45,7 @@ configMaps:
       subPath: local.ini
 env:
   OBSIDIAN_LIVESYNC_USER: admin
+  PANEL_APP_PORT_HTTP: 5984
 persistence:
   vol-data:
     mountPath: /opt/couchdb/data
@@ -59,6 +60,8 @@ services:
       valueFromEnv: OBSIDIAN_LIVESYNC_USER
     - name: COUCHDB_PASSWORD
       valueFromSecret: OBSIDIAN_LIVESYNC_USER_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: couchdb

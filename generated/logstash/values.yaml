@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_BEATS: 5044
 persistence:
   vol-data:
     mountPath: /usr/share/logstash/data
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   logstash:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_BEATS
+      valueFromEnv: PANEL_APP_PORT_BEATS
     image:
       registry: ''
       repository: logstash

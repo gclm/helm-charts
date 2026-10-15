@@ -17,6 +17,8 @@ services:
     env:
     - name: VERDACCIO_PORT
       valueFromEnv: PANEL_APP_PORT_HTTP
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: verdaccio/verdaccio

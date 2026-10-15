@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40056
 persistence:
   vol-data-web-data:
     mountPath: /opt/mcsmanager/web/data
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   mcsm-web:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: githubyumao/mcsmanager-web

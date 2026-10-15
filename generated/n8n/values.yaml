@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 5678
 persistence:
   vol-data:
     mountPath: /home/node/.n8n
@@ -10,6 +11,8 @@ services:
     env:
     - name: N8N_SECURE_COOKIE
       value: 'False'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: n8nio/n8n

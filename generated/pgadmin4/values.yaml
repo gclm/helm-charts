@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8080
   PGADMIN_DEFAULT_EMAIL: admin@1panel.cn
   PGADMIN_DEFAULT_PASSWORD: hgraZPD3v00I5AwuzSpL
 persistence:
@@ -14,6 +15,8 @@ services:
       valueFromEnv: PGADMIN_DEFAULT_EMAIL
     - name: PGADMIN_DEFAULT_PASSWORD
       valueFromEnv: PGADMIN_DEFAULT_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: dpage/pgadmin4

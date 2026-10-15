@@ -2,6 +2,7 @@ configMaps: {}
 env:
   ADMIN_PASSWORD: Keycloak_admin_default
   KC_HOSTNAME: ''
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_DB_NAME: keycloak
   PANEL_DB_TYPE: mariadb
   PANEL_DB_USER: keycloak_user
@@ -32,6 +33,8 @@ services:
       value: 'true'
     - name: KC_PROXY_HEADERS
       value: xforwarded
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: keycloak/keycloak

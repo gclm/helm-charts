@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: '5000'
   PANEL_DB_NAME: bettafish
   PANEL_DB_TYPE: postgresql
   PANEL_DB_USER: bettafish
@@ -36,6 +37,8 @@ services:
       value: '1'
     - name: STREAMLIT_SERVER_ENABLE_FILE_WATCHER
       value: 'false'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: 666ghj/bettafish

@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 3000
   TZ: Asia/Shanghai
 persistence:
   vol-data:
@@ -20,6 +21,8 @@ services:
       value: 'true'
     - name: MEMORY_CACHE_ENABLED
       value: 'true'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: calciumion/new-api

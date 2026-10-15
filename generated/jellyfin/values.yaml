@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8096
 persistence:
   vol-data-config:
     mountPath: /config
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   jellyfin:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: jellyfin/jellyfin

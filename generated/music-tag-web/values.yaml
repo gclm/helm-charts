@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8001
 persistence:
   vol-data:
     mountPath: /app/media
@@ -9,7 +10,9 @@ services:
   music-tag-web:
     command:
     - /start
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: xhongc/music_tag_web

@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8081
   PANEL_DB_NAME: dwz
   PANEL_DB_TYPE: postgresql
   PANEL_DB_USER: dwz
@@ -33,6 +34,8 @@ services:
       value: '0'
     - name: GIN_MODE
       value: release
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: docker.cnb.cool
       repository: mliev/dwz/dwz-server

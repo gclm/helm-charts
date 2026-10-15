@@ -1,10 +1,13 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8080
 persistence: {}
 secrets: {}
 services:
   cyberchef:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: gchq/cyberchef

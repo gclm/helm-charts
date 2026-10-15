@@ -2,6 +2,7 @@ configMaps: {}
 env:
   AUTHOR_EMAIL: ''
   COMMENT_AUDIT: 'false'
+  PANEL_APP_PORT_HTTP: '8360'
   SECURE_DOMAINS: ''
   SITE_NAME: ''
   SITE_URL: ''
@@ -32,6 +33,8 @@ services:
       valueFromEnv: SITE_URL
     - name: SECURE_DOMAINS
       valueFromEnv: SECURE_DOMAINS
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: lizheming/waline

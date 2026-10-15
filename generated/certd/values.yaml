@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 7001
 persistence:
   vol-data-certd:
     mountPath: /app/data
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   certd:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: greper/certd

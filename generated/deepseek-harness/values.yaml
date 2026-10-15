@@ -2,6 +2,7 @@ configMaps: {}
 env:
   DSH_AUTH_USERNAME: admin
   HTTPS_ACCESS_HOST: ''
+  PANEL_APP_PORT_HTTPS: 10443
 persistence:
   vol-data-caddy:
     mountPath: /data/caddy
@@ -30,6 +31,8 @@ services:
       value: '1'
     - name: NARB_DISABLE_NATIVE_CACHE
       value: '1'
+    - name: PANEL_APP_PORT_HTTPS
+      valueFromEnv: PANEL_APP_PORT_HTTPS
     image:
       registry: ''
       repository: 1panel/deepseek-harness

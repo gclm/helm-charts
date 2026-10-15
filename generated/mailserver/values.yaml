@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_SMTP: 25
 persistence:
   vol-data-dms-config-:
     mountPath: /tmp/docker-mailserver/
@@ -16,7 +17,9 @@ persistence:
 secrets: {}
 services:
   mailserver:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_SMTP
+      valueFromEnv: PANEL_APP_PORT_SMTP
     image:
       registry: ghcr.io
       repository: docker-mailserver/docker-mailserver

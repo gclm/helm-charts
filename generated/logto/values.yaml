@@ -2,6 +2,7 @@ configMaps: {}
 env:
   LOGTO_ADMIN_ENDPOINT_URL: https://admin.domain.com
   LOGTO_ENDPOINT_URL: https://logto.domain.com
+  PANEL_APP_PORT_HTTP: 3002
 persistence: {}
 secrets: {}
 services:
@@ -13,6 +14,8 @@ services:
       valueFromEnv: LOGTO_ENDPOINT_URL
     - name: ADMIN_ENDPOINT
       valueFromEnv: LOGTO_ADMIN_ENDPOINT_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: svhd/logto

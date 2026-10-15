@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40156
 persistence:
   vol-data-data:
     mountPath: /var/www/onlyoffice/Data
@@ -21,6 +22,8 @@ services:
     env:
     - name: JWT_SECRET
       valueFromSecret: JWT_SECRET
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: onlyoffice/documentserver

@@ -3,6 +3,7 @@ env:
   ATK_LOCALE: zh-CN
   ATK_SITE_DEFAULT: My Blog Site
   ATK_SITE_URL: https://example.myblog.com
+  PANEL_APP_PORT_HTTP: '23366'
   TZ: Asia/Shanghai
 persistence:
   vol-data:
@@ -20,6 +21,8 @@ services:
       valueFromEnv: ATK_LOCALE
     - name: TZ
       valueFromEnv: TZ
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: artalk/artalk-go

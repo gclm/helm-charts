@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: '21880'
 persistence:
   vol-data:
     mountPath: /data
@@ -10,6 +11,8 @@ services:
     env:
     - name: TZ
       value: Asia/Shanghai
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: nodered/node-red

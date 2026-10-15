@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 9000
   PANEL_DB_USER: sonarqube
 persistence:
   vol-data-data:
@@ -21,6 +22,8 @@ services:
       valueFromEnv: PANEL_DB_USER
     - name: SONAR_JDBC_PASSWORD
       valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: sonarqube

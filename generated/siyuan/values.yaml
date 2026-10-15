@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   ACCESS_AUTH_CODE: ''
+  PANEL_APP_PORT_HTTP: 6806
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data:
@@ -22,6 +23,8 @@ services:
       value: '1000'
     - name: ACCESS_AUTH_CODE
       valueFromEnv: ACCESS_AUTH_CODE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: b3log/siyuan

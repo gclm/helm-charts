@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 7860
 persistence:
   vol-data:
     mountPath: /app/langflow
@@ -10,6 +11,8 @@ services:
     env:
     - name: LANGFLOW_CONFIG_DIR
       value: app/langflow
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: langflowai/langflow

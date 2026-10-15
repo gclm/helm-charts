@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 40049
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data:
@@ -15,6 +16,8 @@ services:
       value: '1000'
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: linuxserver/heimdall

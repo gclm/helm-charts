@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8090
   PANEL_HTTPS_PROXY: ''
   PANEL_HTTP_PROXY: ''
   PANEL_NO_PROXY: ''
@@ -17,6 +18,8 @@ services:
       valueFromEnv: PANEL_HTTPS_PROXY
     - name: NO_PROXY
       valueFromEnv: PANEL_NO_PROXY
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: certimate/certimate

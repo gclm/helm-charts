@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_DB_NAME: typecho
   PANEL_DB_USER: typecho
   TYPECHO_EXTERNAL_URL: http://localhost:8080
@@ -39,6 +40,8 @@ services:
       valueFromEnv: TYPECHO_USER_MAIL
     - name: TYPECHO_SITE_URL
       valueFromEnv: TYPECHO_EXTERNAL_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: joyqi/typecho

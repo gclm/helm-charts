@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40026
 persistence: {}
 secrets: {}
 services:
@@ -13,6 +14,8 @@ services:
       value: '1000'
     - name: GID
       value: '1000'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: matrixdotorg/synapse

@@ -2,6 +2,7 @@ configMaps: {}
 env:
   CRON_SCHEDULE: '*/30 * * * *'
   IMMEDIATE_RUN: 'false'
+  PANEL_APP_PORT_HTTP: 8080
   RUN_MODE: cron
 persistence: {}
 secrets: {}
@@ -14,6 +15,8 @@ services:
       valueFromEnv: RUN_MODE
     - name: IMMEDIATE_RUN
       valueFromEnv: IMMEDIATE_RUN
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: wantcat/trendradar

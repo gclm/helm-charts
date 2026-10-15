@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTPS: 40069
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data-config:
@@ -18,6 +19,8 @@ services:
       value: '1000'
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTPS
+      valueFromEnv: PANEL_APP_PORT_HTTPS
     image:
       registry: ''
       repository: linuxserver/nextcloud

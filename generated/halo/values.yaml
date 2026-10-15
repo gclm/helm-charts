@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   HALO_EXTERNAL_URL: http://localhost:8090
+  PANEL_APP_PORT_HTTP: 8090
   PANEL_DB_NAME: halo
   PANEL_DB_TYPE: mysql
   PANEL_DB_USER: halo
@@ -32,6 +33,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: HALO_EXTERNAL_URL
       valueFromEnv: HALO_EXTERNAL_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: halohub/halo-pro

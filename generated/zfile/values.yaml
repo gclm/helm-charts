@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40072
 persistence:
   vol-data-db:
     mountPath: /root/.zfile-v4/db
@@ -13,7 +14,9 @@ persistence:
 secrets: {}
 services:
   zfile:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: zhaojun1998/zfile

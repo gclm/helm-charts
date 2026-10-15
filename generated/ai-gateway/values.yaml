@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   AI_GATEWAY_INITIAL_ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 8080
 persistence:
   vol-data:
     mountPath: /opt/ai-gateway/data
@@ -19,6 +20,8 @@ services:
       valueFromEnv: AI_GATEWAY_INITIAL_ADMIN_USERNAME
     - name: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
       valueFromSecret: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 1panel/ai-gateway

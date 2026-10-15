@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_RECEIVE: 10051
   PANEL_DB_NAME: zabbix_proxy
   PANEL_DB_USER: zabbix
   ZABBIX_PROXY_HOSTNAME: zabbix-proxy
@@ -25,6 +26,8 @@ services:
       valueFromEnv: PANEL_DB_USER
     - name: MYSQL_PASSWORD
       valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PANEL_APP_PORT_RECEIVE
+      valueFromEnv: PANEL_APP_PORT_RECEIVE
     image:
       registry: ''
       repository: zabbix/zabbix-proxy-mysql

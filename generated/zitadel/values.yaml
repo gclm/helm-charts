@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8080
   ZITADEL_DOMAIN: ''
   ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME: zitadel-admin
 persistence: {}
@@ -31,6 +32,8 @@ services:
       value: 'false'
     - name: ZITADEL_LOGSTORE_ACCESS_STDOUT_ENABLED
       value: 'true'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: zitadel/zitadel

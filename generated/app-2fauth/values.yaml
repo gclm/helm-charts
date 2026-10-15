@@ -3,6 +3,7 @@ env:
   APP_KEY: SomeRandomStringOf32CharsExactly
   APP_NAME: 2FAuth
   APP_URL: http://localhost:8000
+  PANEL_APP_PORT_HTTP: 8000
 persistence:
   vol-data:
     mountPath: /2fauth
@@ -31,6 +32,8 @@ services:
       value: file
     - name: AUTHENTICATION_GUARD
       value: web-guard
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 2fauth/2fauth

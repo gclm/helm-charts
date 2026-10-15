@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40063
 persistence:
   vol-data:
     mountPath: /app/data
@@ -12,6 +13,8 @@ services:
       value: '1000'
     - name: TWIKOO_PORT
       value: '8080'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: imaegoo/twikoo

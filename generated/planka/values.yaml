@@ -3,6 +3,7 @@ env:
   DEFAULT_ADMIN_EMAIL: admin@planka.app
   DEFAULT_ADMIN_NAME: Admin
   DEFAULT_ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 1337
   PLANKA_EXTERNAL_URL: http://localhost:1337
   PLANKA_SECRET_KEY: planka
 persistence:
@@ -27,6 +28,8 @@ services:
       valueFromSecret: DEFAULT_ADMIN_PASSWORD
     - name: DEFAULT_ADMIN_EMAIL
       valueFromEnv: DEFAULT_ADMIN_EMAIL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: plankanban/planka

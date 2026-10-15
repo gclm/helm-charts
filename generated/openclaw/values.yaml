@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 18789
 persistence:
   vol-data-conf:
     mountPath: /home/node/.openclaw
@@ -17,6 +18,8 @@ services:
       value: xterm-256color
     - name: OPENCLAW_DISABLE_BONJOUR
       value: '1'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 1panel/openclaw

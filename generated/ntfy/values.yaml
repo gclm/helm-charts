@@ -1,5 +1,7 @@
 configMaps: {}
 env:
+  APP_PORT_INTERNAL: '80'
+  PANEL_APP_PORT_HTTP: '40265'
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data-cache-ntfy:
@@ -16,6 +18,10 @@ services:
     env:
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    - name: APP_PORT_INTERNAL
+      valueFromEnv: APP_PORT_INTERNAL
     image:
       registry: ''
       repository: binwiederhier/ntfy

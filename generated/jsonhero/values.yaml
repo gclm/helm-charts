@@ -1,10 +1,13 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40178
 persistence: {}
 secrets: {}
 services:
   jsonhero:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       digest: sha256:1e514ed9fd9bd0efd42ff21c85c9aa2cca6c6f8ad7f76eac6ca39732b41dab21
       registry: ''

@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP1: 30080
 persistence:
   vol-data-data:
     mountPath: /data
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   nginxpm:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP1
+      valueFromEnv: PANEL_APP_PORT_HTTP1
     image:
       registry: ''
       repository: jc21/nginx-proxy-manager

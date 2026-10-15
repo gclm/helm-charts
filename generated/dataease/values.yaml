@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_DB_HOST: ''
   PANEL_DB_NAME: de
   PANEL_DB_USER: de
@@ -54,6 +55,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: PANEL_DB_NAME
       valueFromEnv: PANEL_DB_NAME
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: registry.cn-qingdao.aliyuncs.com
       repository: dataease/dataease

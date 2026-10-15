@@ -4,6 +4,7 @@ env:
   G_CLIENT_ID: ''
   G_CLIENT_SECRET: ''
   INIT_TABLE: 'true'
+  PANEL_APP_PORT_HTTP: 4444
 persistence:
   vol-data:
     mountPath: /usr/app/.data
@@ -30,6 +31,8 @@ services:
       valueFromEnv: INIT_TABLE
     - name: ENABLE_CACHE
       valueFromEnv: ENABLE_CACHE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: ourongxing/newsnow

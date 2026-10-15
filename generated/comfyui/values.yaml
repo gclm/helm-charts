@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8188
 persistence:
   vol-data:
     mountPath: /data
@@ -12,6 +13,8 @@ services:
       value: 0.0.0.0
     - name: COMFYUI_PORT
       value: '8188'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 1panel/comfyui

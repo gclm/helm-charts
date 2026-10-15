@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   GHOST_URL: https://blog.domain.com
+  PANEL_APP_PORT_HTTP: 2368
   PANEL_DB_NAME: ghost
   PANEL_DB_USER: ghost
 persistence:
@@ -23,6 +24,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: database__connection__database
       valueFromEnv: PANEL_DB_NAME
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: ghost

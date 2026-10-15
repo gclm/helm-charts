@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_AGENT: 10050
   ZABBIX_HOSTNAME: ''
   ZABBIX_SERVER: ''
   ZABBIX_SERVER_PORT: 10051
@@ -14,6 +15,8 @@ services:
       valueFromEnv: ZABBIX_SERVER
     - name: ZBX_SERVER_PORT
       valueFromEnv: ZABBIX_SERVER_PORT
+    - name: PANEL_APP_PORT_AGENT
+      valueFromEnv: PANEL_APP_PORT_AGENT
     image:
       registry: ''
       repository: zabbix/zabbix-agent

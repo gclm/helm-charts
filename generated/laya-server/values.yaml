@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   LAYA_ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 8080
 persistence:
   vol-data:
     mountPath: /data
@@ -15,6 +16,8 @@ services:
       valueFromEnv: LAYA_ADMIN_USERNAME
     - name: LAYA_ADMIN_PASSWORD
       valueFromSecret: LAYA_ADMIN_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 1panel/laya-server

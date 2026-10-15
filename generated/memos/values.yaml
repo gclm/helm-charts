@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 5230
 persistence:
   vol-memos:
     mountPath: /var/opt/memos
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   memos:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: neosmemo/memos

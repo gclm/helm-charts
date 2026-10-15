@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_NAT: 21115
 persistence:
   vol-data-hbbs:
     mountPath: /data
@@ -10,6 +11,8 @@ services:
     env:
     - name: ENCRYPTED_ONLY
       value: '1'
+    - name: PANEL_APP_PORT_NAT
+      valueFromEnv: PANEL_APP_PORT_NAT
     image:
       registry: ''
       repository: rustdesk/rustdesk-server-s6

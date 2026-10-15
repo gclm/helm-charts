@@ -2,6 +2,7 @@ configMaps: {}
 env:
   MAIL_DOMAIN: example.com
   MAIL_HOSTNAME: mail.example.com
+  SMTP_IN_PORT: 25
 persistence: {}
 secrets: {}
 services:
@@ -11,6 +12,8 @@ services:
       valueFromEnv: MAIL_HOSTNAME
     - name: MADDY_DOMAIN
       valueFromEnv: MAIL_DOMAIN
+    - name: SMTP_IN_PORT
+      valueFromEnv: SMTP_IN_PORT
     image:
       registry: ''
       repository: foxcpp/maddy

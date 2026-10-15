@@ -2,6 +2,7 @@ configMaps: {}
 env:
   OCTOP_ADMIN_USERNAME: admin
   OCTOP_LOG_LEVEL: info
+  PANEL_APP_PORT_HTTP: 8088
 persistence:
   vol-data:
     mountPath: /data
@@ -24,6 +25,8 @@ services:
       valueFromSecret: OCTOP_DEFAULT_PASSWORD
     - name: OCTOP_ADMIN_USERNAME
       valueFromEnv: OCTOP_ADMIN_USERNAME
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: tencentcloud/octop

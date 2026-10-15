@@ -2,6 +2,7 @@ configMaps: {}
 env:
   FTP_EXTERNAL_IP: <your external ip here>
   PANEL_APP_PORT_FTP: 2121
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_APP_PORT_SFTP: 2022
   PANEL_APP_PORT_WEBDAV: 10080
   PASSIVE_PORT_RANGE_END: 50100
@@ -29,6 +30,8 @@ services:
       valueFromEnv: PASSIVE_PORT_RANGE_START
     - name: SFTPGO_FTPD__PASSIVE_PORT_RANGE__END
       valueFromEnv: PASSIVE_PORT_RANGE_END
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: drakkan/sftpgo

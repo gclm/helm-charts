@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_SERVICE: 5672
   RABBITMQ_DEFAULT_PASS: rabbitmq
   RABBITMQ_DEFAULT_USER: rabbitmq
 persistence:
@@ -17,6 +18,8 @@ services:
       valueFromEnv: RABBITMQ_DEFAULT_USER
     - name: RABBITMQ_DEFAULT_PASS
       valueFromEnv: RABBITMQ_DEFAULT_PASS
+    - name: PANEL_APP_PORT_SERVICE
+      valueFromEnv: PANEL_APP_PORT_SERVICE
     image:
       registry: ''
       repository: rabbitmq

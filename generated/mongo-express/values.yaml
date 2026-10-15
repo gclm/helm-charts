@@ -2,6 +2,7 @@ configMaps: {}
 env:
   BASICAUTH_PASSWORD: mongo-express
   BASICAUTH_USERNAME: mongo-express
+  PANEL_APP_PORT_HTTP: 8081
 persistence: {}
 secrets: {}
 services:
@@ -13,6 +14,8 @@ services:
       valueFromEnv: BASICAUTH_USERNAME
     - name: ME_CONFIG_BASICAUTH_PASSWORD
       valueFromEnv: BASICAUTH_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: mongo-express

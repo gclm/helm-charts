@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8000
   PANEL_DB_NAME: casdoor
 persistence: {}
 secrets: {}
@@ -10,6 +11,8 @@ services:
       value: 'true'
     - name: dbName
       valueFromEnv: PANEL_DB_NAME
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: casbin/casdoor

@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 40033
   PANEL_DB_NAME: cloudreve
   PANEL_DB_TYPE: postgres
   PANEL_DB_USER: cloudreve
@@ -24,6 +25,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: CR_CONF_Redis.Password
       valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: cloudreve/cloudreve

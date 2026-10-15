@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTPS: 443
 persistence:
   vol-data:
     mountPath: /opt/stalwart
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   stalwart-mail:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTPS
+      valueFromEnv: PANEL_APP_PORT_HTTPS
     image:
       registry: ''
       repository: stalwartlabs/stalwart

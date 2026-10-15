@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 40037
   PANEL_DB_NAME: yourls
   PANEL_DB_PREFIX: yourls_
   PANEL_DB_USER: yourls
@@ -31,6 +32,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: YOURLS_DB_PREFIX
       valueFromEnv: PANEL_DB_PREFIX
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: yourls

@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   PANEL_API_KEY: ''
+  PANEL_APP_PORT_HTTP: 3000
   PANEL_BASE_URL: ''
 persistence:
   vol-data:
@@ -18,6 +19,8 @@ services:
       valueFromEnv: PANEL_BASE_URL
     - name: PANEL_API_KEY
       valueFromEnv: PANEL_API_KEY
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: 1panel/ai-portal

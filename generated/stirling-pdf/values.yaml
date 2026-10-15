@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8080
 persistence:
   vol-data-extraconfigs:
     mountPath: /configs
@@ -13,6 +14,8 @@ services:
     env:
     - name: DOCKER_ENABLE_SECURITY
       value: 'false'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: frooodle/s-pdf

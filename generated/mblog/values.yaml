@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 38321
 persistence:
   vol-data:
     mountPath: /opt/mblog
@@ -10,6 +11,8 @@ services:
     env:
     - name: DB_TYPE
       value: -sqlite
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: kingwrcy/mblog

@@ -3,6 +3,7 @@ env:
   OPENAI_API_KEY: password
   OPENAI_MODEL_LIST: ''
   OPENAI_PROXY_URL: https://api.openai.com/v1
+  PANEL_APP_PORT_HTTP: 40247
 persistence: {}
 secrets:
   ACCESS_CODE:
@@ -18,6 +19,8 @@ services:
       valueFromSecret: ACCESS_CODE
     - name: OPENAI_MODEL_LIST
       valueFromEnv: OPENAI_MODEL_LIST
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: lobehub/lobe-chat

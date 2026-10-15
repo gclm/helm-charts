@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8081
 persistence:
   vol-site:
     mountPath: /var/www/html
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   kodbox:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: kodcloud/kodbox

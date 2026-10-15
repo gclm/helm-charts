@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 58090
 persistence:
   vol-data-conf:
     mountPath: /app/conf
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   xiaomusic:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: hanxi/xiaomusic

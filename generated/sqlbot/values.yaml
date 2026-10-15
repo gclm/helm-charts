@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8000
   SERVER_IMAGE_HOST: http://<YOUR_SERVER_IP>:<MCP_PORT>/images/
   SQLB_DEFAULT_PWD: SQLBot@123456
 persistence:
@@ -46,6 +47,8 @@ services:
       value: INFO
     - name: SQL_DEBUG
       value: 'False'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: dataease/sqlbot

@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 8069
   PANEL_DB_HOST: ''
   PANEL_DB_USER: odoo
 persistence:
@@ -21,6 +22,8 @@ services:
       valueFromEnv: PANEL_DB_USER
     - name: PASSWORD
       valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: odoo

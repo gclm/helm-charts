@@ -2,6 +2,7 @@ configMaps: {}
 env:
   PANEL_DB_NAME: teamspeak
   PANEL_DB_USER: teamspeak
+  TS3SERVER_VOICE_PORT: 9987
 persistence:
   vol-data:
     mountPath: /var/ts3server
@@ -22,6 +23,8 @@ services:
       valueFromEnv: PANEL_DB_USER
     - name: TS3SERVER_DB_PASSWORD
       valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: TS3SERVER_VOICE_PORT
+      valueFromEnv: TS3SERVER_VOICE_PORT
     image:
       registry: ''
       repository: teamspeak

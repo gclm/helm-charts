@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   FLARUM_EXTERNAL_URL: http://localhost:40020
+  PANEL_APP_PORT_HTTP: 40020
   PANEL_DB_NAME: flarum
   PANEL_DB_PREFIX: flarum_
   PANEL_DB_USER: flarum
@@ -46,6 +47,8 @@ services:
       value: '60'
     - name: FLARUM_BASE_URL
       valueFromEnv: FLARUM_EXTERNAL_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: crazymax/flarum

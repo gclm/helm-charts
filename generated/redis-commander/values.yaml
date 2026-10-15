@@ -2,6 +2,7 @@ configMaps: {}
 env:
   COMMANDER_ADMIN: root
   COMMANDER_PASSWORD: P@ssword@redis
+  PANEL_APP_PORT_HTTP: 8089
 persistence: {}
 secrets: {}
 services:
@@ -11,6 +12,8 @@ services:
       valueFromEnv: COMMANDER_ADMIN
     - name: HTTP_PASSWORD
       valueFromEnv: COMMANDER_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       digest: sha256:19cd0c49f418779fa2822a0496c5e6516d0c792effc39ed20089e6268477e40a
       registry: ''

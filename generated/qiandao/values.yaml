@@ -2,6 +2,7 @@ configMaps: {}
 env:
   AES_PWD: AESPWD
   COOKIE_PWD: CKPWD
+  PANEL_APP_PORT_HTTP: 40022
 persistence:
   vol-data:
     mountPath: /usr/src/app/config
@@ -26,6 +27,8 @@ services:
       value: 'True'
     - name: ACCESS_LOG
       value: 'True'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: a76yyyy/qiandao:20250803

@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40031
 persistence:
   vol-data:
     mountPath: /config
@@ -24,6 +25,8 @@ services:
       valueFromSecret: SUDO_PASSWORD
     - name: DEFAULT_WORKSPACE
       value: /config/workspace
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: linuxserver/code-server

@@ -2,6 +2,7 @@ configMaps: {}
 env:
   ADMIN_EMAIL: admin@sub2api.local
   JWT_SECRET: ''
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_DB_NAME: sub2api
   PANEL_DB_USER: sub2api
   PANEL_REDIS_HOST: ''
@@ -60,6 +61,8 @@ services:
       valueFromEnv: TZ
     - name: UPDATE_PROXY_URL
       value: ${UPDATE_PROXY_URL:-}
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: weishaw/sub2api

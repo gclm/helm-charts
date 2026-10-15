@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 3000
   PANEL_DB_NAME: wiki
   PANEL_DB_TYPE: mysql
   PANEL_DB_USER: wikijs
@@ -18,6 +19,8 @@ services:
       valueFromSecret: PANEL_DB_USER_PASSWORD
     - name: DB_NAME
       valueFromEnv: PANEL_DB_NAME
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: requarks/wiki

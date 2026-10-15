@@ -1,10 +1,13 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40145
 persistence: {}
 secrets: {}
 services:
   kkfileview:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: keking/kkfileview

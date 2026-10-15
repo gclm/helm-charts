@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 8008
 persistence:
   vol-data:
     mountPath: /dashboard/data
@@ -7,7 +8,9 @@ persistence:
 secrets: {}
 services:
   dashboard:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: nezhahq/nezha

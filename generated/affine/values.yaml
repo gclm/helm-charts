@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  PANEL_APP_PORT_HTTP: 3010
   PANEL_REDIS_HOST: ''
   PANEL_REDIS_ROOT_PASSWORD: ''
 persistence:
@@ -21,6 +22,8 @@ services:
       valueFromEnv: PANEL_REDIS_ROOT_PASSWORD
     - name: AFFINE_INDEXER_ENABLED
       value: 'false'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: toeverything/affine

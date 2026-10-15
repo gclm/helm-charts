@@ -1,10 +1,13 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 3000
 persistence: {}
 secrets: {}
 services:
   browserless:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: browserless/chrome

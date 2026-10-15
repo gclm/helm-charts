@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 40098
 persistence:
   vol-data-config-json:
     mountPath: /opt/focalboard/config.json
@@ -10,7 +11,9 @@ persistence:
 secrets: {}
 services:
   focalboard:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: mattermost/focalboard

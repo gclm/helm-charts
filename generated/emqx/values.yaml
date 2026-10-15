@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   EMQX_LOG_TO: both
+  PANEL_APP_PORT_HTTP: 18083
   TIME_ZONE: Asia/Shanghai
 persistence:
   vol-data:
@@ -28,6 +29,8 @@ services:
       valueFromSecret: EMQX_Dashboard_Password
     - name: TZ
       valueFromEnv: TIME_ZONE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: emqx/emqx

@@ -23,6 +23,10 @@ services:
       valueFromEnv: PANEL_APP_PORT_HTTP
     - name: TORRENTING_PORT
       valueFromEnv: PANEL_TORRENTING_PORT
+    - name: PANEL_TORRENTING_PORT
+      valueFromEnv: PANEL_TORRENTING_PORT
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: linuxserver/qbittorrent

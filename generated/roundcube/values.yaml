@@ -2,6 +2,7 @@ configMaps: {}
 env:
   IMAP_SERVER: imap.sina.com
   IMAP_SERVER_PORT: 143
+  PANEL_APP_PORT_HTTP: 8080
   PANEL_DB_NAME: de
   PANEL_DB_TYPE: mysql
   PANEL_DB_USER: de
@@ -39,6 +40,8 @@ services:
       valueFromEnv: SMTP_SERVER_PORT
     - name: ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE
       valueFromEnv: UPLOAD_MAX_FILESIZE
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: roundcube/roundcubemail

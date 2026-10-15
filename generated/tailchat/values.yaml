@@ -3,6 +3,8 @@ env:
   ADMIN_PASSWORD: admin-password
   ADMIN_USERNAME: tailchat
   API_URL: http://localhost:11000
+  PANEL_APP_PORT_ADMIN: 11002
+  PANEL_APP_PORT_HTTP: 11000
   PANEL_MINIO_ROOT_PASSWORD: ''
   PANEL_MINIO_ROOT_USER: ''
   SECRET: any-random-text
@@ -33,6 +35,8 @@ services:
       valueFromEnv: SECRET
     - name: API_URL
       valueFromEnv: API_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: moonrailgun/tailchat
@@ -65,6 +69,8 @@ services:
       valueFromEnv: SECRET
     - name: API_URL
       valueFromEnv: API_URL
+    - name: PANEL_APP_PORT_ADMIN
+      valueFromEnv: PANEL_APP_PORT_ADMIN
     image:
       registry: ''
       repository: moonrailgun/tailchat

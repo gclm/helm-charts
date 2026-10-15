@@ -1,6 +1,7 @@
 configMaps: {}
 env:
   ADMIN_USERNAME: admin
+  PANEL_APP_PORT_HTTP: 5797
 persistence:
   vol-data:
     mountPath: /data
@@ -15,6 +16,8 @@ services:
       valueFromEnv: ADMIN_USERNAME
     - name: ADMIN_PASSWORD
       valueFromSecret: ADMIN_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: archivebox/archivebox

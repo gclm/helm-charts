@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: '8080'
 persistence:
   vol-data-backups:
     mountPath: /app/backups
@@ -16,6 +17,8 @@ services:
     env:
     - name: PST_PORT
       value: '8080'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: jokerwho/palworld-server-tool

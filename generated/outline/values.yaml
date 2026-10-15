@@ -2,6 +2,7 @@ configMaps: {}
 env:
   GITHUB_OAUTH_CLIENT_ID: ''
   GITHUB_OAUTH_SECRET: ''
+  PANEL_APP_PORT_HTTP: 12115
   PANEL_APP_URL: ''
   PANEL_LANGUAGE: zh_CN
   PANEL_SMTP_FROM_EMAIL: example@mail.com
@@ -82,6 +83,8 @@ services:
       valueFromEnv: GITHUB_OAUTH_CLIENT_ID
     - name: OIDC_CLIENT_SECRET
       valueFromEnv: GITHUB_OAUTH_SECRET
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
       repository: outlinewiki/outline

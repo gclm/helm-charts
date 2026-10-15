@@ -1,5 +1,6 @@
 configMaps: {}
-env: {}
+env:
+  PANEL_APP_PORT_HTTP: 4567
 persistence:
   vol-data-build:
     mountPath: /usr/src/app/build
@@ -16,7 +17,9 @@ persistence:
 secrets: {}
 services:
   nodebb:
-    env: []
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ghcr.io
       repository: nodebb/nodebb
