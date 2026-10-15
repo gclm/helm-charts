@@ -8,7 +8,7 @@ env:
   SITE_CAPTION: AI-Powered Photos App
   SITE_DESCRIPTION: ''
 persistence:
-  vol-data-Pictures:
+  vol-data-pictures:
     mountPath: /photoprism/originals
     size: 10Gi
   vol-data-storage:
@@ -93,6 +93,6 @@ services:
     port: 2342
     volumeMounts:
     - mountPath: /photoprism/originals
-      name: vol-data-Pictures
+      name: vol-data-pictures
     - mountPath: /photoprism/storage
       name: vol-data-storage

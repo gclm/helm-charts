@@ -31,7 +31,7 @@ services:
       name: vol-data-storage
     - mountPath: /root/.affine/config
       name: vol-data-config
-  affine_migration:
+  affine-migration:
     command:
     - sh
     - -c

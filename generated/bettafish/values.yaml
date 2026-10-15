@@ -5,19 +5,19 @@ env:
   PANEL_DB_USER: bettafish
   PANEL_DB_USER_PASSWORD: bettafish
 persistence:
-  vol-data-final_reports:
+  vol-data-final-reports:
     mountPath: /app/final_reports
     size: 10Gi
-  vol-data-insight_engine_streamlit_reports:
+  vol-data-insight-engine-streamlit-report:
     mountPath: /app/insight_engine_streamlit_reports
     size: 10Gi
   vol-data-logs:
     mountPath: /app/logs
     size: 10Gi
-  vol-data-media_engine_streamlit_reports:
+  vol-data-media-engine-streamlit-reports:
     mountPath: /app/media_engine_streamlit_reports
     size: 10Gi
-  vol-data-query_engine_streamlit_reports:
+  vol-data-query-engine-streamlit-reports:
     mountPath: /app/query_engine_streamlit_reports
     size: 10Gi
 secrets: {}
@@ -45,10 +45,10 @@ services:
     - mountPath: /app/logs
       name: vol-data-logs
     - mountPath: /app/final_reports
-      name: vol-data-final_reports
+      name: vol-data-final-reports
     - mountPath: /app/insight_engine_streamlit_reports
-      name: vol-data-insight_engine_streamlit_reports
+      name: vol-data-insight-engine-streamlit-report
     - mountPath: /app/media_engine_streamlit_reports
-      name: vol-data-media_engine_streamlit_reports
+      name: vol-data-media-engine-streamlit-reports
     - mountPath: /app/query_engine_streamlit_reports
-      name: vol-data-query_engine_streamlit_reports
+      name: vol-data-query-engine-streamlit-reports

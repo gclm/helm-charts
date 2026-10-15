@@ -1,7 +1,7 @@
 configMaps: {}
 env: {}
 persistence:
-  vol-data-games_storage:
+  vol-data-games-storage:
     mountPath: /games_storage
     size: 10Gi
 secrets: {}
@@ -15,4 +15,4 @@ services:
     port: 8090
     volumeMounts:
     - mountPath: /games_storage
-      name: vol-data-games_storage
+      name: vol-data-games-storage

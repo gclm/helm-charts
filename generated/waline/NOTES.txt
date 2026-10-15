@@ -5,7 +5,7 @@
 
 Generated credentials (auto, stable across upgrades):
 {{- range $k, $v := .Values.secrets }}
-  kubectl get secret {{ printf "%s-%s" $.Release.Name $k | trunc 63 | trimSuffix "-" }} -o jsonpath='{.data.{{ $k }}}' | base64 -d
+  kubectl get secret {{ printf "%s-%s" $.Release.Name $k | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }} -o jsonpath='{.data.{{ $k }}}' | base64 -d
 {{- end }}
 {{- end }}
 {{- if .Values.env }}

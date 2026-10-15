@@ -9,7 +9,7 @@ persistence:
     size: 10Gi
 secrets: {}
 services:
-  2fauth:
+  app-2fauth:
     env:
     - name: APP_NAME
       valueFromEnv: APP_NAME

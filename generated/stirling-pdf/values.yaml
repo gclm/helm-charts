@@ -1,10 +1,10 @@
 configMaps: {}
 env: {}
 persistence:
-  vol-data-extraConfigs:
+  vol-data-extraconfigs:
     mountPath: /configs
     size: 10Gi
-  vol-data-trainingData:
+  vol-data-trainingdata:
     mountPath: /usr/share/tesseract-ocr/5/tessdata
     size: 10Gi
 secrets: {}
@@ -20,6 +20,6 @@ services:
     port: 8080
     volumeMounts:
     - mountPath: /usr/share/tesseract-ocr/5/tessdata
-      name: vol-data-trainingData
+      name: vol-data-trainingdata
     - mountPath: /configs
-      name: vol-data-extraConfigs
+      name: vol-data-extraconfigs

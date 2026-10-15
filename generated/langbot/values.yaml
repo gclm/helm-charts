@@ -27,7 +27,7 @@ services:
       name: vol-data
     - mountPath: /app/plugins
       name: vol-plugins
-  langbot_plugin_runtime:
+  langbot-plugin-runtime:
     command:
     - uv
     - run

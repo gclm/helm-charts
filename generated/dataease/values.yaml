@@ -13,7 +13,7 @@ persistence:
   vol-data-driver:
     mountPath: /opt/dataease3.0/data/driver
     size: 10Gi
-  vol-data-exportData:
+  vol-data-exportdata:
     mountPath: /opt/dataease3.0/data/exportData
     size: 10Gi
   vol-data-font:
@@ -73,7 +73,7 @@ services:
     - mountPath: /opt/dataease3.0/data/appearance
       name: vol-data-appearance
     - mountPath: /opt/dataease3.0/data/exportData
-      name: vol-data-exportData
+      name: vol-data-exportdata
     - mountPath: /opt/dataease3.0/data/plugin
       name: vol-data-plugin
     - mountPath: /opt/dataease3.0/data/font
