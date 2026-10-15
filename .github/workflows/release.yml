@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths: ['charts/**', 'generated/**', 'overlay/**']
   workflow_dispatch:
+  workflow_run:
+    workflows: ["sync-appstore"]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: write
