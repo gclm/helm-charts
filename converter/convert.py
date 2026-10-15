@@ -58,8 +58,13 @@ def ver_key(v: str):
     return tuple(int(x) for x in base.split("."))
 
 
-def scan_apps(src: Path):
-    """yield (app_name, app_meta, latest_ver_dir, latest_ver)."""
+def scan_apps(src: Path, tags=None):
+    """yield (app_name, app_meta, latest_ver_dir, latest_ver, err_or_None).
+
+    tags: {app: resolved_image_tag} from resolve_latest.py — apps/<app>/latest
+    with a resolved tag becomes a convertible version pinned to that tag.
+    """
+    tags = tags or {}
     apps_root = src / "apps"
     for app_dir in sorted(apps_root.iterdir() if apps_root.is_dir() else []):
         if not app_dir.is_dir():
@@ -67,10 +72,17 @@ def scan_apps(src: Path):
         meta = load_yaml(app_dir / "data.yml")
         versions = []
         for vd in app_dir.iterdir():
-            if vd.is_dir() and (vd / "docker-compose.yml").exists():
-                nv = normalize_ver(vd.name)
-                if nv:
-                    versions.append((nv, vd))
+            if not (vd.is_dir() and (vd / "docker-compose.yml").exists()):
+                continue
+            if vd.name == "latest":
+                if app_dir.name in tags:
+                    nv = normalize_ver(str(tags[app_dir.name]))
+                    if nv:
+                        versions.append((nv, vd))
+                continue
+            nv = normalize_ver(vd.name)
+            if nv:
+                versions.append((nv, vd))
         if not versions:
             # variant-style dirs (nvidia-0.20.0-cu130 / master / ...) — needs human placement via overlay
             yield app_dir.name, meta, None, None, "no semver version dir (latest/variant naming; pin via overlay when wanted)"
@@ -208,8 +220,7 @@ def probe_from_healthcheck(hc: dict):
     }
 
 
-def convert_app(app_name, ver_dir: Path, ver_norm, form_fields, meta):
-    compose = load_yaml(ver_dir / "docker-compose.yml")
+def convert_app(app_name, ver_dir: Path, compose, ver_norm, form_fields, meta):
     services_out = {}
     persistence_out = {}
     configmaps_out = {}
@@ -556,6 +567,8 @@ def main():
     ap.add_argument("--src", required=True, help="upstream appstore checkout")
     ap.add_argument("--out", default="generated", help="output root")
     ap.add_argument("--sha", default="unknown", help="upstream commit SHA")
+    ap.add_argument("--tags-file", default="converter/auto-tags.yaml",
+                    help="resolved :latest tags from resolve_latest.py (optional)")
     args = ap.parse_args()
 
     src = Path(args.src)
@@ -576,7 +589,12 @@ def main():
     report = {"success": [], "skipped": [], "failed": []}
     manifest = {"upstream_sha": args.sha, "apps": {}}
 
-    for app_name, meta, ver_dir, ver_norm, err in scan_apps(src):
+    tags = {}
+    tags_path = Path(args.tags_file)
+    if tags_path.exists():
+        tags = load_yaml(tags_path) or {}
+
+    for app_name, meta, ver_dir, ver_norm, err in scan_apps(src, tags):
         if err:
             report["skipped"].append(f"{app_name}: {err}")
             continue
@@ -585,6 +603,10 @@ def main():
             report["skipped"].append(f"{app_name}: Database category excluded (use handwritten charts/)")
             continue
         compose = load_yaml(ver_dir / "docker-compose.yml")
+        if app_name in tags:  # pin resolved :latest image before blocker scan
+            for svc in (compose.get("services") or {}).values():
+                if isinstance(svc, dict) and str(svc.get("image", "")).endswith(":latest"):
+                    svc["image"] = str(svc["image"]).rsplit(":", 1)[0] + ":" + str(tags[app_name])
         blockers = detect_blockers(compose)
         if blockers:
             report["skipped"].append(f"{app_name}: BLOCKED ({'; '.join(blockers)})")
@@ -595,7 +617,7 @@ def main():
             for f in (vdata.get("additionalProperties") or {}).get("formFields") or []:
                 if f.get("envKey"):
                     fields[f["envKey"]] = f
-            values = convert_app(app_name, ver_dir, ver_norm, fields, meta)
+            values = convert_app(app_name, ver_dir, compose, ver_norm, fields, meta)
             patch = overlay_root / app_name / "values-patch.yaml"
             if patch.exists():
                 values = deep_merge(values, load_yaml(patch))

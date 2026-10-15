@@ -2,7 +2,7 @@ name: sync-appstore
 
 on:
   schedule:
-    - cron: "0 20 * * 1"   # every Tuesday 04:00 CST
+    - cron: "0 20 * * *"   # daily 04:00 CST
   workflow_dispatch:
     inputs:
       upstream_ref:
@@ -35,6 +35,12 @@ jobs:
       - name: Install python deps
         run: python3 -m pip install --quiet pyyaml
 
+      - name: Resolve :latest images to newest semver tag
+        run: |
+          # per-app lookup failures are tolerated inside the script (stale
+          # auto-tags.yaml keeps working); a crash here fails the job
+          python3 converter/resolve_latest.py --src /tmp/appstore --out converter/auto-tags.yaml
+
       - name: "Convert (idempotency gate: run twice, must be identical)"
         run: |
           set -eu
@@ -60,7 +66,7 @@ jobs:
           set -eu
           git config user.name "appstore-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add generated/
+          git add generated/ converter/auto-tags.yaml
           if git diff --cached --quiet; then
             echo "no changes vs last sync"
           else
