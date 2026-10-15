@@ -1,9 +1,9 @@
 apiVersion: v2
-name: 2fauth
-description: 2FAuth (converted from 1Panel appstore)
+name: obsidian-livesync
+description: Obsidian LiveSync (converted from 1Panel appstore)
 type: application
-version: 8.0.2
-appVersion: 8.0.2
+version: 3.5.3
+appVersion: 3.5.3
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore

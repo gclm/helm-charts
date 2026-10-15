@@ -1,931 +1,1117 @@
 {
   "apps": {
     "2fauth": {
+      "chart": "app-2fauth",
       "sha": "ebd042e1ea41",
       "status": "success",
       "version": "8.0.2"
     },
     "adguardhome": {
+      "chart": "adguardhome",
       "sha": "967590223fee",
       "status": "success",
       "version": "0.107.79"
     },
     "adminer": {
+      "chart": "adminer",
       "sha": "cd74d7f36bcb",
       "status": "success",
       "version": "6.1.2+standalone"
     },
     "affine": {
+      "chart": "affine",
       "sha": "cdab43413ee5",
       "status": "success",
       "version": "0.27.4"
     },
     "ai-gateway": {
+      "chart": "ai-gateway",
       "sha": "32d7bc0c415b",
       "status": "success",
       "version": "1.3.0"
     },
     "ai-portal": {
+      "chart": "ai-portal",
       "sha": "750e3e15e6ce",
       "status": "success",
       "version": "1.0.10"
     },
     "alist": {
+      "chart": "alist",
       "sha": "a5978949420c",
       "status": "success",
       "version": "3.65.0"
     },
     "answer": {
+      "chart": "answer",
       "sha": "a318ae41f5a9",
       "status": "success",
       "version": "2.0.3"
     },
     "archivebox": {
+      "chart": "archivebox",
       "sha": "416cdd08d88a",
       "status": "success",
       "version": "0.9.73"
     },
     "artalk": {
+      "chart": "artalk",
       "sha": "fc33923e9fd7",
       "status": "success",
       "version": "2.10.0"
     },
     "astrbot": {
+      "chart": "astrbot",
       "sha": "ecd988e7e1fe",
       "status": "success",
       "version": "4.28.2"
     },
     "audiobookshelf": {
+      "chart": "audiobookshelf",
       "sha": "b08b0f066f5b",
       "status": "success",
       "version": "2.37.1"
     },
     "beszel": {
+      "chart": "beszel",
       "sha": "2a6dabdf11c3",
       "status": "success",
       "version": "0.21.0"
     },
     "bettafish": {
+      "chart": "bettafish",
       "sha": "6f26aa8c1fae",
       "status": "success",
       "version": "3.0.0"
     },
     "bililive-go": {
+      "chart": "bililive-go",
       "sha": "9f6145014cb8",
       "status": "success",
       "version": "0.8.3"
     },
     "bitwarden": {
+      "chart": "bitwarden",
       "sha": "c90d15c6727d",
       "status": "success",
       "version": "1.37.4+alpine"
     },
     "blinko": {
+      "chart": "blinko",
       "sha": "f5d5f60097b0",
       "status": "success",
       "version": "1.8.8"
     },
     "browserless": {
+      "chart": "browserless",
       "sha": "041c5fd27d38",
       "status": "success",
       "version": "2.57.0"
     },
     "bytebase": {
+      "chart": "bytebase",
       "sha": "d67ad9c81947",
       "status": "success",
       "version": "3.23.1"
     },
     "calibre-web": {
+      "chart": "calibre-web",
       "sha": "d0cfebf9ba02",
       "status": "success",
       "version": "0.6.27"
     },
     "casdoor": {
+      "chart": "casdoor",
       "sha": "b7e799f716f6",
       "status": "success",
       "version": "4.20.0"
     },
     "certd": {
+      "chart": "certd",
       "sha": "1b00f3961a00",
       "status": "success",
       "version": "1.45.0"
     },
     "certimate": {
+      "chart": "certimate",
       "sha": "f8c9ca968435",
       "status": "success",
       "version": "0.4.35"
     },
     "changedetectionio": {
+      "chart": "changedetectionio",
       "sha": "2e7c4c8514cd",
       "status": "success",
       "version": "0.60.9"
     },
     "chatgpt-next-web": {
+      "chart": "chatgpt-next-web",
       "sha": "4686c0fbc058",
       "status": "success",
       "version": "2.16.1"
     },
     "clawswarm": {
+      "chart": "clawswarm",
       "sha": "0e4af4498a8a",
       "status": "success",
       "version": "1.0.5"
     },
     "cloudbeaver": {
+      "chart": "cloudbeaver",
       "sha": "7c113ba430da",
       "status": "success",
       "version": "26.2.2"
     },
     "cloudflared": {
+      "chart": "cloudflared",
       "sha": "4844ab7668c3",
       "status": "success",
       "version": "2026.10.0"
     },
     "cloudreve": {
+      "chart": "cloudreve",
       "sha": "6790e5716f28",
       "status": "success",
       "version": "4.19.1"
     },
     "code-server": {
+      "chart": "code-server",
       "sha": "e0af290080d3",
       "status": "success",
       "version": "4.141.0"
     },
     "comfyui": {
+      "chart": "comfyui",
       "sha": "cf639b8035ee",
       "status": "success",
       "version": "0.33.1"
     },
     "consul": {
+      "chart": "consul",
       "sha": "d2f066a1235e",
       "status": "success",
       "version": "2.0.4"
     },
     "convertx": {
+      "chart": "convertx",
       "sha": "0c3a5bd92752",
       "status": "success",
       "version": "0.19.0"
     },
     "copaw": {
+      "chart": "copaw",
       "sha": "45740f647b6c",
       "status": "success",
       "version": "2.2.1"
     },
     "cordys-crm": {
+      "chart": "cordys-crm",
       "sha": "e934074b636c",
       "status": "success",
       "version": "1.9.3"
     },
     "cyberchef": {
+      "chart": "cyberchef",
       "sha": "c51649f93819",
       "status": "success",
       "version": "11.5.0"
     },
     "dashy": {
+      "chart": "dashy",
       "sha": "91c1e5783413",
       "status": "success",
       "version": "4.8.2"
     },
     "dataease": {
+      "chart": "dataease",
       "sha": "23c0954f971e",
       "status": "success",
       "version": "3.1.0"
     },
     "dbhub": {
+      "chart": "dbhub",
       "sha": "582826f7cd87",
       "status": "success",
       "version": "1.5.0"
     },
     "dbx": {
+      "chart": "dbx",
       "sha": "73d494af3aa5",
       "status": "success",
       "version": "0.6.43"
     },
     "deepseek-harness": {
+      "chart": "deepseek-harness",
       "sha": "9b7adb149504",
       "status": "success",
       "version": "0.2.0+rc.2"
     },
     "discourse": {
+      "chart": "discourse",
       "sha": "bbabb79b46c7",
       "status": "success",
       "version": "3.5.0"
     },
     "discuz": {
+      "chart": "discuz",
       "sha": "697b671bc5e9",
       "status": "success",
       "version": "3.4.0"
     },
     "docker-registry": {
+      "chart": "docker-registry",
       "sha": "daadc16943c3",
       "status": "success",
       "version": "3.1.2"
     },
     "docmost": {
+      "chart": "docmost",
       "sha": "c1c937a997f5",
       "status": "success",
       "version": "0.96.0"
     },
     "domain-admin": {
+      "chart": "domain-admin",
       "sha": "532163ddff7d",
       "status": "success",
       "version": "1.6.78"
     },
     "dosgame": {
+      "chart": "dosgame",
       "sha": "058f0cee2dd0",
       "status": "success",
       "version": "3.9.6"
     },
     "dotnet": {
+      "chart": "dotnet",
       "sha": "ee852a4cd829",
       "status": "success",
       "version": "10.0.0"
     },
     "drawio": {
+      "chart": "drawio",
       "sha": "9b44544bf70c",
       "status": "success",
       "version": "32.4.1"
     },
     "easyimage2": {
+      "chart": "easyimage2",
       "sha": "b1fe77982e5e",
       "status": "success",
       "version": "2.8.6"
     },
     "emqx": {
+      "chart": "emqx",
       "sha": "ceb2a576533c",
       "status": "success",
       "version": "6.3.1"
     },
     "ezbookkeeping": {
+      "chart": "ezbookkeeping",
       "sha": "2405cebc7c33",
       "status": "success",
       "version": "2.0.1"
     },
     "filebrowser": {
+      "chart": "filebrowser",
       "sha": "ad6fd30a5d6a",
       "status": "success",
       "version": "2.63.23"
     },
     "filecodebox": {
+      "chart": "filecodebox",
       "sha": "8027cace9d7f",
       "status": "success",
       "version": "2.8.3"
     },
     "firefly-iii": {
+      "chart": "firefly-iii",
       "sha": "990848121613",
       "status": "success",
       "version": "6.4.2"
     },
     "flarum": {
+      "chart": "flarum",
       "sha": "fa11df363c48",
       "status": "success",
       "version": "1.8.19"
     },
     "focalboard": {
+      "chart": "focalboard",
       "sha": "49168f482dfa",
       "status": "success",
       "version": "7.11.4"
     },
     "freshrss": {
+      "chart": "freshrss",
       "sha": "d01802f8cbaf",
       "status": "success",
       "version": "1.30.1"
     },
     "gatus": {
+      "chart": "gatus",
       "sha": "f2b43aae8ed7",
       "status": "success",
       "version": "5.37.0"
     },
     "ghost": {
+      "chart": "ghost",
       "sha": "c30caa327355",
       "status": "success",
       "version": "6.70.0"
     },
     "gitea": {
+      "chart": "gitea",
       "sha": "f419c8df3188",
       "status": "success",
       "version": "27.3.8"
     },
     "glance": {
+      "chart": "glance",
       "sha": "3daa26e95687",
       "status": "success",
       "version": "0.8.6"
     },
     "go": {
+      "chart": "go",
       "sha": "3a89d62da3a2",
       "status": "success",
       "version": "1.26.0"
     },
     "gotify": {
+      "chart": "gotify",
       "sha": "37db89ee5dbc",
       "status": "success",
       "version": "3.1.1"
     },
     "grafana": {
+      "chart": "grafana",
       "sha": "56090ff33227",
       "status": "success",
       "version": "13.2.4"
     },
     "gsmanager": {
+      "chart": "gsmanager",
       "sha": "10ef66108012",
       "status": "success",
       "version": "3.14.0"
     },
     "halo": {
+      "chart": "halo",
       "sha": "f3a77dadad52",
       "status": "success",
       "version": "2.26.1"
     },
     "heimdall": {
+      "chart": "heimdall",
       "sha": "4ed99aeadfd0",
       "status": "success",
       "version": "2.8.3"
     },
     "hermes-agent": {
+      "chart": "hermes-agent",
       "sha": "1dadda841983",
       "status": "success",
       "version": "2026.9.24"
     },
     "it-tools": {
+      "chart": "it-tools",
       "sha": "4912be4e64a4",
       "status": "success",
       "version": "2024.10.22+7ca5933"
     },
     "jaeger": {
+      "chart": "jaeger",
       "sha": "be7c9760de9d",
       "status": "success",
       "version": "1.76.0"
     },
     "java": {
+      "chart": "java",
       "sha": "cee3765a6c73",
       "status": "success",
       "version": "25.0.0"
     },
     "jellyfin": {
+      "chart": "jellyfin",
       "sha": "d29ee023e33f",
       "status": "success",
       "version": "10.11.11"
     },
     "kafka": {
+      "chart": "kafka",
       "sha": "aca5fbcccf47",
       "status": "success",
       "version": "4.0.0"
     },
     "keycloak": {
+      "chart": "keycloak",
       "sha": "74cc131c32bb",
       "status": "success",
       "version": "26.8.1"
     },
     "kibana": {
+      "chart": "kibana",
       "sha": "e170cc1f21b2",
       "status": "success",
       "version": "9.5.5"
     },
     "kirara-agent": {
+      "chart": "kirara-agent",
       "sha": "c3c4d059e663",
       "status": "success",
       "version": "3.2.0"
     },
     "kkfileview": {
+      "chart": "kkfileview",
       "sha": "a31f0ea8e08a",
       "status": "success",
       "version": "4.1.0"
     },
     "kodbox": {
+      "chart": "kodbox",
       "sha": "c0611fc47ce1",
       "status": "success",
       "version": "1.4505.0"
     },
     "koishi": {
+      "chart": "koishi",
       "sha": "1b9e403e2d74",
       "status": "success",
       "version": "1.16.0"
     },
     "komari": {
+      "chart": "komari",
       "sha": "e29838c400ca",
       "status": "success",
       "version": "1.5.1"
     },
     "komga": {
+      "chart": "komga",
       "sha": "87e2d2165abe",
       "status": "success",
       "version": "1.29.1"
     },
     "langbot": {
+      "chart": "langbot",
       "sha": "943b605544d1",
       "status": "success",
       "version": "4.11.0"
     },
     "langflow": {
+      "chart": "langflow",
       "sha": "257fed791791",
       "status": "success",
       "version": "1.12.6"
     },
     "laya-server": {
+      "chart": "laya-server",
       "sha": "97982c339bee",
       "status": "success",
       "version": "0.1.2"
     },
     "linkding": {
+      "chart": "linkding",
       "sha": "54f4403ee94c",
       "status": "success",
       "version": "1.47.0+plus"
     },
     "linux-command": {
+      "chart": "linux-command",
       "sha": "d9d83bf41643",
       "status": "success",
       "version": "1.22.0"
     },
     "lobe-chat": {
+      "chart": "lobe-chat",
       "sha": "4e9ec22100bc",
       "status": "success",
       "version": "1.143.3"
     },
     "localai": {
+      "chart": "localai",
       "sha": "d44750123de9",
       "status": "success",
       "version": "3.12.1+aio-cpu"
     },
     "logstash": {
+      "chart": "logstash",
       "sha": "5b805e0d40df",
       "status": "success",
       "version": "9.5.5"
     },
     "logto": {
+      "chart": "logto",
       "sha": "ea2b27f3a87b",
       "status": "success",
       "version": "1.45.0"
     },
     "maddy-mail": {
+      "chart": "maddy-mail",
       "sha": "3236bc32746e",
       "status": "success",
       "version": "0.9.6"
     },
     "mailserver": {
+      "chart": "mailserver",
       "sha": "ad1c41990a55",
       "status": "success",
       "version": "16.0.1"
     },
     "mattermost": {
+      "chart": "mattermost",
       "sha": "aec739411ab6",
       "status": "success",
       "version": "11.11.1"
     },
     "maxkb": {
+      "chart": "maxkb",
       "sha": "43796d9c72db",
       "status": "success",
       "version": "2.10.6+lts"
     },
     "mblog": {
+      "chart": "mblog",
       "sha": "693a9b282a4e",
       "status": "success",
       "version": "1.1.0"
     },
     "meilisearch": {
+      "chart": "meilisearch",
       "sha": "71dcf71e75d8",
       "status": "success",
       "version": "1.55.0"
     },
     "memos": {
+      "chart": "memos",
       "sha": "8e93f15a7d9b",
       "status": "success",
       "version": "0.31.0"
     },
     "metabase": {
+      "chart": "metabase",
       "sha": "200229a7f633",
       "status": "success",
       "version": "0.64.2"
     },
     "miniflux": {
+      "chart": "miniflux",
       "sha": "85bf436aca33",
       "status": "success",
       "version": "2.3.3"
     },
     "mkdocs-material": {
+      "chart": "mkdocs-material",
       "sha": "99553714a126",
       "status": "success",
       "version": "9.7.7"
     },
     "mliev-dwz": {
+      "chart": "mliev-dwz",
       "sha": "b6454f9081a1",
       "status": "success",
       "version": "2.24.1"
     },
     "mongo-express": {
+      "chart": "mongo-express",
       "sha": "c5311cdb6df0",
       "status": "success",
       "version": "1.0.2+20"
     },
     "music-tag-web": {
+      "chart": "music-tag-web",
       "sha": "dab8c2898a42",
       "status": "success",
       "version": "2.8.0"
     },
     "n8n": {
+      "chart": "n8n",
       "sha": "b73637311991",
       "status": "success",
       "version": "2.43.5"
     },
     "nacos": {
+      "chart": "nacos",
       "sha": "acfe280b85c5",
       "status": "success",
       "version": "3.2.4"
     },
     "navidrome": {
+      "chart": "navidrome",
       "sha": "352b09846317",
       "status": "success",
       "version": "0.64.2"
     },
     "new-api": {
+      "chart": "new-api",
       "sha": "33e0e67baf12",
       "status": "success",
       "version": "0.13.2"
     },
     "newsnow": {
+      "chart": "newsnow",
       "sha": "7cd325b58239",
       "status": "success",
       "version": "0.0.41"
     },
     "nextcloud": {
+      "chart": "nextcloud",
       "sha": "13caa12ba079",
       "status": "success",
       "version": "35.0.1"
     },
     "nexus": {
+      "chart": "nexus",
       "sha": "0d2a98c0a706",
       "status": "success",
       "version": "3.96.4"
     },
     "nezha": {
+      "chart": "nezha",
       "sha": "dc3219b1c97b",
       "status": "success",
       "version": "2.3.18"
     },
     "nginx-proxy-manager": {
+      "chart": "nginx-proxy-manager",
       "sha": "ab5745323192",
       "status": "success",
       "version": "2.16.0"
     },
     "nocobase": {
+      "chart": "nocobase",
       "sha": "df22415ee5b6",
       "status": "success",
       "version": "2.2.24"
     },
     "node": {
+      "chart": "node",
       "sha": "4b3b77e9184a",
       "status": "success",
       "version": "25.9.0"
     },
     "node-red": {
+      "chart": "node-red",
       "sha": "415e7f1e9f98",
       "status": "success",
       "version": "5.0.8"
     },
     "nodebb": {
+      "chart": "nodebb",
       "sha": "95f52c91f80f",
       "status": "success",
       "version": "4.16.2"
     },
     "ntfy": {
+      "chart": "ntfy",
       "sha": "fe60351ff571",
       "status": "success",
       "version": "2.30.0"
     },
     "obsidian_livesync": {
+      "chart": "obsidian-livesync",
       "sha": "28787374936e",
       "status": "success",
       "version": "3.5.3"
     },
     "octop": {
+      "chart": "octop",
       "sha": "49202c45ac31",
       "status": "success",
       "version": "1.0.1"
     },
     "odoo": {
+      "chart": "odoo",
       "sha": "76a814e1acf9",
       "status": "success",
       "version": "19.0.0"
     },
     "ollama": {
+      "chart": "ollama",
       "sha": "a97185ce372f",
       "status": "success",
       "version": "0.40.4"
     },
     "ollama-webui": {
+      "chart": "ollama-webui",
       "sha": "b6eacfb8e816",
       "status": "success",
       "version": "0.12.0"
     },
     "onlyoffice": {
+      "chart": "onlyoffice",
       "sha": "83a938b6989f",
       "status": "success",
       "version": "10.0.0"
     },
     "openclaw": {
+      "chart": "openclaw",
       "sha": "520b127b55b6",
       "status": "success",
       "version": "2026.9.9"
     },
     "opengist": {
+      "chart": "opengist",
       "sha": "7f692ec84043",
       "status": "success",
       "version": "1.15.2"
     },
     "openlitespeed": {
+      "chart": "openlitespeed",
       "sha": "5457b7fcdd2e",
       "status": "success",
       "version": "1.8.4+lsphp81"
     },
     "outline": {
+      "chart": "outline",
       "sha": "7aba004be947",
       "status": "success",
       "version": "1.11.0"
     },
     "palworld": {
+      "chart": "palworld",
       "sha": "a7457d64b2a4",
       "status": "success",
       "version": "2.8.0"
     },
     "palworld-server-tool": {
+      "chart": "palworld-server-tool",
       "sha": "d47e975cda9a",
       "status": "success",
       "version": "0.12.2"
     },
     "pgadmin4": {
+      "chart": "pgadmin4",
       "sha": "ce6e09ec277f",
       "status": "success",
       "version": "9.18.0"
     },
     "photoprism": {
+      "chart": "photoprism",
       "sha": "56af3587d078",
       "status": "success",
       "version": "251130.0.0+ce"
     },
     "phpmyadmin": {
+      "chart": "phpmyadmin",
       "sha": "c69a3d9b41a2",
       "status": "success",
       "version": "5.2.3"
     },
     "planka": {
+      "chart": "planka",
       "sha": "b55c6af81f5c",
       "status": "success",
       "version": "2.2.1"
     },
     "python": {
+      "chart": "python",
       "sha": "4ed40c529cfa",
       "status": "success",
       "version": "3.14.0"
     },
     "qbittorrent": {
+      "chart": "qbittorrent",
       "sha": "3e1366771d66",
       "status": "success",
       "version": "5.2.4"
     },
     "qiandao": {
+      "chart": "qiandao",
       "sha": "04cd130847cb",
       "status": "success",
       "version": "20250803.0.0"
     },
     "qinglong": {
+      "chart": "qinglong",
       "sha": "12328eefc6ee",
       "status": "success",
       "version": "2.23.0+debian"
     },
     "rabbitmq": {
+      "chart": "rabbitmq",
       "sha": "e46472bed39b",
       "status": "success",
       "version": "4.3.6+management-alpine"
     },
     "redpanda-console": {
+      "chart": "redpanda-console",
       "sha": "45157a82eb5e",
       "status": "success",
       "version": "3.12.0"
     },
     "rocketmq": {
+      "chart": "rocketmq",
       "sha": "491b9504c921",
       "status": "success",
       "version": "5.5.0"
     },
     "roundcube": {
+      "chart": "roundcube",
       "sha": "ad6aba6a8dfe",
       "status": "success",
       "version": "1.7.4+apache"
     },
     "rustdesk": {
+      "chart": "rustdesk",
       "sha": "9512e772ee5e",
       "status": "success",
       "version": "1.1.16"
     },
     "rustfs": {
+      "chart": "rustfs",
       "sha": "9aff3ace6df5",
       "status": "success",
       "version": "1.0.1"
     },
     "screego": {
+      "chart": "screego",
       "sha": "e0145be923a2",
       "status": "success",
       "version": "1.12.6"
     },
     "sentinel-dashboard": {
+      "chart": "sentinel-dashboard",
       "sha": "184cd0d17423",
       "status": "success",
       "version": "1.8.10"
     },
     "sftpgo": {
+      "chart": "sftpgo",
       "sha": "7da1f18cafbe",
       "status": "success",
       "version": "2.7.6+alpine"
     },
     "showdoc": {
+      "chart": "showdoc",
       "sha": "1a6483974831",
       "status": "success",
       "version": "3.9.4"
     },
     "siyuan": {
+      "chart": "siyuan",
       "sha": "c5755612e0a7",
       "status": "success",
       "version": "3.8.6"
     },
     "sonarqube": {
+      "chart": "sonarqube",
       "sha": "f62c0420f78d",
       "status": "success",
       "version": "26.10.0+community"
     },
     "sqlbot": {
+      "chart": "sqlbot",
       "sha": "d19144359fc4",
       "status": "success",
       "version": "1.10.2"
     },
     "stalwart-mail": {
+      "chart": "stalwart-mail",
       "sha": "33c25edad993",
       "status": "success",
       "version": "0.16.26+alpine"
     },
     "stirling-pdf": {
+      "chart": "stirling-pdf",
       "sha": "616438f94598",
       "status": "success",
       "version": "3.1.0"
     },
     "sub2api": {
+      "chart": "sub2api",
       "sha": "2004e8e08612",
       "status": "success",
       "version": "0.2.16"
     },
     "sun-panel": {
+      "chart": "sun-panel",
       "sha": "a44b97431642",
       "status": "success",
       "version": "1.8.1"
     },
     "synapse": {
+      "chart": "synapse",
       "sha": "9d3bb938eaf7",
       "status": "success",
       "version": "1.162.0"
     },
     "tailchat": {
+      "chart": "tailchat",
       "sha": "f7531ebb492a",
       "status": "success",
       "version": "1.11.18"
     },
     "teamspeak": {
+      "chart": "teamspeak",
       "sha": "55050df0c54e",
       "status": "success",
       "version": "3.13.8"
     },
     "tinyrdm": {
+      "chart": "tinyrdm",
       "sha": "8248afa1d489",
       "status": "success",
       "version": "1.2.7"
     },
     "tomcat": {
+      "chart": "tomcat",
       "sha": "d5f4d3263161",
       "status": "success",
       "version": "10.1.43"
     },
     "trendradar": {
+      "chart": "trendradar",
       "sha": "45c161feddc1",
       "status": "success",
       "version": "6.11.0"
     },
     "trilium": {
+      "chart": "trilium",
       "sha": "d11f9aae38b2",
       "status": "success",
       "version": "0.106.0"
     },
     "twenty": {
+      "chart": "twenty",
       "sha": "b9fe4acbc44f",
       "status": "success",
       "version": "2.46.0"
     },
     "twikoo": {
+      "chart": "twikoo",
       "sha": "73a09aa2a1d9",
       "status": "success",
       "version": "2.0.13"
     },
     "typecho": {
+      "chart": "typecho",
       "sha": "2685c2a1ce6c",
       "status": "success",
       "version": "1.3.0+php8.2-apache"
     },
     "umami": {
+      "chart": "umami",
       "sha": "ece9711aab94",
       "status": "success",
       "version": "3.4.0"
     },
     "upage": {
+      "chart": "upage",
       "sha": "ce3d284f9340",
       "status": "success",
       "version": "2.0.0"
     },
     "uptime-kuma": {
+      "chart": "uptime-kuma",
       "sha": "4865d1a23825",
       "status": "success",
       "version": "2.5.6"
     },
     "vane": {
+      "chart": "vane",
       "sha": "cc7d2e8f4a9b",
       "status": "success",
       "version": "1.12.2"
     },
     "vector": {
+      "chart": "vector",
       "sha": "2d82419076a3",
       "status": "success",
       "version": "0.59.0+debian"
     },
     "verdaccio": {
+      "chart": "verdaccio",
       "sha": "24df80973786",
       "status": "success",
       "version": "6.10.5"
     },
     "waline": {
+      "chart": "waline",
       "sha": "f84c719c21d9",
       "status": "success",
       "version": "1.43.4"
     },
     "wallos": {
+      "chart": "wallos",
       "sha": "a8e4517d011c",
       "status": "success",
       "version": "5.8.3"
     },
     "web-check": {
+      "chart": "web-check",
       "sha": "5d37926094da",
       "status": "success",
       "version": "2.3.4"
     },
     "wechatmarkdowneditor": {
+      "chart": "wechatmarkdowneditor",
       "sha": "868cae446d32",
       "status": "success",
       "version": "2.1.0"
     },
     "wikijs": {
+      "chart": "wikijs",
       "sha": "17f914ebdbd4",
       "status": "success",
       "version": "2.5.316"
     },
     "wordpress": {
+      "chart": "wordpress",
       "sha": "d4d5ce21708b",
       "status": "success",
       "version": "7.1.3"
     },
     "xiaomusic": {
+      "chart": "xiaomusic",
       "sha": "b871b1fb1fe7",
       "status": "success",
       "version": "0.6.1"
     },
     "yesplaymusic": {
+      "chart": "yesplaymusic",
       "sha": "cdb5fee7830d",
       "status": "success",
       "version": "0.4.9"
     },
     "yourls": {
+      "chart": "yourls",
       "sha": "b2f45b39bf72",
       "status": "success",
       "version": "1.10.6"
     },
     "zabbix-agent": {
+      "chart": "zabbix-agent",
       "sha": "2c8cd2d9c5ff",
       "status": "success",
       "version": "7.4.5"
     },
     "zabbix-proxy": {
+      "chart": "zabbix-proxy",
       "sha": "88e8b865a10b",
       "status": "success",
       "version": "7.4.5"
     },
     "zabbix-server": {
+      "chart": "zabbix-server",
       "sha": "2bf3f30984ae",
       "status": "success",
       "version": "7.4.5"
     },
     "zentao": {
+      "chart": "zentao",
       "sha": "d3edf498d168",
       "status": "success",
       "version": "22.7.0"
     },
     "zfile": {
+      "chart": "zfile",
       "sha": "3b2ed4a0c762",
       "status": "success",
       "version": "5.1.0"
     },
     "zitadel": {
+      "chart": "zitadel",
       "sha": "ec4cc93450e1",
       "status": "success",
       "version": "4.19.4"
