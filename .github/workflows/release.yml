@@ -44,20 +44,14 @@ jobs:
           set -eu
           mkdir -p dist
           helm package $CHARTS -d dist/
-          # merge with existing published index to keep version history
-          # (raw.githubusercontent.com 不依赖 CF Pages 绑定状态)
-          if curl -sfL --retry 2 https://raw.githubusercontent.com/gclm/helm-charts/gh-pages/index.yaml -o old-index.yaml; then
-            echo "merging with existing index"
-            helm repo index dist --url https://charts.xzim.top --merge old-index.yaml
-          else
-            echo "no existing index, creating fresh"
-            helm repo index dist --url https://charts.xzim.top
-          fi
+          # full rebuild every time: stale entries (renamed/removed charts) must
+          # not linger in the index; history lives in git, not in the repo index
+          helm repo index dist --url https://charts.xzim.top
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          keep_files: true
+          keep_files: false
           commit_message: "chore: publish charts ${{ github.sha }}"
