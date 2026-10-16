@@ -39,14 +39,24 @@ spec:
           command: ["/bin/sh", "-c"]
           args:
             - |
-              {{- if and (eq .Values.mode "cluster") (ne (index (splitList "-" $.PodName) 1) "0") }}
+              {{- if eq .Values.mode "cluster" }}
+              # 运行时判断：pod 序号非 0 的是从库（replicaof 指向 pod-0）
+              ORD=$(hostname | sed 's/.*-//')
+              EXTRA=""
+              [ "$ORD" != "0" ] && EXTRA="--masterauth $REDIS_PASSWORD --replicaof {{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local 6379"
               exec redis-server \
                 --requirepass "$REDIS_PASSWORD" \
-                --masterauth "$REDIS_PASSWORD" \
-                --replicaof {{ include "redis.fullname" $ }}-0.{{ include "redis.fullname" $ }}.{{ $.Release.Namespace }}.svc.cluster.local 6379 \
+                --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \
+                --appendfsync {{ .Values.appendfsync }} \
+                --dir /data \
+                --save "{{ .Values.save }}" $EXTRA
               {{- else }}
               exec redis-server \
                 --requirepass "$REDIS_PASSWORD" \
+                --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \
+                --appendfsync {{ .Values.appendfsync }} \
+                --dir /data \
+                --save "{{ .Values.save }}"
               {{- end }}
                 --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \
                 --appendfsync {{ .Values.appendfsync }} \
