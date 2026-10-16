@@ -2,7 +2,7 @@ apiVersion: v2
 name: vane
 description: Vane (converted from 1Panel appstore)
 type: application
-version: 1.12.2
+version: 1.12.2+ga25171
 appVersion: 1.12.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

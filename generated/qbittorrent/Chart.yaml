@@ -2,7 +2,7 @@ apiVersion: v2
 name: qbittorrent
 description: qBittorrent (converted from 1Panel appstore)
 type: application
-version: 5.2.4
+version: 5.2.4+gebb909
 appVersion: 5.2.4
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

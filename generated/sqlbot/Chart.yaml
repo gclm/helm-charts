@@ -2,7 +2,7 @@ apiVersion: v2
 name: sqlbot
 description: SQLBot (converted from 1Panel appstore)
 type: application
-version: 1.10.2
+version: 1.10.2+gd25a68
 appVersion: 1.10.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

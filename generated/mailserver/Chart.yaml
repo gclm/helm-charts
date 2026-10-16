@@ -2,7 +2,7 @@ apiVersion: v2
 name: mailserver
 description: Mailserver (converted from 1Panel appstore)
 type: application
-version: 16.0.1
+version: 16.0.1+gcaa92c
 appVersion: 16.0.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

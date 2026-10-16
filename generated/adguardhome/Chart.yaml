@@ -2,7 +2,7 @@ apiVersion: v2
 name: adguardhome
 description: AdGuardHome (converted from 1Panel appstore)
 type: application
-version: 0.107.79
+version: 0.107.79+g41377d
 appVersion: 0.107.79
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

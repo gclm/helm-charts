@@ -2,7 +2,7 @@ apiVersion: v2
 name: maddy-mail
 description: Maddy Mail Server (converted from 1Panel appstore)
 type: application
-version: 0.9.6
+version: 0.9.6+gfa0e64
 appVersion: 0.9.6
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

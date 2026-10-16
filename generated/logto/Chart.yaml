@@ -2,7 +2,7 @@ apiVersion: v2
 name: logto
 description: Logto (converted from 1Panel appstore)
 type: application
-version: 1.45.0
+version: 1.45.0+gae48d6
 appVersion: 1.45.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

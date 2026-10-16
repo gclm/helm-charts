@@ -2,7 +2,7 @@ apiVersion: v2
 name: nginx-proxy-manager
 description: Nginx Proxy Manager (converted from 1Panel appstore)
 type: application
-version: 2.16.0
+version: 2.16.0+g5e3779
 appVersion: 2.16.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

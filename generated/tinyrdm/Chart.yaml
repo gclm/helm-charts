@@ -2,7 +2,7 @@ apiVersion: v2
 name: tinyrdm
 description: Tiny RDM (converted from 1Panel appstore)
 type: application
-version: 1.2.7
+version: 1.2.7+gae67c2
 appVersion: 1.2.7
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

@@ -2,7 +2,7 @@ apiVersion: v2
 name: wallos
 description: Wallos (converted from 1Panel appstore)
 type: application
-version: 5.8.3
+version: 5.8.3+gc6eced
 appVersion: 5.8.3
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

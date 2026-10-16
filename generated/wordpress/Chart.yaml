@@ -2,7 +2,7 @@ apiVersion: v2
 name: wordpress
 description: WordPress (converted from 1Panel appstore)
 type: application
-version: 7.1.3
+version: 7.1.3+gca2ac4
 appVersion: 7.1.3
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

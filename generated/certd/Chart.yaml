@@ -2,7 +2,7 @@ apiVersion: v2
 name: certd
 description: Certd (converted from 1Panel appstore)
 type: application
-version: 1.45.1
+version: 1.45.1+gc15c6a
 appVersion: 1.45.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

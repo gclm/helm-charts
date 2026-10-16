@@ -2,7 +2,7 @@ apiVersion: v2
 name: tomcat
 description: Apache Tomcat (converted from 1Panel appstore)
 type: application
-version: 10.1.43
+version: 10.1.43+g0ce619
 appVersion: 10.1.43
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

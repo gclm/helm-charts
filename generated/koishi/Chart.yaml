@@ -2,7 +2,7 @@ apiVersion: v2
 name: koishi
 description: Koishi (converted from 1Panel appstore)
 type: application
-version: 1.16.0
+version: 1.16.0+gbe9be8
 appVersion: 1.16.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

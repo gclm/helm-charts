@@ -2,7 +2,7 @@ apiVersion: v2
 name: cloudflared
 description: cloudflared (converted from 1Panel appstore)
 type: application
-version: 2026.10.0
+version: 2026.10.0+g4844ab
 appVersion: 2026.10.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

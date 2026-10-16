@@ -2,7 +2,7 @@ apiVersion: v2
 name: zabbix-server
 description: Zabbix Server (converted from 1Panel appstore)
 type: application
-version: 7.4.5
+version: 7.4.5+g46e096
 appVersion: 7.4.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

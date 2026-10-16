@@ -2,7 +2,7 @@ apiVersion: v2
 name: pgadmin4
 description: PGAdmin4 (converted from 1Panel appstore)
 type: application
-version: 9.18.0
+version: 9.18.0+g8eb676
 appVersion: 9.18.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

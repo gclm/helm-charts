@@ -2,7 +2,7 @@ apiVersion: v2
 name: mattermost
 description: Mattermost (converted from 1Panel appstore)
 type: application
-version: 12.0.0
+version: 12.0.0+g63bb49
 appVersion: 12.0.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

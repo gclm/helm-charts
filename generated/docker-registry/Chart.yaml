@@ -2,7 +2,7 @@ apiVersion: v2
 name: docker-registry
 description: Docker Registry (converted from 1Panel appstore)
 type: application
-version: 3.1.2
+version: 3.1.2+ged3f4b
 appVersion: 3.1.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

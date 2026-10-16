@@ -2,7 +2,7 @@ apiVersion: v2
 name: dvwa
 description: DVWA (converted from 1Panel appstore)
 type: application
-version: 0.0.0-d20261015.g1af2c
+version: 0.0.0-d20261015.g1af2c+g2992fb
 appVersion: 0.0.0-d20261015.g1af2c
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

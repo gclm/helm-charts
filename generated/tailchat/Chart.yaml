@@ -2,7 +2,7 @@ apiVersion: v2
 name: tailchat
 description: Tailchat (converted from 1Panel appstore)
 type: application
-version: 1.11.18
+version: 1.11.18+gc42c8d
 appVersion: 1.11.18
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
