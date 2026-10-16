@@ -553,7 +553,18 @@ def write_chart(out_root: Path, app_name, ver_norm, meta, values, upstream_sha, 
     # — same-version-different-tgz is invisible to helm/ZKE clients otherwise
     (cdir / "values.yaml").write_text(
         yaml.safe_dump(values, sort_keys=True, allow_unicode=True, default_flow_style=False))
-    content_sha = hashlib.sha256((cdir / "values.yaml").read_bytes()).hexdigest()[:6]
+    # templates/NOTES/README/LICENSE must all be written before hashing
+    for tname, tcontent in [("deployment.yaml", TEMPLATE_DEPLOYMENT), ("pvc.yaml", TEMPLATE_PVC),
+                            ("service.yaml", TEMPLATE_SERVICE), ("secret.yaml", TEMPLATE_SECRET),
+                            ("configmap.yaml", TEMPLATE_CONFIGMAP)]:
+        (tdir / tname).write_text(tcontent)
+    (cdir / "NOTES.txt").write_text(NOTES)
+    if license_text:
+        (cdir / "LICENSE").write_text(license_text)
+    h = hashlib.sha256()
+    for f in sorted(x for x in cdir.rglob("*") if x.is_file() and x.name != "Chart.yaml"):
+        h.update(str(f.relative_to(cdir)).encode()); h.update(f.read_bytes())
+    content_sha = h.hexdigest()[:6]
     version = ver_norm if "+" in ver_norm else f"{ver_norm}+g{content_sha}"
 
     chart = {
@@ -570,15 +581,6 @@ def write_chart(out_root: Path, app_name, ver_norm, meta, values, upstream_sha, 
         },
     }
     (cdir / "Chart.yaml").write_text(yaml.safe_dump(chart, sort_keys=False, allow_unicode=True))
-
-    (tdir / "deployment.yaml").write_text(TEMPLATE_DEPLOYMENT)
-    (tdir / "pvc.yaml").write_text(TEMPLATE_PVC)
-    (tdir / "service.yaml").write_text(TEMPLATE_SERVICE)
-    (tdir / "secret.yaml").write_text(TEMPLATE_SECRET)
-    (tdir / "configmap.yaml").write_text(TEMPLATE_CONFIGMAP)
-    (cdir / "NOTES.txt").write_text(NOTES)
-    if license_text:
-        (cdir / "LICENSE").write_text(license_text)
 
     readme = [
         f"# {meta.get('name') or app_name}",
