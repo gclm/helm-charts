@@ -538,12 +538,20 @@ def write_chart(out_root: Path, app_name, ver_norm, meta, values, upstream_sha, 
     tdir = cdir / "templates"
     tdir.mkdir(parents=True, exist_ok=True)
 
+    # values first: chart version carries the values content hash so that any
+    # content change (converter fix, upstream tweak) gets a NEW version string
+    # — same-version-different-tgz is invisible to helm/ZKE clients otherwise
+    (cdir / "values.yaml").write_text(
+        yaml.safe_dump(values, sort_keys=True, allow_unicode=True, default_flow_style=False))
+    content_sha = hashlib.sha256((cdir / "values.yaml").read_bytes()).hexdigest()[:6]
+    version = ver_norm if "+" in ver_norm else f"{ver_norm}+g{content_sha}"
+
     chart = {
         "apiVersion": "v2",
         "name": app_name,
         "description": (meta.get("name") or app_name) + " (converted from 1Panel appstore)",
         "type": "application",
-        "version": ver_norm,
+        "version": version,
         "appVersion": ver_norm,
         "annotations": {
             "license": "GPL-3.0 (inherited from 1Panel-dev/appstore)",
@@ -552,9 +560,6 @@ def write_chart(out_root: Path, app_name, ver_norm, meta, values, upstream_sha, 
         },
     }
     (cdir / "Chart.yaml").write_text(yaml.safe_dump(chart, sort_keys=False, allow_unicode=True))
-
-    (cdir / "values.yaml").write_text(
-        yaml.safe_dump(values, sort_keys=True, allow_unicode=True, default_flow_style=False))
 
     (tdir / "deployment.yaml").write_text(TEMPLATE_DEPLOYMENT)
     (tdir / "pvc.yaml").write_text(TEMPLATE_PVC)
@@ -581,6 +586,7 @@ def write_chart(out_root: Path, app_name, ver_norm, meta, values, upstream_sha, 
         "```",
     ]
     (cdir / "README.md").write_text("\n".join(readme) + "\n")
+    return version
 
 
 # ---------------------------------------------------------------- main
@@ -654,11 +660,11 @@ def main():
                 report["failed"].append(f"{app_name}: no convertible service")
                 continue
             chart_name = sanitize_name(app_name)
-            write_chart(out_root, chart_name, ver_norm, meta, values, args.sha, license_text)
+            version = write_chart(out_root, chart_name, ver_norm, meta, values, args.sha, license_text)
             content_sha = hashlib.sha256(
                 (out_root / chart_name / "values.yaml").read_bytes()).hexdigest()[:12]
-            report["success"].append(f"{app_name} -> chart {chart_name} ({ver_norm}) sha:{content_sha}")
-            manifest["apps"][app_name] = {"chart": chart_name, "version": ver_norm, "sha": content_sha, "status": "success"}
+            report["success"].append(f"{app_name} -> chart {chart_name} ({version}) sha:{content_sha}")
+            manifest["apps"][app_name] = {"chart": chart_name, "version": version, "sha": content_sha, "status": "success"}
         except Exception as e:  # noqa: BLE001 - converter must not die on one app
             report["failed"].append(f"{app_name}: {type(e).__name__}: {e}")
 
