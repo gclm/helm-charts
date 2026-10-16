@@ -49,3 +49,8 @@ freshnessAlert:
   maxAgeHours: 26
 
 mode: standalone
+# standalone | cluster（cluster = 主从×2 跨 worker1/master1；sentinel 自动故障转移待后续）
+cluster:
+  dataMembers: 2
+  masterToleration: true
+  storageClass: ""   # "" = 沿用 persistence.storageClass

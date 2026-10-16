@@ -6,7 +6,11 @@ metadata:
     {{- include "redis.labels" . | nindent 4 }}
 spec:
   serviceName: {{ include "redis.fullname" . }}
+  {{- if eq .Values.mode "cluster" }}
+  replicas: {{ .Values.cluster.dataMembers }}
+  {{- else }}
   replicas: 1
+  {{- end }}
   selector:
     matchLabels:
       {{- include "redis.labels" . | nindent 6 }}
@@ -15,6 +19,19 @@ spec:
       labels:
         {{- include "redis.labels" . | nindent 8 }}
     spec:
+      {{- if eq .Values.mode "cluster" }}
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  {{- include "redis.labels" . | nindent 18 }}
+              topologyKey: kubernetes.io/hostname
+      {{- if .Values.cluster.masterToleration }}
+      tolerations:
+        - {key: node-role.kubernetes.io/control-plane, operator: Exists, effect: NoSchedule}
+      {{- end }}
+      {{- end }}
       containers:
         - name: redis
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -22,8 +39,15 @@ spec:
           command: ["/bin/sh", "-c"]
           args:
             - |
+              {{- if and (eq .Values.mode "cluster") (ne (index (splitList "-" $.PodName) 1) "0") }}
               exec redis-server \
                 --requirepass "$REDIS_PASSWORD" \
+                --masterauth "$REDIS_PASSWORD" \
+                --replicaof {{ include "redis.fullname" $ }}-0.{{ include "redis.fullname" $ }}.{{ $.Release.Namespace }}.svc.cluster.local 6379 \
+              {{- else }}
+              exec redis-server \
+                --requirepass "$REDIS_PASSWORD" \
+              {{- end }}
                 --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \
                 --appendfsync {{ .Values.appendfsync }} \
                 --dir /data \
@@ -43,5 +67,20 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
+        {{- if ne .Values.mode "cluster" }}
         - name: data
           persistentVolumeClaim: {claimName: {{ include "redis.fullname" . }}-data}
+        {{- end }}
+  {{- if eq .Values.mode "cluster" }}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        {{- with (.Values.cluster.storageClass | default .Values.persistence.storageClass) }}
+        storageClassName: {{ . | quote }}
+        {{- end }}
+        resources:
+          requests:
+            storage: {{ .Values.persistence.size }}
+  {{- end }}
