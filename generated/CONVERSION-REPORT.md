@@ -1,7 +1,7 @@
 # Conversion report
 
-- upstream: 1Panel-dev/appstore @ `08ae7d8659cd4c28aa59c3a230bdc26f56375cd9`
-- success: **195** · skipped: **68** · failed: **0**
+- upstream: 1Panel-dev/appstore @ `7ca256fe5cd9535fb91a7f2ddcb9da72eeb361f7`
+- success: **196** · skipped: **68** · failed: **0**
 
 ## Success
 
@@ -68,7 +68,7 @@
 - gatus -> chart gatus (5.37.0+g79c470) sha:79c470a3d5d2
 - ghost -> chart ghost (6.70.0+g79d866) sha:79d866626236
 - gitea -> chart gitea (27.3.8+g74dac8) sha:74dac8f72884
-- glance -> chart glance (0.8.6+g9cd036) sha:9cd0368069fc
+- glance -> chart glance (0.8.7+g57d982) sha:57d9827ef4eb
 - go -> chart go (1.26.0+g3a89d6) sha:3a89d62da3a2
 - gotify -> chart gotify (3.1.1+g40a154) sha:40a1540c98e8
 - grafana -> chart grafana (13.2.4+gadb03d) sha:adb03dab8641
@@ -109,7 +109,7 @@
 - mblog -> chart mblog (1.1.0+g364bf0) sha:364bf0024d3c
 - mcsmanager-web -> chart mcsmanager-web (10.21.2+g7eebbf) sha:7eebbfc43ecb
 - meilisearch -> chart meilisearch (1.55.0+g4ceb5d) sha:4ceb5d99fe42
-- memos -> chart memos (0.31.0+gf244ef) sha:f244efb5558c
+- memos -> chart memos (0.31.0+g1450f0) sha:1450f0caef9b
 - metabase -> chart metabase (0.64.2+g5ff12d) sha:5ff12ddfa7d6
 - miniflux -> chart miniflux (2.3.3+gf3e995) sha:f3e995368fb8
 - mkdocs-material -> chart mkdocs-material (9.7.7+gdb3503) sha:db350366971f
@@ -161,7 +161,8 @@
 - sentinel-dashboard -> chart sentinel-dashboard (1.8.10+g720814) sha:720814de21ea
 - sftpgo -> chart sftpgo (2.7.6+alpine) sha:cfbc40beb079
 - showdoc -> chart showdoc (3.9.4+g30ab7a) sha:30ab7a8ae8f9
-- siyuan -> chart siyuan (3.8.6+g033577) sha:033577023165
+- silo -> chart silo (2026.0.0+10-15) sha:41abd6c4c884
+- siyuan -> chart siyuan (3.8.7+g0039d0) sha:0039d056588e
 - sonarqube -> chart sonarqube (26.10.0+community) sha:8b570da7be1b
 - sqlbot -> chart sqlbot (1.10.2+gd25a68) sha:d25a6867c5a7
 - stalwart-mail -> chart stalwart-mail (0.16.26+alpine) sha:451c666d83d2

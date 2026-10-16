@@ -380,9 +380,9 @@
     },
     "glance": {
       "chart": "glance",
-      "sha": "9cd0368069fc",
+      "sha": "57d9827ef4eb",
       "status": "success",
-      "version": "0.8.6+g9cd036"
+      "version": "0.8.7+g57d982"
     },
     "go": {
       "chart": "go",
@@ -626,9 +626,9 @@
     },
     "memos": {
       "chart": "memos",
-      "sha": "f244efb5558c",
+      "sha": "1450f0caef9b",
       "status": "success",
-      "version": "0.31.0+gf244ef"
+      "version": "0.31.0+g1450f0"
     },
     "metabase": {
       "chart": "metabase",
@@ -936,11 +936,17 @@
       "status": "success",
       "version": "3.9.4+g30ab7a"
     },
+    "silo": {
+      "chart": "silo",
+      "sha": "41abd6c4c884",
+      "status": "success",
+      "version": "2026.0.0+10-15"
+    },
     "siyuan": {
       "chart": "siyuan",
-      "sha": "033577023165",
+      "sha": "0039d056588e",
       "status": "success",
-      "version": "3.8.6+g033577"
+      "version": "3.8.7+g0039d0"
     },
     "sonarqube": {
       "chart": "sonarqube",
@@ -1171,5 +1177,5 @@
       "version": "4.19.4+g515004"
     }
   },
-  "upstream_sha": "08ae7d8659cd4c28aa59c3a230bdc26f56375cd9"
+  "upstream_sha": "7ca256fe5cd9535fb91a7f2ddcb9da72eeb361f7"
 }

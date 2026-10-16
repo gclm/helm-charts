@@ -2,7 +2,7 @@
 
 开源的身份与访问管理（IAM）平台
 
-- 上游: 1Panel-dev/appstore `apps/zitadel` @ `08ae7d8659cd`
+- 上游: 1Panel-dev/appstore `apps/zitadel` @ `7ca256fe5cd9`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

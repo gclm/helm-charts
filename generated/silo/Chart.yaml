@@ -1,0 +1,10 @@
+apiVersion: v2
+name: silo
+description: Silo (converted from 1Panel appstore)
+type: application
+version: 2026.0.0+10-15
+appVersion: 2026.0.0+10-15
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: 7ca256fe5cd9535fb91a7f2ddcb9da72eeb361f7

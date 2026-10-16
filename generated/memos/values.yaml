@@ -1,5 +1,6 @@
 configMaps: {}
 env:
+  MEMOS_PORT: 5230
   PANEL_APP_PORT_HTTP: 5230
 persistence:
   vol-memos:

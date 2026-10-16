@@ -2,9 +2,9 @@ apiVersion: v2
 name: memos
 description: Memos (converted from 1Panel appstore)
 type: application
-version: 0.31.0+gf244ef
+version: 0.31.0+g1450f0
 appVersion: 0.31.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 08ae7d8659cd4c28aa59c3a230bdc26f56375cd9
+  upstream/sha: 7ca256fe5cd9535fb91a7f2ddcb9da72eeb361f7

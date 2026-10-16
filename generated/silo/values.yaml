@@ -1,0 +1,46 @@
+configMaps: {}
+env:
+  MINIO_BROWSER: 'on'
+  MINIO_BROWSER_LOGIN_ANIMATION: 'on'
+  MINIO_BROWSER_SESSION_DURATION: 12h
+  PANEL_APP_PORT_HTTP: 9001
+  PANEL_MINIO_ROOT_USER: silo
+persistence:
+  vol-certs:
+    mountPath: /tmp/.minio/certs
+    size: 10Gi
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets:
+  PANEL_MINIO_ROOT_PASSWORD:
+    generate: true
+services:
+  silo:
+    command:
+    - server /data --console-address :9001 --address :9000
+    env:
+    - name: MINIO_ROOT_USER
+      valueFromEnv: PANEL_MINIO_ROOT_USER
+    - name: MINIO_ROOT_PASSWORD
+      valueFromSecret: PANEL_MINIO_ROOT_PASSWORD
+    - name: MINIO_BROWSER_SESSION_DURATION
+      valueFromEnv: MINIO_BROWSER_SESSION_DURATION
+    - name: MINIO_BROWSER
+      valueFromEnv: MINIO_BROWSER
+    - name: MINIO_BROWSER_LOGIN_ANIMATION
+      valueFromEnv: MINIO_BROWSER_LOGIN_ANIMATION
+    - name: MINIO_UPDATE
+      value: 'off'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: pgsty/silo
+      tag: RELEASE.2026-10-15T00-00-00Z
+    port: 9001
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data
+    - mountPath: /tmp/.minio/certs
+      name: vol-certs
