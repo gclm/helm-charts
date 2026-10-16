@@ -73,13 +73,11 @@ spec:
             timeoutSeconds: 10
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      {{- if eq .Values.mode "cluster" }}
-      # cluster：每成员独立卷（volumeClaimTemplates），standalone 沿用单 PVC
-      {{- else }}
       volumes:
+        {{- if ne .Values.mode "cluster" }}
         - name: data
           persistentVolumeClaim: {claimName: {{ include "mongodb.fullname" . }}-data}
-      {{- end }}
+        {{- end }}
         - name: mongo-key
           secret: {secretName: {{ include "mongodb.fullname" . }}-keyfile}
         - name: keyfiles
