@@ -36,6 +36,16 @@ spec:
               value: {{ .value | quote }}
             {{- end }}
             {{- end }}
+            {{- /* passthrough of top-level values.env (overlay / --set), deduped
+                   against the entries rendered above */}}
+            {{- range $k, $v := $.Values.env }}
+            {{- $dup := false }}
+            {{- range $e := $svc.env }}{{- if eq $e.name $k }}{{- $dup = true }}{{- end }}{{- end }}
+            {{- if not $dup }}
+            - name: {{ $k }}
+              value: {{ $v | quote }}
+            {{- end }}
+            {{- end }}
           {{- end }}
           {{- if $svc.port }}
           ports:
