@@ -55,7 +55,7 @@ cluster:
   masterToleration: true
   arbiter:
     enabled: true
-    nodeSelector: {dedicated: infra-only}
+    nodeSelector: {kubernetes.io/hostname: srs}
     tolerations:
       - {key: dedicated, operator: Equal, value: infra-only, effect: NoSchedule}
   storageClass: ""   # "" = 沿用 persistence.storageClass

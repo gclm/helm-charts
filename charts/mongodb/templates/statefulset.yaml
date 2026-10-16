@@ -73,10 +73,27 @@ spec:
             timeoutSeconds: 10
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      {{- if eq .Values.mode "cluster" }}
+      # cluster：每成员独立卷（volumeClaimTemplates），standalone 沿用单 PVC
+      {{- else }}
       volumes:
         - name: data
           persistentVolumeClaim: {claimName: {{ include "mongodb.fullname" . }}-data}
+      {{- end }}
         - name: mongo-key
           secret: {secretName: {{ include "mongodb.fullname" . }}-keyfile}
         - name: keyfiles
           emptyDir: {}
+  {{- if eq .Values.mode "cluster" }}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        {{- with (.Values.cluster.storageClass | default .Values.persistence.storageClass) }}
+        storageClassName: {{ . | quote }}
+        {{- end }}
+        resources:
+          requests:
+            storage: {{ .Values.persistence.size }}
+  {{- end }}
