@@ -11,3 +11,19 @@ spec:
     - name: mongo
       port: 27017
       targetPort: mongo
+---
+{{- if and (eq .Values.mode "cluster") .Values.cluster.arbiter.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "mongodb.fullname" . }}-arbiter
+  labels:
+    {{- include "mongodb.labels" . | nindent 4 }}
+spec:
+  clusterIP: None
+  selector:
+    {{- include "mongodb.labels" . | nindent 4 }}
+    role: arbiter
+  ports:
+    - {name: mongo, port: 27017, targetPort: mongo}
+{{- end }}

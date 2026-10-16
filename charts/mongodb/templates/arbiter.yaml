@@ -1,0 +1,58 @@
+{{- if and (eq .Values.mode "cluster") .Values.cluster.arbiter.enabled }}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "mongodb.fullname" . }}-arbiter
+  labels:
+    {{- include "mongodb.labels" . | nindent 4 }}
+    role: arbiter
+spec:
+  serviceName: {{ include "mongodb.fullname" . }}-arbiter
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "mongodb.labels" . | nindent 6 }}
+      role: arbiter
+  template:
+    metadata:
+      labels:
+        {{- include "mongodb.labels" . | nindent 8 }}
+        role: arbiter
+    spec:
+      nodeSelector:
+        {{- toYaml .Values.cluster.arbiter.nodeSelector | nindent 8 }}
+      tolerations:
+        {{- toYaml .Values.cluster.arbiter.tolerations | nindent 8 }}
+      initContainers:
+        - name: init-keyfile
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          command: ["/bin/sh", "-c"]
+          args:
+            - cp /etc/mongo-key/keyfile /keyfiles/keyfile && chmod 400 /keyfiles/keyfile && chown 999:999 /keyfiles/keyfile
+          volumeMounts:
+            - {name: mongo-key, mountPath: /etc/mongo-key, readOnly: true}
+            - {name: keyfiles, mountPath: /keyfiles}
+      containers:
+        - name: mongo-arbiter
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          args: ["--replSet", {{ .Values.replicaSetName | quote }}, "--bind_ip_all", "--keyFile", "/keyfiles/keyfile", "--dbpath", "/data/db"]
+          ports: [{name: mongo, containerPort: 27017}]
+          readinessProbe:
+            exec: {command: ["mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]}
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 10
+          resources:
+            requests: {cpu: 50m, memory: 128Mi}
+            limits: {cpu: "1", memory: 512Mi}
+          volumeMounts:
+            - {name: keyfiles, mountPath: /keyfiles, readOnly: true}
+            - {name: data, mountPath: /data/db}
+      volumes:
+        - name: mongo-key
+          secret: {secretName: {{ include "mongodb.fullname" . }}-keyfile}
+        - name: keyfiles
+          emptyDir: {}
+        - name: data
+          emptyDir: {}
+{{- end }}

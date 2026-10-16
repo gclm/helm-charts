@@ -2,7 +2,7 @@ apiVersion: v2
 name: mongodb
 description: MongoDB 8.0 single-node replica set (oplog-ready) with NFS backup CronJob and freshness alert
 type: application
-version: 0.2.0
+version: 0.3.0
 appVersion: "8.0"
 maintainers:
   - name: gclm

@@ -6,7 +6,11 @@ metadata:
     {{- include "mongodb.labels" . | nindent 4 }}
 spec:
   serviceName: {{ include "mongodb.fullname" . }}
+  {{- if eq .Values.mode "cluster" }}
+  replicas: {{ .Values.cluster.dataMembers }}
+  {{- else }}
   replicas: 1
+  {{- end }}
   selector:
     matchLabels:
       {{- include "mongodb.labels" . | nindent 6 }}
@@ -15,6 +19,20 @@ spec:
       labels:
         {{- include "mongodb.labels" . | nindent 8 }}
     spec:
+      {{- if eq .Values.mode "cluster" }}
+      # required 反亲和：数据成员强制跨节点；节点不足则 Pending（拒绝假 HA）
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  {{- include "mongodb.labels" . | nindent 18 }}
+              topologyKey: kubernetes.io/hostname
+      {{- if .Values.cluster.masterToleration }}
+      tolerations:
+        - {key: node-role.kubernetes.io/control-plane, operator: Exists, effect: NoSchedule}
+      {{- end }}
+      {{- end }}
       # mongo 镜像以 uid 999 运行，读不了 Secret 挂载的 root 属主文件
       # → init 以 root 拷到 emptyDir 并 chown 999 / chmod 400（不动主容器 entrypoint，保留 INITDB）
       initContainers:

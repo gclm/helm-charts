@@ -47,4 +47,15 @@ freshnessAlert:
   schedule: "10 6 * * *"
   maxAgeHours: 26
 
+# standalone | cluster（cluster = 数据成员×2 跨 worker1/master1 + srs 仲裁者）
 mode: standalone
+cluster:
+  dataMembers: 2
+  # 数据成员 toleration：允许上 master1（control-plane 污点保留，定向容忍）
+  masterToleration: true
+  arbiter:
+    enabled: true
+    nodeSelector: {dedicated: infra-only}
+    tolerations:
+      - {key: dedicated, operator: Equal, value: infra-only, effect: NoSchedule}
+  storageClass: ""   # "" = 沿用 persistence.storageClass
