@@ -2,7 +2,7 @@ apiVersion: v2
 name: zabbix-proxy
 description: Zabbix Proxy (converted from 1Panel appstore)
 type: application
-version: 7.4.5+gb56f15
+version: 7.4.5+g27ad4e
 appVersion: 7.4.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)

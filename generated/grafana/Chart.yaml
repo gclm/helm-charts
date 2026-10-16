@@ -2,7 +2,7 @@ apiVersion: v2
 name: grafana
 description: Grafana (converted from 1Panel appstore)
 type: application
-version: 13.2.4+gadb03d
+version: 13.2.4+g62a37d
 appVersion: 13.2.4
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
