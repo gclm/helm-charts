@@ -38,7 +38,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- if eq .Values.mode "cluster" }}
           # shell 包装修（entrypoint 不展开 $(VAR)）；server-id 取 pod-index+1（1=主 2=从）
-          command: ["/bin/sh", "-c", "exec docker-entrypoint.sh mysqld --server-id=$(( ORD_PLUS_ONE + 0 )) --gtid-mode=ON --enforce-gtid-consistency=ON --log-replica-updates=ON --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}"]
+          command: ["/bin/sh", "-c", "exec docker-entrypoint.sh mysqld --server-id=$(( ORD_PLUS_ONE + 1 )) --gtid-mode=ON --enforce-gtid-consistency=ON --log-replica-updates=ON --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}"]
           {{- else }}
           args:
             - --server-id={{ .Values.serverId }}
