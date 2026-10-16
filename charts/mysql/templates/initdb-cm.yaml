@@ -1,0 +1,29 @@
+{{- if eq .Values.mode "cluster" }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "mysql.fullname" . }}-initdb
+  labels:
+    {{- include "mysql.labels" . | nindent 4 }}
+data:
+  00-repl.sh: |
+    #!/bin/sh
+    # pod 序号 0=主（建复制账号），非 0=从（配置 GTID 复制源）
+    ORD=$(hostname | sed 's/.*-//')
+    if [ "$ORD" = "0" ]; then
+      mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e \
+        "CREATE USER IF NOT EXISTS '{{ .Values.cluster.replicationUser }}'@'%' IDENTIFIED BY '$MYSQL_ROOT_PASSWORD'; \
+         GRANT REPLICATION REPLICA ON *.* TO '{{ .Values.cluster.replicationUser }}'@'%'; \
+         FLUSH PRIVILEGES;"
+      echo "[initdb] replication user created"
+    else
+      mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e \
+        "CHANGE REPLICATION SOURCE TO \
+           SOURCE_HOST='{{ include "mysql.fullname" . }}-0.{{ include "mysql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local', \
+           SOURCE_USER='{{ .Values.cluster.replicationUser }}', \
+           SOURCE_PASSWORD='$MYSQL_ROOT_PASSWORD', \
+           SOURCE_AUTO_POSITION=1, \
+           GET_SOURCE_PUBLIC_KEY=1;"
+      echo "[initdb] replication source configured"
+    fi
+{{- end }}

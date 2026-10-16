@@ -6,7 +6,11 @@ metadata:
     {{- include "mysql.labels" . | nindent 4 }}
 spec:
   serviceName: {{ include "mysql.fullname" . }}
+  {{- if eq .Values.mode "cluster" }}
+  replicas: {{ .Values.cluster.dataMembers }}
+  {{- else }}
   replicas: 1
+  {{- end }}
   selector:
     matchLabels:
       {{- include "mysql.labels" . | nindent 6 }}
@@ -15,20 +19,45 @@ spec:
       labels:
         {{- include "mysql.labels" . | nindent 8 }}
     spec:
+      {{- if eq .Values.mode "cluster" }}
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  {{- include "mysql.labels" . | nindent 18 }}
+              topologyKey: kubernetes.io/hostname
+      {{- if .Values.cluster.masterToleration }}
+      tolerations:
+        - {key: node-role.kubernetes.io/control-plane, operator: Exists, effect: NoSchedule}
+      {{- end }}
+      {{- end }}
       containers:
         - name: mysql
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{- if eq .Values.mode "cluster" }}
+          # shell 包装修（entrypoint 不展开 $(VAR)）；server-id 取 pod-index+1（1=主 2=从）
+          command: ["/bin/sh", "-c", "exec docker-entrypoint.sh mysqld --server-id=$(( ORD_PLUS_ONE + 0 )) --gtid-mode=ON --enforce-gtid-consistency=ON --log-replica-updates=ON --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}"]
+          {{- else }}
           args:
-            - --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}
             - --server-id={{ .Values.serverId }}
+            - --binlog-expire-logs-seconds={{ .Values.binlogExpireSeconds }}
+          {{- end }}
           ports:
             - {name: mysql, containerPort: 3306}
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom: {secretKeyRef: {name: {{ include "mysql.fullname" . }}, key: MYSQL_ROOT_PASSWORD}}
+            {{- if eq .Values.mode "cluster" }}
+            - name: ORD_PLUS_ONE
+              valueFrom: {fieldRef: {fieldPath: "metadata.labels['apps.kubernetes.io/pod-index']"}}
+            {{- end }}
           volumeMounts:
             - {name: data, mountPath: /var/lib/mysql}
+            {{- if eq .Values.mode "cluster" }}
+            - {name: initdb, mountPath: /docker-entrypoint-initdb.d}
+            {{- end }}
           readinessProbe:
             exec: {command: ["mysqladmin", "ping", "-h", "127.0.0.1"]}
             initialDelaySeconds: 15
@@ -36,5 +65,24 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
+        {{- if ne .Values.mode "cluster" }}
         - name: data
           persistentVolumeClaim: {claimName: {{ include "mysql.fullname" . }}-data}
+        {{- end }}
+        {{- if eq .Values.mode "cluster" }}
+        - name: initdb
+          configMap: {name: {{ include "mysql.fullname" . }}-initdb}
+        {{- end }}
+  {{- if eq .Values.mode "cluster" }}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        {{- with (.Values.cluster.storageClass | default .Values.persistence.storageClass) }}
+        storageClassName: {{ . | quote }}
+        {{- end }}
+        resources:
+          requests:
+            storage: {{ .Values.persistence.size }}
+  {{- end }}

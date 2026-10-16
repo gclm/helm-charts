@@ -48,3 +48,9 @@ freshnessAlert:
   maxAgeHours: 26
 
 mode: standalone
+# standalone | cluster（cluster = GTID 主从×2 跨 worker1/master1）
+cluster:
+  dataMembers: 2
+  masterToleration: true
+  storageClass: ""
+  replicationUser: repl
