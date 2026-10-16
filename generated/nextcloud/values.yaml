@@ -24,7 +24,7 @@ services:
     image:
       registry: ''
       repository: linuxserver/nextcloud
-      tag: 35.0.1
+      tag: 35.0.2
     port: 443
     volumeMounts:
     - mountPath: /config

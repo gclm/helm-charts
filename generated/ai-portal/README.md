@@ -2,7 +2,7 @@
 
 面向 1Panel 企业版，为用户提供自助式的 API Key 管理、技能市场和 MCP 市场能力
 
-- 上游: 1Panel-dev/appstore `apps/ai-portal` @ `7ca256fe5cd9`
+- 上游: 1Panel-dev/appstore `apps/ai-portal` @ `4c94dad79cf7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

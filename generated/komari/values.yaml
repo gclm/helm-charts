@@ -14,7 +14,7 @@ services:
     image:
       registry: ghcr.io
       repository: komari-monitor/komari
-      tag: 1.5.1
+      tag: 1.6.0
     port: 25774
     volumeMounts:
     - mountPath: /app/data

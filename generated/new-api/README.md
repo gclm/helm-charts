@@ -2,7 +2,7 @@
 
 新一代大模型网关与 AI 资产管理系统
 
-- 上游: 1Panel-dev/appstore `apps/new-api` @ `7ca256fe5cd9`
+- 上游: 1Panel-dev/appstore `apps/new-api` @ `4c94dad79cf7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

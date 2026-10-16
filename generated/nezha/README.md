@@ -2,7 +2,7 @@
 
 开源、轻量、易用的服务器监控与运维工具
 
-- 上游: 1Panel-dev/appstore `apps/nezha` @ `7ca256fe5cd9`
+- 上游: 1Panel-dev/appstore `apps/nezha` @ `4c94dad79cf7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
