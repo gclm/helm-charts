@@ -69,18 +69,20 @@ spec:
                   -c hot_standby=on
               fi
               echo "[entry] replica (ordinal ${POD_ORDINAL})"
+              # 镜像内 postgres 用户 uid=70（alpine）；数据目录权限由 entrypoint 处理
               if [ ! -f "$PGDATA/PG_VERSION" ]; then
                 echo "[entry] empty data dir -> pg_basebackup from ${PRIMARY_HOST}"
                 until pg_isready -h "${PRIMARY_HOST}" -U postgres; do echo "waiting primary..."; sleep 2; done
                 rm -rf "${PGDATA:?}"/* 2>/dev/null || true
-                PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U "${REPL_USER}" \
+                mkdir -p "$PGDATA" && chown postgres:postgres "$PGDATA" && chmod 700 "$PGDATA"
+                gosu postgres env PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U "${REPL_USER}" \
                   -D "$PGDATA" -Fp -Xs -P -R -C -S "replica_${POD_ORDINAL}"
                 echo "[entry] basebackup done"
               else
                 echo "[entry] data dir exists, resuming standby"
                 touch "$PGDATA/standby.signal"
               fi
-              exec postgres -D "$PGDATA" \
+              exec gosu postgres postgres -D "$PGDATA" \
                 -c hot_standby=on -c primary_conninfo="host=${PRIMARY_HOST} port=5432 user=${REPL_USER} password=${POSTGRES_PASSWORD}"
           {{- end }}
           volumeMounts:
