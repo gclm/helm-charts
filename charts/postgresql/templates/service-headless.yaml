@@ -1,0 +1,15 @@
+{{- if eq .Values.mode "cluster" }}
+# headless：为每个成员提供稳定 DNS（<sts>-N.<svc>.<ns>.svc.cluster.local）
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "postgresql.fullname" . }}
+  labels:
+    {{- include "postgresql.labels" . | nindent 4 }}
+spec:
+  clusterIP: None
+  selector:
+    {{- include "postgresql.labels" . | nindent 4 }}
+  ports:
+    - {name: pg, port: 5432, targetPort: pg}
+{{- end }}

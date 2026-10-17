@@ -1,0 +1,21 @@
+{{- if eq .Values.mode "cluster" }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "postgresql.fullname" . }}-initdb
+  labels:
+    {{- include "postgresql.labels" . | nindent 4 }}
+data:
+  # 只在 primary 首次 initdb 时执行（副本是 pg_basebackup 拷贝，不会跑这个）
+  00-replication.sh: |
+    #!/bin/bash
+    set -e
+    echo "[initdb] creating replication user {{ .Values.cluster.replicationUser }}"
+    psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname postgres <<-EOSQL
+      CREATE USER {{ .Values.cluster.replicationUser }} WITH REPLICATION LOGIN PASSWORD '${POSTGRES_PASSWORD}';
+    EOSQL
+    # 允许集群内网段复制连接
+    echo "host replication {{ .Values.cluster.replicationUser }} 0.0.0.0/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
+    echo "host replication {{ .Values.cluster.replicationUser }} ::/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
+    echo "[initdb] replication user ready"
+{{- end }}

@@ -6,7 +6,11 @@ metadata:
     {{- include "postgresql.labels" . | nindent 4 }}
 spec:
   serviceName: {{ include "postgresql.fullname" . }}
+  {{- if eq .Values.mode "cluster" }}
+  replicas: {{ .Values.cluster.dataMembers }}
+  {{- else }}
   replicas: 1
+  {{- end }}
   selector:
     matchLabels:
       {{- include "postgresql.labels" . | nindent 6 }}
@@ -15,6 +19,20 @@ spec:
       labels:
         {{- include "postgresql.labels" . | nindent 8 }}
     spec:
+      {{- if eq .Values.mode "cluster" }}
+      # required 反亲和：成员强制跨节点；节点不足则 Pending（拒绝假 HA）
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  {{- include "postgresql.labels" . | nindent 18 }}
+              topologyKey: kubernetes.io/hostname
+      {{- if .Values.cluster.masterToleration }}
+      tolerations:
+        - {key: node-role.kubernetes.io/control-plane, operator: Exists, effect: NoSchedule}
+      {{- end }}
+      {{- end }}
       containers:
         - name: postgres
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -27,8 +45,49 @@ spec:
             # PGDATA 指向子目录：LVM 卷根有 lost+found，PG 要求数据目录为空
             - name: PGDATA
               value: /var/lib/postgresql/data/pgdata
+            {{- if eq .Values.mode "cluster" }}
+            - name: POD_ORDINAL
+              valueFrom: {fieldRef: {fieldPath: "metadata.labels['apps.kubernetes.io/pod-index']"}}
+            - name: PRIMARY_HOST
+              value: {{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
+            - name: REPL_USER
+              value: {{ .Values.cluster.replicationUser | quote }}
+            {{- end }}
+          {{- if eq .Values.mode "cluster" }}
+          # 主库：官方 entrypoint 直接起；副本：空数据目录时先 pg_basebackup 拉基线
+          command: ["/bin/bash", "-c"]
+          args:
+            - |
+              set -e
+              if [ "${POD_ORDINAL:-0}" = "0" ]; then
+                echo "[entry] primary (ordinal 0)"
+                exec docker-entrypoint.sh postgres \
+                  -c wal_level={{ .Values.cluster.walLevel }} \
+                  -c max_wal_senders={{ .Values.cluster.maxWalSenders }} \
+                  -c max_replication_slots={{ .Values.cluster.maxReplicationSlots }} \
+                  -c wal_keep_size={{ .Values.cluster.walKeepSize }} \
+                  -c hot_standby=on
+              fi
+              echo "[entry] replica (ordinal ${POD_ORDINAL})"
+              if [ ! -f "$PGDATA/PG_VERSION" ]; then
+                echo "[entry] empty data dir -> pg_basebackup from ${PRIMARY_HOST}"
+                until pg_isready -h "${PRIMARY_HOST}" -U postgres; do echo "waiting primary..."; sleep 2; done
+                rm -rf "${PGDATA:?}"/* 2>/dev/null || true
+                PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U postgres \
+                  -D "$PGDATA" -Fp -Xs -P -R -C -S "replica_${POD_ORDINAL}"
+                echo "[entry] basebackup done"
+              else
+                echo "[entry] data dir exists, resuming standby"
+                touch "$PGDATA/standby.signal"
+              fi
+              exec postgres -D "$PGDATA" \
+                -c hot_standby=on -c primary_conninfo="host=${PRIMARY_HOST} port=5432 user=${REPL_USER} password=${POSTGRES_PASSWORD}"
+          {{- end }}
           volumeMounts:
             - {name: data, mountPath: /var/lib/postgresql/data}
+            {{- if eq .Values.mode "cluster" }}
+            - {name: initdb, mountPath: /docker-entrypoint-initdb.d}
+            {{- end }}
           readinessProbe:
             exec: {command: ["pg_isready", "-U", "postgres"]}
             initialDelaySeconds: 5
@@ -36,5 +95,24 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       volumes:
+        {{- if ne .Values.mode "cluster" }}
         - name: data
           persistentVolumeClaim: {claimName: {{ include "postgresql.fullname" . }}-data}
+        {{- end }}
+        {{- if eq .Values.mode "cluster" }}
+        - name: initdb
+          configMap: {name: {{ include "postgresql.fullname" . }}-initdb}
+        {{- end }}
+  {{- if eq .Values.mode "cluster" }}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        {{- with (.Values.cluster.storageClass | default .Values.persistence.storageClass) }}
+        storageClassName: {{ . | quote }}
+        {{- end }}
+        resources:
+          requests:
+            storage: {{ .Values.persistence.size }}
+  {{- end }}

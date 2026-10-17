@@ -45,5 +45,17 @@ freshnessAlert:
   schedule: "10 6 * * *"          # 备份 03:30 完成，06:10 仍无新目录 → Job 失败
   maxAgeHours: 26
 
-# 计划中（Phase 5）：mode: standalone | cluster
+# standalone | cluster
+# cluster = 1 primary + N streaming replicas（跨节点 required 反亲和）
+#   流复制（不是逻辑复制）；故障转移目前手动（pg_ctl promote），Patroni 待后续
 mode: standalone
+cluster:
+  dataMembers: 2          # 总成员数（含 primary）
+  masterToleration: true  # 允许副本/主库上 master1（污点保留，定向容忍）
+  storageClass: ""        # "" = 沿用 persistence.storageClass
+  replicationUser: replicator
+  # 主库需要的 WAL/复制参数
+  walLevel: replica
+  maxWalSenders: 10
+  maxReplicationSlots: 10
+  walKeepSize: 1GB
