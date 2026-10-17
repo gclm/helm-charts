@@ -73,7 +73,7 @@ spec:
                 echo "[entry] empty data dir -> pg_basebackup from ${PRIMARY_HOST}"
                 until pg_isready -h "${PRIMARY_HOST}" -U postgres; do echo "waiting primary..."; sleep 2; done
                 rm -rf "${PGDATA:?}"/* 2>/dev/null || true
-                PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U postgres \
+                PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U "${REPL_USER}" \
                   -D "$PGDATA" -Fp -Xs -P -R -C -S "replica_${POD_ORDINAL}"
                 echo "[entry] basebackup done"
               else
