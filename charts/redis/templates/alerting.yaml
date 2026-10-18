@@ -1,0 +1,74 @@
+{{- if and .Values.backup.enabled .Values.alerting.enabled }}
+# 备份失败/过期 → 飞书告警（Q22 教训：备份静默死亡不可接受）
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "redis.fullname" . }}-backup-alert
+  labels:
+    {{- include "redis.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.alerting.schedule | quote }}
+  timeZone: {{ .Values.backup.timeZone | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 0
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: check
+              image: {{ .Values.alerting.image | quote }}
+              env:
+                - name: FEISHU_WEBHOOK
+                  valueFrom: {secretKeyRef: {name: {{ .Values.alerting.secretName }}, key: webhook-url, optional: true}}
+                - name: FEISHU_SECRET
+                  valueFrom: {secretKeyRef: {name: {{ .Values.alerting.secretName }}, key: sign-secret, optional: true}}
+                - name: DB_KIND
+                  value: "Redis"
+                - name: BACKUP_DIR
+                  value: "/backup/redis"
+                - name: MAX_AGE_HOURS
+                  value: {{ .Values.alerting.maxAgeHours | quote }}
+              command: ["/bin/sh", "-c"]
+              args:
+                - |
+                  set -u
+                  LATEST=$(ls -1t "$BACKUP_DIR" 2>/dev/null | head -1)
+                  if [ -z "$LATEST" ]; then
+                    MSG="[210 db][$DB_KIND] 备份目录为空！$BACKUP_DIR"
+                    RC=1
+                  else
+                    AGE=$(( ( $(date +%s) - $(stat -c %Y "$BACKUP_DIR/$LATEST") ) / 3600 ))
+                    echo "latest=$LATEST age=${AGE}h max=${MAX_AGE_HOURS}h"
+                    if [ "$AGE" -gt "$MAX_AGE_HOURS" ]; then
+                      MSG="[210 db][$DB_KIND] 备份已过期 ${AGE}h (>${MAX_AGE_HOURS}h) 最新: $LATEST"
+                      RC=1
+                    else
+                      echo "OK: backup fresh"; exit 0
+                    fi
+                  fi
+                  echo "$MSG"
+                  if [ -n "${FEISHU_WEBHOOK:-}" ]; then
+                    if [ -n "${FEISHU_SECRET:-}" ]; then
+                      TS=$(date +%s)
+                      SIGN=$(printf '%s\n%s' "$TS" "$FEISHU_SECRET" | openssl dgst -sha256 -hmac "" -binary | base64 | tr -d '\n')
+                      printf '{"timestamp":"%s","sign":"%s","msg_type":"text","content":{"text":"%s"}}' "$TS" "$SIGN" "$MSG" > /tmp/p.json
+                    else
+                      printf '{"msg_type":"text","content":{"text":"%s"}}' "$MSG" > /tmp/p.json
+                    fi
+                    curl -sS --max-time 15 -H 'Content-Type: application/json' -d @/tmp/p.json "$FEISHU_WEBHOOK" && echo "alert sent" || echo "alert send FAILED"
+                  else
+                    echo "no webhook configured"
+                  fi
+                  exit $RC
+              volumeMounts:
+                - {name: backup, mountPath: /backup}
+          volumes:
+            - name: backup
+              nfs:
+                server: {{ .Values.backup.nfs.server | quote }}
+                path: {{ .Values.backup.nfs.path | quote }}
+{{- end }}

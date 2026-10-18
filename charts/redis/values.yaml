@@ -54,3 +54,11 @@ cluster:
   dataMembers: 2
   masterToleration: true
   storageClass: ""   # "" = 沿用 persistence.storageClass
+
+# 备份告警（Q22 教训）：检查最新备份年龄，过期/缺失 → 飞书通知
+alerting:
+  enabled: true
+  schedule: "0 7 * * *"   # 每天 07:00 检查（备份 03:30 跑完）
+  maxAgeHours: 26
+  image: "docker.io/library/python:3.12-alpine"
+  secretName: "backup-alert-feishu"
