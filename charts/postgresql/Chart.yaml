@@ -2,7 +2,7 @@ apiVersion: v2
 name: postgresql
 description: PostgreSQL 17 standalone with NFS backup CronJob and freshness alert
 type: application
-version: 0.5.1
+version: 0.5.2
 appVersion: "17-alpine"
 maintainers:
   - name: gclm
