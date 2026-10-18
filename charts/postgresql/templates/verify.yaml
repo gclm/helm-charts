@@ -1,0 +1,78 @@
+{{- if and .Values.backup.enabled .Values.alerting.enabled }}
+# 每周校验最新备份可读性（pg_restore --list 只读目录，不真正恢复）
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "postgresql.fullname" . }}-backup-verify
+  labels:
+    {{- include "postgresql.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.alerting.verifySchedule | quote }}
+  timeZone: {{ .Values.backup.timeZone | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 0
+      template:
+        spec:
+          restartPolicy: Never
+          # 两个容器共享 emptyDir：verify 产出结果文件，notify 读它决定是否告警
+          containers:
+            - name: verify
+              image: "docker.io/library/postgres:17-alpine"
+              command: ["/bin/sh", "-c"]
+              args:
+                - |
+                  set -u
+                  LATEST=$(ls -1t /backup/postgresql | head -1)
+                  echo "verify: $LATEST"
+                  FAIL=0
+                  for f in /backup/postgresql/"$LATEST"/*.dump; do
+                    [ -e "$f" ] || continue
+                    if pg_restore --list "$f" >/dev/null 2>&1; then
+                      echo "OK: $(basename "$f")"
+                    else
+                      echo "CORRUPT: $(basename "$f")"; FAIL=1
+                    fi
+                  done
+                  if [ "$FAIL" -ne 0 ]; then
+                    echo "[210 db][PostgreSQL] 备份校验失败！$LATEST 中有损坏的 dump" > /shared/alert.txt
+                  else
+                    echo "all dumps readable"
+                  fi
+                  exit 0
+              volumeMounts:
+                - {name: backup, mountPath: /backup, readOnly: true}
+                - {name: shared, mountPath: /shared}
+            - name: notify
+              image: {{ .Values.alerting.image | quote }}
+              env:
+                - {name: FEISHU_WEBHOOK, valueFrom: {secretKeyRef: {name: {{ .Values.alerting.secretName }}, key: webhook-url}}}
+                - {name: FEISHU_SECRET, valueFrom: {secretKeyRef: {name: {{ .Values.alerting.secretName }}, key: sign-secret}}}
+              command: ["/bin/sh", "-c"]
+              args:
+                - |
+                  set -u
+                  for i in $(seq 1 60); do [ -f /shared/alert.txt ] && break; sleep 2; done
+                  if [ -f /shared/alert.txt ]; then
+                    MSG=$(cat /shared/alert.txt); echo "$MSG"
+                    python3 /scripts/notify.py "$MSG" && echo "alert sent" || echo "alert send FAILED"
+                    exit 1
+                  fi
+                  echo "no alert needed"
+              volumeMounts:
+                - {name: shared, mountPath: /shared}
+                - {name: scripts, mountPath: /scripts, readOnly: true}
+          volumes:
+            - name: backup
+              nfs:
+                server: {{ .Values.backup.nfs.server | quote }}
+                path: {{ .Values.backup.nfs.path | quote }}
+            - name: shared
+              emptyDir: {}
+            - name: scripts
+              configMap:
+                name: {{ include "postgresql.fullname" . }}-alert-script
+{{- end }}

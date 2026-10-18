@@ -44,6 +44,7 @@ freshnessAlert:
   enabled: true
   schedule: "10 6 * * *"          # 备份 03:30 完成，06:10 仍无新目录 → Job 失败
   maxAgeHours: 26
+  verifySchedule: "0 8 * * 0"   # 每周日 08:00 校验备份可读性
 
 # standalone | cluster
 # cluster = 1 primary + N streaming replicas（跨节点 required 反亲和）
@@ -65,5 +66,6 @@ alerting:
   enabled: true
   schedule: "0 7 * * *"   # 每天 07:00 检查（备份 03:30 跑完）
   maxAgeHours: 26
+  verifySchedule: "0 8 * * 0"   # 每周日 08:00 校验备份可读性
   image: "docker.io/library/python:3.12-alpine"
   secretName: "backup-alert-feishu"
