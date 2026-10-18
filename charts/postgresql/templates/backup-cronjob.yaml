@@ -5,7 +5,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }}-backup
+  name: {{ include "postgresql.fullname" . }}-backup
   labels:
     {{- include "postgresql.labels" . | nindent 4 }}
 spec:

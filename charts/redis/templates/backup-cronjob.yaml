@@ -5,7 +5,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }}-backup
+  name: {{ include "redis.fullname" . }}-backup
   labels:
     {{- include "redis.labels" . | nindent 4 }}
 spec:
