@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "warp.fullname" . }}
+  labels:
+    {{- include "warp.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  # Recreate：WARP 的 tun 设备不能多副本共享
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      {{- include "warp.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "warp.labels" . | nindent 8 }}
+    spec:
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: warp
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: WARP_SLEEP
+              value: {{ .Values.warpSleep | quote }}
+          ports:
+            - name: socks
+              containerPort: 1080
+              protocol: TCP
+          securityContext:
+            capabilities:
+              add: ["NET_ADMIN"]
+          volumeMounts:
+            - name: tun
+              mountPath: /dev/net/tun
+          readinessProbe:
+            tcpSocket:
+              port: 1080
+            initialDelaySeconds: {{ .Values.readinessProbe.initialDelaySeconds }}
+            periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
+            failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: tun
+          hostPath:
+            path: {{ .Values.tun.hostPath }}
+            type: CharDevice

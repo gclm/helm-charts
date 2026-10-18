@@ -1,0 +1,30 @@
+image:
+  repository: docker.1ms.run/caomingjun/warp
+  tag: "latest"
+  pullPolicy: Always
+
+# WARP restart sleep (seconds)
+warpSleep: "2"
+
+service:
+  type: ClusterIP
+  port: 1080
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+  limits:
+    memory: 512Mi
+
+# WARP 需要 NET_ADMIN + hostPath /dev/net/tun（TUN 设备）
+tun:
+  hostPath: /dev/net/tun
+
+nodeSelector: {}
+tolerations: []
+
+readinessProbe:
+  initialDelaySeconds: 20
+  periodSeconds: 30
+  failureThreshold: 5

@@ -1,0 +1,12 @@
+WARP SOCKS5 代理已部署（{{ include "warp.fullname" . }} @ {{ .Release.Namespace }}）。
+
+集群内地址：http://{{ include "warp.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local:{{ .Values.service.port }}
+
+用途：受限网络的出站 HTTP(S) 代理。**需要走代理的组件**（如 zke-server）请：
+  1. 设置 HTTPS_PROXY/HTTP_PROXY 指向上述地址
+  2. ⚠️ 务必把**不需要代理的域名**加入 NO_PROXY（尤其是 chart 仓库、内网、集群内服务）
+     —— 否则代理挂了会让这些组件静默失败（本项目踩过：zke-server 因 NO_PROXY 缺
+     charts.xzim.top 而 502）
+
+⚠️ 本 chart 需要 NET_ADMIN 权限 + hostPath /dev/net/tun（WARP 的 TUN 设备）。
+   若是受限集群（PodSecurity/OPA 禁止特权），此 chart 无法安装。

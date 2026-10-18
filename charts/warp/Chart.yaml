@@ -1,0 +1,8 @@
+apiVersion: v2
+name: warp
+description: Cloudflare WARP SOCKS5 proxy (for egress proxy in restricted networks)
+type: application
+version: 0.1.0
+appVersion: "latest"
+maintainers:
+  - name: gclm
