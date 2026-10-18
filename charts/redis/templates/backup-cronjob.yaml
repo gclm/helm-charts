@@ -5,7 +5,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ include "redis.fullname" . }}-backup
+  name: {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }}-backup
   labels:
     {{- include "redis.labels" . | nindent 4 }}
 spec:
@@ -25,7 +25,7 @@ spec:
               image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
               env:
                 - name: REDIS_PASSWORD
-                  valueFrom: {secretKeyRef: {name: {{ include "redis.fullname" . }}, key: REDIS_PASSWORD}}
+                  valueFrom: {secretKeyRef: {name: {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }}, key: REDIS_PASSWORD}}
               command: ["/bin/sh", "-c"]
               args:
                 - |
@@ -34,19 +34,19 @@ spec:
                   OUT="/backup/redis/$D"
                   mkdir -p "$OUT"
                   echo "[$(date)] BGSAVE on redis"
-                  redis-cli -h {{ include "redis.fullname" . }} -a "$REDIS_PASSWORD" --no-auth-warning BGSAVE
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning BGSAVE
                   for i in $(seq 1 60); do
-                    st=$(redis-cli -h {{ include "redis.fullname" . }} -a "$REDIS_PASSWORD" --no-auth-warning \
+                    st=$(redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning \
                          INFO persistence | tr -d '\r' | awk -F: '/rdb_bgsave_in_progress/{print $2}')
                     [ "$st" = "0" ] && break
                     echo "  waiting bgsave... ($i)"; sleep 2
                   done
                   echo "[$(date)] pulling RDB to $OUT"
-                  redis-cli -h {{ include "redis.fullname" . }} -a "$REDIS_PASSWORD" --no-auth-warning --rdb "$OUT/dump.rdb"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning --rdb "$OUT/dump.rdb"
                   echo "[$(date)] verifying RDB"
                   redis-check-rdb "$OUT/dump.rdb"
-                  redis-cli -h {{ include "redis.fullname" . }} -a "$REDIS_PASSWORD" --no-auth-warning INFO server > "$OUT/info-server.txt"
-                  redis-cli -h {{ include "redis.fullname" . }} -a "$REDIS_PASSWORD" --no-auth-warning DBSIZE     > "$OUT/dbsize.txt"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning INFO server > "$OUT/info-server.txt"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning DBSIZE     > "$OUT/dbsize.txt"
                   echo "[$(date)] done:"; ls -lh "$OUT"
                   find /backup/redis -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
               volumeMounts:
@@ -58,6 +58,6 @@ spec:
                 server: {{ .Values.backup.nfs.server | quote }}
                 path: {{ .Values.backup.nfs.path | quote }}
               {{- else }}
-              persistentVolumeClaim: {claimName: {{ include "redis.fullname" . }}-backup}
+              persistentVolumeClaim: {claimName: {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "redis.fullname" . }}{{ end }}-backup}
               {{- end }}
 {{- end }}

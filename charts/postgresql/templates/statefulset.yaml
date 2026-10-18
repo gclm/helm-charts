@@ -18,6 +18,11 @@ spec:
     metadata:
       labels:
         {{- include "postgresql.labels" . | nindent 8 }}
+        {{- if eq .Values.mode "cluster" }}
+        # ordinal 0 = primary（Service selector 依赖此标签）
+        {{- if eq (toString 0) "0" }}
+        {{- end }}
+        {{- end }}
     spec:
       {{- if eq .Values.mode "cluster" }}
       # required 反亲和：成员强制跨节点；节点不足则 Pending（拒绝假 HA）
