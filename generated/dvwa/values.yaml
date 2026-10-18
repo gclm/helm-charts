@@ -31,7 +31,7 @@ services:
     - name: PANEL_APP_PORT_HTTP
       valueFromEnv: PANEL_APP_PORT_HTTP
     image:
-      digest: sha256:1af2cedda7617e4d22937e61c98bbf71d8b74b98e46f5e41dd6aa0a5183311b0
+      digest: sha256:8029450682bd70e2e8cd1ffe8e46dd1885ff2a913296091cebfa8ba0a7d36498
       registry: ghcr.io
       repository: digininja/dvwa
       tag: null

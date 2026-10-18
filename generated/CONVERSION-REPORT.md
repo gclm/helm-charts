@@ -54,7 +54,7 @@
 - dosgame -> chart dosgame (3.9.6+gdd4d47) sha:5a53f52a5692
 - dotnet -> chart dotnet (10.0.0+g2a45a3) sha:ee852a4cd829
 - drawio -> chart drawio (32.4.1+g28508b) sha:e6c5d23e4fb7
-- dvwa -> chart dvwa (0.0.0-d20261015.g1af2c+g67c699) sha:2992fb4a9078
+- dvwa -> chart dvwa (0.0.0-d20261018.g80294+gec045a) sha:d02bd3c62c91
 - easyimage2 -> chart easyimage2 (2.8.6+g1fee84) sha:3b16bb6b5d47
 - emqx -> chart emqx (6.3.1+ga30ad1) sha:089b32827a95
 - excalidraw -> chart excalidraw (0.0.0-d20261015.gf7ee1+ge87211) sha:8c0c97ca70c8
