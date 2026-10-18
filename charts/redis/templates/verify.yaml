@@ -29,6 +29,11 @@ spec:
                   LATEST=$(ls -1t /backup/redis | head -1)
                   echo "verify: $LATEST"
                   FAIL=0
+                  # P2 修复：无 dump.rdb = 备份失败，必须告警
+                  if [ ! -f /backup/redis/"$LATEST"/dump.rdb ]; then
+                    echo "[210 db][Redis] 备份目录无 dump.rdb！$LATEST" > /shared/alert.txt
+                    exit 0
+                  fi
                   for f in /backup/redis/"$LATEST"/dump.rdb; do
                     [ -e "$f" ] || continue
                     if redis-check-rdb "$f" >/dev/null 2>&1; then

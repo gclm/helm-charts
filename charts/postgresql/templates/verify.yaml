@@ -29,6 +29,13 @@ spec:
                   LATEST=$(ls -1t /backup/postgresql | head -1)
                   echo "verify: $LATEST"
                   FAIL=0
+                  # P2 修复：目录里一个 dump 都没有 = 备份环节已失败，必须告警
+                  N=$(ls /backup/postgresql/"$LATEST"/*.dump 2>/dev/null | wc -l)
+                  if [ "$N" -eq 0 ]; then
+                    echo "[210 db][PostgreSQL] 备份目录无 dump 文件！$LATEST" > /shared/alert.txt
+                    exit 0
+                  fi
+                  echo "dump count: $N"
                   for f in /backup/postgresql/"$LATEST"/*.dump; do
                     [ -e "$f" ] || continue
                     if pg_restore --list "$f" >/dev/null 2>&1; then
