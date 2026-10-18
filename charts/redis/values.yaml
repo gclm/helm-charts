@@ -60,5 +60,5 @@ alerting:
   enabled: true
   schedule: "0 7 * * *"   # 每天 07:00 检查（备份 03:30 跑完）
   maxAgeHours: 26
-  image: "docker.io/library/python:3.12-alpine"
+  image: "docker.io/library/alpine:3.20"
   secretName: "backup-alert-feishu"

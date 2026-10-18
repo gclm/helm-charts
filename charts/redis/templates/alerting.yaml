@@ -33,9 +33,11 @@ spec:
                 - name: MAX_AGE_HOURS
                   value: {{ .Values.alerting.maxAgeHours | quote }}
               command: ["/bin/sh", "-c"]
+              # alpine: 装 curl + openssl（基础镜像没有）
               args:
                 - |
                   set -u
+                  command -v curl >/dev/null 2>&1 || apk add --no-cache curl openssl >/dev/null 2>&1
                   LATEST=$(ls -1t "$BACKUP_DIR" 2>/dev/null | head -1)
                   if [ -z "$LATEST" ]; then
                     MSG="[210 db][$DB_KIND] 备份目录为空！$BACKUP_DIR"
