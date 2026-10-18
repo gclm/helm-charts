@@ -1,0 +1,53 @@
+{{- if .Values.backup.enabled }}
+{{- if and .Values.backup.enabled (eq .Values.backup.destination "nfs") (or (not .Values.backup.nfs.server) (not .Values.backup.nfs.path)) }}
+{{- fail "backup.destination=nfs requires backup.nfs.server and backup.nfs.path" }}
+{{- end }}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "mongodb.fullname" . }}-backup
+  labels:
+    {{- include "mongodb.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.backup.schedule | quote }}
+  timeZone: {{ .Values.backup.timeZone | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: dump
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              env:
+                - name: MONGO_ROOT_PASSWORD
+                  valueFrom: {secretKeyRef: {name: {{ include "mongodb.fullname" . }}, key: MONGO_ROOT_PASSWORD}}
+              command: ["/bin/sh", "-c"]
+              args:
+                - |
+                  set -eu
+                  D=$(date +%Y%m%d-%H%M%S)
+                  OUT="/backup/mongodb/$D"
+                  mkdir -p "$OUT"
+                  echo "[$(date)] mongodump --oplog to $OUT"
+                  mongodump --host {{ include "mongodb.fullname" . }} --username {{ .Values.auth.username }} \
+                    --password "$MONGO_ROOT_PASSWORD" --authenticationDatabase admin \
+                    --oplog --gzip --out "$OUT"
+                  echo "[$(date)] done:"; ls -lh "$OUT"
+                  find /backup/mongodb -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
+              volumeMounts:
+                - {name: backup, mountPath: /backup}
+          volumes:
+            - name: backup
+              {{- if eq .Values.backup.destination "nfs" }}
+              nfs:
+                server: {{ .Values.backup.nfs.server | quote }}
+                path: {{ .Values.backup.nfs.path | quote }}
+              {{- else }}
+              persistentVolumeClaim: {claimName: {{ include "mongodb.fullname" . }}-backup}
+              {{- end }}
+{{- end }}

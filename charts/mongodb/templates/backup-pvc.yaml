@@ -1,0 +1,16 @@
+{{- if and .Values.backup.enabled (eq .Values.backup.destination "pvc") }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "mongodb.fullname" . }}-backup
+  labels:
+    {{- include "mongodb.labels" . | nindent 4 }}
+spec:
+  {{- with .Values.backup.pvc.storageClass }}
+  storageClassName: {{ . | quote }}
+  {{- end }}
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: {{ .Values.backup.pvc.size }}
+{{- end }}
