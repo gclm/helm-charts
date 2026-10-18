@@ -34,12 +34,12 @@ spec:
                   OUT="/backup/postgresql/$D"
                   mkdir -p "$OUT"
                   echo "[$(date)] dumping all databases to $OUT"
-                  for db in $(psql -h {{ if eq $.Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ $.Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -tAc \
+                  for db in $(psql -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -tAc \
                       "SELECT datname FROM pg_database WHERE datistemplate = false AND datname <> 'postgres'"); do
                     echo "  -> $db"
-                    pg_dump -h {{ if eq $.Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ $.Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -Fc -d "$db" -f "$OUT/$db.dump"
+                    pg_dump -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -Fc -d "$db" -f "$OUT/$db.dump"
                   done
-                  pg_dumpall -h {{ if eq $.Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ $.Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres --globals-only -f "$OUT/globals.sql"
+                  pg_dumpall -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres --globals-only -f "$OUT/globals.sql"
                   echo "[$(date)] done:"
                   ls -lh "$OUT"
                   find /backup/postgresql -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
