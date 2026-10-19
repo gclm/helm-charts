@@ -16,6 +16,9 @@ spec:
       {{- include "redis.labels" . | nindent 6 }}
   template:
     metadata:
+      annotations:
+        # P0-2 防护：口令变了就滚动重启，避免 Secret 与容器 env 长期漂移
+        checksum/password: {{ include "redis.password" . | sha256sum }}
       labels:
         {{- include "redis.labels" . | nindent 8 }}
     spec:
@@ -43,7 +46,7 @@ spec:
               # 运行时判断：pod 序号非 0 的是从库（replicaof 指向 pod-0）
               ORD=$(hostname | sed 's/.*-//')
               EXTRA=""
-              [ "$ORD" != "0" ] && EXTRA="--masterauth $REDIS_PASSWORD --replicaof {{ include "redis.fullname" . }}-0.{{ include "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local 6379"
+              [ "$ORD" != "0" ] && EXTRA="--masterauth $REDIS_PASSWORD --replicaof {{ include "redis.memberSvc" . }} 6379"
               exec redis-server \
                 --requirepass "$REDIS_PASSWORD" \
                 --appendonly {{ if .Values.appendonly }}yes{{ else }}no{{ end }} \

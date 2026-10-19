@@ -30,17 +30,34 @@ spec:
               args:
                 - |
                   set -eu
+                  # cluster: DSN 带全成员 + target_session_attrs，客户端自己挑主库
+                  # （不硬编码 -0：promote 后 -0 可能是只读副本，会静默备份旧数据）
+                  if [ "{{ .Values.mode }}" = "cluster" ]; then
+                    HOST="{{ include "postgresql.memberHosts" . }}"
+                    DSN="host=$HOST port=5432 user=postgres target_session_attrs=read-write"
+                    # 断言确实连到可写主库
+                    INREC=$(psql -d "$DSN" -tAc "SELECT pg_is_in_recovery()")
+                    if [ "$INREC" != "f" ]; then
+                      echo "FATAL: not connected to a writable primary (pg_is_in_recovery=$INREC)"; exit 1
+                    fi
+                    echo "[backup] connected to primary; members=$HOST"
+                  else
+                    DSN="host={{ include "postgresql.fullname" . }} port=5432 user=postgres"
+                  fi
                   D=$(date +%Y%m%d-%H%M%S)
                   OUT="/backup/postgresql/$D"
                   mkdir -p "$OUT"
                   echo "[$(date)] dumping all databases to $OUT"
-                  for db in $(psql -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -tAc \
+                  for db in $(psql -d "$DSN" -tAc \
                       "SELECT datname FROM pg_database WHERE datistemplate = false AND datname <> 'postgres'"); do
                     echo "  -> $db"
-                    pg_dump -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres -Fc -d "$db" -f "$OUT/$db.dump"
+                    pg_dump -d "$DSN dbname=$db" -Fc -f "$OUT/$db.dump"
                   done
-                  pg_dumpall -h {{ if eq .Values.mode "cluster" }}{{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local{{ else }}{{ include "postgresql.fullname" . }}{{ end }} -U postgres --globals-only -f "$OUT/globals.sql"
-                  echo "[$(date)] done:"
+                  pg_dumpall -d "$DSN" --globals-only --no-role-passwords -f "$OUT/globals.sql"
+                  # 断言：至少产出 1 个 dump，否则视为失败（防假绿）
+                  N=$(ls "$OUT"/*.dump 2>/dev/null | wc -l)
+                  if [ "$N" -eq 0 ]; then echo "FATAL: no dump produced (no user databases?)"; exit 1; fi
+                  echo "[$(date)] done: $N dumps"
                   ls -lh "$OUT"
                   find /backup/postgresql -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
               volumeMounts:

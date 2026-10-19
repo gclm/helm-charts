@@ -1,15 +1,40 @@
 PostgreSQL {{ .Chart.AppVersion }} 已部署（{{ include "postgresql.fullname" . }} @ {{ .Release.Namespace }}）。
+{{- if eq .Values.mode "cluster" }}
+模式：cluster（流复制，ordinal 0 = primary）
+{{- else }}
+模式：standalone
+{{- end }}
 
 获取自动生成的密码（若 values 未显式指定）：
   kubectl -n {{ .Release.Namespace }} get secret {{ include "postgresql.fullname" . }} -o jsonpath='{.data.POSTGRES_PASSWORD}' | base64 -d
+{{- if eq .Values.mode "cluster" }}
+复制账号口令（独立于超管）：
+  kubectl -n {{ .Release.Namespace }} get secret {{ include "postgresql.fullname" . }} -o jsonpath='{.data.REPLICATION_PASSWORD}' | base64 -d
+{{- end }}
 
+{{- if eq .Values.mode "cluster" }}
+⚠️ cluster 模式下 {{ include "postgresql.fullname" . }} 是 headless Service = 所有成员的集合，
+   不承诺是主库。直接写操作会随机命中只读副本，报
+   "cannot execute ... in a read-only transaction"。
+
+写操作（推荐）：成员列表 + target_session_attrs，客户端自动挑主库
+  psql "host={{ include "postgresql.memberHosts" . }} port=5432 user=postgres target_session_attrs=read-write"
+
+只读查询：可连任一成员（用 any 不挑主从）
+  psql "host={{ include "postgresql.memberHosts" . }} port=5432 user=postgres target_session_attrs=any"
+
+单个成员（运维排查用）：{{ include "postgresql.memberSvc" . }}
+   ⚠️ ordinal 0 默认是 primary，但 promote 之后它会变成只读副本。
+{{- else }}
 连接（集群内）：
   kubectl -n {{ .Release.Namespace }} run psql-{{ .Release.Name }} --rm -it --restart=Never \
     --image={{ .Values.image.repository }}:{{ .Values.image.tag }} -- psql -h {{ include "postgresql.fullname" . }} -U postgres
+{{- end }}
 
-备份：{{ if .Values.backup.enabled }}每天 {{ .Values.backup.schedule }}（{{ .Values.backup.timeZone }}）→ NFS {{ .Values.backup.nfs.server }}:{{ .Values.backup.nfs.path }}/postgresql/，保留 {{ .Values.backup.retentionDays }} 天{{ else }}未启用{{ end }}
+备份：{{ if .Values.backup.enabled }}每天 {{ .Values.backup.schedule }}（{{ .Values.backup.timeZone }}）→ {{ if eq .Values.backup.destination "nfs" }}NFS {{ .Values.backup.nfs.server }}:{{ .Values.backup.nfs.path }}/postgresql/{{ else }}PVC{{ end }}，保留 {{ .Values.backup.retentionDays }} 天{{ else }}未启用{{ end }}
 
-恢复（挂 NFS 的临时 Pod，pg_restore 连 service）：
+恢复（挂备份卷的临时 Pod）：
   LATEST=$(ls -1d /backup/postgresql/*/ | sort | tail -1)
-  psql  -h {{ include "postgresql.fullname" . }} -U postgres -c "CREATE DATABASE <db>;"
-  pg_restore -h {{ include "postgresql.fullname" . }} -U postgres -d <db> --no-owner "$LATEST/<db>.dump"
+  DSN="host={{ if eq .Values.mode "cluster" }}{{ include "postgresql.memberHosts" . }}{{ else }}{{ include "postgresql.fullname" . }}{{ end }} port=5432 user=postgres target_session_attrs=read-write"
+  psql  -d "$DSN" -c "CREATE DATABASE <db>;"
+  pg_restore -d "$DSN dbname=<db>" --no-owner "$LATEST/<db>.dump"

@@ -1,3 +1,6 @@
+# 资源名前缀；留空则用 release 名（截断 38，见 _helpers.tpl）
+fullnameOverride: ""
+
 image:
   repository: docker.io/library/mongo
   tag: "8.0"

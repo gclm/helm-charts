@@ -1,3 +1,6 @@
+# 资源名前缀；留空则用 release 名（截断 38，见 _helpers.tpl）
+fullnameOverride: ""
+
 # Default values for postgresql (210 cluster).
 
 image:
@@ -8,6 +11,8 @@ image:
 auth:
   # 留空则首次安装自动生成 32 位随机密码并写入 Secret；upgrade 用 lookup 复用，不轮换
   password: ""
+  # 复制账号口令（留空则自动生成独立口令；不要与 password 相同）
+  replicationPassword: ""
 
 persistence:
   storageClass: ""   # "" = 集群默认 StorageClass

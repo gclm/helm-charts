@@ -11,11 +11,22 @@ data:
     #!/bin/bash
     set -e
     echo "[initdb] creating replication user {{ .Values.cluster.replicationUser }}"
+    # 幂等：已存在则改口令（支持轮换），不存在则创建。口令独立于超管。
     psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname postgres <<-EOSQL
-      CREATE USER {{ .Values.cluster.replicationUser }} WITH REPLICATION LOGIN PASSWORD '${POSTGRES_PASSWORD}';
+      DO \$\$
+      BEGIN
+        IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = '{{ .Values.cluster.replicationUser }}') THEN
+          ALTER USER {{ .Values.cluster.replicationUser }} WITH REPLICATION LOGIN PASSWORD '${REPLICATION_PASSWORD}';
+        ELSE
+          CREATE USER {{ .Values.cluster.replicationUser }} WITH REPLICATION LOGIN PASSWORD '${REPLICATION_PASSWORD}';
+        END IF;
+      END
+      \$\$;
     EOSQL
     # 允许集群内网段复制连接
-    echo "host replication {{ .Values.cluster.replicationUser }} 0.0.0.0/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
-    echo "host replication {{ .Values.cluster.replicationUser }} ::/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
+    grep -q "^host replication {{ .Values.cluster.replicationUser }}" "$PGDATA/pg_hba.conf" 2>/dev/null || {
+      echo "host replication {{ .Values.cluster.replicationUser }} 0.0.0.0/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
+      echo "host replication {{ .Values.cluster.replicationUser }} ::/0 scram-sha-256" >> "$PGDATA/pg_hba.conf"
+    }
     echo "[initdb] replication user ready"
 {{- end }}

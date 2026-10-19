@@ -5,6 +5,10 @@ metadata:
   labels:
     {{- include "redis.labels" . | nindent 4 }}
 spec:
+  # A 项：cluster 模式必须是 headless —— 否则 ClusterIP 会把写请求轮询到只读副本
+  {{- if eq .Values.mode "cluster" }}
+  clusterIP: None
+  {{- end }}
   selector:
     {{- include "redis.labels" . | nindent 4 }}
   ports:

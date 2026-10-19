@@ -16,13 +16,12 @@ spec:
       {{- include "postgresql.labels" . | nindent 6 }}
   template:
     metadata:
+      annotations:
+        # P0-2 防护：口令变了就滚动重启，避免 Secret 与容器 env 长期漂移
+        checksum/password: {{ include "postgresql.password" . | sha256sum }}
+        checksum/replication-password: {{ include "postgresql.replicationPassword" . | sha256sum }}
       labels:
         {{- include "postgresql.labels" . | nindent 8 }}
-        {{- if eq .Values.mode "cluster" }}
-        # ordinal 0 = primary（Service selector 依赖此标签）
-        {{- if eq (toString 0) "0" }}
-        {{- end }}
-        {{- end }}
     spec:
       {{- if eq .Values.mode "cluster" }}
       # required 反亲和：成员强制跨节点；节点不足则 Pending（拒绝假 HA）
@@ -53,10 +52,13 @@ spec:
             {{- if eq .Values.mode "cluster" }}
             - name: POD_ORDINAL
               valueFrom: {fieldRef: {fieldPath: "metadata.labels['apps.kubernetes.io/pod-index']"}}
+            # PRIMARY_HOST 用 helper 生成 4 段 .svc 形式（不硬编码 cluster.local）
             - name: PRIMARY_HOST
-              value: {{ include "postgresql.fullname" . }}-0.{{ include "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
+              value: {{ include "postgresql.memberSvc" . | quote }}
             - name: REPL_USER
               value: {{ .Values.cluster.replicationUser | quote }}
+            - name: REPL_PASSWORD
+              valueFrom: {secretKeyRef: {name: {{ include "postgresql.fullname" . }}, key: REPLICATION_PASSWORD}}
             {{- end }}
           {{- if eq .Values.mode "cluster" }}
           # 主库：官方 entrypoint 直接起；副本：空数据目录时先 pg_basebackup 拉基线
@@ -64,7 +66,13 @@ spec:
           args:
             - |
               set -e
-              if [ "${POD_ORDINAL:-0}" = "0" ]; then
+              # fail fast：ordinal 缺失时绝不能默认成 0（否则副本会以 primary 启动 → 脑裂）
+              [ -n "${POD_ORDINAL}" ] || { echo "FATAL: POD_ORDINAL is empty (needs apps.kubernetes.io/pod-index label, k8s>=1.28)"; exit 1; }
+              # 复制口令写入 .pgpass，避免出现在进程 argv 里
+              PWFILE=/tmp/repl.pgpass
+              printf '%s:5432:replication:%s:%s\n' "${PRIMARY_HOST}" "${REPL_USER}" "${REPL_PASSWORD}" > "$PWFILE"
+              chmod 600 "$PWFILE"
+              if [ "${POD_ORDINAL}" = "0" ]; then
                 echo "[entry] primary (ordinal 0)"
                 exec docker-entrypoint.sh postgres \
                   -c wal_level={{ .Values.cluster.walLevel }} \
@@ -80,15 +88,17 @@ spec:
                 until pg_isready -h "${PRIMARY_HOST}" -U postgres; do echo "waiting primary..."; sleep 2; done
                 rm -rf "${PGDATA:?}"/* 2>/dev/null || true
                 mkdir -p "$PGDATA" && chown postgres:postgres "$PGDATA" && chmod 700 "$PGDATA"
-                gosu postgres env PGPASSWORD="$POSTGRES_PASSWORD" pg_basebackup -h "${PRIMARY_HOST}" -U "${REPL_USER}" \
+                gosu postgres env PGPASSFILE="$PWFILE" pg_basebackup -h "${PRIMARY_HOST}" -U "${REPL_USER}" \
                   -D "$PGDATA" -Fp -Xs -P -R -C -S "replica_${POD_ORDINAL}"
                 echo "[entry] basebackup done"
               else
                 echo "[entry] data dir exists, resuming standby"
                 touch "$PGDATA/standby.signal"
               fi
+              # passfile= 让口令不出现在 argv / postgresql.auto.conf
+              install -o postgres -g postgres -m 600 "$PWFILE" "$PGDATA/.pgpass"
               exec gosu postgres postgres -D "$PGDATA" \
-                -c hot_standby=on -c primary_conninfo="host=${PRIMARY_HOST} port=5432 user=${REPL_USER} password=${POSTGRES_PASSWORD}"
+                -c hot_standby=on -c primary_conninfo="host=${PRIMARY_HOST} port=5432 user=${REPL_USER} passfile=${PGDATA}/.pgpass"
           {{- end }}
           volumeMounts:
             - {name: data, mountPath: /var/lib/postgresql/data}
