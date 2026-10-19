@@ -10,3 +10,14 @@ Redis {{ .Chart.AppVersion }} 已部署（{{ include "redis.fullname" . }} @ {{ 
 
 恢复验证（临时 Pod 挂 NFS 用备份 RDB 起实例，不动生产）：
   cp /backup/redis/<ts>/dump.rdb /tmp/ && redis-server --dir /tmp --dbfilename dump.rdb --daemonize yes && redis-cli DBSIZE
+
+{{- if eq .Values.mode "cluster" }}
+⚠️ cluster 模式下 {{ include "redis.fullname" . }} 是「任意成员」，
+   写操作会随机命中只读副本（实测 20 次写 9 次 READONLY）。
+
+写入口（推荐）：{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc
+   只选当前 master（ordinal 0）。⚠️ promote 后 master 变成 redis-1，
+   需按 runbook 把该 Service 的 selector 改成 redis-1。
+
+只读查询：可连 {{ include "redis.fullname" . }}（任意成员）
+{{- end }}

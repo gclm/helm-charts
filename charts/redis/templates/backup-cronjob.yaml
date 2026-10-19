@@ -30,7 +30,7 @@ spec:
               args:
                 - |
                   set -eu
-                  R="{{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }}"
+                  R="{{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }}"
                   # 断言连到 master（不是只读副本），否则备份的是过期数据
                   ROLE=$(redis-cli -h "$R" -a "$REDIS_PASSWORD" --no-auth-warning INFO replication 2>/dev/null | tr -d '\r' | awk -F: '/^role:/{print $2}')
                   if [ "$ROLE" != "master" ]; then
@@ -41,19 +41,19 @@ spec:
                   OUT="/backup/redis/$D"
                   mkdir -p "$OUT"
                   echo "[$(date)] BGSAVE on redis"
-                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning BGSAVE
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning BGSAVE
                   for i in $(seq 1 60); do
-                    st=$(redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning \
+                    st=$(redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning \
                          INFO persistence | tr -d '\r' | awk -F: '/rdb_bgsave_in_progress/{print $2}')
                     [ "$st" = "0" ] && break
                     echo "  waiting bgsave... ($i)"; sleep 2
                   done
                   echo "[$(date)] pulling RDB to $OUT"
-                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning --rdb "$OUT/dump.rdb"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning --rdb "$OUT/dump.rdb"
                   echo "[$(date)] verifying RDB"
                   redis-check-rdb "$OUT/dump.rdb"
-                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning INFO server > "$OUT/info-server.txt"
-                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.memberSvc" . }}{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning DBSIZE     > "$OUT/dbsize.txt"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning INFO server > "$OUT/info-server.txt"
+                  redis-cli -h {{ if eq .Values.mode "cluster" }}{{ include "redis.fullname" . }}-primary.{{ .Release.Namespace }}.svc{{ else }}{{ include "redis.fullname" . }}{{ end }} -a "$REDIS_PASSWORD" --no-auth-warning DBSIZE     > "$OUT/dbsize.txt"
                   echo "[$(date)] done:"; ls -lh "$OUT"
                   find /backup/redis -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
               volumeMounts:
