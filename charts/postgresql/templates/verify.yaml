@@ -29,13 +29,14 @@ spec:
                   LATEST=$(ls -1t /backup/postgresql | head -1)
                   echo "verify: $LATEST"
                   FAIL=0
-                  # P2 修复：目录里一个 dump 都没有 = 备份环节已失败，必须告警
-                  N=$(ls /backup/postgresql/"$LATEST"/*.dump 2>/dev/null | wc -l)
-                  if [ "$N" -eq 0 ]; then
-                    echo "[210 db][PostgreSQL] 备份目录无 dump 文件！$LATEST" > /shared/alert.txt
+                  # P2 修复：连 globals.sql 都没有 = 备份确实没产出，必须告警。
+                  # 有 globals.sql 但 0 个 dump 是合法的（库里没有业务库）。
+                  if [ ! -s /backup/postgresql/"$LATEST"/globals.sql ]; then
+                    echo "[210 db][PostgreSQL] 备份目录无 globals.sql，备份未产出！$LATEST" > /shared/alert.txt
                     exit 0
                   fi
-                  echo "dump count: $N"
+                  N=$(ls /backup/postgresql/"$LATEST"/*.dump 2>/dev/null | wc -l)
+                  echo "dumps=$N globals=ok"
                   for f in /backup/postgresql/"$LATEST"/*.dump; do
                     [ -e "$f" ] || continue
                     if pg_restore --list "$f" >/dev/null 2>&1; then

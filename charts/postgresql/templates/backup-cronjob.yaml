@@ -54,10 +54,11 @@ spec:
                     pg_dump -d "$DSN dbname=$db" -Fc -f "$OUT/$db.dump"
                   done
                   pg_dumpall -d "$DSN" --globals-only --no-role-passwords -f "$OUT/globals.sql"
-                  # 断言：至少产出 1 个 dump，否则视为失败（防假绿）
+                  # globals.sql 必须存在（里面是角色/权限，恢复必需）
+                  [ -s "$OUT/globals.sql" ] || { echo "FATAL: globals.sql missing/empty"; exit 1; }
                   N=$(ls "$OUT"/*.dump 2>/dev/null | wc -l)
-                  if [ "$N" -eq 0 ]; then echo "FATAL: no dump produced (no user databases?)"; exit 1; fi
-                  echo "[$(date)] done: $N dumps"
+                  echo "[$(date)] done: $N user databases dumped (+globals.sql)"
+                  # 没有业务库时 N=0 是正常的，不算失败；verify 侧同样按"无 dump 且无 globals"才告警
                   ls -lh "$OUT"
                   find /backup/postgresql -maxdepth 1 -mindepth 1 -type d -mtime +{{ .Values.backup.retentionDays }} -exec rm -rf {} +
               volumeMounts:
