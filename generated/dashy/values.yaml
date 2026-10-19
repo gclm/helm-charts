@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: lissy93/dashy
-      tag: 4.8.4
+      tag: 4.8.7
     port: 8080
     volumeMounts:
     - mountPath: /app/user-data/conf.yml

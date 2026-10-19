@@ -24,7 +24,7 @@ services:
     image:
       registry: ''
       repository: twentycrm/twenty
-      tag: v2.47.0
+      tag: v2.48.0
     port: 3000
     probe:
       exec: curl --fail http://localhost:3000/healthz
@@ -48,7 +48,7 @@ services:
     image:
       registry: ''
       repository: twentycrm/twenty
-      tag: v2.47.0
+      tag: v2.48.0
     volumeMounts:
     - mountPath: /app/packages/twenty-server/.local-storage
       name: vol-data

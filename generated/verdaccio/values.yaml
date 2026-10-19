@@ -22,7 +22,7 @@ services:
     image:
       registry: ''
       repository: verdaccio/verdaccio
-      tag: 6.10.5
+      tag: 6.10.6
     volumeMounts:
     - mountPath: /verdaccio/storage
       name: vol-data-storage

@@ -20,7 +20,7 @@ services:
     image:
       registry: ''
       repository: bellamy/wallos
-      tag: 5.8.3
+      tag: 5.10.0
     port: 80
     probe:
       exec: NONE

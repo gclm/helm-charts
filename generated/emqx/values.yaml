@@ -34,7 +34,7 @@ services:
     image:
       registry: ''
       repository: emqx/emqx
-      tag: 6.3.1
+      tag: 6.3.2
     port: 18083
     probe:
       exec: CMD /opt/emqx/bin/emqx_ctl status

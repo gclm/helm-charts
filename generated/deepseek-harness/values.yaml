@@ -36,7 +36,7 @@ services:
     image:
       registry: ''
       repository: 1panel/deepseek-harness
-      tag: 0.2.0-rc.2
+      tag: 0.2.1-rc.2
     port: 8443
     probe:
       exec: CMD curl -fsS --max-time 5 http://127.0.0.1:3080/

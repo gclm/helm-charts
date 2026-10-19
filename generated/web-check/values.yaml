@@ -11,6 +11,6 @@ services:
     image:
       registry: ''
       repository: lissy93/web-check
-      tag: 2.3.6
+      tag: 2.3.7
     port: 3000
     volumeMounts: []

@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: stalwartlabs/stalwart
-      tag: v0.16.26-alpine
+      tag: v0.16.27-alpine
     port: 443
     volumeMounts:
     - mountPath: /opt/stalwart

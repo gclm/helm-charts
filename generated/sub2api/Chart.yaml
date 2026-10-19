@@ -2,9 +2,9 @@ apiVersion: v2
 name: sub2api
 description: Sub2API (converted from 1Panel appstore)
 type: application
-version: 0.2.16+g22ddcc
-appVersion: 0.2.16
+version: 0.2.17+g8734bd
+appVersion: 0.2.17
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 4c94dad79cf761a1e15c7bd611bb5480a4e38916
+  upstream/sha: 8c586bba9f1706bc12052c58f10d7a86122c1648

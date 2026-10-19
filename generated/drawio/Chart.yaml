@@ -2,9 +2,9 @@ apiVersion: v2
 name: drawio
 description: Draw.io (converted from 1Panel appstore)
 type: application
-version: 32.4.1+g28508b
-appVersion: 32.4.1
+version: 32.5.5+ge7026e
+appVersion: 32.5.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 4c94dad79cf761a1e15c7bd611bb5480a4e38916
+  upstream/sha: 8c586bba9f1706bc12052c58f10d7a86122c1648

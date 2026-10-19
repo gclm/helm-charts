@@ -21,7 +21,7 @@ services:
     image:
       registry: ghcr.io
       repository: open-webui/open-webui
-      tag: v0.12.2
+      tag: v0.12.3
     port: 8080
     volumeMounts:
     - mountPath: /app/backend/data
