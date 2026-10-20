@@ -2,7 +2,7 @@
 
 快速部署并开始使用 Kimi、GLM、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等多种模型
 
-- 上游: 1Panel-dev/appstore `apps/ollama` @ `8c586bba9f17`
+- 上游: 1Panel-dev/appstore `apps/ollama` @ `16e3972e248f`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

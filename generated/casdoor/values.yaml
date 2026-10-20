@@ -16,6 +16,6 @@ services:
     image:
       registry: ''
       repository: casbin/casdoor
-      tag: 4.21.0
+      tag: 4.22.0
     port: 8000
     volumeMounts: []

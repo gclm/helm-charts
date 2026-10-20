@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: bytebase/bytebase
-      tag: 3.23.1
+      tag: 3.24.0
     port: 8080
     volumeMounts:
     - mountPath: /var/opt/bytebase

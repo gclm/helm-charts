@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: rabbitmq
-      tag: 4.3.6-management-alpine
+      tag: 4.4.0-management-alpine
     port: 5672
     volumeMounts:
     - mountPath: /var/lib/rabbitmq/

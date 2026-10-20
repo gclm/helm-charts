@@ -45,7 +45,7 @@ services:
     image:
       registry: ''
       repository: roundcube/roundcubemail
-      tag: 1.7.4-apache
+      tag: 1.7.5-apache
     port: 80
     volumeMounts:
     - mountPath: /var/log/apache2

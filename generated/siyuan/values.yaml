@@ -28,7 +28,7 @@ services:
     image:
       registry: ''
       repository: b3log/siyuan
-      tag: v3.8.7
+      tag: v3.8.8
     port: 6806
     volumeMounts:
     - mountPath: /siyuan/workspace

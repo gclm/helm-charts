@@ -2,9 +2,9 @@ apiVersion: v2
 name: hermes-agent
 description: Hermes Agent (converted from 1Panel appstore)
 type: application
-version: 2026.9.24+gf7d806
-appVersion: 2026.9.24
+version: 0.22.2+g086d0a
+appVersion: 0.22.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 8c586bba9f1706bc12052c58f10d7a86122c1648
+  upstream/sha: 16e3972e248fe6b3a15ebefadbb140ed5999f795

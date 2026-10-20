@@ -2,9 +2,9 @@ apiVersion: v2
 name: rabbitmq
 description: RabbitMQ (converted from 1Panel appstore)
 type: application
-version: 4.3.6+management-alpine
-appVersion: 4.3.6+management-alpine
+version: 4.4.0+management-alpine
+appVersion: 4.4.0+management-alpine
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 8c586bba9f1706bc12052c58f10d7a86122c1648
+  upstream/sha: 16e3972e248fe6b3a15ebefadbb140ed5999f795

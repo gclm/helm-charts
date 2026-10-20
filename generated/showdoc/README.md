@@ -2,7 +2,7 @@
 
 一个非常适合 IT 团队的在线 API 文档、技术文档工具
 
-- 上游: 1Panel-dev/appstore `apps/showdoc` @ `8c586bba9f17`
+- 上游: 1Panel-dev/appstore `apps/showdoc` @ `16e3972e248f`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

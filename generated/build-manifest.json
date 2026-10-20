@@ -110,9 +110,9 @@
     },
     "bytebase": {
       "chart": "bytebase",
-      "sha": "f7bdf89e7128",
+      "sha": "480d746cd30b",
       "status": "success",
-      "version": "3.23.1+g3ef616"
+      "version": "3.24.0+g541378"
     },
     "calibre-web": {
       "chart": "calibre-web",
@@ -122,15 +122,15 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "9c182bbdaf58",
+      "sha": "d2ae4ee070b2",
       "status": "success",
-      "version": "4.21.0+g089e67"
+      "version": "4.22.0+g4ff78a"
     },
     "certd": {
       "chart": "certd",
-      "sha": "627693b6b2e4",
+      "sha": "96c90eac60fe",
       "status": "success",
-      "version": "1.45.2+g12b657"
+      "version": "1.45.3+gfdc7ba"
     },
     "certimate": {
       "chart": "certimate",
@@ -158,9 +158,9 @@
     },
     "cloudbeaver": {
       "chart": "cloudbeaver",
-      "sha": "c33be4fcf8e6",
+      "sha": "1a942b11b525",
       "status": "success",
-      "version": "26.2.2+gf5272e"
+      "version": "26.2.3+g16cfb7"
     },
     "cloudflared": {
       "chart": "cloudflared",
@@ -206,9 +206,9 @@
     },
     "cordys-crm": {
       "chart": "cordys-crm",
-      "sha": "5f18746c922b",
+      "sha": "469c6c57935a",
       "status": "success",
-      "version": "1.9.3+g5ffd61"
+      "version": "1.9.4+g578faa"
     },
     "cyberchef": {
       "chart": "cyberchef",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "4849952f98ce",
+      "sha": "add7ce31b071",
       "status": "success",
-      "version": "0.6.47+g8f4894"
+      "version": "0.6.49+g4c9cd9"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -356,9 +356,9 @@
     },
     "freshrss": {
       "chart": "freshrss",
-      "sha": "692e8d736314",
+      "sha": "831588d9d5a9",
       "status": "success",
-      "version": "1.30.1+gecdfac"
+      "version": "1.30.2+g0f9d72"
     },
     "gatus": {
       "chart": "gatus",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "b1807bc953bf",
+      "sha": "b709aec32388",
       "status": "success",
-      "version": "2026.9.24+gf7d806"
+      "version": "0.22.2+g086d0a"
     },
     "huginn": {
       "chart": "huginn",
@@ -638,9 +638,9 @@
     },
     "miniflux": {
       "chart": "miniflux",
-      "sha": "f3e995368fb8",
+      "sha": "72974a02b981",
       "status": "success",
-      "version": "2.3.3+g4af016"
+      "version": "2.3.4+g11a639"
     },
     "mkdocs-material": {
       "chart": "mkdocs-material",
@@ -668,9 +668,9 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "2e9ceb6b1664",
+      "sha": "354c54202ca0",
       "status": "success",
-      "version": "2.44.3+g6a62f9"
+      "version": "2.44.4+g7520e9"
     },
     "nacos": {
       "chart": "nacos",
@@ -722,9 +722,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "f741f25d978d",
+      "sha": "264e4758612b",
       "status": "success",
-      "version": "2.2.27+g811ed0"
+      "version": "2.2.28+g37d1d4"
     },
     "node": {
       "chart": "node",
@@ -872,9 +872,9 @@
     },
     "rabbitmq": {
       "chart": "rabbitmq",
-      "sha": "a45e2b4fc016",
+      "sha": "586be46228d9",
       "status": "success",
-      "version": "4.3.6+management-alpine"
+      "version": "4.4.0+management-alpine"
     },
     "redis-commander": {
       "chart": "redis-commander",
@@ -896,9 +896,9 @@
     },
     "roundcube": {
       "chart": "roundcube",
-      "sha": "67d6b2bc56f5",
+      "sha": "9ed5105e9ae4",
       "status": "success",
-      "version": "1.7.4+apache"
+      "version": "1.7.5+apache"
     },
     "rustdesk": {
       "chart": "rustdesk",
@@ -944,9 +944,9 @@
     },
     "siyuan": {
       "chart": "siyuan",
-      "sha": "0039d056588e",
+      "sha": "f64dcf5e6442",
       "status": "success",
-      "version": "3.8.7+g80da5f"
+      "version": "3.8.8+gc441df"
     },
     "sonarqube": {
       "chart": "sonarqube",
@@ -1034,9 +1034,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "63043200b241",
+      "sha": "c7c21529e8d7",
       "status": "success",
-      "version": "2.48.0+gccf9ef"
+      "version": "2.49.0+gf960bf"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1076,9 +1076,9 @@
     },
     "vector": {
       "chart": "vector",
-      "sha": "2430ef274bc4",
+      "sha": "4eac641a322a",
       "status": "success",
-      "version": "0.59.0+debian"
+      "version": "0.60.0+debian"
     },
     "verdaccio": {
       "chart": "verdaccio",
@@ -1177,5 +1177,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "8c586bba9f1706bc12052c58f10d7a86122c1648"
+  "upstream_sha": "16e3972e248fe6b3a15ebefadbb140ed5999f795"
 }

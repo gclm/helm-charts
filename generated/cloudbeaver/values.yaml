@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: dbeaver/cloudbeaver
-      tag: 26.2.2
+      tag: 26.2.3
     port: 8978
     volumeMounts:
     - mountPath: /opt/cloudbeaver/workspace

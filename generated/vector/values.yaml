@@ -30,7 +30,7 @@ services:
     image:
       registry: ''
       repository: timberio/vector
-      tag: 0.59.0-debian
+      tag: 0.60.0-debian
     port: 8686
     volumeMounts:
     - mountPath: /etc/vector/vector.yaml

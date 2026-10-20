@@ -2,7 +2,7 @@
 
 .NET 运行环境
 
-- 上游: 1Panel-dev/appstore `apps/dotnet` @ `8c586bba9f17`
+- 上游: 1Panel-dev/appstore `apps/dotnet` @ `16e3972e248f`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

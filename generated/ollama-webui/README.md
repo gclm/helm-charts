@@ -2,7 +2,7 @@
 
 用户友好的 AI 界面（支持 Ollama、OpenAI API 等）
 
-- 上游: 1Panel-dev/appstore `apps/ollama-webui` @ `8c586bba9f17`
+- 上游: 1Panel-dev/appstore `apps/ollama-webui` @ `16e3972e248f`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
