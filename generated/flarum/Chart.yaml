@@ -2,9 +2,9 @@ apiVersion: v2
 name: flarum
 description: Flarum (converted from 1Panel appstore)
 type: application
-version: 1.8.19+g20d302
-appVersion: 1.8.19
+version: 1.8.20+g7c9f47
+appVersion: 1.8.20
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 16e3972e248fe6b3a15ebefadbb140ed5999f795
+  upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632

@@ -2,7 +2,7 @@
 
 基于 Web 的开源音乐收藏服务器和流媒体
 
-- 上游: 1Panel-dev/appstore `apps/navidrome` @ `16e3972e248f`
+- 上游: 1Panel-dev/appstore `apps/navidrome` @ `36705fd924e8`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

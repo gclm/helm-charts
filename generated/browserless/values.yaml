@@ -11,7 +11,7 @@ services:
     image:
       registry: ghcr.io
       repository: browserless/chrome
-      tag: v2.57.1
+      tag: v2.57.2
     port: 3000
     probe:
       exec: CMD curl -f http://localhost:3000/pressure

@@ -29,7 +29,7 @@ services:
     image:
       registry: ''
       repository: ghost
-      tag: 6.71.0
+      tag: 6.72.0
     port: 2368
     volumeMounts:
     - mountPath: /var/lib/ghost/content

@@ -52,7 +52,7 @@ services:
     image:
       registry: ''
       repository: crazymax/flarum
-      tag: 1.8.19
+      tag: 1.8.20
     port: 8000
     volumeMounts:
     - mountPath: /data

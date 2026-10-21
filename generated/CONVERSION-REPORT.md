@@ -1,6 +1,6 @@
 # Conversion report
 
-- upstream: 1Panel-dev/appstore @ `16e3972e248fe6b3a15ebefadbb140ed5999f795`
+- upstream: 1Panel-dev/appstore @ `36705fd924e8f3db82dfefcd9bf68dd91bb66632`
 - success: **196** · skipped: **68** · failed: **0**
 
 ## Success
@@ -11,7 +11,7 @@
 - affine -> chart affine (0.27.4+geaeb9b) sha:2fbfc4d148ab
 - ai-gateway -> chart ai-gateway (1.4.0+g563323) sha:d0578e93b829
 - ai-portal -> chart ai-portal (1.0.10+g0efe25) sha:18cc06c61ec3
-- alist -> chart alist (3.65.0+g2bfe05) sha:b0820ee1cc57
+- alist -> chart alist (3.66.0+g548b56) sha:f0b0bae5d88e
 - answer -> chart answer (2.0.3+g9922f3) sha:6f314a38d204
 - archivebox -> chart archivebox (0.9.73+gbe0b35) sha:16b64b14fee7
 - artalk -> chart artalk (2.10.0+g2dcdcd) sha:0ad444ca58e5
@@ -22,17 +22,17 @@
 - bililive-go -> chart bililive-go (0.8.3+gdd048c) sha:bff7024a1369
 - bitwarden -> chart bitwarden (1.37.4+alpine) sha:c9430f74cc06
 - blinko -> chart blinko (1.8.8+g2cebd8) sha:673faf394fb4
-- browserless -> chart browserless (2.57.1+g660f4d) sha:574e7185dee2
+- browserless -> chart browserless (2.57.2+g1dea27) sha:dbf3c8d51d91
 - bytebase -> chart bytebase (3.24.0+g541378) sha:480d746cd30b
 - calibre-web -> chart calibre-web (0.6.27+g5d9b5f) sha:788722b4a9ac
-- casdoor -> chart casdoor (4.22.0+g4ff78a) sha:d2ae4ee070b2
+- casdoor -> chart casdoor (4.23.0+g2ad2d8) sha:f3f1adfc9755
 - certd -> chart certd (1.45.3+gfdc7ba) sha:96c90eac60fe
 - certimate -> chart certimate (0.4.35+g91ee0c) sha:0cfd3e4780de
 - changedetectionio -> chart changedetectionio (0.60.9+g839edf) sha:53f80b3a69ff
 - chatgpt-next-web -> chart chatgpt-next-web (2.16.1+gd83ecc) sha:4eb331717dbb
 - clawswarm -> chart clawswarm (1.0.5+gc3357e) sha:1ee5f98c027a
 - cloudbeaver -> chart cloudbeaver (26.2.3+g16cfb7) sha:1a942b11b525
-- cloudflared -> chart cloudflared (2026.10.1+g4aa6f5) sha:707e64579d8d
+- cloudflared -> chart cloudflared (2026.10.3+g987d91) sha:e4f922db88d8
 - cloudreve -> chart cloudreve (4.19.1+g0df9ac) sha:a1e50bad8e73
 - code-server -> chart code-server (4.141.0+gb64831) sha:bedf46fcca6f
 - comfyui -> chart comfyui (0.33.1+g3d6591) sha:742593ff4d35
@@ -44,7 +44,7 @@
 - dashy -> chart dashy (4.8.7+g1fd069) sha:5c11791d37ff
 - dataease -> chart dataease (3.1.0+g571109) sha:c14fdf027e62
 - dbhub -> chart dbhub (1.5.0+g9fb42e) sha:b7c893990fa3
-- dbx -> chart dbx (0.6.49+g4c9cd9) sha:add7ce31b071
+- dbx -> chart dbx (0.6.51+g4ef09d) sha:5d724ea7c707
 - deepseek-harness -> chart deepseek-harness (0.2.1+rc.2) sha:509668f4d883
 - discourse -> chart discourse (3.5.0+g532fed) sha:c413f8c222f0
 - discuz -> chart discuz (3.4.0+g84fac0) sha:c70789cae1b5
@@ -62,17 +62,17 @@
 - filebrowser -> chart filebrowser (2.63.23+g90a6a3) sha:ceebe6512606
 - filecodebox -> chart filecodebox (2.8.3+g52bb93) sha:0943500dfdcc
 - firefly-iii -> chart firefly-iii (6.4.2+gb88319) sha:d8f661ddf631
-- flarum -> chart flarum (1.8.19+g20d302) sha:f87f90d6c7f4
+- flarum -> chart flarum (1.8.20+g7c9f47) sha:98c3aed81109
 - focalboard -> chart focalboard (7.11.4+gcfa875) sha:fcf40c8342ef
 - freshrss -> chart freshrss (1.30.2+g0f9d72) sha:831588d9d5a9
 - gatus -> chart gatus (5.37.0+gfc5cf8) sha:79c470a3d5d2
-- ghost -> chart ghost (6.71.0+gc19ac7) sha:1d4995ca22df
+- ghost -> chart ghost (6.72.0+g562673) sha:7a63e558fcec
 - gitea -> chart gitea (27.3.8+gb95168) sha:74dac8f72884
 - glance -> chart glance (0.8.7+g7b6455) sha:57d9827ef4eb
 - go -> chart go (1.26.0+g1224b4) sha:3a89d62da3a2
 - gotify -> chart gotify (3.1.1+g356a69) sha:40a1540c98e8
 - grafana -> chart grafana (13.2.4+g62a37d) sha:adb03dab8641
-- gsmanager -> chart gsmanager (3.14.0+gbbdc7d) sha:4404633a5ecb
+- gsmanager -> chart gsmanager (3.14.1+gd3915e) sha:9b23ba697baa
 - halo -> chart halo (2.27.0+ga98fe2) sha:8045b79cc358
 - heimdall -> chart heimdall (2.8.3+g6d348a) sha:6086d79d8f03
 - hermes-agent -> chart hermes-agent (0.22.2+g086d0a) sha:b709aec32388
@@ -92,8 +92,8 @@
 - koishi -> chart koishi (1.16.0+g90bedd) sha:be9be8a85fe2
 - komari -> chart komari (1.6.0+gf175db) sha:67b0d76c3189
 - komga -> chart komga (1.29.1+g3ea964) sha:8f44f221deff
-- langbot -> chart langbot (4.11.0+g6f34f2) sha:e5475bec11bd
-- langflow -> chart langflow (1.12.6+gc879c1) sha:659695dc994f
+- langbot -> chart langbot (4.11.1+gf61a96) sha:8af8bdadd1d0
+- langflow -> chart langflow (1.12.7+gb5053e) sha:4c237e1e75ff
 - laya-server -> chart laya-server (0.1.2+gd1da35) sha:7522ef6ccc2c
 - linkding -> chart linkding (1.47.0+plus) sha:a75a89ca555c
 - linux-command -> chart linux-command (1.22.0+g2fe515) sha:c7da65c94896
@@ -110,7 +110,7 @@
 - mcsmanager-web -> chart mcsmanager-web (10.21.2+g3ae1b7) sha:7eebbfc43ecb
 - meilisearch -> chart meilisearch (1.55.0+g8dece1) sha:4ceb5d99fe42
 - memos -> chart memos (0.31.0+g2f124e) sha:1450f0caef9b
-- metabase -> chart metabase (0.64.2+g1349f3) sha:5ff12ddfa7d6
+- metabase -> chart metabase (0.64.3+g7354b1) sha:232be608dcd2
 - miniflux -> chart miniflux (2.3.4+g11a639) sha:72974a02b981
 - mkdocs-material -> chart mkdocs-material (9.7.7+g7a784d) sha:db350366971f
 - mliev-dwz -> chart mliev-dwz (2.24.1+ga5631d) sha:b83fb0d6c3c0
@@ -122,22 +122,22 @@
 - new-api -> chart new-api (0.13.2+g93aa13) sha:9ae6e620561b
 - newsnow -> chart newsnow (0.0.41+g4f4715) sha:1af74f454d3f
 - nextcloud -> chart nextcloud (35.0.2+g92c8b7) sha:0f98afa29312
-- nexus -> chart nexus (3.97.0+g488133) sha:60da7fd8ecbc
+- nexus -> chart nexus (3.97.1+gecaea8) sha:a4b3d45aed44
 - nezha -> chart nezha (2.3.18+g5e7866) sha:588d7edaf4cd
 - nginx-proxy-manager -> chart nginx-proxy-manager (2.16.0+gff2240) sha:5e377907e799
-- nocobase -> chart nocobase (2.2.28+g37d1d4) sha:264e4758612b
-- node -> chart node (25.9.0+g9143b8) sha:4b3b77e9184a
-- node-red -> chart node-red (5.0.8+gb6e581) sha:33ea792bc7b9
+- nocobase -> chart nocobase (2.2.29+gc3d4ce) sha:a4592e47c8f5
+- node -> chart node (26.12.1+g9143b8) sha:4b3b77e9184a
+- node-red -> chart node-red (5.0.9+g1cf07d) sha:5c3beabbd206
 - nodebb -> chart nodebb (4.16.3+g70fe81) sha:2b6a616f2d4b
 - ntfy -> chart ntfy (2.32.0+g09d084) sha:529dffe8634d
 - obsidian_livesync -> chart obsidian-livesync (3.5.3+g9a0134) sha:1ebca04041c4
 - octop -> chart octop (1.0.2+g9933f9) sha:55c76fa4d3d5
 - odoo -> chart odoo (19.0.0+gd394b6) sha:224ddad95783
-- ollama -> chart ollama (0.40.6+ga947b3) sha:d40ff7cd9b81
+- ollama -> chart ollama (0.40.7+g7fa632) sha:920503595d71
 - ollama-webui -> chart ollama-webui (0.12.3+g1163d4) sha:39453cdb8245
 - onlyoffice -> chart onlyoffice (10.0.0+g104160) sha:3b5d0c27722e
 - openclaw -> chart openclaw (2026.10.5+gaa4ec5) sha:9396137d6583
-- opengist -> chart opengist (1.15.2+gaacf4d) sha:b2261408b86f
+- opengist -> chart opengist (1.15.3+gbd1710) sha:4b3b55db18a3
 - openlitespeed -> chart openlitespeed (1.8.4+lsphp81) sha:0727043a1e11
 - outline -> chart outline (1.11.0+ged79f3) sha:aa75ae8a70b5
 - palworld -> chart palworld (2.8.0+g8abdff) sha:58c72a74c238
@@ -147,7 +147,7 @@
 - phpmyadmin -> chart phpmyadmin (5.2.3+g539245) sha:e6ef58acabe1
 - planka -> chart planka (2.2.1+g354f6b) sha:b1151fa46da6
 - python -> chart python (3.15.0+g1636a6) sha:4ed40c529cfa
-- qbittorrent -> chart qbittorrent (5.2.4+ga9227a) sha:ebb909cc002c
+- qbittorrent -> chart qbittorrent (5.3.0+g4e5871) sha:881b8c21c114
 - qiandao -> chart qiandao (20250803.0.0+gf4eb5f) sha:1f050fc5d867
 - qinglong -> chart qinglong (2.23.0+debian) sha:99a1889328ec
 - rabbitmq -> chart rabbitmq (4.4.0+management-alpine) sha:586be46228d9
@@ -171,14 +171,14 @@
 - sun-panel -> chart sun-panel (1.8.1+g31dff8) sha:13208a33b318
 - synapse -> chart synapse (1.163.0+gd59a30) sha:9f50052b5f5e
 - tailchat -> chart tailchat (1.11.18+g00ed41) sha:c42c8d5ac9b2
-- teable -> chart teable (0.0.0-d20261016.gdaae4+g16b643) sha:793906367823
+- teable -> chart teable (0.0.0-d20261021.g7137f+gf8d4ba) sha:1f44dc8e9672
 - teamspeak -> chart teamspeak (3.13.8+ge8db25) sha:6a3c621a5a8d
 - tinyrdm -> chart tinyrdm (1.2.7+g020cb1) sha:ae67c25bf151
 - tomcat -> chart tomcat (10.1.43+gea077f) sha:0ce6190ee15e
 - trendradar -> chart trendradar (6.11.0+g6dd2ca) sha:99c56a98f447
 - trilium -> chart trilium (0.106.0+gf60f0b) sha:a4dfa4377f00
-- twenty -> chart twenty (2.49.0+gf960bf) sha:c7c21529e8d7
-- twikoo -> chart twikoo (2.0.15+gfa1175) sha:addcb60a458d
+- twenty -> chart twenty (2.50.1+g1996cd) sha:e92ef51e0023
+- twikoo -> chart twikoo (2.0.16+gafba20) sha:55ca7a9d374b
 - typecho -> chart typecho (1.3.0+php8.2-apache) sha:5dcbf26cb6d6
 - umami -> chart umami (3.4.0+g25adcc) sha:ce576771b8b7
 - upage -> chart upage (2.0.0+g9c398c) sha:bde872804625
@@ -187,8 +187,8 @@
 - vector -> chart vector (0.60.0+debian) sha:4eac641a322a
 - verdaccio -> chart verdaccio (6.10.6+g65c099) sha:dbd9b9eff9b1
 - waline -> chart waline (1.43.4+g2b03a9) sha:475726f8fe5b
-- wallos -> chart wallos (5.10.0+g114db8) sha:8dfe3ca2fadd
-- web-check -> chart web-check (2.3.7+gfca425) sha:8102b1396dd5
+- wallos -> chart wallos (5.10.1+ge2bccf) sha:4561cdace3d2
+- web-check -> chart web-check (2.3.8+g6fdb1d) sha:19144cb0c7cc
 - wechatmarkdowneditor -> chart wechatmarkdowneditor (2.1.0+g8a6b00) sha:852bf36200c1
 - wikijs -> chart wikijs (2.5.316+g087c8d) sha:a96a1735f59e
 - wordpress -> chart wordpress (7.1.3+g124334) sha:ca2ac4246b81

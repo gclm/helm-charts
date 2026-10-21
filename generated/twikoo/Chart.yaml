@@ -2,9 +2,9 @@ apiVersion: v2
 name: twikoo
 description: Twikoo (converted from 1Panel appstore)
 type: application
-version: 2.0.15+gfa1175
-appVersion: 2.0.15
+version: 2.0.16+gafba20
+appVersion: 2.0.16
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 16e3972e248fe6b3a15ebefadbb140ed5999f795
+  upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632

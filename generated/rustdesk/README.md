@@ -2,7 +2,7 @@
 
 开源的远程桌面软件
 
-- 上游: 1Panel-dev/appstore `apps/rustdesk` @ `16e3972e248f`
+- 上游: 1Panel-dev/appstore `apps/rustdesk` @ `36705fd924e8`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -25,7 +25,7 @@ services:
     image:
       registry: ''
       repository: xiaozhu674/gameservermanager
-      tag: 3.14.0
+      tag: 3.14.1
     port: 3001
     volumeMounts:
     - mountPath: /home/.config

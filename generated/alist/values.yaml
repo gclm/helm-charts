@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: xhofe/alist
-      tag: v3.65.0
+      tag: v3.66.0
     port: 5244
     volumeMounts:
     - mountPath: /opt/alist/data

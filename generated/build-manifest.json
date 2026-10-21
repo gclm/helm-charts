@@ -38,9 +38,9 @@
     },
     "alist": {
       "chart": "alist",
-      "sha": "b0820ee1cc57",
+      "sha": "f0b0bae5d88e",
       "status": "success",
-      "version": "3.65.0+g2bfe05"
+      "version": "3.66.0+g548b56"
     },
     "answer": {
       "chart": "answer",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "574e7185dee2",
+      "sha": "dbf3c8d51d91",
       "status": "success",
-      "version": "2.57.1+g660f4d"
+      "version": "2.57.2+g1dea27"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "d2ae4ee070b2",
+      "sha": "f3f1adfc9755",
       "status": "success",
-      "version": "4.22.0+g4ff78a"
+      "version": "4.23.0+g2ad2d8"
     },
     "certd": {
       "chart": "certd",
@@ -164,9 +164,9 @@
     },
     "cloudflared": {
       "chart": "cloudflared",
-      "sha": "707e64579d8d",
+      "sha": "e4f922db88d8",
       "status": "success",
-      "version": "2026.10.1+g4aa6f5"
+      "version": "2026.10.3+g987d91"
     },
     "cloudreve": {
       "chart": "cloudreve",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "add7ce31b071",
+      "sha": "5d724ea7c707",
       "status": "success",
-      "version": "0.6.49+g4c9cd9"
+      "version": "0.6.51+g4ef09d"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -344,9 +344,9 @@
     },
     "flarum": {
       "chart": "flarum",
-      "sha": "f87f90d6c7f4",
+      "sha": "98c3aed81109",
       "status": "success",
-      "version": "1.8.19+g20d302"
+      "version": "1.8.20+g7c9f47"
     },
     "focalboard": {
       "chart": "focalboard",
@@ -368,9 +368,9 @@
     },
     "ghost": {
       "chart": "ghost",
-      "sha": "1d4995ca22df",
+      "sha": "7a63e558fcec",
       "status": "success",
-      "version": "6.71.0+gc19ac7"
+      "version": "6.72.0+g562673"
     },
     "gitea": {
       "chart": "gitea",
@@ -404,9 +404,9 @@
     },
     "gsmanager": {
       "chart": "gsmanager",
-      "sha": "4404633a5ecb",
+      "sha": "9b23ba697baa",
       "status": "success",
-      "version": "3.14.0+gbbdc7d"
+      "version": "3.14.1+gd3915e"
     },
     "halo": {
       "chart": "halo",
@@ -524,15 +524,15 @@
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "e5475bec11bd",
+      "sha": "8af8bdadd1d0",
       "status": "success",
-      "version": "4.11.0+g6f34f2"
+      "version": "4.11.1+gf61a96"
     },
     "langflow": {
       "chart": "langflow",
-      "sha": "659695dc994f",
+      "sha": "4c237e1e75ff",
       "status": "success",
-      "version": "1.12.6+gc879c1"
+      "version": "1.12.7+gb5053e"
     },
     "laya-server": {
       "chart": "laya-server",
@@ -632,9 +632,9 @@
     },
     "metabase": {
       "chart": "metabase",
-      "sha": "5ff12ddfa7d6",
+      "sha": "232be608dcd2",
       "status": "success",
-      "version": "0.64.2+g1349f3"
+      "version": "0.64.3+g7354b1"
     },
     "miniflux": {
       "chart": "miniflux",
@@ -704,9 +704,9 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "60da7fd8ecbc",
+      "sha": "a4b3d45aed44",
       "status": "success",
-      "version": "3.97.0+g488133"
+      "version": "3.97.1+gecaea8"
     },
     "nezha": {
       "chart": "nezha",
@@ -722,21 +722,21 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "264e4758612b",
+      "sha": "a4592e47c8f5",
       "status": "success",
-      "version": "2.2.28+g37d1d4"
+      "version": "2.2.29+gc3d4ce"
     },
     "node": {
       "chart": "node",
       "sha": "4b3b77e9184a",
       "status": "success",
-      "version": "25.9.0+g9143b8"
+      "version": "26.12.1+g9143b8"
     },
     "node-red": {
       "chart": "node-red",
-      "sha": "33ea792bc7b9",
+      "sha": "5c3beabbd206",
       "status": "success",
-      "version": "5.0.8+gb6e581"
+      "version": "5.0.9+g1cf07d"
     },
     "nodebb": {
       "chart": "nodebb",
@@ -770,9 +770,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "d40ff7cd9b81",
+      "sha": "920503595d71",
       "status": "success",
-      "version": "0.40.6+ga947b3"
+      "version": "0.40.7+g7fa632"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -794,9 +794,9 @@
     },
     "opengist": {
       "chart": "opengist",
-      "sha": "b2261408b86f",
+      "sha": "4b3b55db18a3",
       "status": "success",
-      "version": "1.15.2+gaacf4d"
+      "version": "1.15.3+gbd1710"
     },
     "openlitespeed": {
       "chart": "openlitespeed",
@@ -854,9 +854,9 @@
     },
     "qbittorrent": {
       "chart": "qbittorrent",
-      "sha": "ebb909cc002c",
+      "sha": "881b8c21c114",
       "status": "success",
-      "version": "5.2.4+ga9227a"
+      "version": "5.3.0+g4e5871"
     },
     "qiandao": {
       "chart": "qiandao",
@@ -998,9 +998,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "793906367823",
+      "sha": "1f44dc8e9672",
       "status": "success",
-      "version": "0.0.0-d20261016.gdaae4+g16b643"
+      "version": "0.0.0-d20261021.g7137f+gf8d4ba"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1034,15 +1034,15 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "c7c21529e8d7",
+      "sha": "e92ef51e0023",
       "status": "success",
-      "version": "2.49.0+gf960bf"
+      "version": "2.50.1+g1996cd"
     },
     "twikoo": {
       "chart": "twikoo",
-      "sha": "addcb60a458d",
+      "sha": "55ca7a9d374b",
       "status": "success",
-      "version": "2.0.15+gfa1175"
+      "version": "2.0.16+gafba20"
     },
     "typecho": {
       "chart": "typecho",
@@ -1094,15 +1094,15 @@
     },
     "wallos": {
       "chart": "wallos",
-      "sha": "8dfe3ca2fadd",
+      "sha": "4561cdace3d2",
       "status": "success",
-      "version": "5.10.0+g114db8"
+      "version": "5.10.1+ge2bccf"
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "8102b1396dd5",
+      "sha": "19144cb0c7cc",
       "status": "success",
-      "version": "2.3.7+gfca425"
+      "version": "2.3.8+g6fdb1d"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1177,5 +1177,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "16e3972e248fe6b3a15ebefadbb140ed5999f795"
+  "upstream_sha": "36705fd924e8f3db82dfefcd9bf68dd91bb66632"
 }

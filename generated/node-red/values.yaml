@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: nodered/node-red
-      tag: 5.0.8
+      tag: 5.0.9
     port: 1880
     volumeMounts:
     - mountPath: /data

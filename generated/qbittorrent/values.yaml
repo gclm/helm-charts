@@ -30,7 +30,7 @@ services:
     image:
       registry: ''
       repository: linuxserver/qbittorrent
-      tag: 5.2.4
+      tag: 5.3.0
     volumeMounts:
     - mountPath: /downloads
       name: vol-data
