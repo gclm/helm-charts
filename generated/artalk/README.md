@@ -2,7 +2,7 @@
 
 一款简洁的自托管评论系统
 
-- 上游: 1Panel-dev/appstore `apps/artalk` @ `36705fd924e8`
+- 上游: 1Panel-dev/appstore `apps/artalk` @ `488873b3f4e7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

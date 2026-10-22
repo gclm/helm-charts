@@ -2,7 +2,7 @@
 
 为开发人员提供方便的在线工具集合，具有出色的用户体验
 
-- 上游: 1Panel-dev/appstore `apps/it-tools` @ `36705fd924e8`
+- 上游: 1Panel-dev/appstore `apps/it-tools` @ `488873b3f4e7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -1,6 +1,6 @@
 # Conversion report
 
-- upstream: 1Panel-dev/appstore @ `36705fd924e8f3db82dfefcd9bf68dd91bb66632`
+- upstream: 1Panel-dev/appstore @ `488873b3f4e759bc09563631e0ec18e881a43a39`
 - success: **196** · skipped: **68** · failed: **0**
 
 ## Success
@@ -39,7 +39,7 @@
 - consul -> chart consul (2.0.4+g2a21db) sha:a6c3c89b6994
 - convertx -> chart convertx (0.19.0+g335cc1) sha:814cbfa3b260
 - copaw -> chart copaw (2.2.2+ge9ebd9) sha:403baaaf8208
-- cordys-crm -> chart cordys-crm (1.9.4+g578faa) sha:469c6c57935a
+- cordys-crm -> chart cordys-crm (1.9.5+g9271a7) sha:2b975a7a21d0
 - cyberchef -> chart cyberchef (11.5.0+g67cfb8) sha:612648ab0832
 - dashy -> chart dashy (4.8.7+g1fd069) sha:5c11791d37ff
 - dataease -> chart dataease (3.1.0+g571109) sha:c14fdf027e62
@@ -64,7 +64,7 @@
 - firefly-iii -> chart firefly-iii (6.4.2+gb88319) sha:d8f661ddf631
 - flarum -> chart flarum (1.8.20+g7c9f47) sha:98c3aed81109
 - focalboard -> chart focalboard (7.11.4+gcfa875) sha:fcf40c8342ef
-- freshrss -> chart freshrss (1.30.2+g0f9d72) sha:831588d9d5a9
+- freshrss -> chart freshrss (1.30.4+g524510) sha:a4a92dd26e7b
 - gatus -> chart gatus (5.37.0+gfc5cf8) sha:79c470a3d5d2
 - ghost -> chart ghost (6.72.0+g562673) sha:7a63e558fcec
 - gitea -> chart gitea (27.3.8+gb95168) sha:74dac8f72884
@@ -72,10 +72,10 @@
 - go -> chart go (1.26.0+g1224b4) sha:3a89d62da3a2
 - gotify -> chart gotify (3.1.1+g356a69) sha:40a1540c98e8
 - grafana -> chart grafana (13.2.4+g62a37d) sha:adb03dab8641
-- gsmanager -> chart gsmanager (3.14.1+gd3915e) sha:9b23ba697baa
+- gsmanager -> chart gsmanager (3.14.2+gaf0365) sha:773cc10e89cc
 - halo -> chart halo (2.27.0+ga98fe2) sha:8045b79cc358
 - heimdall -> chart heimdall (2.8.3+g6d348a) sha:6086d79d8f03
-- hermes-agent -> chart hermes-agent (0.22.2+g086d0a) sha:b709aec32388
+- hermes-agent -> chart hermes-agent (0.22.4+g846bc2) sha:532864c6132d
 - huginn -> chart huginn (2026.10.14+gd1f895) sha:4decf81d6e69
 - it-tools -> chart it-tools (2024.10.22+7ca5933) sha:7a60cbff907a
 - jaeger -> chart jaeger (1.76.0+g64f10b) sha:9d5e4c48438d
@@ -88,7 +88,7 @@
 - kibana -> chart kibana (9.5.5+g571e7a) sha:b8c4e1e4e26c
 - kirara-agent -> chart kirara-agent (3.2.0+gcf93a2) sha:f56966a006fa
 - kkfileview -> chart kkfileview (4.1.0+g27c557) sha:7f1e6d987f45
-- kodbox -> chart kodbox (1.4505.0+g850184) sha:b0e167ce3198
+- kodbox -> chart kodbox (1.70.03+gf79da9) sha:3d16607731b7
 - koishi -> chart koishi (1.16.0+g90bedd) sha:be9be8a85fe2
 - komari -> chart komari (1.6.0+gf175db) sha:67b0d76c3189
 - komga -> chart komga (1.29.1+g3ea964) sha:8f44f221deff
@@ -105,7 +105,7 @@
 - maddy-mail -> chart maddy-mail (0.9.6+gf34d25) sha:fa0e64c885d6
 - mailserver -> chart mailserver (16.0.1+gcf204e) sha:caa92c561051
 - mattermost -> chart mattermost (12.0.0+g7345e0) sha:63bb499a2c42
-- maxkb -> chart maxkb (2.10.7+lts) sha:d0fc3215ed67
+- maxkb -> chart maxkb (2.10.8+lts) sha:31dd6d60ed0a
 - mblog -> chart mblog (1.1.0+g59ea8f) sha:364bf0024d3c
 - mcsmanager-web -> chart mcsmanager-web (10.21.2+g3ae1b7) sha:7eebbfc43ecb
 - meilisearch -> chart meilisearch (1.55.0+g8dece1) sha:4ceb5d99fe42
@@ -133,7 +133,7 @@
 - obsidian_livesync -> chart obsidian-livesync (3.5.3+g9a0134) sha:1ebca04041c4
 - octop -> chart octop (1.0.2+g9933f9) sha:55c76fa4d3d5
 - odoo -> chart odoo (19.0.0+gd394b6) sha:224ddad95783
-- ollama -> chart ollama (0.40.7+g7fa632) sha:920503595d71
+- ollama -> chart ollama (0.40.8+g69399d) sha:d8eb68fcb748
 - ollama-webui -> chart ollama-webui (0.12.3+g1163d4) sha:39453cdb8245
 - onlyoffice -> chart onlyoffice (10.0.0+g104160) sha:3b5d0c27722e
 - openclaw -> chart openclaw (2026.10.5+gaa4ec5) sha:9396137d6583
@@ -152,7 +152,7 @@
 - qinglong -> chart qinglong (2.23.0+debian) sha:99a1889328ec
 - rabbitmq -> chart rabbitmq (4.4.0+management-alpine) sha:586be46228d9
 - redis-commander -> chart redis-commander (0.0.0-d20261015.g19cd0+gde43f1) sha:75b24f88326b
-- redpanda-console -> chart redpanda-console (3.12.0+g43e4bc) sha:12dd350daba0
+- redpanda-console -> chart redpanda-console (3.13.0+g48592e) sha:f655e4eecb37
 - rocketmq -> chart rocketmq (5.5.0+g49611f) sha:4eadba92de0a
 - roundcube -> chart roundcube (1.7.5+apache) sha:9ed5105e9ae4
 - rustdesk -> chart rustdesk (1.1.16+g871968) sha:d58bb9b67fcf
@@ -160,25 +160,25 @@
 - screego -> chart screego (1.12.6+gc1ee0c) sha:7cc17f0315a9
 - sentinel-dashboard -> chart sentinel-dashboard (1.8.10+g18a06f) sha:720814de21ea
 - sftpgo -> chart sftpgo (2.7.6+alpine) sha:cfbc40beb079
-- showdoc -> chart showdoc (3.9.4+gc3e152) sha:30ab7a8ae8f9
+- showdoc -> chart showdoc (3.9.5+gddf4fc) sha:88a49f3b379e
 - silo -> chart silo (2026.0.0+10-15) sha:41abd6c4c884
 - siyuan -> chart siyuan (3.8.8+gc441df) sha:f64dcf5e6442
 - sonarqube -> chart sonarqube (26.10.0+community) sha:8b570da7be1b
 - sqlbot -> chart sqlbot (1.10.2+gd8cc9e) sha:d25a6867c5a7
 - stalwart-mail -> chart stalwart-mail (0.16.27+alpine) sha:ca7e005d37f4
-- stirling-pdf -> chart stirling-pdf (3.2.0+gfe1494) sha:7255e234d61f
+- stirling-pdf -> chart stirling-pdf (3.2.1+g55e1db) sha:72e43c44f3ac
 - sub2api -> chart sub2api (0.2.17+g8734bd) sha:368106f46c53
 - sun-panel -> chart sun-panel (1.8.1+g31dff8) sha:13208a33b318
 - synapse -> chart synapse (1.163.0+gd59a30) sha:9f50052b5f5e
 - tailchat -> chart tailchat (1.11.18+g00ed41) sha:c42c8d5ac9b2
-- teable -> chart teable (0.0.0-d20261021.g7137f+gf8d4ba) sha:1f44dc8e9672
+- teable -> chart teable (0.0.0-d20261022.g38065+g5acf12) sha:113080ed3c62
 - teamspeak -> chart teamspeak (3.13.8+ge8db25) sha:6a3c621a5a8d
 - tinyrdm -> chart tinyrdm (1.2.7+g020cb1) sha:ae67c25bf151
 - tomcat -> chart tomcat (10.1.43+gea077f) sha:0ce6190ee15e
 - trendradar -> chart trendradar (6.11.0+g6dd2ca) sha:99c56a98f447
 - trilium -> chart trilium (0.106.0+gf60f0b) sha:a4dfa4377f00
 - twenty -> chart twenty (2.50.1+g1996cd) sha:e92ef51e0023
-- twikoo -> chart twikoo (2.0.16+gafba20) sha:55ca7a9d374b
+- twikoo -> chart twikoo (2.0.17+g1246d5) sha:b8415332d814
 - typecho -> chart typecho (1.3.0+php8.2-apache) sha:5dcbf26cb6d6
 - umami -> chart umami (3.4.0+g25adcc) sha:ce576771b8b7
 - upage -> chart upage (2.0.0+g9c398c) sha:bde872804625

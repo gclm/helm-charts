@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: star7th/showdoc
-      tag: v3.9.4
+      tag: v3.9.5
     port: 80
     volumeMounts:
     - mountPath: /var/www/html

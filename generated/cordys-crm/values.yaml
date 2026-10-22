@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: 1panel/cordys-crm
-      tag: v1.9.4
+      tag: v1.9.5
     port: 8081
     volumeMounts:
     - mountPath: /opt/cordys

@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: 1panel/maxkb
-      tag: v2.10.7-lts
+      tag: v2.10.8-lts
     port: 8080
     volumeMounts:
     - mountPath: /opt/maxkb

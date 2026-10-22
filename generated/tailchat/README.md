@@ -2,7 +2,7 @@
 
 您自己的工作空间中的下一代 noIM 应用程序
 
-- 上游: 1Panel-dev/appstore `apps/tailchat` @ `36705fd924e8`
+- 上游: 1Panel-dev/appstore `apps/tailchat` @ `488873b3f4e7`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
