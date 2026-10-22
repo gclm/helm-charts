@@ -4,12 +4,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.107.79
-    created: "2026-10-21T23:06:33.067984783Z"
+    created: "2026-10-22T23:05:14.135091115Z"
     description: AdGuardHome (converted from 1Panel appstore)
-    digest: 7602105034a82cd88ba1efc6439ab92529ae00b4a1c3cb98594fc10d95d6d0b9
+    digest: 3dac57ee4919ae9ac1d9b4a7861e75e963c9f3f1b91f62835213cec76af484fa
     name: adguardhome
     type: application
     urls:
@@ -19,12 +19,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.1.2+standalone
-    created: "2026-10-21T23:06:33.068454873Z"
+    created: "2026-10-22T23:05:14.135505535Z"
     description: Adminer (converted from 1Panel appstore)
-    digest: 316837fad38617e06508ee0fd0a26fdc920ab6596bf0ebaefcff683d88138803
+    digest: 14fa974a2e4860427e4c6545fa9395350568ea088a7e17ab071dcb5e5227f000
     name: adminer
     type: application
     urls:
@@ -34,12 +34,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.27.4
-    created: "2026-10-21T23:06:33.068957011Z"
+    created: "2026-10-22T23:05:14.136000163Z"
     description: AFFiNE (converted from 1Panel appstore)
-    digest: 9fca85194f22fc3bdd221efb8b69decfc565a762539cc773ec5c6efecbfc4ef4
+    digest: fa78f34182b904f8f3c497ce33ff2cb98a7dea378e2096717b55d2e70cb67a15
     name: affine
     type: application
     urls:
@@ -49,12 +49,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2026-10-21T23:06:33.069417206Z"
+    created: "2026-10-22T23:05:14.136448152Z"
     description: 1Panel AI 网关 (converted from 1Panel appstore)
-    digest: f4aa3951dce767a0eb41bf45c1af74e485ee9b71b9e8633713e9faa2043803d6
+    digest: a25c46d016edbab49273a690e1aaef9b62dc625cee9b8e54397d6bd1371abab2
     name: ai-gateway
     type: application
     urls:
@@ -64,12 +64,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.0.10
-    created: "2026-10-21T23:06:33.069848928Z"
+    created: "2026-10-22T23:05:14.136880688Z"
     description: 1Panel AI 门户 (converted from 1Panel appstore)
-    digest: c89f3773b8d8a875b96dbaeecb6f3075fea7b4e08703c46636734c72313eea41
+    digest: fc77db461a95f9d94e4fc8efdbe164d04b6daeaf12d528092b24c5bda07d0316
     name: ai-portal
     type: application
     urls:
@@ -79,12 +79,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.66.0
-    created: "2026-10-21T23:06:33.070307771Z"
+    created: "2026-10-22T23:05:14.137301908Z"
     description: AList (converted from 1Panel appstore)
-    digest: f94f4fc5897eba0ed9a200081fe6aa18ec11a296d7a8ef554f4c8f19168b60a8
+    digest: 47cb9cb59e4a6e9d72542a2c2ceb844422a9891dc3785c0d8b027fb8352656da
     name: alist
     type: application
     urls:
@@ -94,12 +94,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.0.3
-    created: "2026-10-21T23:06:33.070755587Z"
+    created: "2026-10-22T23:05:14.137705973Z"
     description: Answer (converted from 1Panel appstore)
-    digest: 03b6c55c10274461e07f6ba85464cfede14ebdebc8e76a5b4edc68752e45007e
+    digest: 8aa92d959374fb53b7d46b7452d9a4ef7e53af8c0fce4c01b844f3a880136086
     name: answer
     type: application
     urls:
@@ -109,12 +109,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 8.0.2
-    created: "2026-10-21T23:06:33.071318958Z"
+    created: "2026-10-22T23:05:14.138242382Z"
     description: 2FAuth (converted from 1Panel appstore)
-    digest: fee7baf9cbaa92b765a059681f2b5ea11a3a1b4ec6d5e983422b50336e54efc5
+    digest: a65ab187f702ae109fec5398b488e19a292dbf72512bc579e882e9b7e6c3ea19
     name: app-2fauth
     type: application
     urls:
@@ -124,12 +124,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.9.73
-    created: "2026-10-21T23:06:33.071805703Z"
+    created: "2026-10-22T23:05:14.138999767Z"
     description: ArchiveBox (converted from 1Panel appstore)
-    digest: b4662df9d26ada5bb2c0cd4d05897915c6d9dff2b3dc53da75b52877f1f5ab9d
+    digest: d6ebcf6ab76d0fb1fe2e6581482227161f7d248947855c91159b1f33df32b08c
     name: archivebox
     type: application
     urls:
@@ -139,12 +139,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.10.0
-    created: "2026-10-21T23:06:33.072873235Z"
+    created: "2026-10-22T23:05:14.139457921Z"
     description: Artalk (converted from 1Panel appstore)
-    digest: 291daaf8fb4d998c60aedc122d2711c4fa83c94e98a2dfe4bfc3acf22e2804b4
+    digest: 2790577085af3cf5da0ef8df5bcb7a54bf58cf2c993932474cb0ebc4f59ceb33
     name: artalk
     type: application
     urls:
@@ -154,12 +154,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.29.1
-    created: "2026-10-21T23:06:33.073383636Z"
+    created: "2026-10-22T23:05:14.139852852Z"
     description: AstrBot (converted from 1Panel appstore)
-    digest: 6562fbed8f39c6a83bf525d5fcc86725f912226ead0495468d5df0df7c70e763
+    digest: 09185e096592696feb5ed1b3ed51f30cd8e74412ea34fbc12bd22305fb4c6491
     name: astrbot
     type: application
     urls:
@@ -169,12 +169,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.37.1
-    created: "2026-10-21T23:06:33.073807516Z"
+    created: "2026-10-22T23:05:14.140285118Z"
     description: Audiobookshelf (converted from 1Panel appstore)
-    digest: e2b0d734189ef1533d25f229ac0445e20f0d7b2c401bb93fe6542ca6d4ab3cfb
+    digest: bbeceb094cb433f161d797441af19e716d6faa3891e32cea1846c0f506c39030
     name: audiobookshelf
     type: application
     urls:
@@ -184,12 +184,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.21.0
-    created: "2026-10-21T23:06:33.074219678Z"
+    created: "2026-10-22T23:05:14.140667921Z"
     description: Beszel (converted from 1Panel appstore)
-    digest: 32a108cd9433dc72a47ce11a9af8c51b3f7eb2499e81616fb919c94083ea6065
+    digest: 424be2b482f02ad4ed8e9ecffdec110d184ab10caf85ba4b4dd84b76e1ae4798
     name: beszel
     type: application
     urls:
@@ -199,12 +199,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.0.0
-    created: "2026-10-21T23:06:33.074692492Z"
+    created: "2026-10-22T23:05:14.141133637Z"
     description: BettaFish (converted from 1Panel appstore)
-    digest: c328c7be799f04c67a95f6640f1dfc775a67aee77e04c4bb0cf09f5a549c8a46
+    digest: 9c8d872de949d818395784be52b9043404e9c1f289d36208904ba63375caf9dc
     name: bettafish
     type: application
     urls:
@@ -214,12 +214,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.8.3
-    created: "2026-10-21T23:06:33.075074068Z"
+    created: "2026-10-22T23:05:14.141534657Z"
     description: Bililive-go (converted from 1Panel appstore)
-    digest: 2c21770c4191cff69c1825990f4370284fb8765548c1c5eb0b3a6e16b3c1528f
+    digest: f58bb3de95286a33c2c38a14654fed5be4d57af8492db6cb7074893fc8fb24ed
     name: bililive-go
     type: application
     urls:
@@ -229,12 +229,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.37.4+alpine
-    created: "2026-10-21T23:06:33.075463627Z"
+    created: "2026-10-22T23:05:14.141907345Z"
     description: Bitwarden (converted from 1Panel appstore)
-    digest: e3756a062607caf45b689f70a072a86ba56faa49cbbd2f2913fa80d0c4f31cd3
+    digest: 01146c5143b4476b8298cf71962f07e72b500cda66f1898caa4d1106526995aa
     name: bitwarden
     type: application
     urls:
@@ -244,12 +244,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.8.8
-    created: "2026-10-21T23:06:33.076048119Z"
+    created: "2026-10-22T23:05:14.142337408Z"
     description: Blinko (converted from 1Panel appstore)
-    digest: dbefee4ef37ad09b961acde13a67688bf25782fc15d267b9d8fd35b5f020a1b7
+    digest: 5f673463bf60216fe9ac97d41e8c48dbebface544c755b73ae5d3bc2580300f0
     name: blinko
     type: application
     urls:
@@ -259,12 +259,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.57.2
-    created: "2026-10-21T23:06:33.076474163Z"
+    created: "2026-10-22T23:05:14.142710577Z"
     description: Browserless (converted from 1Panel appstore)
-    digest: 72698870c54c43529f3553ace01c672049741298e6bc274f3143d96a2743e3cb
+    digest: d721f28f256e718e6f9d56f3e0bf730b3acac1550c54872d40897a92ce6cb718
     name: browserless
     type: application
     urls:
@@ -274,12 +274,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.24.0
-    created: "2026-10-21T23:06:33.076850822Z"
+    created: "2026-10-22T23:05:14.143082755Z"
     description: Bytebase (converted from 1Panel appstore)
-    digest: 6f4af54da00240f2edddea13e414d8865eb29eb33b3b80cdef51c07bed00475f
+    digest: ab4139cca90bcb24acc067353bd73bdc00fc9cb9b3d594a029d2be7a5bd817c1
     name: bytebase
     type: application
     urls:
@@ -289,12 +289,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.6.27
-    created: "2026-10-21T23:06:33.077277115Z"
+    created: "2026-10-22T23:05:14.1439015Z"
     description: Calibre-Web (converted from 1Panel appstore)
-    digest: 4b5e11bbc484bccca27a5b721268b9cccd156ac8f284893c6ca7335f01a987e8
+    digest: daabc7fff74a09eb9345a21651f523bc36b4b8e7c6b5d4f0558b7c0e588946c6
     name: calibre-web
     type: application
     urls:
@@ -304,12 +304,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.23.0
-    created: "2026-10-21T23:06:33.077653394Z"
+    created: "2026-10-22T23:05:14.144512839Z"
     description: Casdoor (converted from 1Panel appstore)
-    digest: 895ce4c6738d459433100b95c3cd03485e61c18987b2a5812a2dca7bcd725572
+    digest: 4ba98d8c3aec0baa53de1f284448ecb38fd6d75743f6c38ad4b44b9f4330ef21
     name: casdoor
     type: application
     urls:
@@ -319,12 +319,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.45.3
-    created: "2026-10-21T23:06:33.078369164Z"
+    created: "2026-10-22T23:05:14.144898677Z"
     description: Certd (converted from 1Panel appstore)
-    digest: e0c76a2fdb66f16cda22e1bc5b515172fd619b756ee428e2d9e4fabbaaf53978
+    digest: 87472183ac562c60f5012ea83356bbb92096294ddf288bbf2cd80dbebe96ce19
     name: certd
     type: application
     urls:
@@ -334,12 +334,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.4.35
-    created: "2026-10-21T23:06:33.078931283Z"
+    created: "2026-10-22T23:05:14.14532209Z"
     description: Certimate (converted from 1Panel appstore)
-    digest: d0a4005789249e8ab533bbfa07c4e2a3cc44b0e9f8db411ff4a101bb68f02cd8
+    digest: de88b352fec4c5ff96d1039dd5bc76e33b38291eab2c8239e87fb5e8ffa43528
     name: certimate
     type: application
     urls:
@@ -349,12 +349,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.60.9
-    created: "2026-10-21T23:06:33.07934613Z"
+    created: "2026-10-22T23:05:14.145698604Z"
     description: Changedetection.io (converted from 1Panel appstore)
-    digest: e17ea1b3aa69b7014957bf6964399005c22f6d1d267b1b32d3a585f1a7ceaa0f
+    digest: 17bfbaff1eb119fe7c05f9da7b814928986fc68f60484f14bfbd5b8816cd07be
     name: changedetectionio
     type: application
     urls:
@@ -364,12 +364,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.16.1
-    created: "2026-10-21T23:06:33.079746935Z"
+    created: "2026-10-22T23:05:14.146100506Z"
     description: ChatGPT-Next-Web (converted from 1Panel appstore)
-    digest: 12e166ebf6bab6a7b054b7f8d5fac37f392cded41107b72f6a2b5446ee0046d9
+    digest: 1f5c46e479d6c28861a7253b484d088731e0dacba8a78f6ffcfdc957f02b946b
     name: chatgpt-next-web
     type: application
     urls:
@@ -379,12 +379,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.0.5
-    created: "2026-10-21T23:06:33.08012775Z"
+    created: "2026-10-22T23:05:14.146487845Z"
     description: ClawSwarm (converted from 1Panel appstore)
-    digest: cdb45c08f4a757baf4f1e0b7db1c4278b5f26b80ac7b96dc3f79b38755e3e391
+    digest: af4d72196ec26303b168311e9a0f131dcca16b62f99d8b763921b410255b491f
     name: clawswarm
     type: application
     urls:
@@ -394,12 +394,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 26.2.3
-    created: "2026-10-21T23:06:33.080528605Z"
+    created: "2026-10-22T23:05:14.146855917Z"
     description: CloudBeaver (converted from 1Panel appstore)
-    digest: 1bc6c6d9f0a0d4c01d17fe39ff99f6606481494566c5ce32f4bb1255ae623079
+    digest: d0ee7d189829dca95f8ff81b4d8e2d6eb572df8c4835953ac84f011b023c68f9
     name: cloudbeaver
     type: application
     urls:
@@ -409,12 +409,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2026.10.3
-    created: "2026-10-21T23:06:33.080896451Z"
+    created: "2026-10-22T23:05:14.147229807Z"
     description: cloudflared (converted from 1Panel appstore)
-    digest: 80fd47d82953310234cb8143c3dd4caff640e94070dfe41caa768603b183c03b
+    digest: 1a6b0262eea456f23d9145a7af8660820bcf21aa12a51e30ee27476f8f695726
     name: cloudflared
     type: application
     urls:
@@ -424,12 +424,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.19.1
-    created: "2026-10-21T23:06:33.081315794Z"
+    created: "2026-10-22T23:05:14.147633251Z"
     description: Cloudreve (converted from 1Panel appstore)
-    digest: 757cd76db744ba8e6ed04e973c49ec9bd64ef4be09514d41de09f03e17184d99
+    digest: 0deae66fb1fb19260cae3920fe9a36501f4248ea0aed088ce6133e8bb5bbb7b5
     name: cloudreve
     type: application
     urls:
@@ -439,12 +439,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.141.0
-    created: "2026-10-21T23:06:33.081715588Z"
+    created: "2026-10-22T23:05:14.148039919Z"
     description: code-server (converted from 1Panel appstore)
-    digest: bdf2c508c6a9ae10a92b7ffd84f35639113dd08cbb093fa29210cc23992ec968
+    digest: 5c4d7fd9d9704dd6394d6a6a7490ed41889d50e81e1f09224bfebabaee70e634
     name: code-server
     type: application
     urls:
@@ -454,12 +454,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.33.1
-    created: "2026-10-21T23:06:33.082091305Z"
+    created: "2026-10-22T23:05:14.14846179Z"
     description: ComfyUI (converted from 1Panel appstore)
-    digest: 360a1fdbceaad423833dd28f751b732c97aeb1a32d1305996640b66612398c67
+    digest: 12df2486ef321bc816aaf34f035f750b10da96451ac5d8364824e23a3edc1e83
     name: comfyui
     type: application
     urls:
@@ -469,12 +469,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.0.4
-    created: "2026-10-21T23:06:33.082503247Z"
+    created: "2026-10-22T23:05:14.149215059Z"
     description: Consul (converted from 1Panel appstore)
-    digest: 45cc58b8b279cf5e3880fff1af313ebbf2de3793624f24d6287c97d39bb7f746
+    digest: 878275aafdd799710f50abae268630dfcf357270bd25550b5d6ca83e19bf716e
     name: consul
     type: application
     urls:
@@ -484,12 +484,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.19.0
-    created: "2026-10-21T23:06:33.082878314Z"
+    created: "2026-10-22T23:05:14.149821671Z"
     description: ConvertX (converted from 1Panel appstore)
-    digest: 5e4ee9ba189cf378eee77175772491dfd30338cd34844fbe2abc508b54f456be
+    digest: 798c324e1dae7db35b7eabbd4c967ed5853014eb1942e9248937b06274e34510
     name: convertx
     type: application
     urls:
@@ -499,12 +499,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.2.2
-    created: "2026-10-21T23:06:33.08360455Z"
+    created: "2026-10-22T23:05:14.150264253Z"
     description: QwenPaw (converted from 1Panel appstore)
-    digest: 60c4376e2b45c1c9fb7e2c7699443aebf0ddfdaa355fd262c5839c971a045d3e
+    digest: 85b0dfe77205c8699e6fda033b80ece391f5beaf2a0c6e76e58dd750e0c11f86
     name: copaw
     type: application
     urls:
@@ -514,27 +514,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 1.9.4
-    created: "2026-10-21T23:06:33.084225512Z"
+    appVersion: 1.9.5
+    created: "2026-10-22T23:05:14.150640546Z"
     description: Cordys CRM (converted from 1Panel appstore)
-    digest: 2f9d35bb105e4bdf2fbc8d740e30e82f3027157779d6e309f4892f2ca16fe3a1
+    digest: efb69672a4258933c31337b5b2b0d3580e0deed2483e4ae8fa92a4ad523552e1
     name: cordys-crm
     type: application
     urls:
-    - https://charts.xzim.top/cordys-crm-1.9.4+g578faa.tgz
-    version: 1.9.4+g578faa
+    - https://charts.xzim.top/cordys-crm-1.9.5+g9271a7.tgz
+    version: 1.9.5+g9271a7
   cyberchef:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 11.5.0
-    created: "2026-10-21T23:06:33.084616813Z"
+    created: "2026-10-22T23:05:14.15100988Z"
     description: CyberChef (converted from 1Panel appstore)
-    digest: 258a356551c93c4de370125a092691c0fb3587e7b544c6d50f953c8065d4bc3a
+    digest: d1900eea58716152da43a553f9d60f8691d15d90b01621aa133a0fc9c3dcbbb9
     name: cyberchef
     type: application
     urls:
@@ -544,12 +544,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.8.7
-    created: "2026-10-21T23:06:33.085023117Z"
+    created: "2026-10-22T23:05:14.151415727Z"
     description: Dashy (converted from 1Panel appstore)
-    digest: 450fd355dac18e5896655e3e2e36baeea1db06e84a28602c3e99709260cb63aa
+    digest: 1aacb7f66127e19adae0cf76e8db817179e5b99ba61d0b859d59019ebad71aab
     name: dashy
     type: application
     urls:
@@ -559,12 +559,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.1.0
-    created: "2026-10-21T23:06:33.085563783Z"
+    created: "2026-10-22T23:05:14.151920189Z"
     description: DataEase (converted from 1Panel appstore)
-    digest: 6c5ebbb50bfb72ff847a87d3f6c9e576bfd4fa280838b4a3d4ab027ac4640771
+    digest: b620a0b578aa4996362c5512599fa1a4856c3ca90d43375fb96e0047f089cf51
     name: dataease
     type: application
     urls:
@@ -574,12 +574,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2026-10-21T23:06:33.08602519Z"
+    created: "2026-10-22T23:05:14.152343352Z"
     description: DBHub (converted from 1Panel appstore)
-    digest: 9185c51ffafe0f1e34868a78343b92734b0deb8402bd612f42dd87d0ded0a89e
+    digest: 178498c48e647af525260d73464f2ced6fe6b2450300202dee8fbec15c346c9e
     name: dbhub
     type: application
     urls:
@@ -589,12 +589,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.6.51
-    created: "2026-10-21T23:06:33.086441018Z"
+    created: "2026-10-22T23:05:14.152721318Z"
     description: DBX (converted from 1Panel appstore)
-    digest: 57f34eff636826650b4cd5807bbde916b1f795e1056e05f0439a5f6bdbb8793d
+    digest: c42c438a7fd613547a2f208477a2265f5945abc60545069e50c40e8387ab119b
     name: dbx
     type: application
     urls:
@@ -604,12 +604,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.2.1+rc.2
-    created: "2026-10-21T23:06:33.086886641Z"
+    created: "2026-10-22T23:05:14.153153364Z"
     description: DeepSeek Harness (converted from 1Panel appstore)
-    digest: 5b971fb296b01cbcd8f03619a7571efbe155c11f1a40617bd074ae9eb806a84d
+    digest: eeaa8bd74d8d42dbe80ffa1b0789a807f3fba4eff51121d9845cd365167eb7d3
     name: deepseek-harness
     type: application
     urls:
@@ -619,12 +619,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-10-21T23:06:33.087433076Z"
+    created: "2026-10-22T23:05:14.153692547Z"
     description: Discourse (converted from 1Panel appstore)
-    digest: ddc4b59d7ba1ea9ca0dffd9982aa7fc19551fa0bab4afea376ba6b185543a9d7
+    digest: bf322591d52b50d11997cbb0217a7c75586ee9cd4a858f95f65d47739f52dac0
     name: discourse
     type: application
     urls:
@@ -634,12 +634,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.4.0
-    created: "2026-10-21T23:06:33.087796966Z"
+    created: "2026-10-22T23:05:14.154348993Z"
     description: Discuz! (converted from 1Panel appstore)
-    digest: 3b37a55cf772b159cbaa9f599a507e67905650fa71e3f377da2d46d0f67ac560
+    digest: c5ca1270e98316bbe1ec349c5af09a02f74c3c4ea7e24d9d36ff9099debc1a41
     name: discuz
     type: application
     urls:
@@ -649,12 +649,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.1.2
-    created: "2026-10-21T23:06:33.088199143Z"
+    created: "2026-10-22T23:05:14.154942116Z"
     description: Docker Registry (converted from 1Panel appstore)
-    digest: a6414175618cac4e703d930cc2e9ff242c2dd35da675e407c7c4a6d63a986331
+    digest: 75cbe0c340f5d58e8f03c8682d1c18f5a100fb99fc42c3300ae08a929d360b80
     name: docker-registry
     type: application
     urls:
@@ -664,12 +664,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.96.0
-    created: "2026-10-21T23:06:33.0887134Z"
+    created: "2026-10-22T23:05:14.155353892Z"
     description: Docmost (converted from 1Panel appstore)
-    digest: 87ca1f893af25037a7a19b2f7a8f4798f9dc1d647b58ecb0e0f721b1715d6eb1
+    digest: e71416307151aec436d00dfee2af6728e151f28b8c10950a2d6d9d92dce7ddb4
     name: docmost
     type: application
     urls:
@@ -679,12 +679,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.6.78
-    created: "2026-10-21T23:06:33.089460899Z"
+    created: "2026-10-22T23:05:14.155743465Z"
     description: Domain Admin (converted from 1Panel appstore)
-    digest: 1cf289792e282c2b0cbbc8b58fc185bd453e85c8be94d9feb2f8ff47878d8752
+    digest: 67649bfdf485dbc0f90a04aba2178225f04c36a4fc193ec56d278cda60af3b5a
     name: domain-admin
     type: application
     urls:
@@ -694,12 +694,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.9.6
-    created: "2026-10-21T23:06:33.089858218Z"
+    created: "2026-10-22T23:05:14.156122213Z"
     description: 中文 DOS 游戏 (converted from 1Panel appstore)
-    digest: 338f06c3292191102d2ebf98e7157be8e33aaf75b88aef9adf2bb94d7b900053
+    digest: 85add9e1f0d4d1957fb6e42eacb62588e4c59c691d311fc0cddbc188bc55c452
     name: dosgame
     type: application
     urls:
@@ -709,12 +709,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 10.0.0
-    created: "2026-10-21T23:06:33.090267977Z"
+    created: "2026-10-22T23:05:14.156511125Z"
     description: .NET (converted from 1Panel appstore)
-    digest: 6cc971daadb99596899f8c394bfd4f575a90e9939355f5b1a84b54c52d2c2435
+    digest: 3f6df8a0f476e3aeb94f216896397ef64535aa9f2ff6fa14b984c5039bd07189
     name: dotnet
     type: application
     urls:
@@ -724,12 +724,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 32.5.5
-    created: "2026-10-21T23:06:33.090635853Z"
+    created: "2026-10-22T23:05:14.156871896Z"
     description: Draw.io (converted from 1Panel appstore)
-    digest: 3a74d4f507c872f513c34e4abd17297aa3a21ca684e36834b273a201a5bbfbeb
+    digest: 4c3802452ab35e62f36ffcdcf927fbf893b02d2050fd289af10978d96e0743f4
     name: drawio
     type: application
     urls:
@@ -739,12 +739,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.0-d20261018.g80294
-    created: "2026-10-21T23:06:33.091053754Z"
+    created: "2026-10-22T23:05:14.157293606Z"
     description: DVWA (converted from 1Panel appstore)
-    digest: 39484bbe3d4244537e1c1dfa7be53b311a2c7da79bf5157be021455a424df18f
+    digest: 1df1bcfed763ce0bd5eb599c56e1b2e9cfd59df229cd3eaf987e013a2176de11
     name: dvwa
     type: application
     urls:
@@ -754,12 +754,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.8.6
-    created: "2026-10-21T23:06:33.091479547Z"
+    created: "2026-10-22T23:05:14.157695638Z"
     description: EasyImage2.0 (converted from 1Panel appstore)
-    digest: 5f0cb4991040eccf09dcb797987e068cde1283b30eb63c4b80e062b1da4d59c0
+    digest: 049a233399c3170f4e7fd6112672ac296879bb6dbc58c4225511bd1c0a5a27d2
     name: easyimage2
     type: application
     urls:
@@ -769,12 +769,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.3.2
-    created: "2026-10-21T23:06:33.091916968Z"
+    created: "2026-10-22T23:05:14.158119442Z"
     description: EMQX (converted from 1Panel appstore)
-    digest: feaf13bcbe428fbe420041c86b5a9506e060602b58e28c5f8e3ad048c5748dc5
+    digest: 754aabc64f4ab5d45eeea2f723f6df601ec216b1fc5b3743b90c2f6327566234
     name: emqx
     type: application
     urls:
@@ -784,12 +784,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.0-d20261015.gf7ee1
-    created: "2026-10-21T23:06:33.092305024Z"
+    created: "2026-10-22T23:05:14.158497979Z"
     description: excalidraw (converted from 1Panel appstore)
-    digest: 1716d2c22df899a67846ab9b4366b8307c5242d3c2b651955dff622b4010ad51
+    digest: 23c8b31e98852d6e3e2ea76acb6f3bc8a4446b08fc5fe79fafbb0def6450f6f9
     name: excalidraw
     type: application
     urls:
@@ -799,12 +799,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-10-21T23:06:33.092695573Z"
+    created: "2026-10-22T23:05:14.158888754Z"
     description: ezBookkeeping (converted from 1Panel appstore)
-    digest: 01edd3fffe053487da5c02cc9750071ed2b172497d5754e27e752ef59645a9dc
+    digest: a8fca0b7bcfc4310e2706416c377946660a66f1e0ca35faacf228a7034a5ba51
     name: ezbookkeeping
     type: application
     urls:
@@ -814,12 +814,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.63.23
-    created: "2026-10-21T23:06:33.093067114Z"
+    created: "2026-10-22T23:05:14.159413916Z"
     description: File Browser (converted from 1Panel appstore)
-    digest: c1fc8190e81f7ffa68a2120d4151d22ef41425073282ebd60523a92a923f8647
+    digest: 68a1180af32c2c79125082b13f7976a04d73224f7d0bf9096fa1dcb0b57b8d14
     name: filebrowser
     type: application
     urls:
@@ -829,12 +829,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.8.3
-    created: "2026-10-21T23:06:33.093452957Z"
+    created: "2026-10-22T23:05:14.160192112Z"
     description: FileCodeBox (converted from 1Panel appstore)
-    digest: 6e57a4ad4b8bd5b81ebbb6fd8a14fd1a40f4719c44bcffd661455a9d077e7bd2
+    digest: d9e20667dbedc9f56130351b2ca7e0918bd90ce2dac9fd4995fa8ae375284ec4
     name: filecodebox
     type: application
     urls:
@@ -844,12 +844,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.4.2
-    created: "2026-10-21T23:06:33.093929697Z"
+    created: "2026-10-22T23:05:14.160626912Z"
     description: Firefly III (converted from 1Panel appstore)
-    digest: c05890696d6f99f51389b594b1e6dc1a0d0c637a0cdffd097d0c81fe1ad8434a
+    digest: 32d2c2f7fe6d3c541432499c7599c013b129c284e53cf23e42ea394a1aed24de
     name: firefly-iii
     type: application
     urls:
@@ -859,12 +859,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.8.20
-    created: "2026-10-21T23:06:33.095250662Z"
+    created: "2026-10-22T23:05:14.161086829Z"
     description: Flarum (converted from 1Panel appstore)
-    digest: 4bd0d98f0377b9dd853cd122f3c5a8fa4b9c4f6ee28e6fd639c70a317e04e7dc
+    digest: ecd2f255db37643be1e9d64c24562b16e4f96385a1c3a1a000b3467590d9142b
     name: flarum
     type: application
     urls:
@@ -874,12 +874,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 7.11.4
-    created: "2026-10-21T23:06:33.096126004Z"
+    created: "2026-10-22T23:05:14.161508439Z"
     description: Focalboard (converted from 1Panel appstore)
-    digest: ae6a305fa923c8adbb6e85c189b401eaf7e1d96d23b490e6dc48e29721a24a88
+    digest: 119283cf442437f35899303bb2637d810ca14a36cf3f5b50400d5fe32166b727
     name: focalboard
     type: application
     urls:
@@ -889,27 +889,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 1.30.2
-    created: "2026-10-21T23:06:33.096813752Z"
+    appVersion: 1.30.4
+    created: "2026-10-22T23:05:14.161902238Z"
     description: FreshRSS (converted from 1Panel appstore)
-    digest: 2504a2dbf8a48002c610c1b7e39d69b97ee376f2caee48b3369bbd92b9327b3d
+    digest: 774179f3b74d7c18447f8ea87a5858cbf062c27035cd4767b9708ebdf5a6cc05
     name: freshrss
     type: application
     urls:
-    - https://charts.xzim.top/freshrss-1.30.2+g0f9d72.tgz
-    version: 1.30.2+g0f9d72
+    - https://charts.xzim.top/freshrss-1.30.4+g524510.tgz
+    version: 1.30.4+g524510
   gatus:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.37.0
-    created: "2026-10-21T23:06:33.09746116Z"
+    created: "2026-10-22T23:05:14.162282829Z"
     description: Gatus (converted from 1Panel appstore)
-    digest: 10996bcd17ae0451296f74cf7c26ecdce5e3654ce7d2daab94d6ae8d509e11a6
+    digest: 728c19800c5144ab4aa50b039c9bb94ed7439be91db1f713356d1e1ae8dda934
     name: gatus
     type: application
     urls:
@@ -919,12 +919,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.72.0
-    created: "2026-10-21T23:06:33.098138312Z"
+    created: "2026-10-22T23:05:14.162680484Z"
     description: Ghost (converted from 1Panel appstore)
-    digest: 11430c53bf4565ebf3d55dbb13bafd6d5d76683cbe8d86b0f245b6ce4e713ed8
+    digest: fdf721da4b7c57aaacdee2900686a7c4d97babbe09cbb7952c67b3bf557a3e6c
     name: ghost
     type: application
     urls:
@@ -934,12 +934,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 27.3.8
-    created: "2026-10-21T23:06:33.098827483Z"
+    created: "2026-10-22T23:05:14.163257232Z"
     description: Gitea (converted from 1Panel appstore)
-    digest: 2ff74d26d507285a620b6fd3f3a3e0e215a15140974ada58a80d3074664538f8
+    digest: 2fc021dbc54c809f58436e049a07b120f28f140ab05b594b0e7742556cb9926a
     name: gitea
     type: application
     urls:
@@ -949,12 +949,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.8.7
-    created: "2026-10-21T23:06:33.099469373Z"
+    created: "2026-10-22T23:05:14.163733113Z"
     description: Glance (converted from 1Panel appstore)
-    digest: 1259fdbc495b028340e73c11a8d49e2388367f3c2cc35abbee2605cee2622013
+    digest: b872d04fd1664701ed2edc4e4417e32ad434a528e6aafdc47c8d6b331092f879
     name: glance
     type: application
     urls:
@@ -964,12 +964,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.26.0
-    created: "2026-10-21T23:06:33.100078883Z"
+    created: "2026-10-22T23:05:14.164123277Z"
     description: Go (converted from 1Panel appstore)
-    digest: 8260069e24901ad7c5be0db38c9f101f7f41dd8afbce4cf5392108c068c372f2
+    digest: a2209fbd33ffd1b0a75675bdc38e16e63d2670c79281792f9d85d77d7dde0692
     name: go
     type: application
     urls:
@@ -979,12 +979,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.1.1
-    created: "2026-10-21T23:06:33.101034426Z"
+    created: "2026-10-22T23:05:14.164722639Z"
     description: Gotify (converted from 1Panel appstore)
-    digest: 3e54f0296693d00fd1b2413808ae04f7b473033e47c58fc95d2f13f9da880e14
+    digest: 31a676ef52297a13bbbee576e240edb9857cfe2cb65a062d4b86c2a5911e3c0a
     name: gotify
     type: application
     urls:
@@ -994,12 +994,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 13.2.4
-    created: "2026-10-21T23:06:33.101673982Z"
+    created: "2026-10-22T23:05:14.165218929Z"
     description: Grafana (converted from 1Panel appstore)
-    digest: bbc1a08b73f4eaac9c5776b06b386da02ec46745d50646c57c5acad3f9653da7
+    digest: 19808c7717b08114c58e5e38d45c21064d4ad71a6b72a988f27ef74ccfdba3cc
     name: grafana
     type: application
     urls:
@@ -1009,27 +1009,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 3.14.1
-    created: "2026-10-21T23:06:33.10237479Z"
+    appVersion: 3.14.2
+    created: "2026-10-22T23:05:14.166116369Z"
     description: GSManager (converted from 1Panel appstore)
-    digest: 443e1b2ea832d49fc50fb9cc7a31c3f3df931a41c9b10751e5769b6dd1e1db71
+    digest: 65aaa01f3346f555ffa284e2371548633196c5cd6740b3fc11413bb3d383c57c
     name: gsmanager
     type: application
     urls:
-    - https://charts.xzim.top/gsmanager-3.14.1+gd3915e.tgz
-    version: 3.14.1+gd3915e
+    - https://charts.xzim.top/gsmanager-3.14.2+gaf0365.tgz
+    version: 3.14.2+gaf0365
   halo:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.27.0
-    created: "2026-10-21T23:06:33.103095158Z"
+    created: "2026-10-22T23:05:14.166659198Z"
     description: Halo (converted from 1Panel appstore)
-    digest: d7a7cafe637fb3bdfe215565399e11334ae8fa5cb10c998b9e0861d3579165cd
+    digest: a717da49ac99fd2a0e79381aaa2070687e08d61a6c0afbecd37af6643dbb4e1e
     name: halo
     type: application
     urls:
@@ -1039,12 +1039,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.8.3
-    created: "2026-10-21T23:06:33.103776276Z"
+    created: "2026-10-22T23:05:14.167075581Z"
     description: Heimdall (converted from 1Panel appstore)
-    digest: ef8ff02e0d2ee8ae63f244e45b4250bb12a06316d9bc8b744fe49b56b59cc209
+    digest: 78221487ddd402c0429a37c75b602befe9f68c71022f21958193f4f1b752d4f2
     name: heimdall
     type: application
     urls:
@@ -1054,27 +1054,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 0.22.2
-    created: "2026-10-21T23:06:33.104491687Z"
+    appVersion: 0.22.4
+    created: "2026-10-22T23:05:14.167513425Z"
     description: Hermes Agent (converted from 1Panel appstore)
-    digest: 81dfd80554cc47f1caa9bc06e85595b7714bf91a26f3dbc3035ce10cd1f71313
+    digest: dbc98056ebfeed4f2a6619e0d4448f2e51817c35486b9de141c54d92baa005af
     name: hermes-agent
     type: application
     urls:
-    - https://charts.xzim.top/hermes-agent-0.22.2+g086d0a.tgz
-    version: 0.22.2+g086d0a
+    - https://charts.xzim.top/hermes-agent-0.22.4+g846bc2.tgz
+    version: 0.22.4+g846bc2
   huginn:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2026.10.14
-    created: "2026-10-21T23:06:33.105545088Z"
+    created: "2026-10-22T23:05:14.167888517Z"
     description: Huginn (converted from 1Panel appstore)
-    digest: 886c7b3d4fb8ee9a673f05ad391423e8de2e463d550c142ff3fde18ae7572dec
+    digest: ed068fcdf654648db6ceaa327b4a5939de0454f02d2d1ae5e172beb6ed337fc7
     name: huginn
     type: application
     urls:
@@ -1084,12 +1084,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2024.10.22+7ca5933
-    created: "2026-10-21T23:06:33.106200357Z"
+    created: "2026-10-22T23:05:14.16826396Z"
     description: IT-Tools (converted from 1Panel appstore)
-    digest: bf0845829c1c4c60d7cd83fde77a830d43d3ae76997885900ddf0d5add56e308
+    digest: 8d3a7165f6871efaf4a5510368ad3164751c32f56077befff24c38958b96c3a7
     name: it-tools
     type: application
     urls:
@@ -1099,12 +1099,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.76.0
-    created: "2026-10-21T23:06:33.10659953Z"
+    created: "2026-10-22T23:05:14.168859736Z"
     description: Jaeger (converted from 1Panel appstore)
-    digest: 19e5f264d6bdfeca26a564c245fd1f00ecf21d80593a1a388231f61841dc9bb9
+    digest: aa23fbe9ab8d1b3f30ebfddb169b1b6a3183fece3aa7e22a563fca35ecde2725
     name: jaeger
     type: application
     urls:
@@ -1114,12 +1114,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 25.0.0
-    created: "2026-10-21T23:06:33.107016109Z"
+    created: "2026-10-22T23:05:14.169247316Z"
     description: Java (converted from 1Panel appstore)
-    digest: f20dbd57b5f140117ed91a4f0efeeabe16f2dd4da950372e5ac75ac4d3c692f9
+    digest: 089b2fc4320ceeb8973e70c35bc4b8c740f98076687303acc2db47d349092bef
     name: java
     type: application
     urls:
@@ -1129,12 +1129,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 10.11.11
-    created: "2026-10-21T23:06:33.107426849Z"
+    created: "2026-10-22T23:05:14.169619314Z"
     description: Jellyfin (converted from 1Panel appstore)
-    digest: 9c23ef68378d2f8aa724cf3290236a5cb2e72178dad87631e0c72a7fa16818f3
+    digest: 275dec9b9919b27aaf7158a3abb586b41a75a7d0cd61732506ca5ee5218d44f8
     name: jellyfin
     type: application
     urls:
@@ -1144,12 +1144,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.0-d20261015.g1e514
-    created: "2026-10-21T23:06:33.107802707Z"
+    created: "2026-10-22T23:05:14.169984932Z"
     description: JSON Hero (converted from 1Panel appstore)
-    digest: 984090dfe5423ad7b3b150189b3e33c6b945dd966839f2b276721fed5f7217f0
+    digest: 2f14d619f56f0528a4fe0be77357becb7ff37877fa52e0af2691ee7072d6bee0
     name: jsonhero
     type: application
     urls:
@@ -1159,12 +1159,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-10-21T23:06:33.108225445Z"
+    created: "2026-10-22T23:05:14.170389467Z"
     description: Jupyter Notebook (converted from 1Panel appstore)
-    digest: aa57f05f86c5bde2df9ceb5377b1ecac9d470cd100e5d1342e17e62534170129
+    digest: 0d78740197dcab40689d0c253eb8c64aaa1067e960581b78613bda3e8f97e384
     name: jupyter-notebook
     type: application
     urls:
@@ -1174,12 +1174,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-10-21T23:06:33.108669856Z"
+    created: "2026-10-22T23:05:14.170810377Z"
     description: Kafka (converted from 1Panel appstore)
-    digest: 7a364544bc4d143656fef1d61673e361e23568a7e7248548b1fc4ec8afa48d8b
+    digest: e1451764e33171e70a3918c67a8c186d7b5063bbede2feee9d749d543dc18944
     name: kafka
     type: application
     urls:
@@ -1189,12 +1189,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 26.8.1
-    created: "2026-10-21T23:06:33.109091363Z"
+    created: "2026-10-22T23:05:14.171537557Z"
     description: Keycloak (converted from 1Panel appstore)
-    digest: b80674310d9ee23b1e678780b55a674f0054dcc2db5b99e0aa2f0b388f20f6d0
+    digest: ba89b94adf533447516286b3f2e30a13013dd4a4d68cac385fc4463b7aed8b64
     name: keycloak
     type: application
     urls:
@@ -1204,12 +1204,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 9.5.5
-    created: "2026-10-21T23:06:33.109512299Z"
+    created: "2026-10-22T23:05:14.172203417Z"
     description: Kibana (converted from 1Panel appstore)
-    digest: 5e98c70f596c618316c1795e6cde53e36071c597d0b11dfac77fcbe312c32dd6
+    digest: bdf2629166504602be00c384591126d1930306a079ef71c591e18aa2aba26f85
     name: kibana
     type: application
     urls:
@@ -1219,12 +1219,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.2.0
-    created: "2026-10-21T23:06:33.109886594Z"
+    created: "2026-10-22T23:05:14.172597236Z"
     description: Kirara AI (converted from 1Panel appstore)
-    digest: dc05f4ba2c834dce1ee573aaba9b51fb5ec5df6e881d17254c235d5624395a7b
+    digest: 88df3e5ae3b8d858a49dcc850be3b2778f95f3279d86a1fb5bfa9d21412aaa0c
     name: kirara-agent
     type: application
     urls:
@@ -1234,12 +1234,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.1.0
-    created: "2026-10-21T23:06:33.110271255Z"
+    created: "2026-10-22T23:05:14.172962934Z"
     description: kkFileView (converted from 1Panel appstore)
-    digest: 5a2d0cb6178b76b3660bcf6f9b3c22c0e3cc6dccea72deeb0c47577ee1f93aa3
+    digest: 8de15f77f61a89b62b28de10052f164b5cc6501a8dfc5292152245e289c4ac08
     name: kkfileview
     type: application
     urls:
@@ -1249,27 +1249,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 1.4505.0
-    created: "2026-10-21T23:06:33.110653642Z"
+    appVersion: 1.70.03
+    created: "2026-10-22T23:05:14.173348973Z"
     description: Kodbox (converted from 1Panel appstore)
-    digest: 8b1491a8547bc1830ce9a06b3c875efea00e9ed62f70db7aab8efe8e5477c5b5
+    digest: 3b7baf5a9744bc73ce8d97d7bf78db66b94e865b474d5ffb6289bf3cc0547331
     name: kodbox
     type: application
     urls:
-    - https://charts.xzim.top/kodbox-1.4505.0+g850184.tgz
-    version: 1.4505.0+g850184
+    - https://charts.xzim.top/kodbox-1.70.03+gf79da9.tgz
+    version: 1.70.03+gf79da9
   koishi:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-10-21T23:06:33.111039895Z"
+    created: "2026-10-22T23:05:14.173723704Z"
     description: Koishi (converted from 1Panel appstore)
-    digest: f34ab7f281e94a957c6464de551d20c2ae6ef7c37dab847dab691848b7d76a12
+    digest: 894edc45cc35523078b0c714920ccd21c2626e12a222393cbef882478ddac196
     name: koishi
     type: application
     urls:
@@ -1279,12 +1279,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-10-21T23:06:33.111756478Z"
+    created: "2026-10-22T23:05:14.174091125Z"
     description: Komari (converted from 1Panel appstore)
-    digest: 113aa74b51f2c90762b2f3592c940791a8cc4bfdc5e721dbca4a32c4ae48f5e5
+    digest: d68b44cfc5eb51109d81aae6471dbf15ad4a3970cc242418ec7b718197101a5d
     name: komari
     type: application
     urls:
@@ -1294,12 +1294,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.29.1
-    created: "2026-10-21T23:06:33.112411827Z"
+    created: "2026-10-22T23:05:14.174467468Z"
     description: Komga (converted from 1Panel appstore)
-    digest: 2e5041a4234596913bde6ea4fe2e027bd24cbe013ba173a4b6c0047b277db2a3
+    digest: dec0eaf78295c5463b53a72b108e0f813f4e5355699f2d6f06908e79170f12a5
     name: komga
     type: application
     urls:
@@ -1309,12 +1309,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.11.1
-    created: "2026-10-21T23:06:33.112854325Z"
+    created: "2026-10-22T23:05:14.174885123Z"
     description: LangBot (converted from 1Panel appstore)
-    digest: b663d14dd7e79944b88b02fa48e2704e428ca4ebf9c08a4f49f8864943283d1d
+    digest: ef212c589d13f952db13489f61d2fef7089d265d447107661b16c3d7b36a8e07
     name: langbot
     type: application
     urls:
@@ -1324,12 +1324,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.12.7
-    created: "2026-10-21T23:06:33.113268521Z"
+    created: "2026-10-22T23:05:14.175268928Z"
     description: Langflow (converted from 1Panel appstore)
-    digest: 816544b1b3f1e593c664736476afab31d6aea52285cb39f010a9da219b525114
+    digest: c90d039fcd8d81a2fc7e313857704e4f9775c7a57a4da744f3e7f9d88827740f
     name: langflow
     type: application
     urls:
@@ -1339,12 +1339,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-10-21T23:06:33.1136785Z"
+    created: "2026-10-22T23:05:14.175664901Z"
     description: Laya Server (converted from 1Panel appstore)
-    digest: 2ae879ee638445212c12d660474e92006f781c81ae18e1c5d95656b61a0c32db
+    digest: 3642cabca4afe1b60107bfbd313639ca5dd48a2fc834a4a8209106bfcbffedab
     name: laya-server
     type: application
     urls:
@@ -1354,12 +1354,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.47.0+plus
-    created: "2026-10-21T23:06:33.114074959Z"
+    created: "2026-10-22T23:05:14.176046853Z"
     description: linkding (converted from 1Panel appstore)
-    digest: 52eae0778f6f3efd193bba4802679cbda12ac21fb056ffba00ff3ed7a20c5a73
+    digest: bd7604c4e5c5cd18d4e9dcda622483c2f368b30604224889f339bd44e6e645f4
     name: linkding
     type: application
     urls:
@@ -1369,12 +1369,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.22.0
-    created: "2026-10-21T23:06:33.114477406Z"
+    created: "2026-10-22T23:05:14.176421604Z"
     description: Linux Command (converted from 1Panel appstore)
-    digest: 8801a3d9aef4b9f1ec269079990fb2a35173d0d86d3f8758b60b24a95df6b95a
+    digest: 10473c47181636e73890480c9e965dc098bb84e4a986d69ff7ac934b4d5d0d67
     name: linux-command
     type: application
     urls:
@@ -1384,12 +1384,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.143.3
-    created: "2026-10-21T23:06:33.114873945Z"
+    created: "2026-10-22T23:05:14.177143276Z"
     description: LobeChat (converted from 1Panel appstore)
-    digest: 7477a29fc2a1b36f613e6e1e1df42a6bf489ed50888ebd9ba5ff516ebdc90115
+    digest: 9072b79d596b192a21a132bdfdf2c77ef9f7dfd54c7d7665f1831ee5db20208a
     name: lobe-chat
     type: application
     urls:
@@ -1399,12 +1399,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.12.1+aio-cpu
-    created: "2026-10-21T23:06:33.115272848Z"
+    created: "2026-10-22T23:05:14.177743228Z"
     description: LocalAI (converted from 1Panel appstore)
-    digest: 27021b0bf02326e2fd1b5d8da0170467ab7e76b95744647bfb370f0f50900cab
+    digest: 0faf9fed2463bdfca294807832232fa1b277007749eb37ffb856f13e933f9855
     name: localai
     type: application
     urls:
@@ -1414,12 +1414,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 9.5.5
-    created: "2026-10-21T23:06:33.11565196Z"
+    created: "2026-10-22T23:05:14.178150287Z"
     description: Logstash (converted from 1Panel appstore)
-    digest: 020a6653f7e6a2fc5e2b05bafd47d7adc1b6d2b1f7dba19cb029c479e3293df5
+    digest: 24ea83f6d33a28aca6bba5dc889d61fb53b1f9ef95035cf67ee017cb2904d9cb
     name: logstash
     type: application
     urls:
@@ -1429,12 +1429,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.45.0
-    created: "2026-10-21T23:06:33.116031934Z"
+    created: "2026-10-22T23:05:14.178553641Z"
     description: Logto (converted from 1Panel appstore)
-    digest: 6900592e02370ea0168e649ae97369c2f125f77256df88e24727f354c0c10287
+    digest: 416dbc5e03e68c9a633a1b50543e71d8dbafc5d1394b8c466055185475b580f4
     name: logto
     type: application
     urls:
@@ -1444,12 +1444,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.0-d20261015.g64ad1
-    created: "2026-10-21T23:06:33.116426229Z"
+    created: "2026-10-22T23:05:14.178939549Z"
     description: Lsky-pro (converted from 1Panel appstore)
-    digest: 5afd00518df2f3d476d86bb2c27aa074a713283ee3e3e991a143abd95e36c2d7
+    digest: 15f80d389614221f05dad2aa6d34a953d99d16b47a66cab0a72dd12af02ae2bd
     name: lsky-pro
     type: application
     urls:
@@ -1459,12 +1459,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.9.6
-    created: "2026-10-21T23:06:33.116838442Z"
+    created: "2026-10-22T23:05:14.179326348Z"
     description: Maddy Mail Server (converted from 1Panel appstore)
-    digest: e801883535f731b3166eb78bc7b78b96058f0d5db2f2d3720af5104ca693110e
+    digest: e2d77f7dc1fe429f46734f74f008042920b07abb330cc2cd380d8d4070616d2d
     name: maddy-mail
     type: application
     urls:
@@ -1474,12 +1474,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 16.0.1
-    created: "2026-10-21T23:06:33.117275172Z"
+    created: "2026-10-22T23:05:14.179739055Z"
     description: Mailserver (converted from 1Panel appstore)
-    digest: 6c4b216f25c64a8f81b688c75cf84ff66168db4152722e6b5c8fa119bae1f145
+    digest: 0425f52121d9431f1ffe8410565a6c2ff7c1171980d2d839f710b0540a14b1bc
     name: mailserver
     type: application
     urls:
@@ -1489,12 +1489,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 12.0.0
-    created: "2026-10-21T23:06:33.118293169Z"
+    created: "2026-10-22T23:05:14.180199883Z"
     description: Mattermost (converted from 1Panel appstore)
-    digest: 0ae5e75df838d0f1529f82261e0adde121ae4dc0a0e93caa7640ee5c0623f0b3
+    digest: 5ebede4410e7e462e9bfa8da797b87d7f479ac8e664026e4b69957a8272c8632
     name: mattermost
     type: application
     urls:
@@ -1504,27 +1504,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 2.10.7+lts
-    created: "2026-10-21T23:06:33.118694355Z"
+    appVersion: 2.10.8+lts
+    created: "2026-10-22T23:05:14.180567995Z"
     description: MaxKB (converted from 1Panel appstore)
-    digest: c5cb3778cc39806c4c5c310343c8fd97af3e6460ab7c5391f9944b40ca0e2847
+    digest: 3ad152f004d70de3546ae59f5543726e363375b7a0f429c83d51ff5054d894da
     name: maxkb
     type: application
     urls:
-    - https://charts.xzim.top/maxkb-2.10.7+lts.tgz
-    version: 2.10.7+lts
+    - https://charts.xzim.top/maxkb-2.10.8+lts.tgz
+    version: 2.10.8+lts
   mblog:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-10-21T23:06:33.119077123Z"
+    created: "2026-10-22T23:05:14.180939772Z"
     description: mBlog (converted from 1Panel appstore)
-    digest: 7aaf8c8a8e9a8d89e49c5ad583751370283c4a1ef727ee77f9d6f63d08f49129
+    digest: 437530c496e93a36a3a365d8c99e056c1638ca7bf06d008b3861c7b1476167d5
     name: mblog
     type: application
     urls:
@@ -1534,12 +1534,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 10.21.2
-    created: "2026-10-21T23:06:33.119521123Z"
+    created: "2026-10-22T23:05:14.181333532Z"
     description: MCSManager (converted from 1Panel appstore)
-    digest: cdc1c0c162f6aca307938427fa4fdd6fdb508ee760ff19e0f9d6ed498ef67e32
+    digest: e82f2b84aca2d506dba8255dffc2da746bf6f95e9ec94b160a911d163886617f
     name: mcsmanager-web
     type: application
     urls:
@@ -1549,12 +1549,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.55.0
-    created: "2026-10-21T23:06:33.119952945Z"
+    created: "2026-10-22T23:05:14.181757145Z"
     description: MeiliSearch (converted from 1Panel appstore)
-    digest: 0b2b3e1c55af01f751aeefa65a1cfb3191ec323823d2abb855c9f15505241d1e
+    digest: 3eb508ce836ea24e03ff42ead6dadbc9e484aceb8253eef30094be050b2d7a19
     name: meilisearch
     type: application
     urls:
@@ -1564,12 +1564,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.31.0
-    created: "2026-10-21T23:06:33.120356455Z"
+    created: "2026-10-22T23:05:14.182127981Z"
     description: Memos (converted from 1Panel appstore)
-    digest: 20ea68bbc6dcd59453b3c219042ad18ad1b89ce9b5daa78b624d35eda95202b1
+    digest: 1a41c8b61830b746b3fe0c2f2cf81556f04c34f93871b5bd4537a12c964c242e
     name: memos
     type: application
     urls:
@@ -1579,12 +1579,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.64.3
-    created: "2026-10-21T23:06:33.120792733Z"
+    created: "2026-10-22T23:05:14.182575179Z"
     description: Metabase (converted from 1Panel appstore)
-    digest: a72e3321702ff3bc2297f86d693cad3819150ab871de278e5fc1527d5ae8da65
+    digest: c0e4ffdae71ae1ca0d29b858b03cb2744901f89726bb431a7dbb004c4fb8de3e
     name: metabase
     type: application
     urls:
@@ -1594,12 +1594,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.3.4
-    created: "2026-10-21T23:06:33.121185917Z"
+    created: "2026-10-22T23:05:14.183178056Z"
     description: Miniflux (converted from 1Panel appstore)
-    digest: 95c2e18d17194b394641c160418a42e8efc453e4677edd7f617ac5f6f740198e
+    digest: 50e173c462830ab2bf313dca1e1de48f8cda84bee0d5470c9534e4ac090f28c0
     name: miniflux
     type: application
     urls:
@@ -1609,12 +1609,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 9.7.7
-    created: "2026-10-21T23:06:33.12155871Z"
+    created: "2026-10-22T23:05:14.18384641Z"
     description: Material for MkDocs (converted from 1Panel appstore)
-    digest: 83f8a19adc7d6f3063644f87aa0e31f1cf7856c435949ded814fadff39325edb
+    digest: 28625ccc9c1b96e9cc1071525af96b333e11bbb939313d267b529197dd789594
     name: mkdocs-material
     type: application
     urls:
@@ -1624,12 +1624,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.24.1
-    created: "2026-10-21T23:06:33.121974738Z"
+    created: "2026-10-22T23:05:14.184317343Z"
     description: 木雷短网址 (converted from 1Panel appstore)
-    digest: a0c6e6f8a909518f6727e49839d3ee661f06698041022835109483048195494f
+    digest: 2f57e2c8651c01a631072e988bc661968303a9fe28bbe6b96525baffa700c35c
     name: mliev-dwz
     type: application
     urls:
@@ -1639,12 +1639,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.0.2+20
-    created: "2026-10-21T23:06:33.122367752Z"
+    created: "2026-10-22T23:05:14.184705684Z"
     description: mongo-express (converted from 1Panel appstore)
-    digest: 10d4090adbc607020f48d9c07cf3bf68643ffd69a75076894788211656f0d769
+    digest: ca16ce9e553651b636c73e49bc1ed5a9a6e1ab830ab6d99557a386d206f349cb
     name: mongo-express
     type: application
     urls:
@@ -1653,10 +1653,10 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-10-21T23:06:33.122676088Z"
+    created: "2026-10-22T23:05:14.185032996Z"
     description: MongoDB 8.0 single-node replica set (oplog-ready) with NFS backup
       CronJob and freshness alert
-    digest: 5025f70fcea60ba95fd02eae2a7300d087e7f06f759f60280eeb97210447706b
+    digest: d311a3826889a42ec778cb6e478e78948cfa029f6aa1d06dc3238e33409d897a
     maintainers:
     - name: gclm
     name: mongodb
@@ -1668,12 +1668,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.8.0
-    created: "2026-10-21T23:06:33.123055921Z"
+    created: "2026-10-22T23:05:14.185451151Z"
     description: Music Tag Web (converted from 1Panel appstore)
-    digest: 01079143beb500e800f098851cc87571f95ddb4fc8bfc6fcfea6ed377035605a
+    digest: 6da6489c93a6d6a5b9b9d73babda6807755c91db2aea8913820c48f3cf8860a6
     name: music-tag-web
     type: application
     urls:
@@ -1682,9 +1682,9 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.4"
-    created: "2026-10-21T23:06:33.123672903Z"
+    created: "2026-10-22T23:05:14.185719035Z"
     description: MySQL 8.4 standalone with NFS backup CronJob and freshness alert
-    digest: 226f45abb8e98f6ad41371ec380a9348a1893cb6695f857c42bea9973787019a
+    digest: ee3796ab271616337a2abc30a6ff304b514042949cf1633b22bf7cfa178be095
     maintainers:
     - name: gclm
     name: mysql
@@ -1696,12 +1696,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.44.4
-    created: "2026-10-21T23:06:33.124287431Z"
+    created: "2026-10-22T23:05:14.186095499Z"
     description: n8n (converted from 1Panel appstore)
-    digest: 920b7c9a6d6251ac7bc92042fdec7bb22549c53e4fe750cd320ce01220cfcc56
+    digest: 83fdc1a943027c4b3dbb605db6fdde3d60f57083f8d9cd57bca003c344213bfa
     name: n8n
     type: application
     urls:
@@ -1711,12 +1711,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2026-10-21T23:06:33.124760415Z"
+    created: "2026-10-22T23:05:14.186595946Z"
     description: Nacos (converted from 1Panel appstore)
-    digest: a8df76d3885098a56d6569f0193cb316dc9ed5fb75ccd93d85a7313c51073dbf
+    digest: 52730bd513fedf9937e5804ec9c9440e25b9d643bcc435093e64ed23af1cc266
     name: nacos
     type: application
     urls:
@@ -1726,12 +1726,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.64.2
-    created: "2026-10-21T23:06:33.125167259Z"
+    created: "2026-10-22T23:05:14.186997947Z"
     description: Navidrome (converted from 1Panel appstore)
-    digest: 23b7f054bf0d710fbaf056da740443bb2b6536c0a7bd9220d7a169bb5b512948
+    digest: 2cab87e49a59d28000f05c5c7dca011e2103f2df3fcb4369a61e29b66a30b32b
     name: navidrome
     type: application
     urls:
@@ -1741,12 +1741,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.13.2
-    created: "2026-10-21T23:06:33.125610028Z"
+    created: "2026-10-22T23:05:14.187420349Z"
     description: New API (converted from 1Panel appstore)
-    digest: a9120628f9b67f49721436f85b91c24c77d5fad470060fe9ee37e05ed5df5bc8
+    digest: 336f063b29539b3f592b82fd9c3e806a7b26af2ad58eb0262549101df08b1a38
     name: new-api
     type: application
     urls:
@@ -1756,12 +1756,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.41
-    created: "2026-10-21T23:06:33.126033658Z"
+    created: "2026-10-22T23:05:14.187836882Z"
     description: NewsNow (converted from 1Panel appstore)
-    digest: ee41aeddb130ae33c73b76b0e65fe7ee201c7d685292c691c71f392b0131463d
+    digest: dbad24f242a5cc96201aec42a807d1668bef4d6e96c438fa47d13034432f1807
     name: newsnow
     type: application
     urls:
@@ -1771,12 +1771,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 35.0.2
-    created: "2026-10-21T23:06:33.126450187Z"
+    created: "2026-10-22T23:05:14.188243841Z"
     description: Nextcloud (converted from 1Panel appstore)
-    digest: 23e297aa837d12ce08f79b01284edf76ceb62b4ce2e8cf294f4391ee31c16233
+    digest: 7112f6e4e477626c8c52ddd10ebb4f1946ff542886fc44eb5d0e4bc726fc5adb
     name: nextcloud
     type: application
     urls:
@@ -1786,12 +1786,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.97.1
-    created: "2026-10-21T23:06:33.126824021Z"
+    created: "2026-10-22T23:05:14.188613264Z"
     description: Nexus Repository (converted from 1Panel appstore)
-    digest: 0b9084f9b4be66835712ad8242d012f078ce433b043613b0e5df0664fa20f661
+    digest: fe9c710eaafc75df697c8027d506a1c2e7ccc8284481dc41e6972e08aad44d47
     name: nexus
     type: application
     urls:
@@ -1801,12 +1801,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.3.18
-    created: "2026-10-21T23:06:33.127203905Z"
+    created: "2026-10-22T23:05:14.188989037Z"
     description: 哪吒监控 (converted from 1Panel appstore)
-    digest: 87102b3d965182717da4e61367f3a1c24982770d28dd418bc9eb64b3a58086cf
+    digest: eeedebc9e83db1d369a8e42a93ef0680c81dee8eb563db0d33c3b82ef15788fb
     name: nezha
     type: application
     urls:
@@ -1816,12 +1816,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.16.0
-    created: "2026-10-21T23:06:33.127590218Z"
+    created: "2026-10-22T23:05:14.189816815Z"
     description: Nginx Proxy Manager (converted from 1Panel appstore)
-    digest: f4273bd1a2f1eb875595dbbd6d6d1acf3e3e579b34eef39c400a6505e56d19d2
+    digest: 9e4fa58eca4b6ed16d1405837ac16881ebeb51d49f84114d186f02f31973cd36
     name: nginx-proxy-manager
     type: application
     urls:
@@ -1831,12 +1831,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.2.29
-    created: "2026-10-21T23:06:33.128002471Z"
+    created: "2026-10-22T23:05:14.190463657Z"
     description: NocoBase (converted from 1Panel appstore)
-    digest: 8cd8bc81e2fea3085bfa3c85580a2328bfde9a0c704cca7d45e66da9b258646e
+    digest: af99098237f923967ff36d2a24fbea9011c6fa5c54c28536cb6e52dd9698f246
     name: nocobase
     type: application
     urls:
@@ -1846,12 +1846,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 26.12.1
-    created: "2026-10-21T23:06:33.128387953Z"
+    created: "2026-10-22T23:05:14.190854072Z"
     description: Node.js (converted from 1Panel appstore)
-    digest: dcb7db1951f106c682152e305775a7800a7b9c2e58ec1ff39d915877c77890d2
+    digest: cafdb365408e30c65b6ce97fda6152977030d89e5838d51be773342d972dbbf7
     name: node
     type: application
     urls:
@@ -1861,12 +1861,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.0.9
-    created: "2026-10-21T23:06:33.128760436Z"
+    created: "2026-10-22T23:05:14.191245337Z"
     description: Node-RED (converted from 1Panel appstore)
-    digest: 5ac26f1c59abaa77879af8e9c68053a7b0dc2f8e5d2e00541e7ccf0471717d22
+    digest: d1c2b931edc5280bc7566cb8fbe67831ea988609fd1372da571f4785a62f71aa
     name: node-red
     type: application
     urls:
@@ -1876,12 +1876,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.16.3
-    created: "2026-10-21T23:06:33.129370106Z"
+    created: "2026-10-22T23:05:14.191642912Z"
     description: NodeBB (converted from 1Panel appstore)
-    digest: d4af5e651b7414af28de8e51efb4490cd0f775b75eec66c1b4092277df7c5d13
+    digest: f977dd1a37878dcc6dc709d8669321b1b7381a3edc82de7930b07d0d232012c7
     name: nodebb
     type: application
     urls:
@@ -1891,12 +1891,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.32.0
-    created: "2026-10-21T23:06:33.130105342Z"
+    created: "2026-10-22T23:05:14.192048259Z"
     description: ntfy (converted from 1Panel appstore)
-    digest: 93e1cb4c2e30bf02345abc52bc5e2487a71e691e53ce3a97189f72b8a7e50514
+    digest: 1b0f7a8f81a0172b276fa75d2b621def9ba44b279ca7875ee42a3eca684b28a5
     name: ntfy
     type: application
     urls:
@@ -1906,12 +1906,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.5.3
-    created: "2026-10-21T23:06:33.130577636Z"
+    created: "2026-10-22T23:05:14.19248395Z"
     description: Obsidian LiveSync (converted from 1Panel appstore)
-    digest: 605d497fea4caeeca8013e4067642dbd56043abacc117a9c87d9204684692462
+    digest: 2963ac33181e56bcb5736f2ee0a8498541677c7f5c5440e6177478fba3ff3b6c
     name: obsidian-livesync
     type: application
     urls:
@@ -1921,12 +1921,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-10-21T23:06:33.131003659Z"
+    created: "2026-10-22T23:05:14.192899041Z"
     description: Octop (converted from 1Panel appstore)
-    digest: 6bff49a8385e6dbab61877854bec1e8817535604f47a41524900851f6171ad9b
+    digest: 282b3a0fa7327ae0297c193ca7aeabe863c27032ce1ee69502d54c4c3b51685a
     name: octop
     type: application
     urls:
@@ -1936,12 +1936,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 19.0.0
-    created: "2026-10-21T23:06:33.131426728Z"
+    created: "2026-10-22T23:05:14.193305239Z"
     description: Odoo (converted from 1Panel appstore)
-    digest: d49ed158c2bae08fa06449d5cab626e013d549f5654bf136dd0c60f67f33648a
+    digest: 50937b12745e71ad338afc5b018741b5a18d0472748c1be97afb0a8ca7db62f5
     name: odoo
     type: application
     urls:
@@ -1951,27 +1951,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 0.40.7
-    created: "2026-10-21T23:06:33.131800823Z"
+    appVersion: 0.40.8
+    created: "2026-10-22T23:05:14.193674322Z"
     description: Ollama (converted from 1Panel appstore)
-    digest: d22974110e8d4be4c51f88e70bd54652f1e93ee4072bf5f6f611e64d5a8a2a1d
+    digest: 2ef1d54f7e2ed6aa1a4bddbfaf0721d34d7c316f4c2f1c5dd143b79a1758dccb
     name: ollama
     type: application
     urls:
-    - https://charts.xzim.top/ollama-0.40.7+g7fa632.tgz
-    version: 0.40.7+g7fa632
+    - https://charts.xzim.top/ollama-0.40.8+g69399d.tgz
+    version: 0.40.8+g69399d
   ollama-webui:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.12.3
-    created: "2026-10-21T23:06:33.132199515Z"
+    created: "2026-10-22T23:05:14.194055763Z"
     description: OpenWebUI (converted from 1Panel appstore)
-    digest: efb0e0c51f9d49de6cce60d6db16588971bdcc25e95e7e6f20d6c78d18a13aff
+    digest: 08719de62d59a762e17757935fc45e3b025c0e26318b23520f342460df3c93e5
     name: ollama-webui
     type: application
     urls:
@@ -1981,12 +1981,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 10.0.0
-    created: "2026-10-21T23:06:33.13261352Z"
+    created: "2026-10-22T23:05:14.194473267Z"
     description: ONLYOFFICE Docs (converted from 1Panel appstore)
-    digest: 1da48fab8d0e770533888715b62293fd0870b2d48abdf2f15c04a7199ff94732
+    digest: 4e2b524c75a9c034522d490377c1ae774211aa527cf041765a39f7eef849cad5
     name: onlyoffice
     type: application
     urls:
@@ -1996,12 +1996,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2026.10.5
-    created: "2026-10-21T23:06:33.133020324Z"
+    created: "2026-10-22T23:05:14.194876611Z"
     description: OpenClaw (converted from 1Panel appstore)
-    digest: 3adc3257904b6bccad5aed90df6b2aaf428489efc928f954c5e47befe8b989f1
+    digest: 09e0e1a3dd96ef5bcb306fed2d5db980e39aace7db0d6b04a13b02cabd32df09
     name: openclaw
     type: application
     urls:
@@ -2011,12 +2011,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.15.3
-    created: "2026-10-21T23:06:33.133404865Z"
+    created: "2026-10-22T23:05:14.19525642Z"
     description: Opengist (converted from 1Panel appstore)
-    digest: 00996f4cf7502986573c49904f8307da3b5432434b5b2a4c048189f3383fec3f
+    digest: ef44bc6c50624b8a56ca5b390988cb6483da034aa631ac5ddf5b2adcd6b03203
     name: opengist
     type: application
     urls:
@@ -2026,12 +2026,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.8.4+lsphp81
-    created: "2026-10-21T23:06:33.133832962Z"
+    created: "2026-10-22T23:05:14.196050218Z"
     description: OpenLiteSpeed (converted from 1Panel appstore)
-    digest: 1ca53290231732bbb496fd0992a93c35a4d7995f219987182faf30c15ccd984a
+    digest: bb6a532cdf1a6f6186a19a416055ce5e7104e510ce1f848bbff1d40a7dc0bfee
     name: openlitespeed
     type: application
     urls:
@@ -2041,12 +2041,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.11.0
-    created: "2026-10-21T23:06:33.134370313Z"
+    created: "2026-10-22T23:05:14.19672412Z"
     description: Outline (converted from 1Panel appstore)
-    digest: bb73e9b9659102c1dc4c27afb81e6567e492da4e4984cf91b06b10d89544986e
+    digest: 910f2ed1c2a48fed54a7dfac0bc1747d2c1150785f939988d49296cea763df68
     name: outline
     type: application
     urls:
@@ -2056,12 +2056,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.8.0
-    created: "2026-10-21T23:06:33.134852471Z"
+    created: "2026-10-22T23:05:14.197243484Z"
     description: Palworld Server (converted from 1Panel appstore)
-    digest: 71d18debf647d39bb547f05904df052a1054443616829e3682862d3705c474c4
+    digest: 2705d2ebbe86024282b25102f65dd69d229dd5979827f8e2b362d6f25d38da73
     name: palworld
     type: application
     urls:
@@ -2071,12 +2071,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.12.2
-    created: "2026-10-21T23:06:33.135272776Z"
+    created: "2026-10-22T23:05:14.19764829Z"
     description: Palworld Server Tool (converted from 1Panel appstore)
-    digest: f6fa6c67eee10295fec3e0690f2679c8357aa4bad01141a6d0a695a70ab485eb
+    digest: 213320585e6becb694385c1cd912d1cf4911b27ff3d293a738a79ea27d0a6d5b
     name: palworld-server-tool
     type: application
     urls:
@@ -2086,12 +2086,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 9.18.0
-    created: "2026-10-21T23:06:33.13601039Z"
+    created: "2026-10-22T23:05:14.19806985Z"
     description: PGAdmin4 (converted from 1Panel appstore)
-    digest: add66a144f7118f1384ab1fea6175e4c726648b41eb117302cd1addb7fe9fceb
+    digest: ebe5065fe07f285651bc7e4c48ef88cf7da0b4dac12e46dd9a1c250987ac7302
     name: pgadmin4
     type: application
     urls:
@@ -2101,12 +2101,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 251130.0.0+ce
-    created: "2026-10-21T23:06:33.136780803Z"
+    created: "2026-10-22T23:05:14.198617045Z"
     description: PhotoPrism (converted from 1Panel appstore)
-    digest: 7dca75bda28cea30e96f45a5e4514efc5f8090e89480c579721f11c150c9adb9
+    digest: 108efe9a90bf854cbaf7ca514ccc31e7e64b0eb620c49af0738a6ede95ce05c8
     name: photoprism
     type: application
     urls:
@@ -2116,12 +2116,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.2.3
-    created: "2026-10-21T23:06:33.137159225Z"
+    created: "2026-10-22T23:05:14.198984986Z"
     description: phpMyAdmin (converted from 1Panel appstore)
-    digest: f7097570cb91539b61a59679582f88f1ffcf96179ee5012b0a6ed51ba8217cfc
+    digest: 72bbc45ae3d6519753dc2d8e5ffaea1e140063e7d10d1edec8c3dcefb32931f8
     name: phpmyadmin
     type: application
     urls:
@@ -2131,12 +2131,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.2.1
-    created: "2026-10-21T23:06:33.137602845Z"
+    created: "2026-10-22T23:05:14.199417112Z"
     description: Planka (converted from 1Panel appstore)
-    digest: f1cf744f025dd8fb653cfab8bc5494d1e6dfab6edc7a97fc78bf552a38bc6eab
+    digest: 427ae7aa0c4702320e2670ae130971f282a93c0be5462756fed6826c4539ae01
     name: planka
     type: application
     urls:
@@ -2145,9 +2145,9 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: 17-alpine
-    created: "2026-10-21T23:06:33.137965112Z"
+    created: "2026-10-22T23:05:14.1997754Z"
     description: PostgreSQL 17 standalone with NFS backup CronJob and freshness alert
-    digest: a1af13c9c6f2b70cc6ee941090bf58bc8550d9a3a6bc68278cbdaf97fc56ac5f
+    digest: 269b0a0026e7e626208f27e6d81ab95467a5bb8098fc9a56625075d3d7236a17
     maintainers:
     - name: gclm
     name: postgresql
@@ -2159,12 +2159,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.15.0
-    created: "2026-10-21T23:06:33.138360919Z"
+    created: "2026-10-22T23:05:14.200152695Z"
     description: Python (converted from 1Panel appstore)
-    digest: 60fcaab0643a11d461e076c88ef6e1a0499446387d45621a80f7f7c55961299d
+    digest: bbaef3c98d0447ba079d8bebe3103ba2e987b02417a4dc55e8337299a46d35ba
     name: python
     type: application
     urls:
@@ -2174,12 +2174,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.3.0
-    created: "2026-10-21T23:06:33.138766532Z"
+    created: "2026-10-22T23:05:14.20057071Z"
     description: qBittorrent (converted from 1Panel appstore)
-    digest: 988832c65f17e05aa0276a9614560beff252ad31e7db4c3921204aeb469d5764
+    digest: 85a1644c3ef6e4d9e1878ff23a735c08660e4403c84e863b782625c4b404b3e5
     name: qbittorrent
     type: application
     urls:
@@ -2189,12 +2189,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 20250803.0.0
-    created: "2026-10-21T23:06:33.139184243Z"
+    created: "2026-10-22T23:05:14.200976948Z"
     description: QD (converted from 1Panel appstore)
-    digest: c23a4e93f91caa22edb28b23061736df42674f43e2814d131b6ca5dc24316cbf
+    digest: 5239e16bff3417e520d09d4850568b8d50214b09cc95f5fa0b35a12235ff1adc
     name: qiandao
     type: application
     urls:
@@ -2204,12 +2204,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.23.0+debian
-    created: "2026-10-21T23:06:33.139558107Z"
+    created: "2026-10-22T23:05:14.201658471Z"
     description: 青龙 (converted from 1Panel appstore)
-    digest: 59e9a5398a7693233aef602a45ee22abf00785c53b03135b76be91220d7b00e7
+    digest: 17378fb3ac9870b21858548516c8c7c2223632fa6774acc6f13749b120eafac4
     name: qinglong
     type: application
     urls:
@@ -2219,12 +2219,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.4.0+management-alpine
-    created: "2026-10-21T23:06:33.139956028Z"
+    created: "2026-10-22T23:05:14.202274257Z"
     description: RabbitMQ (converted from 1Panel appstore)
-    digest: 438215657a0c777432790b99a662c80b80f09f2f381cb0fb24aa45acf0b7159f
+    digest: b112a3eafe6cf71b2bb1fd36fcd2c2b6492999704d27eaf583d4f0864cab92d9
     name: rabbitmq
     type: application
     urls:
@@ -2233,10 +2233,10 @@ entries:
   redis:
   - apiVersion: v2
     appVersion: 8-alpine
-    created: "2026-10-21T23:06:33.140282611Z"
+    created: "2026-10-22T23:05:14.202607878Z"
     description: Redis 8 standalone (AOF+RDB) with NFS backup CronJob and freshness
       alert
-    digest: 2ea1e344a0bc828e7bddde2ae5daf03e389862316f18caef6a82385f0e4dbfb2
+    digest: a383101935ce8bf26227510f57ead324d6cddee59cf3d917fe4de3f6c99fac3a
     maintainers:
     - name: gclm
     name: redis
@@ -2248,12 +2248,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.0.0-d20261015.g19cd0
-    created: "2026-10-21T23:06:33.1406656Z"
+    created: "2026-10-22T23:05:14.202998563Z"
     description: Redis-Commander (converted from 1Panel appstore)
-    digest: 82f80c4fa3dc09fb3b4bf458a5ec9314b2b6e9361214b0ea292c5dc4c3ceb479
+    digest: 81627c538b95d9eb3e688d55fec9b6c50b1e8da8bdf7856cde9f4c00636a4301
     name: redis-commander
     type: application
     urls:
@@ -2263,27 +2263,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 3.12.0
-    created: "2026-10-21T23:06:33.1410301Z"
+    appVersion: 3.13.0
+    created: "2026-10-22T23:05:14.203379363Z"
     description: Redpanda Console (converted from 1Panel appstore)
-    digest: ebad2d69d5f9f09f063257b88edca6d39a333a947ec734ed413086391c4517e7
+    digest: 2fece15fb45afca4c2a0715b586cbd4acd9ff15b36589faa42eca0240d3c1385
     name: redpanda-console
     type: application
     urls:
-    - https://charts.xzim.top/redpanda-console-3.12.0+g43e4bc.tgz
-    version: 3.12.0+g43e4bc
+    - https://charts.xzim.top/redpanda-console-3.13.0+g48592e.tgz
+    version: 3.13.0+g48592e
   rocketmq:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.5.0
-    created: "2026-10-21T23:06:33.141770909Z"
+    created: "2026-10-22T23:05:14.203913419Z"
     description: RocketMQ (converted from 1Panel appstore)
-    digest: a395ce10353c5635059a5853f313fd0f0f9c359175e878817d747077b8ed75ec
+    digest: e32fbee4d724eea4bc7fabbf1c54de7f19de16b204dd9ad81f2e34ade224cb5d
     name: rocketmq
     type: application
     urls:
@@ -2293,12 +2293,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.7.5+apache
-    created: "2026-10-21T23:06:33.142522879Z"
+    created: "2026-10-22T23:05:14.204369199Z"
     description: Roundcube (converted from 1Panel appstore)
-    digest: f89f1051c698fef558945aeebb968595edd66e8e5dc4819a0eb0fcf7b1e6d030
+    digest: 41ae547a209f01873bbc3cdafc5d6dd6eb5756a71fddbf23009ddacd27339438
     name: roundcube
     type: application
     urls:
@@ -2308,12 +2308,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.1.16
-    created: "2026-10-21T23:06:33.142929933Z"
+    created: "2026-10-22T23:05:14.204754717Z"
     description: RustDesk (converted from 1Panel appstore)
-    digest: 0ad4ce914275485f130a7194960634b8d02fcf18a6e07dd6d1ee4107a3a0a55f
+    digest: 10cda71ebc1a2ff3bf4c70daf1cdb34ff8adf1b7b685248153dd78800da2b1be
     name: rustdesk
     type: application
     urls:
@@ -2323,12 +2323,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.0.3
-    created: "2026-10-21T23:06:33.14337167Z"
+    created: "2026-10-22T23:05:14.205152272Z"
     description: RustFS (converted from 1Panel appstore)
-    digest: 775fd139422edaefe64e5a91eb7438af9e8e9cb054660850d15707590b57ff45
+    digest: 39340786a44adb221f317aab67bd5ca058c75fc18d1bdbc2627ee6a02778fc25
     name: rustfs
     type: application
     urls:
@@ -2338,12 +2338,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.12.6
-    created: "2026-10-21T23:06:33.143757463Z"
+    created: "2026-10-22T23:05:14.205543337Z"
     description: screego (converted from 1Panel appstore)
-    digest: 4a9d0b5550ed520ff9f5642dc87f3727bab28b3e62d40dc7f180d0b3907a1f4c
+    digest: 331022d2f9e9fe7564594821606d417cfc2cecb08959220f7b46fd549fb27040
     name: screego
     type: application
     urls:
@@ -2353,12 +2353,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.8.10
-    created: "2026-10-21T23:06:33.144124908Z"
+    created: "2026-10-22T23:05:14.205903988Z"
     description: Sentinel Dashboard (converted from 1Panel appstore)
-    digest: 6fa41f03798bf32d5019e5aa80b9f4608027017944df260b1c13cb2f0f36359a
+    digest: c17d93dec24ac5a71c4fbefd12de7e48fab845d055ac904fba6a50621602ca64
     name: sentinel-dashboard
     type: application
     urls:
@@ -2368,12 +2368,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.7.6+alpine
-    created: "2026-10-21T23:06:33.14458353Z"
+    created: "2026-10-22T23:05:14.206340731Z"
     description: SFTPGo (converted from 1Panel appstore)
-    digest: b0090c33732fc28e3db83306bc25a17312814c49963b45f917c3ca4361dbe87d
+    digest: 6501a6601e3580ff991510f5131c891b3b1bd009f221d68c2e5ef73384309952
     name: sftpgo
     type: application
     urls:
@@ -2383,27 +2383,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 3.9.4
-    created: "2026-10-21T23:06:33.1449609Z"
+    appVersion: 3.9.5
+    created: "2026-10-22T23:05:14.207021833Z"
     description: ShowDoc (converted from 1Panel appstore)
-    digest: 8c9118e4b69cb9a3348d33ecb1e2eae0ca4664777bfc5836807d50e3be7e618d
+    digest: 18c5bccd662f5884004a9807bbf41ec43b2d4de5931ebb8e6c92e8ba1f2f259f
     name: showdoc
     type: application
     urls:
-    - https://charts.xzim.top/showdoc-3.9.4+gc3e152.tgz
-    version: 3.9.4+gc3e152
+    - https://charts.xzim.top/showdoc-3.9.5+gddf4fc.tgz
+    version: 3.9.5+gddf4fc
   silo:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2026.0.0+10-15
-    created: "2026-10-21T23:06:33.145404781Z"
+    created: "2026-10-22T23:05:14.207724597Z"
     description: Silo (converted from 1Panel appstore)
-    digest: d0051802d185303f7b349fc65fd68a7d5dc6edeae41c284d4dd8c846acbdeced
+    digest: 8f69c44fb1ee7206cda68203d75461b95d806e47671ac7c30a1a0ac5ba76a40c
     name: silo
     type: application
     urls:
@@ -2413,12 +2413,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.8.8
-    created: "2026-10-21T23:06:33.145807559Z"
+    created: "2026-10-22T23:05:14.208181869Z"
     description: 思源笔记 (converted from 1Panel appstore)
-    digest: c7eea9870583bf630e1e071137436a323bff27269106a23ed8fb3c4c9bc5b0bc
+    digest: 1a9386ffe7de77b33e7e527435fbd5cddecfea114aac0400cf97c3ecb643469c
     name: siyuan
     type: application
     urls:
@@ -2428,12 +2428,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 26.10.0+community
-    created: "2026-10-21T23:06:33.146238149Z"
+    created: "2026-10-22T23:05:14.208601867Z"
     description: SonarQube (converted from 1Panel appstore)
-    digest: 8eb7882c4a71381a3069ff5aae197c33fe71c4db583d65f6c303417397f968f9
+    digest: 314837c17d6cc7e988ea26039905526374127ec36bde68366c79184fc9f5e37b
     name: sonarqube
     type: application
     urls:
@@ -2443,12 +2443,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2026-10-21T23:06:33.146718505Z"
+    created: "2026-10-22T23:05:14.209070217Z"
     description: SQLBot (converted from 1Panel appstore)
-    digest: 631ae8509c3991e45060bde6312104070cc0962bd02710f062a1327522bc4532
+    digest: 563cfdb6d395f59f8fa56946bb519f6f77300f66f4800e641fc4f9c62fc8efd4
     name: sqlbot
     type: application
     urls:
@@ -2458,12 +2458,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.16.27+alpine
-    created: "2026-10-21T23:06:33.147097777Z"
+    created: "2026-10-22T23:05:14.209463866Z"
     description: Stalwart Mail Server (converted from 1Panel appstore)
-    digest: 679ca929f8ba35940b5e92c65fc18faf90a9cdef5ff79e137e1b4a41d2d848df
+    digest: b7788936d61908d5a890c73ca760153009f49bde59cd6e315ec84da5eaa1297f
     name: stalwart-mail
     type: application
     urls:
@@ -2473,27 +2473,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 3.2.0
-    created: "2026-10-21T23:06:33.147835772Z"
+    appVersion: 3.2.1
+    created: "2026-10-22T23:05:14.209850665Z"
     description: Stirling-PDF (converted from 1Panel appstore)
-    digest: e4e2a2efab2a9877cc2c164246face3e440c55d98204cfe91af401df10e521cc
+    digest: 4a2d152d6ea19fc23db5a000fc1ebb07e05ac901852c43193870cd09f51976ee
     name: stirling-pdf
     type: application
     urls:
-    - https://charts.xzim.top/stirling-pdf-3.2.0+gfe1494.tgz
-    version: 3.2.0+gfe1494
+    - https://charts.xzim.top/stirling-pdf-3.2.1+g55e1db.tgz
+    version: 3.2.1+g55e1db
   sub2api:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.2.17
-    created: "2026-10-21T23:06:33.148566421Z"
+    created: "2026-10-22T23:05:14.210360105Z"
     description: Sub2API (converted from 1Panel appstore)
-    digest: dac1da3b6061c7eb013711f53b59b29311012f2e1cd16a68835956386f7b0fe1
+    digest: 0c60b63dc9df4902ba1b72bf1fe3fe45bfe8dc2254fd9a3c7392a343e4b50fa2
     name: sub2api
     type: application
     urls:
@@ -2503,12 +2503,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.8.1
-    created: "2026-10-21T23:06:33.148980516Z"
+    created: "2026-10-22T23:05:14.210784289Z"
     description: Sun-Panel (converted from 1Panel appstore)
-    digest: 98c24f9319169c580d8efd4ec4d528a8198532caf5afcd5603a401caf70bbfa0
+    digest: 272755d6478a8911f615328470ff138dc70d707411f8cdd7635dee06ecd7f22c
     name: sun-panel
     type: application
     urls:
@@ -2518,12 +2518,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.163.0
-    created: "2026-10-21T23:06:33.14938062Z"
+    created: "2026-10-22T23:05:14.211177918Z"
     description: Synapse (converted from 1Panel appstore)
-    digest: f004931005a17f017ce5186e497f321ef48090a89ff66e55b2feba0f0ca13c66
+    digest: a80482c0b2ca8376dce6ef13eb3415b72a5f33ff6c16f40fa806008448ea8067
     name: synapse
     type: application
     urls:
@@ -2533,12 +2533,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.11.18
-    created: "2026-10-21T23:06:33.149871311Z"
+    created: "2026-10-22T23:05:14.211660959Z"
     description: Tailchat (converted from 1Panel appstore)
-    digest: 3b62a14bc7ccea2bf89518eff5b9666219c456b08b6bbe4639899a61c894d938
+    digest: 5f0542d8b65e7114818617c03ff454a5fc3abe379eaa43d72295d0903fbede54
     name: tailchat
     type: application
     urls:
@@ -2548,27 +2548,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 0.0.0-d20261021.g7137f
-    created: "2026-10-21T23:06:33.150291225Z"
+    appVersion: 0.0.0-d20261022.g38065
+    created: "2026-10-22T23:05:14.212060998Z"
     description: Teable (converted from 1Panel appstore)
-    digest: a24560caaae2ee09e24d4324288ac1dceb118848df557d55e3a86a0e1abbb3fa
+    digest: 31c3d8806e592a6b62921763b810e7937300d74577275e9bba3dbf4f71cc1225
     name: teable
     type: application
     urls:
-    - https://charts.xzim.top/teable-0.0.0-d20261021.g7137f+gf8d4ba.tgz
-    version: 0.0.0-d20261021.g7137f+gf8d4ba
+    - https://charts.xzim.top/teable-0.0.0-d20261022.g38065+g5acf12.tgz
+    version: 0.0.0-d20261022.g38065+g5acf12
   teamspeak:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.13.8
-    created: "2026-10-21T23:06:33.150694384Z"
+    created: "2026-10-22T23:05:14.212974642Z"
     description: TeamSpeak Server (converted from 1Panel appstore)
-    digest: 7772e22bf0be02c6d0bb0de6348688094da82ddffb2d9d789d6e99c13969d6cc
+    digest: f01a39cd78b5aff93cab2668276cb74e53b2ef94e912878e986d67091c64adb8
     name: teamspeak
     type: application
     urls:
@@ -2578,12 +2578,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.2.7
-    created: "2026-10-21T23:06:33.151079125Z"
+    created: "2026-10-22T23:05:14.213434018Z"
     description: Tiny RDM (converted from 1Panel appstore)
-    digest: 36ad69aed797823683c27501fbef8ba86fd2dd35d723fc1a4cbe2837e93f32d7
+    digest: 403b67b57756876ff7fb545b1420ca5a6d408c1507c8412c7bd8d6cfe2e8c299
     name: tinyrdm
     type: application
     urls:
@@ -2593,12 +2593,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 10.1.43
-    created: "2026-10-21T23:06:33.151467732Z"
+    created: "2026-10-22T23:05:14.213824973Z"
     description: Apache Tomcat (converted from 1Panel appstore)
-    digest: 63335b4edb24ffcac2564b12f8e26c3fab021a357b70ae7c7ab2d99c8d91088a
+    digest: 9e437291f7b469bd6160e8cff516360fc6891c1d891bfd748ab0f43074341a3d
     name: tomcat
     type: application
     urls:
@@ -2608,12 +2608,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.11.0
-    created: "2026-10-21T23:06:33.151846534Z"
+    created: "2026-10-22T23:05:14.214225182Z"
     description: TrendRadar (converted from 1Panel appstore)
-    digest: bac2ee0f77905243a9e2262f7cb2f51885ae887f32568da7007a0af68ae94dd0
+    digest: 843fcaf09b7cb4e433c03a254ae60dc931dfa578418d124ca9c78fe8071e26df
     name: trendradar
     type: application
     urls:
@@ -2623,12 +2623,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.106.0
-    created: "2026-10-21T23:06:33.152232006Z"
+    created: "2026-10-22T23:05:14.214607545Z"
     description: Trilium (converted from 1Panel appstore)
-    digest: 7f658de384858dff2be1a9124190e294e23b41d2eb527f2d963b007327dd1c0f
+    digest: e0dc148e946be5f5e51357a23ad94f7fe5a459f2f465928cb9f19001833828e2
     name: trilium
     type: application
     urls:
@@ -2638,12 +2638,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.50.1
-    created: "2026-10-21T23:06:33.152663778Z"
+    created: "2026-10-22T23:05:14.215047512Z"
     description: Twenty (converted from 1Panel appstore)
-    digest: 135167d477db5cb4cd30f8667e659db439767a4c3834748df27e16d67730a613
+    digest: 389986eefe391deb6b6ad5ef106816f183f3759c3805c2553a739e9968c8d2ad
     name: twenty
     type: application
     urls:
@@ -2653,27 +2653,27 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
-    appVersion: 2.0.16
-    created: "2026-10-21T23:06:33.153039556Z"
+    appVersion: 2.0.17
+    created: "2026-10-22T23:05:14.215439389Z"
     description: Twikoo (converted from 1Panel appstore)
-    digest: de16c5e87b40fe0fa7aa0f32769a1a1f3884ba0a37abd3e4a1e804d70014e6e1
+    digest: b7d1034727b98f876f60fd831a24a65cb2dfdf1abe174c0a71c8351f0969f95a
     name: twikoo
     type: application
     urls:
-    - https://charts.xzim.top/twikoo-2.0.16+gafba20.tgz
-    version: 2.0.16+gafba20
+    - https://charts.xzim.top/twikoo-2.0.17+g1246d5.tgz
+    version: 2.0.17+g1246d5
   typecho:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.3.0+php8.2-apache
-    created: "2026-10-21T23:06:33.153888898Z"
+    created: "2026-10-22T23:05:14.215876572Z"
     description: Typecho (converted from 1Panel appstore)
-    digest: 3d6d72bcb1f7d74cadf2a2ea546d9edc3a4704a19f046e5ea45ed7a7734649cf
+    digest: 816c67c729f4c58eab8bac162ff5c21bd9e24a7b92581b6a2b7f8b59727a5663
     name: typecho
     type: application
     urls:
@@ -2683,12 +2683,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 3.4.0
-    created: "2026-10-21T23:06:33.154466715Z"
+    created: "2026-10-22T23:05:14.216271924Z"
     description: Umami (converted from 1Panel appstore)
-    digest: 2f0d68f63807bb7917c796a7354cc4cc23b600c2ed4d625443b52d9022dd2843
+    digest: 009eb79c1c84f21d8df7d4a3e93f3907ff7c4102928f84ecaba9351d4135cf65
     name: umami
     type: application
     urls:
@@ -2698,12 +2698,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.0.0
-    created: "2026-10-21T23:06:33.154956575Z"
+    created: "2026-10-22T23:05:14.216747654Z"
     description: UPage (converted from 1Panel appstore)
-    digest: 0ca20d2ab331be82a37feb53b8b67fa807b5c2df4c90f4594ae6e53d943afe24
+    digest: 29f98818c6dc57d1fd29b5d8835f4696875c30e69f0dcf716e01cc850588f244
     name: upage
     type: application
     urls:
@@ -2713,12 +2713,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.5.6
-    created: "2026-10-21T23:06:33.155358342Z"
+    created: "2026-10-22T23:05:14.217116136Z"
     description: Uptime Kuma (converted from 1Panel appstore)
-    digest: 45b1a067c32c82572561f064dfe66c7f2621a9ece79316e157704a7deaa48983
+    digest: 43e2f81bc77a6df3656249d80a45d200f87392a5d61dc9930a5ba07a9b84eea4
     name: uptime-kuma
     type: application
     urls:
@@ -2728,12 +2728,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.12.2
-    created: "2026-10-21T23:06:33.155731165Z"
+    created: "2026-10-22T23:05:14.217496907Z"
     description: Vane (converted from 1Panel appstore)
-    digest: a4f6d0b738555ff795dcd896341d38b95e64fc070ff3429889cde2d29ac917bd
+    digest: fc42b1db4e911dc4c7065462c0731ce994fa30514ab6b0390e1eff4a3668e42f
     name: vane
     type: application
     urls:
@@ -2743,12 +2743,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.60.0+debian
-    created: "2026-10-21T23:06:33.156145751Z"
+    created: "2026-10-22T23:05:14.218213422Z"
     description: Vector (converted from 1Panel appstore)
-    digest: 1e9cc61590bf2ecb1a8221d0a10462005351a18833d301f13076b87e35f4cd8f
+    digest: 2a7f5581b004eca2db85a1036f4d665d44c532a3194a63d6798e11416910581b
     name: vector
     type: application
     urls:
@@ -2758,12 +2758,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 6.10.6
-    created: "2026-10-21T23:06:33.156553066Z"
+    created: "2026-10-22T23:05:14.218882335Z"
     description: Verdaccio (converted from 1Panel appstore)
-    digest: 6152be539e88fc91461801ccebee5138cd84746251c23368451fcea4f5c6d150
+    digest: 5b470554a62b030839b2b66585320df90b00f6b1fd10dc680bedd60adbfc346e
     name: verdaccio
     type: application
     urls:
@@ -2773,12 +2773,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.43.4
-    created: "2026-10-21T23:06:33.156965549Z"
+    created: "2026-10-22T23:05:14.219325828Z"
     description: Waline (converted from 1Panel appstore)
-    digest: 546e42b58ba4b948e1da00af76210f4034e7c72672bdc0b6f1b16a982664d19f
+    digest: 1067fcc5c1cb10ecf4469fb658317eb8f996218029c841997be17c7d81c35bef
     name: waline
     type: application
     urls:
@@ -2788,12 +2788,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.10.1
-    created: "2026-10-21T23:06:33.157373415Z"
+    created: "2026-10-22T23:05:14.219729732Z"
     description: Wallos (converted from 1Panel appstore)
-    digest: 1c80d6f21d3d56740c4e1d2392e38811bc1cc910fd6a64ad182bc16fc116dfe6
+    digest: dc848e29d322216ad54b54382ade625ddfcef525b197ef298175a998cfdd0f95
     name: wallos
     type: application
     urls:
@@ -2802,9 +2802,9 @@ entries:
   warp:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-10-21T23:06:33.157534057Z"
+    created: "2026-10-22T23:05:14.219887995Z"
     description: Cloudflare WARP SOCKS5 proxy (for egress proxy in restricted networks)
-    digest: b261ad51cadf32062f1e3fe157b82bbde4fa4310d7d2d97f5a2143407e8daba3
+    digest: da65db9f101707cfd96d70a9ec87f41a05a9f0301329f74edf5fec8f44fe4ab9
     maintainers:
     - name: gclm
     name: warp
@@ -2816,12 +2816,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.3.8
-    created: "2026-10-21T23:06:33.157898598Z"
+    created: "2026-10-22T23:05:14.220266342Z"
     description: Web-Check (converted from 1Panel appstore)
-    digest: 64c3137a602385347273d074c1f1da9b1d2f11d26df528212c273dc51fbcf222
+    digest: d574ded62c6a3d492824a889c5b05500e629f06ad319b74c015b3cff8446a0a0
     name: web-check
     type: application
     urls:
@@ -2831,12 +2831,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-10-21T23:06:33.158276549Z"
+    created: "2026-10-22T23:05:14.220634564Z"
     description: WeChat Markdown Editor (converted from 1Panel appstore)
-    digest: fa2073a0fce7a1289946c0ba78d53d9d3ca342fa0b527d694e39d40bffc51ec1
+    digest: 5d1d91fdb1ea58749c151d24496f04d070dd5b7074c2e892ad23bc4932abfd10
     name: wechatmarkdowneditor
     type: application
     urls:
@@ -2846,12 +2846,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 2.5.316
-    created: "2026-10-21T23:06:33.15866795Z"
+    created: "2026-10-22T23:05:14.221022745Z"
     description: Wiki.js (converted from 1Panel appstore)
-    digest: d5f1e8208df09274ca87acdc682f6f197ca614a295dc4bf992ab79e020f58574
+    digest: 2cd3288c4741c39ce12f1442b9f1a9402c29f4ace74f93e44d1353434f691af5
     name: wikijs
     type: application
     urls:
@@ -2861,12 +2861,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 7.1.3
-    created: "2026-10-21T23:06:33.159087824Z"
+    created: "2026-10-22T23:05:14.221451516Z"
     description: WordPress (converted from 1Panel appstore)
-    digest: 34a38e586aa8664bc59db785ffdd4c01204848c6d18a8af5dfdb59b659ac9612
+    digest: a3b401d714149ce5909be24e3b646dd205429a135f6ce4ce569f93314d62a5ad
     name: wordpress
     type: application
     urls:
@@ -2876,12 +2876,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.6.1
-    created: "2026-10-21T23:06:33.159815673Z"
+    created: "2026-10-22T23:05:14.221830283Z"
     description: XiaoMusic (converted from 1Panel appstore)
-    digest: e51dd07d11765b788baa1fd752029a903659dc0d77fea92986f4ae013661e205
+    digest: 6064d7dbe252b900005b1947d549d939fe3ba7b99d0a5255a45eddefb861fbe7
     name: xiaomusic
     type: application
     urls:
@@ -2891,12 +2891,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 0.4.9
-    created: "2026-10-21T23:06:33.160390331Z"
+    created: "2026-10-22T23:05:14.222206827Z"
     description: YesPlayMusic (converted from 1Panel appstore)
-    digest: b797b09d219e6dfc017ee32973fd4e63c04e6e3428e74c48f4f7eb0cebe68219
+    digest: c90506be30e204c80a88d2231f84c8ee092d771ffca712eaa8f6f20b3e7db627
     name: yesplaymusic
     type: application
     urls:
@@ -2906,12 +2906,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 1.10.6
-    created: "2026-10-21T23:06:33.160821071Z"
+    created: "2026-10-22T23:05:14.222623911Z"
     description: YOURLS (converted from 1Panel appstore)
-    digest: c01dfbb47eb11493b92aacf5a8cbcf10434c6f16287669bf1b95b8168a7d37db
+    digest: a06984c51a47f0592047c34073c51b45fe459869668403d1eafa0a5de4d58ba2
     name: yourls
     type: application
     urls:
@@ -2921,12 +2921,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-10-21T23:06:33.161216969Z"
+    created: "2026-10-22T23:05:14.223005713Z"
     description: Zabbix Agent (converted from 1Panel appstore)
-    digest: d5a90f4867cb710e78c6d7cfda157d1f2e54de6aaa1cf727df0dee34c43ee8a3
+    digest: 7c8e74df1675b8937e787c167c1a6f8129a4a939ba85234dbe59905313a9c89f
     name: zabbix-agent
     type: application
     urls:
@@ -2936,12 +2936,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-10-21T23:06:33.161623623Z"
+    created: "2026-10-22T23:05:14.223627779Z"
     description: Zabbix Proxy (converted from 1Panel appstore)
-    digest: d429173f400923a2731366e09faf423c16576d249de2acf9699a9bef987c60e3
+    digest: c55829833f4f49ff55f02e35bf7fb62d0f364acdacf9b25bac4523e8ea2d0565
     name: zabbix-proxy
     type: application
     urls:
@@ -2951,12 +2951,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-10-21T23:06:33.162065771Z"
+    created: "2026-10-22T23:05:14.224370441Z"
     description: Zabbix Server (converted from 1Panel appstore)
-    digest: 2cf57a9bea53beaa20b955ae7a87debdd3b117119b0be4818b1a75e00735c1b8
+    digest: e647718775b732ed49cb2852426b6fd54b571f9f79ca573a275f2f3543303807
     name: zabbix-server
     type: application
     urls:
@@ -2966,12 +2966,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 22.7.0
-    created: "2026-10-21T23:06:33.162478584Z"
+    created: "2026-10-22T23:05:14.224765733Z"
     description: 禅道 (converted from 1Panel appstore)
-    digest: 5d8fdcfd7e7b0fbd62451d15e4a41966abb533afd8ed35bfb7134d87fea110f9
+    digest: c7a92c10f2592807bd283da868111adc46a8adc5c9d39fa8346dbb5d66459c8e
     name: zentao
     type: application
     urls:
@@ -2981,12 +2981,12 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 5.1.0
-    created: "2026-10-21T23:06:33.162870316Z"
+    created: "2026-10-22T23:05:14.225181505Z"
     description: ZFile (converted from 1Panel appstore)
-    digest: e71bba1ed9ad627b19cb4758d5bb50b3587f14cff58cff07ede77b8da1079007
+    digest: ba42a67e9ebbf9be468f747e73aceeeba755ece2e06dc8b3260b470bdb068dff
     name: zfile
     type: application
     urls:
@@ -2996,15 +2996,15 @@ entries:
   - annotations:
       license: GPL-3.0 (inherited from 1Panel-dev/appstore)
       source: https://github.com/1Panel-dev/appstore
-      upstream/sha: 36705fd924e8f3db82dfefcd9bf68dd91bb66632
+      upstream/sha: 488873b3f4e759bc09563631e0ec18e881a43a39
     apiVersion: v2
     appVersion: 4.19.4
-    created: "2026-10-21T23:06:33.163313184Z"
+    created: "2026-10-22T23:05:14.225623856Z"
     description: ZITADEL (converted from 1Panel appstore)
-    digest: b406fe857002546e8670b4fed4fe2c30bf6d171cbdd80de4e6b53f688af25f26
+    digest: b55f0ceeca642abfa72b91af7558464713f44123025eb477a51a7245476ebecb
     name: zitadel
     type: application
     urls:
     - https://charts.xzim.top/zitadel-4.19.4+g919904.tgz
     version: 4.19.4+g919904
-generated: "2026-10-21T23:06:33.067374201Z"
+generated: "2026-10-22T23:05:14.134545812Z"
