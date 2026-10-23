@@ -2,9 +2,9 @@
   "apps": {
     "2fauth": {
       "chart": "app-2fauth",
-      "sha": "193b2da26023",
+      "sha": "848afef001cc",
       "status": "success",
-      "version": "8.0.2+g0f43ad"
+      "version": "8.0.3+gb8dca7"
     },
     "adguardhome": {
       "chart": "adguardhome",
@@ -74,9 +74,9 @@
     },
     "beszel": {
       "chart": "beszel",
-      "sha": "07aa34a56d4c",
+      "sha": "23f367ebe09c",
       "status": "success",
-      "version": "0.21.0+g9f621e"
+      "version": "0.21.1+g742df1"
     },
     "bettafish": {
       "chart": "bettafish",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "dbf3c8d51d91",
+      "sha": "684272559e2b",
       "status": "success",
-      "version": "2.57.2+g1dea27"
+      "version": "2.57.3+g538e6b"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -128,9 +128,9 @@
     },
     "certd": {
       "chart": "certd",
-      "sha": "96c90eac60fe",
+      "sha": "0da712857a56",
       "status": "success",
-      "version": "1.45.3+gfdc7ba"
+      "version": "1.45.5+g82a8e8"
     },
     "certimate": {
       "chart": "certimate",
@@ -188,9 +188,9 @@
     },
     "consul": {
       "chart": "consul",
-      "sha": "a6c3c89b6994",
+      "sha": "7b03504781c4",
       "status": "success",
-      "version": "2.0.4+g2a21db"
+      "version": "2.1.0+g5b541c"
     },
     "convertx": {
       "chart": "convertx",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "5c11791d37ff",
+      "sha": "fbc8e7890a61",
       "status": "success",
-      "version": "4.8.7+g1fd069"
+      "version": "4.8.8+g7bdab4"
     },
     "dataease": {
       "chart": "dataease",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "5d724ea7c707",
+      "sha": "89d07fd668d6",
       "status": "success",
-      "version": "0.6.51+g4ef09d"
+      "version": "0.6.52+g6f7cc7"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -524,15 +524,15 @@
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "8af8bdadd1d0",
+      "sha": "afa7aba104d1",
       "status": "success",
-      "version": "4.11.1+gf61a96"
+      "version": "4.11.3+g55cf0d"
     },
     "langflow": {
       "chart": "langflow",
-      "sha": "4c237e1e75ff",
+      "sha": "79b649f87702",
       "status": "success",
-      "version": "1.12.7+gb5053e"
+      "version": "1.13.0+g342008"
     },
     "laya-server": {
       "chart": "laya-server",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "a132836844e9",
+      "sha": "5139c7591e08",
       "status": "success",
-      "version": "0.0.0-d20261015.g64ad1+gb61967"
+      "version": "0.0.0-d20261023.gb9a0f+ga92d35"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -596,9 +596,9 @@
     },
     "mattermost": {
       "chart": "mattermost",
-      "sha": "63bb499a2c42",
+      "sha": "e1963ddaa584",
       "status": "success",
-      "version": "12.0.0+g7345e0"
+      "version": "12.0.1+g5e6c6b"
     },
     "maxkb": {
       "chart": "maxkb",
@@ -668,15 +668,21 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "354c54202ca0",
+      "sha": "f8056579dd45",
       "status": "success",
-      "version": "2.44.4+g7520e9"
+      "version": "2.44.6+ge255f8"
     },
     "nacos": {
       "chart": "nacos",
       "sha": "97c0f55435fc",
       "status": "success",
       "version": "3.2.4+g15a244"
+    },
+    "nats": {
+      "chart": "nats",
+      "sha": "0027b58ff6d4",
+      "status": "success",
+      "version": "2.15.1+g38c0f0"
     },
     "navidrome": {
       "chart": "navidrome",
@@ -704,15 +710,15 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "a4b3d45aed44",
+      "sha": "97753922f431",
       "status": "success",
-      "version": "3.97.1+gecaea8"
+      "version": "3.97.2+g598b2d"
     },
     "nezha": {
       "chart": "nezha",
-      "sha": "588d7edaf4cd",
+      "sha": "c184cddd08f9",
       "status": "success",
-      "version": "2.3.18+g5e7866"
+      "version": "2.4.1+g88f114"
     },
     "nginx-proxy-manager": {
       "chart": "nginx-proxy-manager",
@@ -722,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "a4592e47c8f5",
+      "sha": "8742d95b5d35",
       "status": "success",
-      "version": "2.2.29+gc3d4ce"
+      "version": "2.2.30+g74adcc"
     },
     "node": {
       "chart": "node",
@@ -746,9 +752,9 @@
     },
     "ntfy": {
       "chart": "ntfy",
-      "sha": "529dffe8634d",
+      "sha": "7eaf96e407cb",
       "status": "success",
-      "version": "2.32.0+g09d084"
+      "version": "2.33.1+gf4ada5"
     },
     "obsidian_livesync": {
       "chart": "obsidian-livesync",
@@ -770,9 +776,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "d8eb68fcb748",
+      "sha": "cca165e696d5",
       "status": "success",
-      "version": "0.40.8+g69399d"
+      "version": "0.40.9+g7cf88c"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -884,9 +890,9 @@
     },
     "redpanda-console": {
       "chart": "redpanda-console",
-      "sha": "f655e4eecb37",
+      "sha": "6734ca1c07f4",
       "status": "success",
-      "version": "3.13.0+g48592e"
+      "version": "3.13.1+g6a2cf9"
     },
     "rocketmq": {
       "chart": "rocketmq",
@@ -929,6 +935,12 @@
       "sha": "cfbc40beb079",
       "status": "success",
       "version": "2.7.6+alpine"
+    },
+    "sglang": {
+      "chart": "sglang",
+      "sha": "0c153ae5e103",
+      "status": "success",
+      "version": "0.5.22+gb0e6e6"
     },
     "showdoc": {
       "chart": "showdoc",
@@ -974,9 +986,9 @@
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "368106f46c53",
+      "sha": "3d165f311db6",
       "status": "success",
-      "version": "0.2.17+g8734bd"
+      "version": "0.2.18+gc6914a"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -986,9 +998,9 @@
     },
     "synapse": {
       "chart": "synapse",
-      "sha": "9f50052b5f5e",
+      "sha": "5719bdb6fecc",
       "status": "success",
-      "version": "1.163.0+gd59a30"
+      "version": "1.163.1+g85821d"
     },
     "tailchat": {
       "chart": "tailchat",
@@ -998,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "113080ed3c62",
+      "sha": "ea9bfe8692ee",
       "status": "success",
-      "version": "0.0.0-d20261022.g38065+g5acf12"
+      "version": "0.0.0-d20261023.g34d6e+g9ebbaf"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1052,9 +1064,9 @@
     },
     "umami": {
       "chart": "umami",
-      "sha": "ce576771b8b7",
+      "sha": "53beb80c9f52",
       "status": "success",
-      "version": "3.4.0+g25adcc"
+      "version": "3.4.1+g309ad1"
     },
     "upage": {
       "chart": "upage",
@@ -1064,9 +1076,9 @@
     },
     "uptime-kuma": {
       "chart": "uptime-kuma",
-      "sha": "7f349205ed2d",
+      "sha": "0ced350fe43e",
       "status": "success",
-      "version": "2.5.6+g00bbc1"
+      "version": "2.5.7+g222f68"
     },
     "vane": {
       "chart": "vane",
@@ -1082,9 +1094,9 @@
     },
     "verdaccio": {
       "chart": "verdaccio",
-      "sha": "dbd9b9eff9b1",
+      "sha": "c6d67107af98",
       "status": "success",
-      "version": "6.10.6+g65c099"
+      "version": "6.10.7+gadb69e"
     },
     "waline": {
       "chart": "waline",
@@ -1177,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "488873b3f4e759bc09563631e0ec18e881a43a39"
+  "upstream_sha": "6db6822674fafc58bb233835660e1e00e3ed3490"
 }

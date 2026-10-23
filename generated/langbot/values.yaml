@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: rockchin/langbot
-      tag: v4.11.1
+      tag: v4.11.3
     port: 5300
     volumeMounts:
     - mountPath: /app/data
@@ -43,7 +43,7 @@ services:
     image:
       registry: ''
       repository: rockchin/langbot
-      tag: v4.11.1
+      tag: v4.11.3
     volumeMounts:
     - mountPath: /app/data/plugins
       name: vol-data-plugins

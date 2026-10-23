@@ -41,7 +41,7 @@ services:
     image:
       registry: ''
       repository: mattermost/mattermost-team-edition
-      tag: 12.0.0
+      tag: 12.0.1
     port: 8065
     volumeMounts:
     - mountPath: /mattermost/config

@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: sonatype/nexus3
-      tag: 3.97.1
+      tag: 3.97.2
     port: 8081
     volumeMounts:
     - mountPath: /nexus-data

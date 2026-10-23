@@ -1,0 +1,64 @@
+configMaps: {}
+env:
+  CUSTOM_ARGS: ''
+  HF_TOKEN: ''
+  MODEL_PATH: Qwen/Qwen3.5-4B
+  PANEL_APP_PORT_HTTP: 30000
+  SGLANG_USE_MODELSCOPE: 'false'
+  TP_SIZE: 1
+  TRUST_REMOTE_CODE: 'false'
+persistence:
+  vol-data-huggingface:
+    mountPath: /root/.cache/huggingface
+    size: 10Gi
+  vol-data-models:
+    mountPath: /models
+    size: 10Gi
+  vol-data-modelscope:
+    mountPath: /root/.cache/modelscope
+    size: 10Gi
+secrets:
+  API_KEY:
+    generate: true
+services:
+  sglang:
+    command:
+    - 'exec python3 -m sglang.launch_server --model-path "$${MODEL_PATH}" --host 0.0.0.0
+      --port 30000 --tp "$${TP_SIZE}" --api-key "$${API_KEY}" $$( [ "$${TRUST_REMOTE_CODE}"
+      = "true" ] && echo --trust-remote-code ) $${CUSTOM_ARGS}
+
+      '
+    env:
+    - name: MODEL_PATH
+      valueFromEnv: MODEL_PATH
+    - name: TP_SIZE
+      valueFromEnv: TP_SIZE
+    - name: API_KEY
+      valueFromSecret: API_KEY
+    - name: HF_TOKEN
+      valueFromEnv: HF_TOKEN
+    - name: SGLANG_USE_MODELSCOPE
+      valueFromEnv: SGLANG_USE_MODELSCOPE
+    - name: TRUST_REMOTE_CODE
+      valueFromEnv: TRUST_REMOTE_CODE
+    - name: CUSTOM_ARGS
+      valueFromEnv: CUSTOM_ARGS
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: lmsysorg/sglang
+      tag: v0.5.22
+    port: 30000
+    probe:
+      exec: curl -f http://localhost:30000/health || exit 1
+      intervalSeconds: 30
+      retries: 5
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /root/.cache/huggingface
+      name: vol-data-huggingface
+    - mountPath: /root/.cache/modelscope
+      name: vol-data-modelscope
+    - mountPath: /models
+      name: vol-data-models

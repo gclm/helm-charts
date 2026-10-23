@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: henrygd/beszel
-      tag: 0.21.0
+      tag: 0.21.1
     port: 8090
     volumeMounts:
     - mountPath: /beszel_data

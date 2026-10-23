@@ -2,7 +2,7 @@
 
 面向 Elasticsearch 的数据分析与可视化平台
 
-- 上游: 1Panel-dev/appstore `apps/kibana` @ `488873b3f4e7`
+- 上游: 1Panel-dev/appstore `apps/kibana` @ `6db6822674fa`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -17,7 +17,7 @@ services:
     image:
       registry: ghcr.io
       repository: umami-software/umami
-      tag: 3.4.0
+      tag: 3.4.1
     port: 3000
     probe:
       exec: curl http://localhost:3000/api/heartbeat

@@ -2,7 +2,7 @@
 
 基于 Web 的多语言 IMAP 邮件客户端
 
-- 上游: 1Panel-dev/appstore `apps/roundcube` @ `488873b3f4e7`
+- 上游: 1Panel-dev/appstore `apps/roundcube` @ `6db6822674fa`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

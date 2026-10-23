@@ -24,7 +24,7 @@ services:
     image:
       registry: ''
       repository: hashicorp/consul
-      tag: 2.0.4
+      tag: 2.1.0
     port: 8500
     volumeMounts:
     - mountPath: /consul/config

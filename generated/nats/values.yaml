@@ -1,0 +1,24 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 8222
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  nats:
+    command:
+    - --config
+    - /etc/nats/nats-server.conf
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: nats
+      tag: 2.15.1
+    port: 8222
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

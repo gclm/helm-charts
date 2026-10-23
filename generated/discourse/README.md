@@ -2,7 +2,7 @@
 
 社区讨论的平台。免费、开放、简单。
 
-- 上游: 1Panel-dev/appstore `apps/discourse` @ `488873b3f4e7`
+- 上游: 1Panel-dev/appstore `apps/discourse` @ `6db6822674fa`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
