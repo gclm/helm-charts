@@ -20,7 +20,7 @@ services:
     image:
       registry: ''
       repository: mayswind/ezbookkeeping
-      tag: 2.1.0
+      tag: 2.1.1
     port: 8080
     volumeMounts:
     - mountPath: /ezbookkeeping/data

@@ -2,9 +2,9 @@ apiVersion: v2
 name: ezbookkeeping
 description: ezBookkeeping (converted from 1Panel appstore)
 type: application
-version: 2.1.0+gf1679b
-appVersion: 2.1.0
+version: 2.1.1+gbd4d6b
+appVersion: 2.1.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 6db6822674fafc58bb233835660e1e00e3ed3490
+  upstream/sha: b2a47839b52c593789830d9bb146cd8aaa9319cf

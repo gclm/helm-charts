@@ -2,9 +2,9 @@ apiVersion: v2
 name: trilium
 description: Trilium (converted from 1Panel appstore)
 type: application
-version: 0.106.0+gf60f0b
-appVersion: 0.106.0
+version: 0.106.1+g278c99
+appVersion: 0.106.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 6db6822674fafc58bb233835660e1e00e3ed3490
+  upstream/sha: b2a47839b52c593789830d9bb146cd8aaa9319cf

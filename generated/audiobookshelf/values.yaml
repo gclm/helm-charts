@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: advplyr/audiobookshelf
-      tag: 2.37.1
+      tag: 2.37.2
     port: 80
     volumeMounts:
     - mountPath: /audiobooks

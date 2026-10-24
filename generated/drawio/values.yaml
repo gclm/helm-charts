@@ -11,6 +11,6 @@ services:
     image:
       registry: ''
       repository: jgraph/drawio
-      tag: 32.5.5
+      tag: 32.6.1
     port: 8080
     volumeMounts: []

@@ -19,6 +19,6 @@ services:
     image:
       registry: ''
       repository: matrixdotorg/synapse
-      tag: v1.163.1
+      tag: v1.163.2
     port: 8008
     volumeMounts: []

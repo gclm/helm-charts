@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: triliumnext/trilium
-      tag: v0.106.0
+      tag: v0.106.1
     port: 8080
     volumeMounts:
     - mountPath: /home/node/trilium-data

@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: ollama/ollama
-      tag: 0.40.9
+      tag: 0.40.10
     port: 11434
     volumeMounts:
     - mountPath: /root/.ollama

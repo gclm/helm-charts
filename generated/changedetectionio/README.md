@@ -2,7 +2,7 @@
 
 免费开源网站变更检测、网站观察、补货监控和通知服务
 
-- 上游: 1Panel-dev/appstore `apps/changedetectionio` @ `6db6822674fa`
+- 上游: 1Panel-dev/appstore `apps/changedetectionio` @ `b2a47839b52c`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

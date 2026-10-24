@@ -2,7 +2,7 @@
 
 用于事件驱动应用的低代码编程
 
-- 上游: 1Panel-dev/appstore `apps/node-red` @ `6db6822674fa`
+- 上游: 1Panel-dev/appstore `apps/node-red` @ `b2a47839b52c`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

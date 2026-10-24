@@ -18,7 +18,7 @@ services:
     image:
       registry: ''
       repository: t8y2/dbx
-      tag: 0.6.52
+      tag: 0.6.53
     port: 4224
     volumeMounts:
     - mountPath: /app/data

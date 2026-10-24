@@ -2,9 +2,9 @@ apiVersion: v2
 name: palworld
 description: Palworld Server (converted from 1Panel appstore)
 type: application
-version: 2.8.0+g8abdff
-appVersion: 2.8.0
+version: 2.8.1+g646b70
+appVersion: 2.8.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 6db6822674fafc58bb233835660e1e00e3ed3490
+  upstream/sha: b2a47839b52c593789830d9bb146cd8aaa9319cf
