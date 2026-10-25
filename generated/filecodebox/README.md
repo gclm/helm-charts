@@ -2,7 +2,7 @@
 
 无需注册，上传文件或文本后通过取件码分享
 
-- 上游: 1Panel-dev/appstore `apps/filecodebox` @ `b2a47839b52c`
+- 上游: 1Panel-dev/appstore `apps/filecodebox` @ `5d9602bbc542`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -2,7 +2,7 @@
 
 可道云推出的企业级私有云存储解决方案
 
-- 上游: 1Panel-dev/appstore `apps/kodbox` @ `b2a47839b52c`
+- 上游: 1Panel-dev/appstore `apps/kodbox` @ `5d9602bbc542`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

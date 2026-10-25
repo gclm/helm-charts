@@ -25,7 +25,7 @@ services:
     image:
       registry: ''
       repository: binwiederhier/ntfy
-      tag: v2.33.1
+      tag: v2.34.0
     probe:
       exec: wget -q --tries=1 http://localhost:${APP_PORT_INTERNAL}/v1/health -O -
         | grep -Eo '"healthy"\s*:\s*true' || exit 1

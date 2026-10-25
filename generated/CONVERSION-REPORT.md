@@ -1,6 +1,6 @@
 # Conversion report
 
-- upstream: 1Panel-dev/appstore @ `b2a47839b52c593789830d9bb146cd8aaa9319cf`
+- upstream: 1Panel-dev/appstore @ `5d9602bbc5428307e7847bf94b5194a10ba5dbe9`
 - success: **198** · skipped: **69** · failed: **0**
 
 ## Success
@@ -15,7 +15,7 @@
 - answer -> chart answer (2.0.3+g9922f3) sha:6f314a38d204
 - archivebox -> chart archivebox (0.9.73+gbe0b35) sha:16b64b14fee7
 - artalk -> chart artalk (2.10.0+g2dcdcd) sha:0ad444ca58e5
-- astrbot -> chart astrbot (4.29.1+gb160e7) sha:0acb89b31a06
+- astrbot -> chart astrbot (4.29.3+gfb7c57) sha:c50a267eacc6
 - audiobookshelf -> chart audiobookshelf (2.37.2+gcf4d13) sha:c234fb5cb4a7
 - beszel -> chart beszel (0.21.1+g742df1) sha:23f367ebe09c
 - bettafish -> chart bettafish (3.0.0+g0d0a36) sha:295c79d6151f
@@ -44,12 +44,12 @@
 - dashy -> chart dashy (4.9.0+g709bdf) sha:2ed0582f0548
 - dataease -> chart dataease (3.1.0+g571109) sha:c14fdf027e62
 - dbhub -> chart dbhub (1.5.0+g9fb42e) sha:b7c893990fa3
-- dbx -> chart dbx (0.6.53+g9230ca) sha:f1bd884919d7
+- dbx -> chart dbx (0.6.54+g9d5be0) sha:b55b641ed127
 - deepseek-harness -> chart deepseek-harness (0.2.1+rc.2) sha:509668f4d883
 - discourse -> chart discourse (3.5.0+g532fed) sha:c413f8c222f0
 - discuz -> chart discuz (3.4.0+g84fac0) sha:c70789cae1b5
 - docker-registry -> chart docker-registry (3.1.2+g07fa86) sha:ed3f4bd40b73
-- docmost -> chart docmost (0.96.0+ge53c1a) sha:8d246820a8a9
+- docmost -> chart docmost (0.97.0+gdbda58) sha:de870dbb9556
 - domain-admin -> chart domain-admin (1.6.78+gcb84d4) sha:575e35f56e89
 - dosgame -> chart dosgame (3.9.6+gdd4d47) sha:5a53f52a5692
 - dotnet -> chart dotnet (10.0.0+g2a45a3) sha:ee852a4cd829
@@ -101,7 +101,7 @@
 - localai -> chart localai (3.12.1+aio-cpu) sha:7eedb4a605e8
 - logstash -> chart logstash (9.5.5+g33dac9) sha:6669e5bbb9d9
 - logto -> chart logto (1.45.0+gdf1066) sha:ae48d6eaec16
-- lsky-pro -> chart lsky-pro (0.0.0-d20261024.g12f75+g10ac29) sha:694d25282d75
+- lsky-pro -> chart lsky-pro (0.0.0-d20261025.gae688+gf2594a) sha:79d18108e9ff
 - maddy-mail -> chart maddy-mail (0.9.6+gf34d25) sha:fa0e64c885d6
 - mailserver -> chart mailserver (16.0.1+gcf204e) sha:caa92c561051
 - mattermost -> chart mattermost (12.0.1+g5e6c6b) sha:e1963ddaa584
@@ -130,11 +130,11 @@
 - node -> chart node (26.12.1+g9143b8) sha:4b3b77e9184a
 - node-red -> chart node-red (5.0.9+g1cf07d) sha:5c3beabbd206
 - nodebb -> chart nodebb (4.16.4+g49f0c1) sha:0477cbe02af1
-- ntfy -> chart ntfy (2.33.1+gf4ada5) sha:7eaf96e407cb
+- ntfy -> chart ntfy (2.34.0+gcfa72c) sha:1c42f23e11c9
 - obsidian_livesync -> chart obsidian-livesync (3.5.3+g9a0134) sha:1ebca04041c4
 - octop -> chart octop (1.0.2+g9933f9) sha:55c76fa4d3d5
 - odoo -> chart odoo (19.0.0+gd394b6) sha:224ddad95783
-- ollama -> chart ollama (0.40.10+g9b76a7) sha:7ccce91b4038
+- ollama -> chart ollama (0.40.11+g008c73) sha:a65df89eea0a
 - ollama-webui -> chart ollama-webui (0.12.3+g1163d4) sha:39453cdb8245
 - onlyoffice -> chart onlyoffice (10.0.0+g104160) sha:3b5d0c27722e
 - openclaw -> chart openclaw (2026.10.5+gaa4ec5) sha:9396137d6583
@@ -168,7 +168,7 @@
 - sonarqube -> chart sonarqube (26.10.0+community) sha:8b570da7be1b
 - sqlbot -> chart sqlbot (1.10.2+gd8cc9e) sha:d25a6867c5a7
 - stalwart-mail -> chart stalwart-mail (0.16.27+alpine) sha:ca7e005d37f4
-- stirling-pdf -> chart stirling-pdf (3.2.1+g55e1db) sha:72e43c44f3ac
+- stirling-pdf -> chart stirling-pdf (3.2.2+g9d8e28) sha:7960b874e6da
 - sub2api -> chart sub2api (0.2.18+gc6914a) sha:3d165f311db6
 - sun-panel -> chart sun-panel (1.8.1+g31dff8) sha:13208a33b318
 - synapse -> chart synapse (1.163.2+gdb61c6) sha:e2a973c7a6b4
@@ -187,7 +187,7 @@
 - uptime-kuma -> chart uptime-kuma (2.5.7+g222f68) sha:0ced350fe43e
 - vane -> chart vane (1.12.2+g2d5664) sha:a2517179555d
 - vector -> chart vector (0.60.0+debian) sha:4eac641a322a
-- verdaccio -> chart verdaccio (6.10.7+gadb69e) sha:c6d67107af98
+- verdaccio -> chart verdaccio (6.11.1+gda57b3) sha:05f9b8f919c9
 - waline -> chart waline (1.43.4+g2b03a9) sha:475726f8fe5b
 - wallos -> chart wallos (5.10.2+g774c24) sha:838f1431797a
 - web-check -> chart web-check (2.3.8+g6fdb1d) sha:19144cb0c7cc
