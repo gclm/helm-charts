@@ -14,7 +14,7 @@ services:
     image:
       registry: ghcr.io
       repository: nezhahq/nezha
-      tag: v2.4.1
+      tag: v2.5.0
     port: 8008
     volumeMounts:
     - mountPath: /dashboard/data

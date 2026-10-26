@@ -13,9 +13,7 @@ services:
   ai-gateway:
     env:
     - name: AI_GATEWAY_DATABASE_DRIVER
-      value: sqlite
-    - name: AI_GATEWAY_DATABASE_SQLITE_PATH
-      value: /opt/ai-gateway/data/db/ai-gateway.db
+      value: postgres
     - name: AI_GATEWAY_INITIAL_ADMIN_USERNAME
       valueFromEnv: AI_GATEWAY_INITIAL_ADMIN_USERNAME
     - name: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
@@ -25,7 +23,7 @@ services:
     image:
       registry: ''
       repository: 1panel/ai-gateway
-      tag: v1.4.0
+      tag: v1.5.0
     port: 8080
     probe:
       exec: wget -q -O - http://127.0.0.1:8080/health/ready >/dev/null || exit 1

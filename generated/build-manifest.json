@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "d0578e93b829",
+      "sha": "54371a992556",
       "status": "success",
-      "version": "1.4.0+g563323"
+      "version": "1.5.0+postgres"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "f3f1adfc9755",
+      "sha": "9abe16bd0fbe",
       "status": "success",
-      "version": "4.23.0+g2ad2d8"
+      "version": "4.24.0+g8a99ba"
     },
     "certd": {
       "chart": "certd",
@@ -134,9 +134,9 @@
     },
     "certimate": {
       "chart": "certimate",
-      "sha": "0cfd3e4780de",
+      "sha": "fa4d4159ccf2",
       "status": "success",
-      "version": "0.4.35+g91ee0c"
+      "version": "0.4.36+gcf49a4"
     },
     "changedetectionio": {
       "chart": "changedetectionio",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "b55b641ed127",
+      "sha": "118b21d1696a",
       "status": "success",
-      "version": "0.6.54+g9d5be0"
+      "version": "0.6.55+g9112d1"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -332,9 +332,9 @@
     },
     "filecodebox": {
       "chart": "filecodebox",
-      "sha": "0943500dfdcc",
+      "sha": "812f6816976e",
       "status": "success",
-      "version": "2.8.3+g52bb93"
+      "version": "2.8.4+g2ce9e9"
     },
     "firefly-iii": {
       "chart": "firefly-iii",
@@ -344,9 +344,9 @@
     },
     "flarum": {
       "chart": "flarum",
-      "sha": "98c3aed81109",
+      "sha": "7c7576c39963",
       "status": "success",
-      "version": "1.8.20+g7c9f47"
+      "version": "2.0.2+ga9a942"
     },
     "focalboard": {
       "chart": "focalboard",
@@ -428,9 +428,9 @@
     },
     "huginn": {
       "chart": "huginn",
-      "sha": "a67cfeeda6dd",
+      "sha": "aa000c4a2134",
       "status": "success",
-      "version": "2026.10.24+geb56a5"
+      "version": "2026.10.26+g6d79dc"
     },
     "it-tools": {
       "chart": "it-tools",
@@ -512,9 +512,9 @@
     },
     "komari": {
       "chart": "komari",
-      "sha": "67b0d76c3189",
+      "sha": "3586d136bd35",
       "status": "success",
-      "version": "1.6.0+gf175db"
+      "version": "1.6.1+g4d9796"
     },
     "komga": {
       "chart": "komga",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "79d18108e9ff",
+      "sha": "07f5627df740",
       "status": "success",
-      "version": "0.0.0-d20261025.gae688+gf2594a"
+      "version": "0.0.0-d20261026.g1d110+gae77c6"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -716,9 +716,9 @@
     },
     "nezha": {
       "chart": "nezha",
-      "sha": "c184cddd08f9",
+      "sha": "8080c5a96341",
       "status": "success",
-      "version": "2.4.1+g88f114"
+      "version": "2.5.0+g90438b"
     },
     "nginx-proxy-manager": {
       "chart": "nginx-proxy-manager",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "a761f154ba0b",
+      "sha": "f9eca2a756a3",
       "status": "success",
-      "version": "2.2.31+g3fb92a"
+      "version": "2.2.33+ga46545"
     },
     "node": {
       "chart": "node",
@@ -782,9 +782,9 @@
     },
     "ollama-webui": {
       "chart": "ollama-webui",
-      "sha": "39453cdb8245",
+      "sha": "f4518b77d4e0",
       "status": "success",
-      "version": "0.12.3+g1163d4"
+      "version": "0.12.4+gc60e00"
     },
     "onlyoffice": {
       "chart": "onlyoffice",
@@ -914,9 +914,9 @@
     },
     "rustfs": {
       "chart": "rustfs",
-      "sha": "de885d2f9303",
+      "sha": "18c338607f71",
       "status": "success",
-      "version": "1.0.3+gf222e0"
+      "version": "1.0.4+ga9ca94"
     },
     "screego": {
       "chart": "screego",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "5d9602bbc5428307e7847bf94b5194a10ba5dbe9"
+  "upstream_sha": "79cf43943621005b36ea16c0a134feef27a29cec"
 }

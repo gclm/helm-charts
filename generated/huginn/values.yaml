@@ -14,7 +14,7 @@ services:
     image:
       registry: ghcr.io
       repository: huginn/huginn
-      tag: v2026.10.24
+      tag: v2026.10.26
     port: 3000
     volumeMounts:
     - mountPath: /var/lib/mysql
