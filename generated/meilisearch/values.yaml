@@ -34,7 +34,7 @@ services:
     image:
       registry: ''
       repository: getmeili/meilisearch
-      tag: v1.55.0
+      tag: v1.56.0
     port: 7700
     volumeMounts:
     - mountPath: /meili_data

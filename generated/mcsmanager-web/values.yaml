@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: githubyumao/mcsmanager-web
-      tag: v10.21.2
+      tag: v10.22.0
     port: 23333
     volumeMounts:
     - mountPath: /opt/mcsmanager/web/data

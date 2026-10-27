@@ -2,7 +2,7 @@
 
 Go 运行环境
 
-- 上游: 1Panel-dev/appstore `apps/go` @ `79cf43943621`
+- 上游: 1Panel-dev/appstore `apps/go` @ `3b56f010bc5a`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

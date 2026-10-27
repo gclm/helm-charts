@@ -10,10 +10,10 @@ jsonhero:
   digest: sha256:1e514ed9fd9bd0efd42ff21c85c9aa2cca6c6f8ad7f76eac6ca39732b41dab21
 jupyter-notebook: '4.0'
 lsky-pro:
-  date: '20261026'
-  digest: sha256:1d1107845c28c609853a2b81912604b72c73c6e144ebcf9d6f3397faf056a6f4
-mcsmanager-daemon: v10.21.2
-mcsmanager-web: v10.21.2
+  date: '20261027'
+  digest: sha256:efa2bd5c7e3bb168bbca131792399209b38ac69a8ce705060ddca9167c5eeed8
+mcsmanager-daemon: v10.22.0
+mcsmanager-web: v10.22.0
 openvpn:
   date: '20261015'
   digest: sha256:921b38fb12d2ee5517cd8281615dc6ae0d1b570e414fc892f909ba30b7c91bfd
@@ -24,5 +24,5 @@ redis-commander:
   date: '20261015'
   digest: sha256:19cd0c49f418779fa2822a0496c5e6516d0c792effc39ed20089e6268477e40a
 teable:
-  date: '20261023'
-  digest: sha256:34d6e3508c8776a95d68f804a29e0442904f239076989ba8db77336f8ac85a1b
+  date: '20261027'
+  digest: sha256:cf866b6ab8c752b7839f16b686e01684a67b4a61b69f5bad4007147944bdc0a3

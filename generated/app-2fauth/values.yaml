@@ -37,7 +37,7 @@ services:
     image:
       registry: ''
       repository: 2fauth/2fauth
-      tag: 8.0.3
+      tag: 9.0.0
     port: 8000
     volumeMounts:
     - mountPath: /2fauth

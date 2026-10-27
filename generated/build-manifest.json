@@ -2,9 +2,9 @@
   "apps": {
     "2fauth": {
       "chart": "app-2fauth",
-      "sha": "848afef001cc",
+      "sha": "460db0798edf",
       "status": "success",
-      "version": "8.0.3+gb8dca7"
+      "version": "9.0.0+gd5ca85"
     },
     "adguardhome": {
       "chart": "adguardhome",
@@ -140,9 +140,9 @@
     },
     "changedetectionio": {
       "chart": "changedetectionio",
-      "sha": "53f80b3a69ff",
+      "sha": "f422a23de6ec",
       "status": "success",
-      "version": "0.60.9+g839edf"
+      "version": "0.60.10+gea31db"
     },
     "chatgpt-next-web": {
       "chart": "chatgpt-next-web",
@@ -164,9 +164,9 @@
     },
     "cloudflared": {
       "chart": "cloudflared",
-      "sha": "e4f922db88d8",
+      "sha": "215f8f9308fa",
       "status": "success",
-      "version": "2026.10.3+g987d91"
+      "version": "2026.10.4+g7c2be3"
     },
     "cloudreve": {
       "chart": "cloudreve",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "2ed0582f0548",
+      "sha": "e12a3f153537",
       "status": "success",
-      "version": "4.9.0+g709bdf"
+      "version": "4.9.8+g40ba6a"
     },
     "dataease": {
       "chart": "dataease",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "118b21d1696a",
+      "sha": "969b8f1034eb",
       "status": "success",
-      "version": "0.6.55+g9112d1"
+      "version": "0.6.57+ge55883"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -374,9 +374,9 @@
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "74dac8f72884",
+      "sha": "3febdbbe7120",
       "status": "success",
-      "version": "27.3.8+gb95168"
+      "version": "27.3.9+g32d6af"
     },
     "glance": {
       "chart": "glance",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "07f5627df740",
+      "sha": "b721bb0aec13",
       "status": "success",
-      "version": "0.0.0-d20261026.g1d110+gae77c6"
+      "version": "0.0.0-d20261027.gefa2b+g6d32e1"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -614,15 +614,15 @@
     },
     "mcsmanager-web": {
       "chart": "mcsmanager-web",
-      "sha": "7eebbfc43ecb",
+      "sha": "4c3a55d3096e",
       "status": "success",
-      "version": "10.21.2+g3ae1b7"
+      "version": "10.22.0+gc60042"
     },
     "meilisearch": {
       "chart": "meilisearch",
-      "sha": "4ceb5d99fe42",
+      "sha": "a2f9963136ca",
       "status": "success",
-      "version": "1.55.0+g8dece1"
+      "version": "1.56.0+ga729c3"
     },
     "memos": {
       "chart": "memos",
@@ -716,9 +716,9 @@
     },
     "nezha": {
       "chart": "nezha",
-      "sha": "8080c5a96341",
+      "sha": "b5ba53324c74",
       "status": "success",
-      "version": "2.5.0+g90438b"
+      "version": "2.6.0+g77334c"
     },
     "nginx-proxy-manager": {
       "chart": "nginx-proxy-manager",
@@ -794,9 +794,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "9396137d6583",
+      "sha": "a24b79abadee",
       "status": "success",
-      "version": "2026.10.5+gaa4ec5"
+      "version": "2026.10.7+g19aa68"
     },
     "opengist": {
       "chart": "opengist",
@@ -974,9 +974,9 @@
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "ca7e005d37f4",
+      "sha": "ba78b3605e1a",
       "status": "success",
-      "version": "0.16.27+alpine"
+      "version": "1.0.0+alpine"
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
@@ -1010,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "ea9bfe8692ee",
+      "sha": "81eee94d586d",
       "status": "success",
-      "version": "0.0.0-d20261023.g34d6e+g9ebbaf"
+      "version": "0.0.0-d20261027.gcf866+g7bf3f1"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1076,9 +1076,9 @@
     },
     "uptime-kuma": {
       "chart": "uptime-kuma",
-      "sha": "0ced350fe43e",
+      "sha": "2503aa34a028",
       "status": "success",
-      "version": "2.5.7+g222f68"
+      "version": "2.5.8+gd0f7f2"
     },
     "vane": {
       "chart": "vane",
@@ -1094,9 +1094,9 @@
     },
     "verdaccio": {
       "chart": "verdaccio",
-      "sha": "05f9b8f919c9",
+      "sha": "40adcfda1fa2",
       "status": "success",
-      "version": "6.11.1+gda57b3"
+      "version": "7.0.2+g7be7db"
     },
     "waline": {
       "chart": "waline",
@@ -1112,9 +1112,9 @@
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "19144cb0c7cc",
+      "sha": "653503be3786",
       "status": "success",
-      "version": "2.3.8+g6fdb1d"
+      "version": "2.3.9+g31845e"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "79cf43943621005b36ea16c0a134feef27a29cec"
+  "upstream_sha": "3b56f010bc5aa27024a686e5856042f14f75cce8"
 }

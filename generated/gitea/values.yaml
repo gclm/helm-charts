@@ -31,7 +31,7 @@ services:
     image:
       registry: ''
       repository: commitgo/gitea-ee
-      tag: 27.3.8
+      tag: 27.3.9
     port: 3000
     volumeMounts:
     - mountPath: /data

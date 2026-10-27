@@ -2,9 +2,9 @@ apiVersion: v2
 name: uptime-kuma
 description: Uptime Kuma (converted from 1Panel appstore)
 type: application
-version: 2.5.7+g222f68
-appVersion: 2.5.7
+version: 2.5.8+gd0f7f2
+appVersion: 2.5.8
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 79cf43943621005b36ea16c0a134feef27a29cec
+  upstream/sha: 3b56f010bc5aa27024a686e5856042f14f75cce8

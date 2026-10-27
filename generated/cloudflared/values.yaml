@@ -13,5 +13,5 @@ services:
     image:
       registry: ''
       repository: cloudflare/cloudflared
-      tag: 2026.10.3
+      tag: 2026.10.4
     volumeMounts: []

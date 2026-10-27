@@ -2,9 +2,9 @@ apiVersion: v2
 name: verdaccio
 description: Verdaccio (converted from 1Panel appstore)
 type: application
-version: 6.11.1+gda57b3
-appVersion: 6.11.1
+version: 7.0.2+g7be7db
+appVersion: 7.0.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 79cf43943621005b36ea16c0a134feef27a29cec
+  upstream/sha: 3b56f010bc5aa27024a686e5856042f14f75cce8
