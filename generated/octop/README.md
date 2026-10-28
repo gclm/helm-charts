@@ -2,7 +2,7 @@
 
 更智能、可自托管的 AI 助手——支持多用户、多代理
 
-- 上游: 1Panel-dev/appstore `apps/octop` @ `3b56f010bc5a`
+- 上游: 1Panel-dev/appstore `apps/octop` @ `17bc20d98a2a`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

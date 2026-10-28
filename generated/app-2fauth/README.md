@@ -2,7 +2,7 @@
 
 管理双因素身份验证（2FA）帐户并生成安全代码的 Web 应用程序
 
-- 上游: 1Panel-dev/appstore `apps/app-2fauth` @ `3b56f010bc5a`
+- 上游: 1Panel-dev/appstore `apps/app-2fauth` @ `17bc20d98a2a`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

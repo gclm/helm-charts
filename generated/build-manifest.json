@@ -14,9 +14,9 @@
     },
     "adminer": {
       "chart": "adminer",
-      "sha": "f51135e3a9bc",
+      "sha": "74f6bfa2b541",
       "status": "success",
-      "version": "6.1.2+standalone"
+      "version": "6.2.0+standalone"
     },
     "affine": {
       "chart": "affine",
@@ -50,9 +50,9 @@
     },
     "archivebox": {
       "chart": "archivebox",
-      "sha": "16b64b14fee7",
+      "sha": "a8dbfd84a13a",
       "status": "success",
-      "version": "0.9.73+gbe0b35"
+      "version": "0.9.77+g0ff097"
     },
     "artalk": {
       "chart": "artalk",
@@ -164,9 +164,9 @@
     },
     "cloudflared": {
       "chart": "cloudflared",
-      "sha": "215f8f9308fa",
+      "sha": "bf3aebd58a19",
       "status": "success",
-      "version": "2026.10.4+g7c2be3"
+      "version": "2026.10.5+g10c189"
     },
     "cloudreve": {
       "chart": "cloudreve",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "969b8f1034eb",
+      "sha": "8f5c35fcce7b",
       "status": "success",
-      "version": "0.6.57+ge55883"
+      "version": "0.6.59+g8be0c3"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -332,9 +332,9 @@
     },
     "filecodebox": {
       "chart": "filecodebox",
-      "sha": "812f6816976e",
+      "sha": "2d0cf8626ad2",
       "status": "success",
-      "version": "2.8.4+g2ce9e9"
+      "version": "2.8.5+g83de55"
     },
     "firefly-iii": {
       "chart": "firefly-iii",
@@ -368,9 +368,9 @@
     },
     "ghost": {
       "chart": "ghost",
-      "sha": "7a63e558fcec",
+      "sha": "443e116e41f4",
       "status": "success",
-      "version": "6.72.0+g562673"
+      "version": "6.73.0+g8e4732"
     },
     "gitea": {
       "chart": "gitea",
@@ -398,9 +398,9 @@
     },
     "grafana": {
       "chart": "grafana",
-      "sha": "adb03dab8641",
+      "sha": "b3d1f5994447",
       "status": "success",
-      "version": "13.2.4+g62a37d"
+      "version": "13.3.0+gad97b4"
     },
     "gsmanager": {
       "chart": "gsmanager",
@@ -518,9 +518,9 @@
     },
     "komga": {
       "chart": "komga",
-      "sha": "8f44f221deff",
+      "sha": "2c601b84c9c0",
       "status": "success",
-      "version": "1.29.1+g3ea964"
+      "version": "1.29.2+g45432d"
     },
     "langbot": {
       "chart": "langbot",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "b721bb0aec13",
+      "sha": "a75ed2d3b1e1",
       "status": "success",
-      "version": "0.0.0-d20261027.gefa2b+g6d32e1"
+      "version": "0.0.0-d20261028.g2467b+g830803"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -632,9 +632,9 @@
     },
     "metabase": {
       "chart": "metabase",
-      "sha": "232be608dcd2",
+      "sha": "782ce924528f",
       "status": "success",
-      "version": "0.64.3+g7354b1"
+      "version": "0.65.2+gf82834"
     },
     "miniflux": {
       "chart": "miniflux",
@@ -668,9 +668,9 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "f8056579dd45",
+      "sha": "d6093beda385",
       "status": "success",
-      "version": "2.44.6+ge255f8"
+      "version": "2.45.4+gceb1b7"
     },
     "nacos": {
       "chart": "nacos",
@@ -680,9 +680,9 @@
     },
     "nats": {
       "chart": "nats",
-      "sha": "0027b58ff6d4",
+      "sha": "0925e2e22bbe",
       "status": "success",
-      "version": "2.15.1+g38c0f0"
+      "version": "2.15.2+g596aee"
     },
     "navidrome": {
       "chart": "navidrome",
@@ -710,9 +710,9 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "97753922f431",
+      "sha": "db12846779fc",
       "status": "success",
-      "version": "3.97.2+g598b2d"
+      "version": "3.97.3+ged6009"
     },
     "nezha": {
       "chart": "nezha",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "f9eca2a756a3",
+      "sha": "adffb8cee15d",
       "status": "success",
-      "version": "2.2.33+ga46545"
+      "version": "2.2.35+g18c95f"
     },
     "node": {
       "chart": "node",
@@ -776,9 +776,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "a65df89eea0a",
+      "sha": "38488a9b3d24",
       "status": "success",
-      "version": "0.40.11+g008c73"
+      "version": "0.40.12+gf0d66e"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -998,9 +998,9 @@
     },
     "synapse": {
       "chart": "synapse",
-      "sha": "e2a973c7a6b4",
+      "sha": "27a664d93df1",
       "status": "success",
-      "version": "1.163.2+gdb61c6"
+      "version": "1.164.0+g0a5df7"
     },
     "tailchat": {
       "chart": "tailchat",
@@ -1046,9 +1046,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "d56a8accbe96",
+      "sha": "a49ef1879d46",
       "status": "success",
-      "version": "2.51.0+g44c63c"
+      "version": "2.52.0+g027d21"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1112,9 +1112,9 @@
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "653503be3786",
+      "sha": "92f690a365cb",
       "status": "success",
-      "version": "2.3.9+g31845e"
+      "version": "2.3.10+g227e78"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "3b56f010bc5aa27024a686e5856042f14f75cce8"
+  "upstream_sha": "17bc20d98a2ab439d360bcebd62111d11b7cf482"
 }

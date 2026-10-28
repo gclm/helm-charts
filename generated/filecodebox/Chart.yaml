@@ -2,9 +2,9 @@ apiVersion: v2
 name: filecodebox
 description: FileCodeBox (converted from 1Panel appstore)
 type: application
-version: 2.8.4+g2ce9e9
-appVersion: 2.8.4
+version: 2.8.5+g83de55
+appVersion: 2.8.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 3b56f010bc5aa27024a686e5856042f14f75cce8
+  upstream/sha: 17bc20d98a2ab439d360bcebd62111d11b7cf482

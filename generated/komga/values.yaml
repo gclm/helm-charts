@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: gotson/komga
-      tag: 1.29.1
+      tag: 1.29.2
     port: 25600
     volumeMounts:
     - mountPath: /data

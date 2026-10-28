@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: nats
-      tag: 2.15.1
+      tag: 2.15.2
     port: 8222
     volumeMounts:
     - mountPath: /data

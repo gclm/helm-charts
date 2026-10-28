@@ -21,7 +21,7 @@ services:
     image:
       registry: ''
       repository: archivebox/archivebox
-      tag: 0.9.73
+      tag: 0.9.77
     port: 5797
     volumeMounts:
     - mountPath: /data
