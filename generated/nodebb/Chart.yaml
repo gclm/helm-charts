@@ -2,9 +2,9 @@ apiVersion: v2
 name: nodebb
 description: NodeBB (converted from 1Panel appstore)
 type: application
-version: 4.16.4+g49f0c1
-appVersion: 4.16.4
+version: 4.16.5+ga86bb5
+appVersion: 4.16.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 17bc20d98a2ab439d360bcebd62111d11b7cf482
+  upstream/sha: 9bd91fd32197a443970ee2e6dd754e6301fe0297

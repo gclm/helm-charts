@@ -26,7 +26,7 @@ services:
     image:
       registry: ''
       repository: ddsderek/easyimage
-      tag: v2.8.6
+      tag: v2.8.7
     port: 80
     volumeMounts:
     - mountPath: /app/web/config

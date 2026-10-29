@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: greper/certd
-      tag: 1.45.5
+      tag: 1.46.0
     port: 7001
     volumeMounts:
     - mountPath: /app/data

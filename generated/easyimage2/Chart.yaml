@@ -2,9 +2,9 @@ apiVersion: v2
 name: easyimage2
 description: EasyImage2.0 (converted from 1Panel appstore)
 type: application
-version: 2.8.6+g1fee84
-appVersion: 2.8.6
+version: 2.8.7+gfa0df5
+appVersion: 2.8.7
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 17bc20d98a2ab439d360bcebd62111d11b7cf482
+  upstream/sha: 9bd91fd32197a443970ee2e6dd754e6301fe0297

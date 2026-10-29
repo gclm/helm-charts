@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: whyour/qinglong
-      tag: 2.23.0-debian
+      tag: 2.24.0-debian
     port: 5700
     volumeMounts:
     - mountPath: /ql/data

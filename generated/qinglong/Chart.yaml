@@ -2,9 +2,9 @@ apiVersion: v2
 name: qinglong
 description: 青龙 (converted from 1Panel appstore)
 type: application
-version: 2.23.0+debian
-appVersion: 2.23.0+debian
+version: 2.24.0+debian
+appVersion: 2.24.0+debian
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 17bc20d98a2ab439d360bcebd62111d11b7cf482
+  upstream/sha: 9bd91fd32197a443970ee2e6dd754e6301fe0297

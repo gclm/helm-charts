@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: twinproduction/gatus
-      tag: v5.37.0
+      tag: v5.38.0
     port: 8080
     volumeMounts:
     - mountPath: /data/

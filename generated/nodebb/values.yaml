@@ -23,7 +23,7 @@ services:
     image:
       registry: ghcr.io
       repository: nodebb/nodebb
-      tag: 4.16.4
+      tag: 4.16.5
     port: 4567
     volumeMounts:
     - mountPath: /usr/src/app/build
