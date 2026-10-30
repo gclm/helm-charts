@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "54371a992556",
+      "sha": "9b3c75be85ab",
       "status": "success",
-      "version": "1.5.0+postgres"
+      "version": "1.5.1+g5a0534"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "684272559e2b",
+      "sha": "629e4869fe19",
       "status": "success",
-      "version": "2.57.3+g538e6b"
+      "version": "2.58.0+g8f4bdd"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "9abe16bd0fbe",
+      "sha": "cdd2a6af1844",
       "status": "success",
-      "version": "4.24.0+g8a99ba"
+      "version": "4.25.0+g825fc3"
     },
     "certd": {
       "chart": "certd",
@@ -242,9 +242,9 @@
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
-      "sha": "509668f4d883",
+      "sha": "a0ff36edb7a5",
       "status": "success",
-      "version": "0.2.1+rc.2"
+      "version": "0.2.1+rc.5"
     },
     "discourse": {
       "chart": "discourse",
@@ -416,15 +416,15 @@
     },
     "heimdall": {
       "chart": "heimdall",
-      "sha": "6086d79d8f03",
+      "sha": "ab3b122d6177",
       "status": "success",
-      "version": "2.8.3+g6d348a"
+      "version": "2.8.4+gacb9f7"
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "532864c6132d",
+      "sha": "d6c647bcd52a",
       "status": "success",
-      "version": "0.22.4+g846bc2"
+      "version": "0.22.5+g2659bc"
     },
     "huginn": {
       "chart": "huginn",
@@ -524,9 +524,9 @@
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "afa7aba104d1",
+      "sha": "9e96dc58f50b",
       "status": "success",
-      "version": "4.11.3+g55cf0d"
+      "version": "4.11.4+g8b33b9"
     },
     "langflow": {
       "chart": "langflow",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "1655daa4b472",
+      "sha": "1864396301c3",
       "status": "success",
-      "version": "0.0.0-d20261029.gef148+g20d75c"
+      "version": "0.0.0-d20261030.g85d54+g3f15f9"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -794,9 +794,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "a24b79abadee",
+      "sha": "a463195fbb8c",
       "status": "success",
-      "version": "2026.10.7+g19aa68"
+      "version": "2026.10.9+g34c6c7"
     },
     "opengist": {
       "chart": "opengist",
@@ -830,9 +830,9 @@
     },
     "pgadmin4": {
       "chart": "pgadmin4",
-      "sha": "8eb6761b97f4",
+      "sha": "4a5593acbd93",
       "status": "success",
-      "version": "9.18.0+g9cbbd0"
+      "version": "9.19.0+gc26a9b"
     },
     "photoprism": {
       "chart": "photoprism",
@@ -938,9 +938,9 @@
     },
     "sglang": {
       "chart": "sglang",
-      "sha": "0c153ae5e103",
+      "sha": "62b0d6f2e36f",
       "status": "success",
-      "version": "0.5.22+gb0e6e6"
+      "version": "0.5.23+g31ea2c"
     },
     "showdoc": {
       "chart": "showdoc",
@@ -1010,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "8253b85eeec6",
+      "sha": "5da98edb4bb2",
       "status": "success",
-      "version": "0.0.0-d20261029.g1ebb0+g142c06"
+      "version": "0.0.0-d20261030.g04030+ge50810"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "9bd91fd32197a443970ee2e6dd754e6301fe0297"
+  "upstream_sha": "f97a0a8a2e520c371373e510031243ffc31578aa"
 }

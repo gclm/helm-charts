@@ -2,9 +2,9 @@ apiVersion: v2
 name: browserless
 description: Browserless (converted from 1Panel appstore)
 type: application
-version: 2.57.3+g538e6b
-appVersion: 2.57.3
+version: 2.58.0+g8f4bdd
+appVersion: 2.58.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 9bd91fd32197a443970ee2e6dd754e6301fe0297
+  upstream/sha: f97a0a8a2e520c371373e510031243ffc31578aa

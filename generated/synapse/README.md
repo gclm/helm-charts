@@ -2,7 +2,7 @@
 
 开源的 Matrix 家庭服务器，自建聊天服务端
 
-- 上游: 1Panel-dev/appstore `apps/synapse` @ `9bd91fd32197`
+- 上游: 1Panel-dev/appstore `apps/synapse` @ `f97a0a8a2e52`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

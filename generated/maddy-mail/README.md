@@ -2,7 +2,7 @@
 
 可组合的多合一邮件服务器
 
-- 上游: 1Panel-dev/appstore `apps/maddy-mail` @ `9bd91fd32197`
+- 上游: 1Panel-dev/appstore `apps/maddy-mail` @ `f97a0a8a2e52`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

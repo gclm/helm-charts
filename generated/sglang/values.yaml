@@ -48,7 +48,7 @@ services:
     image:
       registry: ''
       repository: lmsysorg/sglang
-      tag: v0.5.22
+      tag: v0.5.23
     port: 30000
     probe:
       exec: curl -f http://localhost:30000/health || exit 1

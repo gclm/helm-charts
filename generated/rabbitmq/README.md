@@ -2,7 +2,7 @@
 
 功能丰富的多协议消息传递和流媒体代理
 
-- 上游: 1Panel-dev/appstore `apps/rabbitmq` @ `9bd91fd32197`
+- 上游: 1Panel-dev/appstore `apps/rabbitmq` @ `f97a0a8a2e52`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

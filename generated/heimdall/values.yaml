@@ -21,7 +21,7 @@ services:
     image:
       registry: ''
       repository: linuxserver/heimdall
-      tag: 2.8.3
+      tag: 2.8.4
     port: 80
     volumeMounts:
     - mountPath: /config

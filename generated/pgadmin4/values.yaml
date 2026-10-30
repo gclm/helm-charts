@@ -20,7 +20,7 @@ services:
     image:
       registry: ''
       repository: dpage/pgadmin4
-      tag: '9.18'
+      tag: '9.19'
     port: 80
     volumeMounts:
     - mountPath: /var/lib/pgadmin
