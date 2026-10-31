@@ -101,7 +101,7 @@
 - localai -> chart localai (3.12.1+aio-cpu) sha:7eedb4a605e8
 - logstash -> chart logstash (9.5.5+g33dac9) sha:6669e5bbb9d9
 - logto -> chart logto (1.45.0+gdf1066) sha:ae48d6eaec16
-- lsky-pro -> chart lsky-pro (0.0.0-d20261030.g85d54+g3f15f9) sha:1864396301c3
+- lsky-pro -> chart lsky-pro (0.0.0-d20261031.gac015+g697c9a) sha:1fe94374c301
 - maddy-mail -> chart maddy-mail (0.9.6+gf34d25) sha:fa0e64c885d6
 - mailserver -> chart mailserver (16.0.1+gcf204e) sha:caa92c561051
 - mattermost -> chart mattermost (12.0.1+g5e6c6b) sha:e1963ddaa584
