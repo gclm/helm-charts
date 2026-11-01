@@ -2,8 +2,8 @@ apiVersion: v2
 name: mcsmanager-web
 description: MCSManager (converted from 1Panel appstore)
 type: application
-version: 10.22.0+gc60042
-appVersion: 10.22.0
+version: 10.22.1+gcd3e8e
+appVersion: 10.22.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore

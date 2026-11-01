@@ -101,13 +101,13 @@
 - localai -> chart localai (3.12.1+aio-cpu) sha:7eedb4a605e8
 - logstash -> chart logstash (9.5.5+g33dac9) sha:6669e5bbb9d9
 - logto -> chart logto (1.45.0+gdf1066) sha:ae48d6eaec16
-- lsky-pro -> chart lsky-pro (0.0.0-d20261031.gac015+g697c9a) sha:1fe94374c301
+- lsky-pro -> chart lsky-pro (0.0.0-d20261101.g625b6+g7d377e) sha:e05f706cc9cc
 - maddy-mail -> chart maddy-mail (0.9.6+gf34d25) sha:fa0e64c885d6
 - mailserver -> chart mailserver (16.0.1+gcf204e) sha:caa92c561051
 - mattermost -> chart mattermost (12.0.1+g5e6c6b) sha:e1963ddaa584
 - maxkb -> chart maxkb (2.10.8+lts) sha:31dd6d60ed0a
 - mblog -> chart mblog (1.1.0+g59ea8f) sha:364bf0024d3c
-- mcsmanager-web -> chart mcsmanager-web (10.22.0+gc60042) sha:4c3a55d3096e
+- mcsmanager-web -> chart mcsmanager-web (10.22.1+gcd3e8e) sha:492204164f31
 - meilisearch -> chart meilisearch (1.56.0+ga729c3) sha:a2f9963136ca
 - memos -> chart memos (0.31.0+g2f124e) sha:1450f0caef9b
 - metabase -> chart metabase (0.65.2+gf82834) sha:782ce924528f
@@ -173,7 +173,7 @@
 - sun-panel -> chart sun-panel (1.8.1+g31dff8) sha:13208a33b318
 - synapse -> chart synapse (1.164.1+g375818) sha:cb00ba13fa4c
 - tailchat -> chart tailchat (1.11.18+g00ed41) sha:c42c8d5ac9b2
-- teable -> chart teable (0.0.0-d20261030.g04030+ge50810) sha:5da98edb4bb2
+- teable -> chart teable (0.0.0-d20261101.g65c48+g24f580) sha:71b23b25b079
 - teamspeak -> chart teamspeak (3.13.8+ge8db25) sha:6a3c621a5a8d
 - tinyrdm -> chart tinyrdm (1.2.7+g020cb1) sha:ae67c25bf151
 - tomcat -> chart tomcat (10.1.43+gea077f) sha:0ce6190ee15e

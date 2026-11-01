@@ -14,7 +14,7 @@ services:
     - name: PANEL_APP_PORT_HTTP
       valueFromEnv: PANEL_APP_PORT_HTTP
     image:
-      digest: sha256:ac015defc61c3e893a30d21318078a5c2dc84564be4dac9b5d5f2d13557c8b03
+      digest: sha256:625b6d3a119098380a3a3fe1e50ef190e37e40ebfc29fc1ba3b21083efcf6214
       registry: ''
       repository: halcyonazure/lsky-pro-docker
       tag: null
