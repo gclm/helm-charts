@@ -23,6 +23,6 @@ services:
     image:
       registry: ''
       repository: miniflux/miniflux
-      tag: 2.3.4
+      tag: 2.3.5
     port: 8080
     volumeMounts: []

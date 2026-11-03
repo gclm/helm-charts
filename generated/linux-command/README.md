@@ -2,7 +2,7 @@
 
 Linux 命令大全搜索工具
 
-- 上游: 1Panel-dev/appstore `apps/linux-command` @ `f97a0a8a2e52`
+- 上游: 1Panel-dev/appstore `apps/linux-command` @ `4a026c7a5152`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

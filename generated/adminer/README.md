@@ -2,7 +2,7 @@
 
 PHP 轻量级数据库管理工具
 
-- 上游: 1Panel-dev/appstore `apps/adminer` @ `f97a0a8a2e52`
+- 上游: 1Panel-dev/appstore `apps/adminer` @ `4a026c7a5152`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

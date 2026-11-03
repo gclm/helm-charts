@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: mouday/domain-admin
-      tag: v1.6.78
+      tag: v1.6.79
     port: 8000
     volumeMounts:
     - mountPath: /app/database

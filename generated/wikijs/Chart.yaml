@@ -2,9 +2,9 @@ apiVersion: v2
 name: wikijs
 description: Wiki.js (converted from 1Panel appstore)
 type: application
-version: 2.5.317+gc1d020
-appVersion: 2.5.317
+version: 3.0.2+g1eb1be
+appVersion: 3.0.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f97a0a8a2e520c371373e510031243ffc31578aa
+  upstream/sha: 4a026c7a515246e6ac982e19757608885bf5a77e

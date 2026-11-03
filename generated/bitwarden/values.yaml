@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: vaultwarden/server
-      tag: 1.37.4-alpine
+      tag: 1.37.5-alpine
     port: 80
     volumeMounts:
     - mountPath: /data
