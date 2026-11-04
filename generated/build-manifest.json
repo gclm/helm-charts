@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "105f6670f983",
+      "sha": "002b33fc5f46",
       "status": "success",
-      "version": "2.58.1+g181f08"
+      "version": "2.58.2+g518ec9"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -158,9 +158,9 @@
     },
     "cloudbeaver": {
       "chart": "cloudbeaver",
-      "sha": "1a942b11b525",
+      "sha": "942aefac181d",
       "status": "success",
-      "version": "26.2.3+g16cfb7"
+      "version": "26.2.4+g3b4784"
     },
     "cloudflared": {
       "chart": "cloudflared",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "5a350ae2dac7",
+      "sha": "274eb3badca9",
       "status": "success",
-      "version": "4.9.12+g028dc8"
+      "version": "4.9.15+gfe8d4a"
     },
     "dataease": {
       "chart": "dataease",
@@ -410,9 +410,9 @@
     },
     "halo": {
       "chart": "halo",
-      "sha": "de79b4a2d879",
+      "sha": "3083393cb2fa",
       "status": "success",
-      "version": "2.27.1+g2c91c6"
+      "version": "2.27.2+gc416d9"
     },
     "heimdall": {
       "chart": "heimdall",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "d6c647bcd52a",
+      "sha": "6c60c910ebc6",
       "status": "success",
-      "version": "0.22.5+g2659bc"
+      "version": "0.22.6+gb1e350"
     },
     "huginn": {
       "chart": "huginn",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "2880b14f1348",
+      "sha": "8c27a5dce010",
       "status": "success",
-      "version": "0.0.0-d20261103.gd3f77+g90f28e"
+      "version": "0.0.0-d20261104.g615bd+g1e7e61"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "63d3fb559292",
+      "sha": "a3ae639618db",
       "status": "success",
-      "version": "2.2.37+g1178c0"
+      "version": "2.2.38+gf093e6"
     },
     "node": {
       "chart": "node",
@@ -998,9 +998,9 @@
     },
     "synapse": {
       "chart": "synapse",
-      "sha": "cb00ba13fa4c",
+      "sha": "277a141b8616",
       "status": "success",
-      "version": "1.164.1+g375818"
+      "version": "1.164.2+g83c77a"
     },
     "tailchat": {
       "chart": "tailchat",
@@ -1010,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "71b23b25b079",
+      "sha": "c963d1946564",
       "status": "success",
-      "version": "0.0.0-d20261101.g65c48+g24f580"
+      "version": "0.0.0-d20261104.g47be8+ge684e2"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1100,9 +1100,9 @@
     },
     "waline": {
       "chart": "waline",
-      "sha": "475726f8fe5b",
+      "sha": "91a34ef0edd6",
       "status": "success",
-      "version": "1.43.4+g2b03a9"
+      "version": "1.43.6+g4d8a03"
     },
     "wallos": {
       "chart": "wallos",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "4a026c7a515246e6ac982e19757608885bf5a77e"
+  "upstream_sha": "f46185d56db91c3af24bffcbe601144840c4b458"
 }

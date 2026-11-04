@@ -2,9 +2,9 @@ apiVersion: v2
 name: halo
 description: Halo (converted from 1Panel appstore)
 type: application
-version: 2.27.1+g2c91c6
-appVersion: 2.27.1
+version: 2.27.2+gc416d9
+appVersion: 2.27.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 4a026c7a515246e6ac982e19757608885bf5a77e
+  upstream/sha: f46185d56db91c3af24bffcbe601144840c4b458

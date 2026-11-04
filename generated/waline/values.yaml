@@ -38,7 +38,7 @@ services:
     image:
       registry: ''
       repository: lizheming/waline
-      tag: 1.43.4
+      tag: 1.43.6
     port: 8360
     volumeMounts:
     - mountPath: /app/data
