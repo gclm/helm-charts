@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: langflowai/langflow
-      tag: 1.13.0
+      tag: 1.13.1
     port: 7860
     volumeMounts:
     - mountPath: /app/langflow

@@ -2,7 +2,7 @@
 
 面向现代应用与服务的开源身份和访问管理器
 
-- 上游: 1Panel-dev/appstore `apps/keycloak` @ `f46185d56db9`
+- 上游: 1Panel-dev/appstore `apps/keycloak` @ `9dfb71968621`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

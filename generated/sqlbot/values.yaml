@@ -52,7 +52,7 @@ services:
     image:
       registry: ''
       repository: dataease/sqlbot
-      tag: v1.10.2
+      tag: v1.10.3
     port: 8000
     volumeMounts:
     - mountPath: /opt/sqlbot/data/excel

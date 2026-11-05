@@ -8,13 +8,13 @@
     },
     "adguardhome": {
       "chart": "adguardhome",
-      "sha": "41377de73e2b",
+      "sha": "5d8647fe93c7",
       "status": "success",
-      "version": "0.107.79+g4dee24"
+      "version": "0.107.79+g517de2"
     },
     "adminer": {
       "chart": "adminer",
-      "sha": "74f6bfa2b541",
+      "sha": "02af916785d5",
       "status": "success",
       "version": "6.2.0+standalone"
     },
@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "9b3c75be85ab",
+      "sha": "105edc17003e",
       "status": "success",
-      "version": "1.5.1+g5a0534"
+      "version": "1.5.1+postgres"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "002b33fc5f46",
+      "sha": "832352a8f2a7",
       "status": "success",
-      "version": "2.58.2+g518ec9"
+      "version": "2.58.2+gfdd181"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -230,15 +230,15 @@
     },
     "dbhub": {
       "chart": "dbhub",
-      "sha": "b7c893990fa3",
+      "sha": "4543dbf0ec00",
       "status": "success",
-      "version": "1.5.0+g9fb42e"
+      "version": "1.5.1+g7d88fa"
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "5e4c21469091",
+      "sha": "dc6f706bf835",
       "status": "success",
-      "version": "0.6.64+g39eaa7"
+      "version": "0.6.64+g2fd855"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -368,15 +368,15 @@
     },
     "ghost": {
       "chart": "ghost",
-      "sha": "443e116e41f4",
+      "sha": "7640c6421f6e",
       "status": "success",
-      "version": "6.73.0+g8e4732"
+      "version": "6.74.0+g965aff"
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "84d1c2cfecd0",
+      "sha": "f65aada063fd",
       "status": "success",
-      "version": "27.3.10+gf4fa82"
+      "version": "27.3.11+gfd8563"
     },
     "glance": {
       "chart": "glance",
@@ -422,15 +422,15 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "6c60c910ebc6",
+      "sha": "3057109196ba",
       "status": "success",
-      "version": "0.22.6+gb1e350"
+      "version": "0.22.7+g851e65"
     },
     "huginn": {
       "chart": "huginn",
-      "sha": "d3dd1166c96e",
+      "sha": "f0d2602b3fec",
       "status": "success",
-      "version": "2026.11.01+gb24440"
+      "version": "2026.11.05+g77fafe"
     },
     "it-tools": {
       "chart": "it-tools",
@@ -518,9 +518,9 @@
     },
     "komga": {
       "chart": "komga",
-      "sha": "2c601b84c9c0",
+      "sha": "4e0196aa1e64",
       "status": "success",
-      "version": "1.29.2+g45432d"
+      "version": "1.29.2+g3c4763"
     },
     "langbot": {
       "chart": "langbot",
@@ -530,9 +530,9 @@
     },
     "langflow": {
       "chart": "langflow",
-      "sha": "79b649f87702",
+      "sha": "e75663789048",
       "status": "success",
-      "version": "1.13.0+g342008"
+      "version": "1.13.0+g79a519"
     },
     "laya-server": {
       "chart": "laya-server",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "8c27a5dce010",
+      "sha": "eae98845d912",
       "status": "success",
-      "version": "0.0.0-d20261104.g615bd+g1e7e61"
+      "version": "0.0.0-d20261105.ga0490+gf43e01"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -596,9 +596,9 @@
     },
     "mattermost": {
       "chart": "mattermost",
-      "sha": "e1963ddaa584",
+      "sha": "07b950c53e2a",
       "status": "success",
-      "version": "12.0.1+g5e6c6b"
+      "version": "12.0.2+g59eac4"
     },
     "maxkb": {
       "chart": "maxkb",
@@ -632,9 +632,9 @@
     },
     "metabase": {
       "chart": "metabase",
-      "sha": "782ce924528f",
+      "sha": "a31b13d7254c",
       "status": "success",
-      "version": "0.65.2+gf82834"
+      "version": "0.65.2+gd9d6e6"
     },
     "miniflux": {
       "chart": "miniflux",
@@ -662,15 +662,15 @@
     },
     "music-tag-web": {
       "chart": "music-tag-web",
-      "sha": "5566c7dd72e2",
+      "sha": "5dd543be6a47",
       "status": "success",
-      "version": "2.8.0+gcb7946"
+      "version": "2.8.0+ge65a0b"
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "25784be0b9cd",
+      "sha": "dea67a0aa071",
       "status": "success",
-      "version": "2.46.4+ga08408"
+      "version": "2.47.1+g4623d3"
     },
     "nacos": {
       "chart": "nacos",
@@ -710,9 +710,9 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "db12846779fc",
+      "sha": "080899cf20cd",
       "status": "success",
-      "version": "3.97.3+ged6009"
+      "version": "3.98.0+g5d7795"
     },
     "nezha": {
       "chart": "nezha",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "a3ae639618db",
+      "sha": "41a8336b4cc0",
       "status": "success",
-      "version": "2.2.38+gf093e6"
+      "version": "2.2.39+gc48464"
     },
     "node": {
       "chart": "node",
@@ -752,9 +752,9 @@
     },
     "ntfy": {
       "chart": "ntfy",
-      "sha": "856c1ac25a46",
+      "sha": "71becbb12b5f",
       "status": "success",
-      "version": "2.36.0+ge61727"
+      "version": "2.36.0+gc4a85b"
     },
     "obsidian_livesync": {
       "chart": "obsidian-livesync",
@@ -776,15 +776,15 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "25e9c4b4ef8b",
+      "sha": "650d3bf78275",
       "status": "success",
-      "version": "0.40.13+g5084cb"
+      "version": "0.40.14+g8783f4"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
-      "sha": "ace00e7e30af",
+      "sha": "19d52bb90263",
       "status": "success",
-      "version": "0.12.5+gd4d98c"
+      "version": "0.13.0+gae189d"
     },
     "onlyoffice": {
       "chart": "onlyoffice",
@@ -794,9 +794,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "a463195fbb8c",
+      "sha": "97dae2910467",
       "status": "success",
-      "version": "2026.10.9+g34c6c7"
+      "version": "2026.10.10+g895436"
     },
     "opengist": {
       "chart": "opengist",
@@ -968,13 +968,13 @@
     },
     "sqlbot": {
       "chart": "sqlbot",
-      "sha": "d25a6867c5a7",
+      "sha": "d55745969fb4",
       "status": "success",
-      "version": "1.10.2+gd8cc9e"
+      "version": "1.10.3+gcf38eb"
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "cab1e0f8e2f1",
+      "sha": "a95b612a7b04",
       "status": "success",
       "version": "1.0.1+alpine"
     },
@@ -1010,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "c963d1946564",
+      "sha": "5486faff8d2a",
       "status": "success",
-      "version": "0.0.0-d20261104.g47be8+ge684e2"
+      "version": "0.0.0-d20261105.g36d27+g35e38c"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1046,9 +1046,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "4228ff577d11",
+      "sha": "fc663323d88b",
       "status": "success",
-      "version": "2.54.0+gf0f973"
+      "version": "2.55.0+g7d384a"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "f46185d56db91c3af24bffcbe601144840c4b458"
+  "upstream_sha": "9dfb71968621572137af02ec7099746fdf7ad3fa"
 }

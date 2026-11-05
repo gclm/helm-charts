@@ -16,7 +16,7 @@ services:
     image:
       registry: ''
       repository: xhongc/music_tag_web
-      tag: 2.8.0
+      tag: 2.8.1
     port: 8001
     volumeMounts:
     - mountPath: /app/media

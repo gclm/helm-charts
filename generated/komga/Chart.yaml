@@ -2,9 +2,9 @@ apiVersion: v2
 name: komga
 description: Komga (converted from 1Panel appstore)
 type: application
-version: 1.29.2+g45432d
+version: 1.29.2+g3c4763
 appVersion: 1.29.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f46185d56db91c3af24bffcbe601144840c4b458
+  upstream/sha: 9dfb71968621572137af02ec7099746fdf7ad3fa

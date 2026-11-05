@@ -13,9 +13,7 @@ services:
   ai-gateway:
     env:
     - name: AI_GATEWAY_DATABASE_DRIVER
-      value: sqlite
-    - name: AI_GATEWAY_DATABASE_SQLITE_PATH
-      value: /opt/ai-gateway/data/db/ai-gateway.db
+      value: postgres
     - name: AI_GATEWAY_INITIAL_ADMIN_USERNAME
       valueFromEnv: AI_GATEWAY_INITIAL_ADMIN_USERNAME
     - name: AI_GATEWAY_INITIAL_ADMIN_PASSWORD
