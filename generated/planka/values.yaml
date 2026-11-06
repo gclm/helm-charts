@@ -33,7 +33,7 @@ services:
     image:
       registry: ghcr.io
       repository: plankanban/planka
-      tag: 2.2.1
+      tag: 2.3.0
     port: 1337
     volumeMounts:
     - mountPath: /app/data

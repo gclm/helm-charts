@@ -19,6 +19,6 @@ services:
     image:
       registry: ''
       repository: svhd/logto
-      tag: 1.45.0
+      tag: 1.46.0
     port: 3002
     volumeMounts: []

@@ -2,9 +2,9 @@ apiVersion: v2
 name: blinko
 description: Blinko (converted from 1Panel appstore)
 type: application
-version: 1.8.8+g2cebd8
-appVersion: 1.8.8
+version: 1.8.9+g9fefae
+appVersion: 1.8.9
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 9dfb71968621572137af02ec7099746fdf7ad3fa
+  upstream/sha: 60db3c82902114e9286c2e6cab8a8ea48fedd317
