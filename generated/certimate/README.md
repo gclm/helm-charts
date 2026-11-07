@@ -2,7 +2,7 @@
 
 一个安全、简便的 SSL 证书管理解决方案
 
-- 上游: 1Panel-dev/appstore `apps/certimate` @ `60db3c829021`
+- 上游: 1Panel-dev/appstore `apps/certimate` @ `a0d47734eab0`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

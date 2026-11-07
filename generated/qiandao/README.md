@@ -2,7 +2,7 @@
 
 HTTP 请求定时任务自动执行框架
 
-- 上游: 1Panel-dev/appstore `apps/qiandao` @ `60db3c829021`
+- 上游: 1Panel-dev/appstore `apps/qiandao` @ `a0d47734eab0`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

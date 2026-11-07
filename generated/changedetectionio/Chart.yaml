@@ -2,9 +2,9 @@ apiVersion: v2
 name: changedetectionio
 description: Changedetection.io (converted from 1Panel appstore)
 type: application
-version: 0.70.1+g7f3f97
-appVersion: 0.70.1
+version: 0.70.2+g1e894c
+appVersion: 0.70.2
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 60db3c82902114e9286c2e6cab8a8ea48fedd317
+  upstream/sha: a0d47734eab0c691dde15fd4bb53ce2b94aa7186

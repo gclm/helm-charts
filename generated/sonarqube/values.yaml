@@ -27,7 +27,7 @@ services:
     image:
       registry: ''
       repository: sonarqube
-      tag: 26.10.0.133078-community
+      tag: 26.11.0.134175-community
     port: 9000
     volumeMounts:
     - mountPath: /opt/sonarqube/data

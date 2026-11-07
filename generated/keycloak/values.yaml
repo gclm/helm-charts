@@ -38,6 +38,6 @@ services:
     image:
       registry: ''
       repository: keycloak/keycloak
-      tag: 26.8.1
+      tag: 26.8.2
     port: 8080
     volumeMounts: []

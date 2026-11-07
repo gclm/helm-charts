@@ -11,6 +11,6 @@ services:
     image:
       registry: ''
       repository: redpandadata/console
-      tag: v3.13.1
+      tag: v3.14.0
     port: 8080
     volumeMounts: []

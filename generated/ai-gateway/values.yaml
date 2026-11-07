@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: 1panel/ai-gateway
-      tag: v1.5.1
+      tag: v1.6.0
     port: 8080
     probe:
       exec: wget -q -O - http://127.0.0.1:8080/health/ready >/dev/null || exit 1

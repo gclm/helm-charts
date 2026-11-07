@@ -2,7 +2,7 @@
 
 AI 驱动的智能问答引擎
 
-- 上游: 1Panel-dev/appstore `apps/vane` @ `60db3c829021`
+- 上游: 1Panel-dev/appstore `apps/vane` @ `a0d47734eab0`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

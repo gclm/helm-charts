@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "105edc17003e",
+      "sha": "2f329f7624a3",
       "status": "success",
-      "version": "1.5.1+postgres"
+      "version": "1.6.0+postgres"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "cdd2a6af1844",
+      "sha": "ef3c9db52d56",
       "status": "success",
-      "version": "4.25.0+g825fc3"
+      "version": "4.26.0+g7f3286"
     },
     "certd": {
       "chart": "certd",
@@ -140,9 +140,9 @@
     },
     "changedetectionio": {
       "chart": "changedetectionio",
-      "sha": "2c36dda70e12",
+      "sha": "0c7a3cc47ebe",
       "status": "success",
-      "version": "0.70.1+g7f3f97"
+      "version": "0.70.2+g1e894c"
     },
     "chatgpt-next-web": {
       "chart": "chatgpt-next-web",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "2ad5ca185a84",
+      "sha": "0c27b8163b64",
       "status": "success",
-      "version": "0.6.66+gfcd3bf"
+      "version": "0.6.67+ga40b17"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -476,9 +476,9 @@
     },
     "keycloak": {
       "chart": "keycloak",
-      "sha": "6c3c399ca054",
+      "sha": "f698f9b9b7f2",
       "status": "success",
-      "version": "26.8.1+g6169d7"
+      "version": "26.8.2+gfb86f7"
     },
     "kibana": {
       "chart": "kibana",
@@ -578,15 +578,15 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "5d8f59f5182e",
+      "sha": "e51354bb3c78",
       "status": "success",
-      "version": "0.0.0-d20261106.gbc128+gff3097"
+      "version": "0.0.0-d20261106.g3599c+g4bd933"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
-      "sha": "fa0e64c885d6",
+      "sha": "e08b2b567081",
       "status": "success",
-      "version": "0.9.6+gf34d25"
+      "version": "0.9.7+gdd88aa"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -596,9 +596,9 @@
     },
     "mattermost": {
       "chart": "mattermost",
-      "sha": "07b950c53e2a",
+      "sha": "a6b16f60e090",
       "status": "success",
-      "version": "12.0.2+g59eac4"
+      "version": "12.1.0+g5ab510"
     },
     "maxkb": {
       "chart": "maxkb",
@@ -710,9 +710,9 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "080899cf20cd",
+      "sha": "19cf3ceb743e",
       "status": "success",
-      "version": "3.98.0+g5d7795"
+      "version": "3.98.1+g0bef40"
     },
     "nezha": {
       "chart": "nezha",
@@ -776,9 +776,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "650d3bf78275",
+      "sha": "ea2b3bba4656",
       "status": "success",
-      "version": "0.40.14+g8783f4"
+      "version": "0.40.15+g63c1d4"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -848,9 +848,9 @@
     },
     "planka": {
       "chart": "planka",
-      "sha": "cd86a9b0b7a0",
+      "sha": "a621139f605c",
       "status": "success",
-      "version": "2.3.0+gab2ca9"
+      "version": "2.3.1+g6f1b31"
     },
     "python": {
       "chart": "python",
@@ -890,9 +890,9 @@
     },
     "redpanda-console": {
       "chart": "redpanda-console",
-      "sha": "6734ca1c07f4",
+      "sha": "e58ff52bdae0",
       "status": "success",
-      "version": "3.13.1+g6a2cf9"
+      "version": "3.14.0+gac4809"
     },
     "rocketmq": {
       "chart": "rocketmq",
@@ -962,9 +962,9 @@
     },
     "sonarqube": {
       "chart": "sonarqube",
-      "sha": "8b570da7be1b",
+      "sha": "7b21b3f1c7ed",
       "status": "success",
-      "version": "26.10.0+community"
+      "version": "26.11.0+community"
     },
     "sqlbot": {
       "chart": "sqlbot",
@@ -1010,9 +1010,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "bd0cbf91c075",
+      "sha": "93dc902f459c",
       "status": "success",
-      "version": "0.0.0-d20261106.g9791e+g06fd03"
+      "version": "0.0.0-d20261106.g42683+ge42fcd"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1046,9 +1046,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "fc663323d88b",
+      "sha": "bf36249d7960",
       "status": "success",
-      "version": "2.55.0+g7d384a"
+      "version": "2.56.1+gd444d6"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1112,9 +1112,9 @@
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "df504e786656",
+      "sha": "1c34b6aa709e",
       "status": "success",
-      "version": "2.3.12+g18ea0f"
+      "version": "2.4.0+gccdd98"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1124,9 +1124,9 @@
     },
     "wikijs": {
       "chart": "wikijs",
-      "sha": "f78bceb35828",
+      "sha": "d869821ae3c7",
       "status": "success",
-      "version": "3.1.0+g2b5a7f"
+      "version": "3.1.1+ga7729a"
     },
     "wordpress": {
       "chart": "wordpress",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "60db3c82902114e9286c2e6cab8a8ea48fedd317"
+  "upstream_sha": "a0d47734eab0c691dde15fd4bb53ce2b94aa7186"
 }

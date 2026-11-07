@@ -2,9 +2,9 @@ apiVersion: v2
 name: planka
 description: Planka (converted from 1Panel appstore)
 type: application
-version: 2.3.0+gab2ca9
-appVersion: 2.3.0
+version: 2.3.1+g6f1b31
+appVersion: 2.3.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 60db3c82902114e9286c2e6cab8a8ea48fedd317
+  upstream/sha: a0d47734eab0c691dde15fd4bb53ce2b94aa7186
