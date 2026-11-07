@@ -2,7 +2,7 @@
 
 具备可视化节点图界面的强大模块化 AI 创作引擎
 
-- 上游: 1Panel-dev/appstore `apps/comfyui` @ `a0d47734eab0`
+- 上游: 1Panel-dev/appstore `apps/comfyui` @ `fb78ceed0ce2`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

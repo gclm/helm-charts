@@ -2,7 +2,7 @@
 
 用于浏览、阅读和下载 Calibre 数据库中存储的电子书的 Web 应用程序
 
-- 上游: 1Panel-dev/appstore `apps/calibre-web` @ `a0d47734eab0`
+- 上游: 1Panel-dev/appstore `apps/calibre-web` @ `fb78ceed0ce2`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

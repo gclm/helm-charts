@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: kodcloud/kodbox
-      tag: 1.70.03
+      tag: 1.71.02
     port: 80
     volumeMounts:
     - mountPath: /var/www/html

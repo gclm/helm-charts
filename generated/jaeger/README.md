@@ -2,7 +2,7 @@
 
 分布式追踪系统
 
-- 上游: 1Panel-dev/appstore `apps/jaeger` @ `a0d47734eab0`
+- 上游: 1Panel-dev/appstore `apps/jaeger` @ `fb78ceed0ce2`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

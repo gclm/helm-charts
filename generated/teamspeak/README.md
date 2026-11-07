@@ -2,7 +2,7 @@
 
 一款出色的网络语音 (VoIP) 解决方案
 
-- 上游: 1Panel-dev/appstore `apps/teamspeak` @ `a0d47734eab0`
+- 上游: 1Panel-dev/appstore `apps/teamspeak` @ `fb78ceed0ce2`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -2,9 +2,9 @@ apiVersion: v2
 name: lsky-pro
 description: Lsky-pro (converted from 1Panel appstore)
 type: application
-version: 0.0.0-d20261106.g3599c+g4bd933
-appVersion: 0.0.0-d20261106.g3599c
+version: 0.0.0-d20261107.g7d9a1+g0afb4f
+appVersion: 0.0.0-d20261107.g7d9a1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: a0d47734eab0c691dde15fd4bb53ce2b94aa7186
+  upstream/sha: fb78ceed0ce2d555bb5647fc18af72249c66d146

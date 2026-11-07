@@ -2,9 +2,9 @@ apiVersion: v2
 name: kodbox
 description: Kodbox (converted from 1Panel appstore)
 type: application
-version: 1.70.03+gf79da9
-appVersion: 1.70.03
+version: 1.71.02+g2ee1f9
+appVersion: 1.71.02
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: a0d47734eab0c691dde15fd4bb53ce2b94aa7186
+  upstream/sha: fb78ceed0ce2d555bb5647fc18af72249c66d146

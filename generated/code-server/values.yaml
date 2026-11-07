@@ -30,7 +30,7 @@ services:
     image:
       registry: ''
       repository: linuxserver/code-server
-      tag: 4.145.0
+      tag: 4.145.2
     port: 8443
     volumeMounts:
     - mountPath: /config

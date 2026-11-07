@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "aa0b53886b9b",
+      "sha": "6386c804f625",
       "status": "success",
-      "version": "2.59.0+ge51cfc"
+      "version": "2.60.0+ga6e76f"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -176,9 +176,9 @@
     },
     "code-server": {
       "chart": "code-server",
-      "sha": "c533aaa8c44b",
+      "sha": "2c98a795283b",
       "status": "success",
-      "version": "4.145.0+g046eb4"
+      "version": "4.145.2+g8d7163"
     },
     "comfyui": {
       "chart": "comfyui",
@@ -230,9 +230,9 @@
     },
     "dbhub": {
       "chart": "dbhub",
-      "sha": "4543dbf0ec00",
+      "sha": "f7ca8af77fb8",
       "status": "success",
-      "version": "1.5.1+g7d88fa"
+      "version": "1.6.0+gc9c8fe"
     },
     "dbx": {
       "chart": "dbx",
@@ -242,9 +242,9 @@
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
-      "sha": "a0ff36edb7a5",
+      "sha": "42c806308f12",
       "status": "success",
-      "version": "0.2.1+rc.5"
+      "version": "0.2.2+rc.1"
     },
     "discourse": {
       "chart": "discourse",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "3057109196ba",
+      "sha": "794fe2243878",
       "status": "success",
-      "version": "0.22.7+g851e65"
+      "version": "0.23.0+gfc5587"
     },
     "huginn": {
       "chart": "huginn",
@@ -500,9 +500,9 @@
     },
     "kodbox": {
       "chart": "kodbox",
-      "sha": "3d16607731b7",
+      "sha": "b64f3dd0c511",
       "status": "success",
-      "version": "1.70.03+gf79da9"
+      "version": "1.71.02+g2ee1f9"
     },
     "koishi": {
       "chart": "koishi",
@@ -578,9 +578,9 @@
     },
     "lsky-pro": {
       "chart": "lsky-pro",
-      "sha": "e51354bb3c78",
+      "sha": "a9a90de3cb62",
       "status": "success",
-      "version": "0.0.0-d20261106.g3599c+g4bd933"
+      "version": "0.0.0-d20261107.g7d9a1+g0afb4f"
     },
     "maddy-mail": {
       "chart": "maddy-mail",
@@ -794,9 +794,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "97dae2910467",
+      "sha": "010cca52d067",
       "status": "success",
-      "version": "2026.10.10+g895436"
+      "version": "2026.11.1+ga3ff21"
     },
     "opengist": {
       "chart": "opengist",
@@ -986,9 +986,9 @@
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "393a7ef62167",
+      "sha": "2d870c998b5c",
       "status": "success",
-      "version": "0.2.19+g91ffc8"
+      "version": "0.2.20+g26c497"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "a0d47734eab0c691dde15fd4bb53ce2b94aa7186"
+  "upstream_sha": "fb78ceed0ce2d555bb5647fc18af72249c66d146"
 }
