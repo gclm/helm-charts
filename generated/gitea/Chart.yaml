@@ -2,9 +2,9 @@ apiVersion: v2
 name: gitea
 description: Gitea (converted from 1Panel appstore)
 type: application
-version: 27.3.11+gfd8563
-appVersion: 27.3.11
+version: 27.3.12+g031bca
+appVersion: 27.3.12
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: fb78ceed0ce2d555bb5647fc18af72249c66d146
+  upstream/sha: 3569a3ec396469cb18026eb2f76691d4a4f7a72f

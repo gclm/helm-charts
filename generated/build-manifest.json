@@ -128,15 +128,15 @@
     },
     "certd": {
       "chart": "certd",
-      "sha": "5565de101c15",
+      "sha": "1113d9e927be",
       "status": "success",
-      "version": "1.46.0+gb86dbf"
+      "version": "1.46.1+g91eac6"
     },
     "certimate": {
       "chart": "certimate",
-      "sha": "fa4d4159ccf2",
+      "sha": "3afbb8220344",
       "status": "success",
-      "version": "0.4.36+gcf49a4"
+      "version": "0.4.37+g21e098"
     },
     "changedetectionio": {
       "chart": "changedetectionio",
@@ -206,9 +206,9 @@
     },
     "cordys-crm": {
       "chart": "cordys-crm",
-      "sha": "ab7856ed85a4",
+      "sha": "8f3c0b8c415e",
       "status": "success",
-      "version": "1.9.6+g318e46"
+      "version": "1.9.7+g382b1e"
     },
     "cyberchef": {
       "chart": "cyberchef",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "274eb3badca9",
+      "sha": "dcaa4ae9363c",
       "status": "success",
-      "version": "4.9.15+gfe8d4a"
+      "version": "4.9.17+g83c7c2"
     },
     "dataease": {
       "chart": "dataease",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "0c27b8163b64",
+      "sha": "dec6624f96f9",
       "status": "success",
-      "version": "0.6.67+ga40b17"
+      "version": "0.6.68+ge38f03"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -272,9 +272,9 @@
     },
     "domain-admin": {
       "chart": "domain-admin",
-      "sha": "61df53c47764",
+      "sha": "d743c0ce138e",
       "status": "success",
-      "version": "1.6.79+g90a60d"
+      "version": "1.6.80+g9037aa"
     },
     "dosgame": {
       "chart": "dosgame",
@@ -374,15 +374,15 @@
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "f65aada063fd",
+      "sha": "67487dcdd066",
       "status": "success",
-      "version": "27.3.11+gfd8563"
+      "version": "27.3.12+g031bca"
     },
     "glance": {
       "chart": "glance",
-      "sha": "57d9827ef4eb",
+      "sha": "59a4db58d191",
       "status": "success",
-      "version": "0.8.7+g7b6455"
+      "version": "0.8.8+g501bcb"
     },
     "go": {
       "chart": "go",
@@ -428,9 +428,9 @@
     },
     "huginn": {
       "chart": "huginn",
-      "sha": "f0d2602b3fec",
+      "sha": "e7afc271370b",
       "status": "success",
-      "version": "2026.11.05+g77fafe"
+      "version": "2026.11.09+g56de32"
     },
     "it-tools": {
       "chart": "it-tools",
@@ -644,9 +644,9 @@
     },
     "mkdocs-material": {
       "chart": "mkdocs-material",
-      "sha": "98ce7a30573b",
+      "sha": "856f086ac9c7",
       "status": "success",
-      "version": "9.8.0+g972364"
+      "version": "9.8.1+g79d731"
     },
     "mliev-dwz": {
       "chart": "mliev-dwz",
@@ -668,9 +668,9 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "5c8957f2aaf9",
+      "sha": "962120b5da90",
       "status": "success",
-      "version": "2.47.2+g487d55"
+      "version": "2.47.3+g229374"
     },
     "nacos": {
       "chart": "nacos",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "7556fdd50199",
+      "sha": "2c05cd03b899",
       "status": "success",
-      "version": "2.2.40+g908558"
+      "version": "2.2.41+g1157b2"
     },
     "node": {
       "chart": "node",
@@ -782,9 +782,9 @@
     },
     "ollama-webui": {
       "chart": "ollama-webui",
-      "sha": "19d52bb90263",
+      "sha": "fb6b6bd4936b",
       "status": "success",
-      "version": "0.13.0+gae189d"
+      "version": "0.13.3+g68dc8f"
     },
     "onlyoffice": {
       "chart": "onlyoffice",
@@ -794,9 +794,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "010cca52d067",
+      "sha": "b2a3baf5f62e",
       "status": "success",
-      "version": "2026.11.1+ga3ff21"
+      "version": "2026.11.2+g6428d3"
     },
     "opengist": {
       "chart": "opengist",
@@ -1040,9 +1040,9 @@
     },
     "trilium": {
       "chart": "trilium",
-      "sha": "433bf3cb7f51",
+      "sha": "955953ef6c1a",
       "status": "success",
-      "version": "0.106.1+g278c99"
+      "version": "0.107.0+g6d43e6"
     },
     "twenty": {
       "chart": "twenty",
@@ -1094,9 +1094,9 @@
     },
     "verdaccio": {
       "chart": "verdaccio",
-      "sha": "40adcfda1fa2",
+      "sha": "a9bef7451a32",
       "status": "success",
-      "version": "7.0.2+g7be7db"
+      "version": "7.1.0+g06fdee"
     },
     "waline": {
       "chart": "waline",
@@ -1106,9 +1106,9 @@
     },
     "wallos": {
       "chart": "wallos",
-      "sha": "12f158951d1f",
+      "sha": "843f4247131e",
       "status": "success",
-      "version": "5.10.4+gd65f71"
+      "version": "5.11.1+gb42792"
     },
     "web-check": {
       "chart": "web-check",
@@ -1124,9 +1124,9 @@
     },
     "wikijs": {
       "chart": "wikijs",
-      "sha": "d869821ae3c7",
+      "sha": "b24d3b7e760f",
       "status": "success",
-      "version": "3.1.1+ga7729a"
+      "version": "3.3.0+g1af537"
     },
     "wordpress": {
       "chart": "wordpress",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "fb78ceed0ce2d555bb5647fc18af72249c66d146"
+  "upstream_sha": "3569a3ec396469cb18026eb2f76691d4a4f7a72f"
 }

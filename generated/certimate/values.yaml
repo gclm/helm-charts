@@ -23,7 +23,7 @@ services:
     image:
       registry: ''
       repository: certimate/certimate
-      tag: v0.4.36
+      tag: v0.4.37
     port: 8090
     volumeMounts:
     - mountPath: /app/pb_data

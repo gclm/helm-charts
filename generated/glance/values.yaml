@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: glanceapp/glance
-      tag: v0.8.7
+      tag: v0.8.8
     port: 8080
     volumeMounts:
     - mountPath: /app/config/glance.yml
