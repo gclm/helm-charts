@@ -28,7 +28,7 @@ services:
     image:
       registry: ''
       repository: teamspeak
-      tag: 3.13.8
+      tag: 3.13.9
     port: 9987
     volumeMounts:
     - mountPath: /var/ts3server

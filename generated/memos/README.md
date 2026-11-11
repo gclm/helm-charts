@@ -2,7 +2,7 @@
 
 轻量级、自托管的备忘录中心
 
-- 上游: 1Panel-dev/appstore `apps/memos` @ `3569a3ec3964`
+- 上游: 1Panel-dev/appstore `apps/memos` @ `3464e24561af`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

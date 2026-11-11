@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "6386c804f625",
+      "sha": "d3cf2541869d",
       "status": "success",
-      "version": "2.60.0+ga6e76f"
+      "version": "2.61.0+gfc1e50"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -128,9 +128,9 @@
     },
     "certd": {
       "chart": "certd",
-      "sha": "1113d9e927be",
+      "sha": "bc23a4172056",
       "status": "success",
-      "version": "1.46.1+g91eac6"
+      "version": "1.47.1+g036dda"
     },
     "certimate": {
       "chart": "certimate",
@@ -140,9 +140,9 @@
     },
     "changedetectionio": {
       "chart": "changedetectionio",
-      "sha": "0c7a3cc47ebe",
+      "sha": "6c5d6187f41a",
       "status": "success",
-      "version": "0.70.2+g1e894c"
+      "version": "0.70.3+g29d222"
     },
     "chatgpt-next-web": {
       "chart": "chatgpt-next-web",
@@ -374,9 +374,9 @@
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "67487dcdd066",
+      "sha": "7ef3be60dd9a",
       "status": "success",
-      "version": "27.3.12+g031bca"
+      "version": "28.3.1+ga00a61"
     },
     "glance": {
       "chart": "glance",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "794fe2243878",
+      "sha": "1e0b2b8db8f7",
       "status": "success",
-      "version": "0.23.0+gfc5587"
+      "version": "0.23.1+gd25442"
     },
     "huginn": {
       "chart": "huginn",
@@ -518,15 +518,15 @@
     },
     "komga": {
       "chart": "komga",
-      "sha": "4e0196aa1e64",
+      "sha": "6db1b8abf6c8",
       "status": "success",
-      "version": "1.29.2+g3c4763"
+      "version": "1.30.1+g093267"
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "9e96dc58f50b",
+      "sha": "708afaecff83",
       "status": "success",
-      "version": "4.11.4+g8b33b9"
+      "version": "4.11.5+g544df5"
     },
     "langflow": {
       "chart": "langflow",
@@ -620,9 +620,9 @@
     },
     "meilisearch": {
       "chart": "meilisearch",
-      "sha": "682e9dd0b31f",
+      "sha": "793f139bf48d",
       "status": "success",
-      "version": "1.56.1+g959d73"
+      "version": "1.56.2+gf97743"
     },
     "memos": {
       "chart": "memos",
@@ -728,9 +728,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "2c05cd03b899",
+      "sha": "d87e7002f04f",
       "status": "success",
-      "version": "2.2.41+g1157b2"
+      "version": "2.2.43+g2eaf17"
     },
     "node": {
       "chart": "node",
@@ -776,9 +776,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "ea2b3bba4656",
+      "sha": "2d276c51ae1d",
       "status": "success",
-      "version": "0.40.15+g63c1d4"
+      "version": "0.40.16+g107fe7"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -902,9 +902,9 @@
     },
     "roundcube": {
       "chart": "roundcube",
-      "sha": "9ed5105e9ae4",
+      "sha": "dd712c13ef28",
       "status": "success",
-      "version": "1.7.5+apache"
+      "version": "1.7.6+apache"
     },
     "rustdesk": {
       "chart": "rustdesk",
@@ -956,9 +956,9 @@
     },
     "siyuan": {
       "chart": "siyuan",
-      "sha": "753f37214300",
+      "sha": "b0331f418161",
       "status": "success",
-      "version": "3.8.9+g0ddc62"
+      "version": "3.8.10+gbfab0a"
     },
     "sonarqube": {
       "chart": "sonarqube",
@@ -974,9 +974,9 @@
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "f49e3b924352",
+      "sha": "981726d20f44",
       "status": "success",
-      "version": "1.0.3+alpine"
+      "version": "1.1.0+alpine"
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
@@ -1010,15 +1010,15 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "93dc902f459c",
+      "sha": "c7d28603332d",
       "status": "success",
-      "version": "0.0.0-d20261106.g42683+ge42fcd"
+      "version": "0.0.0-d20261111.g623da+g96aac5"
     },
     "teamspeak": {
       "chart": "teamspeak",
-      "sha": "6a3c621a5a8d",
+      "sha": "da7ee0044b6c",
       "status": "success",
-      "version": "3.13.8+ge8db25"
+      "version": "3.13.9+ga5c570"
     },
     "tinyrdm": {
       "chart": "tinyrdm",
@@ -1046,9 +1046,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "bf36249d7960",
+      "sha": "2f697347e40a",
       "status": "success",
-      "version": "2.56.1+gd444d6"
+      "version": "2.57.1+g636bea"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1189,5 +1189,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "3569a3ec396469cb18026eb2f76691d4a4f7a72f"
+  "upstream_sha": "3464e24561af4758e4744e06bf325c0098878cf0"
 }

@@ -30,7 +30,7 @@ services:
     image:
       registry: ''
       repository: 1panel/hermes-agent
-      tag: 0.23.0
+      tag: 0.23.1
     port: 9119
     volumeMounts:
     - mountPath: /opt/data
