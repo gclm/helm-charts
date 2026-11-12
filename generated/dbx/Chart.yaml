@@ -2,9 +2,9 @@ apiVersion: v2
 name: dbx
 description: DBX (converted from 1Panel appstore)
 type: application
-version: 0.6.68+ge38f03
-appVersion: 0.6.68
+version: 0.6.69+g1d140e
+appVersion: 0.6.69
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 3464e24561af4758e4744e06bf325c0098878cf0
+  upstream/sha: 33c0c8ed7e17c56fa06bec6e59d5217c8f7e4f4c

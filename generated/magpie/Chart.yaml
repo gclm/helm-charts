@@ -1,0 +1,10 @@
+apiVersion: v2
+name: magpie
+description: magpie (converted from 1Panel appstore)
+type: application
+version: 0.1.3735+g60d41a
+appVersion: 0.1.3735
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: 33c0c8ed7e17c56fa06bec6e59d5217c8f7e4f4c

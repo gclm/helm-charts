@@ -2,7 +2,7 @@
 
 多媒体应用程序软件套装
 
-- 上游: 1Panel-dev/appstore `apps/jellyfin` @ `3464e24561af`
+- 上游: 1Panel-dev/appstore `apps/jellyfin` @ `33c0c8ed7e17`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

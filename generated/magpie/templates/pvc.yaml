@@ -1,0 +1,12 @@
+{{- range $name, $p := .Values.persistence }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ printf "%s-%s" $.Release.Name $name | lower | replace "_" "-" | trunc 63 | trimSuffix "-" }}
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: {{ $p.size }}
+---
+{{- end }}

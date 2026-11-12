@@ -32,9 +32,9 @@
     },
     "ai-portal": {
       "chart": "ai-portal",
-      "sha": "18cc06c61ec3",
+      "sha": "6fc95aa65d85",
       "status": "success",
-      "version": "1.0.10+g0efe25"
+      "version": "2.0.2+g3320a9"
     },
     "alist": {
       "chart": "alist",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "d3cf2541869d",
+      "sha": "f7cb6226d5f6",
       "status": "success",
-      "version": "2.61.0+gfc1e50"
+      "version": "2.62.0+gd339e5"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "ef3c9db52d56",
+      "sha": "dd930d6a2d88",
       "status": "success",
-      "version": "4.26.0+g7f3286"
+      "version": "4.27.1+g7a5360"
     },
     "certd": {
       "chart": "certd",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "dec6624f96f9",
+      "sha": "4c2c7d59187c",
       "status": "success",
-      "version": "0.6.68+ge38f03"
+      "version": "0.6.69+g1d140e"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -368,9 +368,9 @@
     },
     "ghost": {
       "chart": "ghost",
-      "sha": "c5b5528ea3d0",
+      "sha": "52b93b56c31c",
       "status": "success",
-      "version": "6.75.0+gd2de2d"
+      "version": "6.76.0+g6c769c"
     },
     "gitea": {
       "chart": "gitea",
@@ -398,15 +398,15 @@
     },
     "grafana": {
       "chart": "grafana",
-      "sha": "b3d1f5994447",
+      "sha": "527a2b254722",
       "status": "success",
-      "version": "13.3.0+gad97b4"
+      "version": "13.3.1+ga74d91"
     },
     "gsmanager": {
       "chart": "gsmanager",
-      "sha": "773cc10e89cc",
+      "sha": "2991b76c79f4",
       "status": "success",
-      "version": "3.14.2+gaf0365"
+      "version": "3.14.3+g0554a9"
     },
     "halo": {
       "chart": "halo",
@@ -530,9 +530,9 @@
     },
     "langflow": {
       "chart": "langflow",
-      "sha": "e75663789048",
+      "sha": "97bd07533f5e",
       "status": "success",
-      "version": "1.13.0+g79a519"
+      "version": "1.13.2+g081217"
     },
     "laya-server": {
       "chart": "laya-server",
@@ -588,6 +588,12 @@
       "status": "success",
       "version": "0.9.7+gdd88aa"
     },
+    "magpie": {
+      "chart": "magpie",
+      "sha": "73bb2269a40e",
+      "status": "success",
+      "version": "0.1.3735+g60d41a"
+    },
     "mailserver": {
       "chart": "mailserver",
       "sha": "caa92c561051",
@@ -632,9 +638,9 @@
     },
     "metabase": {
       "chart": "metabase",
-      "sha": "a31b13d7254c",
+      "sha": "59f5fc7de997",
       "status": "success",
-      "version": "0.65.2+gd9d6e6"
+      "version": "0.65.4+ge2fd01"
     },
     "miniflux": {
       "chart": "miniflux",
@@ -728,9 +734,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "d87e7002f04f",
+      "sha": "6c2403ec503b",
       "status": "success",
-      "version": "2.2.43+g2eaf17"
+      "version": "2.2.44+gb5774d"
     },
     "node": {
       "chart": "node",
@@ -794,9 +800,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "b2a3baf5f62e",
+      "sha": "83279579a448",
       "status": "success",
-      "version": "2026.11.2+g6428d3"
+      "version": "2026.11.3+ge5097c"
     },
     "opengist": {
       "chart": "opengist",
@@ -866,9 +872,9 @@
     },
     "qiandao": {
       "chart": "qiandao",
-      "sha": "1f050fc5d867",
+      "sha": "20f01f2b5839",
       "status": "success",
-      "version": "20250803.0.0+gf4eb5f"
+      "version": "20261108.0.0+gf3d562"
     },
     "qinglong": {
       "chart": "qinglong",
@@ -914,9 +920,9 @@
     },
     "rustfs": {
       "chart": "rustfs",
-      "sha": "18c338607f71",
+      "sha": "39201709b555",
       "status": "success",
-      "version": "1.0.4+ga9ca94"
+      "version": "1.0.5+g9973a1"
     },
     "screego": {
       "chart": "screego",
@@ -986,9 +992,9 @@
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "2d870c998b5c",
+      "sha": "18c56b3719c6",
       "status": "success",
-      "version": "0.2.20+g26c497"
+      "version": "0.2.21+ga84c7f"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -998,9 +1004,9 @@
     },
     "synapse": {
       "chart": "synapse",
-      "sha": "277a141b8616",
+      "sha": "fdc9dd91295a",
       "status": "success",
-      "version": "1.164.2+g83c77a"
+      "version": "1.165.0+g2ff2c3"
     },
     "tailchat": {
       "chart": "tailchat",
@@ -1010,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "c7d28603332d",
+      "sha": "7ab7f69b85af",
       "status": "success",
-      "version": "0.0.0-d20261111.g623da+g96aac5"
+      "version": "0.0.0-d20261112.g6c607+g0d6af2"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1189,5 +1195,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "3464e24561af4758e4744e06bf325c0098878cf0"
+  "upstream_sha": "33c0c8ed7e17c56fa06bec6e59d5217c8f7e4f4c"
 }

@@ -17,7 +17,7 @@ services:
       value: 'False'
     - name: AES_KEY
       valueFromEnv: AES_PWD
-    - name: COOKIE_SECRET
+    - name: COOKIE_SIGN_SECRET
       valueFromEnv: COOKIE_PWD
     - name: DB_TYPE
       value: sqlite3
@@ -31,7 +31,7 @@ services:
       valueFromEnv: PANEL_APP_PORT_HTTP
     image:
       registry: ''
-      repository: a76yyyy/qiandao:20250803
+      repository: qdtoday/qd:20261108
       tag: null
     port: 80
     volumeMounts:

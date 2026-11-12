@@ -1,0 +1,28 @@
+configMaps: {}
+env:
+  MAGPIE_PUBLIC_URL: ''
+  PANEL_APP_PORT_HTTP: 3430
+persistence: {}
+secrets:
+  MAGPIE_WEB_KEY:
+    generate: true
+services:
+  magpie:
+    command:
+    - web
+    - --addr
+    - 0.0.0.0:3430
+    - --no-open
+    env:
+    - name: MAGPIE_WEB_KEY
+      valueFromSecret: MAGPIE_WEB_KEY
+    - name: MAGPIE_PUBLIC_URL
+      valueFromEnv: MAGPIE_PUBLIC_URL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ghcr.io
+      repository: yetone/magpie
+      tag: 0.1.3735
+    port: 3430
+    volumeMounts: []

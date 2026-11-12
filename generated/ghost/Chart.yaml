@@ -2,9 +2,9 @@ apiVersion: v2
 name: ghost
 description: Ghost (converted from 1Panel appstore)
 type: application
-version: 6.75.0+gd2de2d
-appVersion: 6.75.0
+version: 6.76.0+g6c769c
+appVersion: 6.76.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 3464e24561af4758e4744e06bf325c0098878cf0
+  upstream/sha: 33c0c8ed7e17c56fa06bec6e59d5217c8f7e4f4c
