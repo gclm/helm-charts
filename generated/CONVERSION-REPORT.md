@@ -174,7 +174,7 @@
 - sun-panel -> chart sun-panel (1.8.1+g31dff8) sha:13208a33b318
 - synapse -> chart synapse (1.165.0+g2ff2c3) sha:fdc9dd91295a
 - tailchat -> chart tailchat (1.11.18+g00ed41) sha:c42c8d5ac9b2
-- teable -> chart teable (0.0.0-d20261112.g6c607+g0d6af2) sha:7ab7f69b85af
+- teable -> chart teable (0.0.0-d20261113.g01d25+g617ef1) sha:92eacf2372f4
 - teamspeak -> chart teamspeak (3.13.9+ga5c570) sha:da7ee0044b6c
 - tinyrdm -> chart tinyrdm (1.2.7+g020cb1) sha:ae67c25bf151
 - tomcat -> chart tomcat (10.1.43+gea077f) sha:0ce6190ee15e
