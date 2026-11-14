@@ -9,7 +9,7 @@
 - adguardhome -> chart adguardhome (0.107.79+g517de2) sha:5d8647fe93c7
 - adminer -> chart adminer (6.2.0+standalone) sha:02af916785d5
 - affine -> chart affine (0.27.4+geaeb9b) sha:2fbfc4d148ab
-- ai-gateway -> chart ai-gateway (1.7.0+g098359) sha:972d101b61e4
+- ai-gateway -> chart ai-gateway (1.7.0+postgres) sha:762851d07c53
 - ai-portal -> chart ai-portal (2.0.2+g3320a9) sha:6fc95aa65d85
 - alist -> chart alist (3.66.0+g548b56) sha:f0b0bae5d88e
 - answer -> chart answer (2.0.3+g9922f3) sha:6f314a38d204
