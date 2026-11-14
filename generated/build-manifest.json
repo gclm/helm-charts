@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "2f329f7624a3",
+      "sha": "972d101b61e4",
       "status": "success",
-      "version": "1.6.0+postgres"
+      "version": "1.7.0+g098359"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -74,9 +74,9 @@
     },
     "beszel": {
       "chart": "beszel",
-      "sha": "23f367ebe09c",
+      "sha": "7e1e64b2956a",
       "status": "success",
-      "version": "0.21.1+g742df1"
+      "version": "0.21.2+g12bf1e"
     },
     "bettafish": {
       "chart": "bettafish",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "f7cb6226d5f6",
+      "sha": "b13844c24702",
       "status": "success",
-      "version": "2.62.0+gd339e5"
+      "version": "2.63.0+g24e4dc"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -164,9 +164,9 @@
     },
     "cloudflared": {
       "chart": "cloudflared",
-      "sha": "13aacc4f27a4",
+      "sha": "9992f2623e20",
       "status": "success",
-      "version": "2026.10.7+gcd809a"
+      "version": "2026.11.0+g522335"
     },
     "cloudreve": {
       "chart": "cloudreve",
@@ -200,9 +200,9 @@
     },
     "copaw": {
       "chart": "copaw",
-      "sha": "403baaaf8208",
+      "sha": "f9379adb1912",
       "status": "success",
-      "version": "2.2.2+ge9ebd9"
+      "version": "2.3.0+g572b21"
     },
     "cordys-crm": {
       "chart": "cordys-crm",
@@ -236,15 +236,15 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "4c2c7d59187c",
+      "sha": "4986edf24e44",
       "status": "success",
-      "version": "0.6.69+g1d140e"
+      "version": "0.6.70+g38db75"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
-      "sha": "42c806308f12",
+      "sha": "e21394111a1a",
       "status": "success",
-      "version": "0.2.2+rc.1"
+      "version": "0.2.2+rc.3"
     },
     "discourse": {
       "chart": "discourse",
@@ -286,7 +286,7 @@
       "chart": "dotnet",
       "sha": "ee852a4cd829",
       "status": "success",
-      "version": "10.0.0+g2a45a3"
+      "version": "11.0.0+g2a45a3"
     },
     "drawio": {
       "chart": "drawio",
@@ -308,9 +308,9 @@
     },
     "emqx": {
       "chart": "emqx",
-      "sha": "efe195cfa5cf",
+      "sha": "ab5e8312c5fb",
       "status": "success",
-      "version": "6.3.2+gd5896c"
+      "version": "6.3.3+g20cbd8"
     },
     "excalidraw": {
       "chart": "excalidraw",
@@ -368,15 +368,15 @@
     },
     "ghost": {
       "chart": "ghost",
-      "sha": "52b93b56c31c",
+      "sha": "1ef1531823a8",
       "status": "success",
-      "version": "6.76.0+g6c769c"
+      "version": "6.77.0+g570c40"
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "7ef3be60dd9a",
+      "sha": "b40816246d1f",
       "status": "success",
-      "version": "28.3.1+ga00a61"
+      "version": "28.3.2+gf55b42"
     },
     "glance": {
       "chart": "glance",
@@ -470,9 +470,9 @@
     },
     "kafka": {
       "chart": "kafka",
-      "sha": "51605f427dc3",
+      "sha": "912a9a9da42a",
       "status": "success",
-      "version": "4.0.0+gb94f08"
+      "version": "4.0.0+gabc920"
     },
     "keycloak": {
       "chart": "keycloak",
@@ -500,9 +500,9 @@
     },
     "kodbox": {
       "chart": "kodbox",
-      "sha": "b64f3dd0c511",
+      "sha": "412042727972",
       "status": "success",
-      "version": "1.71.02+g2ee1f9"
+      "version": "1.71.03+geebeeb"
     },
     "koishi": {
       "chart": "koishi",
@@ -524,9 +524,9 @@
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "708afaecff83",
+      "sha": "f1dfae651d4e",
       "status": "success",
-      "version": "4.11.5+g544df5"
+      "version": "4.11.7+g79a44e"
     },
     "langflow": {
       "chart": "langflow",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "73bb2269a40e",
+      "sha": "8558dacc48ed",
       "status": "success",
-      "version": "0.1.3735+g60d41a"
+      "version": "0.1.4012+g96c4bb"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -674,9 +674,9 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "962120b5da90",
+      "sha": "0cf8c6333fcf",
       "status": "success",
-      "version": "2.47.3+g229374"
+      "version": "2.47.7+gfb1f7f"
     },
     "nacos": {
       "chart": "nacos",
@@ -686,9 +686,9 @@
     },
     "nats": {
       "chart": "nats",
-      "sha": "0925e2e22bbe",
+      "sha": "921d3e44a3ac",
       "status": "success",
-      "version": "2.15.2+g596aee"
+      "version": "2.15.3+g4c2916"
     },
     "navidrome": {
       "chart": "navidrome",
@@ -710,9 +710,9 @@
     },
     "nextcloud": {
       "chart": "nextcloud",
-      "sha": "0f98afa29312",
+      "sha": "bc0e2f78dc37",
       "status": "success",
-      "version": "35.0.2+g92c8b7"
+      "version": "35.0.3+g83a620"
     },
     "nexus": {
       "chart": "nexus",
@@ -728,21 +728,21 @@
     },
     "nginx-proxy-manager": {
       "chart": "nginx-proxy-manager",
-      "sha": "5e377907e799",
+      "sha": "99f444638789",
       "status": "success",
-      "version": "2.16.0+gff2240"
+      "version": "2.17.0+g4c0379"
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "6c2403ec503b",
+      "sha": "8cb057bcea25",
       "status": "success",
-      "version": "2.2.44+gb5774d"
+      "version": "2.2.46+g8821a4"
     },
     "node": {
       "chart": "node",
       "sha": "4b3b77e9184a",
       "status": "success",
-      "version": "26.13.0+g9143b8"
+      "version": "26.13.1+g9143b8"
     },
     "node-red": {
       "chart": "node-red",
@@ -752,9 +752,9 @@
     },
     "nodebb": {
       "chart": "nodebb",
-      "sha": "89f5656f7934",
+      "sha": "aabfd9352738",
       "status": "success",
-      "version": "4.16.7+g58c4ac"
+      "version": "4.16.8+gcf0076"
     },
     "ntfy": {
       "chart": "ntfy",
@@ -1016,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "92eacf2372f4",
+      "sha": "2bad070becf8",
       "status": "success",
-      "version": "0.0.0-d20261113.g01d25+g617ef1"
+      "version": "0.0.0-d20261114.g3b2ef+g305cc3"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1052,9 +1052,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "2f697347e40a",
+      "sha": "a4bcd1ef94ff",
       "status": "success",
-      "version": "2.57.1+g636bea"
+      "version": "2.58.0+g5dcd73"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1070,9 +1070,9 @@
     },
     "umami": {
       "chart": "umami",
-      "sha": "53beb80c9f52",
+      "sha": "013b26d4273b",
       "status": "success",
-      "version": "3.4.1+g309ad1"
+      "version": "3.5.0+g76ae3e"
     },
     "upage": {
       "chart": "upage",
@@ -1082,9 +1082,9 @@
     },
     "uptime-kuma": {
       "chart": "uptime-kuma",
-      "sha": "1c48d0001a44",
+      "sha": "6d404c3bdf52",
       "status": "success",
-      "version": "2.5.9+g3130fe"
+      "version": "2.5.11+g3a791d"
     },
     "vane": {
       "chart": "vane",
@@ -1130,9 +1130,9 @@
     },
     "wikijs": {
       "chart": "wikijs",
-      "sha": "b24d3b7e760f",
+      "sha": "39eab8bd9367",
       "status": "success",
-      "version": "3.3.0+g1af537"
+      "version": "3.3.1+g926ba1"
     },
     "wordpress": {
       "chart": "wordpress",
@@ -1184,9 +1184,9 @@
     },
     "zfile": {
       "chart": "zfile",
-      "sha": "39035c4b8996",
+      "sha": "a9dd851ac5b5",
       "status": "success",
-      "version": "5.1.0+gd97747"
+      "version": "5.1.1+gbcf909"
     },
     "zitadel": {
       "chart": "zitadel",
@@ -1195,5 +1195,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "33c0c8ed7e17c56fa06bec6e59d5217c8f7e4f4c"
+  "upstream_sha": "fe7ff6ad1df8c2104dd458e4a7c32d1771252566"
 }

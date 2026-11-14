@@ -2,7 +2,7 @@
 
 一款支持主流大语言模型、主流聊天平台的聊天的机器人
 
-- 上游: 1Panel-dev/appstore `apps/kirara-agent` @ `33c0c8ed7e17`
+- 上游: 1Panel-dev/appstore `apps/kirara-agent` @ `fe7ff6ad1df8`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
