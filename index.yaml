@@ -7,9 +7,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.107.79
-    created: "2026-11-14T23:45:28.834777799Z"
+    created: "2026-11-15T23:51:59.060178338Z"
     description: AdGuardHome (converted from 1Panel appstore)
-    digest: a3d2671a9661063d18ee806028a38592173efa027b02a675a6387d5d00a8090f
+    digest: 0ce298d82e563f2129b87e34d13d7610c2e65fb2fa021f48d5efe3b7ebf426b8
     name: adguardhome
     type: application
     urls:
@@ -22,9 +22,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 6.2.0+standalone
-    created: "2026-11-14T23:45:28.835216812Z"
+    created: "2026-11-15T23:51:59.060613193Z"
     description: Adminer (converted from 1Panel appstore)
-    digest: 2b6fe1dbabeba13b41b938349a4a29d2ced49a59bda894ae00eb9eeb290da022
+    digest: 84d386e86dd40c270022969a807b3bd1b716e12f395e7d62643fa79b42a4ab1e
     name: adminer
     type: application
     urls:
@@ -37,9 +37,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.27.4
-    created: "2026-11-14T23:45:28.835719712Z"
+    created: "2026-11-15T23:51:59.061165165Z"
     description: AFFiNE (converted from 1Panel appstore)
-    digest: aebcfabe362a3cacd92678a5d176a4e3a8c007f25a780097b6574035f4a6c7f2
+    digest: 80b3b7ed3cc18176ba1c1ac121e70c84d67164ccdc57f678a3dda3c2712e8e7d
     name: affine
     type: application
     urls:
@@ -52,9 +52,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.7.0+postgres
-    created: "2026-11-14T23:45:28.836171705Z"
+    created: "2026-11-15T23:51:59.062167237Z"
     description: 1Panel AI 网关 (converted from 1Panel appstore)
-    digest: 1acca4f0438e785cf37cef35097cebfb8382fe5615854002cf6632554aef8602
+    digest: e80220e51076998975c1cb6de72aed6470bdf2fb00cc3759c80b66aa19183de7
     name: ai-gateway
     type: application
     urls:
@@ -67,9 +67,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.0.2
-    created: "2026-11-14T23:45:28.836601033Z"
+    created: "2026-11-15T23:51:59.062644686Z"
     description: 1Panel AI 门户 (converted from 1Panel appstore)
-    digest: 28389221539485328642f8c5b1061a9816bfaa32da33e259cd5e11d5ba7d498d
+    digest: ce586e63f3bb1c00d83d9952077e3ec7da6cd6ed149d4f5df40061ae056140cb
     name: ai-portal
     type: application
     urls:
@@ -82,9 +82,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.66.0
-    created: "2026-11-14T23:45:28.837064813Z"
+    created: "2026-11-15T23:51:59.063044563Z"
     description: AList (converted from 1Panel appstore)
-    digest: c82b0205825665414e6939d3a31808932f25f1fda95acb67d488b1a612fce871
+    digest: a9e95ec06897793a60f5a7523d34feb03a054d2c6f305339d970bf43a6fdb07a
     name: alist
     type: application
     urls:
@@ -97,9 +97,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.0.3
-    created: "2026-11-14T23:45:28.837484918Z"
+    created: "2026-11-15T23:51:59.063418869Z"
     description: Answer (converted from 1Panel appstore)
-    digest: 2f7f8a5c6351fc40052a1e8f81b873bc9a6c56092fab10729ec5bb5f115f8fa1
+    digest: d8b4c144a80c3bb633687aea5c6f19a7e547496795f23b14f9bf7f63b1e35366
     name: answer
     type: application
     urls:
@@ -112,9 +112,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 9.0.1
-    created: "2026-11-14T23:45:28.837970832Z"
+    created: "2026-11-15T23:51:59.063855345Z"
     description: 2FAuth (converted from 1Panel appstore)
-    digest: 8e5ad95611ef75821e65e5e4e67c943ee8727646a5ce90f33efbf6c18f60fb81
+    digest: 67dd6eeb94272d7e7c2da03f8edf3e364cc4ccc50782f571152e23d2cacb8f5a
     name: app-2fauth
     type: application
     urls:
@@ -127,9 +127,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.9.77
-    created: "2026-11-14T23:45:28.838442404Z"
+    created: "2026-11-15T23:51:59.064236792Z"
     description: ArchiveBox (converted from 1Panel appstore)
-    digest: 48537f5ef0ea0108bf0f917ffd33026cc519f3a3b31c073de113665ef1a041ec
+    digest: d7e96b89d931da87f1421cfc39d6d15db4c9e774610d03c6c844981c162a8d4d
     name: archivebox
     type: application
     urls:
@@ -142,9 +142,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.10.0
-    created: "2026-11-14T23:45:28.839299849Z"
+    created: "2026-11-15T23:51:59.064637698Z"
     description: Artalk (converted from 1Panel appstore)
-    digest: c496bed4a957c83a1a5d8a3bdce7899deefdbd735368c991fa106274fa010cf5
+    digest: 3422aa05a10586f1237c608b2c50c0712499d46d9443d1337dff1fd88e18c9c2
     name: artalk
     type: application
     urls:
@@ -157,9 +157,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.29.4
-    created: "2026-11-14T23:45:28.839984123Z"
+    created: "2026-11-15T23:51:59.065001116Z"
     description: AstrBot (converted from 1Panel appstore)
-    digest: 563880bcd111518d9008dbb0e878e2bdc62bee18434d372334ca445e3857e0e0
+    digest: 8ef39d503962ea5e858e301e6f7b392d265414c42a70a294647c5bb2e3d3d2a6
     name: astrbot
     type: application
     urls:
@@ -172,9 +172,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.37.2
-    created: "2026-11-14T23:45:28.840418689Z"
+    created: "2026-11-15T23:51:59.065423112Z"
     description: Audiobookshelf (converted from 1Panel appstore)
-    digest: 03a03dcb45e1490984882649093c5258bab0e9d7767c91cd92aa9696aa791d45
+    digest: c36b603ad4979ee41d12f8f022ec7333ba262ee492087611a2df7326e1574af5
     name: audiobookshelf
     type: application
     urls:
@@ -187,9 +187,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.21.2
-    created: "2026-11-14T23:45:28.840822419Z"
+    created: "2026-11-15T23:51:59.065823468Z"
     description: Beszel (converted from 1Panel appstore)
-    digest: 7abd65bf3ec09cbe5ee3809591459d31ac9ed2e143c60df787904f897c6c4bd9
+    digest: e5ceddaf75672d11df42f94543ba284290572e850a2120595c1a966b20523825
     name: beszel
     type: application
     urls:
@@ -202,9 +202,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.0.0
-    created: "2026-11-14T23:45:28.841316645Z"
+    created: "2026-11-15T23:51:59.066263717Z"
     description: BettaFish (converted from 1Panel appstore)
-    digest: f3f92d53f95e39426fcba9ae87caa877916a19465b7e06dee170ac5cceb6e3aa
+    digest: ab653294429056888598953ac5ba7776b82f472fcfff05f33e80552dce5d7a3e
     name: bettafish
     type: application
     urls:
@@ -217,9 +217,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.8.3
-    created: "2026-11-14T23:45:28.841712864Z"
+    created: "2026-11-15T23:51:59.067069815Z"
     description: Bililive-go (converted from 1Panel appstore)
-    digest: 70b994d6f6458ffc41d011102f5707a509b53b94a821ab1d968ccf0b4f957e45
+    digest: 60c35c6131fd9addecf85b8aca9f323fb81b27acc407f052a23e1ec9a720595a
     name: bililive-go
     type: application
     urls:
@@ -232,9 +232,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.37.5+alpine
-    created: "2026-11-14T23:45:28.842128421Z"
+    created: "2026-11-15T23:51:59.067733026Z"
     description: Bitwarden (converted from 1Panel appstore)
-    digest: de65553ffcb2e887fe903e2d8b9e5db8a3229d6e76a810debcb24b0e739e5c2c
+    digest: d88e34c79501483347b33c3ceeb0d49129809fd0193c934a4d01ebf98b37381b
     name: bitwarden
     type: application
     urls:
@@ -247,9 +247,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.8.9
-    created: "2026-11-14T23:45:28.842553593Z"
+    created: "2026-11-15T23:51:59.068170034Z"
     description: Blinko (converted from 1Panel appstore)
-    digest: 4027388760cfafb6bcb60e5bf5ee44ab2819a2b5dfba947eae573899ceab736d
+    digest: 6941b26892a213e61c14e1de82f8682a49a8e42416b86c290776de71c3a3714e
     name: blinko
     type: application
     urls:
@@ -262,9 +262,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.63.0
-    created: "2026-11-14T23:45:28.842956832Z"
+    created: "2026-11-15T23:51:59.06855574Z"
     description: Browserless (converted from 1Panel appstore)
-    digest: 73307da27c6ad3740710e5e38de8e0735f5a4099633c606848b25b972d4e0a3b
+    digest: d9c56d90d632f1a54479a7865ccdedce8b4979a0d09982d375dfc5cd3a7a0cd8
     name: browserless
     type: application
     urls:
@@ -277,9 +277,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.24.1
-    created: "2026-11-14T23:45:28.843334042Z"
+    created: "2026-11-15T23:51:59.068914296Z"
     description: Bytebase (converted from 1Panel appstore)
-    digest: 7bc5f9e1a221bd1f8a7735d85c6048aca39b997b650c820be368d545aee37fd7
+    digest: 9d0166745fb9db30afeafc3ce680aaa891791f72478d9102455eb9a1ee53a288
     name: bytebase
     type: application
     urls:
@@ -292,9 +292,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.6.27
-    created: "2026-11-14T23:45:28.843745584Z"
+    created: "2026-11-15T23:51:59.069300279Z"
     description: Calibre-Web (converted from 1Panel appstore)
-    digest: bf31b4edb624fc9324d0e4c39d12e06861d83b64f718aa86b16c3de46bc133f3
+    digest: c8ac821a69b0a6da76e3f98b9c16d4446b3cbf940189f7863bd484ad1548eed8
     name: calibre-web
     type: application
     urls:
@@ -307,9 +307,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.27.1
-    created: "2026-11-14T23:45:28.844145928Z"
+    created: "2026-11-15T23:51:59.069682173Z"
     description: Casdoor (converted from 1Panel appstore)
-    digest: 605b2bb069aee4c4d1901e6f7380dc779a85374c15fcb8e17970021a0a53cfa1
+    digest: 20999683c78b40acf468ea6f9bd7e5f0b13808b6168b973385cd3301a3e57a74
     name: casdoor
     type: application
     urls:
@@ -322,9 +322,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.47.1
-    created: "2026-11-14T23:45:28.844706054Z"
+    created: "2026-11-15T23:51:59.070046944Z"
     description: Certd (converted from 1Panel appstore)
-    digest: fb7cc9d3cac095659658fe066857dc5af17e51865aca325e921df5c2c71c8763
+    digest: 6cd37af452f547014eeb0d6a6378bd22c6f1ea41f4a67a03a3e8b5485c7eb087
     name: certd
     type: application
     urls:
@@ -337,9 +337,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.4.37
-    created: "2026-11-14T23:45:28.845482046Z"
+    created: "2026-11-15T23:51:59.07042602Z"
     description: Certimate (converted from 1Panel appstore)
-    digest: 09bcae7c5590ca6cd911a8f0b204da3fa4b67c70ad98b78d9cfd9ca75b2f6d37
+    digest: 0c13f74d478f41e9de96886a2ae1c05d780d382c55887db3d2889116513a9503
     name: certimate
     type: application
     urls:
@@ -352,9 +352,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.70.3
-    created: "2026-11-14T23:45:28.845904705Z"
+    created: "2026-11-15T23:51:59.070811351Z"
     description: Changedetection.io (converted from 1Panel appstore)
-    digest: 958ba87ab29a42c5f7236cd75801168e8a1f49842f32df59fca8e2a6d769d706
+    digest: 8f45e6e240ee16b118703f0621b7651db13127ea492c2eec2cce023be91a9367
     name: changedetectionio
     type: application
     urls:
@@ -367,9 +367,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.16.1
-    created: "2026-11-14T23:45:28.846319501Z"
+    created: "2026-11-15T23:51:59.07118608Z"
     description: ChatGPT-Next-Web (converted from 1Panel appstore)
-    digest: d6c9219d67eb66b58ad959629e9b54cd2fb8d46f453678a6964f2b76cb84c49f
+    digest: 5153f2544ed680983b20bb5931f4f53c8b93cb202a66891b8d3632fe6948f334
     name: chatgpt-next-web
     type: application
     urls:
@@ -382,9 +382,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.0.5
-    created: "2026-11-14T23:45:28.846694087Z"
+    created: "2026-11-15T23:51:59.071549431Z"
     description: ClawSwarm (converted from 1Panel appstore)
-    digest: 517529765cf858d15231b64cac4f48db481fb2d5464608aea234a22125403574
+    digest: a1a02951ec2b11f2fae49e9d0820af9be316d4397309c218fb64214a52f92539
     name: clawswarm
     type: application
     urls:
@@ -397,9 +397,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 26.2.4
-    created: "2026-11-14T23:45:28.847253172Z"
+    created: "2026-11-15T23:51:59.072732077Z"
     description: CloudBeaver (converted from 1Panel appstore)
-    digest: 421bae50e505e7bb99ec5554331f08800ed35a31ea875f97cba5495e64a564e4
+    digest: 1b6129ec6467d629e14ed4c506eaa38a6fda8464de080edd0acf2b2a8dcafd7b
     name: cloudbeaver
     type: application
     urls:
@@ -412,9 +412,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2026.11.0
-    created: "2026-11-14T23:45:28.84779518Z"
+    created: "2026-11-15T23:51:59.073114823Z"
     description: cloudflared (converted from 1Panel appstore)
-    digest: c2d799e8492cdef7cc7e7bbecd423993b549d144d06688f1c5ff507b39d126e6
+    digest: a89284bcd89cef3599865c05bdddd8a2a7a1bebb65a693e505dd9a139285edfd
     name: cloudflared
     type: application
     urls:
@@ -427,9 +427,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.19.1
-    created: "2026-11-14T23:45:28.848440805Z"
+    created: "2026-11-15T23:51:59.073523316Z"
     description: Cloudreve (converted from 1Panel appstore)
-    digest: 80d053f72b5ac6bb2555f2a7ea082a61e6a7f314308f9fb6e350ef98ef40ebf2
+    digest: e6ef7a5de6740cf913f026e37cda0894b79c8c54bd5c9b5a0d4050dc77a0694b
     name: cloudreve
     type: application
     urls:
@@ -442,9 +442,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.145.2
-    created: "2026-11-14T23:45:28.848936734Z"
+    created: "2026-11-15T23:51:59.073931736Z"
     description: code-server (converted from 1Panel appstore)
-    digest: a2c3f67aeda95a42c28751403e515b50a522a97881240ed2e6286fa8d9f9afd5
+    digest: c068c2ef77b614208cd65eb596ba409935940f6e4326fdc27794617b860b2fd3
     name: code-server
     type: application
     urls:
@@ -457,9 +457,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.33.1
-    created: "2026-11-14T23:45:28.849368206Z"
+    created: "2026-11-15T23:51:59.074309822Z"
     description: ComfyUI (converted from 1Panel appstore)
-    digest: 6910e7676427270e2b836a7ef01408d7e671e8226e4894744ac9b7b1e0bd42ad
+    digest: 9ee02d416dbb91e523a04a74a4c96da4e83d32fdb332aaf2a6bbd5e77b66d7a6
     name: comfyui
     type: application
     urls:
@@ -472,9 +472,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-11-14T23:45:28.849778245Z"
+    created: "2026-11-15T23:51:59.074713434Z"
     description: Consul (converted from 1Panel appstore)
-    digest: b4a22a9d718fff5e142f44cacf17f9def247008eaba91dda2c4ae7cbb621c2ca
+    digest: 4a540af73ad8c3a7d4d1371bf97beadc083424cc4a88cb97be29669661061b90
     name: consul
     type: application
     urls:
@@ -487,9 +487,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.20.0
-    created: "2026-11-14T23:45:28.850193863Z"
+    created: "2026-11-15T23:51:59.075076252Z"
     description: ConvertX (converted from 1Panel appstore)
-    digest: 2b0d23e1803cf456105969b0c28ae11322a7c5943764e90d03f826435e45ec64
+    digest: 17bd14295e4dc857e8ac4f3ee054f37800d4639963fdd014618762d0fc044991
     name: convertx
     type: application
     urls:
@@ -502,9 +502,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.3.0
-    created: "2026-11-14T23:45:28.85060212Z"
+    created: "2026-11-15T23:51:59.075465402Z"
     description: QwenPaw (converted from 1Panel appstore)
-    digest: 18cdbc64ab5b8321873ff2f2b64ee58f837755ebaa7a224e41514c5d649f9c9c
+    digest: 3c580c94e0004411e7b91a654d1b6c5b61b278066d72f3cb488bd6802f79a44e
     name: copaw
     type: application
     urls:
@@ -517,9 +517,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.9.7
-    created: "2026-11-14T23:45:28.850989184Z"
+    created: "2026-11-15T23:51:59.075836966Z"
     description: Cordys CRM (converted from 1Panel appstore)
-    digest: 065e7ec2c664d1c8d6280495fc3f774eb1ab0150384543d2ea3029436c61a2ec
+    digest: 1027a971f4df956f93dc1371d47e31dea97b72afebbb9c7f1a91087344150dde
     name: cordys-crm
     type: application
     urls:
@@ -532,9 +532,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 11.5.0
-    created: "2026-11-14T23:45:28.8517012Z"
+    created: "2026-11-15T23:51:59.076177638Z"
     description: CyberChef (converted from 1Panel appstore)
-    digest: 4bb9ed1209fe48d497e4f2ba198596b9310431f1ca7f597e908783649a50e0c3
+    digest: 2d19887759a726d8718e401997c43bd9e17ac531ce8c323cddbe47ad47455a57
     name: cyberchef
     type: application
     urls:
@@ -547,9 +547,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.9.17
-    created: "2026-11-14T23:45:28.852352103Z"
+    created: "2026-11-15T23:51:59.076568711Z"
     description: Dashy (converted from 1Panel appstore)
-    digest: f120af4857f8479dfef9b093fd1212dd89b2bed42d0bc0b5e4fbe97f269ee3f8
+    digest: 5c77e940c34ab20a7d1a481f0df4c8a7501514811e7542009e1bb2d757f9ea93
     name: dashy
     type: application
     urls:
@@ -562,9 +562,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.1.0
-    created: "2026-11-14T23:45:28.852891437Z"
+    created: "2026-11-15T23:51:59.077630275Z"
     description: DataEase (converted from 1Panel appstore)
-    digest: 41d24f88f2e9f06936568a1b37ff5d425db309e4acd1b68a20f090f51b8015bc
+    digest: 4131ec0d70cfc8bc180750d4ad3e06415a43094681a292b0acb25b89be84d9c7
     name: dataease
     type: application
     urls:
@@ -577,9 +577,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-11-14T23:45:28.853314226Z"
+    created: "2026-11-15T23:51:59.078168191Z"
     description: DBHub (converted from 1Panel appstore)
-    digest: fff31f7b5a2ef7b59ac41d05c6ba68dd6f29a203107e9f9598cddcc44d07585c
+    digest: 769c459f93f5a06c0ba30ee5bd8a0a333cd211e7ad25e4fc3a9878c2a545ed77
     name: dbhub
     type: application
     urls:
@@ -592,9 +592,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.6.70
-    created: "2026-11-14T23:45:28.853710504Z"
+    created: "2026-11-15T23:51:59.078558254Z"
     description: DBX (converted from 1Panel appstore)
-    digest: 790dd526435fbd12c40b99f1422273ec8e290b1755fbfc10c7fe5fd3a0c64bf4
+    digest: aeb8c0396a475eb783893fc7e93110a7300d5787642de1236d84cef8bfe11e01
     name: dbx
     type: application
     urls:
@@ -607,9 +607,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.2.2+rc.3
-    created: "2026-11-14T23:45:28.85417752Z"
+    created: "2026-11-15T23:51:59.078975935Z"
     description: DeepSeek Harness (converted from 1Panel appstore)
-    digest: 7414d4cbca1eabeb246c1a3fe6459ae41cc0561435b47d3cb0a3f3b796c59d3e
+    digest: 460159068934489633b7b0bdd72ba922685bb970b168558eac4a8c8316d7c4eb
     name: deepseek-harness
     type: application
     urls:
@@ -622,9 +622,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-11-14T23:45:28.854710945Z"
+    created: "2026-11-15T23:51:59.079475829Z"
     description: Discourse (converted from 1Panel appstore)
-    digest: 30bf37b9fccd4b4093c91824ccecf623c5af8444b754e2bb4f0f1f00348806f8
+    digest: 9a24afc56b824886e124dde06a9e8793cebb43d125a7e9c95ca669a8b96dbbde
     name: discourse
     type: application
     urls:
@@ -637,9 +637,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.4.0
-    created: "2026-11-14T23:45:28.855087284Z"
+    created: "2026-11-15T23:51:59.07983839Z"
     description: Discuz! (converted from 1Panel appstore)
-    digest: f82cbd023b733c8c54d6f47999e41a996e947bce3af853b1e7469287cc15635c
+    digest: f3966832dcdc3af4710d73e2c1619da757866fb9716871791945e36fa1f79fc5
     name: discuz
     type: application
     urls:
@@ -652,9 +652,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.1.2
-    created: "2026-11-14T23:45:28.855456832Z"
+    created: "2026-11-15T23:51:59.080183109Z"
     description: Docker Registry (converted from 1Panel appstore)
-    digest: b05cd343bfc897e4aa389df96047bdd68f228f02b29b3785b0a33c0575bd3949
+    digest: d2b19713f5bcd311d0abba10ea7817237fb3e97095239962534b27581d03f85b
     name: docker-registry
     type: application
     urls:
@@ -667,9 +667,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.97.0
-    created: "2026-11-14T23:45:28.85581995Z"
+    created: "2026-11-15T23:51:59.080546408Z"
     description: Docmost (converted from 1Panel appstore)
-    digest: 6c0de184da2bcb91cc8b5dd788788cde38be6829bc6b9d262a46f67511b6d042
+    digest: 39d6fd4b23fb14c6ba38133810f4e467f6dff719956522ba47a1d95b140a81cc
     name: docmost
     type: application
     urls:
@@ -682,9 +682,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.6.80
-    created: "2026-11-14T23:45:28.856209439Z"
+    created: "2026-11-15T23:51:59.080904029Z"
     description: Domain Admin (converted from 1Panel appstore)
-    digest: 9dbba93368e413dcce39f62a5536d61ae5c8db170d3fe8447c1d7b769effb11c
+    digest: bf546013c03484e33cfdda2d192b46d86186d635d024a6b436d49af5d314de87
     name: domain-admin
     type: application
     urls:
@@ -697,9 +697,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.9.6
-    created: "2026-11-14T23:45:28.856579838Z"
+    created: "2026-11-15T23:51:59.081254384Z"
     description: 中文 DOS 游戏 (converted from 1Panel appstore)
-    digest: 5fbbd36f02d77cdb506b08244d5554d2b6ea6adc458f3dc0176bace505d2a35b
+    digest: 8fb4f63d3efcc8b5f1842e92fb6d90fa7c36c4eb35ed2e08247e9624bc03b464
     name: dosgame
     type: application
     urls:
@@ -712,9 +712,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2026-11-14T23:45:28.856970578Z"
+    created: "2026-11-15T23:51:59.081626453Z"
     description: .NET (converted from 1Panel appstore)
-    digest: e9d24575507108f80e83b301408dba0a0a0f3a2150dcef42ce28013ea7e13e1c
+    digest: ba8aa0e15fa36d0f2e477ea0b1e2c25de1cf3841e0353235e5b0d71a8180c9a9
     name: dotnet
     type: application
     urls:
@@ -727,9 +727,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 32.6.10
-    created: "2026-11-14T23:45:28.857335449Z"
+    created: "2026-11-15T23:51:59.08198808Z"
     description: Draw.io (converted from 1Panel appstore)
-    digest: 0ce7cc327b971efacc4e3cec4c8ab82fcc24139b758c627cfc6f258fc36cc730
+    digest: a293e7f50863e2c02452198ea864440a21f0fd6c951d383e61e8e46636345809
     name: drawio
     type: application
     urls:
@@ -742,9 +742,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261018.g80294
-    created: "2026-11-14T23:45:28.858286125Z"
+    created: "2026-11-15T23:51:59.082939044Z"
     description: DVWA (converted from 1Panel appstore)
-    digest: 313c41201fdfb6888171dbf276aba9e76436b5cfe9b194924a4dc42edb70f581
+    digest: 42291d4c5490b4fbac0bddf31a53b722390b0638a4f698408498102022517886
     name: dvwa
     type: application
     urls:
@@ -757,9 +757,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.8.7
-    created: "2026-11-14T23:45:28.85876577Z"
+    created: "2026-11-15T23:51:59.083358146Z"
     description: EasyImage2.0 (converted from 1Panel appstore)
-    digest: 028c23a02b9781c2e85b03fa72dce38d78357c1b0610b98e4671586792b0111d
+    digest: 9f6819ab7a6cd5aced9d5795c5d1aa94741c4954e4b7e38762cb045841a3b76e
     name: easyimage2
     type: application
     urls:
@@ -772,9 +772,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 6.3.3
-    created: "2026-11-14T23:45:28.85924307Z"
+    created: "2026-11-15T23:51:59.083796481Z"
     description: EMQX (converted from 1Panel appstore)
-    digest: c40c94aa03065504c642ad81e5766dca8bdbb94535b921250ad08550b87d1024
+    digest: c0458b1ecd7cc9db0cfaac8ef0b4033854e0a0abb4779b0471c6d09e4fe0f477
     name: emqx
     type: application
     urls:
@@ -787,9 +787,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261015.gf7ee1
-    created: "2026-11-14T23:45:28.859632899Z"
+    created: "2026-11-15T23:51:59.084149072Z"
     description: excalidraw (converted from 1Panel appstore)
-    digest: 01e642f7579c8a2178faf90d3aaf05cf56b695142b088851ed8758cc565bc841
+    digest: e73b518c9b5ab3046bbee7d44230dcef9cff4a8ac95dcdd9755fc206f6f4432e
     name: excalidraw
     type: application
     urls:
@@ -802,9 +802,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.1.1
-    created: "2026-11-14T23:45:28.86005733Z"
+    created: "2026-11-15T23:51:59.084544839Z"
     description: ezBookkeeping (converted from 1Panel appstore)
-    digest: bf240f048f0d22f27d81a25344522b21bc7da24a2ccc6a0b54bf5ab3e3b0d2dc
+    digest: fa3a3ee139f07928021ed42c383de7b1956b1e1be395ddcc932174be2661dcfa
     name: ezbookkeeping
     type: application
     urls:
@@ -817,9 +817,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.63.23
-    created: "2026-11-14T23:45:28.860436603Z"
+    created: "2026-11-15T23:51:59.084895684Z"
     description: File Browser (converted from 1Panel appstore)
-    digest: 14e669634a3d8931ee47403c226472153693cc869076fd7bc338ee2bcbaf750b
+    digest: c0466554cd4cd45f324dc376a23aba94a573c5d45f154d75b74cf837924d38fd
     name: filebrowser
     type: application
     urls:
@@ -832,9 +832,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.8.5
-    created: "2026-11-14T23:45:28.86081187Z"
+    created: "2026-11-15T23:51:59.085243075Z"
     description: FileCodeBox (converted from 1Panel appstore)
-    digest: 059129a7f55762ef76415368a954316d659f4b3435be869ab5da2666cf90e2f7
+    digest: 7c16ecdd50af5938bab11fbe50f46236e7f18972ae51738864893b98466600b2
     name: filecodebox
     type: application
     urls:
@@ -847,9 +847,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 6.4.2
-    created: "2026-11-14T23:45:28.861239325Z"
+    created: "2026-11-15T23:51:59.085646057Z"
     description: Firefly III (converted from 1Panel appstore)
-    digest: e3c7397bf73673d0a7dad54d25fa0d1783a7483d3eb9d6642be9a537977e5362
+    digest: d34812ea9eb1aa785d2a5a2b2d15bc46952aaa904d50a935b691c62b50c9fde5
     name: firefly-iii
     type: application
     urls:
@@ -862,9 +862,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.0.2
-    created: "2026-11-14T23:45:28.861687733Z"
+    created: "2026-11-15T23:51:59.086090955Z"
     description: Flarum (converted from 1Panel appstore)
-    digest: 4ef15835d71cac04055831bfce0f938c885b8025a1d0eecdd1d018dd09b35c3f
+    digest: e94251bad913f18bded5609f83f26ae388f943eaa75952228c1d83a3df09210a
     name: flarum
     type: application
     urls:
@@ -877,9 +877,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.11.4
-    created: "2026-11-14T23:45:28.862085343Z"
+    created: "2026-11-15T23:51:59.086452953Z"
     description: Focalboard (converted from 1Panel appstore)
-    digest: 38e677d499237b6db3e5045fffa95c3363e1cdaad9f53b96e2d43ebc8a01a0a7
+    digest: 1f8b15f3b2508b44df1ae78239102a29916ff35eeb4176cc946fea2374d757b5
     name: focalboard
     type: application
     urls:
@@ -892,9 +892,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.30.4
-    created: "2026-11-14T23:45:28.862467541Z"
+    created: "2026-11-15T23:51:59.086826942Z"
     description: FreshRSS (converted from 1Panel appstore)
-    digest: b6a5b8d5be08babc46c05b220377405a94ecf3b23151fb9b2d3f7acb914c5d14
+    digest: 80c4cdfac3fa7d0bb8fdbab3ae9bb582c9caa24e43cda297aa9e25665a0cb884
     name: freshrss
     type: application
     urls:
@@ -907,9 +907,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.38.0
-    created: "2026-11-14T23:45:28.862885101Z"
+    created: "2026-11-15T23:51:59.087475501Z"
     description: Gatus (converted from 1Panel appstore)
-    digest: bc70481f827837f12e859e56edb6cb4c71c35bcdada712fd1483e99a03303353
+    digest: e36d5a8af05d690ec65b21e71c9a00d6c5c1ac5e99c4bdbf0cc686ac53419ad5
     name: gatus
     type: application
     urls:
@@ -922,9 +922,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 6.77.0
-    created: "2026-11-14T23:45:28.863299978Z"
+    created: "2026-11-15T23:51:59.088126319Z"
     description: Ghost (converted from 1Panel appstore)
-    digest: d59ba7b1c6ea968ed7120c3c079a590df18af1c1e0ae47a7e214ea6bd5db0274
+    digest: 1ce70dd8735575f69f76e886a8d626e69f05b8ea2d3ca682730cc7b2939eae95
     name: ghost
     type: application
     urls:
@@ -937,9 +937,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 28.3.2
-    created: "2026-11-14T23:45:28.864089981Z"
+    created: "2026-11-15T23:51:59.088540958Z"
     description: Gitea (converted from 1Panel appstore)
-    digest: 1e1abdda37175f11fb0356ae02925915c8b0a32f8bf6b192b0f385d095ddec1f
+    digest: c87ba17b7723031cbc8443ceb01b7271180c9e7413f94bba3e5d5847804c20eb
     name: gitea
     type: application
     urls:
@@ -952,9 +952,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.8.8
-    created: "2026-11-14T23:45:28.864656396Z"
+    created: "2026-11-15T23:51:59.088902917Z"
     description: Glance (converted from 1Panel appstore)
-    digest: 73f621fecfb79b4ac46d64ff430d3187167b20fa3cc6d9b33e0ed829dbe22132
+    digest: 06a39250047de806a7abebb54efe6cbef928449bc0061e6f1b870f1bc7eeb871
     name: glance
     type: application
     urls:
@@ -967,9 +967,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.26.0
-    created: "2026-11-14T23:45:28.865076341Z"
+    created: "2026-11-15T23:51:59.089267101Z"
     description: Go (converted from 1Panel appstore)
-    digest: 31f8691318369a406ab245d57a94c37798ea361e40c92022b9e860d55a383b65
+    digest: 1a1666d65bef32006b5796c8b39796c44a2fc3d34783b1bb5ea90552da8c1e07
     name: go
     type: application
     urls:
@@ -982,9 +982,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.1.1
-    created: "2026-11-14T23:45:28.865650898Z"
+    created: "2026-11-15T23:51:59.089838473Z"
     description: Gotify (converted from 1Panel appstore)
-    digest: 203135c7b7cab875cbadc1fb3e47fe5f2f4367395a23d38d79425e6d537723fc
+    digest: d1742ac3eb2c21930cea750d9ee61e274faefa48ae3c3a55ad393b3d2f1850fb
     name: gotify
     type: application
     urls:
@@ -997,9 +997,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 13.3.1
-    created: "2026-11-14T23:45:28.866054117Z"
+    created: "2026-11-15T23:51:59.090198692Z"
     description: Grafana (converted from 1Panel appstore)
-    digest: 9b0fcc47f4dd43cd109def7c28b871ad4005056fa8f9741d7bf8c7aafab7dca3
+    digest: 0f4459e3b0811b0549d7d047537f9bce189535ebcd229f2679f6300179d6c60b
     name: grafana
     type: application
     urls:
@@ -1012,9 +1012,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.14.3
-    created: "2026-11-14T23:45:28.866469325Z"
+    created: "2026-11-15T23:51:59.090631631Z"
     description: GSManager (converted from 1Panel appstore)
-    digest: 7518d21980fa95c443169d21737b46c184607a1f104ced39bf218a0c23d30748
+    digest: b1f655bccb9f8ca6afef1733f02f80b8825600d75c3686d5ea925c5d801116d7
     name: gsmanager
     type: application
     urls:
@@ -1027,9 +1027,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.27.2
-    created: "2026-11-14T23:45:28.866912414Z"
+    created: "2026-11-15T23:51:59.091052148Z"
     description: Halo (converted from 1Panel appstore)
-    digest: 31f4be5c22b29eb676fb83c20f5e5e7360c986a9e013ec158ecf3c7fa8d688a2
+    digest: 1699905a22d600377983cda0a87065d35f97da230b3b9bbbb79d06cdd0b1a4d9
     name: halo
     type: application
     urls:
@@ -1042,9 +1042,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.8.4
-    created: "2026-11-14T23:45:28.867299709Z"
+    created: "2026-11-15T23:51:59.091412431Z"
     description: Heimdall (converted from 1Panel appstore)
-    digest: b95c72b5a14ede112ba944d1c97076ea7e4b2b97d9f13c81002a9caa41db496b
+    digest: a4c59ff8f5858de5ae5fcf639554c3b42dd7183193168fa290d209419588ef18
     name: heimdall
     type: application
     urls:
@@ -1057,9 +1057,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.23.1
-    created: "2026-11-14T23:45:28.867703348Z"
+    created: "2026-11-15T23:51:59.091810022Z"
     description: Hermes Agent (converted from 1Panel appstore)
-    digest: 449ad4ecc92d16725b42c9129ed4b80dfabf9f230776a27ff05e5ec9052fa46b
+    digest: ee772c7163ac3e4dd4a47ad1ce0edefcca48a198c8591e984664c99f5bc1833d
     name: hermes-agent
     type: application
     urls:
@@ -1072,9 +1072,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2026.11.09
-    created: "2026-11-14T23:45:28.868086627Z"
+    created: "2026-11-15T23:51:59.092246432Z"
     description: Huginn (converted from 1Panel appstore)
-    digest: 04ce39324675c63030b244f969317c6ddcb7053717f0048f48302f4b9197e152
+    digest: 5cce584a2478791c0ea6c5de34dde979a11e7e2e552d0cdd41318123c12f6aad
     name: huginn
     type: application
     urls:
@@ -1087,9 +1087,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2024.10.22+7ca5933
-    created: "2026-11-14T23:45:28.868455154Z"
+    created: "2026-11-15T23:51:59.093033748Z"
     description: IT-Tools (converted from 1Panel appstore)
-    digest: caafe0df8f395faf54ad70b0f64e7e00d5990ec4040f6980f689ea396e1a131f
+    digest: 1eb24618e8fe074b338a0881efd406ba8c6af10fb2c846beb5c2667ab2cc3980
     name: it-tools
     type: application
     urls:
@@ -1102,9 +1102,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.76.0
-    created: "2026-11-14T23:45:28.868811302Z"
+    created: "2026-11-15T23:51:59.09344507Z"
     description: Jaeger (converted from 1Panel appstore)
-    digest: e2bb4deb4790083dc414f069f8e66625e13a24aa6d1bdab11214e45791adf315
+    digest: 2a7bacf7ff4dfda71134c67aa399e023a45c0b01adcfaccb19c3b77be53882d9
     name: jaeger
     type: application
     urls:
@@ -1117,9 +1117,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 25.0.0
-    created: "2026-11-14T23:45:28.869202993Z"
+    created: "2026-11-15T23:51:59.093851779Z"
     description: Java (converted from 1Panel appstore)
-    digest: dba307110276c8c16076c77985e96f124053892e8c62b4bb1d07490c3ab438e0
+    digest: 5d9bc7b9410ec12f1524e0f7c1ad95752b28c36f5e049d5b2e9dca261a971682
     name: java
     type: application
     urls:
@@ -1132,9 +1132,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 10.11.11
-    created: "2026-11-14T23:45:28.86970412Z"
+    created: "2026-11-15T23:51:59.094212307Z"
     description: Jellyfin (converted from 1Panel appstore)
-    digest: 1bfcc5b974c8aea5cd977de4eea64526c6b14ecfd38969eab6cf13c76a9a8fc8
+    digest: d104560f4bb005764ad7a32dab36d6a27d2efae37c4e1f859910cb6d1b73e05e
     name: jellyfin
     type: application
     urls:
@@ -1147,9 +1147,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261015.g1e514
-    created: "2026-11-14T23:45:28.87042559Z"
+    created: "2026-11-15T23:51:59.094575338Z"
     description: JSON Hero (converted from 1Panel appstore)
-    digest: 33b2962d3731be08461fdedfcd96dc457382f584c5b4aa549e317c236ad25979
+    digest: 2b0d970dfca9a728110a231ae9290e67d0d394782720c08d67b382e309187c09
     name: jsonhero
     type: application
     urls:
@@ -1162,9 +1162,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-11-14T23:45:28.870845214Z"
+    created: "2026-11-15T23:51:59.094957595Z"
     description: Jupyter Notebook (converted from 1Panel appstore)
-    digest: b77442b2d4cb42b8255326cb27732f7ee98c8fe0e54931aab0b21f784f98178d
+    digest: de559ff4d7b40a4dc9a0c3902468c8e07b5202cf6354111b793cf730dd1e70c2
     name: jupyter-notebook
     type: application
     urls:
@@ -1177,9 +1177,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-11-14T23:45:28.87129931Z"
+    created: "2026-11-15T23:51:59.095342645Z"
     description: Kafka (converted from 1Panel appstore)
-    digest: e5a7c8bb6d9b5c0bfafb11e0323b8202faeab83f6a3554ad7c491e4516f07f5e
+    digest: 66cfc6fa1b14f932e3b8db241555d1e56431e99143d5961248341aadecfd3851
     name: kafka
     type: application
     urls:
@@ -1192,9 +1192,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 26.8.2
-    created: "2026-11-14T23:45:28.871726715Z"
+    created: "2026-11-15T23:51:59.09574987Z"
     description: Keycloak (converted from 1Panel appstore)
-    digest: 3a443aa24d0d089117617c82809b7b32ac8b3cdb90a22618b4d934c37c30c9b2
+    digest: 0af69327de0f4e2d6ed5472e3de3cb8e1e853f8dfbe32fc9f2ae1559b0ba734f
     name: keycloak
     type: application
     urls:
@@ -1207,9 +1207,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 9.5.5
-    created: "2026-11-14T23:45:28.872163004Z"
+    created: "2026-11-15T23:51:59.09612262Z"
     description: Kibana (converted from 1Panel appstore)
-    digest: f8b20eae88d4705f38bdd21e7ca51a5a7d57222e88c101cb81005623c0d43b3f
+    digest: 938def25c9ec38d416231d399af05e25b21523169072f0a566a15fbed3adea1f
     name: kibana
     type: application
     urls:
@@ -1222,9 +1222,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.2.0
-    created: "2026-11-14T23:45:28.872551381Z"
+    created: "2026-11-15T23:51:59.096471604Z"
     description: Kirara AI (converted from 1Panel appstore)
-    digest: b51d7ff7f7ede789f981331abf7a651ea048e960436d452094e10f8553e3a613
+    digest: c71dc22bb8c8ced22806f28903499884614a3c92962b623a977041f7c33ccbad
     name: kirara-agent
     type: application
     urls:
@@ -1237,9 +1237,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.1.0
-    created: "2026-11-14T23:45:28.872924344Z"
+    created: "2026-11-15T23:51:59.096824683Z"
     description: kkFileView (converted from 1Panel appstore)
-    digest: 489d3dfce42fda3b404de21155682eaaa6b03454191d844d779216b00719b842
+    digest: 93c03d7e256c28e18c48ab529e73ebebbc807581738055884ba540d79289e462
     name: kkfileview
     type: application
     urls:
@@ -1252,9 +1252,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.71.03
-    created: "2026-11-14T23:45:28.873294663Z"
+    created: "2026-11-15T23:51:59.097180279Z"
     description: Kodbox (converted from 1Panel appstore)
-    digest: 002d2c39816546edbf1a24e1753fcf7f9df7ab282b1402c3e0fd36b14dbd8b27
+    digest: 2e492faf491c8ae20af55ce962f80c29789a9670440da68d15be8be728589162
     name: kodbox
     type: application
     urls:
@@ -1267,9 +1267,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-11-14T23:45:28.873670571Z"
+    created: "2026-11-15T23:51:59.097951849Z"
     description: Koishi (converted from 1Panel appstore)
-    digest: aaacde83313999dc7ee808f156973f77c861afe3164f84d3f696c5a1409bd83e
+    digest: 3b04326e3cf85a2cb33fe34c4a35901021904206550fb99342195e6162502c66
     name: koishi
     type: application
     urls:
@@ -1282,9 +1282,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.6.1
-    created: "2026-11-14T23:45:28.874055623Z"
+    created: "2026-11-15T23:51:59.098624617Z"
     description: Komari (converted from 1Panel appstore)
-    digest: 0331ac240199b148db75c9e29e2f34c435dde69a15522d007e942a70ee18b518
+    digest: 3676df815422bb361010c642399f53503e862ad623dc79d49a63ae6d13078654
     name: komari
     type: application
     urls:
@@ -1297,9 +1297,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.30.1
-    created: "2026-11-14T23:45:28.874421485Z"
+    created: "2026-11-15T23:51:59.099005955Z"
     description: Komga (converted from 1Panel appstore)
-    digest: d7d2c7f3caea19952009ac56981b081208477dd7cb0a82cd84626c9bbe92f0cc
+    digest: 6d9b941b87ce2f1ae700395c7caee0516c8619d0fa89d832d2b84cb39b907281
     name: komga
     type: application
     urls:
@@ -1312,9 +1312,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.11.7
-    created: "2026-11-14T23:45:28.874832095Z"
+    created: "2026-11-15T23:51:59.099419154Z"
     description: LangBot (converted from 1Panel appstore)
-    digest: 73d5e8027846accf3b08eb9f94398ed0c15ca08fe4b069abba8b97fbb4fccc09
+    digest: 5ad20e73e0c136528ca13fd9a77acb85c1f1aed57bbf8641166d6c68f809d8fd
     name: langbot
     type: application
     urls:
@@ -1327,9 +1327,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.13.2
-    created: "2026-11-14T23:45:28.875220492Z"
+    created: "2026-11-15T23:51:59.09980622Z"
     description: Langflow (converted from 1Panel appstore)
-    digest: 8c5615d275c8120e93b90482d6ffa6bc35454cad240eb1ae31c67f0e7e4d46c8
+    digest: 190ca5d347abb8fab553ff56a41b88d5352835df5e3c6b1b2e52205ae644d196
     name: langflow
     type: application
     urls:
@@ -1342,9 +1342,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-11-14T23:45:28.87600082Z"
+    created: "2026-11-15T23:51:59.100191658Z"
     description: Laya Server (converted from 1Panel appstore)
-    digest: 5a965636161eab7a11d49353ad1fbfa714ec96feb0d6e7d0c66fc7a5eaf97299
+    digest: 0b97abd546eeb1d3112cc3b2f8e06af48c250d643b02f53d68ef014e27fcaca7
     name: laya-server
     type: application
     urls:
@@ -1357,9 +1357,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.47.0+plus
-    created: "2026-11-14T23:45:28.876557451Z"
+    created: "2026-11-15T23:51:59.100584992Z"
     description: linkding (converted from 1Panel appstore)
-    digest: 8611f809e667ab0fab1071a1481b6590e7d6d4c35c1ccabb6cd51b0da22bc24b
+    digest: 5f7f70aa2cd0bfe394b3e4b9952df1167c1937424e3eff6e8b9ac3ce208404c9
     name: linkding
     type: application
     urls:
@@ -1372,9 +1372,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.22.0
-    created: "2026-11-14T23:45:28.876958817Z"
+    created: "2026-11-15T23:51:59.100933805Z"
     description: Linux Command (converted from 1Panel appstore)
-    digest: 9d70f8453d10902fe66957b767f8e58e5501e23644362573b9171321d8ad1782
+    digest: 6b21822f58ec092f8e8128c412bcb838bac34f9af07c8c64d1eab4dc63e2884f
     name: linux-command
     type: application
     urls:
@@ -1387,9 +1387,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.143.3
-    created: "2026-11-14T23:45:28.877356949Z"
+    created: "2026-11-15T23:51:59.101300944Z"
     description: LobeChat (converted from 1Panel appstore)
-    digest: 2dc16b2192897187e114a2acb2d363a4d9d89c6064ef7a998ab7db7a146687cd
+    digest: f1572e92832db4b4fbbad601fdef7a3b8f7eaff0432c6c75ea38699f83a82f90
     name: lobe-chat
     type: application
     urls:
@@ -1402,9 +1402,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.12.1+aio-cpu
-    created: "2026-11-14T23:45:28.87790068Z"
+    created: "2026-11-15T23:51:59.101677405Z"
     description: LocalAI (converted from 1Panel appstore)
-    digest: 2e6b0bbd2a63f1d299a16c8cc1edef2e322a290a8b6345721e6519c063dcf0e1
+    digest: 9f93167261940c6ef6f2af5d4f9f681dc1bacf35ad7acc29cc36b1184bb47413
     name: localai
     type: application
     urls:
@@ -1417,9 +1417,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 9.5.5
-    created: "2026-11-14T23:45:28.878293714Z"
+    created: "2026-11-15T23:51:59.102055568Z"
     description: Logstash (converted from 1Panel appstore)
-    digest: 64056c901b52bb13dcee07e3dbf9f3b3b0106e744b7f56e17aca532aedf6ecb4
+    digest: 0a3954247d040c188aa851605dfdeb9feb19610a756477e4c881df5f100c6c0a
     name: logstash
     type: application
     urls:
@@ -1432,9 +1432,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.46.0
-    created: "2026-11-14T23:45:28.878674929Z"
+    created: "2026-11-15T23:51:59.102407426Z"
     description: Logto (converted from 1Panel appstore)
-    digest: 340a329127333d4aec84a5dbad0fe69d496cb885f511379da40a6e91f5701ea5
+    digest: 8e2384ab69e0fa9f7761f27cea851a11dc05e815bf7f0d0f0e091929096cbbdb
     name: logto
     type: application
     urls:
@@ -1447,9 +1447,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261107.g7d9a1
-    created: "2026-11-14T23:45:28.879070106Z"
+    created: "2026-11-15T23:51:59.103052704Z"
     description: Lsky-pro (converted from 1Panel appstore)
-    digest: e229eab2d3fc8f0bfda52ab8b1358f6ce1bfc11bde512ccc9987d5174cdbf884
+    digest: bf90ad5a30072572be059ec74068f3ff1a49b5cdcc3337da96b8446a99ea04f1
     name: lsky-pro
     type: application
     urls:
@@ -1462,9 +1462,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.9.7
-    created: "2026-11-14T23:45:28.879441567Z"
+    created: "2026-11-15T23:51:59.103938088Z"
     description: Maddy Mail Server (converted from 1Panel appstore)
-    digest: b8aea9eeb4d753fd7009057f504966a92140c92a7cbe283cd97f1f057c8c9e8d
+    digest: 70c6dd83ecaeb85fc6b499953a909c9827aa53611b6cff664a4f00c55b3eff69
     name: maddy-mail
     type: application
     urls:
@@ -1477,9 +1477,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.1.4012
-    created: "2026-11-14T23:45:28.879821541Z"
+    created: "2026-11-15T23:51:59.104552167Z"
     description: magpie (converted from 1Panel appstore)
-    digest: f7d60b2262da5afcb3aa4107020fe5947aae4e326466ecbb66e74392f6a12651
+    digest: da81fc5475157c6f82f0b4303670457352b1f6fa717edf96fe39c3ec7abb53bc
     name: magpie
     type: application
     urls:
@@ -1492,9 +1492,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 16.0.1
-    created: "2026-11-14T23:45:28.880248406Z"
+    created: "2026-11-15T23:51:59.104971962Z"
     description: Mailserver (converted from 1Panel appstore)
-    digest: 1d9077212da5518d9a70539dd0846d5ac8d87cf39ec621d563200c920457f5c2
+    digest: f7b4fcb60d45f1ef591602ca03bf3536da38656e938de6663fc252bc4d405fcf
     name: mailserver
     type: application
     urls:
@@ -1507,9 +1507,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 12.1.0
-    created: "2026-11-14T23:45:28.880693258Z"
+    created: "2026-11-15T23:51:59.105401103Z"
     description: Mattermost (converted from 1Panel appstore)
-    digest: 62c283def177379430e982c5cc91ee795109098694e7c7a00ea3963a0635e94b
+    digest: d3579ad965f52fc195d971138033adc3f4b36a6363cfaee1dff84d9cbd182054
     name: mattermost
     type: application
     urls:
@@ -1522,9 +1522,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.10.8+lts
-    created: "2026-11-14T23:45:28.881076757Z"
+    created: "2026-11-15T23:51:59.105790399Z"
     description: MaxKB (converted from 1Panel appstore)
-    digest: a53ecb7ae03219fb5bf9a1e506ed30a5697dab4678ca17860d03e87ba39292bc
+    digest: 38163d33273fdd900f36b35be90b9ce5871352595a39134e2364f0811da8dbdf
     name: maxkb
     type: application
     urls:
@@ -1537,9 +1537,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-11-14T23:45:28.881587138Z"
+    created: "2026-11-15T23:51:59.106150455Z"
     description: mBlog (converted from 1Panel appstore)
-    digest: d7d1925077075bc5fc5f63bb4aa08d9d5cf338438f3aeb84138a20169b634001
+    digest: 48b34545ee8c383206d3d3d212b3c0b4704553ae316d70a7dc571dfa127569b4
     name: mblog
     type: application
     urls:
@@ -1552,9 +1552,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 10.22.1
-    created: "2026-11-14T23:45:28.88231689Z"
+    created: "2026-11-15T23:51:59.106522182Z"
     description: MCSManager (converted from 1Panel appstore)
-    digest: 9db955b7408899a9fb4f35254324f8ea5e9895853d004eab6528e8a6379ae8ca
+    digest: 9e20d28fb2ed5e39e18c3acf1b2c53b44118e92b1407a84910350e8c71478d79
     name: mcsmanager-web
     type: application
     urls:
@@ -1567,9 +1567,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.56.2
-    created: "2026-11-14T23:45:28.882757195Z"
+    created: "2026-11-15T23:51:59.106926579Z"
     description: MeiliSearch (converted from 1Panel appstore)
-    digest: a227b1fe10e1688929683cf8bbea61c7664b6a932d0f8ce9d7b7f479b771162c
+    digest: 9f1b7198d12af1e7e4fc487716e6f08a93a7163c0f31b5d5980371537a71c700
     name: meilisearch
     type: application
     urls:
@@ -1582,9 +1582,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 26.11.0
-    created: "2026-11-14T23:45:28.883178782Z"
+    created: "2026-11-15T23:51:59.107278959Z"
     description: Memos (converted from 1Panel appstore)
-    digest: b9edcaa68caea1bc1f67b2a94b7fdab5a72ae8746567fd1a41bc497d55681761
+    digest: 4183cc49365e44fd9859310f46b5d64464014fdd798a90eb369cd93a0f279548
     name: memos
     type: application
     urls:
@@ -1597,9 +1597,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.65.4
-    created: "2026-11-14T23:45:28.883612066Z"
+    created: "2026-11-15T23:51:59.107692695Z"
     description: Metabase (converted from 1Panel appstore)
-    digest: fa7b906495c5e0d1aa685dcdb41ff310d38600990569778490186d123c8ede4b
+    digest: 9c646011e4f84f9a16a5377ba7a69c5ba537abb639195413dbf2ba3acd781d21
     name: metabase
     type: application
     urls:
@@ -1612,9 +1612,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.3.5
-    created: "2026-11-14T23:45:28.884018981Z"
+    created: "2026-11-15T23:51:59.108050076Z"
     description: Miniflux (converted from 1Panel appstore)
-    digest: c1bdbe3fdb14b4e1223d483d37f58f4a2156dcd5d232f4330f1c835264233270
+    digest: 74b954533909ca8a5be90bebc5729334c7645f22824d6f1a8b24dc7e84ab4d8c
     name: miniflux
     type: application
     urls:
@@ -1627,9 +1627,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 9.8.1
-    created: "2026-11-14T23:45:28.884389691Z"
+    created: "2026-11-15T23:51:59.108394133Z"
     description: Material for MkDocs (converted from 1Panel appstore)
-    digest: f832fdaa68ed70a51e8252fbe9d2d7c10b0178c02fbf333e248cb34d521956a8
+    digest: 084f3ebbee95fd6ebe812f2ad50a1ce2ec8d3c64b00efd74948bd932339f4e0e
     name: mkdocs-material
     type: application
     urls:
@@ -1642,9 +1642,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.24.1
-    created: "2026-11-14T23:45:28.884806771Z"
+    created: "2026-11-15T23:51:59.108813473Z"
     description: 木雷短网址 (converted from 1Panel appstore)
-    digest: d0e5d6570a3a42dfd7b2273778718848781f8c135745c84726d03981c6257c6c
+    digest: 16ab95fca32aab5c62d9d59049dcf1274672c0a13c9422d83f3778f1fe56898a
     name: mliev-dwz
     type: application
     urls:
@@ -1657,9 +1657,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.0.2+20
-    created: "2026-11-14T23:45:28.885245573Z"
+    created: "2026-11-15T23:51:59.109541913Z"
     description: mongo-express (converted from 1Panel appstore)
-    digest: a6dc96a3c2914d435606246f2c0f30d858317043b6521b26adb489f63f60ac72
+    digest: 27dbe060bbad1a33dda00e290ab33bb84e31f42dd02c691158d14ea5bf732a47
     name: mongo-express
     type: application
     urls:
@@ -1668,10 +1668,10 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: "8.0"
-    created: "2026-11-14T23:45:28.885558276Z"
+    created: "2026-11-15T23:51:59.110099993Z"
     description: MongoDB 8.0 single-node replica set (oplog-ready) with NFS backup
       CronJob and freshness alert
-    digest: 62bf38082ffde2fc44492b5b4075ad6a20a76bfc404ec2679993bf80f9f4e632
+    digest: 5385b0da281dcbd7f24674bd643ba6ec75f476a91b35fa4572bafc74a2315c9d
     maintainers:
     - name: gclm
     name: mongodb
@@ -1686,9 +1686,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.8.0
-    created: "2026-11-14T23:45:28.885965391Z"
+    created: "2026-11-15T23:51:59.110496473Z"
     description: Music Tag Web (converted from 1Panel appstore)
-    digest: bea01a5a733338d42045c32a20bb707e4b77bfad4f01d01e0ee3b9fbbf680b88
+    digest: b158502c1e9a3ff907973c6d74fa74aaeef130ee133d2571eb5b2477bcbba11b
     name: music-tag-web
     type: application
     urls:
@@ -1697,9 +1697,9 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "8.4"
-    created: "2026-11-14T23:45:28.886228117Z"
+    created: "2026-11-15T23:51:59.110766519Z"
     description: MySQL 8.4 standalone with NFS backup CronJob and freshness alert
-    digest: 7f3ff008259c0dab64a219eecf47e1c1776d4726d7c9e2f1a58a021ea7eb9a30
+    digest: 73cffa08120e0fc5fb6c8d0a0c7de3d604cd7b013f9f22044d24988df3d6356c
     maintainers:
     - name: gclm
     name: mysql
@@ -1714,9 +1714,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.47.7
-    created: "2026-11-14T23:45:28.886602633Z"
+    created: "2026-11-15T23:51:59.111124055Z"
     description: n8n (converted from 1Panel appstore)
-    digest: 3cc0cb4d0899dc7c309f734bbcc296c234c2ff31fa2625ab35e6d77673dda9c3
+    digest: 31505f44c058ad08ee8af52876d531a90a852513e8c34e54f2dc287bea0709cf
     name: n8n
     type: application
     urls:
@@ -1729,9 +1729,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.3.0
-    created: "2026-11-14T23:45:28.887066323Z"
+    created: "2026-11-15T23:51:59.11156759Z"
     description: Nacos (converted from 1Panel appstore)
-    digest: da1601732e5462ebb80eed448fa9d9d783dfc75f100695cb9607b39b97c1bef3
+    digest: ae79b99c42f69c59a60153fcc86e59f4cd9314dc35b9e42e597e13e6eb4d6ab7
     name: nacos
     type: application
     urls:
@@ -1744,9 +1744,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.15.3
-    created: "2026-11-14T23:45:28.887738759Z"
+    created: "2026-11-15T23:51:59.111928534Z"
     description: NATS (converted from 1Panel appstore)
-    digest: b3b7b97d4b320a063d0172955076d31306fa44c81a7f8f5e1198ae45571bce6f
+    digest: 2316081dbf1ca2284d1d02c8d94630e1aa88c492fffdff692267f2757e104af9
     name: nats
     type: application
     urls:
@@ -1759,9 +1759,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.64.2
-    created: "2026-11-14T23:45:28.888412957Z"
+    created: "2026-11-15T23:51:59.112310284Z"
     description: Navidrome (converted from 1Panel appstore)
-    digest: 3c9915297090f6ec8f10544ff74eaa1a6fa0fec8a5b8a7b4a4367234b6007a5b
+    digest: f7beb70c11e56165806ef641abf97abb0ef2d7b95221946d0e1e93802d8bfde2
     name: navidrome
     type: application
     urls:
@@ -1774,9 +1774,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.13.2
-    created: "2026-11-14T23:45:28.888836717Z"
+    created: "2026-11-15T23:51:59.112709587Z"
     description: New API (converted from 1Panel appstore)
-    digest: b3a7cb3ca13f17079b70781a67d2a0c5c53a7625811f813d6cda4e06aca8b4ee
+    digest: 87511911383f2bab3cb6fb9662c7f89a3fb6362780295c4d57db9c0ff3771d16
     name: new-api
     type: application
     urls:
@@ -1789,9 +1789,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.41
-    created: "2026-11-14T23:45:28.889286546Z"
+    created: "2026-11-15T23:51:59.1130976Z"
     description: NewsNow (converted from 1Panel appstore)
-    digest: d027576d7111af5a5dea9c6a2eb49b794ec2b77198033183257df880e3f462db
+    digest: 27247bb2b68384f5279844facf84ef8487dd9ea9b69399ef7027f4ad8d14f946
     name: newsnow
     type: application
     urls:
@@ -1804,9 +1804,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 35.0.3
-    created: "2026-11-14T23:45:28.889683496Z"
+    created: "2026-11-15T23:51:59.113463304Z"
     description: Nextcloud (converted from 1Panel appstore)
-    digest: 30446a970589ce207eb3d65e692d4c9c9a4b84fb61375bc333845a9f0be68091
+    digest: 3738b651d9f7f0cf06408c743d867c881680b9a7657190f499f1fb597a8aa766
     name: nextcloud
     type: application
     urls:
@@ -1819,9 +1819,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.98.1
-    created: "2026-11-14T23:45:28.890085583Z"
+    created: "2026-11-15T23:51:59.113837687Z"
     description: Nexus Repository (converted from 1Panel appstore)
-    digest: 8e078b62cd62704558879d9781270b13692362da25f1fadc00a7dc351addec0b
+    digest: 17b821027e07022ec58ae31ac26fc88799d0da49dcf80d1832518327b1debdad
     name: nexus
     type: application
     urls:
@@ -1834,9 +1834,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.6.1
-    created: "2026-11-14T23:45:28.890455832Z"
+    created: "2026-11-15T23:51:59.114316268Z"
     description: 哪吒监控 (converted from 1Panel appstore)
-    digest: df644646febdcbcd78802939acc91d64b5afcf89f4f7d5ca4b79881f9b3cdb0a
+    digest: f88d1a23a3ae8ad15daac60f18f7a2982a2d5b62ae392cbe3fab4275f779e822
     name: nezha
     type: application
     urls:
@@ -1849,9 +1849,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.17.0
-    created: "2026-11-14T23:45:28.890833072Z"
+    created: "2026-11-15T23:51:59.115170626Z"
     description: Nginx Proxy Manager (converted from 1Panel appstore)
-    digest: bdbe9442edb52ab23d2937f1bc6d18b77f78f276db2b55c4bd9232fc9f693f25
+    digest: 1a00507a6ace8563a0467d5672085aa32e09a67e29772a3ebbc76656200c01b0
     name: nginx-proxy-manager
     type: application
     urls:
@@ -1864,9 +1864,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.2.46
-    created: "2026-11-14T23:45:28.891256432Z"
+    created: "2026-11-15T23:51:59.115616048Z"
     description: NocoBase (converted from 1Panel appstore)
-    digest: 2da260b13d09d21b8d8e75338e3616c035cfec9f180683101311c6806b4a4b05
+    digest: 8920df8800e698b9dd28d120df38aa25ccb57d67e12cbaaf2f784583f373f635
     name: nocobase
     type: application
     urls:
@@ -1879,9 +1879,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 26.13.1
-    created: "2026-11-14T23:45:28.891625319Z"
+    created: "2026-11-15T23:51:59.11598468Z"
     description: Node.js (converted from 1Panel appstore)
-    digest: 3c18f8c52c0ce2ac81e856cedcc9899a072adefc8180e82c73a1c4eca1e68d87
+    digest: 3257988a18afec14fcb21bfbe7a3e9e517957f84695c9a9d03a388b41a36d9c1
     name: node
     type: application
     urls:
@@ -1894,9 +1894,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.0.9
-    created: "2026-11-14T23:45:28.892008067Z"
+    created: "2026-11-15T23:51:59.116341579Z"
     description: Node-RED (converted from 1Panel appstore)
-    digest: 4d879d920d9c91b37439914ac5b4297ac7c2113113705eb291680695c3697275
+    digest: 673436f434fcb33ed71b35e8d49fef01b49388521b147d7cdf1719294a621434
     name: node-red
     type: application
     urls:
@@ -1909,9 +1909,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.16.8
-    created: "2026-11-14T23:45:28.892400329Z"
+    created: "2026-11-15T23:51:59.116735706Z"
     description: NodeBB (converted from 1Panel appstore)
-    digest: 07ff88abb6e99d31eff50c3de182d436cdd0a830ca48be0644b65607435bb3a8
+    digest: a368105d81c3040e70aa4b493f67fd5606ecbea76e221d202b08becc53b80285
     name: nodebb
     type: application
     urls:
@@ -1924,9 +1924,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.36.0
-    created: "2026-11-14T23:45:28.892803228Z"
+    created: "2026-11-15T23:51:59.117117432Z"
     description: ntfy (converted from 1Panel appstore)
-    digest: 07e694c7bc07e709ca2f7622ec8ad2ce7e6ae455397d9176b7e69fc86b8d7b63
+    digest: 907cb2db48faea9832b21b0b58554d0dce46282ebede17105f81e878544c5ba2
     name: ntfy
     type: application
     urls:
@@ -1939,9 +1939,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.5.3
-    created: "2026-11-14T23:45:28.893545248Z"
+    created: "2026-11-15T23:51:59.117521827Z"
     description: Obsidian LiveSync (converted from 1Panel appstore)
-    digest: b4d977b89895197a2c03044489aebac1691c39828670790fe60200097a0782f9
+    digest: dee5353e54f7532a670998f3f82b8b2959955c0d47138295f80163d581993f2c
     name: obsidian-livesync
     type: application
     urls:
@@ -1954,9 +1954,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-11-14T23:45:28.894101899Z"
+    created: "2026-11-15T23:51:59.11793055Z"
     description: Octop (converted from 1Panel appstore)
-    digest: c595f24f15f59769767888bf2236a9fc315cb1ebd6ced44745226e11e851eb80
+    digest: 3cd6a043d036853b1536aab82004ad05f430cf9bda36cfe1d524ae7aba2e6a10
     name: octop
     type: application
     urls:
@@ -1969,9 +1969,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 19.0.0
-    created: "2026-11-14T23:45:28.894511247Z"
+    created: "2026-11-15T23:51:59.11830894Z"
     description: Odoo (converted from 1Panel appstore)
-    digest: 13407134368475ef6a134ebf5de6e04562dc8b2d548c92cf69e67ec5968f6874
+    digest: b41ab269e3a97bd7b34dddc29422ac180d506723e8f9d057b1952f4d77c6c91c
     name: odoo
     type: application
     urls:
@@ -1984,9 +1984,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.40.16
-    created: "2026-11-14T23:45:28.894903059Z"
+    created: "2026-11-15T23:51:59.118678951Z"
     description: Ollama (converted from 1Panel appstore)
-    digest: 363b2068823e2656cd4ffeb08575e3319fc41306019a127be63904f1c25423db
+    digest: 8e8fb13e571d93783e6838452ca292d15e20c8294c760c16d4ba01aa21f051ba
     name: ollama
     type: application
     urls:
@@ -1999,9 +1999,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.13.3
-    created: "2026-11-14T23:45:28.895300279Z"
+    created: "2026-11-15T23:51:59.119046012Z"
     description: OpenWebUI (converted from 1Panel appstore)
-    digest: fce4b10e55a9432a7791981963d7df532c50a4d56c5b1915f76ca57568ac5339
+    digest: 277ec5fa8815599946aa9e84282b4d42903fa05f18d373c70ba6d78d74a57815
     name: ollama-webui
     type: application
     urls:
@@ -2014,9 +2014,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 10.0.0
-    created: "2026-11-14T23:45:28.89570452Z"
+    created: "2026-11-15T23:51:59.119423937Z"
     description: ONLYOFFICE Docs (converted from 1Panel appstore)
-    digest: 04ed159cf332a6fae369e385c232090a806d1aaf6d2f051dd4291ca493ce4afc
+    digest: 5757648ed575a760b69bada1547b98031de27a40ce52e05e352ea38274714256
     name: onlyoffice
     type: application
     urls:
@@ -2029,9 +2029,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2026.11.3
-    created: "2026-11-14T23:45:28.8961216Z"
+    created: "2026-11-15T23:51:59.1201478Z"
     description: OpenClaw (converted from 1Panel appstore)
-    digest: c507db2f54ccce9ec501a2ba6962f6a2f760a54d7a04094034c8ab048b7fce4e
+    digest: 753ef47da2dfdc96e279a9a0ceab7c5dd9cd236b68e4ad8a41af32eceac48cb3
     name: openclaw
     type: application
     urls:
@@ -2044,9 +2044,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.15.3
-    created: "2026-11-14T23:45:28.896492139Z"
+    created: "2026-11-15T23:51:59.120799418Z"
     description: Opengist (converted from 1Panel appstore)
-    digest: 8a77ac3177f3a44d8b0842e701e27a09663868b984063b320fb1447fbbf86cbb
+    digest: bcc5faf8b4152b02311b1c5c001055053c8bc6039b304bf550a7cc62401585a7
     name: opengist
     type: application
     urls:
@@ -2059,9 +2059,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.8.4+lsphp81
-    created: "2026-11-14T23:45:28.896928408Z"
+    created: "2026-11-15T23:51:59.121235482Z"
     description: OpenLiteSpeed (converted from 1Panel appstore)
-    digest: 50c76f8c1d8da65604bda9cedf5657e45835b37d6651c67925caa03e0fda64f8
+    digest: a3f35192fcb88df587045276074b35f0060bcef86639fe7ad3a47808b021b8dd
     name: openlitespeed
     type: application
     urls:
@@ -2074,9 +2074,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.12.0
-    created: "2026-11-14T23:45:28.897455024Z"
+    created: "2026-11-15T23:51:59.121769379Z"
     description: Outline (converted from 1Panel appstore)
-    digest: 9883c9b4de4c1523c64c6a7cf195037628c75967d80a4275f22364a2dcc37c93
+    digest: 85abdb543518e119183c65235627163c9b205d0f2cebd6ffaa26a5c9ff5947b9
     name: outline
     type: application
     urls:
@@ -2089,9 +2089,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.8.1
-    created: "2026-11-14T23:45:28.89794249Z"
+    created: "2026-11-15T23:51:59.122252092Z"
     description: Palworld Server (converted from 1Panel appstore)
-    digest: 01403971cf30166a6ccb2ee18e306cd8264e7d28ce1313f3c0f97cb54e96dfe1
+    digest: 6ba83a70b73e4ce3af4e15aab49a770c9b5022f1fe66e434ea526b4eddf8e87e
     name: palworld
     type: application
     urls:
@@ -2104,9 +2104,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.12.2
-    created: "2026-11-14T23:45:28.898336695Z"
+    created: "2026-11-15T23:51:59.1226433Z"
     description: Palworld Server Tool (converted from 1Panel appstore)
-    digest: bcf068b895be3b5b7735125bad92fbe2812e863c492fe5ee85fe5b1e5e542853
+    digest: 37a3ffc084f267b573ba303c7d20b91bc84ecf64a1d2a50b5b2232ec1c95c971
     name: palworld-server-tool
     type: application
     urls:
@@ -2119,9 +2119,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 9.19.0
-    created: "2026-11-14T23:45:28.898994249Z"
+    created: "2026-11-15T23:51:59.123002311Z"
     description: PGAdmin4 (converted from 1Panel appstore)
-    digest: 25dd0e4809fb53e4747869ea91d68b8e19516272e591c9d922e1903f8e54b86a
+    digest: b8a8208ee615d253ebcb49137997deb1e7de455d75e96764dc10cb746d22f3f7
     name: pgadmin4
     type: application
     urls:
@@ -2134,9 +2134,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 251130.0.0+ce
-    created: "2026-11-14T23:45:28.89978938Z"
+    created: "2026-11-15T23:51:59.123492753Z"
     description: PhotoPrism (converted from 1Panel appstore)
-    digest: 955b5161a24ce2b1acfba8cadd047da937966f7441f1b896a7499d9a3c609cf9
+    digest: 6f943969e32b55b1fa5337a1abab85ed1c38b2e832586fe596515a25623c9de3
     name: photoprism
     type: application
     urls:
@@ -2149,9 +2149,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.2.3
-    created: "2026-11-14T23:45:28.900199138Z"
+    created: "2026-11-15T23:51:59.123850455Z"
     description: phpMyAdmin (converted from 1Panel appstore)
-    digest: a64e315bf73e672b0d7fc94b65c64f0e85859ae0d99970bfb55de3683aca5b59
+    digest: dd05b7fa68865de7430cdbd3db1724d7d670d47646bebb026a02025e53a80361
     name: phpmyadmin
     type: application
     urls:
@@ -2164,9 +2164,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.3.1
-    created: "2026-11-14T23:45:28.900621546Z"
+    created: "2026-11-15T23:51:59.124236159Z"
     description: Planka (converted from 1Panel appstore)
-    digest: 7fdde480c21638fc94387a400d7d1c0e1c5ee0b3d4c329205b790c7a426e10e0
+    digest: 077de008e7642ede84d04a3367a6b21a92c604e56674ecc610d24dc5a698adc5
     name: planka
     type: application
     urls:
@@ -2175,9 +2175,9 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: 17-alpine
-    created: "2026-11-14T23:45:28.90101458Z"
+    created: "2026-11-15T23:51:59.124582193Z"
     description: PostgreSQL 17 standalone with NFS backup CronJob and freshness alert
-    digest: bd3586e9e1af074eadae23020b333691ebdd1c3450008cfd4757be6ece19ebc9
+    digest: c1d2d0cd27b414e6287c01be4853ffba28837789a1e3974fcfacd296a1158cb1
     maintainers:
     - name: gclm
     name: postgresql
@@ -2192,9 +2192,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.15.0
-    created: "2026-11-14T23:45:28.901396667Z"
+    created: "2026-11-15T23:51:59.124929356Z"
     description: Python (converted from 1Panel appstore)
-    digest: 484bc259863cc38da83bdf13ecac8e7421f2de94c25b1820aca60c521fcc97c2
+    digest: 111566cc9fbf21273ce909ad521d995a50d9dcf88529601cb6b264fb2974a873
     name: python
     type: application
     urls:
@@ -2207,9 +2207,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.3.0
-    created: "2026-11-14T23:45:28.901798544Z"
+    created: "2026-11-15T23:51:59.125306644Z"
     description: qBittorrent (converted from 1Panel appstore)
-    digest: 2cb81419399bd367cd39f9214331ff1516a89e41c2d53ae3f8de2ef9c3f08f91
+    digest: ae3ab984dbb72051a4030361ba5a1b10913861400112d7bc5ba095e93bfda762
     name: qbittorrent
     type: application
     urls:
@@ -2222,9 +2222,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 20261108.0.0
-    created: "2026-11-14T23:45:28.902220872Z"
+    created: "2026-11-15T23:51:59.126061807Z"
     description: QD (converted from 1Panel appstore)
-    digest: 2d113c39138316ebada79fca56de30d33967b41825bb8c988d494c74181bb002
+    digest: e7a1a7a96443f14195992df30a21e03a87e8597b10a7938fdc047b13933991a6
     name: qiandao
     type: application
     urls:
@@ -2237,9 +2237,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.24.0+debian
-    created: "2026-11-14T23:45:28.90259004Z"
+    created: "2026-11-15T23:51:59.12672773Z"
     description: 青龙 (converted from 1Panel appstore)
-    digest: 6e13451495dadc51003c4fa284823e940bc2f138488cfbbcd15c0472155b62bd
+    digest: 230d95505dc4e58523089911fde4829171c7c6c2f062f2d6b04dc3d46bfd1169
     name: qinglong
     type: application
     urls:
@@ -2252,9 +2252,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.4.0+management-alpine
-    created: "2026-11-14T23:45:28.902996564Z"
+    created: "2026-11-15T23:51:59.127114749Z"
     description: RabbitMQ (converted from 1Panel appstore)
-    digest: a23552e49707927bda24fb9afa70129015bf87e2903eeec76a7954f31a34cbde
+    digest: c6e534ec8bd7903b3be4389587edcc62a9616c6f916a2a529e5bc038d3720ed8
     name: rabbitmq
     type: application
     urls:
@@ -2263,10 +2263,10 @@ entries:
   redis:
   - apiVersion: v2
     appVersion: 8-alpine
-    created: "2026-11-14T23:45:28.90331225Z"
+    created: "2026-11-15T23:51:59.127424612Z"
     description: Redis 8 standalone (AOF+RDB) with NFS backup CronJob and freshness
       alert
-    digest: 4ba9bfb3508197cac187665a57561df19f284e014772404bbce598b16bcbd78e
+    digest: d239e7b7e57db8cf910b20b2088c6b81caa032b9963bdf0982885159ace9ee5c
     maintainers:
     - name: gclm
     name: redis
@@ -2281,9 +2281,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261015.g19cd0
-    created: "2026-11-14T23:45:28.903713657Z"
+    created: "2026-11-15T23:51:59.127806207Z"
     description: Redis-Commander (converted from 1Panel appstore)
-    digest: fe2fced6c802d798b804fbed7546cde8a4fd453adc41d16e6ba31f413adf38df
+    digest: aa026418b30f4bf7edf4260b835d00f7a04f1306fa5e4be942d7031627efd05d
     name: redis-commander
     type: application
     urls:
@@ -2296,9 +2296,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.14.0
-    created: "2026-11-14T23:45:28.904094272Z"
+    created: "2026-11-15T23:51:59.128143692Z"
     description: Redpanda Console (converted from 1Panel appstore)
-    digest: c10be7c8d485dc2c76a7a1f9cda5aacc2e9c59c142d3529b97695307c114737c
+    digest: ec83e9e9ecb448902a9808cff0626455a57bc04cd4b8b04a41d424717ba8488f
     name: redpanda-console
     type: application
     urls:
@@ -2311,9 +2311,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.5.0
-    created: "2026-11-14T23:45:28.905211028Z"
+    created: "2026-11-15T23:51:59.128664996Z"
     description: RocketMQ (converted from 1Panel appstore)
-    digest: 40a51806a2770d2a2c95b0f3283dac8ab7d9c64ff3ae83b22ed576edf8c1d78d
+    digest: 01fe6f99cc61665cf2c6123ab797d4c816a4a7c70f145c1dbffcf31e64f8e606
     name: rocketmq
     type: application
     urls:
@@ -2326,9 +2326,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.7.6+apache
-    created: "2026-11-14T23:45:28.905679485Z"
+    created: "2026-11-15T23:51:59.12907411Z"
     description: Roundcube (converted from 1Panel appstore)
-    digest: 29ab01626591bd3d6e6c7ff0cd58ef3b9c19319db8d1eeafc3ff37c476b81b33
+    digest: 7f759a4490d0d5d3c7127e4e28af85638d3be68e7740edc76c8cea145b3d5461
     name: roundcube
     type: application
     urls:
@@ -2341,9 +2341,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.1.16
-    created: "2026-11-14T23:45:28.906090666Z"
+    created: "2026-11-15T23:51:59.129418022Z"
     description: RustDesk (converted from 1Panel appstore)
-    digest: b6ed487c7ede3008dbb4abf1a31d2f44b1115ef41c835fe4c020e49a5e625861
+    digest: 23943e0a889423da3e8d4532789c74d1755ef17dec49fa12dd0201c4c04b07b3
     name: rustdesk
     type: application
     urls:
@@ -2356,9 +2356,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.0.5
-    created: "2026-11-14T23:45:28.906489268Z"
+    created: "2026-11-15T23:51:59.129805526Z"
     description: RustFS (converted from 1Panel appstore)
-    digest: fa2b8d1cbdec97518e014b5f8b141cbf7a2e7b64f43f926f4329ac77520febda
+    digest: 052a3d2c48115a43ceb498a638416a37e9c70e11cace04f018fec95c36575109
     name: rustfs
     type: application
     urls:
@@ -2371,9 +2371,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.12.6
-    created: "2026-11-14T23:45:28.906941331Z"
+    created: "2026-11-15T23:51:59.130157695Z"
     description: screego (converted from 1Panel appstore)
-    digest: a637176b713932d027eaddad6060e3ca9ab0daa1e35ad678cdf66c0b305c31c1
+    digest: 2a12d16ebbcd946b19e0cc6210720a28fdc0f8f905670a2d4e928b86b5b5dbcc
     name: screego
     type: application
     urls:
@@ -2386,9 +2386,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.8.10
-    created: "2026-11-14T23:45:28.907312211Z"
+    created: "2026-11-15T23:51:59.130487837Z"
     description: Sentinel Dashboard (converted from 1Panel appstore)
-    digest: 4e84bef04d0ed8c17fcb7401b7808f86f88b82cb7232abb2413e1942cdb335e6
+    digest: 913574ec0d2d2ce899b8ee0a9b155ea9a94537fe1ffb066196c75e3429635d00
     name: sentinel-dashboard
     type: application
     urls:
@@ -2401,9 +2401,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.7.6+alpine
-    created: "2026-11-14T23:45:28.907736082Z"
+    created: "2026-11-15T23:51:59.130922971Z"
     description: SFTPGo (converted from 1Panel appstore)
-    digest: f2c5c283aafec9d64266b78dcbb85fa180724b5482960b5944ca0357e6169f77
+    digest: 854909b75909d2c5d0ccd1bbb9b9bba4cc29646c8a713b66c8523f0ea593ecbd
     name: sftpgo
     type: application
     urls:
@@ -2416,9 +2416,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.5.23
-    created: "2026-11-14T23:45:28.908210638Z"
+    created: "2026-11-15T23:51:59.131350363Z"
     description: SGLang (converted from 1Panel appstore)
-    digest: 8380bb83a4c3b018c06a37e8389a657a81b45d9c7fe49dfe6f0e8c0a7e9c1999
+    digest: 2648f6b79bc6e044ddee66b399ae7b6601d67b7a4c7e558fb890c4c9c82e9322
     name: sglang
     type: application
     urls:
@@ -2431,9 +2431,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.9.6
-    created: "2026-11-14T23:45:28.908583141Z"
+    created: "2026-11-15T23:51:59.132252319Z"
     description: ShowDoc (converted from 1Panel appstore)
-    digest: 670b13a21dfe3fc236b4ea9bcf121afff302a8699e567203e3c39eb4d963c9fe
+    digest: f89761f20bcd9fadd0fbdc7e8223c8e8ddf2f3a4d010400be32b413d54ef90aa
     name: showdoc
     type: application
     urls:
@@ -2446,9 +2446,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2026.0.0+10-15
-    created: "2026-11-14T23:45:28.909021303Z"
+    created: "2026-11-15T23:51:59.132738057Z"
     description: Silo (converted from 1Panel appstore)
-    digest: 30470dd79b5673474e18468d5bb9baa1e0f965a7a4c4c3fc4eb0177acfea62ba
+    digest: 81d6d9a3fbbb9c12ac94e58ec91e7bef572700ebd741d763c66ab19f3526dafe
     name: silo
     type: application
     urls:
@@ -2461,9 +2461,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.8.10
-    created: "2026-11-14T23:45:28.909421637Z"
+    created: "2026-11-15T23:51:59.133167748Z"
     description: 思源笔记 (converted from 1Panel appstore)
-    digest: 5cf54bbc7bd0c6d8b832d8f173d750471fa34e2998cec0e6622f9980245dffdc
+    digest: a1b005584ab5a3fe69c0743d5064ead57889b37b989d33a0acc6da1b3cdf0f65
     name: siyuan
     type: application
     urls:
@@ -2476,9 +2476,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 26.11.0+community
-    created: "2026-11-14T23:45:28.910104649Z"
+    created: "2026-11-15T23:51:59.133571884Z"
     description: SonarQube (converted from 1Panel appstore)
-    digest: 2677641f2d8fb912a1c5baca8a2879fab8152293ef8692a25e73e73df69b7ee3
+    digest: 41b6743d6829fee2fffb6c84d072eb19ddaffe6629fe3cb50ef7a5351f275d91
     name: sonarqube
     type: application
     urls:
@@ -2491,9 +2491,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.10.3
-    created: "2026-11-14T23:45:28.910824917Z"
+    created: "2026-11-15T23:51:59.134025964Z"
     description: SQLBot (converted from 1Panel appstore)
-    digest: 51cb854f68404aedc8f82bf8e75fe60a2023569f158a7d9b4bf2255ba1a54a8e
+    digest: 6efa97f3133cbade994b1f1391899dee038ea5a6242d9d51dedf0f74c5f69374
     name: sqlbot
     type: application
     urls:
@@ -2506,9 +2506,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.1.0+alpine
-    created: "2026-11-14T23:45:28.911239313Z"
+    created: "2026-11-15T23:51:59.13437546Z"
     description: Stalwart Mail Server (converted from 1Panel appstore)
-    digest: 80f659803b7a0b89a1c65ece433ffc049eec56f725984ca9f0349bafd06bcb89
+    digest: 93d1846c9f31af7056d675648547eed1bc48921054e987d5cba0af54530a2345
     name: stalwart-mail
     type: application
     urls:
@@ -2521,9 +2521,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.3.0
-    created: "2026-11-14T23:45:28.91163516Z"
+    created: "2026-11-15T23:51:59.13475459Z"
     description: Stirling-PDF (converted from 1Panel appstore)
-    digest: cba898fd03f403222ecddc2c666f60131a42e8b274d719d0bacf0a94395742aa
+    digest: ef0d6ce50c4bc8b439f363141eb9bbd7ab976bdae855c644f43332ec94fd25c5
     name: stirling-pdf
     type: application
     urls:
@@ -2536,9 +2536,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.2.21
-    created: "2026-11-14T23:45:28.912146262Z"
+    created: "2026-11-15T23:51:59.13521369Z"
     description: Sub2API (converted from 1Panel appstore)
-    digest: c208d74f2aeddd97a136587d7166edda19bfc299bbfcacd1fc69ecd2fa45c469
+    digest: 1d8c4ee322d88d40cf71329890b29eb562063200ef4bf69ba15c1894081cd9d5
     name: sub2api
     type: application
     urls:
@@ -2551,9 +2551,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.8.1
-    created: "2026-11-14T23:45:28.912540428Z"
+    created: "2026-11-15T23:51:59.135595556Z"
     description: Sun-Panel (converted from 1Panel appstore)
-    digest: 0ff756b29e8651507f7f4e8f67bbb025f00c877e6f7716d9a2c6f554e00949c3
+    digest: 0f60641742072fe789e256614d78690de9ce7057bf367538fec8c158104f97a6
     name: sun-panel
     type: application
     urls:
@@ -2566,9 +2566,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.165.0
-    created: "2026-11-14T23:45:28.912930227Z"
+    created: "2026-11-15T23:51:59.135946525Z"
     description: Synapse (converted from 1Panel appstore)
-    digest: d8772ef8894472c07409e529d42f6b4e013d07109477000e7157706224efa493
+    digest: 9188cae4a41c09c18f63e009c6be2643ea1af9e7c4dfa1f5a1de5462755d2b6d
     name: synapse
     type: application
     urls:
@@ -2581,9 +2581,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.11.18
-    created: "2026-11-14T23:45:28.913564264Z"
+    created: "2026-11-15T23:51:59.136395645Z"
     description: Tailchat (converted from 1Panel appstore)
-    digest: 6e064512c445ee3faaf974cff723b7325776d724a7785e905007db843a2875a1
+    digest: 8021d64701a4167b3e0cbf11fec38be2dad806b9df7713168b9984bdf8dc835d
     name: tailchat
     type: application
     urls:
@@ -2596,9 +2596,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.0.0-d20261114.g3b2ef
-    created: "2026-11-14T23:45:28.914060624Z"
+    created: "2026-11-15T23:51:59.136776046Z"
     description: Teable (converted from 1Panel appstore)
-    digest: 69bd11204d8de3c3c1bca9468862eb32212d4f8fefcbaef1a391f2d6206a7ec3
+    digest: e067abcac8cb24c22bd424f348ef94629e70c756540ba9499708e3a0f703dd93
     name: teable
     type: application
     urls:
@@ -2611,9 +2611,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.13.9
-    created: "2026-11-14T23:45:28.914466176Z"
+    created: "2026-11-15T23:51:59.137258348Z"
     description: TeamSpeak Server (converted from 1Panel appstore)
-    digest: 17a6521897dbc74f8565720a31593565c3fdda066ac9ac9bb4c5b6f9370b547e
+    digest: fc8e39e7bbd4662f1cce85a8f1ddec7a43911dc9052d446673d5fe09cc9ceb31
     name: teamspeak
     type: application
     urls:
@@ -2626,9 +2626,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.2.7
-    created: "2026-11-14T23:45:28.914851959Z"
+    created: "2026-11-15T23:51:59.138147287Z"
     description: Tiny RDM (converted from 1Panel appstore)
-    digest: 5e2166027fc8039f6f255e16e221e4ce71eaca0689c730ba2536962afdd8ebf8
+    digest: 125e9f096102b8f6d4f72b9a7e65be036f749630528fd67e19ae2e3a3d820468
     name: tinyrdm
     type: application
     urls:
@@ -2641,9 +2641,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 10.1.43
-    created: "2026-11-14T23:45:28.915247717Z"
+    created: "2026-11-15T23:51:59.138572017Z"
     description: Apache Tomcat (converted from 1Panel appstore)
-    digest: 5463c1b5e40fef8922333efd4c3790bd6e5460005a059788172fac5412cf573f
+    digest: 91f68700878c31374495e4fe57996b504cd984f26a13d53249f016c13cda4358
     name: tomcat
     type: application
     urls:
@@ -2656,9 +2656,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 6.11.0
-    created: "2026-11-14T23:45:28.915959061Z"
+    created: "2026-11-15T23:51:59.138965792Z"
     description: TrendRadar (converted from 1Panel appstore)
-    digest: d4f0a907066cebe6202fb55563a46f41a5545bc7aa18dcba1b48d03d2b976e45
+    digest: 02ac6921873d065ba4ae945f5429eb18285a3763d79c648d1c4003517383730e
     name: trendradar
     type: application
     urls:
@@ -2671,9 +2671,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.107.0
-    created: "2026-11-14T23:45:28.916559238Z"
+    created: "2026-11-15T23:51:59.139322568Z"
     description: Trilium (converted from 1Panel appstore)
-    digest: 5cb86f0fcc5fef034803f5cd9fee8482286b9fc925da70ee990264fc7e220f41
+    digest: 71da64a53d1d4f6d49c2412d38927b7bb0a8ced10f9023e8245602b7be788114
     name: trilium
     type: application
     urls:
@@ -2686,9 +2686,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.58.0
-    created: "2026-11-14T23:45:28.917036449Z"
+    created: "2026-11-15T23:51:59.139756243Z"
     description: Twenty (converted from 1Panel appstore)
-    digest: a9dc2123a2c9882818ddc721e08857031fcdb12db4e4d017b0d74ac2400913ef
+    digest: c5e53c3213a0ff479e85e9a1e1692580308fc20ba68c8c35ee625c7cc66148ec
     name: twenty
     type: application
     urls:
@@ -2701,9 +2701,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.0.17
-    created: "2026-11-14T23:45:28.917426528Z"
+    created: "2026-11-15T23:51:59.140105798Z"
     description: Twikoo (converted from 1Panel appstore)
-    digest: 878498243277307cdcc39328111d9e590f219e485cb63534bf37971972be6415
+    digest: bd62421d4f00264655db5b552c2dac48bc9a2a77db3ec393a4578658cc425653
     name: twikoo
     type: application
     urls:
@@ -2716,9 +2716,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.3.0+php8.2-apache
-    created: "2026-11-14T23:45:28.917888926Z"
+    created: "2026-11-15T23:51:59.140538365Z"
     description: Typecho (converted from 1Panel appstore)
-    digest: 9b11b7eb5132d28ce7c15a23e9c94ea9fedc541dbf69ca93bea56e93fd239727
+    digest: 491604c4c279012b8ffc36bd1b6d2d4bf426dd1258820dbe74de32c86a8c8c4f
     name: typecho
     type: application
     urls:
@@ -2731,9 +2731,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-11-14T23:45:28.918285025Z"
+    created: "2026-11-15T23:51:59.140895849Z"
     description: Umami (converted from 1Panel appstore)
-    digest: 6046b4b6d91f2fae5b5190a429f772e88a421cc48ce625b8e6e9fd937ffad6cf
+    digest: 38c2be26d78fa0399fad6151eed6d6a94689164af216c68acc97cacc93e36b44
     name: umami
     type: application
     urls:
@@ -2746,9 +2746,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.0.0
-    created: "2026-11-14T23:45:28.918756897Z"
+    created: "2026-11-15T23:51:59.141335508Z"
     description: UPage (converted from 1Panel appstore)
-    digest: 6ac4a5bf8f09d48ce5ade223251d0765bf4a3b8bc0e56d75e092b446dcc0c3c8
+    digest: 6353335d03931b520444de1a9ba024f8a5d7d05de705c3b1143b6c69d9f54b47
     name: upage
     type: application
     urls:
@@ -2761,9 +2761,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.5.11
-    created: "2026-11-14T23:45:28.91918249Z"
+    created: "2026-11-15T23:51:59.14170196Z"
     description: Uptime Kuma (converted from 1Panel appstore)
-    digest: 3a9dae9bd7d5a0c9c344dbf03adfc8b5367de13d39c525830e454c1baf31d672
+    digest: f659e71f99123cce89c268ac5e2661430c10781e21223d98fae13197dded4566
     name: uptime-kuma
     type: application
     urls:
@@ -2776,9 +2776,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.12.2
-    created: "2026-11-14T23:45:28.919557827Z"
+    created: "2026-11-15T23:51:59.142065139Z"
     description: Vane (converted from 1Panel appstore)
-    digest: 4e75b0d737a089119748208769f816cd0dd327744fa197d88812c12050762f97
+    digest: 42a91aa52057b44a409aa4a02c0fde2131738c01a25906bf7dc8fbe825d5ccbe
     name: vane
     type: application
     urls:
@@ -2791,9 +2791,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.61.0+debian
-    created: "2026-11-14T23:45:28.919999023Z"
+    created: "2026-11-15T23:51:59.142460353Z"
     description: Vector (converted from 1Panel appstore)
-    digest: 7eb3ba847aca22ee3b029a61b3b670f1650ae821b005e67be60cc5374cafd378
+    digest: 78d3373bd3d8b237dacebb807a093bda096f51e379d38db2fd7e50fa04dc35ba
     name: vector
     type: application
     urls:
@@ -2806,9 +2806,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.1.0
-    created: "2026-11-14T23:45:28.920412428Z"
+    created: "2026-11-15T23:51:59.142852707Z"
     description: Verdaccio (converted from 1Panel appstore)
-    digest: 07194bef7a8bbef3c7420d9ce9b7235d7cef01a8774e0cd2b453b006a9f95785
+    digest: f20b321a30371dee57dd70f2eb8bbc0b1a34188f3e225128563fe79b26e7d5f4
     name: verdaccio
     type: application
     urls:
@@ -2821,9 +2821,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.43.6
-    created: "2026-11-14T23:45:28.920828156Z"
+    created: "2026-11-15T23:51:59.143669185Z"
     description: Waline (converted from 1Panel appstore)
-    digest: 3178d063eae0811ebbac3d22faa0da4dc04f88a929719c230f7e195920870df3
+    digest: 0394d2982ca10bc722ee091a5d3ff4a1a9aa59a8e11dc8d2ae32d77af0b811d7
     name: waline
     type: application
     urls:
@@ -2836,9 +2836,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.11.1
-    created: "2026-11-14T23:45:28.921569615Z"
+    created: "2026-11-15T23:51:59.14430625Z"
     description: Wallos (converted from 1Panel appstore)
-    digest: 0b911ffc6a4b97c18eafda2f13f93beb67ef47d5680a195ece8424694bca0381
+    digest: 4df1da3a3c90a7faea9de18c93546f51d48815f6e407ec3a68d97af62b958eae
     name: wallos
     type: application
     urls:
@@ -2847,9 +2847,9 @@ entries:
   warp:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-11-14T23:45:28.921969329Z"
+    created: "2026-11-15T23:51:59.144465251Z"
     description: Cloudflare WARP SOCKS5 proxy (for egress proxy in restricted networks)
-    digest: 616cf268a437289d4167e3fd92712079e95b2b7a22093c2c4d6e524552de1d3e
+    digest: badffef8ef654a7a7e75c8f0305983051967bd6eb805ce41aa1c3564c11f833e
     maintainers:
     - name: gclm
     name: warp
@@ -2864,9 +2864,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.4.0
-    created: "2026-11-14T23:45:28.92235442Z"
+    created: "2026-11-15T23:51:59.144831534Z"
     description: Web-Check (converted from 1Panel appstore)
-    digest: 6e1216c3e169507a2a84891fb2689961f0aab9e3d1d63a98a534a35c2896e6f5
+    digest: b1315b83329cf7f92af3a2a8a005cf75dc76b93d08b59128fc846ff4e2a2af0e
     name: web-check
     type: application
     urls:
@@ -2879,9 +2879,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-11-14T23:45:28.922722356Z"
+    created: "2026-11-15T23:51:59.14517176Z"
     description: WeChat Markdown Editor (converted from 1Panel appstore)
-    digest: 340b76e7f534d917b4a17f3aa66d4038fc469eeb3992b60ad911a1c12259488d
+    digest: 5bf056ee8f58d82265a3c58d5ed2e375c4f7ca2009879dde8f9d1cf9bb5f05ce
     name: wechatmarkdowneditor
     type: application
     urls:
@@ -2894,9 +2894,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 3.3.1
-    created: "2026-11-14T23:45:28.923127238Z"
+    created: "2026-11-15T23:51:59.145558641Z"
     description: Wiki.js (converted from 1Panel appstore)
-    digest: 6d1d33fdd906dc85f2a5fbd9fa8e69706df129f985b642410377ae72ea753246
+    digest: 53e4e5a3b8d52c9fc1d85447eafadfd8532a1bdc48651084b88202390275a166
     name: wikijs
     type: application
     urls:
@@ -2909,9 +2909,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.1.4
-    created: "2026-11-14T23:45:28.923551378Z"
+    created: "2026-11-15T23:51:59.145969908Z"
     description: WordPress (converted from 1Panel appstore)
-    digest: 9ff02272e0a30c71a38173918713a171ab3f3154adb4c2cb9706d5c44e0ed5cf
+    digest: 6110a91632e113be6b8f33331a48a8f457e41b926b1a68678cf5bf4c324c4750
     name: wordpress
     type: application
     urls:
@@ -2924,9 +2924,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.6.1
-    created: "2026-11-14T23:45:28.923951853Z"
+    created: "2026-11-15T23:51:59.146320743Z"
     description: XiaoMusic (converted from 1Panel appstore)
-    digest: a096279d13feb18ce471a9dd739edff0dc89a5a055a552f855719bf1f55062b1
+    digest: cf479b7a4e85473b862cbdc328a547fe7a78f80cb1398532bfdce88b98041c68
     name: xiaomusic
     type: application
     urls:
@@ -2939,9 +2939,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 0.4.9
-    created: "2026-11-14T23:45:28.924312908Z"
+    created: "2026-11-15T23:51:59.146674762Z"
     description: YesPlayMusic (converted from 1Panel appstore)
-    digest: 3a27659a0b344a0d8cae7c201311df3b5cc464c7476e58152dc20aad623cc499
+    digest: 463fb6b4fc254b69d0c954143e2f16661d0c332a4adb400a505de251cb5c9f37
     name: yesplaymusic
     type: application
     urls:
@@ -2954,9 +2954,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 1.10.6
-    created: "2026-11-14T23:45:28.924726072Z"
+    created: "2026-11-15T23:51:59.147062259Z"
     description: YOURLS (converted from 1Panel appstore)
-    digest: d024e495ac8e7db2897cbb058b97e62e2a2a8c2d76eb3bfacc9bd184432370ac
+    digest: 7fc1b5a476048734cb079ea890f161be6a9a93f331e20c56e33bb797b1dffc68
     name: yourls
     type: application
     urls:
@@ -2969,9 +2969,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-11-14T23:45:28.925120308Z"
+    created: "2026-11-15T23:51:59.147414908Z"
     description: Zabbix Agent (converted from 1Panel appstore)
-    digest: 3340649b51be0ea6d9c5965c45fe8636b07f9258e31e7f55f53f11450a5b4ded
+    digest: ab0c1a500df019b4aea5d3bd4b1beca394357bfbfa016d72e60d16ece80b4cce
     name: zabbix-agent
     type: application
     urls:
@@ -2984,9 +2984,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-11-14T23:45:28.925523367Z"
+    created: "2026-11-15T23:51:59.147819747Z"
     description: Zabbix Proxy (converted from 1Panel appstore)
-    digest: d5ec5284dfdce354c597bd693380cac7f7ce58dcc0e983229ab72a2d92ca12d3
+    digest: 8dac9c907596f568210e8f92f1e8a0d35be805898534efb6d57d8089114f83dd
     name: zabbix-proxy
     type: application
     urls:
@@ -2999,9 +2999,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 7.4.5
-    created: "2026-11-14T23:45:28.925978023Z"
+    created: "2026-11-15T23:51:59.148235504Z"
     description: Zabbix Server (converted from 1Panel appstore)
-    digest: 9af795cdf021c5332d6cfc81953388fe685fe1c97327c88f050b24cf3d380f23
+    digest: e1a2e5e070b58c3d9c1549623a84445fe251d35adb5d2b28358393d8953e10dd
     name: zabbix-server
     type: application
     urls:
@@ -3014,9 +3014,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 22.7.0
-    created: "2026-11-14T23:45:28.926355013Z"
+    created: "2026-11-15T23:51:59.148613238Z"
     description: 禅道 (converted from 1Panel appstore)
-    digest: 924faff87c46dc8f3a5ccae1f3ba21032802a9f424d6f03fe83016cd6d87885b
+    digest: cbf6507b68fbf0c3d88fe2758941ae556729aad7f7c27a8d5be2bd004ffb1044
     name: zentao
     type: application
     urls:
@@ -3029,9 +3029,9 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 5.1.1
-    created: "2026-11-14T23:45:28.92674363Z"
+    created: "2026-11-15T23:51:59.1495777Z"
     description: ZFile (converted from 1Panel appstore)
-    digest: b32c7a58d998d53b64a385a945cb9b3c71e7b96fa7cf7e616cb25651899ae7d2
+    digest: b008325244d05b14d19f31c4954c4dceb98f9efad071741cc28f7d187fed3c5d
     name: zfile
     type: application
     urls:
@@ -3044,12 +3044,12 @@ entries:
       upstream/sha: fe7ff6ad1df8c2104dd458e4a7c32d1771252566
     apiVersion: v2
     appVersion: 4.19.4
-    created: "2026-11-14T23:45:28.927209634Z"
+    created: "2026-11-15T23:51:59.150069038Z"
     description: ZITADEL (converted from 1Panel appstore)
-    digest: 07006d09ef30f49296e78e85d860bff380ff5cce0d9dd3f3f46051bbaa51f284
+    digest: 830a93443de9d72397a8fcf8d233a387f03d149fa71ab2e26894d6cf905a6522
     name: zitadel
     type: application
     urls:
     - https://charts.xzim.top/zitadel-4.19.4+g919904.tgz
     version: 4.19.4+g919904
-generated: "2026-11-14T23:45:28.834216351Z"
+generated: "2026-11-15T23:51:59.05959418Z"
