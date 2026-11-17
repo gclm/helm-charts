@@ -2,7 +2,7 @@
 
 一款功能强大无数据库的图床 2.0 版
 
-- 上游: 1Panel-dev/appstore `apps/easyimage2` @ `fe7ff6ad1df8`
+- 上游: 1Panel-dev/appstore `apps/easyimage2` @ `9afa0615a38e`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
