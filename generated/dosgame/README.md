@@ -2,7 +2,7 @@
 
 中文 DOS 游戏合集
 
-- 上游: 1Panel-dev/appstore `apps/dosgame` @ `9afa0615a38e`
+- 上游: 1Panel-dev/appstore `apps/dosgame` @ `f1cb26b6b292`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -2,7 +2,7 @@
 
 开源、美观的 Web JSON 浏览器
 
-- 上游: 1Panel-dev/appstore `apps/jsonhero` @ `9afa0615a38e`
+- 上游: 1Panel-dev/appstore `apps/jsonhero` @ `f1cb26b6b292`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

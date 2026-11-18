@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: lanol/filecodebox
-      tag: 2.8.5
+      tag: 2.9.0
     port: 12345
     volumeMounts:
     - mountPath: /app/data

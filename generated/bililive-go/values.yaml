@@ -14,7 +14,7 @@ services:
     image:
       registry: ''
       repository: chigusa/bililive-go
-      tag: v0.8.3
+      tag: v0.8.4
     port: 8080
     volumeMounts:
     - mountPath: /srv/bililive

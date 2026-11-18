@@ -2,7 +2,7 @@
 
 免费开源的漫画、杂志媒体服务
 
-- 上游: 1Panel-dev/appstore `apps/komga` @ `9afa0615a38e`
+- 上游: 1Panel-dev/appstore `apps/komga` @ `f1cb26b6b292`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

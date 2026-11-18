@@ -86,9 +86,9 @@
     },
     "bililive-go": {
       "chart": "bililive-go",
-      "sha": "bff7024a1369",
+      "sha": "acc88330c65b",
       "status": "success",
-      "version": "0.8.3+gdd048c"
+      "version": "0.8.4+g4d10c8"
     },
     "bitwarden": {
       "chart": "bitwarden",
@@ -158,9 +158,9 @@
     },
     "cloudbeaver": {
       "chart": "cloudbeaver",
-      "sha": "942aefac181d",
+      "sha": "adc6767fa2d2",
       "status": "success",
-      "version": "26.2.4+g3b4784"
+      "version": "26.2.5+g55a01a"
     },
     "cloudflared": {
       "chart": "cloudflared",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "b9db80e9bac3",
+      "sha": "73767bf6ebfb",
       "status": "success",
-      "version": "4.9.18+ge2cffa"
+      "version": "4.9.19+g7bf136"
     },
     "dataease": {
       "chart": "dataease",
@@ -296,9 +296,9 @@
     },
     "dvwa": {
       "chart": "dvwa",
-      "sha": "d02bd3c62c91",
+      "sha": "506e033b60c5",
       "status": "success",
-      "version": "0.0.0-d20261018.g80294+gec045a"
+      "version": "0.0.0-d20261118.g61167+g6c2b17"
     },
     "easyimage2": {
       "chart": "easyimage2",
@@ -332,9 +332,9 @@
     },
     "filecodebox": {
       "chart": "filecodebox",
-      "sha": "2d0cf8626ad2",
+      "sha": "0d1014737554",
       "status": "success",
-      "version": "2.8.5+g83de55"
+      "version": "2.9.0+g9474f7"
     },
     "firefly-iii": {
       "chart": "firefly-iii",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "1e0b2b8db8f7",
+      "sha": "730c044e1e19",
       "status": "success",
-      "version": "0.23.1+gd25442"
+      "version": "0.23.2+g9fe27e"
     },
     "huginn": {
       "chart": "huginn",
@@ -626,9 +626,9 @@
     },
     "meilisearch": {
       "chart": "meilisearch",
-      "sha": "793f139bf48d",
+      "sha": "9e51548ba503",
       "status": "success",
-      "version": "1.56.2+gf97743"
+      "version": "1.57.0+g821276"
     },
     "memos": {
       "chart": "memos",
@@ -758,9 +758,9 @@
     },
     "ntfy": {
       "chart": "ntfy",
-      "sha": "3ab227c7f7bf",
+      "sha": "89dbb36c6693",
       "status": "success",
-      "version": "2.38.0+g80a788"
+      "version": "2.38.1+g510766"
     },
     "obsidian_livesync": {
       "chart": "obsidian-livesync",
@@ -800,9 +800,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "83279579a448",
+      "sha": "fe994c15bdf1",
       "status": "success",
-      "version": "2026.11.3+ge5097c"
+      "version": "2026.11.4+g6ad51c"
     },
     "opengist": {
       "chart": "opengist",
@@ -980,9 +980,9 @@
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "981726d20f44",
+      "sha": "d61369ecd3f9",
       "status": "success",
-      "version": "1.1.0+alpine"
+      "version": "1.1.1+alpine"
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
@@ -992,9 +992,9 @@
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "18c56b3719c6",
+      "sha": "4c37abcfc2b0",
       "status": "success",
-      "version": "0.2.21+ga84c7f"
+      "version": "0.2.22+g5d53b7"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -1016,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "2b6bc6f6106b",
+      "sha": "a7feb9e28f9e",
       "status": "success",
-      "version": "0.0.0-d20261117.g0fe7f+g45ee11"
+      "version": "0.0.0-d20261118.gab51e+g62e0ce"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1052,9 +1052,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "fd3e4231a95d",
+      "sha": "34d4a878248f",
       "status": "success",
-      "version": "2.58.2+g8abde8"
+      "version": "2.59.1+g9fc8fb"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1094,15 +1094,21 @@
     },
     "vector": {
       "chart": "vector",
-      "sha": "ab223083d001",
+      "sha": "02a2bb497835",
       "status": "success",
-      "version": "0.61.0+debian"
+      "version": "0.62.0+debian"
     },
     "verdaccio": {
       "chart": "verdaccio",
       "sha": "81c2974bea54",
       "status": "success",
       "version": "7.1.1+gca4513"
+    },
+    "vllm": {
+      "chart": "vllm",
+      "sha": "5663c250cd4d",
+      "status": "success",
+      "version": "0.34.0+g630414"
     },
     "waline": {
       "chart": "waline",
@@ -1195,5 +1201,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "9afa0615a38ed92af719a5826f09e8cb262d04ab"
+  "upstream_sha": "f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3"
 }

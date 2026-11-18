@@ -1,0 +1,35 @@
+configMaps: {}
+env:
+  MODEL: facebook/opt-125m
+  PANEL_APP_PORT_HTTP: 8800
+persistence:
+  vol-cache-huggingface:
+    mountPath: /root/.cache/huggingface
+    size: 10Gi
+secrets: {}
+services:
+  vllm:
+    command:
+    - ${START_COMMAND:---model ${MODEL}}
+    env:
+    - name: HUGGING_FACE_HUB_TOKEN
+      value: ${HUGGING_FACE_HUB_TOKEN:-}
+    - name: HF_ENDPOINT
+      value: https://hf-mirror.com
+    - name: MODEL
+      valueFromEnv: MODEL
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: ${IMAGE:-vllm/vllm
+      tag: v0.34.0}
+    port: 8000
+    probe:
+      exec: curl -fsS http://127.0.0.1:8000/health || exit 1
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 10
+    volumeMounts:
+    - mountPath: /root/.cache/huggingface
+      name: vol-cache-huggingface

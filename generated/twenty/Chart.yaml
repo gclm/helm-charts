@@ -2,9 +2,9 @@ apiVersion: v2
 name: twenty
 description: Twenty (converted from 1Panel appstore)
 type: application
-version: 2.58.2+g8abde8
-appVersion: 2.58.2
+version: 2.59.1+g9fc8fb
+appVersion: 2.59.1
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 9afa0615a38ed92af719a5826f09e8cb262d04ab
+  upstream/sha: f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3
