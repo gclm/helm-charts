@@ -2,9 +2,9 @@ apiVersion: v2
 name: nocobase
 description: NocoBase (converted from 1Panel appstore)
 type: application
-version: 2.2.46+g8821a4
-appVersion: 2.2.46
+version: 2.2.48+g5ab140
+appVersion: 2.2.48
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3
+  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d

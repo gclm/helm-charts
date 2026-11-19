@@ -2,9 +2,9 @@ apiVersion: v2
 name: ollama-webui
 description: OpenWebUI (converted from 1Panel appstore)
 type: application
-version: 0.13.3+g68dc8f
-appVersion: 0.13.3
+version: 0.13.4+gac8b34
+appVersion: 0.13.4
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3
+  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d

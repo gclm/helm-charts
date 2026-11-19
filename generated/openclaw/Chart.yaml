@@ -2,9 +2,9 @@ apiVersion: v2
 name: openclaw
 description: OpenClaw (converted from 1Panel appstore)
 type: application
-version: 2026.11.4+g6ad51c
-appVersion: 2026.11.4
+version: 2026.11.5+g9ab285
+appVersion: 2026.11.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3
+  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d

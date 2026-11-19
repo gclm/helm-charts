@@ -2,7 +2,7 @@
 
 开源的个人财务管理工具
 
-- 上游: 1Panel-dev/appstore `apps/firefly-iii` @ `f1cb26b6b292`
+- 上游: 1Panel-dev/appstore `apps/firefly-iii` @ `e8549e6df6ca`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

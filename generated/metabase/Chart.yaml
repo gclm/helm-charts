@@ -2,9 +2,9 @@ apiVersion: v2
 name: metabase
 description: Metabase (converted from 1Panel appstore)
 type: application
-version: 0.65.4+ge2fd01
-appVersion: 0.65.4
+version: 0.65.5+g6157dd
+appVersion: 0.65.5
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: f1cb26b6b292aa6ad2a6e3b91f544fc034bc61d3
+  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d
