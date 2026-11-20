@@ -2,7 +2,7 @@
 
 动态服务发现、配置管理和服务管理平台
 
-- 上游: 1Panel-dev/appstore `apps/nacos` @ `e8549e6df6ca`
+- 上游: 1Panel-dev/appstore `apps/nacos` @ `5934f90d31a6`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

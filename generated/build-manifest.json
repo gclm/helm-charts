@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "762851d07c53",
+      "sha": "972d101b61e4",
       "status": "success",
-      "version": "1.7.0+postgres"
+      "version": "1.7.0+g098359"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -230,9 +230,9 @@
     },
     "dbhub": {
       "chart": "dbhub",
-      "sha": "b33bd0195b5d",
+      "sha": "ac43e058f07e",
       "status": "success",
-      "version": "1.7.1+gec0889"
+      "version": "2.0.0+gf02620"
     },
     "dbx": {
       "chart": "dbx",
@@ -242,9 +242,9 @@
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
-      "sha": "e21394111a1a",
+      "sha": "f01972b55d61",
       "status": "success",
-      "version": "0.2.2+rc.3"
+      "version": "0.2.2+rc.5"
     },
     "discourse": {
       "chart": "discourse",
@@ -374,9 +374,9 @@
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "b40816246d1f",
+      "sha": "8b57148575b0",
       "status": "success",
-      "version": "28.3.2+gf55b42"
+      "version": "28.4.0+geaa225"
     },
     "glance": {
       "chart": "glance",
@@ -428,9 +428,9 @@
     },
     "huginn": {
       "chart": "huginn",
-      "sha": "1707bd4941cf",
+      "sha": "411a474b5e00",
       "status": "success",
-      "version": "2026.11.18+g8d1fea"
+      "version": "2026.11.19+gfc0c2f"
     },
     "it-tools": {
       "chart": "it-tools",
@@ -500,9 +500,9 @@
     },
     "kodbox": {
       "chart": "kodbox",
-      "sha": "412042727972",
+      "sha": "9d49289d51a3",
       "status": "success",
-      "version": "1.71.03+geebeeb"
+      "version": "1.71.04+g42ad1a"
     },
     "koishi": {
       "chart": "koishi",
@@ -524,9 +524,9 @@
     },
     "langbot": {
       "chart": "langbot",
-      "sha": "fbb3bb0fe955",
+      "sha": "67cfb119dcdf",
       "status": "success",
-      "version": "4.11.8+g1b19da"
+      "version": "4.11.9+g1340f7"
     },
     "langflow": {
       "chart": "langflow",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "b542c8002271",
+      "sha": "f1966e686ece",
       "status": "success",
-      "version": "0.1.4455+g2e396d"
+      "version": "0.1.4516+gae62a8"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -638,9 +638,9 @@
     },
     "metabase": {
       "chart": "metabase",
-      "sha": "e7a21da7eb61",
+      "sha": "97eb8efe6f82",
       "status": "success",
-      "version": "0.65.5+g6157dd"
+      "version": "0.65.6+g00b3cd"
     },
     "miniflux": {
       "chart": "miniflux",
@@ -656,9 +656,9 @@
     },
     "mliev-dwz": {
       "chart": "mliev-dwz",
-      "sha": "b83fb0d6c3c0",
+      "sha": "52e7fc61d957",
       "status": "success",
-      "version": "2.24.1+ga5631d"
+      "version": "2.25.0+g05633d"
     },
     "mongo-express": {
       "chart": "mongo-express",
@@ -716,21 +716,21 @@
     },
     "nexus": {
       "chart": "nexus",
-      "sha": "19cf3ceb743e",
+      "sha": "b65eb04bf369",
       "status": "success",
-      "version": "3.98.1+g0bef40"
+      "version": "3.98.2+g51e4e0"
     },
     "nezha": {
       "chart": "nezha",
-      "sha": "093366b0c59a",
+      "sha": "b2187e4b0962",
       "status": "success",
-      "version": "2.6.1+gd89d46"
+      "version": "2.6.2+gf31b11"
     },
     "nginx-proxy-manager": {
       "chart": "nginx-proxy-manager",
-      "sha": "99f444638789",
+      "sha": "d791d00a296c",
       "status": "success",
-      "version": "2.17.0+g4c0379"
+      "version": "2.17.1+g34f3c0"
     },
     "nocobase": {
       "chart": "nocobase",
@@ -896,9 +896,9 @@
     },
     "redpanda-console": {
       "chart": "redpanda-console",
-      "sha": "e58ff52bdae0",
+      "sha": "4622339b73f6",
       "status": "success",
-      "version": "3.14.0+gac4809"
+      "version": "3.15.0+gc15886"
     },
     "rocketmq": {
       "chart": "rocketmq",
@@ -950,9 +950,9 @@
     },
     "showdoc": {
       "chart": "showdoc",
-      "sha": "406728cb0f1c",
+      "sha": "3f1a5cc9a64d",
       "status": "success",
-      "version": "3.9.6+gf494cb"
+      "version": "3.9.7+gf25021"
     },
     "silo": {
       "chart": "silo",
@@ -986,9 +986,9 @@
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
-      "sha": "d9ca412801ae",
+      "sha": "4f1e5d403d60",
       "status": "success",
-      "version": "3.3.0+gffe756"
+      "version": "3.4.0+ga480a5"
     },
     "sub2api": {
       "chart": "sub2api",
@@ -1016,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "f2f6c6bfea32",
+      "sha": "a06e3270902b",
       "status": "success",
-      "version": "0.0.0-d20261119.g17086+gc77cb5"
+      "version": "0.0.0-d20261120.g6d33b+g636270"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1100,9 +1100,9 @@
     },
     "verdaccio": {
       "chart": "verdaccio",
-      "sha": "81c2974bea54",
+      "sha": "0bd5a4040da7",
       "status": "success",
-      "version": "7.1.1+gca4513"
+      "version": "7.1.2+gafa91a"
     },
     "vllm": {
       "chart": "vllm",
@@ -1112,15 +1112,15 @@
     },
     "waline": {
       "chart": "waline",
-      "sha": "e718d0236be2",
+      "sha": "9a39ca24b0a9",
       "status": "success",
-      "version": "1.43.7+g477785"
+      "version": "1.43.8+g864766"
     },
     "wallos": {
       "chart": "wallos",
-      "sha": "843f4247131e",
+      "sha": "154de3b437ad",
       "status": "success",
-      "version": "5.11.1+gb42792"
+      "version": "5.11.2+gbe2948"
     },
     "web-check": {
       "chart": "web-check",
@@ -1142,9 +1142,9 @@
     },
     "wordpress": {
       "chart": "wordpress",
-      "sha": "12bee175004d",
+      "sha": "db1fa1808fa2",
       "status": "success",
-      "version": "7.1.4+g016506"
+      "version": "7.1.5+g869f50"
     },
     "xiaomusic": {
       "chart": "xiaomusic",
@@ -1201,5 +1201,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "e8549e6df6cabb12c18d7901eeb473bac4d8ed7d"
+  "upstream_sha": "5934f90d31a6b25447581161deebb151636537f8"
 }

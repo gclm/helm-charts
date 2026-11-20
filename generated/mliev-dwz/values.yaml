@@ -39,6 +39,6 @@ services:
     image:
       registry: docker.cnb.cool
       repository: mliev/dwz/dwz-server
-      tag: v2.24.1
+      tag: v2.25.0
     port: 8080
     volumeMounts: []

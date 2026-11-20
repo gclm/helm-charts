@@ -42,7 +42,7 @@ services:
     image:
       registry: ''
       repository: wordpress
-      tag: 7.1.4
+      tag: 7.1.5
     port: 80
     volumeMounts:
     - mountPath: /var/www/html

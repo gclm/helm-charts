@@ -2,9 +2,9 @@ apiVersion: v2
 name: langbot
 description: LangBot (converted from 1Panel appstore)
 type: application
-version: 4.11.8+g1b19da
-appVersion: 4.11.8
+version: 4.11.9+g1340f7
+appVersion: 4.11.9
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d
+  upstream/sha: 5934f90d31a6b25447581161deebb151636537f8

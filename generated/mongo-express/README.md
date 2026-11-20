@@ -2,7 +2,7 @@
 
 基于 Web 的 MongoDB 管理界面
 
-- 上游: 1Panel-dev/appstore `apps/mongo-express` @ `e8549e6df6ca`
+- 上游: 1Panel-dev/appstore `apps/mongo-express` @ `5934f90d31a6`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

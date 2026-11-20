@@ -2,9 +2,9 @@ apiVersion: v2
 name: redpanda-console
 description: Redpanda Console (converted from 1Panel appstore)
 type: application
-version: 3.14.0+gac4809
-appVersion: 3.14.0
+version: 3.15.0+gc15886
+appVersion: 3.15.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: e8549e6df6cabb12c18d7901eeb473bac4d8ed7d
+  upstream/sha: 5934f90d31a6b25447581161deebb151636537f8

@@ -2,7 +2,7 @@
 
 基于大模型的可视化网页构建平台
 
-- 上游: 1Panel-dev/appstore `apps/upage` @ `e8549e6df6ca`
+- 上游: 1Panel-dev/appstore `apps/upage` @ `5934f90d31a6`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
