@@ -2,9 +2,9 @@ apiVersion: v2
 name: ai-gateway
 description: 1Panel AI 网关 (converted from 1Panel appstore)
 type: application
-version: 1.7.0+g098359
-appVersion: 1.7.0
+version: 1.7.0+postgres
+appVersion: 1.7.0+postgres
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 5934f90d31a6b25447581161deebb151636537f8
+  upstream/sha: b256fbfd9b69a2dfb8c52ce5dd5b195bd680ab47

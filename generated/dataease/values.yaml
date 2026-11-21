@@ -47,6 +47,11 @@ secrets:
 services:
   dataease:
     env:
+    - name: JAVA_OPTIONS
+      value: -Dfile.encoding=utf-8 -Dloader.path=/opt/dataease3.0/data/driver/mariadb-java-client-3.3.7.jar,/opt/apps,/opt/dataease3.0/data/driver/
+        -Dspring.config.additional-location=/opt/apps/config/
+    - name: JAVA_TOOL_OPTIONS
+      value: ${JAVA_TOOL_OPTIONS:-} -XX:-UseBASE64Intrinsics
     - name: PANEL_DB_HOST
       valueFromEnv: PANEL_DB_HOST
     - name: PANEL_DB_USER
@@ -60,7 +65,7 @@ services:
     image:
       registry: registry.cn-qingdao.aliyuncs.com
       repository: dataease/dataease
-      tag: v3.1.0
+      tag: v3.3.1
     port: 8100
     volumeMounts:
     - mountPath: /opt/dataease3.0/logs

@@ -2,7 +2,7 @@
 
 Minecraft 服务器控制面板（前端）
 
-- 上游: 1Panel-dev/appstore `apps/mcsmanager-web` @ `5934f90d31a6`
+- 上游: 1Panel-dev/appstore `apps/mcsmanager-web` @ `b256fbfd9b69`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

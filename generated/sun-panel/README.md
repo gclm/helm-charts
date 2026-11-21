@@ -2,7 +2,7 @@
 
 一个服务器、NAS 导航面板、首页与浏览器起始页
 
-- 上游: 1Panel-dev/appstore `apps/sun-panel` @ `5934f90d31a6`
+- 上游: 1Panel-dev/appstore `apps/sun-panel` @ `b256fbfd9b69`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

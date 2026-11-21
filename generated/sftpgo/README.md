@@ -2,7 +2,7 @@
 
 功能齐全且高度可配置的 SFTP 服务器
 
-- 上游: 1Panel-dev/appstore `apps/sftpgo` @ `5934f90d31a6`
+- 上游: 1Panel-dev/appstore `apps/sftpgo` @ `b256fbfd9b69`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

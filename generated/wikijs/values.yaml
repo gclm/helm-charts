@@ -24,6 +24,6 @@ services:
     image:
       registry: ''
       repository: requarks/wiki
-      tag: 3.4.0
+      tag: 3.5.0
     port: 3000
     volumeMounts: []

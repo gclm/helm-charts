@@ -17,6 +17,6 @@ services:
     image:
       registry: ''
       repository: foxcpp/maddy
-      tag: 0.9.7
+      tag: 0.9.8
     port: 25
     volumeMounts: []

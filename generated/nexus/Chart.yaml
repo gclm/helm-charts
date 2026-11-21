@@ -2,9 +2,9 @@ apiVersion: v2
 name: nexus
 description: Nexus Repository (converted from 1Panel appstore)
 type: application
-version: 3.98.2+g51e4e0
-appVersion: 3.98.2
+version: 3.98.3+g856657
+appVersion: 3.98.3
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 5934f90d31a6b25447581161deebb151636537f8
+  upstream/sha: b256fbfd9b69a2dfb8c52ce5dd5b195bd680ab47
