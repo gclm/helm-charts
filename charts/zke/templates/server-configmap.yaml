@@ -1,0 +1,28 @@
+{{- $publicHTTPURL := .Values.server.agentInstall.publicHTTPURL -}}
+{{- $publicQUICAddress := .Values.server.agentInstall.publicQUICAddress -}}
+{{- if ne (empty $publicHTTPURL) (empty $publicQUICAddress) -}}
+{{- fail "server.agentInstall.publicHTTPURL and server.agentInstall.publicQUICAddress must be configured together" -}}
+{{- end -}}
+{{- $serviceHost := printf "%s.%s.svc.%s" (include "zke.server.fullname" .) .Release.Namespace (trimSuffix "." (default "cluster.local" .Values.clusterDomain)) -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "zke.server.configName" . }}
+  labels:
+    {{- include "zke.labels" . | nindent 4 }}
+    {{- include "zke.server.selectorLabels" . | nindent 4 }}
+data:
+  zke-server.yaml: |
+    agent_pki:
+      directory: data/pki
+    helm:
+      cache:
+        directory: data/helm
+    agent_install:
+      {{- if and (empty $publicHTTPURL) (empty $publicQUICAddress) }}
+      public_http_url: {{ printf "http://%s:%v" $serviceHost .Values.server.service.httpPort | quote }}
+      public_quic_address: {{ printf "%s:%v" $serviceHost .Values.server.service.agentQUICPort | quote }}
+      {{- else }}
+      public_http_url: {{ .Values.server.agentInstall.publicHTTPURL | quote }}
+      public_quic_address: {{ .Values.server.agentInstall.publicQUICAddress | quote }}
+      {{- end }}
