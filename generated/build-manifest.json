@@ -2,9 +2,9 @@
   "apps": {
     "2fauth": {
       "chart": "app-2fauth",
-      "sha": "a8af99e95822",
+      "sha": "900e25cdc6f3",
       "status": "success",
-      "version": "9.0.1+g94a183"
+      "version": "9.0.2+g7583fa"
     },
     "adguardhome": {
       "chart": "adguardhome",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "1b9277ac30d0",
+      "sha": "1235097b8340",
       "status": "success",
-      "version": "2.64.0+gb43cdb"
+      "version": "2.64.1+g927160"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -122,15 +122,15 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "950e7e673ccb",
+      "sha": "a389582ad39c",
       "status": "success",
-      "version": "4.29.0+g810011"
+      "version": "4.30.0+gfc639c"
     },
     "certd": {
       "chart": "certd",
-      "sha": "bc23a4172056",
+      "sha": "4190f6beaa21",
       "status": "success",
-      "version": "1.47.1+g036dda"
+      "version": "1.47.2+g1229aa"
     },
     "certimate": {
       "chart": "certimate",
@@ -176,9 +176,9 @@
     },
     "code-server": {
       "chart": "code-server",
-      "sha": "2c98a795283b",
+      "sha": "1161a729bd75",
       "status": "success",
-      "version": "4.145.2+g8d7163"
+      "version": "4.146.0+g23da57"
     },
     "comfyui": {
       "chart": "comfyui",
@@ -212,15 +212,15 @@
     },
     "cyberchef": {
       "chart": "cyberchef",
-      "sha": "612648ab0832",
+      "sha": "3a0457d0d691",
       "status": "success",
-      "version": "11.5.0+g67cfb8"
+      "version": "11.6.0+g134b78"
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "73767bf6ebfb",
+      "sha": "461ff930383c",
       "status": "success",
-      "version": "4.9.19+g7bf136"
+      "version": "4.9.20+g879a86"
     },
     "dataease": {
       "chart": "dataease",
@@ -230,9 +230,9 @@
     },
     "dbhub": {
       "chart": "dbhub",
-      "sha": "ac43e058f07e",
+      "sha": "7325fa110da2",
       "status": "success",
-      "version": "2.0.0+gf02620"
+      "version": "2.0.1+g5dfa4b"
     },
     "dbx": {
       "chart": "dbx",
@@ -266,9 +266,9 @@
     },
     "docmost": {
       "chart": "docmost",
-      "sha": "de870dbb9556",
+      "sha": "bfd771ee4338",
       "status": "success",
-      "version": "0.97.0+gdbda58"
+      "version": "0.98.0+gf521da"
     },
     "domain-admin": {
       "chart": "domain-admin",
@@ -320,9 +320,9 @@
     },
     "ezbookkeeping": {
       "chart": "ezbookkeeping",
-      "sha": "08bd88a1df8a",
+      "sha": "ab54ac874b70",
       "status": "success",
-      "version": "2.1.1+gbd4d6b"
+      "version": "2.2.0+g94f222"
     },
     "filebrowser": {
       "chart": "filebrowser",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "dc51fa3029f7",
+      "sha": "e3c3ae47b908",
       "status": "success",
-      "version": "0.1.4584+g767633"
+      "version": "0.1.4642+gc645cd"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -632,9 +632,9 @@
     },
     "memos": {
       "chart": "memos",
-      "sha": "d8769b26b103",
+      "sha": "f38bff9197c0",
       "status": "success",
-      "version": "26.11.1+gdf3845"
+      "version": "26.11.2+g1e8315"
     },
     "metabase": {
       "chart": "metabase",
@@ -734,9 +734,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "ca609ed6d596",
+      "sha": "fecfca64390d",
       "status": "success",
-      "version": "2.2.49+g0eeb7c"
+      "version": "2.2.50+g024eef"
     },
     "node": {
       "chart": "node",
@@ -752,9 +752,9 @@
     },
     "nodebb": {
       "chart": "nodebb",
-      "sha": "aabfd9352738",
+      "sha": "cc32d1044a59",
       "status": "success",
-      "version": "4.16.8+gcf0076"
+      "version": "4.16.9+ga03d64"
     },
     "ntfy": {
       "chart": "ntfy",
@@ -782,9 +782,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "2d276c51ae1d",
+      "sha": "e66261b6451b",
       "status": "success",
-      "version": "0.40.16+g107fe7"
+      "version": "0.40.17+g6a5c14"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -806,9 +806,9 @@
     },
     "opengist": {
       "chart": "opengist",
-      "sha": "4b3b55db18a3",
+      "sha": "3b4571dcd3a4",
       "status": "success",
-      "version": "1.15.3+gbd1710"
+      "version": "1.16.0+g684cc1"
     },
     "openlitespeed": {
       "chart": "openlitespeed",
@@ -950,9 +950,9 @@
     },
     "showdoc": {
       "chart": "showdoc",
-      "sha": "3f1a5cc9a64d",
+      "sha": "943e713dccec",
       "status": "success",
-      "version": "3.9.7+gf25021"
+      "version": "3.9.8+ga56994"
     },
     "silo": {
       "chart": "silo",
@@ -986,15 +986,15 @@
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
-      "sha": "4f1e5d403d60",
+      "sha": "4c155badd264",
       "status": "success",
-      "version": "3.4.0+ga480a5"
+      "version": "3.5.0+g29917f"
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "c1fbaca76e85",
+      "sha": "288171195f79",
       "status": "success",
-      "version": "0.2.23+g0caa38"
+      "version": "0.2.24+g528107"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -1010,15 +1010,15 @@
     },
     "tailchat": {
       "chart": "tailchat",
-      "sha": "ad9ce23233f4",
+      "sha": "560853958b23",
       "status": "success",
-      "version": "1.11.20+g7b6713"
+      "version": "1.11.22+g5ec501"
     },
     "teable": {
       "chart": "teable",
-      "sha": "ae83567c934f",
+      "sha": "493222dffb3d",
       "status": "success",
-      "version": "0.0.0-d20261121.g24202+g1edd87"
+      "version": "0.0.0-d20261123.gbb791+gd7e37d"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1040,9 +1040,9 @@
     },
     "trendradar": {
       "chart": "trendradar",
-      "sha": "99c56a98f447",
+      "sha": "8cf18808ae07",
       "status": "success",
-      "version": "6.11.0+g6dd2ca"
+      "version": "6.12.0+gf5c790"
     },
     "trilium": {
       "chart": "trilium",
@@ -1052,9 +1052,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "38fafd9d0ccd",
+      "sha": "badc09fae837",
       "status": "success",
-      "version": "2.59.3+g92c68d"
+      "version": "2.60.3+g833248"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1118,9 +1118,9 @@
     },
     "wallos": {
       "chart": "wallos",
-      "sha": "154de3b437ad",
+      "sha": "43ab55725b37",
       "status": "success",
-      "version": "5.11.2+gbe2948"
+      "version": "5.11.3+gf0496c"
     },
     "web-check": {
       "chart": "web-check",
@@ -1201,5 +1201,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "b256fbfd9b69a2dfb8c52ce5dd5b195bd680ab47"
+  "upstream_sha": "9b9032d60dfc67a7c987d087ee19c462ce18506d"
 }

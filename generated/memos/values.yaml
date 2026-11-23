@@ -15,7 +15,7 @@ services:
     image:
       registry: ''
       repository: neosmemo/memos
-      tag: 26.11.1
+      tag: 26.11.2
     port: 5230
     volumeMounts:
     - mountPath: /var/opt/memos

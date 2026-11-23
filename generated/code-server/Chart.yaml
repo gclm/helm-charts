@@ -2,9 +2,9 @@ apiVersion: v2
 name: code-server
 description: code-server (converted from 1Panel appstore)
 type: application
-version: 4.145.2+g8d7163
-appVersion: 4.145.2
+version: 4.146.0+g23da57
+appVersion: 4.146.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: b256fbfd9b69a2dfb8c52ce5dd5b195bd680ab47
+  upstream/sha: 9b9032d60dfc67a7c987d087ee19c462ce18506d

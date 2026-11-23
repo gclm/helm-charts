@@ -14,7 +14,7 @@ services:
     image:
       registry: ghcr.io
       repository: thomiceli/opengist
-      tag: 1.15.3
+      tag: 1.16.0
     port: 6157
     volumeMounts:
     - mountPath: /opengist

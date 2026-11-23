@@ -2,7 +2,7 @@
 
 幻兽帕鲁服务端
 
-- 上游: 1Panel-dev/appstore `apps/palworld` @ `b256fbfd9b69`
+- 上游: 1Panel-dev/appstore `apps/palworld` @ `9b9032d60dfc`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

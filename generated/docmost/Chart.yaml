@@ -2,9 +2,9 @@ apiVersion: v2
 name: docmost
 description: Docmost (converted from 1Panel appstore)
 type: application
-version: 0.97.0+gdbda58
-appVersion: 0.97.0
+version: 0.98.0+gf521da
+appVersion: 0.98.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: b256fbfd9b69a2dfb8c52ce5dd5b195bd680ab47
+  upstream/sha: 9b9032d60dfc67a7c987d087ee19c462ce18506d
