@@ -2,7 +2,7 @@
 
 用于监控和可观察的开源平台
 
-- 上游: 1Panel-dev/appstore `apps/grafana` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/grafana` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

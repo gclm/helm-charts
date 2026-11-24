@@ -2,7 +2,7 @@
 
 高性能、轻量级、开源的 HTTP 服务器
 
-- 上游: 1Panel-dev/appstore `apps/openlitespeed` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/openlitespeed` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

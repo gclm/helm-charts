@@ -2,7 +2,7 @@
 
 跨平台的开源 BitTorrent 客户端
 
-- 上游: 1Panel-dev/appstore `apps/qbittorrent` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/qbittorrent` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

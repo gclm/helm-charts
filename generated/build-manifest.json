@@ -26,9 +26,9 @@
     },
     "ai-gateway": {
       "chart": "ai-gateway",
-      "sha": "762851d07c53",
+      "sha": "f85ceeee205a",
       "status": "success",
-      "version": "1.7.0+postgres"
+      "version": "1.8.0+postgres"
     },
     "ai-portal": {
       "chart": "ai-portal",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "1235097b8340",
+      "sha": "f6226901e5c6",
       "status": "success",
-      "version": "2.64.1+g927160"
+      "version": "2.64.2+gdd83ff"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -230,9 +230,9 @@
     },
     "dbhub": {
       "chart": "dbhub",
-      "sha": "7325fa110da2",
+      "sha": "adfae4d3e17f",
       "status": "success",
-      "version": "2.0.1+g5dfa4b"
+      "version": "2.1.0+g3949bb"
     },
     "dbx": {
       "chart": "dbx",
@@ -422,9 +422,9 @@
     },
     "hermes-agent": {
       "chart": "hermes-agent",
-      "sha": "730c044e1e19",
+      "sha": "a7b5ab77bd7d",
       "status": "success",
-      "version": "0.23.2+g9fe27e"
+      "version": "0.23.3+g6b6001"
     },
     "huginn": {
       "chart": "huginn",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "e3c3ae47b908",
+      "sha": "5d881a898814",
       "status": "success",
-      "version": "0.1.4642+gc645cd"
+      "version": "0.1.4689+gcfb823"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -734,9 +734,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "fecfca64390d",
+      "sha": "9b974b85d53b",
       "status": "success",
-      "version": "2.2.50+g024eef"
+      "version": "2.2.51+g759023"
     },
     "node": {
       "chart": "node",
@@ -800,9 +800,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "e9189e76458f",
+      "sha": "8b7a2ef28e93",
       "status": "success",
-      "version": "2026.11.5+g9ab285"
+      "version": "2026.11.7+g76aa3f"
     },
     "opengist": {
       "chart": "opengist",
@@ -1016,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "493222dffb3d",
+      "sha": "15b4b2087f03",
       "status": "success",
-      "version": "0.0.0-d20261123.gbb791+gd7e37d"
+      "version": "0.0.0-d20261124.gc7ade+g71b701"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1124,9 +1124,9 @@
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "0fa10856c971",
+      "sha": "d0376c1b042f",
       "status": "success",
-      "version": "2.4.2+gee3e22"
+      "version": "2.4.4+ga3c20b"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1201,5 +1201,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "9b9032d60dfc67a7c987d087ee19c462ce18506d"
+  "upstream_sha": "b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b"
 }

@@ -2,9 +2,9 @@ apiVersion: v2
 name: dbhub
 description: DBHub (converted from 1Panel appstore)
 type: application
-version: 2.0.1+g5dfa4b
-appVersion: 2.0.1
+version: 2.1.0+g3949bb
+appVersion: 2.1.0
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 9b9032d60dfc67a7c987d087ee19c462ce18506d
+  upstream/sha: b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b

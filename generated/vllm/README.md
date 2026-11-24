@@ -2,7 +2,7 @@
 
 用于大语言模型的高吞吐量和内存高效的推理和服务引擎
 
-- 上游: 1Panel-dev/appstore `apps/vllm` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/vllm` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

@@ -2,7 +2,7 @@
 
 企业一站式管理专家
 
-- 上游: 1Panel-dev/appstore `apps/odoo` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/odoo` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

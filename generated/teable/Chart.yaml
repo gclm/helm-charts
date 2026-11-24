@@ -2,9 +2,9 @@ apiVersion: v2
 name: teable
 description: Teable (converted from 1Panel appstore)
 type: application
-version: 0.0.0-d20261123.gbb791+gd7e37d
-appVersion: 0.0.0-d20261123.gbb791
+version: 0.0.0-d20261124.gc7ade+g71b701
+appVersion: 0.0.0-d20261124.gc7ade
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 9b9032d60dfc67a7c987d087ee19c462ce18506d
+  upstream/sha: b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b

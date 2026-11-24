@@ -2,7 +2,7 @@
 
 Jev 开源替代：自托管的 Laya 决策引擎 API 与控制台
 
-- 上游: 1Panel-dev/appstore `apps/laya-server` @ `9b9032d60dfc`
+- 上游: 1Panel-dev/appstore `apps/laya-server` @ `b1efb5a24f3b`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
