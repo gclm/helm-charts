@@ -21,7 +21,7 @@ services:
     image:
       registry: ''
       repository: linuxserver/freshrss
-      tag: 1.30.4
+      tag: 1.31.0
     port: 80
     volumeMounts:
     - mountPath: /config

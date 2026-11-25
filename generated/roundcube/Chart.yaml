@@ -2,9 +2,9 @@ apiVersion: v2
 name: roundcube
 description: Roundcube (converted from 1Panel appstore)
 type: application
-version: 1.7.6+apache
-appVersion: 1.7.6+apache
+version: 1.7.7+apache
+appVersion: 1.7.7+apache
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b
+  upstream/sha: 7c4b332b61c30c4c2e721eef9c64a106553ecc7c

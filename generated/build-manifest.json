@@ -2,9 +2,9 @@
   "apps": {
     "2fauth": {
       "chart": "app-2fauth",
-      "sha": "900e25cdc6f3",
+      "sha": "aa0fbdc8e932",
       "status": "success",
-      "version": "9.0.2+g7583fa"
+      "version": "9.0.3+g626f59"
     },
     "adguardhome": {
       "chart": "adguardhome",
@@ -14,9 +14,9 @@
     },
     "adminer": {
       "chart": "adminer",
-      "sha": "02af916785d5",
+      "sha": "e4b254b6caaf",
       "status": "success",
-      "version": "6.2.0+standalone"
+      "version": "6.3.1+standalone"
     },
     "affine": {
       "chart": "affine",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "f6226901e5c6",
+      "sha": "c83bb196855c",
       "status": "success",
-      "version": "2.64.2+gdd83ff"
+      "version": "2.64.3+g40fdd2"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -164,9 +164,9 @@
     },
     "cloudflared": {
       "chart": "cloudflared",
-      "sha": "d42c157e8bd1",
+      "sha": "22f6ada56bae",
       "status": "success",
-      "version": "2026.11.1+g32103b"
+      "version": "2026.11.2+g8e4277"
     },
     "cloudreve": {
       "chart": "cloudreve",
@@ -218,9 +218,9 @@
     },
     "dashy": {
       "chart": "dashy",
-      "sha": "461ff930383c",
+      "sha": "64d5c53bfbd2",
       "status": "success",
-      "version": "4.9.20+g879a86"
+      "version": "4.10.0+g707474"
     },
     "dataease": {
       "chart": "dataease",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "d8cca3a3e15e",
+      "sha": "319171e0b5d1",
       "status": "success",
-      "version": "0.6.72+g5872a9"
+      "version": "0.6.73+gdc778a"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -356,9 +356,9 @@
     },
     "freshrss": {
       "chart": "freshrss",
-      "sha": "a4a92dd26e7b",
+      "sha": "b841007f295c",
       "status": "success",
-      "version": "1.30.4+g524510"
+      "version": "1.31.0+g286bb1"
     },
     "gatus": {
       "chart": "gatus",
@@ -374,9 +374,9 @@
     },
     "gitea": {
       "chart": "gitea",
-      "sha": "250abf2ba301",
+      "sha": "0f0e456929bf",
       "status": "success",
-      "version": "28.4.1+g40138e"
+      "version": "28.4.2+g5870ce"
     },
     "glance": {
       "chart": "glance",
@@ -518,9 +518,9 @@
     },
     "komga": {
       "chart": "komga",
-      "sha": "6db1b8abf6c8",
+      "sha": "9c9a8e47f2e8",
       "status": "success",
-      "version": "1.30.1+g093267"
+      "version": "1.30.2+ge898eb"
     },
     "langbot": {
       "chart": "langbot",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "5d881a898814",
+      "sha": "c46d68779228",
       "status": "success",
-      "version": "0.1.4689+gcfb823"
+      "version": "0.1.4755+g233589"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -608,9 +608,9 @@
     },
     "maxkb": {
       "chart": "maxkb",
-      "sha": "869fdd581892",
+      "sha": "36fb15efc1fb",
       "status": "success",
-      "version": "2.10.9+lts"
+      "version": "2.10.10+lts"
     },
     "mblog": {
       "chart": "mblog",
@@ -626,9 +626,9 @@
     },
     "meilisearch": {
       "chart": "meilisearch",
-      "sha": "9e51548ba503",
+      "sha": "47bd518f44de",
       "status": "success",
-      "version": "1.57.0+g821276"
+      "version": "1.58.0+gd73a29"
     },
     "memos": {
       "chart": "memos",
@@ -734,9 +734,9 @@
     },
     "nocobase": {
       "chart": "nocobase",
-      "sha": "9b974b85d53b",
+      "sha": "e6860351f99f",
       "status": "success",
-      "version": "2.2.51+g759023"
+      "version": "2.2.52+gad88df"
     },
     "node": {
       "chart": "node",
@@ -782,9 +782,9 @@
     },
     "ollama": {
       "chart": "ollama",
-      "sha": "e66261b6451b",
+      "sha": "b1d06b955bc0",
       "status": "success",
-      "version": "0.40.17+g6a5c14"
+      "version": "0.40.18+gd679ef"
     },
     "ollama-webui": {
       "chart": "ollama-webui",
@@ -908,9 +908,9 @@
     },
     "roundcube": {
       "chart": "roundcube",
-      "sha": "dd712c13ef28",
+      "sha": "613cd49d5726",
       "status": "success",
-      "version": "1.7.6+apache"
+      "version": "1.7.7+apache"
     },
     "rustdesk": {
       "chart": "rustdesk",
@@ -962,9 +962,9 @@
     },
     "siyuan": {
       "chart": "siyuan",
-      "sha": "a51ed5927c9a",
+      "sha": "f565239e89a2",
       "status": "success",
-      "version": "3.8.11+g43e888"
+      "version": "3.8.12+g36ff11"
     },
     "sonarqube": {
       "chart": "sonarqube",
@@ -980,9 +980,9 @@
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "d61369ecd3f9",
+      "sha": "c6afd0405f80",
       "status": "success",
-      "version": "1.1.1+alpine"
+      "version": "1.2.0+alpine"
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
@@ -992,9 +992,9 @@
     },
     "sub2api": {
       "chart": "sub2api",
-      "sha": "288171195f79",
+      "sha": "26eb7ea412c5",
       "status": "success",
-      "version": "0.2.24+g528107"
+      "version": "0.2.25+g52345e"
     },
     "sun-panel": {
       "chart": "sun-panel",
@@ -1016,9 +1016,9 @@
     },
     "teable": {
       "chart": "teable",
-      "sha": "15b4b2087f03",
+      "sha": "d3a88853afdd",
       "status": "success",
-      "version": "0.0.0-d20261124.gc7ade+g71b701"
+      "version": "0.0.0-d20261125.g687ce+gecf79c"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1052,9 +1052,9 @@
     },
     "twenty": {
       "chart": "twenty",
-      "sha": "badc09fae837",
+      "sha": "1f28ef710bbd",
       "status": "success",
-      "version": "2.60.3+g833248"
+      "version": "2.62.2+g6200e9"
     },
     "twikoo": {
       "chart": "twikoo",
@@ -1124,9 +1124,9 @@
     },
     "web-check": {
       "chart": "web-check",
-      "sha": "d0376c1b042f",
+      "sha": "70af31a7ae6a",
       "status": "success",
-      "version": "2.4.4+ga3c20b"
+      "version": "2.4.5+g83dc85"
     },
     "wechatmarkdowneditor": {
       "chart": "wechatmarkdowneditor",
@@ -1136,9 +1136,9 @@
     },
     "wikijs": {
       "chart": "wikijs",
-      "sha": "8d0f766a4e7d",
+      "sha": "2bd483edd239",
       "status": "success",
-      "version": "3.5.0+gb81ca2"
+      "version": "3.6.1+gfd745b"
     },
     "wordpress": {
       "chart": "wordpress",
@@ -1201,5 +1201,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b"
+  "upstream_sha": "7c4b332b61c30c4c2e721eef9c64a106553ecc7c"
 }

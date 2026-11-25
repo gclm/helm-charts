@@ -11,6 +11,6 @@ services:
     image:
       registry: ''
       repository: adminer
-      tag: 6.3.0-standalone
+      tag: 6.3.1-standalone
     port: 8080
     volumeMounts: []

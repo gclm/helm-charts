@@ -2,9 +2,9 @@ apiVersion: v2
 name: siyuan
 description: 思源笔记 (converted from 1Panel appstore)
 type: application
-version: 3.8.11+g43e888
-appVersion: 3.8.11
+version: 3.8.12+g36ff11
+appVersion: 3.8.12
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: b1efb5a24f3bc2e7f64868d6725f21423d7a5f8b
+  upstream/sha: 7c4b332b61c30c4c2e721eef9c64a106553ecc7c

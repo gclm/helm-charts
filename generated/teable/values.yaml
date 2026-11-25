@@ -22,7 +22,7 @@ services:
     - name: PANEL_APP_PORT_HTTP
       valueFromEnv: PANEL_APP_PORT_HTTP
     image:
-      digest: sha256:c7ade0cc7f65cfcfa4fbfbdbf66e9541b66aa0659934d1a7108eb5e37abf8255
+      digest: sha256:687ce65fa345050cda67958de5dde9ed9a605266421fbad469f1382a3f012ae1
       registry: ghcr.io
       repository: teableio/teable
       tag: null
