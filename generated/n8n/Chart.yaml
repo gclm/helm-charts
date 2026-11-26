@@ -2,9 +2,9 @@ apiVersion: v2
 name: n8n
 description: n8n (converted from 1Panel appstore)
 type: application
-version: 2.48.7+g89a90c
-appVersion: 2.48.7
+version: 2.49.6+g53d87e
+appVersion: 2.49.6
 annotations:
   license: GPL-3.0 (inherited from 1Panel-dev/appstore)
   source: https://github.com/1Panel-dev/appstore
-  upstream/sha: 7c4b332b61c30c4c2e721eef9c64a106553ecc7c
+  upstream/sha: f0b3e6256059506939a451bc864290e2c1b472fa

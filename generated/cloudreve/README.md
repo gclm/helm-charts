@@ -2,7 +2,7 @@
 
 支持多家云存储的云盘系统
 
-- 上游: 1Panel-dev/appstore `apps/cloudreve` @ `7c4b332b61c3`
+- 上游: 1Panel-dev/appstore `apps/cloudreve` @ `f0b3e6256059`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
