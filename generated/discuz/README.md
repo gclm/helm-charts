@@ -2,7 +2,7 @@
 
 开源社交建站系统
 
-- 上游: 1Panel-dev/appstore `apps/discuz` @ `f0b3e6256059`
+- 上游: 1Panel-dev/appstore `apps/discuz` @ `1625f75547e3`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

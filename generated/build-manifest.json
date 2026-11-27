@@ -32,9 +32,9 @@
     },
     "ai-portal": {
       "chart": "ai-portal",
-      "sha": "6fc95aa65d85",
+      "sha": "896b03de4bd6",
       "status": "success",
-      "version": "2.0.2+g3320a9"
+      "version": "2.1.0+g093646"
     },
     "alist": {
       "chart": "alist",
@@ -104,9 +104,9 @@
     },
     "browserless": {
       "chart": "browserless",
-      "sha": "c83bb196855c",
+      "sha": "11ce5182a023",
       "status": "success",
-      "version": "2.64.3+g40fdd2"
+      "version": "2.64.4+g5be69f"
     },
     "bytebase": {
       "chart": "bytebase",
@@ -122,9 +122,9 @@
     },
     "casdoor": {
       "chart": "casdoor",
-      "sha": "a389582ad39c",
+      "sha": "6aa8c171e810",
       "status": "success",
-      "version": "4.30.0+gfc639c"
+      "version": "4.31.0+gd81cc9"
     },
     "certd": {
       "chart": "certd",
@@ -236,9 +236,9 @@
     },
     "dbx": {
       "chart": "dbx",
-      "sha": "c742a8d0ec62",
+      "sha": "8496864afc9e",
       "status": "success",
-      "version": "0.6.74+g2d43a7"
+      "version": "0.6.75+g6584c4"
     },
     "deepseek-harness": {
       "chart": "deepseek-harness",
@@ -290,9 +290,9 @@
     },
     "drawio": {
       "chart": "drawio",
-      "sha": "b31f99190897",
+      "sha": "201344a8defc",
       "status": "success",
-      "version": "32.7.4+g96dcb7"
+      "version": "32.7.7+g723a4d"
     },
     "dvwa": {
       "chart": "dvwa",
@@ -428,9 +428,9 @@
     },
     "huginn": {
       "chart": "huginn",
-      "sha": "411a474b5e00",
+      "sha": "4941a4ef5c92",
       "status": "success",
-      "version": "2026.11.19+gfc0c2f"
+      "version": "2026.11.27+g818578"
     },
     "it-tools": {
       "chart": "it-tools",
@@ -482,9 +482,9 @@
     },
     "kibana": {
       "chart": "kibana",
-      "sha": "b8c4e1e4e26c",
+      "sha": "ea68a781ddb0",
       "status": "success",
-      "version": "9.5.5+g571e7a"
+      "version": "9.5.7+gb2fbe1"
     },
     "kirara-agent": {
       "chart": "kirara-agent",
@@ -566,9 +566,9 @@
     },
     "logstash": {
       "chart": "logstash",
-      "sha": "6669e5bbb9d9",
+      "sha": "ef52cf806bec",
       "status": "success",
-      "version": "9.5.5+g33dac9"
+      "version": "9.5.7+ge73305"
     },
     "logto": {
       "chart": "logto",
@@ -590,9 +590,9 @@
     },
     "magpie": {
       "chart": "magpie",
-      "sha": "4cc97313d045",
+      "sha": "0120163b2141",
       "status": "success",
-      "version": "0.1.4777+gc61e4a"
+      "version": "0.1.4829+g61f1e6"
     },
     "mailserver": {
       "chart": "mailserver",
@@ -674,9 +674,9 @@
     },
     "n8n": {
       "chart": "n8n",
-      "sha": "bcf36b12385e",
+      "sha": "23d2c2b15480",
       "status": "success",
-      "version": "2.49.6+g53d87e"
+      "version": "2.49.7+g035c4b"
     },
     "nacos": {
       "chart": "nacos",
@@ -800,9 +800,9 @@
     },
     "openclaw": {
       "chart": "openclaw",
-      "sha": "dc49671507cc",
+      "sha": "97c31cefd488",
       "status": "success",
-      "version": "2026.11.9+ge9b00d"
+      "version": "2026.11.10+g9021c7"
     },
     "opengist": {
       "chart": "opengist",
@@ -966,6 +966,12 @@
       "status": "success",
       "version": "3.8.12+g36ff11"
     },
+    "snipe-it": {
+      "chart": "snipe-it",
+      "sha": "8a7a43d678fc",
+      "status": "success",
+      "version": "8.8.4+g65c08e"
+    },
     "sonarqube": {
       "chart": "sonarqube",
       "sha": "7b21b3f1c7ed",
@@ -974,15 +980,15 @@
     },
     "sqlbot": {
       "chart": "sqlbot",
-      "sha": "d55745969fb4",
+      "sha": "6308be193c93",
       "status": "success",
-      "version": "1.10.3+gcf38eb"
+      "version": "1.10.4+g79f91b"
     },
     "stalwart-mail": {
       "chart": "stalwart-mail",
-      "sha": "c6afd0405f80",
+      "sha": "0700c1dbb2d7",
       "status": "success",
-      "version": "1.2.0+alpine"
+      "version": "1.2.1+alpine"
     },
     "stirling-pdf": {
       "chart": "stirling-pdf",
@@ -1010,15 +1016,15 @@
     },
     "tailchat": {
       "chart": "tailchat",
-      "sha": "560853958b23",
+      "sha": "b29d6cbdfa61",
       "status": "success",
-      "version": "1.11.22+g5ec501"
+      "version": "1.11.23+g8d10d0"
     },
     "teable": {
       "chart": "teable",
-      "sha": "d3a88853afdd",
+      "sha": "b7f5aef29ff8",
       "status": "success",
-      "version": "0.0.0-d20261125.g687ce+gecf79c"
+      "version": "0.0.0-d20261127.ge45e3+gb9156d"
     },
     "teamspeak": {
       "chart": "teamspeak",
@@ -1201,5 +1207,5 @@
       "version": "4.19.4+g919904"
     }
   },
-  "upstream_sha": "f0b3e6256059506939a451bc864290e2c1b472fa"
+  "upstream_sha": "1625f75547e36ee626494ea799361c7e801cbc92"
 }

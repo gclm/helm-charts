@@ -1,0 +1,43 @@
+configMaps: {}
+env:
+  APP_URL: ''
+  PANEL_APP_PORT_HTTP: 8000
+  PANEL_DB_NAME: snipeit
+  PANEL_DB_TYPE: mariadb
+  PANEL_DB_USER: snipeit
+persistence:
+  vol-data:
+    mountPath: /var/lib/snipeit
+    size: 10Gi
+secrets:
+  PANEL_DB_USER_PASSWORD:
+    generate: true
+services:
+  snipe-it:
+    env:
+    - name: APP_ENV
+      value: production
+    - name: APP_DEBUG
+      value: 'false'
+    - name: APP_URL
+      valueFromEnv: APP_URL
+    - name: APP_KEY_FILE
+      value: /var/lib/snipeit/app-key
+    - name: DB_CONNECTION
+      valueFromEnv: PANEL_DB_TYPE
+    - name: DB_DATABASE
+      valueFromEnv: PANEL_DB_NAME
+    - name: DB_USERNAME
+      valueFromEnv: PANEL_DB_USER
+    - name: DB_PASSWORD
+      valueFromSecret: PANEL_DB_USER_PASSWORD
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: snipe/snipe-it
+      tag: v8.8.4
+    port: 80
+    volumeMounts:
+    - mountPath: /var/lib/snipeit
+      name: vol-data

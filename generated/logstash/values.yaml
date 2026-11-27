@@ -17,7 +17,7 @@ services:
     image:
       registry: ''
       repository: logstash
-      tag: 9.5.5
+      tag: 9.5.7
     port: 5044
     volumeMounts:
     - mountPath: /usr/share/logstash/pipeline

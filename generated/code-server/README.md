@@ -2,7 +2,7 @@
 
 浏览器中的VS Code
 
-- 上游: 1Panel-dev/appstore `apps/code-server` @ `f0b3e6256059`
+- 上游: 1Panel-dev/appstore `apps/code-server` @ `1625f75547e3`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

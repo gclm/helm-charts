@@ -1,0 +1,10 @@
+apiVersion: v2
+name: snipe-it
+description: Snipe-IT (converted from 1Panel appstore)
+type: application
+version: 8.8.4+g65c08e
+appVersion: 8.8.4
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: 1625f75547e36ee626494ea799361c7e801cbc92

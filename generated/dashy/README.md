@@ -2,7 +2,7 @@
 
 专为您打造的可自行托管的个人仪表板
 
-- 上游: 1Panel-dev/appstore `apps/dashy` @ `f0b3e6256059`
+- 上游: 1Panel-dev/appstore `apps/dashy` @ `1625f75547e3`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 
