@@ -20,7 +20,7 @@ services:
     image:
       registry: ''
       repository: hslr/sun-panel
-      tag: 1.8.1
+      tag: 2.0.2
     port: 3002
     volumeMounts:
     - mountPath: /app/conf

@@ -50,7 +50,7 @@ services:
     image:
       registry: ''
       repository: nacos/nacos-server
-      tag: v3.3.0
+      tag: v3.3.1
     port: 8080
     volumeMounts:
     - mountPath: /home/nacos/logs

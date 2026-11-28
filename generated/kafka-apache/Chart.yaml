@@ -1,0 +1,10 @@
+apiVersion: v2
+name: kafka-apache
+description: Kafka (Apache) (converted from 1Panel appstore)
+type: application
+version: 4.4.0+g5b07b4
+appVersion: 4.4.0
+annotations:
+  license: GPL-3.0 (inherited from 1Panel-dev/appstore)
+  source: https://github.com/1Panel-dev/appstore
+  upstream/sha: 857c8b4ce79dc53a33f01de0011c6a7012bcc0fe

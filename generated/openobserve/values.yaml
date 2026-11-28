@@ -1,0 +1,29 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 5080
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+secrets: {}
+services:
+  openobserve:
+    env:
+    - name: ZO_LOCAL_MODE
+      value: 'true'
+    - name: ZO_DATA_DIR
+      value: /data
+    - name: ZO_ROOT_USER_EMAIL
+      value: ${ZO_ROOT_USER_EMAIL:?Set the administrator email}
+    - name: ZO_ROOT_USER_PASSWORD
+      value: ${ZO_ROOT_USER_PASSWORD:?Set the administrator password}
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: public.ecr.aws
+      repository: zinclabs/openobserve
+      tag: v1.2.0
+    port: 5080
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data

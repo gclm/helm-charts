@@ -1,0 +1,33 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 7456
+persistence:
+  vol-data:
+    mountPath: /app/.od
+    size: 10Gi
+secrets: {}
+services:
+  open-design:
+    env:
+    - name: OD_WEB_PORT
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    - name: OD_API_TOKEN
+      value: ${OD_API_TOKEN:?Set an Open Design API token}
+    - name: OD_ALLOWED_ORIGINS
+      value: ${OD_ALLOWED_ORIGINS:-}
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ghcr.io
+      repository: nexu-io/od
+      tag: 0.27.1
+    port: 7456
+    probe:
+      exec: 'CMD node -e fetch(''http://127.0.0.1:7456/api/health'').then(response
+        => process.exit(response.ok ? 0 : 1)).catch(() => process.exit(1))'
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /app/.od
+      name: vol-data

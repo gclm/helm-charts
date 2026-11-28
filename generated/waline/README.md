@@ -2,7 +2,7 @@
 
 一款简洁、安全的评论系统
 
-- 上游: 1Panel-dev/appstore `apps/waline` @ `1625f75547e3`
+- 上游: 1Panel-dev/appstore `apps/waline` @ `857c8b4ce79d`
 - 分类: unknown
 - 转换产物：不手改（见仓库 README 治理规则）；定制走 `overlay/apps/{app}/`
 

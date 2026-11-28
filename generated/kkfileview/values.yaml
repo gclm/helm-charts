@@ -6,11 +6,13 @@ secrets: {}
 services:
   kkfileview:
     env:
+    - name: KK_TRUST_HOST
+      value: ${KK_TRUST_HOST:-default}
     - name: PANEL_APP_PORT_HTTP
       valueFromEnv: PANEL_APP_PORT_HTTP
     image:
-      registry: ''
-      repository: keking/kkfileview
-      tag: 4.1.0
+      registry: registry.cn-hangzhou.aliyuncs.com
+      repository: jeecgdocker/kkfileview
+      tag: 5.0.3
     port: 8012
     volumeMounts: []

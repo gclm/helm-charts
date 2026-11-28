@@ -1,0 +1,27 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 8080
+persistence:
+  vol-data:
+    mountPath: /var/cache/searxng
+    size: 10Gi
+secrets: {}
+services:
+  searxng:
+    env:
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ghcr.io
+      repository: searxng/searxng
+      tag: 2026.11.26-b5605b8f2
+    port: 8080
+    probe:
+      exec: CMD /usr/local/searxng/.venv/bin/python -c from urllib.request import
+        urlopen; urlopen('http://127.0.0.1:8080/healthz', timeout=3).close()
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /var/cache/searxng
+      name: vol-data

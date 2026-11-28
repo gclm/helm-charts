@@ -1,0 +1,34 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 8317
+  PANEL_CLI_PROXY_API_KEY: ''
+  PANEL_CLI_PROXY_MANAGEMENT_KEY: ''
+persistence:
+  vol-data:
+    mountPath: /data
+    size: 10Gi
+  vol-scripts-run-container-sh:
+    mountPath: /usr/local/bin/cliproxyapi-entrypoint
+    size: 10Gi
+secrets: {}
+services:
+  cliproxyapi:
+    env:
+    - name: MANAGEMENT_PASSWORD
+      valueFromEnv: PANEL_CLI_PROXY_MANAGEMENT_KEY
+    - name: CLIPROXYAPI_INITIAL_API_KEY
+      valueFromEnv: PANEL_CLI_PROXY_API_KEY
+    - name: WRITABLE_PATH
+      value: /data
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: eceasy/cli-proxy-api
+      tag: v8.1.7
+    port: 8317
+    volumeMounts:
+    - mountPath: /data
+      name: vol-data
+    - mountPath: /usr/local/bin/cliproxyapi-entrypoint
+      name: vol-scripts-run-container-sh

@@ -1,0 +1,27 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 42617
+persistence:
+  vol-data:
+    mountPath: /zeroclaw-data
+    size: 10Gi
+secrets: {}
+services:
+  zeroclaw:
+    env:
+    - name: ZEROCLAW_gateway__host
+      value: 0.0.0.0
+    - name: ZEROCLAW_gateway__allow_public_bind
+      value: 'true'
+    - name: ZEROCLAW_gateway__require_pairing
+      value: 'true'
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ghcr.io
+      repository: zeroclaw-labs/zeroclaw
+      tag: v0.9.0
+    port: 42617
+    volumeMounts:
+    - mountPath: /zeroclaw-data
+      name: vol-data

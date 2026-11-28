@@ -23,6 +23,6 @@ services:
     image:
       registry: ghcr.io
       repository: yetone/magpie
-      tag: 0.1.4829
+      tag: 0.1.4936
     port: 3430
     volumeMounts: []

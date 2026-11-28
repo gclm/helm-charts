@@ -1,0 +1,71 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 8502
+  SURREAL_PASSWORD: ''
+persistence:
+  vol-data:
+    mountPath: /app/data
+    size: 10Gi
+  vol-surreal-data:
+    mountPath: /mydata
+    size: 10Gi
+secrets: {}
+services:
+  open-notebook:
+    env:
+    - name: API_URL
+      value: ${API_URL:-}
+    - name: OPEN_NOTEBOOK_PASSWORD
+      value: ${OPEN_NOTEBOOK_PASSWORD:?Set the Open Notebook password}
+    - name: OPEN_NOTEBOOK_ENCRYPTION_KEY
+      value: ${OPEN_NOTEBOOK_ENCRYPTION_KEY:?Set the Open Notebook encryption key}
+    - name: SURREAL_USER
+      value: root
+    - name: SURREAL_PASSWORD
+      value: ${SURREAL_PASSWORD:?Set the SurrealDB password}
+    - name: SURREAL_NAMESPACE
+      value: open_notebook
+    - name: SURREAL_DATABASE
+      value: open_notebook
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: lfnovo/open_notebook
+      tag: 1.15.1
+    port: 8502
+    probe:
+      exec: CMD curl -fsS http://127.0.0.1:5055/health
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /app/data
+      name: vol-data
+  surrealdb:
+    command:
+    - start
+    - --log
+    - info
+    - --user
+    - root
+    - --pass
+    - ${SURREAL_PASSWORD:?Set the SurrealDB password}
+    - rocksdb:/mydata/mydatabase.db
+    env:
+    - name: SURREAL_EXPERIMENTAL_GRAPHQL
+      value: 'true'
+    - name: SURREAL_PASSWORD
+      valueFromEnv: SURREAL_PASSWORD
+    image:
+      registry: ''
+      repository: surrealdb/surrealdb
+      tag: v2.7.0
+    probe:
+      exec: CMD /surreal is-ready --endpoint http://127.0.0.1:8000
+      intervalSeconds: 10
+      retries: 10
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /mydata
+      name: vol-surreal-data

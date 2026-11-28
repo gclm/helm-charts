@@ -1,0 +1,47 @@
+configMaps: {}
+env:
+  PANEL_APP_PORT_HTTP: 9997
+persistence:
+  vol-data-huggingface:
+    mountPath: /root/.cache/huggingface
+    size: 10Gi
+  vol-data-modelscope:
+    mountPath: /root/.cache/modelscope
+    size: 10Gi
+  vol-data-xinference:
+    mountPath: /root/.xinference
+    size: 10Gi
+secrets: {}
+services:
+  xinference:
+    command:
+    - xinference-local
+    - -H
+    - 0.0.0.0
+    - --port
+    - '9997'
+    - --log-level
+    - info
+    env:
+    - name: XINFERENCE_MODEL_SRC
+      value: auto
+    - name: PANEL_APP_PORT_HTTP
+      valueFromEnv: PANEL_APP_PORT_HTTP
+    image:
+      registry: ''
+      repository: xprobe/xinference
+      tag: v4.3.0
+    port: 9997
+    probe:
+      exec: CMD python3 -c from urllib.request import urlopen; urlopen('http://127.0.0.1:9997/status',
+        timeout=3).close()
+      intervalSeconds: 30
+      retries: 3
+      timeoutSeconds: 5
+    volumeMounts:
+    - mountPath: /root/.xinference
+      name: vol-data-xinference
+    - mountPath: /root/.cache/huggingface
+      name: vol-data-huggingface
+    - mountPath: /root/.cache/modelscope
+      name: vol-data-modelscope
